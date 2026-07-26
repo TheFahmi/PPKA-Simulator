@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": ".uji",
+    "rootDir": ".",
+    "jsx": "react-jsx",
+    "declaration": false,
+    "incremental": false,
+    "plugins": []
+  },
+  "include": ["src/lib/**/*.ts", "src/store/**/*.ts", "data/*.json"],
+  "exclude": ["node_modules"]
+}

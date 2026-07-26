@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-panel-void text-vdu-primary font-sans antialiased;
+    /* Tekstur halus kaca VDU — bukan gradien dekoratif. */
+    background-image: repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.012) 0px,
+      rgba(255, 255, 255, 0.012) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+    overflow-x: hidden;
+  }
+
+  /* Papan kendali tidak memakai seleksi teks biru sistem. */
+  ::selection {
+    @apply bg-signal-aspect-yellow text-vdu-invert;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-panel-sunken;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-panel-line;
+    border: 2px solid #060b0e;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-panel-line-bright;
+  }
+
+  /* Fokus keyboard harus terbaca di papan gelap. */
+  :focus-visible {
+    outline: 1px solid #ffb302;
+    outline-offset: 1px;
+  }
+}
+
+@layer components {
+  /* Kepala modul panel: bilah tipis dengan label tercetak. */
+  .kepala-modul {
+    @apply flex items-center justify-between gap-2 border-b border-panel-line bg-panel-rail px-2 py-1;
+  }
+
+  .label-modul {
+    @apply font-mono text-label uppercase tracking-[0.16em] text-vdu-muted;
+  }
+
+  /* Tombol perintah panel — persegi, bergaris, tanpa bayangan lembut. */
+  .tombol-panel {
+    @apply border border-panel-line-bright bg-panel-raised px-2.5 py-1 font-mono text-2xs
+           uppercase tracking-[0.12em] text-vdu-primary transition-colors
+           hover:border-signal-aspect-yellow hover:text-signal-aspect-yellow
+           disabled:cursor-not-allowed disabled:border-panel-line disabled:text-vdu-dim
+           disabled:hover:border-panel-line disabled:hover:text-vdu-dim;
+  }
+
+  .tombol-panel-aktif {
+    @apply border-signal-aspect-yellow bg-signal-aspect-yellow text-vdu-invert
+           hover:border-signal-aspect-yellow hover:text-vdu-invert;
+  }
+
+  .tombol-panel-bahaya {
+    @apply border-signal-aspect-red text-signal-aspect-red
+           hover:border-signal-aspect-red hover:bg-signal-aspect-red hover:text-vdu-invert;
+  }
+
+  /* Baris data tabular papan dinas. */
+  .sel-data {
+    @apply border-b border-panel-line px-2 py-1 font-mono text-nomor tabular-nums;
+  }
+
+  .kepala-kolom {
+    @apply border-b border-panel-line-bright bg-panel-rail px-2 py-1 text-left
+           font-mono text-2xs uppercase tracking-[0.12em] text-vdu-muted;
+  }
+}
+
+@layer utilities {
+  .angka-papan {
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.04em;
+  }
+
+  /* Garis pemisah 1px yang tegas antar-modul (bukan gap kosong). */
+  .rusuk-kanan {
+    box-shadow: 1px 0 0 0 #1e3039;
+  }
+
+  .rusuk-bawah {
+    box-shadow: 0 1px 0 0 #1e3039;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

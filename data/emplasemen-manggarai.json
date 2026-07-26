@@ -1,0 +1,2242 @@
+{
+  "kodeStasiun": "MRI",
+  "namaStasiun": "Manggarai",
+  "acuan": {
+    "keterangan": "Peruntukan jalur mengikuti hasil Switch Over ke-7 (SO-7), dieksekusi 17 Desember 2023 dan berlaku bagi penumpang sejak 20 Desember 2023. Emplasemen terdiri atas 12 jalur bernomor ditambah satu jalur akses Balai Yasa tanpa nomor, dengan tujuh peron (enam peron pulau dan satu peron sisi).",
+    "tanggalAcuan": "2023-12-20",
+    "sumber": [
+      "Tabel tata letak peron Stasiun Manggarai, Wikipedia bahasa Indonesia (revisi 18 Juli 2026)",
+      "Kompas.com, 18 Desember 2023 — Daftar Perubahan Jalur Transit di Stasiun Manggarai Mulai 20 Desember 2023",
+      "KAI Commuter — siaran perubahan pola operasi terkait Switch Over Stasiun Manggarai"
+    ],
+    "catatanVerifikasi": "PERUNTUKAN JALUR, PEMBAGIAN LANTAI, DAN SUSUNAN PERON diambil dari sumber di atas. SUSUNAN WESEL, PENOMORAN WESEL, PENAMAAN SINYAL, PANJANG PERON, DAN PANJANG RUAS DALAM METER adalah asumsi pemodelan — gambar teknis emplasemen Stasiun Manggarai tidak dipublikasikan. Bentuk emplasemen di sini dibuat konsisten secara operasional dengan peruntukan jalur resmi, bukan salinan gambar sepur milik KAI."
+  },
+  "kanvas": {
+    "DASAR": {
+      "lebar": 1700,
+      "tinggi": 640
+    },
+    "LAYANG": {
+      "lebar": 1700,
+      "tinggi": 256
+    }
+  },
+  "simpul": [
+    {
+      "id": "SG-SUD-K",
+      "jenis": "BATAS",
+      "level": "DASAR",
+      "x": 100,
+      "y": 44
+    },
+    {
+      "id": "SG-SUD-D",
+      "jenis": "BATAS",
+      "level": "DASAR",
+      "x": 100,
+      "y": 212
+    },
+    {
+      "id": "SG-JJ-BRT-K",
+      "jenis": "BATAS",
+      "level": "DASAR",
+      "x": 100,
+      "y": 280
+    },
+    {
+      "id": "SG-JJ-BRT-D",
+      "jenis": "BATAS",
+      "level": "DASAR",
+      "x": 100,
+      "y": 440
+    },
+    {
+      "id": "SG-BY",
+      "jenis": "BATAS",
+      "level": "DASAR",
+      "x": 100,
+      "y": 488
+    },
+    {
+      "id": "SG-BNI",
+      "jenis": "BATAS",
+      "level": "DASAR",
+      "x": 100,
+      "y": 552
+    },
+    {
+      "id": "SG-MTR-D",
+      "jenis": "BATAS",
+      "level": "DASAR",
+      "x": 1600,
+      "y": 44
+    },
+    {
+      "id": "SG-MTR-K",
+      "jenis": "BATAS",
+      "level": "DASAR",
+      "x": 1600,
+      "y": 212
+    },
+    {
+      "id": "SG-JJ-TMR-D",
+      "jenis": "BATAS",
+      "level": "DASAR",
+      "x": 1600,
+      "y": 280
+    },
+    {
+      "id": "SG-JJ-TMR-K",
+      "jenis": "BATAS",
+      "level": "DASAR",
+      "x": 1600,
+      "y": 440
+    },
+    {
+      "id": "HG1",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 620,
+      "y": 44
+    },
+    {
+      "id": "TG1",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 1080,
+      "y": 44
+    },
+    {
+      "id": "HG2",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 620,
+      "y": 96
+    },
+    {
+      "id": "TG2",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 1080,
+      "y": 96
+    },
+    {
+      "id": "HG3",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 620,
+      "y": 160
+    },
+    {
+      "id": "TG3",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 1080,
+      "y": 160
+    },
+    {
+      "id": "HG4",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 620,
+      "y": 212
+    },
+    {
+      "id": "TG4",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 1080,
+      "y": 212
+    },
+    {
+      "id": "HG5",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 620,
+      "y": 328
+    },
+    {
+      "id": "TG5",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 1080,
+      "y": 328
+    },
+    {
+      "id": "HG6",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 620,
+      "y": 392
+    },
+    {
+      "id": "TG6",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 1080,
+      "y": 392
+    },
+    {
+      "id": "HG7",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 620,
+      "y": 500
+    },
+    {
+      "id": "TG7",
+      "jenis": "UJUNG",
+      "level": "DASAR",
+      "x": 1080,
+      "y": 500
+    },
+    {
+      "id": "HG8",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 620,
+      "y": 552
+    },
+    {
+      "id": "TG8",
+      "jenis": "UJUNG",
+      "level": "DASAR",
+      "x": 1080,
+      "y": 552
+    },
+    {
+      "id": "HLU",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 620,
+      "y": 280
+    },
+    {
+      "id": "TLU",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 1080,
+      "y": 280
+    },
+    {
+      "id": "HLH",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 620,
+      "y": 440
+    },
+    {
+      "id": "TLH",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 1080,
+      "y": 440
+    },
+    {
+      "id": "WG11",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 300,
+      "y": 44
+    },
+    {
+      "id": "WG12",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 300,
+      "y": 212
+    },
+    {
+      "id": "WG20",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 400,
+      "y": 280
+    },
+    {
+      "id": "WG19",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 320,
+      "y": 440
+    },
+    {
+      "id": "WG22",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 440,
+      "y": 440
+    },
+    {
+      "id": "WG15",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 300,
+      "y": 552
+    },
+    {
+      "id": "WG31",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 1380,
+      "y": 44
+    },
+    {
+      "id": "WG32",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 1380,
+      "y": 212
+    },
+    {
+      "id": "WG21",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 1380,
+      "y": 280
+    },
+    {
+      "id": "WG23",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 1380,
+      "y": 440
+    },
+    {
+      "id": "SL-CKI-K",
+      "jenis": "BATAS",
+      "level": "LAYANG",
+      "x": 100,
+      "y": 44
+    },
+    {
+      "id": "SL-CKI-D",
+      "jenis": "BATAS",
+      "level": "LAYANG",
+      "x": 100,
+      "y": 212
+    },
+    {
+      "id": "SL-TBT-D",
+      "jenis": "BATAS",
+      "level": "LAYANG",
+      "x": 1600,
+      "y": 44
+    },
+    {
+      "id": "SL-TBT-K",
+      "jenis": "BATAS",
+      "level": "LAYANG",
+      "x": 1600,
+      "y": 212
+    },
+    {
+      "id": "HL9",
+      "jenis": "SAMBUNG",
+      "level": "LAYANG",
+      "x": 620,
+      "y": 44
+    },
+    {
+      "id": "TL9",
+      "jenis": "SAMBUNG",
+      "level": "LAYANG",
+      "x": 1080,
+      "y": 44
+    },
+    {
+      "id": "HL10",
+      "jenis": "SAMBUNG",
+      "level": "LAYANG",
+      "x": 620,
+      "y": 96
+    },
+    {
+      "id": "TL10",
+      "jenis": "SAMBUNG",
+      "level": "LAYANG",
+      "x": 1080,
+      "y": 96
+    },
+    {
+      "id": "HL11",
+      "jenis": "SAMBUNG",
+      "level": "LAYANG",
+      "x": 620,
+      "y": 160
+    },
+    {
+      "id": "TL11",
+      "jenis": "SAMBUNG",
+      "level": "LAYANG",
+      "x": 1080,
+      "y": 160
+    },
+    {
+      "id": "HL12",
+      "jenis": "SAMBUNG",
+      "level": "LAYANG",
+      "x": 620,
+      "y": 212
+    },
+    {
+      "id": "TL12",
+      "jenis": "SAMBUNG",
+      "level": "LAYANG",
+      "x": 1080,
+      "y": 212
+    },
+    {
+      "id": "WL101",
+      "jenis": "WESEL",
+      "level": "LAYANG",
+      "x": 300,
+      "y": 44
+    },
+    {
+      "id": "WL102",
+      "jenis": "WESEL",
+      "level": "LAYANG",
+      "x": 300,
+      "y": 212
+    },
+    {
+      "id": "WL121",
+      "jenis": "WESEL",
+      "level": "LAYANG",
+      "x": 1380,
+      "y": 44
+    },
+    {
+      "id": "WL122",
+      "jenis": "WESEL",
+      "level": "LAYANG",
+      "x": 1380,
+      "y": 212
+    }
+  ],
+  "ruas": [
+    {
+      "id": "RG-PJ-SUD-K",
+      "jenis": "PETAK_JALAN",
+      "dari": "SG-SUD-K",
+      "ke": "WG11",
+      "blokId": "BLK-PJ-SUD-K",
+      "panjangM": 100
+    },
+    {
+      "id": "RG-11-J1",
+      "jenis": "PENGHUBUNG",
+      "dari": "WG11",
+      "ke": "HG1",
+      "blokId": "BLK-11-J1",
+      "panjangM": 160
+    },
+    {
+      "id": "RG-11-J2",
+      "jenis": "PENGHUBUNG",
+      "dari": "WG11",
+      "ke": "HG2",
+      "blokId": "BLK-11-J2",
+      "panjangM": 162
+    },
+    {
+      "id": "RG-PJ-SUD-D",
+      "jenis": "PETAK_JALAN",
+      "dari": "SG-SUD-D",
+      "ke": "WG12",
+      "blokId": "BLK-PJ-SUD-D",
+      "panjangM": 100
+    },
+    {
+      "id": "RG-12-J4",
+      "jenis": "PENGHUBUNG",
+      "dari": "WG12",
+      "ke": "HG4",
+      "blokId": "BLK-12-J4",
+      "panjangM": 160
+    },
+    {
+      "id": "RG-12-J3",
+      "jenis": "PENGHUBUNG",
+      "dari": "WG12",
+      "ke": "HG3",
+      "blokId": "BLK-12-J3",
+      "panjangM": 162
+    },
+    {
+      "id": "RG-PJ-JJ-BRT-K",
+      "jenis": "PETAK_JALAN",
+      "dari": "SG-JJ-BRT-K",
+      "ke": "WG20",
+      "blokId": "BLK-PJ-JJ-BRT-K",
+      "panjangM": 150
+    },
+    {
+      "id": "RG-20-LU",
+      "jenis": "PENGHUBUNG",
+      "dari": "WG20",
+      "ke": "HLU",
+      "blokId": "BLK-20-LU",
+      "panjangM": 110
+    },
+    {
+      "id": "RG-20-J5",
+      "jenis": "PENGHUBUNG",
+      "dari": "WG20",
+      "ke": "HG5",
+      "blokId": "BLK-20-J5",
+      "panjangM": 113
+    },
+    {
+      "id": "RG-PJ-JJ-BRT-D",
+      "jenis": "PETAK_JALAN",
+      "dari": "SG-JJ-BRT-D",
+      "ke": "WG19",
+      "blokId": "BLK-PJ-JJ-BRT-D",
+      "panjangM": 110
+    },
+    {
+      "id": "RG-PJ-BY",
+      "jenis": "PETAK_JALAN",
+      "dari": "SG-BY",
+      "ke": "WG19",
+      "blokId": "BLK-PJ-BY",
+      "panjangM": 113
+    },
+    {
+      "id": "RG-19-22",
+      "jenis": "PENGHUBUNG",
+      "dari": "WG19",
+      "ke": "WG22",
+      "blokId": "BLK-19-22",
+      "panjangM": 60
+    },
+    {
+      "id": "RG-22-LH",
+      "jenis": "PENGHUBUNG",
+      "dari": "WG22",
+      "ke": "HLH",
+      "blokId": "BLK-22-LH",
+      "panjangM": 90
+    },
+    {
+      "id": "RG-22-J6",
+      "jenis": "PENGHUBUNG",
+      "dari": "WG22",
+      "ke": "HG6",
+      "blokId": "BLK-22-J6",
+      "panjangM": 93
+    },
+    {
+      "id": "RG-PJ-BNI",
+      "jenis": "PETAK_JALAN",
+      "dari": "SG-BNI",
+      "ke": "WG15",
+      "blokId": "BLK-PJ-BNI",
+      "panjangM": 100
+    },
+    {
+      "id": "RG-15-J8",
+      "jenis": "PENGHUBUNG",
+      "dari": "WG15",
+      "ke": "HG8",
+      "blokId": "BLK-15-J8",
+      "panjangM": 160
+    },
+    {
+      "id": "RG-15-J7",
+      "jenis": "PENGHUBUNG",
+      "dari": "WG15",
+      "ke": "HG7",
+      "blokId": "BLK-15-J7",
+      "panjangM": 162
+    },
+    {
+      "id": "RG-SP-J1",
+      "jenis": "SEPUR_PERON",
+      "dari": "HG1",
+      "ke": "TG1",
+      "blokId": "BLK-SP-J1",
+      "panjangM": 230,
+      "sepurId": "SP-G1"
+    },
+    {
+      "id": "RG-SP-J2",
+      "jenis": "SEPUR_PERON",
+      "dari": "HG2",
+      "ke": "TG2",
+      "blokId": "BLK-SP-J2",
+      "panjangM": 230,
+      "sepurId": "SP-G2"
+    },
+    {
+      "id": "RG-SP-J3",
+      "jenis": "SEPUR_PERON",
+      "dari": "HG3",
+      "ke": "TG3",
+      "blokId": "BLK-SP-J3",
+      "panjangM": 230,
+      "sepurId": "SP-G3"
+    },
+    {
+      "id": "RG-SP-J4",
+      "jenis": "SEPUR_PERON",
+      "dari": "HG4",
+      "ke": "TG4",
+      "blokId": "BLK-SP-J4",
+      "panjangM": 230,
+      "sepurId": "SP-G4"
+    },
+    {
+      "id": "RG-SP-J5",
+      "jenis": "SEPUR_PERON",
+      "dari": "HG5",
+      "ke": "TG5",
+      "blokId": "BLK-SP-J5",
+      "panjangM": 230,
+      "sepurId": "SP-G5"
+    },
+    {
+      "id": "RG-SP-J6",
+      "jenis": "SEPUR_PERON",
+      "dari": "HG6",
+      "ke": "TG6",
+      "blokId": "BLK-SP-J6",
+      "panjangM": 230,
+      "sepurId": "SP-G6"
+    },
+    {
+      "id": "RG-SP-J7",
+      "jenis": "SEPUR_PERON",
+      "dari": "HG7",
+      "ke": "TG7",
+      "blokId": "BLK-SP-J7",
+      "panjangM": 230,
+      "sepurId": "SP-G7"
+    },
+    {
+      "id": "RG-SP-J8",
+      "jenis": "SEPUR_PERON",
+      "dari": "HG8",
+      "ke": "TG8",
+      "blokId": "BLK-SP-J8",
+      "panjangM": 230,
+      "sepurId": "SP-G8"
+    },
+    {
+      "id": "RG-SP-LU",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "HLU",
+      "ke": "TLU",
+      "blokId": "BLK-SP-LU",
+      "panjangM": 230,
+      "sepurId": "SP-GLU"
+    },
+    {
+      "id": "RG-SP-LH",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "HLH",
+      "ke": "TLH",
+      "blokId": "BLK-SP-LH",
+      "panjangM": 230,
+      "sepurId": "SP-GLH"
+    },
+    {
+      "id": "RG-PJ-MTR-D",
+      "jenis": "PETAK_JALAN",
+      "dari": "SG-MTR-D",
+      "ke": "WG31",
+      "blokId": "BLK-PJ-MTR-D",
+      "panjangM": 110
+    },
+    {
+      "id": "RG-31-J1",
+      "jenis": "PENGHUBUNG",
+      "dari": "WG31",
+      "ke": "TG1",
+      "blokId": "BLK-31-J1",
+      "panjangM": 150
+    },
+    {
+      "id": "RG-31-J2",
+      "jenis": "PENGHUBUNG",
+      "dari": "WG31",
+      "ke": "TG2",
+      "blokId": "BLK-31-J2",
+      "panjangM": 152
+    },
+    {
+      "id": "RG-PJ-MTR-K",
+      "jenis": "PETAK_JALAN",
+      "dari": "SG-MTR-K",
+      "ke": "WG32",
+      "blokId": "BLK-PJ-MTR-K",
+      "panjangM": 110
+    },
+    {
+      "id": "RG-32-J4",
+      "jenis": "PENGHUBUNG",
+      "dari": "WG32",
+      "ke": "TG4",
+      "blokId": "BLK-32-J4",
+      "panjangM": 150
+    },
+    {
+      "id": "RG-32-J3",
+      "jenis": "PENGHUBUNG",
+      "dari": "WG32",
+      "ke": "TG3",
+      "blokId": "BLK-32-J3",
+      "panjangM": 152
+    },
+    {
+      "id": "RG-PJ-JJ-TMR-D",
+      "jenis": "PETAK_JALAN",
+      "dari": "SG-JJ-TMR-D",
+      "ke": "WG21",
+      "blokId": "BLK-PJ-JJ-TMR-D",
+      "panjangM": 110
+    },
+    {
+      "id": "RG-21-LU",
+      "jenis": "PENGHUBUNG",
+      "dari": "WG21",
+      "ke": "TLU",
+      "blokId": "BLK-21-LU",
+      "panjangM": 150
+    },
+    {
+      "id": "RG-21-J5",
+      "jenis": "PENGHUBUNG",
+      "dari": "WG21",
+      "ke": "TG5",
+      "blokId": "BLK-21-J5",
+      "panjangM": 152
+    },
+    {
+      "id": "RG-PJ-JJ-TMR-K",
+      "jenis": "PETAK_JALAN",
+      "dari": "SG-JJ-TMR-K",
+      "ke": "WG23",
+      "blokId": "BLK-PJ-JJ-TMR-K",
+      "panjangM": 110
+    },
+    {
+      "id": "RG-23-LH",
+      "jenis": "PENGHUBUNG",
+      "dari": "WG23",
+      "ke": "TLH",
+      "blokId": "BLK-23-LH",
+      "panjangM": 150
+    },
+    {
+      "id": "RG-23-J6",
+      "jenis": "PENGHUBUNG",
+      "dari": "WG23",
+      "ke": "TG6",
+      "blokId": "BLK-23-J6",
+      "panjangM": 152
+    },
+    {
+      "id": "RL-PJ-CKI-K",
+      "jenis": "PETAK_JALAN",
+      "dari": "SL-CKI-K",
+      "ke": "WL101",
+      "blokId": "BLK-PJ-CKI-K",
+      "panjangM": 100
+    },
+    {
+      "id": "RL-101-J9",
+      "jenis": "PENGHUBUNG",
+      "dari": "WL101",
+      "ke": "HL9",
+      "blokId": "BLK-101-J9",
+      "panjangM": 160
+    },
+    {
+      "id": "RL-101-J10",
+      "jenis": "PENGHUBUNG",
+      "dari": "WL101",
+      "ke": "HL10",
+      "blokId": "BLK-101-J10",
+      "panjangM": 162
+    },
+    {
+      "id": "RL-PJ-CKI-D",
+      "jenis": "PETAK_JALAN",
+      "dari": "SL-CKI-D",
+      "ke": "WL102",
+      "blokId": "BLK-PJ-CKI-D",
+      "panjangM": 100
+    },
+    {
+      "id": "RL-102-J12",
+      "jenis": "PENGHUBUNG",
+      "dari": "WL102",
+      "ke": "HL12",
+      "blokId": "BLK-102-J12",
+      "panjangM": 160
+    },
+    {
+      "id": "RL-102-J11",
+      "jenis": "PENGHUBUNG",
+      "dari": "WL102",
+      "ke": "HL11",
+      "blokId": "BLK-102-J11",
+      "panjangM": 162
+    },
+    {
+      "id": "RL-SP-J9",
+      "jenis": "SEPUR_PERON",
+      "dari": "HL9",
+      "ke": "TL9",
+      "blokId": "BLK-SP-J9",
+      "panjangM": 230,
+      "sepurId": "SP-L9"
+    },
+    {
+      "id": "RL-SP-J10",
+      "jenis": "SEPUR_PERON",
+      "dari": "HL10",
+      "ke": "TL10",
+      "blokId": "BLK-SP-J10",
+      "panjangM": 230,
+      "sepurId": "SP-L10"
+    },
+    {
+      "id": "RL-SP-J11",
+      "jenis": "SEPUR_PERON",
+      "dari": "HL11",
+      "ke": "TL11",
+      "blokId": "BLK-SP-J11",
+      "panjangM": 230,
+      "sepurId": "SP-L11"
+    },
+    {
+      "id": "RL-SP-J12",
+      "jenis": "SEPUR_PERON",
+      "dari": "HL12",
+      "ke": "TL12",
+      "blokId": "BLK-SP-J12",
+      "panjangM": 230,
+      "sepurId": "SP-L12"
+    },
+    {
+      "id": "RL-PJ-TBT-D",
+      "jenis": "PETAK_JALAN",
+      "dari": "SL-TBT-D",
+      "ke": "WL121",
+      "blokId": "BLK-PJ-TBT-D",
+      "panjangM": 110
+    },
+    {
+      "id": "RL-121-J9",
+      "jenis": "PENGHUBUNG",
+      "dari": "WL121",
+      "ke": "TL9",
+      "blokId": "BLK-121-J9",
+      "panjangM": 150
+    },
+    {
+      "id": "RL-121-J10",
+      "jenis": "PENGHUBUNG",
+      "dari": "WL121",
+      "ke": "TL10",
+      "blokId": "BLK-121-J10",
+      "panjangM": 152
+    },
+    {
+      "id": "RL-PJ-TBT-K",
+      "jenis": "PETAK_JALAN",
+      "dari": "SL-TBT-K",
+      "ke": "WL122",
+      "blokId": "BLK-PJ-TBT-K",
+      "panjangM": 110
+    },
+    {
+      "id": "RL-122-J12",
+      "jenis": "PENGHUBUNG",
+      "dari": "WL122",
+      "ke": "TL12",
+      "blokId": "BLK-122-J12",
+      "panjangM": 150
+    },
+    {
+      "id": "RL-122-J11",
+      "jenis": "PENGHUBUNG",
+      "dari": "WL122",
+      "ke": "TL11",
+      "blokId": "BLK-122-J11",
+      "panjangM": 152
+    }
+  ],
+  "wesel": [
+    {
+      "id": "W-11",
+      "nomor": "11",
+      "level": "DASAR",
+      "simpulId": "WG11",
+      "ruasPangkal": "RG-PJ-SUD-K",
+      "ruasLurus": "RG-11-J1",
+      "ruasBelok": "RG-11-J2",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-12",
+      "nomor": "12",
+      "level": "DASAR",
+      "simpulId": "WG12",
+      "ruasPangkal": "RG-PJ-SUD-D",
+      "ruasLurus": "RG-12-J4",
+      "ruasBelok": "RG-12-J3",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-20",
+      "nomor": "20",
+      "level": "DASAR",
+      "simpulId": "WG20",
+      "ruasPangkal": "RG-PJ-JJ-BRT-K",
+      "ruasLurus": "RG-20-LU",
+      "ruasBelok": "RG-20-J5",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-19",
+      "nomor": "19",
+      "level": "DASAR",
+      "simpulId": "WG19",
+      "ruasPangkal": "RG-19-22",
+      "ruasLurus": "RG-PJ-JJ-BRT-D",
+      "ruasBelok": "RG-PJ-BY",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-22",
+      "nomor": "22",
+      "level": "DASAR",
+      "simpulId": "WG22",
+      "ruasPangkal": "RG-19-22",
+      "ruasLurus": "RG-22-LH",
+      "ruasBelok": "RG-22-J6",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-15",
+      "nomor": "15",
+      "level": "DASAR",
+      "simpulId": "WG15",
+      "ruasPangkal": "RG-PJ-BNI",
+      "ruasLurus": "RG-15-J8",
+      "ruasBelok": "RG-15-J7",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-31",
+      "nomor": "31",
+      "level": "DASAR",
+      "simpulId": "WG31",
+      "ruasPangkal": "RG-PJ-MTR-D",
+      "ruasLurus": "RG-31-J1",
+      "ruasBelok": "RG-31-J2",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-32",
+      "nomor": "32",
+      "level": "DASAR",
+      "simpulId": "WG32",
+      "ruasPangkal": "RG-PJ-MTR-K",
+      "ruasLurus": "RG-32-J4",
+      "ruasBelok": "RG-32-J3",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-21",
+      "nomor": "21",
+      "level": "DASAR",
+      "simpulId": "WG21",
+      "ruasPangkal": "RG-PJ-JJ-TMR-D",
+      "ruasLurus": "RG-21-LU",
+      "ruasBelok": "RG-21-J5",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-23",
+      "nomor": "23",
+      "level": "DASAR",
+      "simpulId": "WG23",
+      "ruasPangkal": "RG-PJ-JJ-TMR-K",
+      "ruasLurus": "RG-23-LH",
+      "ruasBelok": "RG-23-J6",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-101",
+      "nomor": "101",
+      "level": "LAYANG",
+      "simpulId": "WL101",
+      "ruasPangkal": "RL-PJ-CKI-K",
+      "ruasLurus": "RL-101-J9",
+      "ruasBelok": "RL-101-J10",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-102",
+      "nomor": "102",
+      "level": "LAYANG",
+      "simpulId": "WL102",
+      "ruasPangkal": "RL-PJ-CKI-D",
+      "ruasLurus": "RL-102-J12",
+      "ruasBelok": "RL-102-J11",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-121",
+      "nomor": "121",
+      "level": "LAYANG",
+      "simpulId": "WL121",
+      "ruasPangkal": "RL-PJ-TBT-D",
+      "ruasLurus": "RL-121-J9",
+      "ruasBelok": "RL-121-J10",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-122",
+      "nomor": "122",
+      "level": "LAYANG",
+      "simpulId": "WL122",
+      "ruasPangkal": "RL-PJ-TBT-K",
+      "ruasLurus": "RL-122-J12",
+      "ruasBelok": "RL-122-J11",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    }
+  ],
+  "sinyal": [
+    {
+      "id": "SIG-C",
+      "nama": "C",
+      "jenis": "MASUK",
+      "level": "DASAR",
+      "simpulId": "SG-SUD-D",
+      "ruasDilindungi": "RG-PJ-SUD-D",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 40
+    },
+    {
+      "id": "SIG-D",
+      "nama": "D",
+      "jenis": "MASUK",
+      "level": "DASAR",
+      "simpulId": "SG-MTR-D",
+      "ruasDilindungi": "RG-PJ-MTR-D",
+      "hadap": -1,
+      "offsetY": -18,
+      "offsetX": -40
+    },
+    {
+      "id": "SIG-E",
+      "nama": "E",
+      "jenis": "MASUK",
+      "level": "DASAR",
+      "simpulId": "SG-BNI",
+      "ruasDilindungi": "RG-PJ-BNI",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 40
+    },
+    {
+      "id": "SIG-F",
+      "nama": "F",
+      "jenis": "MASUK",
+      "level": "DASAR",
+      "simpulId": "SG-BY",
+      "ruasDilindungi": "RG-PJ-BY",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 40
+    },
+    {
+      "id": "SIG-G",
+      "nama": "G",
+      "jenis": "MASUK",
+      "level": "DASAR",
+      "simpulId": "SG-JJ-BRT-D",
+      "ruasDilindungi": "RG-PJ-JJ-BRT-D",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 40
+    },
+    {
+      "id": "SIG-H",
+      "nama": "H",
+      "jenis": "MASUK",
+      "level": "DASAR",
+      "simpulId": "SG-JJ-TMR-D",
+      "ruasDilindungi": "RG-PJ-JJ-TMR-D",
+      "hadap": -1,
+      "offsetY": -18,
+      "offsetX": -40
+    },
+    {
+      "id": "SIG-A",
+      "nama": "A",
+      "jenis": "MASUK",
+      "level": "LAYANG",
+      "simpulId": "SL-CKI-D",
+      "ruasDilindungi": "RL-PJ-CKI-D",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 40
+    },
+    {
+      "id": "SIG-B",
+      "nama": "B",
+      "jenis": "MASUK",
+      "level": "LAYANG",
+      "simpulId": "SL-TBT-D",
+      "ruasDilindungi": "RL-PJ-TBT-D",
+      "hadap": -1,
+      "offsetY": -18,
+      "offsetX": -40
+    },
+    {
+      "id": "SIG-J1B",
+      "nama": "J1B",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "HG1",
+      "ruasDilindungi": "RG-11-J1",
+      "hadap": -1,
+      "offsetY": -18,
+      "offsetX": -22
+    },
+    {
+      "id": "SIG-J2B",
+      "nama": "J2B",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "HG2",
+      "ruasDilindungi": "RG-11-J2",
+      "hadap": -1,
+      "offsetY": -18,
+      "offsetX": -22
+    },
+    {
+      "id": "SIG-J3B",
+      "nama": "J3B",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "HG3",
+      "ruasDilindungi": "RG-12-J3",
+      "hadap": -1,
+      "offsetY": -18,
+      "offsetX": -22
+    },
+    {
+      "id": "SIG-J4B",
+      "nama": "J4B",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "HG4",
+      "ruasDilindungi": "RG-12-J4",
+      "hadap": -1,
+      "offsetY": -18,
+      "offsetX": -22
+    },
+    {
+      "id": "SIG-J5B",
+      "nama": "J5B",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "HG5",
+      "ruasDilindungi": "RG-20-J5",
+      "hadap": -1,
+      "offsetY": -18,
+      "offsetX": -22
+    },
+    {
+      "id": "SIG-J6B",
+      "nama": "J6B",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "HG6",
+      "ruasDilindungi": "RG-22-J6",
+      "hadap": -1,
+      "offsetY": -18,
+      "offsetX": -22
+    },
+    {
+      "id": "SIG-J7B",
+      "nama": "J7B",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "HG7",
+      "ruasDilindungi": "RG-15-J7",
+      "hadap": -1,
+      "offsetY": -18,
+      "offsetX": -22
+    },
+    {
+      "id": "SIG-J8B",
+      "nama": "J8B",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "HG8",
+      "ruasDilindungi": "RG-15-J8",
+      "hadap": -1,
+      "offsetY": -18,
+      "offsetX": -22
+    },
+    {
+      "id": "SIG-LUB",
+      "nama": "LUB",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "HLU",
+      "ruasDilindungi": "RG-20-LU",
+      "hadap": -1,
+      "offsetY": -18,
+      "offsetX": -22
+    },
+    {
+      "id": "SIG-LHB",
+      "nama": "LHB",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "HLH",
+      "ruasDilindungi": "RG-22-LH",
+      "hadap": -1,
+      "offsetY": -18,
+      "offsetX": -22
+    },
+    {
+      "id": "SIG-J1T",
+      "nama": "J1T",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "TG1",
+      "ruasDilindungi": "RG-31-J1",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 22
+    },
+    {
+      "id": "SIG-J2T",
+      "nama": "J2T",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "TG2",
+      "ruasDilindungi": "RG-31-J2",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 22
+    },
+    {
+      "id": "SIG-J3T",
+      "nama": "J3T",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "TG3",
+      "ruasDilindungi": "RG-32-J3",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 22
+    },
+    {
+      "id": "SIG-J4T",
+      "nama": "J4T",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "TG4",
+      "ruasDilindungi": "RG-32-J4",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 22
+    },
+    {
+      "id": "SIG-J5T",
+      "nama": "J5T",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "TG5",
+      "ruasDilindungi": "RG-21-J5",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 22
+    },
+    {
+      "id": "SIG-J6T",
+      "nama": "J6T",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "TG6",
+      "ruasDilindungi": "RG-23-J6",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 22
+    },
+    {
+      "id": "SIG-LUT",
+      "nama": "LUT",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "TLU",
+      "ruasDilindungi": "RG-21-LU",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 22
+    },
+    {
+      "id": "SIG-LHT",
+      "nama": "LHT",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "TLH",
+      "ruasDilindungi": "RG-23-LH",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 22
+    },
+    {
+      "id": "SIG-J9U",
+      "nama": "J9U",
+      "jenis": "KELUAR",
+      "level": "LAYANG",
+      "simpulId": "HL9",
+      "ruasDilindungi": "RL-101-J9",
+      "hadap": -1,
+      "offsetY": -18,
+      "offsetX": -22
+    },
+    {
+      "id": "SIG-J10U",
+      "nama": "J10U",
+      "jenis": "KELUAR",
+      "level": "LAYANG",
+      "simpulId": "HL10",
+      "ruasDilindungi": "RL-101-J10",
+      "hadap": -1,
+      "offsetY": -18,
+      "offsetX": -22
+    },
+    {
+      "id": "SIG-J11U",
+      "nama": "J11U",
+      "jenis": "KELUAR",
+      "level": "LAYANG",
+      "simpulId": "HL11",
+      "ruasDilindungi": "RL-102-J11",
+      "hadap": -1,
+      "offsetY": -18,
+      "offsetX": -22
+    },
+    {
+      "id": "SIG-J12U",
+      "nama": "J12U",
+      "jenis": "KELUAR",
+      "level": "LAYANG",
+      "simpulId": "HL12",
+      "ruasDilindungi": "RL-102-J12",
+      "hadap": -1,
+      "offsetY": -18,
+      "offsetX": -22
+    },
+    {
+      "id": "SIG-J9S",
+      "nama": "J9S",
+      "jenis": "KELUAR",
+      "level": "LAYANG",
+      "simpulId": "TL9",
+      "ruasDilindungi": "RL-121-J9",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 22
+    },
+    {
+      "id": "SIG-J10S",
+      "nama": "J10S",
+      "jenis": "KELUAR",
+      "level": "LAYANG",
+      "simpulId": "TL10",
+      "ruasDilindungi": "RL-121-J10",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 22
+    },
+    {
+      "id": "SIG-J11S",
+      "nama": "J11S",
+      "jenis": "KELUAR",
+      "level": "LAYANG",
+      "simpulId": "TL11",
+      "ruasDilindungi": "RL-122-J11",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 22
+    },
+    {
+      "id": "SIG-J12S",
+      "nama": "J12S",
+      "jenis": "KELUAR",
+      "level": "LAYANG",
+      "simpulId": "TL12",
+      "ruasDilindungi": "RL-122-J12",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 22
+    }
+  ],
+  "blok": [
+    {
+      "id": "BLK-PJ-SUD-K",
+      "nama": "PJ Sudirman (keluar)",
+      "level": "DASAR",
+      "wilayah": "PETAK_JALAN"
+    },
+    {
+      "id": "BLK-11-J1",
+      "nama": "11-J1",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-11-J2",
+      "nama": "11-J2",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-PJ-SUD-D",
+      "nama": "PJ Sudirman (masuk)",
+      "level": "DASAR",
+      "wilayah": "PETAK_JALAN"
+    },
+    {
+      "id": "BLK-12-J4",
+      "nama": "12-J4",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-12-J3",
+      "nama": "12-J3",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-PJ-JJ-BRT-K",
+      "nama": "PJ Gambir (keluar)",
+      "level": "DASAR",
+      "wilayah": "PETAK_JALAN"
+    },
+    {
+      "id": "BLK-20-LU",
+      "nama": "20-LU",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-20-J5",
+      "nama": "20-J5",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-PJ-JJ-BRT-D",
+      "nama": "PJ Gambir (masuk)",
+      "level": "DASAR",
+      "wilayah": "PETAK_JALAN"
+    },
+    {
+      "id": "BLK-PJ-BY",
+      "nama": "Akses Balai Yasa",
+      "level": "DASAR",
+      "wilayah": "PETAK_JALAN"
+    },
+    {
+      "id": "BLK-19-22",
+      "nama": "19-22",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-22-LH",
+      "nama": "22-LH",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-22-J6",
+      "nama": "22-J6",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-PJ-BNI",
+      "nama": "PJ BNI City",
+      "level": "DASAR",
+      "wilayah": "PETAK_JALAN"
+    },
+    {
+      "id": "BLK-15-J8",
+      "nama": "15-J8",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-15-J7",
+      "nama": "15-J7",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-SP-J1",
+      "nama": "Jalur 1",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-SP-J2",
+      "nama": "Jalur 2",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-SP-J3",
+      "nama": "Jalur 3",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-SP-J4",
+      "nama": "Jalur 4",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-SP-J5",
+      "nama": "Jalur 5",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-SP-J6",
+      "nama": "Jalur 6",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-SP-J7",
+      "nama": "Jalur 7",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-SP-J8",
+      "nama": "Jalur 8",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-SP-LU",
+      "nama": "Sepur lintas hulu",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-SP-LH",
+      "nama": "Sepur lintas hilir",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-PJ-MTR-D",
+      "nama": "PJ Matraman (masuk)",
+      "level": "DASAR",
+      "wilayah": "PETAK_JALAN"
+    },
+    {
+      "id": "BLK-31-J1",
+      "nama": "31-J1",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-31-J2",
+      "nama": "31-J2",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-PJ-MTR-K",
+      "nama": "PJ Matraman (keluar)",
+      "level": "DASAR",
+      "wilayah": "PETAK_JALAN"
+    },
+    {
+      "id": "BLK-32-J4",
+      "nama": "32-J4",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-32-J3",
+      "nama": "32-J3",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-PJ-JJ-TMR-D",
+      "nama": "PJ Jatinegara (masuk)",
+      "level": "DASAR",
+      "wilayah": "PETAK_JALAN"
+    },
+    {
+      "id": "BLK-21-LU",
+      "nama": "21-LU",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-21-J5",
+      "nama": "21-J5",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-PJ-JJ-TMR-K",
+      "nama": "PJ Jatinegara (keluar)",
+      "level": "DASAR",
+      "wilayah": "PETAK_JALAN"
+    },
+    {
+      "id": "BLK-23-LH",
+      "nama": "23-LH",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-23-J6",
+      "nama": "23-J6",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-PJ-CKI-K",
+      "nama": "PJ Cikini (keluar)",
+      "level": "LAYANG",
+      "wilayah": "PETAK_JALAN"
+    },
+    {
+      "id": "BLK-101-J9",
+      "nama": "101-J9",
+      "level": "LAYANG",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-101-J10",
+      "nama": "101-J10",
+      "level": "LAYANG",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-PJ-CKI-D",
+      "nama": "PJ Cikini (masuk)",
+      "level": "LAYANG",
+      "wilayah": "PETAK_JALAN"
+    },
+    {
+      "id": "BLK-102-J12",
+      "nama": "102-J12",
+      "level": "LAYANG",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-102-J11",
+      "nama": "102-J11",
+      "level": "LAYANG",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-SP-J9",
+      "nama": "Jalur 9",
+      "level": "LAYANG",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-SP-J10",
+      "nama": "Jalur 10",
+      "level": "LAYANG",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-SP-J11",
+      "nama": "Jalur 11",
+      "level": "LAYANG",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-SP-J12",
+      "nama": "Jalur 12",
+      "level": "LAYANG",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-PJ-TBT-D",
+      "nama": "PJ Tebet (masuk)",
+      "level": "LAYANG",
+      "wilayah": "PETAK_JALAN"
+    },
+    {
+      "id": "BLK-121-J9",
+      "nama": "121-J9",
+      "level": "LAYANG",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-121-J10",
+      "nama": "121-J10",
+      "level": "LAYANG",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-PJ-TBT-K",
+      "nama": "PJ Tebet (keluar)",
+      "level": "LAYANG",
+      "wilayah": "PETAK_JALAN"
+    },
+    {
+      "id": "BLK-122-J12",
+      "nama": "122-J12",
+      "level": "LAYANG",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-122-J11",
+      "nama": "122-J11",
+      "level": "LAYANG",
+      "wilayah": "EMPLASEMEN"
+    }
+  ],
+  "sepur": [
+    {
+      "id": "SP-GLU",
+      "nomor": "LU",
+      "label": "Sepur lintas hulu",
+      "level": "DASAR",
+      "jenis": "RAYA",
+      "peronId": null,
+      "panjangPeronM": 0,
+      "linDilayani": [
+        "KAJJ"
+      ],
+      "ruasId": "RG-SP-LU",
+      "keterangan": "Sepur lintas KA jarak jauh arah Gambir. Tidak berperon: KA jarak jauh berjalan langsung di Manggarai."
+    },
+    {
+      "id": "SP-GLH",
+      "nomor": "LH",
+      "label": "Sepur lintas hilir",
+      "level": "DASAR",
+      "jenis": "RAYA",
+      "peronId": null,
+      "panjangPeronM": 0,
+      "linDilayani": [
+        "KAJJ"
+      ],
+      "ruasId": "RG-SP-LH",
+      "keterangan": "Sepur lintas KA jarak jauh arah Jatinegara. Tidak berperon: KA jarak jauh berjalan langsung di Manggarai."
+    },
+    {
+      "id": "SP-G1",
+      "nomor": "1",
+      "label": "Jalur 1",
+      "level": "DASAR",
+      "jenis": "BELOK",
+      "peronId": "PER-G12",
+      "panjangPeronM": 250,
+      "linDilayani": [
+        "LIN_CIKARANG"
+      ],
+      "ruasId": "RG-SP-J1",
+      "keterangan": "Lin Cikarang dan feeder dari/tujuan Angke atau Kampung Bandan, arah Sudirman."
+    },
+    {
+      "id": "SP-G2",
+      "nomor": "2",
+      "label": "Jalur 2",
+      "level": "DASAR",
+      "jenis": "RAYA",
+      "peronId": "PER-G12",
+      "panjangPeronM": 250,
+      "linDilayani": [
+        "LIN_CIKARANG"
+      ],
+      "ruasId": "RG-SP-J2",
+      "keterangan": "Sepur lurus arah Tanah Abang; melayani tujuan Angke/Kampung Bandan via Angke."
+    },
+    {
+      "id": "SP-G3",
+      "nomor": "3",
+      "label": "Jalur 3",
+      "level": "DASAR",
+      "jenis": "RAYA",
+      "peronId": "PER-G34",
+      "panjangPeronM": 250,
+      "linDilayani": [
+        "LIN_CIKARANG"
+      ],
+      "ruasId": "RG-SP-J3",
+      "keterangan": "Sepur lurus arah Jatinegara; melayani tujuan Bekasi/Cikarang arah Matraman."
+    },
+    {
+      "id": "SP-G4",
+      "nomor": "4",
+      "label": "Jalur 4",
+      "level": "DASAR",
+      "jenis": "BELOK",
+      "peronId": "PER-G34",
+      "panjangPeronM": 250,
+      "linDilayani": [
+        "LIN_CIKARANG"
+      ],
+      "ruasId": "RG-SP-J4",
+      "keterangan": "Lin Cikarang tujuan Bekasi/Cikarang, arah Matraman."
+    },
+    {
+      "id": "SP-G5",
+      "nomor": "5",
+      "label": "Jalur 5",
+      "level": "DASAR",
+      "jenis": "SIMPAN",
+      "peronId": null,
+      "panjangPeronM": 0,
+      "linDilayani": [
+        "KLB",
+        "KAJJ"
+      ],
+      "ruasId": "RG-SP-J5",
+      "keterangan": "KA barang dan KLB kirim rangkaian. Peron pulau di antara jalur 5-6 berstatus inaktif."
+    },
+    {
+      "id": "SP-G6",
+      "nomor": "6",
+      "label": "Jalur 6",
+      "level": "DASAR",
+      "jenis": "SIMPAN",
+      "peronId": null,
+      "panjangPeronM": 0,
+      "linDilayani": [
+        "KLB",
+        "KAJJ"
+      ],
+      "ruasId": "RG-SP-J6",
+      "keterangan": "KA barang dan KLB kirim rangkaian. Tidak melayani naik-turun penumpang."
+    },
+    {
+      "id": "SP-G7",
+      "nomor": "7",
+      "label": "Jalur 7",
+      "level": "DASAR",
+      "jenis": "BADUG",
+      "peronId": "PER-G78",
+      "panjangPeronM": 250,
+      "linDilayani": [
+        "BANDARA"
+      ],
+      "ruasId": "RG-SP-J7",
+      "keterangan": "Commuter Line Basoetta dari/tujuan Bandara Soekarno-Hatta, arah BNI City."
+    },
+    {
+      "id": "SP-G8",
+      "nomor": "8",
+      "label": "Jalur 8",
+      "level": "DASAR",
+      "jenis": "BADUG",
+      "peronId": "PER-G78",
+      "panjangPeronM": 250,
+      "linDilayani": [
+        "BANDARA"
+      ],
+      "ruasId": "RG-SP-J8",
+      "keterangan": "Commuter Line Basoetta; dilengkapi peron sisi khusus KA bandara."
+    },
+    {
+      "id": "SP-L9",
+      "nomor": "9",
+      "label": "Jalur 9",
+      "level": "LAYANG",
+      "jenis": "BELOK",
+      "peronId": "PER-L910",
+      "panjangPeronM": 250,
+      "linDilayani": [
+        "LIN_BOGOR"
+      ],
+      "ruasId": "RL-SP-J9",
+      "keterangan": "Lin Bogor dan feeder dari/tujuan Jakarta Kota, arah Cikini."
+    },
+    {
+      "id": "SP-L10",
+      "nomor": "10",
+      "label": "Jalur 10",
+      "level": "LAYANG",
+      "jenis": "RAYA",
+      "peronId": "PER-L910",
+      "panjangPeronM": 250,
+      "linDilayani": [
+        "LIN_BOGOR"
+      ],
+      "ruasId": "RL-SP-J10",
+      "keterangan": "Sepur lurus arah Jakarta Kota; melayani Lin Bogor tujuan Jakarta Kota."
+    },
+    {
+      "id": "SP-L11",
+      "nomor": "11",
+      "label": "Jalur 11",
+      "level": "LAYANG",
+      "jenis": "RAYA",
+      "peronId": "PER-L1112",
+      "panjangPeronM": 250,
+      "linDilayani": [
+        "LIN_BOGOR"
+      ],
+      "ruasId": "RL-SP-J11",
+      "keterangan": "Lin Bogor tujuan Bogor/Nambo arah Tebet; sekaligus sepur lurus arah Bogor."
+    },
+    {
+      "id": "SP-L12",
+      "nomor": "12",
+      "label": "Jalur 12",
+      "level": "LAYANG",
+      "jenis": "BELOK",
+      "peronId": "PER-L1112",
+      "panjangPeronM": 250,
+      "linDilayani": [
+        "LIN_BOGOR"
+      ],
+      "ruasId": "RL-SP-J12",
+      "keterangan": "Lin Bogor dan feeder dari/tujuan Bogor/Nambo, arah Tebet."
+    }
+  ],
+  "peron": [
+    {
+      "id": "PER-G12",
+      "nomor": "1-2",
+      "nama": "Peron pulau jalur 1-2",
+      "level": "DASAR",
+      "jenis": "PULAU",
+      "sepurIds": [
+        "SP-G1",
+        "SP-G2"
+      ],
+      "geometri": {
+        "x": 634,
+        "y": 61,
+        "lebar": 432,
+        "tinggi": 18
+      }
+    },
+    {
+      "id": "PER-G34",
+      "nomor": "3-4",
+      "nama": "Peron pulau jalur 3-4",
+      "level": "DASAR",
+      "jenis": "PULAU",
+      "sepurIds": [
+        "SP-G3",
+        "SP-G4"
+      ],
+      "geometri": {
+        "x": 634,
+        "y": 177,
+        "lebar": 432,
+        "tinggi": 18
+      }
+    },
+    {
+      "id": "PER-G56",
+      "nomor": "5-6",
+      "nama": "Peron pulau jalur 5-6 (inaktif)",
+      "level": "DASAR",
+      "jenis": "PULAU",
+      "sepurIds": [],
+      "geometri": {
+        "x": 634,
+        "y": 351,
+        "lebar": 432,
+        "tinggi": 18
+      }
+    },
+    {
+      "id": "PER-G78",
+      "nomor": "7-8",
+      "nama": "Peron pulau jalur 7-8",
+      "level": "DASAR",
+      "jenis": "PULAU",
+      "sepurIds": [
+        "SP-G7",
+        "SP-G8"
+      ],
+      "geometri": {
+        "x": 634,
+        "y": 517,
+        "lebar": 432,
+        "tinggi": 18
+      }
+    },
+    {
+      "id": "PER-L910",
+      "nomor": "9-10",
+      "nama": "Peron pulau jalur 9-10",
+      "level": "LAYANG",
+      "jenis": "PULAU",
+      "sepurIds": [
+        "SP-L9",
+        "SP-L10"
+      ],
+      "geometri": {
+        "x": 634,
+        "y": 61,
+        "lebar": 432,
+        "tinggi": 18
+      }
+    },
+    {
+      "id": "PER-L1112",
+      "nomor": "11-12",
+      "nama": "Peron pulau jalur 11-12",
+      "level": "LAYANG",
+      "jenis": "PULAU",
+      "sepurIds": [
+        "SP-L11",
+        "SP-L12"
+      ],
+      "geometri": {
+        "x": 634,
+        "y": 177,
+        "lebar": 432,
+        "tinggi": 18
+      }
+    },
+    {
+      "id": "PER-G8S",
+      "nomor": "8",
+      "nama": "Peron sisi jalur 8 (khusus KA bandara)",
+      "level": "DASAR",
+      "jenis": "SISI",
+      "sepurIds": [
+        "SP-G8"
+      ],
+      "geometri": {
+        "x": 634,
+        "y": 578,
+        "lebar": 432,
+        "tinggi": 14
+      }
+    }
+  ],
+  "batas": [
+    {
+      "id": "BTS-JJ-BRT-D",
+      "nama": "Arah Gambir (masuk)",
+      "singkatan": "GMR",
+      "level": "DASAR",
+      "simpulId": "SG-JJ-BRT-D",
+      "sisi": "KIRI",
+      "stasiunTetangga": "Cikini - Gambir",
+      "linDilayani": [
+        "KAJJ"
+      ],
+      "headwayMinimumDetik": 300
+    },
+    {
+      "id": "BTS-JJ-BRT-K",
+      "nama": "Arah Gambir (keluar)",
+      "singkatan": "GMR",
+      "level": "DASAR",
+      "simpulId": "SG-JJ-BRT-K",
+      "sisi": "KIRI",
+      "stasiunTetangga": "Cikini - Gambir",
+      "linDilayani": [
+        "KAJJ"
+      ],
+      "headwayMinimumDetik": 300
+    },
+    {
+      "id": "BTS-JJ-TMR-D",
+      "nama": "Arah Jatinegara (masuk)",
+      "singkatan": "JNG",
+      "level": "DASAR",
+      "simpulId": "SG-JJ-TMR-D",
+      "sisi": "KANAN",
+      "stasiunTetangga": "Jatinegara",
+      "linDilayani": [
+        "KAJJ"
+      ],
+      "headwayMinimumDetik": 300
+    },
+    {
+      "id": "BTS-JJ-TMR-K",
+      "nama": "Arah Jatinegara (keluar)",
+      "singkatan": "JNG",
+      "level": "DASAR",
+      "simpulId": "SG-JJ-TMR-K",
+      "sisi": "KANAN",
+      "stasiunTetangga": "Jatinegara",
+      "linDilayani": [
+        "KAJJ",
+        "KLB"
+      ],
+      "headwayMinimumDetik": 300
+    },
+    {
+      "id": "BTS-SUD-D",
+      "nama": "Arah Sudirman (masuk)",
+      "singkatan": "SUD",
+      "level": "DASAR",
+      "simpulId": "SG-SUD-D",
+      "sisi": "KIRI",
+      "stasiunTetangga": "Sudirman",
+      "linDilayani": [
+        "LIN_CIKARANG"
+      ],
+      "headwayMinimumDetik": 180
+    },
+    {
+      "id": "BTS-SUD-K",
+      "nama": "Arah Sudirman (keluar)",
+      "singkatan": "SUD",
+      "level": "DASAR",
+      "simpulId": "SG-SUD-K",
+      "sisi": "KIRI",
+      "stasiunTetangga": "Sudirman",
+      "linDilayani": [
+        "LIN_CIKARANG"
+      ],
+      "headwayMinimumDetik": 180
+    },
+    {
+      "id": "BTS-BNI",
+      "nama": "Arah BNI City",
+      "singkatan": "BNI",
+      "level": "DASAR",
+      "simpulId": "SG-BNI",
+      "sisi": "KIRI",
+      "stasiunTetangga": "BNI City",
+      "linDilayani": [
+        "BANDARA"
+      ],
+      "headwayMinimumDetik": 300
+    },
+    {
+      "id": "BTS-MTR-D",
+      "nama": "Arah Matraman (masuk)",
+      "singkatan": "MTR",
+      "level": "DASAR",
+      "simpulId": "SG-MTR-D",
+      "sisi": "KANAN",
+      "stasiunTetangga": "Matraman",
+      "linDilayani": [
+        "LIN_CIKARANG"
+      ],
+      "headwayMinimumDetik": 180
+    },
+    {
+      "id": "BTS-MTR-K",
+      "nama": "Arah Matraman (keluar)",
+      "singkatan": "MTR",
+      "level": "DASAR",
+      "simpulId": "SG-MTR-K",
+      "sisi": "KANAN",
+      "stasiunTetangga": "Matraman",
+      "linDilayani": [
+        "LIN_CIKARANG",
+        "KLB"
+      ],
+      "headwayMinimumDetik": 180
+    },
+    {
+      "id": "BTS-BY",
+      "nama": "Balai Yasa Manggarai",
+      "singkatan": "BY",
+      "level": "DASAR",
+      "simpulId": "SG-BY",
+      "sisi": "KIRI",
+      "stasiunTetangga": "Balai Yasa Manggarai",
+      "linDilayani": [
+        "KLB",
+        "LANGSIR"
+      ],
+      "headwayMinimumDetik": 300
+    },
+    {
+      "id": "BTS-CKI-D",
+      "nama": "Arah Cikini (masuk)",
+      "singkatan": "CKI",
+      "level": "LAYANG",
+      "simpulId": "SL-CKI-D",
+      "sisi": "KIRI",
+      "stasiunTetangga": "Cikini",
+      "linDilayani": [
+        "LIN_BOGOR"
+      ],
+      "headwayMinimumDetik": 180
+    },
+    {
+      "id": "BTS-CKI-K",
+      "nama": "Arah Cikini (keluar)",
+      "singkatan": "CKI",
+      "level": "LAYANG",
+      "simpulId": "SL-CKI-K",
+      "sisi": "KIRI",
+      "stasiunTetangga": "Cikini",
+      "linDilayani": [
+        "LIN_BOGOR"
+      ],
+      "headwayMinimumDetik": 180
+    },
+    {
+      "id": "BTS-TBT-D",
+      "nama": "Arah Tebet (masuk)",
+      "singkatan": "TBT",
+      "level": "LAYANG",
+      "simpulId": "SL-TBT-D",
+      "sisi": "KANAN",
+      "stasiunTetangga": "Tebet",
+      "linDilayani": [
+        "LIN_BOGOR"
+      ],
+      "headwayMinimumDetik": 180
+    },
+    {
+      "id": "BTS-TBT-K",
+      "nama": "Arah Tebet (keluar)",
+      "singkatan": "TBT",
+      "level": "LAYANG",
+      "simpulId": "SL-TBT-K",
+      "sisi": "KANAN",
+      "stasiunTetangga": "Tebet",
+      "linDilayani": [
+        "LIN_BOGOR"
+      ],
+      "headwayMinimumDetik": 180
+    }
+  ]
+}

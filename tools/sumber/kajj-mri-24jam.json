@@ -1,0 +1,789 @@
+{
+  "sumber": "GAPEKA 2025 Jawa, Lampiran II Daftar Waktu KA Antar Kota (KP-DJKA 224 Tahun 2024), PDF DJKA",
+  "stasiun": "MRI",
+  "ditarikPada": "2026-07-26",
+  "catatan": "Ditarik dari PDF GAPEKA 2025 Jawa (88.891.486 byte, 1.721 halaman) yang diunduh hari ini; keputusan ditetapkan 30 Desember 2024 dan mulai berlaku 1 Februari 2025. Dokumen revisi 18 Juni 2026 TIDAK diperoleh, jadi jam di berkas ini adalah versi dasar 1 Februari 2025 dan bisa jadi sudah tidak mutakhir per 26 Juli 2026. Cakupan hanya Lampiran II (KA antarkota, halaman PDF 62-620); KA perkotaan/lokal tidak disertakan. Seluruh 78 perjalanan adalah relasi Gambir; KA relasi Pasar Senen memang tidak melewati Manggarai. Ke-78 perjalanan berjalan LANGSUNG di Manggarai (kolom Datang seluruhnya \"Ls\"), sehingga berhentiDiMRI bernilai false pada semua entri; jamMRI diambil dari kolom Berangkat, yaitu jam melintas. Nama stasiun ditulis persis seperti ejaan di dokumen sumber (mis. \"Surabayagubeng\", \"Solobalapan\", \"Semarang Tawang\"), tidak dinormalkan. Pemeriksaan silang: 357 blok tabel yang terbaca cocok 357/357 dengan Daftar Isi Lampiran II (halaman HAL, jam berangkat awal, jam datang akhir, dan nama KA), tanpa selisih.",
+  "jumlah": 78,
+  "perjalanan": [
+    {
+      "nomorKA": "126F",
+      "nama": "Cheribon Fakultatif",
+      "asal": "Gambir",
+      "tujuan": "Cirebon",
+      "jamMRI": "00:04:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 325
+    },
+    {
+      "nomorKA": "25",
+      "nama": "Argo Merbabu",
+      "asal": "Semarang Tawang",
+      "tujuan": "Gambir",
+      "jamMRI": "00:10:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 128
+    },
+    {
+      "nomorKA": "127",
+      "nama": "Pangandaran",
+      "asal": "Banjar",
+      "tujuan": "Gambir",
+      "jamMRI": "01:00:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 328
+    },
+    {
+      "nomorKA": "57F",
+      "nama": "Purwojaya",
+      "asal": "Kroya",
+      "tujuan": "Gambir",
+      "jamMRI": "02:01:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 195
+    },
+    {
+      "nomorKA": "35",
+      "nama": "Gajayana",
+      "asal": "Malang",
+      "tujuan": "Gambir",
+      "jamMRI": "02:55:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 150
+    },
+    {
+      "nomorKA": "45",
+      "nama": "Taksaka",
+      "asal": "Yogyakarta",
+      "tujuan": "Gambir",
+      "jamMRI": "03:05:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 179
+    },
+    {
+      "nomorKA": "15",
+      "nama": "Argo Dwipangga",
+      "asal": "Solobalapan",
+      "tujuan": "Gambir",
+      "jamMRI": "03:20:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 107
+    },
+    {
+      "nomorKA": "19",
+      "nama": "Argo Sindoro",
+      "asal": "Semarang Tawang",
+      "tujuan": "Gambir",
+      "jamMRI": "03:40:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 116
+    },
+    {
+      "nomorKA": "37",
+      "nama": "Brawijaya",
+      "asal": "Malang",
+      "tujuan": "Gambir",
+      "jamMRI": "04:00:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 158
+    },
+    {
+      "nomorKA": "31",
+      "nama": "Pandalungan",
+      "asal": "Surabaya Pasarturi",
+      "tujuan": "Gambir",
+      "jamMRI": "04:20:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 146
+    },
+    {
+      "nomorKA": "41",
+      "nama": "Sembrani",
+      "asal": "Surabaya Pasarturi",
+      "tujuan": "Gambir",
+      "jamMRI": "04:35:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 169
+    },
+    {
+      "nomorKA": "3",
+      "nama": "Argo Bromo Anggrek",
+      "asal": "Surabaya Pasarturi",
+      "tujuan": "Gambir",
+      "jamMRI": "04:50:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 69
+    },
+    {
+      "nomorKA": "7",
+      "nama": "Bima",
+      "asal": "Surabayagubeng",
+      "tujuan": "Gambir",
+      "jamMRI": "05:35:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 83
+    },
+    {
+      "nomorKA": "26",
+      "nama": "Argo Merbabu",
+      "asal": "Gambir",
+      "tujuan": "Semarang Tawang",
+      "jamMRI": "06:09:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 128
+    },
+    {
+      "nomorKA": "63",
+      "nama": "Manahan",
+      "asal": "Solobalapan",
+      "tujuan": "Gambir",
+      "jamMRI": "06:24:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 203
+    },
+    {
+      "nomorKA": "6",
+      "nama": "Argo Semeru",
+      "asal": "Gambir",
+      "tujuan": "Surabayagubeng",
+      "jamMRI": "06:29:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 76
+    },
+    {
+      "nomorKA": "130",
+      "nama": "Papandayan",
+      "asal": "Gambir",
+      "tujuan": "Garut",
+      "jamMRI": "06:44:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 333
+    },
+    {
+      "nomorKA": "50F",
+      "nama": "Purwojaya",
+      "asal": "Gambir",
+      "tujuan": "Kroya",
+      "jamMRI": "07:09:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 186
+    },
+    {
+      "nomorKA": "20",
+      "nama": "Argo Muria",
+      "asal": "Gambir",
+      "tujuan": "Semarang Tawang",
+      "jamMRI": "07:24:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 118
+    },
+    {
+      "nomorKA": "132",
+      "nama": "Parahyangan",
+      "asal": "Gambir",
+      "tujuan": "Bandung",
+      "jamMRI": "07:38:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 337
+    },
+    {
+      "nomorKA": "131",
+      "nama": "Parahyangan",
+      "asal": "Bandung",
+      "tujuan": "Gambir",
+      "jamMRI": "07:51:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 336
+    },
+    {
+      "nomorKA": "46",
+      "nama": "Taksaka",
+      "asal": "Gambir",
+      "tujuan": "Yogyakarta",
+      "jamMRI": "07:54:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 179
+    },
+    {
+      "nomorKA": "117",
+      "nama": "Gunungjati",
+      "asal": "Cirebon",
+      "tujuan": "Gambir",
+      "jamMRI": "08:18:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 312
+    },
+    {
+      "nomorKA": "2",
+      "nama": "Argo Bromo Anggrek",
+      "asal": "Gambir",
+      "tujuan": "Surabaya Pasarturi",
+      "jamMRI": "08:29:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 65
+    },
+    {
+      "nomorKA": "128",
+      "nama": "Pangandaran",
+      "asal": "Gambir",
+      "tujuan": "Banjar",
+      "jamMRI": "08:39:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 328
+    },
+    {
+      "nomorKA": "16",
+      "nama": "Argo Dwipangga",
+      "asal": "Gambir",
+      "tujuan": "Solobalapan",
+      "jamMRI": "08:59:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 108
+    },
+    {
+      "nomorKA": "118",
+      "nama": "Gunungjati",
+      "asal": "Gambir",
+      "tujuan": "Semarang Tawang",
+      "jamMRI": "09:09:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 313
+    },
+    {
+      "nomorKA": "138",
+      "nama": "Parahyangan",
+      "asal": "Gambir",
+      "tujuan": "Bandung",
+      "jamMRI": "09:24:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 342
+    },
+    {
+      "nomorKA": "135",
+      "nama": "Parahyangan",
+      "asal": "Bandung",
+      "tujuan": "Gambir",
+      "jamMRI": "09:30:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 340
+    },
+    {
+      "nomorKA": "136",
+      "nama": "Parahyangan",
+      "asal": "Gambir",
+      "tujuan": "Bandung",
+      "jamMRI": "10:14:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 340
+    },
+    {
+      "nomorKA": "121",
+      "nama": "Cakrabuana",
+      "asal": "Purwokerto",
+      "tujuan": "Gambir",
+      "jamMRI": "10:15:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 319
+    },
+    {
+      "nomorKA": "40",
+      "nama": "Sembrani",
+      "asal": "Gambir",
+      "tujuan": "Surabaya Pasarturi",
+      "jamMRI": "10:29:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 165
+    },
+    {
+      "nomorKA": "62",
+      "nama": "Manahan",
+      "asal": "Gambir",
+      "tujuan": "Solobalapan",
+      "jamMRI": "10:40:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 199
+    },
+    {
+      "nomorKA": "122",
+      "nama": "Cakrabuana",
+      "asal": "Gambir",
+      "tujuan": "Cirebon",
+      "jamMRI": "10:59:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 319
+    },
+    {
+      "nomorKA": "23",
+      "nama": "Argo Merbabu",
+      "asal": "Semarang Tawang",
+      "tujuan": "Gambir",
+      "jamMRI": "11:00:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 125
+    },
+    {
+      "nomorKA": "17",
+      "nama": "Argo Sindoro",
+      "asal": "Semarang Tawang",
+      "tujuan": "Gambir",
+      "jamMRI": "12:00:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 113
+    },
+    {
+      "nomorKA": "24",
+      "nama": "Argo Merbabu",
+      "asal": "Gambir",
+      "tujuan": "Semarang Tawang",
+      "jamMRI": "12:09:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 125
+    },
+    {
+      "nomorKA": "53F",
+      "nama": "Purwojaya",
+      "asal": "Kroya",
+      "tujuan": "Gambir",
+      "jamMRI": "12:45:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 192
+    },
+    {
+      "nomorKA": "141F",
+      "nama": "Parahyangan Fakultatif",
+      "asal": "Bandung",
+      "tujuan": "Gambir",
+      "jamMRI": "13:04:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 346
+    },
+    {
+      "nomorKA": "43",
+      "nama": "Taksaka",
+      "asal": "Yogyakarta",
+      "tujuan": "Gambir",
+      "jamMRI": "13:25:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 175
+    },
+    {
+      "nomorKA": "58F",
+      "nama": "Purwojaya",
+      "asal": "Gambir",
+      "tujuan": "Kroya",
+      "jamMRI": "13:34:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 192
+    },
+    {
+      "nomorKA": "142F",
+      "nama": "Parahyangan Fakultatif",
+      "asal": "Gambir",
+      "tujuan": "Bandung",
+      "jamMRI": "13:49:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 346
+    },
+    {
+      "nomorKA": "133",
+      "nama": "Parahyangan",
+      "asal": "Bandung",
+      "tujuan": "Gambir",
+      "jamMRI": "14:03:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 338
+    },
+    {
+      "nomorKA": "44",
+      "nama": "Taksaka",
+      "asal": "Gambir",
+      "tujuan": "Yogyakarta",
+      "jamMRI": "14:09:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 175
+    },
+    {
+      "nomorKA": "13",
+      "nama": "Argo Lawu",
+      "asal": "Solobalapan",
+      "tujuan": "Gambir",
+      "jamMRI": "15:15:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 101
+    },
+    {
+      "nomorKA": "38",
+      "nama": "Brawijaya",
+      "asal": "Gambir",
+      "tujuan": "Malang",
+      "jamMRI": "15:53:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 158
+    },
+    {
+      "nomorKA": "137",
+      "nama": "Parahyangan",
+      "asal": "Bandung",
+      "tujuan": "Gambir",
+      "jamMRI": "15:55:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 342
+    },
+    {
+      "nomorKA": "39",
+      "nama": "Sembrani",
+      "asal": "Surabaya Pasarturi",
+      "tujuan": "Gambir",
+      "jamMRI": "16:10:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 165
+    },
+    {
+      "nomorKA": "1",
+      "nama": "Argo Bromo Anggrek",
+      "asal": "Surabaya Pasarturi",
+      "tujuan": "Gambir",
+      "jamMRI": "16:44:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 65
+    },
+    {
+      "nomorKA": "18",
+      "nama": "Argo Sindoro",
+      "asal": "Gambir",
+      "tujuan": "Semarang Tawang",
+      "jamMRI": "16:54:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 113
+    },
+    {
+      "nomorKA": "8",
+      "nama": "Bima",
+      "asal": "Gambir",
+      "tujuan": "Surabayagubeng",
+      "jamMRI": "17:09:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 83
+    },
+    {
+      "nomorKA": "61",
+      "nama": "Manahan",
+      "asal": "Solobalapan",
+      "tujuan": "Gambir",
+      "jamMRI": "17:21:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 198
+    },
+    {
+      "nomorKA": "129",
+      "nama": "Papandayan",
+      "asal": "Garut",
+      "tujuan": "Gambir",
+      "jamMRI": "17:51:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 333
+    },
+    {
+      "nomorKA": "123",
+      "nama": "Cakrabuana",
+      "asal": "Cirebon",
+      "tujuan": "Gambir",
+      "jamMRI": "18:34:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 321
+    },
+    {
+      "nomorKA": "134",
+      "nama": "Parahyangan",
+      "asal": "Gambir",
+      "tujuan": "Bandung",
+      "jamMRI": "18:34:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 338
+    },
+    {
+      "nomorKA": "36",
+      "nama": "Gajayana",
+      "asal": "Gambir",
+      "tujuan": "Malang",
+      "jamMRI": "18:59:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 151
+    },
+    {
+      "nomorKA": "27",
+      "nama": "Argo Merbabu",
+      "asal": "Semarang Tawang",
+      "tujuan": "Gambir",
+      "jamMRI": "19:06:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 131
+    },
+    {
+      "nomorKA": "124",
+      "nama": "Cakrabuana",
+      "asal": "Gambir",
+      "tujuan": "Purwokerto",
+      "jamMRI": "19:19:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 321
+    },
+    {
+      "nomorKA": "5",
+      "nama": "Argo Semeru",
+      "asal": "Surabayagubeng",
+      "tujuan": "Gambir",
+      "jamMRI": "19:22:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 76
+    },
+    {
+      "nomorKA": "42",
+      "nama": "Sembrani",
+      "asal": "Gambir",
+      "tujuan": "Surabaya Pasarturi",
+      "jamMRI": "19:39:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 170
+    },
+    {
+      "nomorKA": "28",
+      "nama": "Argo Merbabu",
+      "asal": "Gambir",
+      "tujuan": "Semarang Tawang",
+      "jamMRI": "19:54:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 131
+    },
+    {
+      "nomorKA": "32",
+      "nama": "Pandalungan",
+      "asal": "Gambir",
+      "tujuan": "Surabaya Pasarturi",
+      "jamMRI": "20:04:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 140
+    },
+    {
+      "nomorKA": "49",
+      "nama": "Purwojaya",
+      "asal": "Kroya",
+      "tujuan": "Gambir",
+      "jamMRI": "20:09:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 189
+    },
+    {
+      "nomorKA": "4",
+      "nama": "Argo Bromo Anggrek",
+      "asal": "Gambir",
+      "tujuan": "Surabaya Pasarturi",
+      "jamMRI": "20:39:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 70
+    },
+    {
+      "nomorKA": "47",
+      "nama": "Taksaka",
+      "asal": "Yogyakarta",
+      "tujuan": "Gambir",
+      "jamMRI": "20:46:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 183
+    },
+    {
+      "nomorKA": "14",
+      "nama": "Argo Lawu",
+      "asal": "Gambir",
+      "tujuan": "Solobalapan",
+      "jamMRI": "20:54:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 102
+    },
+    {
+      "nomorKA": "29F",
+      "nama": "Argo Anjasmoro",
+      "asal": "Surabaya Pasarturi",
+      "tujuan": "Gambir",
+      "jamMRI": "21:01:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 136
+    },
+    {
+      "nomorKA": "54",
+      "nama": "Purwojaya",
+      "asal": "Gambir",
+      "tujuan": "Kroya",
+      "jamMRI": "21:04:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 189
+    },
+    {
+      "nomorKA": "119",
+      "nama": "Gunungjati",
+      "asal": "Semarang Tawang",
+      "tujuan": "Gambir",
+      "jamMRI": "21:25:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 315
+    },
+    {
+      "nomorKA": "48",
+      "nama": "Taksaka",
+      "asal": "Gambir",
+      "tujuan": "Yogyakarta",
+      "jamMRI": "21:29:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 183
+    },
+    {
+      "nomorKA": "21",
+      "nama": "Argo Muria",
+      "asal": "Semarang Tawang",
+      "tujuan": "Gambir",
+      "jamMRI": "22:02:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 120
+    },
+    {
+      "nomorKA": "120",
+      "nama": "Gunungjati",
+      "asal": "Gambir",
+      "tujuan": "Cirebon",
+      "jamMRI": "22:14:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 316
+    },
+    {
+      "nomorKA": "139",
+      "nama": "Parahyangan",
+      "asal": "Bandung",
+      "tujuan": "Gambir",
+      "jamMRI": "22:15:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 344
+    },
+    {
+      "nomorKA": "22",
+      "nama": "Argo Muria",
+      "asal": "Gambir",
+      "tujuan": "Semarang Tawang",
+      "jamMRI": "22:49:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 121
+    },
+    {
+      "nomorKA": "64",
+      "nama": "Manahan",
+      "asal": "Gambir",
+      "tujuan": "Solobalapan",
+      "jamMRI": "22:59:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 203
+    },
+    {
+      "nomorKA": "125F",
+      "nama": "Cheribon Fakultatif",
+      "asal": "Cirebon",
+      "tujuan": "Gambir",
+      "jamMRI": "23:14:00",
+      "berhentiDiMRI": false,
+      "arah": "KE_GAMBIR",
+      "halamanPdf": 324
+    },
+    {
+      "nomorKA": "140",
+      "nama": "Parahyangan",
+      "asal": "Gambir",
+      "tujuan": "Bandung",
+      "jamMRI": "23:14:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 344
+    },
+    {
+      "nomorKA": "30F",
+      "nama": "Argo Anjasmoro",
+      "asal": "Gambir",
+      "tujuan": "Surabaya Pasarturi",
+      "jamMRI": "23:44:00",
+      "berhentiDiMRI": false,
+      "arah": "DARI_GAMBIR",
+      "halamanPdf": 136
+    }
+  ]
+}

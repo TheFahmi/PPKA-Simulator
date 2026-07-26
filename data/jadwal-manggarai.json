@@ -1,0 +1,3230 @@
+{
+  "versi": "1.0.0",
+  "gapeka": "GAPEKA 2025 — jadwal Commuter Line Jabodetabek pembaruan 22 Juni 2026 (KAI Commuter)",
+  "stasiun": "MRI",
+  "tanggalDibuat": "2026-07-26",
+  "sumber": [
+    "GAPEKA 2025 Jawa, Lampiran II Daftar Waktu KA Antar Kota (KP-DJKA 224 Tahun 2024), berkas PDF DJKA Kementerian Perhubungan",
+    "https://kci.id/api/krl/schedules?stationid=MRI&timefrom=05:00&timeto=09:00",
+    "https://kci.id/files/download/documents/Jadwal Commuter Line Jabodetabek - Update 22 Juni 2026.pdf",
+    "https://kci.id/layanan/info-pelanggan/jadwal",
+    "https://id.wikipedia.org/wiki/Stasiun_Manggarai"
+  ],
+  "catatanKeakuratan": "NOMOR KA, JAM, DAN RELASI Commuter Line Bogor serta Commuter Line Cikarang diambil apa adanya dari kanal resmi KAI Commuter (API jadwal kci.id dan berkas jadwal PDF terbitan 22 Juni 2026). Baris tersebut ditandai keandalanData \"RESMI\". Jadwal publik hanya mencantumkan SATU jam per stasiun. Jam tersebut dipakai sebagai JAM BERANGKAT. Jam datang di Manggarai diturunkan dengan mengurangi 2 menit sebagai pemodelan waktu berhenti; angka ini BUKAN data resmi. Baris Commuter Line Basoetta ditandai \"REKONSTRUKSI_POLA\": pola jam dan seri nomor terverifikasi, penetapan nomor per keberangkatan tidak. Penetapan sepur pada \"sepurLazim\" mengikuti peruntukan jalur resmi hasil Switch Over ke-7, bukan penetapan sepur per perjalanan — pemilihan sepur adalah keputusan PPKA dan itulah inti permainan ini. Golongan sarana (jumlah kereta per rangkaian) merupakan asumsi pemodelan, tidak diambil dari data operasional. KA JARAK JAUH dimuat sebagai KA BERJALAN LANGSUNG, bukan sebagai pemberhentian. Tidak ada KA jarak jauh yang berhenti melayani penumpang di Manggarai; pemindahan layanan dari Stasiun Gambir masih berstatus rencana. Nomor KA, nama, dan jam melintas diambil apa adanya dari GAPEKA 2025 Lampiran II terbitan DJKA pada baris Manggarai yang bertanda \"Ls\". Angka tersebut versi dasar yang berlaku 1 Februari 2025; dokumen revisi per 18 Juni 2026 tidak berhasil diperoleh. KA relasi Pasar Senen tidak dimuat karena rutenya memang tidak melewati Manggarai. Kereta Luar Biasa (KLB) tidak dijadwalkan di berkas ini karena menurut sifatnya KLB memang berada di luar GAPEKA; KLB dibangkitkan sebagai kejadian pada saat dinas berjalan.",
+  "layanan": [
+    {
+      "kode": "LIN_BOGOR",
+      "nama": "Commuter Line Bogor",
+      "tokenWarna": "lin-bogor",
+      "operator": "KAI Commuter",
+      "keterangan": "Lin Bogor. Di Manggarai dilayani di lantai layang: jalur 9-10 arah Jakarta Kota (lewat Cikini), jalur 11-12 arah Bogor/Nambo (lewat Tebet)."
+    },
+    {
+      "kode": "LIN_CIKARANG",
+      "nama": "Commuter Line Cikarang",
+      "tokenWarna": "lin-cikarang",
+      "operator": "KAI Commuter",
+      "keterangan": "Lin Lingkar Cikarang, pada berkas jadwal resmi berjudul Lin Bekasi. Di Manggarai dilayani di lantai dasar: jalur 1-2 arah Sudirman/Angke/Kampung Bandan, jalur 3-4 arah Matraman/Bekasi/Cikarang."
+    },
+    {
+      "kode": "BANDARA",
+      "nama": "Commuter Line Basoetta",
+      "tokenWarna": "lin-kajj",
+      "operator": "KAI Commuter",
+      "keterangan": "KA bandara relasi Manggarai - Bandara Soekarno-Hatta lewat BNI City. Manggarai merupakan stasiun ujung, dilayani di jalur 7-8 lantai dasar."
+    },
+    {
+      "kode": "KAJJ",
+      "nama": "KA Antarkota",
+      "tokenWarna": "lin-kajj",
+      "operator": "KAI",
+      "keterangan": "KA jarak jauh relasi Stasiun Gambir. Seluruhnya BERJALAN LANGSUNG di Manggarai — tidak ada yang berhenti melayani penumpang. Dilayani pada sepur lintas hulu (arah Gambir) dan sepur lintas hilir (arah Jatinegara) yang tidak bernomor peron."
+    },
+    {
+      "kode": "KLB",
+      "nama": "Kereta Luar Biasa",
+      "tokenWarna": "lin-klb",
+      "operator": "KAI",
+      "keterangan": "Perjalanan di luar GAPEKA, antara lain KLB kirim rangkaian dari/ke Balai Yasa Manggarai. Dilayani di jalur 5-6 yang peron pulaunya berstatus inaktif."
+    }
+  ],
+  "dinas": [
+    {
+      "id": "DNS-LATIH",
+      "nama": "Dinas Latihan",
+      "keterangan": "Pengenalan papan pelayanan. Kepadatan rendah, gangguan jarang. Dipakai untuk membiasakan pembentukan rute masuk dan rute keluar.",
+      "mulai": "05.00",
+      "selesai": "05.45",
+      "tingkatKesulitan": "DASAR",
+      "peluangGangguanPerJam": 0.2
+    },
+    {
+      "id": "DNS-PAGI-1",
+      "nama": "Dinas Pagi I",
+      "keterangan": "Awal jam sibuk. Arus Lin Bogor dari arah Tebet mulai rapat sementara sebagian rangkaian masih berdinas mulai dari Manggarai.",
+      "mulai": "05.00",
+      "selesai": "06.30",
+      "tingkatKesulitan": "MENENGAH",
+      "peluangGangguanPerJam": 0.45
+    },
+    {
+      "id": "DNS-PUNCAK",
+      "nama": "Dinas Puncak Pagi",
+      "keterangan": "Puncak kepadatan. Headway rapat di kedua lantai, perpindahan penumpang tinggi, dan penarikan rangkaian yang mengakhiri dinas menambah beban emplasemen.",
+      "mulai": "06.30",
+      "selesai": "08.00",
+      "tingkatKesulitan": "PADAT",
+      "peluangGangguanPerJam": 0.8
+    },
+    {
+      "id": "DNS-PAGI-PENUH",
+      "nama": "Dinas Pagi Penuh",
+      "keterangan": "Satu sesi dinas penuh 05.00-09.00 dengan seluruh perjalanan yang termuat di berkas jadwal. Disarankan setelah menguasai dua dinas sebelumnya.",
+      "mulai": "05.00",
+      "selesai": "09.00",
+      "tingkatKesulitan": "PADAT",
+      "peluangGangguanPerJam": 0.6
+    }
+  ],
+  "perjalanan": [
+    {
+      "id": "TRIP-800",
+      "nomorKA": "800",
+      "lin": "BANDARA",
+      "jenisSarana": "KRL_8",
+      "relasi": "Manggarai - Bandara Soekarno-Hatta",
+      "asal": "Manggarai",
+      "tujuan": "Bandara Soekarno-Hatta",
+      "batasMasukId": "BTS-BNI",
+      "batasKeluarId": "BTS-BNI",
+      "jamDatang": "04.54.00",
+      "jamBerangkat": "05.00.00",
+      "sepurLazim": [
+        "SP-G7",
+        "SP-G8"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "REKONSTRUKSI_POLA",
+      "catatan": "REKONSTRUKSI POLA. Yang terverifikasi: Manggarai merupakan stasiun ujung Commuter Line Basoetta; keberangkatan dari Manggarai berlangsung 05.00-22.00 dengan selang 30 menit; kedatangan dari Bandara Soekarno-Hatta dimulai pukul 06.12; nomor KA berada pada seri 8xx (contoh nyata terverifikasi: KA 806A). Yang TIDAK terverifikasi: penetapan nomor KA untuk tiap keberangkatan — nomor pada baris ini disusun mengikuti seri dan tidak boleh dianggap nomor GAPEKA. Ganti baris ini melalui menu impor jadwal begitu daftar nomor resmi tersedia."
+    },
+    {
+      "id": "TRIP-5023B",
+      "nomorKA": "5023B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Bekasi - Angke",
+      "asal": "Bekasi",
+      "tujuan": "Angke",
+      "batasMasukId": "BTS-MTR-D",
+      "batasKeluarId": "BTS-SUD-K",
+      "jamDatang": "05.03.00",
+      "jamBerangkat": "05.05.00",
+      "sepurLazim": [
+        "SP-G1",
+        "SP-G2"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1157",
+      "nomorKA": "1157",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Bogor - Jakarta Kota",
+      "asal": "Bogor",
+      "tujuan": "Jakarta Kota",
+      "batasMasukId": "BTS-TBT-D",
+      "batasKeluarId": "BTS-CKI-K",
+      "jamDatang": "05.04.00",
+      "jamBerangkat": "05.06.00",
+      "sepurLazim": [
+        "SP-L9",
+        "SP-L10"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1000",
+      "nomorKA": "1000",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Manggarai - Bogor",
+      "asal": "Manggarai",
+      "tujuan": "Bogor",
+      "batasMasukId": "BTS-CKI-D",
+      "batasKeluarId": "BTS-TBT-K",
+      "jamDatang": "05.04.00",
+      "jamBerangkat": "05.10.00",
+      "sepurLazim": [
+        "SP-L11",
+        "SP-L12"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI",
+      "catatan": "Jam berangkat sesuai jadwal resmi. Perjalanan berdinas mulai dari Manggarai; masuknya rangkaian ke emplasemen dimodelkan sebagai langsiran dari arah Cikini karena penyiapan rangkaian tidak tercantum di jadwal publik."
+    },
+    {
+      "id": "TRIP-5012",
+      "nomorKA": "5012",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Manggarai - Bekasi",
+      "asal": "Manggarai",
+      "tujuan": "Bekasi",
+      "batasMasukId": "BTS-SUD-D",
+      "batasKeluarId": "BTS-MTR-K",
+      "jamDatang": "05.04.00",
+      "jamBerangkat": "05.10.00",
+      "sepurLazim": [
+        "SP-G3",
+        "SP-G4"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI",
+      "catatan": "Jam berangkat sesuai jadwal resmi. Perjalanan berdinas mulai dari Manggarai; masuknya rangkaian dimodelkan sebagai langsiran dari arah Sudirman."
+    },
+    {
+      "id": "TRIP-1159",
+      "nomorKA": "1159",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Bogor - Jakarta Kota",
+      "asal": "Bogor",
+      "tujuan": "Jakarta Kota",
+      "batasMasukId": "BTS-TBT-D",
+      "batasKeluarId": "BTS-CKI-K",
+      "jamDatang": "05.09.00",
+      "jamBerangkat": "05.11.00",
+      "sepurLazim": [
+        "SP-L9",
+        "SP-L10"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5027B",
+      "nomorKA": "5027B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Cikarang - Angke",
+      "asal": "Cikarang",
+      "tujuan": "Angke",
+      "batasMasukId": "BTS-MTR-D",
+      "batasKeluarId": "BTS-SUD-K",
+      "jamDatang": "05.09.00",
+      "jamBerangkat": "05.11.00",
+      "sepurLazim": [
+        "SP-G1",
+        "SP-G2"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5014",
+      "nomorKA": "5014",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Manggarai - Cikarang",
+      "asal": "Manggarai",
+      "tujuan": "Cikarang",
+      "batasMasukId": "BTS-SUD-D",
+      "batasKeluarId": "BTS-MTR-K",
+      "jamDatang": "05.10.00",
+      "jamBerangkat": "05.16.00",
+      "sepurLazim": [
+        "SP-G3",
+        "SP-G4"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI",
+      "catatan": "Jam berangkat sesuai jadwal resmi. Perjalanan berdinas mulai dari Manggarai; masuknya rangkaian dimodelkan sebagai langsiran dari arah Sudirman."
+    },
+    {
+      "id": "TRIP-5505B",
+      "nomorKA": "5505B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Cikarang - Kampung Bandan",
+      "asal": "Cikarang",
+      "tujuan": "Kampung Bandan",
+      "batasMasukId": "BTS-MTR-D",
+      "batasKeluarId": "BTS-SUD-K",
+      "jamDatang": "05.17.00",
+      "jamBerangkat": "05.19.00",
+      "sepurLazim": [
+        "SP-G1",
+        "SP-G2"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1161",
+      "nomorKA": "1161",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Bogor - Jakarta Kota",
+      "asal": "Bogor",
+      "tujuan": "Jakarta Kota",
+      "batasMasukId": "BTS-TBT-D",
+      "batasKeluarId": "BTS-CKI-K",
+      "jamDatang": "05.19.00",
+      "jamBerangkat": "05.21.00",
+      "sepurLazim": [
+        "SP-L9",
+        "SP-L10"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5016B",
+      "nomorKA": "5016B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Angke - Bekasi",
+      "asal": "Angke",
+      "tujuan": "Bekasi",
+      "batasMasukId": "BTS-SUD-D",
+      "batasKeluarId": "BTS-MTR-K",
+      "jamDatang": "05.20.00",
+      "jamBerangkat": "05.22.00",
+      "sepurLazim": [
+        "SP-G3",
+        "SP-G4"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1002",
+      "nomorKA": "1002",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Manggarai - Bogor",
+      "asal": "Manggarai",
+      "tujuan": "Bogor",
+      "batasMasukId": "BTS-CKI-D",
+      "batasKeluarId": "BTS-TBT-K",
+      "jamDatang": "05.21.00",
+      "jamBerangkat": "05.27.00",
+      "sepurLazim": [
+        "SP-L11",
+        "SP-L12"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI",
+      "catatan": "Jam berangkat sesuai jadwal resmi. Perjalanan berdinas mulai dari Manggarai; masuknya rangkaian ke emplasemen dimodelkan sebagai langsiran dari arah Cikini karena penyiapan rangkaian tidak tercantum di jadwal publik."
+    },
+    {
+      "id": "TRIP-5029B",
+      "nomorKA": "5029B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Cikarang - Angke",
+      "asal": "Cikarang",
+      "tujuan": "Angke",
+      "batasMasukId": "BTS-MTR-D",
+      "batasKeluarId": "BTS-SUD-K",
+      "jamDatang": "05.22.00",
+      "jamBerangkat": "05.24.00",
+      "sepurLazim": [
+        "SP-G1",
+        "SP-G2"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-802",
+      "nomorKA": "802",
+      "lin": "BANDARA",
+      "jenisSarana": "KRL_8",
+      "relasi": "Manggarai - Bandara Soekarno-Hatta",
+      "asal": "Manggarai",
+      "tujuan": "Bandara Soekarno-Hatta",
+      "batasMasukId": "BTS-BNI",
+      "batasKeluarId": "BTS-BNI",
+      "jamDatang": "05.24.00",
+      "jamBerangkat": "05.30.00",
+      "sepurLazim": [
+        "SP-G7",
+        "SP-G8"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "REKONSTRUKSI_POLA",
+      "catatan": "REKONSTRUKSI POLA. Yang terverifikasi: Manggarai merupakan stasiun ujung Commuter Line Basoetta; keberangkatan dari Manggarai berlangsung 05.00-22.00 dengan selang 30 menit; kedatangan dari Bandara Soekarno-Hatta dimulai pukul 06.12; nomor KA berada pada seri 8xx (contoh nyata terverifikasi: KA 806A). Yang TIDAK terverifikasi: penetapan nomor KA untuk tiap keberangkatan — nomor pada baris ini disusun mengikuti seri dan tidak boleh dianggap nomor GAPEKA. Ganti baris ini melalui menu impor jadwal begitu daftar nomor resmi tersedia."
+    },
+    {
+      "id": "TRIP-5018B",
+      "nomorKA": "5018B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Kampung Bandan - Cikarang",
+      "asal": "Kampung Bandan",
+      "tujuan": "Cikarang",
+      "batasMasukId": "BTS-SUD-D",
+      "batasKeluarId": "BTS-MTR-K",
+      "jamDatang": "05.27.00",
+      "jamBerangkat": "05.29.00",
+      "sepurLazim": [
+        "SP-G3",
+        "SP-G4"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1165",
+      "nomorKA": "1165",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Bogor - Jakarta Kota",
+      "asal": "Bogor",
+      "tujuan": "Jakarta Kota",
+      "batasMasukId": "BTS-TBT-D",
+      "batasKeluarId": "BTS-CKI-K",
+      "jamDatang": "05.29.00",
+      "jamBerangkat": "05.31.00",
+      "sepurLazim": [
+        "SP-L9",
+        "SP-L10"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5020A",
+      "nomorKA": "5020A",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Manggarai - Cikarang",
+      "asal": "Manggarai",
+      "tujuan": "Cikarang",
+      "batasMasukId": "BTS-SUD-D",
+      "batasKeluarId": "BTS-MTR-K",
+      "jamDatang": "05.34.00",
+      "jamBerangkat": "05.40.00",
+      "sepurLazim": [
+        "SP-G3",
+        "SP-G4"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI",
+      "catatan": "Jam berangkat sesuai jadwal resmi. Perjalanan berdinas mulai dari Manggarai; masuknya rangkaian dimodelkan sebagai langsiran dari arah Sudirman."
+    },
+    {
+      "id": "TRIP-1504",
+      "nomorKA": "1504",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Jakarta Kota - Nambo",
+      "asal": "Jakarta Kota",
+      "tujuan": "Nambo",
+      "batasMasukId": "BTS-CKI-D",
+      "batasKeluarId": "BTS-TBT-K",
+      "jamDatang": "05.35.00",
+      "jamBerangkat": "05.37.00",
+      "sepurLazim": [
+        "SP-L11",
+        "SP-L12"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-7",
+      "nomorKA": "7",
+      "lin": "KAJJ",
+      "jenisSarana": "KA_ANTARKOTA",
+      "relasi": "Surabaya Gubeng - Gambir",
+      "asal": "Surabaya Gubeng",
+      "tujuan": "Gambir",
+      "batasMasukId": "BTS-JJ-TMR-D",
+      "batasKeluarId": "BTS-JJ-BRT-K",
+      "jamDatang": "05.35.00",
+      "jamBerangkat": "05.35.00",
+      "sepurLazim": [
+        "SP-GLU"
+      ],
+      "waktuBerhentiMinimumDetik": 0,
+      "langsung": true,
+      "keandalanData": "RESMI",
+      "catatan": "KA Bima. Jam melintas Manggarai diambil apa adanya dari GAPEKA 2025 Lampiran II \"Daftar Waktu KA Antar Kota\" (KP-DJKA 224 Tahun 2024), kolom Berangkat pada baris Manggarai yang bertanda \"Ls\" — berjalan langsung. KA ini TIDAK berhenti melayani penumpang di Manggarai. Perlu dicatat: angka ini versi dasar GAPEKA 2025 yang berlaku 1 Februari 2025; dokumen revisi per 18 Juni 2026 tidak berhasil diperoleh, sehingga perjalanan yang berubah pada revisi itu berpotensi berbeda."
+    },
+    {
+      "id": "TRIP-1167",
+      "nomorKA": "1167",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Depok - Jakarta Kota",
+      "asal": "Depok",
+      "tujuan": "Jakarta Kota",
+      "batasMasukId": "BTS-TBT-D",
+      "batasKeluarId": "BTS-CKI-K",
+      "jamDatang": "05.36.00",
+      "jamBerangkat": "05.38.00",
+      "sepurLazim": [
+        "SP-L9",
+        "SP-L10"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1169",
+      "nomorKA": "1169",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Bogor - Jakarta Kota",
+      "asal": "Bogor",
+      "tujuan": "Jakarta Kota",
+      "batasMasukId": "BTS-TBT-D",
+      "batasKeluarId": "BTS-CKI-K",
+      "jamDatang": "05.40.00",
+      "jamBerangkat": "05.42.00",
+      "sepurLazim": [
+        "SP-L9",
+        "SP-L10"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5507B",
+      "nomorKA": "5507B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Cikarang - Kampung Bandan",
+      "asal": "Cikarang",
+      "tujuan": "Kampung Bandan",
+      "batasMasukId": "BTS-MTR-D",
+      "batasKeluarId": "BTS-SUD-K",
+      "jamDatang": "05.40.00",
+      "jamBerangkat": "05.42.00",
+      "sepurLazim": [
+        "SP-G1",
+        "SP-G2"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1152",
+      "nomorKA": "1152",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Jakarta Kota - Bogor",
+      "asal": "Jakarta Kota",
+      "tujuan": "Bogor",
+      "batasMasukId": "BTS-CKI-D",
+      "batasKeluarId": "BTS-TBT-K",
+      "jamDatang": "05.48.00",
+      "jamBerangkat": "05.50.00",
+      "sepurLazim": [
+        "SP-L11",
+        "SP-L12"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1004",
+      "nomorKA": "1004",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Manggarai - Bogor",
+      "asal": "Manggarai",
+      "tujuan": "Bogor",
+      "batasMasukId": "BTS-CKI-D",
+      "batasKeluarId": "BTS-TBT-K",
+      "jamDatang": "05.48.00",
+      "jamBerangkat": "05.54.00",
+      "sepurLazim": [
+        "SP-L11",
+        "SP-L12"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI",
+      "catatan": "Jam berangkat sesuai jadwal resmi. Perjalanan berdinas mulai dari Manggarai; masuknya rangkaian ke emplasemen dimodelkan sebagai langsiran dari arah Cikini karena penyiapan rangkaian tidak tercantum di jadwal publik."
+    },
+    {
+      "id": "TRIP-1171",
+      "nomorKA": "1171",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Bogor - Jakarta Kota",
+      "asal": "Bogor",
+      "tujuan": "Jakarta Kota",
+      "batasMasukId": "BTS-TBT-D",
+      "batasKeluarId": "BTS-CKI-K",
+      "jamDatang": "05.49.00",
+      "jamBerangkat": "05.51.00",
+      "sepurLazim": [
+        "SP-L9",
+        "SP-L10"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5022C",
+      "nomorKA": "5022C",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Angke - Tambun",
+      "asal": "Angke",
+      "tujuan": "Tambun",
+      "batasMasukId": "BTS-SUD-D",
+      "batasKeluarId": "BTS-MTR-K",
+      "jamDatang": "05.50.00",
+      "jamBerangkat": "05.52.00",
+      "sepurLazim": [
+        "SP-G3",
+        "SP-G4"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5031B",
+      "nomorKA": "5031B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Bekasi - Kampung Bandan",
+      "asal": "Bekasi",
+      "tujuan": "Kampung Bandan",
+      "batasMasukId": "BTS-MTR-D",
+      "batasKeluarId": "BTS-SUD-K",
+      "jamDatang": "05.51.00",
+      "jamBerangkat": "05.53.00",
+      "sepurLazim": [
+        "SP-G1",
+        "SP-G2"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-804",
+      "nomorKA": "804",
+      "lin": "BANDARA",
+      "jenisSarana": "KRL_8",
+      "relasi": "Manggarai - Bandara Soekarno-Hatta",
+      "asal": "Manggarai",
+      "tujuan": "Bandara Soekarno-Hatta",
+      "batasMasukId": "BTS-BNI",
+      "batasKeluarId": "BTS-BNI",
+      "jamDatang": "05.54.00",
+      "jamBerangkat": "06.00.00",
+      "sepurLazim": [
+        "SP-G7",
+        "SP-G8"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "REKONSTRUKSI_POLA",
+      "catatan": "REKONSTRUKSI POLA. Yang terverifikasi: Manggarai merupakan stasiun ujung Commuter Line Basoetta; keberangkatan dari Manggarai berlangsung 05.00-22.00 dengan selang 30 menit; kedatangan dari Bandara Soekarno-Hatta dimulai pukul 06.12; nomor KA berada pada seri 8xx (contoh nyata terverifikasi: KA 806A). Yang TIDAK terverifikasi: penetapan nomor KA untuk tiap keberangkatan — nomor pada baris ini disusun mengikuti seri dan tidak boleh dianggap nomor GAPEKA. Ganti baris ini melalui menu impor jadwal begitu daftar nomor resmi tersedia."
+    },
+    {
+      "id": "TRIP-1173",
+      "nomorKA": "1173",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Bogor - Jakarta Kota",
+      "asal": "Bogor",
+      "tujuan": "Jakarta Kota",
+      "batasMasukId": "BTS-TBT-D",
+      "batasKeluarId": "BTS-CKI-K",
+      "jamDatang": "05.55.00",
+      "jamBerangkat": "05.57.00",
+      "sepurLazim": [
+        "SP-L9",
+        "SP-L10"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1154",
+      "nomorKA": "1154",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Jakarta Kota - Bogor",
+      "asal": "Jakarta Kota",
+      "tujuan": "Bogor",
+      "batasMasukId": "BTS-CKI-D",
+      "batasKeluarId": "BTS-TBT-K",
+      "jamDatang": "05.56.00",
+      "jamBerangkat": "05.58.00",
+      "sepurLazim": [
+        "SP-L11",
+        "SP-L12"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5024C",
+      "nomorKA": "5024C",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Angke - Bekasi",
+      "asal": "Angke",
+      "tujuan": "Bekasi",
+      "batasMasukId": "BTS-SUD-D",
+      "batasKeluarId": "BTS-MTR-K",
+      "jamDatang": "05.57.00",
+      "jamBerangkat": "05.59.00",
+      "sepurLazim": [
+        "SP-G3",
+        "SP-G4"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5026",
+      "nomorKA": "5026",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Manggarai - Cikarang",
+      "asal": "Manggarai",
+      "tujuan": "Cikarang",
+      "batasMasukId": "BTS-SUD-D",
+      "batasKeluarId": "BTS-MTR-K",
+      "jamDatang": "05.57.00",
+      "jamBerangkat": "06.03.00",
+      "sepurLazim": [
+        "SP-G3",
+        "SP-G4"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI",
+      "catatan": "Jam berangkat sesuai jadwal resmi. Perjalanan berdinas mulai dari Manggarai; masuknya rangkaian dimodelkan sebagai langsiran dari arah Sudirman."
+    },
+    {
+      "id": "TRIP-1501",
+      "nomorKA": "1501",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Nambo - Jakarta Kota",
+      "asal": "Nambo",
+      "tujuan": "Jakarta Kota",
+      "batasMasukId": "BTS-TBT-D",
+      "batasKeluarId": "BTS-CKI-K",
+      "jamDatang": "05.59.00",
+      "jamBerangkat": "06.01.00",
+      "sepurLazim": [
+        "SP-L9",
+        "SP-L10"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5033B",
+      "nomorKA": "5033B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Cikarang - Angke",
+      "asal": "Cikarang",
+      "tujuan": "Angke",
+      "batasMasukId": "BTS-MTR-D",
+      "batasKeluarId": "BTS-SUD-K",
+      "jamDatang": "06.02.00",
+      "jamBerangkat": "06.04.00",
+      "sepurLazim": [
+        "SP-G1",
+        "SP-G2"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1156A",
+      "nomorKA": "1156A",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Jakarta Kota - Bogor",
+      "asal": "Jakarta Kota",
+      "tujuan": "Bogor",
+      "batasMasukId": "BTS-CKI-D",
+      "batasKeluarId": "BTS-TBT-K",
+      "jamDatang": "06.03.00",
+      "jamBerangkat": "06.05.00",
+      "sepurLazim": [
+        "SP-L11",
+        "SP-L12"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1175",
+      "nomorKA": "1175",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Bogor - Jakarta Kota",
+      "asal": "Bogor",
+      "tujuan": "Jakarta Kota",
+      "batasMasukId": "BTS-TBT-D",
+      "batasKeluarId": "BTS-CKI-K",
+      "jamDatang": "06.04.00",
+      "jamBerangkat": "06.06.00",
+      "sepurLazim": [
+        "SP-L9",
+        "SP-L10"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5509B",
+      "nomorKA": "5509B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Cikarang - Kampung Bandan",
+      "asal": "Cikarang",
+      "tujuan": "Kampung Bandan",
+      "batasMasukId": "BTS-MTR-D",
+      "batasKeluarId": "BTS-SUD-K",
+      "jamDatang": "06.09.00",
+      "jamBerangkat": "06.11.00",
+      "sepurLazim": [
+        "SP-G1",
+        "SP-G2"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-26",
+      "nomorKA": "26",
+      "lin": "KAJJ",
+      "jenisSarana": "KA_ANTARKOTA",
+      "relasi": "Gambir - Semarang Tawang",
+      "asal": "Gambir",
+      "tujuan": "Semarang Tawang",
+      "batasMasukId": "BTS-JJ-BRT-D",
+      "batasKeluarId": "BTS-JJ-TMR-K",
+      "jamDatang": "06.09.00",
+      "jamBerangkat": "06.09.00",
+      "sepurLazim": [
+        "SP-GLH"
+      ],
+      "waktuBerhentiMinimumDetik": 0,
+      "langsung": true,
+      "keandalanData": "RESMI",
+      "catatan": "KA Argo Merbabu. Jam melintas Manggarai diambil apa adanya dari GAPEKA 2025 Lampiran II \"Daftar Waktu KA Antar Kota\" (KP-DJKA 224 Tahun 2024), kolom Berangkat pada baris Manggarai yang bertanda \"Ls\" — berjalan langsung. KA ini TIDAK berhenti melayani penumpang di Manggarai. Perlu dicatat: angka ini versi dasar GAPEKA 2025 yang berlaku 1 Februari 2025; dokumen revisi per 18 Juni 2026 tidak berhasil diperoleh, sehingga perjalanan yang berubah pada revisi itu berpotensi berbeda."
+    },
+    {
+      "id": "TRIP-1177",
+      "nomorKA": "1177",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Bogor - Jakarta Kota",
+      "asal": "Bogor",
+      "tujuan": "Jakarta Kota",
+      "batasMasukId": "BTS-TBT-D",
+      "batasKeluarId": "BTS-CKI-K",
+      "jamDatang": "06.11.00",
+      "jamBerangkat": "06.13.00",
+      "sepurLazim": [
+        "SP-L9",
+        "SP-L10"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1158A",
+      "nomorKA": "1158A",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Jakarta Kota - Bogor",
+      "asal": "Jakarta Kota",
+      "tujuan": "Bogor",
+      "batasMasukId": "BTS-CKI-D",
+      "batasKeluarId": "BTS-TBT-K",
+      "jamDatang": "06.11.00",
+      "jamBerangkat": "06.13.00",
+      "sepurLazim": [
+        "SP-L11",
+        "SP-L12"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-801",
+      "nomorKA": "801",
+      "lin": "BANDARA",
+      "jenisSarana": "KRL_8",
+      "relasi": "Bandara Soekarno-Hatta - Manggarai",
+      "asal": "Bandara Soekarno-Hatta",
+      "tujuan": "Manggarai",
+      "batasMasukId": "BTS-BNI",
+      "batasKeluarId": "BTS-BNI",
+      "jamDatang": "06.12.00",
+      "jamBerangkat": "06.17.00",
+      "sepurLazim": [
+        "SP-G7",
+        "SP-G8"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "REKONSTRUKSI_POLA",
+      "catatan": "REKONSTRUKSI POLA. Yang terverifikasi: Manggarai merupakan stasiun ujung Commuter Line Basoetta; keberangkatan dari Manggarai berlangsung 05.00-22.00 dengan selang 30 menit; kedatangan dari Bandara Soekarno-Hatta dimulai pukul 06.12; nomor KA berada pada seri 8xx (contoh nyata terverifikasi: KA 806A). Yang TIDAK terverifikasi: penetapan nomor KA untuk tiap keberangkatan — nomor pada baris ini disusun mengikuti seri dan tidak boleh dianggap nomor GAPEKA. Ganti baris ini melalui menu impor jadwal begitu daftar nomor resmi tersedia."
+    },
+    {
+      "id": "TRIP-5037B",
+      "nomorKA": "5037B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Bekasi - Angke",
+      "asal": "Bekasi",
+      "tujuan": "Angke",
+      "batasMasukId": "BTS-MTR-D",
+      "batasKeluarId": "BTS-SUD-K",
+      "jamDatang": "06.15.00",
+      "jamBerangkat": "06.17.00",
+      "sepurLazim": [
+        "SP-G1",
+        "SP-G2"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5707B",
+      "nomorKA": "5707B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Manggarai - Kampung Bandan",
+      "asal": "Manggarai",
+      "tujuan": "Kampung Bandan",
+      "batasMasukId": "BTS-MTR-D",
+      "batasKeluarId": "BTS-SUD-K",
+      "jamDatang": "06.15.00",
+      "jamBerangkat": "06.21.00",
+      "sepurLazim": [
+        "SP-G1",
+        "SP-G2"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI",
+      "catatan": "Jam berangkat sesuai jadwal resmi. Perjalanan berdinas mulai dari Manggarai; masuknya rangkaian dimodelkan sebagai langsiran dari arah Matraman."
+    },
+    {
+      "id": "TRIP-1179",
+      "nomorKA": "1179",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Bogor - Jakarta Kota",
+      "asal": "Bogor",
+      "tujuan": "Jakarta Kota",
+      "batasMasukId": "BTS-TBT-D",
+      "batasKeluarId": "BTS-CKI-K",
+      "jamDatang": "06.19.00",
+      "jamBerangkat": "06.21.00",
+      "sepurLazim": [
+        "SP-L9",
+        "SP-L10"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1006",
+      "nomorKA": "1006",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Manggarai - Bogor",
+      "asal": "Manggarai",
+      "tujuan": "Bogor",
+      "batasMasukId": "BTS-CKI-D",
+      "batasKeluarId": "BTS-TBT-K",
+      "jamDatang": "06.20.00",
+      "jamBerangkat": "06.26.00",
+      "sepurLazim": [
+        "SP-L11",
+        "SP-L12"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI",
+      "catatan": "Jam berangkat sesuai jadwal resmi. Perjalanan berdinas mulai dari Manggarai; masuknya rangkaian ke emplasemen dimodelkan sebagai langsiran dari arah Cikini karena penyiapan rangkaian tidak tercantum di jadwal publik."
+    },
+    {
+      "id": "TRIP-6002B",
+      "nomorKA": "6002B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Kampung Bandan - Cikarang",
+      "asal": "Kampung Bandan",
+      "tujuan": "Cikarang",
+      "batasMasukId": "BTS-SUD-D",
+      "batasKeluarId": "BTS-MTR-K",
+      "jamDatang": "06.21.00",
+      "jamBerangkat": "06.23.00",
+      "sepurLazim": [
+        "SP-G3",
+        "SP-G4"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-806",
+      "nomorKA": "806",
+      "lin": "BANDARA",
+      "jenisSarana": "KRL_8",
+      "relasi": "Manggarai - Bandara Soekarno-Hatta",
+      "asal": "Manggarai",
+      "tujuan": "Bandara Soekarno-Hatta",
+      "batasMasukId": "BTS-BNI",
+      "batasKeluarId": "BTS-BNI",
+      "jamDatang": "06.24.00",
+      "jamBerangkat": "06.30.00",
+      "sepurLazim": [
+        "SP-G7",
+        "SP-G8"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "REKONSTRUKSI_POLA",
+      "catatan": "REKONSTRUKSI POLA. Yang terverifikasi: Manggarai merupakan stasiun ujung Commuter Line Basoetta; keberangkatan dari Manggarai berlangsung 05.00-22.00 dengan selang 30 menit; kedatangan dari Bandara Soekarno-Hatta dimulai pukul 06.12; nomor KA berada pada seri 8xx (contoh nyata terverifikasi: KA 806A). Yang TIDAK terverifikasi: penetapan nomor KA untuk tiap keberangkatan — nomor pada baris ini disusun mengikuti seri dan tidak boleh dianggap nomor GAPEKA. Ganti baris ini melalui menu impor jadwal begitu daftar nomor resmi tersedia."
+    },
+    {
+      "id": "TRIP-63",
+      "nomorKA": "63",
+      "lin": "KAJJ",
+      "jenisSarana": "KA_ANTARKOTA",
+      "relasi": "Solo Balapan - Gambir",
+      "asal": "Solo Balapan",
+      "tujuan": "Gambir",
+      "batasMasukId": "BTS-JJ-TMR-D",
+      "batasKeluarId": "BTS-JJ-BRT-K",
+      "jamDatang": "06.24.00",
+      "jamBerangkat": "06.24.00",
+      "sepurLazim": [
+        "SP-GLU"
+      ],
+      "waktuBerhentiMinimumDetik": 0,
+      "langsung": true,
+      "keandalanData": "RESMI",
+      "catatan": "KA Manahan. Jam melintas Manggarai diambil apa adanya dari GAPEKA 2025 Lampiran II \"Daftar Waktu KA Antar Kota\" (KP-DJKA 224 Tahun 2024), kolom Berangkat pada baris Manggarai yang bertanda \"Ls\" — berjalan langsung. KA ini TIDAK berhenti melayani penumpang di Manggarai. Perlu dicatat: angka ini versi dasar GAPEKA 2025 yang berlaku 1 Februari 2025; dokumen revisi per 18 Juni 2026 tidak berhasil diperoleh, sehingga perjalanan yang berubah pada revisi itu berpotensi berbeda."
+    },
+    {
+      "id": "TRIP-1181",
+      "nomorKA": "1181",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Bojonggede - Jakarta Kota",
+      "asal": "Bojonggede",
+      "tujuan": "Jakarta Kota",
+      "batasMasukId": "BTS-TBT-D",
+      "batasKeluarId": "BTS-CKI-K",
+      "jamDatang": "06.27.00",
+      "jamBerangkat": "06.29.00",
+      "sepurLazim": [
+        "SP-L9",
+        "SP-L10"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-6",
+      "nomorKA": "6",
+      "lin": "KAJJ",
+      "jenisSarana": "KA_ANTARKOTA",
+      "relasi": "Gambir - Surabaya Gubeng",
+      "asal": "Gambir",
+      "tujuan": "Surabaya Gubeng",
+      "batasMasukId": "BTS-JJ-BRT-D",
+      "batasKeluarId": "BTS-JJ-TMR-K",
+      "jamDatang": "06.29.00",
+      "jamBerangkat": "06.29.00",
+      "sepurLazim": [
+        "SP-GLH"
+      ],
+      "waktuBerhentiMinimumDetik": 0,
+      "langsung": true,
+      "keandalanData": "RESMI",
+      "catatan": "KA Argo Semeru. Jam melintas Manggarai diambil apa adanya dari GAPEKA 2025 Lampiran II \"Daftar Waktu KA Antar Kota\" (KP-DJKA 224 Tahun 2024), kolom Berangkat pada baris Manggarai yang bertanda \"Ls\" — berjalan langsung. KA ini TIDAK berhenti melayani penumpang di Manggarai. Perlu dicatat: angka ini versi dasar GAPEKA 2025 yang berlaku 1 Februari 2025; dokumen revisi per 18 Juni 2026 tidak berhasil diperoleh, sehingga perjalanan yang berubah pada revisi itu berpotensi berbeda."
+    },
+    {
+      "id": "TRIP-1183",
+      "nomorKA": "1183",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Bogor - Jakarta Kota",
+      "asal": "Bogor",
+      "tujuan": "Jakarta Kota",
+      "batasMasukId": "BTS-TBT-D",
+      "batasKeluarId": "BTS-CKI-K",
+      "jamDatang": "06.31.00",
+      "jamBerangkat": "06.33.00",
+      "sepurLazim": [
+        "SP-L9",
+        "SP-L10"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5511C",
+      "nomorKA": "5511C",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Cikarang - Kampung Bandan",
+      "asal": "Cikarang",
+      "tujuan": "Kampung Bandan",
+      "batasMasukId": "BTS-MTR-D",
+      "batasKeluarId": "BTS-SUD-K",
+      "jamDatang": "06.31.00",
+      "jamBerangkat": "06.33.00",
+      "sepurLazim": [
+        "SP-G1",
+        "SP-G2"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1506",
+      "nomorKA": "1506",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Jakarta Kota - Nambo",
+      "asal": "Jakarta Kota",
+      "tujuan": "Nambo",
+      "batasMasukId": "BTS-CKI-D",
+      "batasKeluarId": "BTS-TBT-K",
+      "jamDatang": "06.32.00",
+      "jamBerangkat": "06.34.00",
+      "sepurLazim": [
+        "SP-L11",
+        "SP-L12"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5028B",
+      "nomorKA": "5028B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Angke - Bekasi",
+      "asal": "Angke",
+      "tujuan": "Bekasi",
+      "batasMasukId": "BTS-SUD-D",
+      "batasKeluarId": "BTS-MTR-K",
+      "jamDatang": "06.35.00",
+      "jamBerangkat": "06.37.00",
+      "sepurLazim": [
+        "SP-G3",
+        "SP-G4"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5039C",
+      "nomorKA": "5039C",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Cikarang - Angke",
+      "asal": "Cikarang",
+      "tujuan": "Angke",
+      "batasMasukId": "BTS-MTR-D",
+      "batasKeluarId": "BTS-SUD-K",
+      "jamDatang": "06.36.00",
+      "jamBerangkat": "06.38.00",
+      "sepurLazim": [
+        "SP-G1",
+        "SP-G2"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1164",
+      "nomorKA": "1164",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Jakarta Kota - Bogor",
+      "asal": "Jakarta Kota",
+      "tujuan": "Bogor",
+      "batasMasukId": "BTS-CKI-D",
+      "batasKeluarId": "BTS-TBT-K",
+      "jamDatang": "06.37.00",
+      "jamBerangkat": "06.39.00",
+      "sepurLazim": [
+        "SP-L11",
+        "SP-L12"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1185",
+      "nomorKA": "1185",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Depok - Jakarta Kota",
+      "asal": "Depok",
+      "tujuan": "Jakarta Kota",
+      "batasMasukId": "BTS-TBT-D",
+      "batasKeluarId": "BTS-CKI-K",
+      "jamDatang": "06.39.00",
+      "jamBerangkat": "06.41.00",
+      "sepurLazim": [
+        "SP-L9",
+        "SP-L10"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5041C",
+      "nomorKA": "5041C",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Bekasi - Angke",
+      "asal": "Bekasi",
+      "tujuan": "Angke",
+      "batasMasukId": "BTS-MTR-D",
+      "batasKeluarId": "BTS-SUD-K",
+      "jamDatang": "06.42.00",
+      "jamBerangkat": "06.44.00",
+      "sepurLazim": [
+        "SP-G1",
+        "SP-G2"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-803",
+      "nomorKA": "803",
+      "lin": "BANDARA",
+      "jenisSarana": "KRL_8",
+      "relasi": "Bandara Soekarno-Hatta - Manggarai",
+      "asal": "Bandara Soekarno-Hatta",
+      "tujuan": "Manggarai",
+      "batasMasukId": "BTS-BNI",
+      "batasKeluarId": "BTS-BNI",
+      "jamDatang": "06.42.00",
+      "jamBerangkat": "06.47.00",
+      "sepurLazim": [
+        "SP-G7",
+        "SP-G8"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "REKONSTRUKSI_POLA",
+      "catatan": "REKONSTRUKSI POLA. Yang terverifikasi: Manggarai merupakan stasiun ujung Commuter Line Basoetta; keberangkatan dari Manggarai berlangsung 05.00-22.00 dengan selang 30 menit; kedatangan dari Bandara Soekarno-Hatta dimulai pukul 06.12; nomor KA berada pada seri 8xx (contoh nyata terverifikasi: KA 806A). Yang TIDAK terverifikasi: penetapan nomor KA untuk tiap keberangkatan — nomor pada baris ini disusun mengikuti seri dan tidak boleh dianggap nomor GAPEKA. Ganti baris ini melalui menu impor jadwal begitu daftar nomor resmi tersedia."
+    },
+    {
+      "id": "TRIP-130",
+      "nomorKA": "130",
+      "lin": "KAJJ",
+      "jenisSarana": "KA_ANTARKOTA",
+      "relasi": "Gambir - Garut",
+      "asal": "Gambir",
+      "tujuan": "Garut",
+      "batasMasukId": "BTS-JJ-BRT-D",
+      "batasKeluarId": "BTS-JJ-TMR-K",
+      "jamDatang": "06.44.00",
+      "jamBerangkat": "06.44.00",
+      "sepurLazim": [
+        "SP-GLH"
+      ],
+      "waktuBerhentiMinimumDetik": 0,
+      "langsung": true,
+      "keandalanData": "RESMI",
+      "catatan": "KA Papandayan. Jam melintas Manggarai diambil apa adanya dari GAPEKA 2025 Lampiran II \"Daftar Waktu KA Antar Kota\" (KP-DJKA 224 Tahun 2024), kolom Berangkat pada baris Manggarai yang bertanda \"Ls\" — berjalan langsung. KA ini TIDAK berhenti melayani penumpang di Manggarai. Perlu dicatat: angka ini versi dasar GAPEKA 2025 yang berlaku 1 Februari 2025; dokumen revisi per 18 Juni 2026 tidak berhasil diperoleh, sehingga perjalanan yang berubah pada revisi itu berpotensi berbeda."
+    },
+    {
+      "id": "TRIP-1187",
+      "nomorKA": "1187",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Bojonggede - Jakarta Kota",
+      "asal": "Bojonggede",
+      "tujuan": "Jakarta Kota",
+      "batasMasukId": "BTS-TBT-D",
+      "batasKeluarId": "BTS-CKI-K",
+      "jamDatang": "06.46.00",
+      "jamBerangkat": "06.48.00",
+      "sepurLazim": [
+        "SP-L9",
+        "SP-L10"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1166",
+      "nomorKA": "1166",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Jakarta Kota - Bogor",
+      "asal": "Jakarta Kota",
+      "tujuan": "Bogor",
+      "batasMasukId": "BTS-CKI-D",
+      "batasKeluarId": "BTS-TBT-K",
+      "jamDatang": "06.46.00",
+      "jamBerangkat": "06.48.00",
+      "sepurLazim": [
+        "SP-L11",
+        "SP-L12"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5043C",
+      "nomorKA": "5043C",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Cikarang - Angke",
+      "asal": "Cikarang",
+      "tujuan": "Angke",
+      "batasMasukId": "BTS-MTR-D",
+      "batasKeluarId": "BTS-SUD-K",
+      "jamDatang": "06.48.00",
+      "jamBerangkat": "06.50.00",
+      "sepurLazim": [
+        "SP-G1",
+        "SP-G2"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5513B",
+      "nomorKA": "5513B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Manggarai - Kampung Bandan",
+      "asal": "Manggarai",
+      "tujuan": "Kampung Bandan",
+      "batasMasukId": "BTS-MTR-D",
+      "batasKeluarId": "BTS-SUD-K",
+      "jamDatang": "06.49.00",
+      "jamBerangkat": "06.55.00",
+      "sepurLazim": [
+        "SP-G1",
+        "SP-G2"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI",
+      "catatan": "Jam berangkat sesuai jadwal resmi. Perjalanan berdinas mulai dari Manggarai; masuknya rangkaian dimodelkan sebagai langsiran dari arah Matraman."
+    },
+    {
+      "id": "TRIP-6004C",
+      "nomorKA": "6004C",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Kampung Bandan - Cikarang",
+      "asal": "Kampung Bandan",
+      "tujuan": "Cikarang",
+      "batasMasukId": "BTS-SUD-D",
+      "batasKeluarId": "BTS-MTR-K",
+      "jamDatang": "06.49.00",
+      "jamBerangkat": "06.51.00",
+      "sepurLazim": [
+        "SP-G3",
+        "SP-G4"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1168",
+      "nomorKA": "1168",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Jakarta Kota - Bogor",
+      "asal": "Jakarta Kota",
+      "tujuan": "Bogor",
+      "batasMasukId": "BTS-CKI-D",
+      "batasKeluarId": "BTS-TBT-K",
+      "jamDatang": "06.50.00",
+      "jamBerangkat": "06.52.00",
+      "sepurLazim": [
+        "SP-L11",
+        "SP-L12"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1008",
+      "nomorKA": "1008",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Manggarai - Bogor",
+      "asal": "Manggarai",
+      "tujuan": "Bogor",
+      "batasMasukId": "BTS-CKI-D",
+      "batasKeluarId": "BTS-TBT-K",
+      "jamDatang": "06.50.00",
+      "jamBerangkat": "06.56.00",
+      "sepurLazim": [
+        "SP-L11",
+        "SP-L12"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI",
+      "catatan": "Jam berangkat sesuai jadwal resmi. Perjalanan berdinas mulai dari Manggarai; masuknya rangkaian ke emplasemen dimodelkan sebagai langsiran dari arah Cikini karena penyiapan rangkaian tidak tercantum di jadwal publik."
+    },
+    {
+      "id": "TRIP-1189",
+      "nomorKA": "1189",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Bogor - Jakarta Kota",
+      "asal": "Bogor",
+      "tujuan": "Jakarta Kota",
+      "batasMasukId": "BTS-TBT-D",
+      "batasKeluarId": "BTS-CKI-K",
+      "jamDatang": "06.51.00",
+      "jamBerangkat": "06.53.00",
+      "sepurLazim": [
+        "SP-L9",
+        "SP-L10"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5030C",
+      "nomorKA": "5030C",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Angke - Bekasi",
+      "asal": "Angke",
+      "tujuan": "Bekasi",
+      "batasMasukId": "BTS-SUD-D",
+      "batasKeluarId": "BTS-MTR-K",
+      "jamDatang": "06.53.00",
+      "jamBerangkat": "06.55.00",
+      "sepurLazim": [
+        "SP-G3",
+        "SP-G4"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-808",
+      "nomorKA": "808",
+      "lin": "BANDARA",
+      "jenisSarana": "KRL_8",
+      "relasi": "Manggarai - Bandara Soekarno-Hatta",
+      "asal": "Manggarai",
+      "tujuan": "Bandara Soekarno-Hatta",
+      "batasMasukId": "BTS-BNI",
+      "batasKeluarId": "BTS-BNI",
+      "jamDatang": "06.54.00",
+      "jamBerangkat": "07.00.00",
+      "sepurLazim": [
+        "SP-G7",
+        "SP-G8"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "REKONSTRUKSI_POLA",
+      "catatan": "REKONSTRUKSI POLA. Yang terverifikasi: Manggarai merupakan stasiun ujung Commuter Line Basoetta; keberangkatan dari Manggarai berlangsung 05.00-22.00 dengan selang 30 menit; kedatangan dari Bandara Soekarno-Hatta dimulai pukul 06.12; nomor KA berada pada seri 8xx (contoh nyata terverifikasi: KA 806A). Yang TIDAK terverifikasi: penetapan nomor KA untuk tiap keberangkatan — nomor pada baris ini disusun mengikuti seri dan tidak boleh dianggap nomor GAPEKA. Ganti baris ini melalui menu impor jadwal begitu daftar nomor resmi tersedia."
+    },
+    {
+      "id": "TRIP-1191",
+      "nomorKA": "1191",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Bogor - Jakarta Kota",
+      "asal": "Bogor",
+      "tujuan": "Jakarta Kota",
+      "batasMasukId": "BTS-TBT-D",
+      "batasKeluarId": "BTS-CKI-K",
+      "jamDatang": "06.55.00",
+      "jamBerangkat": "06.57.00",
+      "sepurLazim": [
+        "SP-L9",
+        "SP-L10"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1170",
+      "nomorKA": "1170",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Jakarta Kota - Bogor",
+      "asal": "Jakarta Kota",
+      "tujuan": "Bogor",
+      "batasMasukId": "BTS-CKI-D",
+      "batasKeluarId": "BTS-TBT-K",
+      "jamDatang": "06.58.00",
+      "jamBerangkat": "07.00.00",
+      "sepurLazim": [
+        "SP-L11",
+        "SP-L12"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5034C",
+      "nomorKA": "5034C",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Angke - Cikarang",
+      "asal": "Angke",
+      "tujuan": "Cikarang",
+      "batasMasukId": "BTS-SUD-D",
+      "batasKeluarId": "BTS-MTR-K",
+      "jamDatang": "06.58.00",
+      "jamBerangkat": "07.00.00",
+      "sepurLazim": [
+        "SP-G3",
+        "SP-G4"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1503",
+      "nomorKA": "1503",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Nambo - Jakarta Kota",
+      "asal": "Nambo",
+      "tujuan": "Jakarta Kota",
+      "batasMasukId": "BTS-TBT-D",
+      "batasKeluarId": "BTS-CKI-K",
+      "jamDatang": "07.01.00",
+      "jamBerangkat": "07.03.00",
+      "sepurLazim": [
+        "SP-L9",
+        "SP-L10"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1172",
+      "nomorKA": "1172",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Jakarta Kota - Bogor",
+      "asal": "Jakarta Kota",
+      "tujuan": "Bogor",
+      "batasMasukId": "BTS-CKI-D",
+      "batasKeluarId": "BTS-TBT-K",
+      "jamDatang": "07.03.00",
+      "jamBerangkat": "07.05.00",
+      "sepurLazim": [
+        "SP-L11",
+        "SP-L12"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5045B",
+      "nomorKA": "5045B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Bekasi - Angke",
+      "asal": "Bekasi",
+      "tujuan": "Angke",
+      "batasMasukId": "BTS-MTR-D",
+      "batasKeluarId": "BTS-SUD-K",
+      "jamDatang": "07.03.00",
+      "jamBerangkat": "07.05.00",
+      "sepurLazim": [
+        "SP-G1",
+        "SP-G2"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5706B",
+      "nomorKA": "5706B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Kampung Bandan - Manggarai",
+      "asal": "Kampung Bandan",
+      "tujuan": "Manggarai",
+      "batasMasukId": "BTS-SUD-D",
+      "batasKeluarId": "BTS-MTR-K",
+      "jamDatang": "07.03.00",
+      "jamBerangkat": "07.08.00",
+      "sepurLazim": [
+        "SP-G3",
+        "SP-G4"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI",
+      "catatan": "Jam datang sesuai jadwal resmi; perjalanan berakhir di Manggarai. Penarikan rangkaian keluar emplasemen ke arah Matraman adalah pemodelan, bukan jadwal publik."
+    },
+    {
+      "id": "TRIP-5049B",
+      "nomorKA": "5049B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Cikarang - Angke",
+      "asal": "Cikarang",
+      "tujuan": "Angke",
+      "batasMasukId": "BTS-MTR-D",
+      "batasKeluarId": "BTS-SUD-K",
+      "jamDatang": "07.08.00",
+      "jamBerangkat": "07.10.00",
+      "sepurLazim": [
+        "SP-G1",
+        "SP-G2"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-50F",
+      "nomorKA": "50F",
+      "lin": "KAJJ",
+      "jenisSarana": "KA_ANTARKOTA",
+      "relasi": "Gambir - Kroya",
+      "asal": "Gambir",
+      "tujuan": "Kroya",
+      "batasMasukId": "BTS-JJ-BRT-D",
+      "batasKeluarId": "BTS-JJ-TMR-K",
+      "jamDatang": "07.09.00",
+      "jamBerangkat": "07.09.00",
+      "sepurLazim": [
+        "SP-GLH"
+      ],
+      "waktuBerhentiMinimumDetik": 0,
+      "langsung": true,
+      "keandalanData": "RESMI",
+      "catatan": "KA Purwojaya. Jam melintas Manggarai diambil apa adanya dari GAPEKA 2025 Lampiran II \"Daftar Waktu KA Antar Kota\" (KP-DJKA 224 Tahun 2024), kolom Berangkat pada baris Manggarai yang bertanda \"Ls\" — berjalan langsung. KA ini TIDAK berhenti melayani penumpang di Manggarai. Perlu dicatat: angka ini versi dasar GAPEKA 2025 yang berlaku 1 Februari 2025; dokumen revisi per 18 Juni 2026 tidak berhasil diperoleh, sehingga perjalanan yang berubah pada revisi itu berpotensi berbeda."
+    },
+    {
+      "id": "TRIP-1193",
+      "nomorKA": "1193",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Bogor - Jakarta Kota",
+      "asal": "Bogor",
+      "tujuan": "Jakarta Kota",
+      "batasMasukId": "BTS-TBT-D",
+      "batasKeluarId": "BTS-CKI-K",
+      "jamDatang": "07.10.00",
+      "jamBerangkat": "07.12.00",
+      "sepurLazim": [
+        "SP-L9",
+        "SP-L10"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1174",
+      "nomorKA": "1174",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Jakarta Kota - Depok",
+      "asal": "Jakarta Kota",
+      "tujuan": "Depok",
+      "batasMasukId": "BTS-CKI-D",
+      "batasKeluarId": "BTS-TBT-K",
+      "jamDatang": "07.11.00",
+      "jamBerangkat": "07.13.00",
+      "sepurLazim": [
+        "SP-L11",
+        "SP-L12"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1010",
+      "nomorKA": "1010",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Manggarai - Bogor",
+      "asal": "Manggarai",
+      "tujuan": "Bogor",
+      "batasMasukId": "BTS-CKI-D",
+      "batasKeluarId": "BTS-TBT-K",
+      "jamDatang": "07.11.00",
+      "jamBerangkat": "07.17.00",
+      "sepurLazim": [
+        "SP-L11",
+        "SP-L12"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI",
+      "catatan": "Jam berangkat sesuai jadwal resmi. Perjalanan berdinas mulai dari Manggarai; masuknya rangkaian ke emplasemen dimodelkan sebagai langsiran dari arah Cikini karena penyiapan rangkaian tidak tercantum di jadwal publik."
+    },
+    {
+      "id": "TRIP-5036C",
+      "nomorKA": "5036C",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Angke - Bekasi",
+      "asal": "Angke",
+      "tujuan": "Bekasi",
+      "batasMasukId": "BTS-SUD-D",
+      "batasKeluarId": "BTS-MTR-K",
+      "jamDatang": "07.12.00",
+      "jamBerangkat": "07.14.00",
+      "sepurLazim": [
+        "SP-G3",
+        "SP-G4"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-805",
+      "nomorKA": "805",
+      "lin": "BANDARA",
+      "jenisSarana": "KRL_8",
+      "relasi": "Bandara Soekarno-Hatta - Manggarai",
+      "asal": "Bandara Soekarno-Hatta",
+      "tujuan": "Manggarai",
+      "batasMasukId": "BTS-BNI",
+      "batasKeluarId": "BTS-BNI",
+      "jamDatang": "07.12.00",
+      "jamBerangkat": "07.17.00",
+      "sepurLazim": [
+        "SP-G7",
+        "SP-G8"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "REKONSTRUKSI_POLA",
+      "catatan": "REKONSTRUKSI POLA. Yang terverifikasi: Manggarai merupakan stasiun ujung Commuter Line Basoetta; keberangkatan dari Manggarai berlangsung 05.00-22.00 dengan selang 30 menit; kedatangan dari Bandara Soekarno-Hatta dimulai pukul 06.12; nomor KA berada pada seri 8xx (contoh nyata terverifikasi: KA 806A). Yang TIDAK terverifikasi: penetapan nomor KA untuk tiap keberangkatan — nomor pada baris ini disusun mengikuti seri dan tidak boleh dianggap nomor GAPEKA. Ganti baris ini melalui menu impor jadwal begitu daftar nomor resmi tersedia."
+    },
+    {
+      "id": "TRIP-5515B",
+      "nomorKA": "5515B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Tambun - Kampung Bandan",
+      "asal": "Tambun",
+      "tujuan": "Kampung Bandan",
+      "batasMasukId": "BTS-MTR-D",
+      "batasKeluarId": "BTS-SUD-K",
+      "jamDatang": "07.13.00",
+      "jamBerangkat": "07.15.00",
+      "sepurLazim": [
+        "SP-G1",
+        "SP-G2"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5711B",
+      "nomorKA": "5711B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Manggarai - Angke",
+      "asal": "Manggarai",
+      "tujuan": "Angke",
+      "batasMasukId": "BTS-MTR-D",
+      "batasKeluarId": "BTS-SUD-K",
+      "jamDatang": "07.14.00",
+      "jamBerangkat": "07.20.00",
+      "sepurLazim": [
+        "SP-G1",
+        "SP-G2"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI",
+      "catatan": "Jam berangkat sesuai jadwal resmi. Perjalanan berdinas mulai dari Manggarai; masuknya rangkaian dimodelkan sebagai langsiran dari arah Matraman."
+    },
+    {
+      "id": "TRIP-6006B",
+      "nomorKA": "6006B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Kampung Bandan - Bekasi",
+      "asal": "Kampung Bandan",
+      "tujuan": "Bekasi",
+      "batasMasukId": "BTS-SUD-D",
+      "batasKeluarId": "BTS-MTR-K",
+      "jamDatang": "07.17.00",
+      "jamBerangkat": "07.19.00",
+      "sepurLazim": [
+        "SP-G3",
+        "SP-G4"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1176",
+      "nomorKA": "1176",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Jakarta Kota - Bogor",
+      "asal": "Jakarta Kota",
+      "tujuan": "Bogor",
+      "batasMasukId": "BTS-CKI-D",
+      "batasKeluarId": "BTS-TBT-K",
+      "jamDatang": "07.19.00",
+      "jamBerangkat": "07.21.00",
+      "sepurLazim": [
+        "SP-L11",
+        "SP-L12"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1197",
+      "nomorKA": "1197",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Bogor - Jakarta Kota",
+      "asal": "Bogor",
+      "tujuan": "Jakarta Kota",
+      "batasMasukId": "BTS-TBT-D",
+      "batasKeluarId": "BTS-CKI-K",
+      "jamDatang": "07.22.00",
+      "jamBerangkat": "07.24.00",
+      "sepurLazim": [
+        "SP-L9",
+        "SP-L10"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5051B",
+      "nomorKA": "5051B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Bekasi - Angke",
+      "asal": "Bekasi",
+      "tujuan": "Angke",
+      "batasMasukId": "BTS-MTR-D",
+      "batasKeluarId": "BTS-SUD-K",
+      "jamDatang": "07.23.00",
+      "jamBerangkat": "07.25.00",
+      "sepurLazim": [
+        "SP-G1",
+        "SP-G2"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-810",
+      "nomorKA": "810",
+      "lin": "BANDARA",
+      "jenisSarana": "KRL_8",
+      "relasi": "Manggarai - Bandara Soekarno-Hatta",
+      "asal": "Manggarai",
+      "tujuan": "Bandara Soekarno-Hatta",
+      "batasMasukId": "BTS-BNI",
+      "batasKeluarId": "BTS-BNI",
+      "jamDatang": "07.24.00",
+      "jamBerangkat": "07.30.00",
+      "sepurLazim": [
+        "SP-G7",
+        "SP-G8"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "REKONSTRUKSI_POLA",
+      "catatan": "REKONSTRUKSI POLA. Yang terverifikasi: Manggarai merupakan stasiun ujung Commuter Line Basoetta; keberangkatan dari Manggarai berlangsung 05.00-22.00 dengan selang 30 menit; kedatangan dari Bandara Soekarno-Hatta dimulai pukul 06.12; nomor KA berada pada seri 8xx (contoh nyata terverifikasi: KA 806A). Yang TIDAK terverifikasi: penetapan nomor KA untuk tiap keberangkatan — nomor pada baris ini disusun mengikuti seri dan tidak boleh dianggap nomor GAPEKA. Ganti baris ini melalui menu impor jadwal begitu daftar nomor resmi tersedia."
+    },
+    {
+      "id": "TRIP-20",
+      "nomorKA": "20",
+      "lin": "KAJJ",
+      "jenisSarana": "KA_ANTARKOTA",
+      "relasi": "Gambir - Semarang Tawang",
+      "asal": "Gambir",
+      "tujuan": "Semarang Tawang",
+      "batasMasukId": "BTS-JJ-BRT-D",
+      "batasKeluarId": "BTS-JJ-TMR-K",
+      "jamDatang": "07.24.00",
+      "jamBerangkat": "07.24.00",
+      "sepurLazim": [
+        "SP-GLH"
+      ],
+      "waktuBerhentiMinimumDetik": 0,
+      "langsung": true,
+      "keandalanData": "RESMI",
+      "catatan": "KA Argo Muria. Jam melintas Manggarai diambil apa adanya dari GAPEKA 2025 Lampiran II \"Daftar Waktu KA Antar Kota\" (KP-DJKA 224 Tahun 2024), kolom Berangkat pada baris Manggarai yang bertanda \"Ls\" — berjalan langsung. KA ini TIDAK berhenti melayani penumpang di Manggarai. Perlu dicatat: angka ini versi dasar GAPEKA 2025 yang berlaku 1 Februari 2025; dokumen revisi per 18 Juni 2026 tidak berhasil diperoleh, sehingga perjalanan yang berubah pada revisi itu berpotensi berbeda."
+    },
+    {
+      "id": "TRIP-1178",
+      "nomorKA": "1178",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Jakarta Kota - Bogor",
+      "asal": "Jakarta Kota",
+      "tujuan": "Bogor",
+      "batasMasukId": "BTS-CKI-D",
+      "batasKeluarId": "BTS-TBT-K",
+      "jamDatang": "07.26.00",
+      "jamBerangkat": "07.28.00",
+      "sepurLazim": [
+        "SP-L11",
+        "SP-L12"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5038C",
+      "nomorKA": "5038C",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Angke - Cikarang",
+      "asal": "Angke",
+      "tujuan": "Cikarang",
+      "batasMasukId": "BTS-SUD-D",
+      "batasKeluarId": "BTS-MTR-K",
+      "jamDatang": "07.30.00",
+      "jamBerangkat": "07.32.00",
+      "sepurLazim": [
+        "SP-G3",
+        "SP-G4"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1180",
+      "nomorKA": "1180",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Jakarta Kota - Bogor",
+      "asal": "Jakarta Kota",
+      "tujuan": "Bogor",
+      "batasMasukId": "BTS-CKI-D",
+      "batasKeluarId": "BTS-TBT-K",
+      "jamDatang": "07.31.00",
+      "jamBerangkat": "07.33.00",
+      "sepurLazim": [
+        "SP-L11",
+        "SP-L12"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1012",
+      "nomorKA": "1012",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Manggarai - Bogor",
+      "asal": "Manggarai",
+      "tujuan": "Bogor",
+      "batasMasukId": "BTS-CKI-D",
+      "batasKeluarId": "BTS-TBT-K",
+      "jamDatang": "07.32.00",
+      "jamBerangkat": "07.38.00",
+      "sepurLazim": [
+        "SP-L11",
+        "SP-L12"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI",
+      "catatan": "Jam berangkat sesuai jadwal resmi. Perjalanan berdinas mulai dari Manggarai; masuknya rangkaian ke emplasemen dimodelkan sebagai langsiran dari arah Cikini karena penyiapan rangkaian tidak tercantum di jadwal publik."
+    },
+    {
+      "id": "TRIP-5053B",
+      "nomorKA": "5053B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Bekasi - Angke",
+      "asal": "Bekasi",
+      "tujuan": "Angke",
+      "batasMasukId": "BTS-MTR-D",
+      "batasKeluarId": "BTS-SUD-K",
+      "jamDatang": "07.32.00",
+      "jamBerangkat": "07.34.00",
+      "sepurLazim": [
+        "SP-G1",
+        "SP-G2"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5708B",
+      "nomorKA": "5708B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Kampung Bandan - Manggarai",
+      "asal": "Kampung Bandan",
+      "tujuan": "Manggarai",
+      "batasMasukId": "BTS-SUD-D",
+      "batasKeluarId": "BTS-MTR-K",
+      "jamDatang": "07.33.00",
+      "jamBerangkat": "07.38.00",
+      "sepurLazim": [
+        "SP-G3",
+        "SP-G4"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI",
+      "catatan": "Jam datang sesuai jadwal resmi; perjalanan berakhir di Manggarai. Penarikan rangkaian keluar emplasemen ke arah Matraman adalah pemodelan, bukan jadwal publik."
+    },
+    {
+      "id": "TRIP-5517B",
+      "nomorKA": "5517B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Cikarang - Kampung Bandan",
+      "asal": "Cikarang",
+      "tujuan": "Kampung Bandan",
+      "batasMasukId": "BTS-MTR-D",
+      "batasKeluarId": "BTS-SUD-K",
+      "jamDatang": "07.38.00",
+      "jamBerangkat": "07.40.00",
+      "sepurLazim": [
+        "SP-G1",
+        "SP-G2"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-132",
+      "nomorKA": "132",
+      "lin": "KAJJ",
+      "jenisSarana": "KA_ANTARKOTA",
+      "relasi": "Gambir - Bandung",
+      "asal": "Gambir",
+      "tujuan": "Bandung",
+      "batasMasukId": "BTS-JJ-BRT-D",
+      "batasKeluarId": "BTS-JJ-TMR-K",
+      "jamDatang": "07.38.00",
+      "jamBerangkat": "07.38.00",
+      "sepurLazim": [
+        "SP-GLH"
+      ],
+      "waktuBerhentiMinimumDetik": 0,
+      "langsung": true,
+      "keandalanData": "RESMI",
+      "catatan": "KA Parahyangan. Jam melintas Manggarai diambil apa adanya dari GAPEKA 2025 Lampiran II \"Daftar Waktu KA Antar Kota\" (KP-DJKA 224 Tahun 2024), kolom Berangkat pada baris Manggarai yang bertanda \"Ls\" — berjalan langsung. KA ini TIDAK berhenti melayani penumpang di Manggarai. Perlu dicatat: angka ini versi dasar GAPEKA 2025 yang berlaku 1 Februari 2025; dokumen revisi per 18 Juni 2026 tidak berhasil diperoleh, sehingga perjalanan yang berubah pada revisi itu berpotensi berbeda."
+    },
+    {
+      "id": "TRIP-1203",
+      "nomorKA": "1203",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Bogor - Jakarta Kota",
+      "asal": "Bogor",
+      "tujuan": "Jakarta Kota",
+      "batasMasukId": "BTS-TBT-D",
+      "batasKeluarId": "BTS-CKI-K",
+      "jamDatang": "07.41.00",
+      "jamBerangkat": "07.43.00",
+      "sepurLazim": [
+        "SP-L9",
+        "SP-L10"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1182",
+      "nomorKA": "1182",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Jakarta Kota - Bogor",
+      "asal": "Jakarta Kota",
+      "tujuan": "Bogor",
+      "batasMasukId": "BTS-CKI-D",
+      "batasKeluarId": "BTS-TBT-K",
+      "jamDatang": "07.41.00",
+      "jamBerangkat": "07.43.00",
+      "sepurLazim": [
+        "SP-L11",
+        "SP-L12"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5715B",
+      "nomorKA": "5715B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Manggarai - Kampung Bandan",
+      "asal": "Manggarai",
+      "tujuan": "Kampung Bandan",
+      "batasMasukId": "BTS-MTR-D",
+      "batasKeluarId": "BTS-SUD-K",
+      "jamDatang": "07.41.00",
+      "jamBerangkat": "07.47.00",
+      "sepurLazim": [
+        "SP-G1",
+        "SP-G2"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI",
+      "catatan": "Jam berangkat sesuai jadwal resmi. Perjalanan berdinas mulai dari Manggarai; masuknya rangkaian dimodelkan sebagai langsiran dari arah Matraman."
+    },
+    {
+      "id": "TRIP-5044D",
+      "nomorKA": "5044D",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Angke - Cikarang",
+      "asal": "Angke",
+      "tujuan": "Cikarang",
+      "batasMasukId": "BTS-SUD-D",
+      "batasKeluarId": "BTS-MTR-K",
+      "jamDatang": "07.41.00",
+      "jamBerangkat": "07.43.00",
+      "sepurLazim": [
+        "SP-G3",
+        "SP-G4"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-807",
+      "nomorKA": "807",
+      "lin": "BANDARA",
+      "jenisSarana": "KRL_8",
+      "relasi": "Bandara Soekarno-Hatta - Manggarai",
+      "asal": "Bandara Soekarno-Hatta",
+      "tujuan": "Manggarai",
+      "batasMasukId": "BTS-BNI",
+      "batasKeluarId": "BTS-BNI",
+      "jamDatang": "07.42.00",
+      "jamBerangkat": "07.47.00",
+      "sepurLazim": [
+        "SP-G7",
+        "SP-G8"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "REKONSTRUKSI_POLA",
+      "catatan": "REKONSTRUKSI POLA. Yang terverifikasi: Manggarai merupakan stasiun ujung Commuter Line Basoetta; keberangkatan dari Manggarai berlangsung 05.00-22.00 dengan selang 30 menit; kedatangan dari Bandara Soekarno-Hatta dimulai pukul 06.12; nomor KA berada pada seri 8xx (contoh nyata terverifikasi: KA 806A). Yang TIDAK terverifikasi: penetapan nomor KA untuk tiap keberangkatan — nomor pada baris ini disusun mengikuti seri dan tidak boleh dianggap nomor GAPEKA. Ganti baris ini melalui menu impor jadwal begitu daftar nomor resmi tersedia."
+    },
+    {
+      "id": "TRIP-1205",
+      "nomorKA": "1205",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Bogor - Jakarta Kota",
+      "asal": "Bogor",
+      "tujuan": "Jakarta Kota",
+      "batasMasukId": "BTS-TBT-D",
+      "batasKeluarId": "BTS-CKI-K",
+      "jamDatang": "07.45.00",
+      "jamBerangkat": "07.47.00",
+      "sepurLazim": [
+        "SP-L9",
+        "SP-L10"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1184",
+      "nomorKA": "1184",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Jakarta Kota - Depok",
+      "asal": "Jakarta Kota",
+      "tujuan": "Depok",
+      "batasMasukId": "BTS-CKI-D",
+      "batasKeluarId": "BTS-TBT-K",
+      "jamDatang": "07.45.00",
+      "jamBerangkat": "07.47.00",
+      "sepurLazim": [
+        "SP-L11",
+        "SP-L12"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-6008B",
+      "nomorKA": "6008B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Kampung Bandan - Bekasi",
+      "asal": "Kampung Bandan",
+      "tujuan": "Bekasi",
+      "batasMasukId": "BTS-SUD-D",
+      "batasKeluarId": "BTS-MTR-K",
+      "jamDatang": "07.47.00",
+      "jamBerangkat": "07.49.00",
+      "sepurLazim": [
+        "SP-G3",
+        "SP-G4"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1186",
+      "nomorKA": "1186",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Jakarta Kota - Bogor",
+      "asal": "Jakarta Kota",
+      "tujuan": "Bogor",
+      "batasMasukId": "BTS-CKI-D",
+      "batasKeluarId": "BTS-TBT-K",
+      "jamDatang": "07.50.00",
+      "jamBerangkat": "07.52.00",
+      "sepurLazim": [
+        "SP-L11",
+        "SP-L12"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-131",
+      "nomorKA": "131",
+      "lin": "KAJJ",
+      "jenisSarana": "KA_ANTARKOTA",
+      "relasi": "Bandung - Gambir",
+      "asal": "Bandung",
+      "tujuan": "Gambir",
+      "batasMasukId": "BTS-JJ-TMR-D",
+      "batasKeluarId": "BTS-JJ-BRT-K",
+      "jamDatang": "07.51.00",
+      "jamBerangkat": "07.51.00",
+      "sepurLazim": [
+        "SP-GLU"
+      ],
+      "waktuBerhentiMinimumDetik": 0,
+      "langsung": true,
+      "keandalanData": "RESMI",
+      "catatan": "KA Parahyangan. Jam melintas Manggarai diambil apa adanya dari GAPEKA 2025 Lampiran II \"Daftar Waktu KA Antar Kota\" (KP-DJKA 224 Tahun 2024), kolom Berangkat pada baris Manggarai yang bertanda \"Ls\" — berjalan langsung. KA ini TIDAK berhenti melayani penumpang di Manggarai. Perlu dicatat: angka ini versi dasar GAPEKA 2025 yang berlaku 1 Februari 2025; dokumen revisi per 18 Juni 2026 tidak berhasil diperoleh, sehingga perjalanan yang berubah pada revisi itu berpotensi berbeda."
+    },
+    {
+      "id": "TRIP-1207",
+      "nomorKA": "1207",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Bogor - Jakarta Kota",
+      "asal": "Bogor",
+      "tujuan": "Jakarta Kota",
+      "batasMasukId": "BTS-TBT-D",
+      "batasKeluarId": "BTS-CKI-K",
+      "jamDatang": "07.52.00",
+      "jamBerangkat": "07.54.00",
+      "sepurLazim": [
+        "SP-L9",
+        "SP-L10"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5055C",
+      "nomorKA": "5055C",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Cikarang - Angke",
+      "asal": "Cikarang",
+      "tujuan": "Angke",
+      "batasMasukId": "BTS-MTR-D",
+      "batasKeluarId": "BTS-SUD-K",
+      "jamDatang": "07.54.00",
+      "jamBerangkat": "07.56.00",
+      "sepurLazim": [
+        "SP-G1",
+        "SP-G2"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-812",
+      "nomorKA": "812",
+      "lin": "BANDARA",
+      "jenisSarana": "KRL_8",
+      "relasi": "Manggarai - Bandara Soekarno-Hatta",
+      "asal": "Manggarai",
+      "tujuan": "Bandara Soekarno-Hatta",
+      "batasMasukId": "BTS-BNI",
+      "batasKeluarId": "BTS-BNI",
+      "jamDatang": "07.54.00",
+      "jamBerangkat": "08.00.00",
+      "sepurLazim": [
+        "SP-G7",
+        "SP-G8"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "REKONSTRUKSI_POLA",
+      "catatan": "REKONSTRUKSI POLA. Yang terverifikasi: Manggarai merupakan stasiun ujung Commuter Line Basoetta; keberangkatan dari Manggarai berlangsung 05.00-22.00 dengan selang 30 menit; kedatangan dari Bandara Soekarno-Hatta dimulai pukul 06.12; nomor KA berada pada seri 8xx (contoh nyata terverifikasi: KA 806A). Yang TIDAK terverifikasi: penetapan nomor KA untuk tiap keberangkatan — nomor pada baris ini disusun mengikuti seri dan tidak boleh dianggap nomor GAPEKA. Ganti baris ini melalui menu impor jadwal begitu daftar nomor resmi tersedia."
+    },
+    {
+      "id": "TRIP-46",
+      "nomorKA": "46",
+      "lin": "KAJJ",
+      "jenisSarana": "KA_ANTARKOTA",
+      "relasi": "Gambir - Yogyakarta",
+      "asal": "Gambir",
+      "tujuan": "Yogyakarta",
+      "batasMasukId": "BTS-JJ-BRT-D",
+      "batasKeluarId": "BTS-JJ-TMR-K",
+      "jamDatang": "07.54.00",
+      "jamBerangkat": "07.54.00",
+      "sepurLazim": [
+        "SP-GLH"
+      ],
+      "waktuBerhentiMinimumDetik": 0,
+      "langsung": true,
+      "keandalanData": "RESMI",
+      "catatan": "KA Taksaka. Jam melintas Manggarai diambil apa adanya dari GAPEKA 2025 Lampiran II \"Daftar Waktu KA Antar Kota\" (KP-DJKA 224 Tahun 2024), kolom Berangkat pada baris Manggarai yang bertanda \"Ls\" — berjalan langsung. KA ini TIDAK berhenti melayani penumpang di Manggarai. Perlu dicatat: angka ini versi dasar GAPEKA 2025 yang berlaku 1 Februari 2025; dokumen revisi per 18 Juni 2026 tidak berhasil diperoleh, sehingga perjalanan yang berubah pada revisi itu berpotensi berbeda."
+    },
+    {
+      "id": "TRIP-1209",
+      "nomorKA": "1209",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Bogor - Jakarta Kota",
+      "asal": "Bogor",
+      "tujuan": "Jakarta Kota",
+      "batasMasukId": "BTS-TBT-D",
+      "batasKeluarId": "BTS-CKI-K",
+      "jamDatang": "07.56.00",
+      "jamBerangkat": "07.58.00",
+      "sepurLazim": [
+        "SP-L9",
+        "SP-L10"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1188",
+      "nomorKA": "1188",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Jakarta Kota - Bogor",
+      "asal": "Jakarta Kota",
+      "tujuan": "Bogor",
+      "batasMasukId": "BTS-CKI-D",
+      "batasKeluarId": "BTS-TBT-K",
+      "jamDatang": "07.57.00",
+      "jamBerangkat": "07.59.00",
+      "sepurLazim": [
+        "SP-L11",
+        "SP-L12"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5046B",
+      "nomorKA": "5046B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Angke - Bekasi",
+      "asal": "Angke",
+      "tujuan": "Bekasi",
+      "batasMasukId": "BTS-SUD-D",
+      "batasKeluarId": "BTS-MTR-K",
+      "jamDatang": "07.57.00",
+      "jamBerangkat": "07.59.00",
+      "sepurLazim": [
+        "SP-G3",
+        "SP-G4"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1505",
+      "nomorKA": "1505",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Nambo - Jakarta Kota",
+      "asal": "Nambo",
+      "tujuan": "Jakarta Kota",
+      "batasMasukId": "BTS-TBT-D",
+      "batasKeluarId": "BTS-CKI-K",
+      "jamDatang": "08.01.00",
+      "jamBerangkat": "08.03.00",
+      "sepurLazim": [
+        "SP-L9",
+        "SP-L10"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1508",
+      "nomorKA": "1508",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Jakarta Kota - Nambo",
+      "asal": "Jakarta Kota",
+      "tujuan": "Nambo",
+      "batasMasukId": "BTS-CKI-D",
+      "batasKeluarId": "BTS-TBT-K",
+      "jamDatang": "08.01.00",
+      "jamBerangkat": "08.03.00",
+      "sepurLazim": [
+        "SP-L11",
+        "SP-L12"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5057B",
+      "nomorKA": "5057B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Bekasi - Angke",
+      "asal": "Bekasi",
+      "tujuan": "Angke",
+      "batasMasukId": "BTS-MTR-D",
+      "batasKeluarId": "BTS-SUD-K",
+      "jamDatang": "08.02.00",
+      "jamBerangkat": "08.04.00",
+      "sepurLazim": [
+        "SP-G1",
+        "SP-G2"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5710B",
+      "nomorKA": "5710B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Angke - Manggarai",
+      "asal": "Angke",
+      "tujuan": "Manggarai",
+      "batasMasukId": "BTS-SUD-D",
+      "batasKeluarId": "BTS-MTR-K",
+      "jamDatang": "08.03.00",
+      "jamBerangkat": "08.08.00",
+      "sepurLazim": [
+        "SP-G3",
+        "SP-G4"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI",
+      "catatan": "Jam datang sesuai jadwal resmi; perjalanan berakhir di Manggarai. Penarikan rangkaian keluar emplasemen ke arah Matraman adalah pemodelan, bukan jadwal publik."
+    },
+    {
+      "id": "TRIP-1190",
+      "nomorKA": "1190",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Jakarta Kota - Bogor",
+      "asal": "Jakarta Kota",
+      "tujuan": "Bogor",
+      "batasMasukId": "BTS-CKI-D",
+      "batasKeluarId": "BTS-TBT-K",
+      "jamDatang": "08.05.00",
+      "jamBerangkat": "08.07.00",
+      "sepurLazim": [
+        "SP-L11",
+        "SP-L12"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1213A",
+      "nomorKA": "1213A",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Bogor - Jakarta Kota",
+      "asal": "Bogor",
+      "tujuan": "Jakarta Kota",
+      "batasMasukId": "BTS-TBT-D",
+      "batasKeluarId": "BTS-CKI-K",
+      "jamDatang": "08.11.00",
+      "jamBerangkat": "08.13.00",
+      "sepurLazim": [
+        "SP-L9",
+        "SP-L10"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5519C",
+      "nomorKA": "5519C",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Cikarang - Kampung Bandan",
+      "asal": "Cikarang",
+      "tujuan": "Kampung Bandan",
+      "batasMasukId": "BTS-MTR-D",
+      "batasKeluarId": "BTS-SUD-K",
+      "jamDatang": "08.11.00",
+      "jamBerangkat": "08.13.00",
+      "sepurLazim": [
+        "SP-G1",
+        "SP-G2"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5048D",
+      "nomorKA": "5048D",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Angke - Cikarang",
+      "asal": "Angke",
+      "tujuan": "Cikarang",
+      "batasMasukId": "BTS-SUD-D",
+      "batasKeluarId": "BTS-MTR-K",
+      "jamDatang": "08.12.00",
+      "jamBerangkat": "08.14.00",
+      "sepurLazim": [
+        "SP-G3",
+        "SP-G4"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-809",
+      "nomorKA": "809",
+      "lin": "BANDARA",
+      "jenisSarana": "KRL_8",
+      "relasi": "Bandara Soekarno-Hatta - Manggarai",
+      "asal": "Bandara Soekarno-Hatta",
+      "tujuan": "Manggarai",
+      "batasMasukId": "BTS-BNI",
+      "batasKeluarId": "BTS-BNI",
+      "jamDatang": "08.12.00",
+      "jamBerangkat": "08.17.00",
+      "sepurLazim": [
+        "SP-G7",
+        "SP-G8"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "REKONSTRUKSI_POLA",
+      "catatan": "REKONSTRUKSI POLA. Yang terverifikasi: Manggarai merupakan stasiun ujung Commuter Line Basoetta; keberangkatan dari Manggarai berlangsung 05.00-22.00 dengan selang 30 menit; kedatangan dari Bandara Soekarno-Hatta dimulai pukul 06.12; nomor KA berada pada seri 8xx (contoh nyata terverifikasi: KA 806A). Yang TIDAK terverifikasi: penetapan nomor KA untuk tiap keberangkatan — nomor pada baris ini disusun mengikuti seri dan tidak boleh dianggap nomor GAPEKA. Ganti baris ini melalui menu impor jadwal begitu daftar nomor resmi tersedia."
+    },
+    {
+      "id": "TRIP-5719B",
+      "nomorKA": "5719B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Manggarai - Angke",
+      "asal": "Manggarai",
+      "tujuan": "Angke",
+      "batasMasukId": "BTS-MTR-D",
+      "batasKeluarId": "BTS-SUD-K",
+      "jamDatang": "08.13.00",
+      "jamBerangkat": "08.19.00",
+      "sepurLazim": [
+        "SP-G1",
+        "SP-G2"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI",
+      "catatan": "Jam berangkat sesuai jadwal resmi. Perjalanan berdinas mulai dari Manggarai; masuknya rangkaian dimodelkan sebagai langsiran dari arah Matraman."
+    },
+    {
+      "id": "TRIP-1194",
+      "nomorKA": "1194",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Jakarta Kota - Bogor",
+      "asal": "Jakarta Kota",
+      "tujuan": "Bogor",
+      "batasMasukId": "BTS-CKI-D",
+      "batasKeluarId": "BTS-TBT-K",
+      "jamDatang": "08.15.00",
+      "jamBerangkat": "08.17.00",
+      "sepurLazim": [
+        "SP-L11",
+        "SP-L12"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5712B",
+      "nomorKA": "5712B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Kampung Bandan - Manggarai",
+      "asal": "Kampung Bandan",
+      "tujuan": "Manggarai",
+      "batasMasukId": "BTS-SUD-D",
+      "batasKeluarId": "BTS-MTR-K",
+      "jamDatang": "08.18.00",
+      "jamBerangkat": "08.23.00",
+      "sepurLazim": [
+        "SP-G3",
+        "SP-G4"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI",
+      "catatan": "Jam datang sesuai jadwal resmi; perjalanan berakhir di Manggarai. Penarikan rangkaian keluar emplasemen ke arah Matraman adalah pemodelan, bukan jadwal publik."
+    },
+    {
+      "id": "TRIP-117",
+      "nomorKA": "117",
+      "lin": "KAJJ",
+      "jenisSarana": "KA_ANTARKOTA",
+      "relasi": "Cirebon - Gambir",
+      "asal": "Cirebon",
+      "tujuan": "Gambir",
+      "batasMasukId": "BTS-JJ-TMR-D",
+      "batasKeluarId": "BTS-JJ-BRT-K",
+      "jamDatang": "08.18.00",
+      "jamBerangkat": "08.18.00",
+      "sepurLazim": [
+        "SP-GLU"
+      ],
+      "waktuBerhentiMinimumDetik": 0,
+      "langsung": true,
+      "keandalanData": "RESMI",
+      "catatan": "KA Gunungjati. Jam melintas Manggarai diambil apa adanya dari GAPEKA 2025 Lampiran II \"Daftar Waktu KA Antar Kota\" (KP-DJKA 224 Tahun 2024), kolom Berangkat pada baris Manggarai yang bertanda \"Ls\" — berjalan langsung. KA ini TIDAK berhenti melayani penumpang di Manggarai. Perlu dicatat: angka ini versi dasar GAPEKA 2025 yang berlaku 1 Februari 2025; dokumen revisi per 18 Juni 2026 tidak berhasil diperoleh, sehingga perjalanan yang berubah pada revisi itu berpotensi berbeda."
+    },
+    {
+      "id": "TRIP-1215A",
+      "nomorKA": "1215A",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Bogor - Jakarta Kota",
+      "asal": "Bogor",
+      "tujuan": "Jakarta Kota",
+      "batasMasukId": "BTS-TBT-D",
+      "batasKeluarId": "BTS-CKI-K",
+      "jamDatang": "08.21.00",
+      "jamBerangkat": "08.23.00",
+      "sepurLazim": [
+        "SP-L9",
+        "SP-L10"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5050C",
+      "nomorKA": "5050C",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Angke - Cikarang",
+      "asal": "Angke",
+      "tujuan": "Cikarang",
+      "batasMasukId": "BTS-SUD-D",
+      "batasKeluarId": "BTS-MTR-K",
+      "jamDatang": "08.21.00",
+      "jamBerangkat": "08.23.00",
+      "sepurLazim": [
+        "SP-G3",
+        "SP-G4"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5059B",
+      "nomorKA": "5059B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Bekasi - Angke",
+      "asal": "Bekasi",
+      "tujuan": "Angke",
+      "batasMasukId": "BTS-MTR-D",
+      "batasKeluarId": "BTS-SUD-K",
+      "jamDatang": "08.23.00",
+      "jamBerangkat": "08.25.00",
+      "sepurLazim": [
+        "SP-G1",
+        "SP-G2"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-814",
+      "nomorKA": "814",
+      "lin": "BANDARA",
+      "jenisSarana": "KRL_8",
+      "relasi": "Manggarai - Bandara Soekarno-Hatta",
+      "asal": "Manggarai",
+      "tujuan": "Bandara Soekarno-Hatta",
+      "batasMasukId": "BTS-BNI",
+      "batasKeluarId": "BTS-BNI",
+      "jamDatang": "08.24.00",
+      "jamBerangkat": "08.30.00",
+      "sepurLazim": [
+        "SP-G7",
+        "SP-G8"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "REKONSTRUKSI_POLA",
+      "catatan": "REKONSTRUKSI POLA. Yang terverifikasi: Manggarai merupakan stasiun ujung Commuter Line Basoetta; keberangkatan dari Manggarai berlangsung 05.00-22.00 dengan selang 30 menit; kedatangan dari Bandara Soekarno-Hatta dimulai pukul 06.12; nomor KA berada pada seri 8xx (contoh nyata terverifikasi: KA 806A). Yang TIDAK terverifikasi: penetapan nomor KA untuk tiap keberangkatan — nomor pada baris ini disusun mengikuti seri dan tidak boleh dianggap nomor GAPEKA. Ganti baris ini melalui menu impor jadwal begitu daftar nomor resmi tersedia."
+    },
+    {
+      "id": "TRIP-1217A",
+      "nomorKA": "1217A",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Bogor - Jakarta Kota",
+      "asal": "Bogor",
+      "tujuan": "Jakarta Kota",
+      "batasMasukId": "BTS-TBT-D",
+      "batasKeluarId": "BTS-CKI-K",
+      "jamDatang": "08.27.00",
+      "jamBerangkat": "08.29.00",
+      "sepurLazim": [
+        "SP-L9",
+        "SP-L10"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-2",
+      "nomorKA": "2",
+      "lin": "KAJJ",
+      "jenisSarana": "KA_ANTARKOTA",
+      "relasi": "Gambir - Surabaya Pasarturi",
+      "asal": "Gambir",
+      "tujuan": "Surabaya Pasarturi",
+      "batasMasukId": "BTS-JJ-BRT-D",
+      "batasKeluarId": "BTS-JJ-TMR-K",
+      "jamDatang": "08.29.00",
+      "jamBerangkat": "08.29.00",
+      "sepurLazim": [
+        "SP-GLH"
+      ],
+      "waktuBerhentiMinimumDetik": 0,
+      "langsung": true,
+      "keandalanData": "RESMI",
+      "catatan": "KA Argo Bromo Anggrek. Jam melintas Manggarai diambil apa adanya dari GAPEKA 2025 Lampiran II \"Daftar Waktu KA Antar Kota\" (KP-DJKA 224 Tahun 2024), kolom Berangkat pada baris Manggarai yang bertanda \"Ls\" — berjalan langsung. KA ini TIDAK berhenti melayani penumpang di Manggarai. Perlu dicatat: angka ini versi dasar GAPEKA 2025 yang berlaku 1 Februari 2025; dokumen revisi per 18 Juni 2026 tidak berhasil diperoleh, sehingga perjalanan yang berubah pada revisi itu berpotensi berbeda."
+    },
+    {
+      "id": "TRIP-1014",
+      "nomorKA": "1014",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Manggarai - Bogor",
+      "asal": "Manggarai",
+      "tujuan": "Bogor",
+      "batasMasukId": "BTS-CKI-D",
+      "batasKeluarId": "BTS-TBT-K",
+      "jamDatang": "08.31.00",
+      "jamBerangkat": "08.37.00",
+      "sepurLazim": [
+        "SP-L11",
+        "SP-L12"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI",
+      "catatan": "Jam berangkat sesuai jadwal resmi. Perjalanan berdinas mulai dari Manggarai; masuknya rangkaian ke emplasemen dimodelkan sebagai langsiran dari arah Cikini karena penyiapan rangkaian tidak tercantum di jadwal publik."
+    },
+    {
+      "id": "TRIP-5052C",
+      "nomorKA": "5052C",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Angke - Cikarang",
+      "asal": "Angke",
+      "tujuan": "Cikarang",
+      "batasMasukId": "BTS-SUD-D",
+      "batasKeluarId": "BTS-MTR-K",
+      "jamDatang": "08.31.00",
+      "jamBerangkat": "08.33.00",
+      "sepurLazim": [
+        "SP-G3",
+        "SP-G4"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1219",
+      "nomorKA": "1219",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Bogor - Jakarta Kota",
+      "asal": "Bogor",
+      "tujuan": "Jakarta Kota",
+      "batasMasukId": "BTS-TBT-D",
+      "batasKeluarId": "BTS-CKI-K",
+      "jamDatang": "08.33.00",
+      "jamBerangkat": "08.35.00",
+      "sepurLazim": [
+        "SP-L9",
+        "SP-L10"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5521B",
+      "nomorKA": "5521B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Bekasi - Kampung Bandan",
+      "asal": "Bekasi",
+      "tujuan": "Kampung Bandan",
+      "batasMasukId": "BTS-MTR-D",
+      "batasKeluarId": "BTS-SUD-K",
+      "jamDatang": "08.33.00",
+      "jamBerangkat": "08.35.00",
+      "sepurLazim": [
+        "SP-G1",
+        "SP-G2"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5714B",
+      "nomorKA": "5714B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Kampung Bandan - Manggarai",
+      "asal": "Kampung Bandan",
+      "tujuan": "Manggarai",
+      "batasMasukId": "BTS-SUD-D",
+      "batasKeluarId": "BTS-MTR-K",
+      "jamDatang": "08.33.00",
+      "jamBerangkat": "08.38.00",
+      "sepurLazim": [
+        "SP-G3",
+        "SP-G4"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI",
+      "catatan": "Jam datang sesuai jadwal resmi; perjalanan berakhir di Manggarai. Penarikan rangkaian keluar emplasemen ke arah Matraman adalah pemodelan, bukan jadwal publik."
+    },
+    {
+      "id": "TRIP-128",
+      "nomorKA": "128",
+      "lin": "KAJJ",
+      "jenisSarana": "KA_ANTARKOTA",
+      "relasi": "Gambir - Banjar",
+      "asal": "Gambir",
+      "tujuan": "Banjar",
+      "batasMasukId": "BTS-JJ-BRT-D",
+      "batasKeluarId": "BTS-JJ-TMR-K",
+      "jamDatang": "08.39.00",
+      "jamBerangkat": "08.39.00",
+      "sepurLazim": [
+        "SP-GLH"
+      ],
+      "waktuBerhentiMinimumDetik": 0,
+      "langsung": true,
+      "keandalanData": "RESMI",
+      "catatan": "KA Pangandaran. Jam melintas Manggarai diambil apa adanya dari GAPEKA 2025 Lampiran II \"Daftar Waktu KA Antar Kota\" (KP-DJKA 224 Tahun 2024), kolom Berangkat pada baris Manggarai yang bertanda \"Ls\" — berjalan langsung. KA ini TIDAK berhenti melayani penumpang di Manggarai. Perlu dicatat: angka ini versi dasar GAPEKA 2025 yang berlaku 1 Februari 2025; dokumen revisi per 18 Juni 2026 tidak berhasil diperoleh, sehingga perjalanan yang berubah pada revisi itu berpotensi berbeda."
+    },
+    {
+      "id": "TRIP-5063C",
+      "nomorKA": "5063C",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Cikarang - Kampung Bandan",
+      "asal": "Cikarang",
+      "tujuan": "Kampung Bandan",
+      "batasMasukId": "BTS-MTR-D",
+      "batasKeluarId": "BTS-SUD-K",
+      "jamDatang": "08.40.00",
+      "jamBerangkat": "08.42.00",
+      "sepurLazim": [
+        "SP-G1",
+        "SP-G2"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1200",
+      "nomorKA": "1200",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Jakarta Kota - Bogor",
+      "asal": "Jakarta Kota",
+      "tujuan": "Bogor",
+      "batasMasukId": "BTS-CKI-D",
+      "batasKeluarId": "BTS-TBT-K",
+      "jamDatang": "08.41.00",
+      "jamBerangkat": "08.43.00",
+      "sepurLazim": [
+        "SP-L11",
+        "SP-L12"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5523B",
+      "nomorKA": "5523B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Manggarai - Kampung Bandan",
+      "asal": "Manggarai",
+      "tujuan": "Kampung Bandan",
+      "batasMasukId": "BTS-MTR-D",
+      "batasKeluarId": "BTS-SUD-K",
+      "jamDatang": "08.42.00",
+      "jamBerangkat": "08.48.00",
+      "sepurLazim": [
+        "SP-G1",
+        "SP-G2"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI",
+      "catatan": "Jam berangkat sesuai jadwal resmi. Perjalanan berdinas mulai dari Manggarai; masuknya rangkaian dimodelkan sebagai langsiran dari arah Matraman."
+    },
+    {
+      "id": "TRIP-811",
+      "nomorKA": "811",
+      "lin": "BANDARA",
+      "jenisSarana": "KRL_8",
+      "relasi": "Bandara Soekarno-Hatta - Manggarai",
+      "asal": "Bandara Soekarno-Hatta",
+      "tujuan": "Manggarai",
+      "batasMasukId": "BTS-BNI",
+      "batasKeluarId": "BTS-BNI",
+      "jamDatang": "08.42.00",
+      "jamBerangkat": "08.47.00",
+      "sepurLazim": [
+        "SP-G7",
+        "SP-G8"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "REKONSTRUKSI_POLA",
+      "catatan": "REKONSTRUKSI POLA. Yang terverifikasi: Manggarai merupakan stasiun ujung Commuter Line Basoetta; keberangkatan dari Manggarai berlangsung 05.00-22.00 dengan selang 30 menit; kedatangan dari Bandara Soekarno-Hatta dimulai pukul 06.12; nomor KA berada pada seri 8xx (contoh nyata terverifikasi: KA 806A). Yang TIDAK terverifikasi: penetapan nomor KA untuk tiap keberangkatan — nomor pada baris ini disusun mengikuti seri dan tidak boleh dianggap nomor GAPEKA. Ganti baris ini melalui menu impor jadwal begitu daftar nomor resmi tersedia."
+    },
+    {
+      "id": "TRIP-5054B",
+      "nomorKA": "5054B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Angke - Bekasi",
+      "asal": "Angke",
+      "tujuan": "Bekasi",
+      "batasMasukId": "BTS-SUD-D",
+      "batasKeluarId": "BTS-MTR-K",
+      "jamDatang": "08.43.00",
+      "jamBerangkat": "08.45.00",
+      "sepurLazim": [
+        "SP-G3",
+        "SP-G4"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1202",
+      "nomorKA": "1202",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Jakarta Kota - Bogor",
+      "asal": "Jakarta Kota",
+      "tujuan": "Bogor",
+      "batasMasukId": "BTS-CKI-D",
+      "batasKeluarId": "BTS-TBT-K",
+      "jamDatang": "08.45.00",
+      "jamBerangkat": "08.47.00",
+      "sepurLazim": [
+        "SP-L11",
+        "SP-L12"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1225",
+      "nomorKA": "1225",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Bogor - Jakarta Kota",
+      "asal": "Bogor",
+      "tujuan": "Jakarta Kota",
+      "batasMasukId": "BTS-TBT-D",
+      "batasKeluarId": "BTS-CKI-K",
+      "jamDatang": "08.46.00",
+      "jamBerangkat": "08.48.00",
+      "sepurLazim": [
+        "SP-L9",
+        "SP-L10"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5065B",
+      "nomorKA": "5065B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Cikarang - Angke",
+      "asal": "Cikarang",
+      "tujuan": "Angke",
+      "batasMasukId": "BTS-MTR-D",
+      "batasKeluarId": "BTS-SUD-K",
+      "jamDatang": "08.51.00",
+      "jamBerangkat": "08.53.00",
+      "sepurLazim": [
+        "SP-G1",
+        "SP-G2"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1016",
+      "nomorKA": "1016",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Manggarai - Bogor",
+      "asal": "Manggarai",
+      "tujuan": "Bogor",
+      "batasMasukId": "BTS-CKI-D",
+      "batasKeluarId": "BTS-TBT-K",
+      "jamDatang": "08.52.00",
+      "jamBerangkat": "08.58.00",
+      "sepurLazim": [
+        "SP-L11",
+        "SP-L12"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI",
+      "catatan": "Jam berangkat sesuai jadwal resmi. Perjalanan berdinas mulai dari Manggarai; masuknya rangkaian ke emplasemen dimodelkan sebagai langsiran dari arah Cikini karena penyiapan rangkaian tidak tercantum di jadwal publik."
+    },
+    {
+      "id": "TRIP-5056B",
+      "nomorKA": "5056B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Angke - Bekasi",
+      "asal": "Angke",
+      "tujuan": "Bekasi",
+      "batasMasukId": "BTS-SUD-D",
+      "batasKeluarId": "BTS-MTR-K",
+      "jamDatang": "08.52.00",
+      "jamBerangkat": "08.54.00",
+      "sepurLazim": [
+        "SP-G3",
+        "SP-G4"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-1507",
+      "nomorKA": "1507",
+      "lin": "LIN_BOGOR",
+      "jenisSarana": "KRL_12",
+      "relasi": "Nambo - Jakarta Kota",
+      "asal": "Nambo",
+      "tujuan": "Jakarta Kota",
+      "batasMasukId": "BTS-TBT-D",
+      "batasKeluarId": "BTS-CKI-K",
+      "jamDatang": "08.53.00",
+      "jamBerangkat": "08.55.00",
+      "sepurLazim": [
+        "SP-L9",
+        "SP-L10"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI"
+    },
+    {
+      "id": "TRIP-5716B",
+      "nomorKA": "5716B",
+      "lin": "LIN_CIKARANG",
+      "jenisSarana": "KRL_12",
+      "relasi": "Kampung Bandan - Manggarai",
+      "asal": "Kampung Bandan",
+      "tujuan": "Manggarai",
+      "batasMasukId": "BTS-SUD-D",
+      "batasKeluarId": "BTS-MTR-K",
+      "jamDatang": "08.56.00",
+      "jamBerangkat": "09.01.00",
+      "sepurLazim": [
+        "SP-G3",
+        "SP-G4"
+      ],
+      "waktuBerhentiMinimumDetik": 100,
+      "langsung": false,
+      "keandalanData": "RESMI",
+      "catatan": "Jam datang sesuai jadwal resmi; perjalanan berakhir di Manggarai. Penarikan rangkaian keluar emplasemen ke arah Matraman adalah pemodelan, bukan jadwal publik."
+    },
+    {
+      "id": "TRIP-16",
+      "nomorKA": "16",
+      "lin": "KAJJ",
+      "jenisSarana": "KA_ANTARKOTA",
+      "relasi": "Gambir - Solo Balapan",
+      "asal": "Gambir",
+      "tujuan": "Solo Balapan",
+      "batasMasukId": "BTS-JJ-BRT-D",
+      "batasKeluarId": "BTS-JJ-TMR-K",
+      "jamDatang": "08.59.00",
+      "jamBerangkat": "08.59.00",
+      "sepurLazim": [
+        "SP-GLH"
+      ],
+      "waktuBerhentiMinimumDetik": 0,
+      "langsung": true,
+      "keandalanData": "RESMI",
+      "catatan": "KA Argo Dwipangga. Jam melintas Manggarai diambil apa adanya dari GAPEKA 2025 Lampiran II \"Daftar Waktu KA Antar Kota\" (KP-DJKA 224 Tahun 2024), kolom Berangkat pada baris Manggarai yang bertanda \"Ls\" — berjalan langsung. KA ini TIDAK berhenti melayani penumpang di Manggarai. Perlu dicatat: angka ini versi dasar GAPEKA 2025 yang berlaku 1 Februari 2025; dokumen revisi per 18 Juni 2026 tidak berhasil diperoleh, sehingga perjalanan yang berubah pada revisi itu berpotensi berbeda."
+    }
+  ]
+}

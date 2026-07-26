@@ -1,0 +1,4401 @@
+{
+  "sumber": "https://kci.id/api/krl/schedules?stationid=MRI (ditarik 2026-07-26)",
+  "stasiun": "MRI",
+  "ditarikPada": "2026-07-26",
+  "catatan": "Ditarik 26 Juli 2026 (hari Minggu). API tidak menerima parameter tanggal, hanya stationid/timefrom/timeto, sehingga TIDAK dapat dipastikan apakah data ini jadwal hari kerja atau akhir pekan; endpoint mengembalikan jadwal yang sedang aktif pada saat penarikan. Satu panggilan 00:00-23:59 sudah mengembalikan seluruh hari (549 baris, 549 train_id unik); diverifikasi silang dengan 8 jendela 3-jam yang setelah digabung dan dibuang duplikatnya menghasilkan himpunan yang identik (549, tanpa selisih medan). Tidak ada perjalanan pada pukul 01:00-03:59 (jeda operasi malam). 9 perjalanan larut malam memiliki jamTiba lebih kecil dari jamMRI karena tiba setelah tengah malam. Medan color dari API tidak disertakan karena tidak diminta bentuk keluaran. Nilai disalin apa adanya tanpa normalisasi. Dua baris tampak ganjil namun memang ada apa adanya di respons API dan tetap dipertahankan: 1727D COMMUTER LINE RANGKASBITUNG (MANGGARAI-ANGKE, 14:04) dan 2023B COMMUTER LINE TANGERANG (MANGGARAI-DURI, 23:15) - kedua lin itu lazimnya tidak melayani Manggarai, kemungkinan perjalanan dinas/langsiran.",
+  "jumlah": 549,
+  "perjalanan": [
+    {
+      "nomorKA": "1469",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "00:15:00",
+      "jamTiba": "00:37:00"
+    },
+    {
+      "nomorKA": "1470",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "00:15:00",
+      "jamTiba": "01:15:00"
+    },
+    {
+      "nomorKA": "5198B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-CIKARANG",
+      "tujuan": "CIKARANG",
+      "jamMRI": "00:15:00",
+      "jamTiba": "01:04:00"
+    },
+    {
+      "nomorKA": "5002",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "MANGGARAI-CIKARANG",
+      "tujuan": "CIKARANG",
+      "jamMRI": "04:15:00",
+      "jamTiba": "05:04:00"
+    },
+    {
+      "nomorKA": "5701B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "MANGGARAI-KAMPUNGBANDAN",
+      "tujuan": "KAMPUNGBANDAN",
+      "jamMRI": "04:15:00",
+      "jamTiba": "04:45:00"
+    },
+    {
+      "nomorKA": "5004",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "MANGGARAI-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "04:26:00",
+      "jamTiba": "04:53:00"
+    },
+    {
+      "nomorKA": "5703B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "MANGGARAI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "04:30:00",
+      "jamTiba": "04:51:00"
+    },
+    {
+      "nomorKA": "5006",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "MANGGARAI-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "04:35:00",
+      "jamTiba": "05:02:00"
+    },
+    {
+      "nomorKA": "1151",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "DEPOK-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "04:41:00",
+      "jamTiba": "05:03:00"
+    },
+    {
+      "nomorKA": "5008",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "MANGGARAI-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "04:48:00",
+      "jamTiba": "05:15:00"
+    },
+    {
+      "nomorKA": "5021B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "04:55:00",
+      "jamTiba": "05:16:00"
+    },
+    {
+      "nomorKA": "1155",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "DEPOK-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "04:56:00",
+      "jamTiba": "05:18:00"
+    },
+    {
+      "nomorKA": "5010",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "MANGGARAI-CIKARANG",
+      "tujuan": "CIKARANG",
+      "jamMRI": "04:57:00",
+      "jamTiba": "05:46:00"
+    },
+    {
+      "nomorKA": "5023B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "05:05:00",
+      "jamTiba": "05:28:00"
+    },
+    {
+      "nomorKA": "1157",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "05:06:00",
+      "jamTiba": "05:28:00"
+    },
+    {
+      "nomorKA": "1000",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "MANGGARAI-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "05:10:00",
+      "jamTiba": "06:14:00"
+    },
+    {
+      "nomorKA": "5012",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "MANGGARAI-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "05:10:00",
+      "jamTiba": "05:37:00"
+    },
+    {
+      "nomorKA": "1159",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "05:11:00",
+      "jamTiba": "05:33:00"
+    },
+    {
+      "nomorKA": "5027B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "05:11:00",
+      "jamTiba": "05:34:00"
+    },
+    {
+      "nomorKA": "5014",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "MANGGARAI-CIKARANG",
+      "tujuan": "CIKARANG",
+      "jamMRI": "05:16:00",
+      "jamTiba": "06:05:00"
+    },
+    {
+      "nomorKA": "5505B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-KAMPUNGBANDAN VIA MRI",
+      "tujuan": "KAMPUNGBANDAN VIA MRI",
+      "jamMRI": "05:19:00",
+      "jamTiba": "05:55:00"
+    },
+    {
+      "nomorKA": "1161",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "05:21:00",
+      "jamTiba": "05:43:00"
+    },
+    {
+      "nomorKA": "5016B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "05:22:00",
+      "jamTiba": "05:49:00"
+    },
+    {
+      "nomorKA": "5029B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "05:24:00",
+      "jamTiba": "05:49:00"
+    },
+    {
+      "nomorKA": "1002",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "MANGGARAI-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "05:27:00",
+      "jamTiba": "06:36:00"
+    },
+    {
+      "nomorKA": "5018B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-CIKARANG VIA MRI",
+      "tujuan": "CIKARANG VIA MRI",
+      "jamMRI": "05:29:00",
+      "jamTiba": "06:25:00"
+    },
+    {
+      "nomorKA": "1165",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "05:31:00",
+      "jamTiba": "05:54:00"
+    },
+    {
+      "nomorKA": "1504",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-NAMBO",
+      "tujuan": "NAMBO",
+      "jamMRI": "05:37:00",
+      "jamTiba": "06:48:00"
+    },
+    {
+      "nomorKA": "1167",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "DEPOK-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "05:38:00",
+      "jamTiba": "06:01:00"
+    },
+    {
+      "nomorKA": "5020A",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "MANGGARAI-CIKARANG",
+      "tujuan": "CIKARANG",
+      "jamMRI": "05:40:00",
+      "jamTiba": "06:31:00"
+    },
+    {
+      "nomorKA": "1169",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "05:42:00",
+      "jamTiba": "06:05:00"
+    },
+    {
+      "nomorKA": "5507B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-KAMPUNGBANDAN VIA MRI",
+      "tujuan": "KAMPUNGBANDAN VIA MRI",
+      "jamMRI": "05:42:00",
+      "jamTiba": "06:13:00"
+    },
+    {
+      "nomorKA": "1152",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "05:50:00",
+      "jamTiba": "06:54:00"
+    },
+    {
+      "nomorKA": "1171",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "05:51:00",
+      "jamTiba": "06:15:00"
+    },
+    {
+      "nomorKA": "5022C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-TAMBUN",
+      "tujuan": "TAMBUN",
+      "jamMRI": "05:52:00",
+      "jamTiba": "06:29:00"
+    },
+    {
+      "nomorKA": "5031B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-KAMPUNGBANDAN",
+      "tujuan": "KAMPUNGBANDAN",
+      "jamMRI": "05:53:00",
+      "jamTiba": "06:25:00"
+    },
+    {
+      "nomorKA": "1004",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "MANGGARAI-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "05:54:00",
+      "jamTiba": "06:59:00"
+    },
+    {
+      "nomorKA": "1173",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "05:57:00",
+      "jamTiba": "06:20:00"
+    },
+    {
+      "nomorKA": "1154",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "05:58:00",
+      "jamTiba": "07:06:00"
+    },
+    {
+      "nomorKA": "5024C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "05:59:00",
+      "jamTiba": "06:25:00"
+    },
+    {
+      "nomorKA": "1501",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "NAMBO-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "06:01:00",
+      "jamTiba": "06:24:00"
+    },
+    {
+      "nomorKA": "5026",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "MANGGARAI-CIKARANG",
+      "tujuan": "CIKARANG",
+      "jamMRI": "06:03:00",
+      "jamTiba": "06:54:00"
+    },
+    {
+      "nomorKA": "5033B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "06:04:00",
+      "jamTiba": "06:25:00"
+    },
+    {
+      "nomorKA": "1156A",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "06:05:00",
+      "jamTiba": "07:15:00"
+    },
+    {
+      "nomorKA": "1175",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "06:06:00",
+      "jamTiba": "06:30:00"
+    },
+    {
+      "nomorKA": "5509B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-KAMPUNGBANDAN VIA MRI",
+      "tujuan": "KAMPUNGBANDAN VIA MRI",
+      "jamMRI": "06:11:00",
+      "jamTiba": "06:44:00"
+    },
+    {
+      "nomorKA": "1158A",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "06:13:00",
+      "jamTiba": "07:20:00"
+    },
+    {
+      "nomorKA": "1177",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "06:13:00",
+      "jamTiba": "06:36:00"
+    },
+    {
+      "nomorKA": "5037B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "06:17:00",
+      "jamTiba": "06:39:00"
+    },
+    {
+      "nomorKA": "1179",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "06:21:00",
+      "jamTiba": "06:44:00"
+    },
+    {
+      "nomorKA": "5707B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "MANGGARAI-KAMPUNGBANDAN",
+      "tujuan": "KAMPUNGBANDAN",
+      "jamMRI": "06:21:00",
+      "jamTiba": "06:53:00"
+    },
+    {
+      "nomorKA": "6002B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-CIKARANG VIA MRI",
+      "tujuan": "CIKARANG VIA MRI",
+      "jamMRI": "06:23:00",
+      "jamTiba": "07:16:00"
+    },
+    {
+      "nomorKA": "1006",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "MANGGARAI-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "06:26:00",
+      "jamTiba": "07:31:00"
+    },
+    {
+      "nomorKA": "1181",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOJONGGEDE-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "06:29:00",
+      "jamTiba": "06:52:00"
+    },
+    {
+      "nomorKA": "1183",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "06:33:00",
+      "jamTiba": "06:56:00"
+    },
+    {
+      "nomorKA": "5511C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-KAMPUNGBANDAN VIA MRI",
+      "tujuan": "KAMPUNGBANDAN VIA MRI",
+      "jamMRI": "06:33:00",
+      "jamTiba": "07:09:00"
+    },
+    {
+      "nomorKA": "1506",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-NAMBO",
+      "tujuan": "NAMBO",
+      "jamMRI": "06:34:00",
+      "jamTiba": "07:43:00"
+    },
+    {
+      "nomorKA": "5028B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "06:37:00",
+      "jamTiba": "07:05:00"
+    },
+    {
+      "nomorKA": "5039C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "06:38:00",
+      "jamTiba": "06:59:00"
+    },
+    {
+      "nomorKA": "1164",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "06:39:00",
+      "jamTiba": "07:45:00"
+    },
+    {
+      "nomorKA": "1185",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "DEPOK-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "06:41:00",
+      "jamTiba": "07:06:00"
+    },
+    {
+      "nomorKA": "5041C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "06:44:00",
+      "jamTiba": "07:06:00"
+    },
+    {
+      "nomorKA": "1166",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "06:48:00",
+      "jamTiba": "07:51:00"
+    },
+    {
+      "nomorKA": "1187",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOJONGGEDE-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "06:48:00",
+      "jamTiba": "07:12:00"
+    },
+    {
+      "nomorKA": "5043C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "06:50:00",
+      "jamTiba": "07:11:00"
+    },
+    {
+      "nomorKA": "6004C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-CIKARANG VIA MRI",
+      "tujuan": "CIKARANG VIA MRI",
+      "jamMRI": "06:51:00",
+      "jamTiba": "07:37:00"
+    },
+    {
+      "nomorKA": "1168",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "06:52:00",
+      "jamTiba": "07:56:00"
+    },
+    {
+      "nomorKA": "1189",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "06:53:00",
+      "jamTiba": "07:17:00"
+    },
+    {
+      "nomorKA": "5030C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "06:55:00",
+      "jamTiba": "07:21:00"
+    },
+    {
+      "nomorKA": "5513B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "MANGGARAI-KAMPUNGBANDAN",
+      "tujuan": "KAMPUNGBANDAN",
+      "jamMRI": "06:55:00",
+      "jamTiba": "07:29:00"
+    },
+    {
+      "nomorKA": "1008",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "MANGGARAI-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "06:56:00",
+      "jamTiba": "08:01:00"
+    },
+    {
+      "nomorKA": "1191",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "06:57:00",
+      "jamTiba": "07:21:00"
+    },
+    {
+      "nomorKA": "1170",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "07:00:00",
+      "jamTiba": "08:06:00"
+    },
+    {
+      "nomorKA": "5034C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-CIKARANG",
+      "tujuan": "CIKARANG",
+      "jamMRI": "07:00:00",
+      "jamTiba": "07:54:00"
+    },
+    {
+      "nomorKA": "1503",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "NAMBO-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "07:03:00",
+      "jamTiba": "07:27:00"
+    },
+    {
+      "nomorKA": "1172",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "07:05:00",
+      "jamTiba": "08:11:00"
+    },
+    {
+      "nomorKA": "5045B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "07:05:00",
+      "jamTiba": "07:26:00"
+    },
+    {
+      "nomorKA": "5049B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "07:10:00",
+      "jamTiba": "07:32:00"
+    },
+    {
+      "nomorKA": "1193",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "07:12:00",
+      "jamTiba": "07:34:00"
+    },
+    {
+      "nomorKA": "1174",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-DEPOK",
+      "tujuan": "DEPOK",
+      "jamMRI": "07:13:00",
+      "jamTiba": "07:49:00"
+    },
+    {
+      "nomorKA": "5036C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "07:14:00",
+      "jamTiba": "07:39:00"
+    },
+    {
+      "nomorKA": "5515B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "TAMBUN-KAMPUNGBANDAN",
+      "tujuan": "KAMPUNGBANDAN",
+      "jamMRI": "07:15:00",
+      "jamTiba": "07:50:00"
+    },
+    {
+      "nomorKA": "1010",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "MANGGARAI-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "07:17:00",
+      "jamTiba": "08:21:00"
+    },
+    {
+      "nomorKA": "6006B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "07:19:00",
+      "jamTiba": "07:46:00"
+    },
+    {
+      "nomorKA": "5711B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "MANGGARAI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "07:20:00",
+      "jamTiba": "07:41:00"
+    },
+    {
+      "nomorKA": "1176",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "07:21:00",
+      "jamTiba": "08:26:00"
+    },
+    {
+      "nomorKA": "1197",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "07:24:00",
+      "jamTiba": "07:47:00"
+    },
+    {
+      "nomorKA": "5051B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "07:25:00",
+      "jamTiba": "07:48:00"
+    },
+    {
+      "nomorKA": "1178",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "07:28:00",
+      "jamTiba": "08:32:00"
+    },
+    {
+      "nomorKA": "5038C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-CIKARANG",
+      "tujuan": "CIKARANG",
+      "jamMRI": "07:32:00",
+      "jamTiba": "08:29:00"
+    },
+    {
+      "nomorKA": "1180",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "07:33:00",
+      "jamTiba": "08:36:00"
+    },
+    {
+      "nomorKA": "5053B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "07:34:00",
+      "jamTiba": "07:55:00"
+    },
+    {
+      "nomorKA": "1012",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "MANGGARAI-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "07:38:00",
+      "jamTiba": "08:41:00"
+    },
+    {
+      "nomorKA": "5517B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-KAMPUNGBANDAN VIA MRI",
+      "tujuan": "KAMPUNGBANDAN VIA MRI",
+      "jamMRI": "07:40:00",
+      "jamTiba": "08:13:00"
+    },
+    {
+      "nomorKA": "1182",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "07:43:00",
+      "jamTiba": "08:46:00"
+    },
+    {
+      "nomorKA": "1203",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "07:43:00",
+      "jamTiba": "08:07:00"
+    },
+    {
+      "nomorKA": "5044D",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-CIKARANG",
+      "tujuan": "CIKARANG",
+      "jamMRI": "07:43:00",
+      "jamTiba": "08:34:00"
+    },
+    {
+      "nomorKA": "1184",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-DEPOK",
+      "tujuan": "DEPOK",
+      "jamMRI": "07:47:00",
+      "jamTiba": "08:22:00"
+    },
+    {
+      "nomorKA": "1205",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "07:47:00",
+      "jamTiba": "08:12:00"
+    },
+    {
+      "nomorKA": "5715B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "MANGGARAI-KAMPUNGBANDAN",
+      "tujuan": "KAMPUNGBANDAN",
+      "jamMRI": "07:47:00",
+      "jamTiba": "08:18:00"
+    },
+    {
+      "nomorKA": "6008B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "07:49:00",
+      "jamTiba": "08:22:00"
+    },
+    {
+      "nomorKA": "1186",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "07:52:00",
+      "jamTiba": "08:55:00"
+    },
+    {
+      "nomorKA": "1207",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "07:54:00",
+      "jamTiba": "08:17:00"
+    },
+    {
+      "nomorKA": "5055C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "07:56:00",
+      "jamTiba": "08:17:00"
+    },
+    {
+      "nomorKA": "1209",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "07:58:00",
+      "jamTiba": "08:21:00"
+    },
+    {
+      "nomorKA": "1188",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "07:59:00",
+      "jamTiba": "09:00:00"
+    },
+    {
+      "nomorKA": "5046B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "07:59:00",
+      "jamTiba": "08:29:00"
+    },
+    {
+      "nomorKA": "1505",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "NAMBO-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "08:03:00",
+      "jamTiba": "08:29:00"
+    },
+    {
+      "nomorKA": "1508",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-NAMBO",
+      "tujuan": "NAMBO",
+      "jamMRI": "08:03:00",
+      "jamTiba": "09:07:00"
+    },
+    {
+      "nomorKA": "5057B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "08:04:00",
+      "jamTiba": "08:25:00"
+    },
+    {
+      "nomorKA": "1190",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "08:07:00",
+      "jamTiba": "09:11:00"
+    },
+    {
+      "nomorKA": "1213A",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "08:13:00",
+      "jamTiba": "08:38:00"
+    },
+    {
+      "nomorKA": "5519C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-KAMPUNGBANDAN VIA MRI",
+      "tujuan": "KAMPUNGBANDAN VIA MRI",
+      "jamMRI": "08:13:00",
+      "jamTiba": "08:45:00"
+    },
+    {
+      "nomorKA": "5048D",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-CIKARANG",
+      "tujuan": "CIKARANG",
+      "jamMRI": "08:14:00",
+      "jamTiba": "09:08:00"
+    },
+    {
+      "nomorKA": "1194",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "08:17:00",
+      "jamTiba": "09:19:00"
+    },
+    {
+      "nomorKA": "5719B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "MANGGARAI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "08:19:00",
+      "jamTiba": "08:51:00"
+    },
+    {
+      "nomorKA": "1215A",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "08:23:00",
+      "jamTiba": "08:46:00"
+    },
+    {
+      "nomorKA": "5050C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-CIKARANG",
+      "tujuan": "CIKARANG",
+      "jamMRI": "08:23:00",
+      "jamTiba": "09:19:00"
+    },
+    {
+      "nomorKA": "5059B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "08:25:00",
+      "jamTiba": "08:48:00"
+    },
+    {
+      "nomorKA": "1217A",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "08:29:00",
+      "jamTiba": "08:54:00"
+    },
+    {
+      "nomorKA": "5052C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-CIKARANG VIA MRI",
+      "tujuan": "CIKARANG VIA MRI",
+      "jamMRI": "08:33:00",
+      "jamTiba": "09:33:00"
+    },
+    {
+      "nomorKA": "1219",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "08:35:00",
+      "jamTiba": "09:00:00"
+    },
+    {
+      "nomorKA": "5521B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-KAMPUNGBANDAN",
+      "tujuan": "KAMPUNGBANDAN",
+      "jamMRI": "08:35:00",
+      "jamTiba": "09:07:00"
+    },
+    {
+      "nomorKA": "1014",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "MANGGARAI-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "08:37:00",
+      "jamTiba": "09:39:00"
+    },
+    {
+      "nomorKA": "5063C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-KAMPUNGBANDAN VIA MRI",
+      "tujuan": "KAMPUNGBANDAN VIA MRI",
+      "jamMRI": "08:42:00",
+      "jamTiba": "09:14:00"
+    },
+    {
+      "nomorKA": "1200",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "08:43:00",
+      "jamTiba": "09:45:00"
+    },
+    {
+      "nomorKA": "5054B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "08:45:00",
+      "jamTiba": "09:12:00"
+    },
+    {
+      "nomorKA": "1202",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "08:47:00",
+      "jamTiba": "09:50:00"
+    },
+    {
+      "nomorKA": "1225",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "08:48:00",
+      "jamTiba": "09:12:00"
+    },
+    {
+      "nomorKA": "5523B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "MANGGARAI-KAMPUNGBANDAN",
+      "tujuan": "KAMPUNGBANDAN",
+      "jamMRI": "08:48:00",
+      "jamTiba": "09:22:00"
+    },
+    {
+      "nomorKA": "5065B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "08:53:00",
+      "jamTiba": "09:16:00"
+    },
+    {
+      "nomorKA": "5056B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "08:54:00",
+      "jamTiba": "09:19:00"
+    },
+    {
+      "nomorKA": "1507",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "NAMBO-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "08:55:00",
+      "jamTiba": "09:18:00"
+    },
+    {
+      "nomorKA": "1016",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "MANGGARAI-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "08:58:00",
+      "jamTiba": "10:01:00"
+    },
+    {
+      "nomorKA": "1227",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "09:01:00",
+      "jamTiba": "09:24:00"
+    },
+    {
+      "nomorKA": "1206",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "09:03:00",
+      "jamTiba": "10:07:00"
+    },
+    {
+      "nomorKA": "5067B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "09:05:00",
+      "jamTiba": "09:28:00"
+    },
+    {
+      "nomorKA": "1510",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-NAMBO",
+      "tujuan": "NAMBO",
+      "jamMRI": "09:07:00",
+      "jamTiba": "10:12:00"
+    },
+    {
+      "nomorKA": "1229",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "09:09:00",
+      "jamTiba": "09:32:00"
+    },
+    {
+      "nomorKA": "5525B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-KAMPUNGBANDAN",
+      "tujuan": "KAMPUNGBANDAN",
+      "jamMRI": "09:12:00",
+      "jamTiba": "09:45:00"
+    },
+    {
+      "nomorKA": "6014B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "09:15:00",
+      "jamTiba": "09:42:00"
+    },
+    {
+      "nomorKA": "1231",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "09:16:00",
+      "jamTiba": "09:39:00"
+    },
+    {
+      "nomorKA": "1210",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "09:18:00",
+      "jamTiba": "10:21:00"
+    },
+    {
+      "nomorKA": "1233",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "09:20:00",
+      "jamTiba": "09:43:00"
+    },
+    {
+      "nomorKA": "5069C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-KAMPUNGBANDAN VIA MRI",
+      "tujuan": "KAMPUNGBANDAN VIA MRI",
+      "jamMRI": "09:20:00",
+      "jamTiba": "09:50:00"
+    },
+    {
+      "nomorKA": "1018",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "MANGGARAI-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "09:22:00",
+      "jamTiba": "10:25:00"
+    },
+    {
+      "nomorKA": "1235",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "09:24:00",
+      "jamTiba": "09:47:00"
+    },
+    {
+      "nomorKA": "1212",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "09:25:00",
+      "jamTiba": "10:29:00"
+    },
+    {
+      "nomorKA": "5723B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "MANGGARAI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "09:25:00",
+      "jamTiba": "09:46:00"
+    },
+    {
+      "nomorKA": "5060B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "09:30:00",
+      "jamTiba": "09:57:00"
+    },
+    {
+      "nomorKA": "1214",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "09:32:00",
+      "jamTiba": "10:34:00"
+    },
+    {
+      "nomorKA": "6016B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-CIKARANG VIA MRI",
+      "tujuan": "CIKARANG VIA MRI",
+      "jamMRI": "09:36:00",
+      "jamTiba": "10:25:00"
+    },
+    {
+      "nomorKA": "1216",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "09:37:00",
+      "jamTiba": "10:39:00"
+    },
+    {
+      "nomorKA": "5527B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-KAMPUNGBANDAN VIA MRI",
+      "tujuan": "KAMPUNGBANDAN VIA MRI",
+      "jamMRI": "09:38:00",
+      "jamTiba": "10:10:00"
+    },
+    {
+      "nomorKA": "1239",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "09:42:00",
+      "jamTiba": "10:04:00"
+    },
+    {
+      "nomorKA": "5062C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "09:45:00",
+      "jamTiba": "10:14:00"
+    },
+    {
+      "nomorKA": "5071B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "09:45:00",
+      "jamTiba": "10:05:00"
+    },
+    {
+      "nomorKA": "1020",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "MANGGARAI-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "09:46:00",
+      "jamTiba": "10:49:00"
+    },
+    {
+      "nomorKA": "1241",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "09:46:00",
+      "jamTiba": "10:08:00"
+    },
+    {
+      "nomorKA": "5073B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-KAMPUNGBANDAN VIA MRI",
+      "tujuan": "KAMPUNGBANDAN VIA MRI",
+      "jamMRI": "09:50:00",
+      "jamTiba": "10:22:00"
+    },
+    {
+      "nomorKA": "1243",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "09:51:00",
+      "jamTiba": "10:13:00"
+    },
+    {
+      "nomorKA": "5064B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-CIKARANG",
+      "tujuan": "CIKARANG",
+      "jamMRI": "09:52:00",
+      "jamTiba": "10:44:00"
+    },
+    {
+      "nomorKA": "1222",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "09:55:00",
+      "jamTiba": "10:58:00"
+    },
+    {
+      "nomorKA": "1245",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "09:55:00",
+      "jamTiba": "10:17:00"
+    },
+    {
+      "nomorKA": "5075B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "09:55:00",
+      "jamTiba": "10:17:00"
+    },
+    {
+      "nomorKA": "1512",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-NAMBO",
+      "tujuan": "NAMBO",
+      "jamMRI": "09:59:00",
+      "jamTiba": "11:05:00"
+    },
+    {
+      "nomorKA": "1247",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "10:01:00",
+      "jamTiba": "10:23:00"
+    },
+    {
+      "nomorKA": "1224",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-DEPOK",
+      "tujuan": "DEPOK",
+      "jamMRI": "10:03:00",
+      "jamTiba": "10:38:00"
+    },
+    {
+      "nomorKA": "5077B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "10:05:00",
+      "jamTiba": "10:28:00"
+    },
+    {
+      "nomorKA": "5066B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "10:06:00",
+      "jamTiba": "10:34:00"
+    },
+    {
+      "nomorKA": "1226",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "10:07:00",
+      "jamTiba": "11:10:00"
+    },
+    {
+      "nomorKA": "5529B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-KAMPUNGBANDAN",
+      "tujuan": "KAMPUNGBANDAN",
+      "jamMRI": "10:10:00",
+      "jamTiba": "10:45:00"
+    },
+    {
+      "nomorKA": "1251",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "10:11:00",
+      "jamTiba": "10:33:00"
+    },
+    {
+      "nomorKA": "1228",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-DEPOK",
+      "tujuan": "DEPOK",
+      "jamMRI": "10:12:00",
+      "jamTiba": "10:47:00"
+    },
+    {
+      "nomorKA": "5725B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "MANGGARAI-KAMPUNGBANDAN",
+      "tujuan": "KAMPUNGBANDAN",
+      "jamMRI": "10:17:00",
+      "jamTiba": "10:49:00"
+    },
+    {
+      "nomorKA": "1230",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "10:19:00",
+      "jamTiba": "11:21:00"
+    },
+    {
+      "nomorKA": "6018C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-TAMBUN",
+      "tujuan": "TAMBUN",
+      "jamMRI": "10:19:00",
+      "jamTiba": "10:56:00"
+    },
+    {
+      "nomorKA": "1509",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "NAMBO-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "10:20:00",
+      "jamTiba": "10:42:00"
+    },
+    {
+      "nomorKA": "1232",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-DEPOK",
+      "tujuan": "DEPOK",
+      "jamMRI": "10:24:00",
+      "jamTiba": "10:59:00"
+    },
+    {
+      "nomorKA": "5068B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "10:24:00",
+      "jamTiba": "10:50:00"
+    },
+    {
+      "nomorKA": "5079B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "10:24:00",
+      "jamTiba": "10:46:00"
+    },
+    {
+      "nomorKA": "1253",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "10:26:00",
+      "jamTiba": "10:48:00"
+    },
+    {
+      "nomorKA": "1022",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "MANGGARAI-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "10:28:00",
+      "jamTiba": "11:31:00"
+    },
+    {
+      "nomorKA": "1255",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "10:31:00",
+      "jamTiba": "10:53:00"
+    },
+    {
+      "nomorKA": "5070B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-CIKARANG",
+      "tujuan": "CIKARANG",
+      "jamMRI": "10:35:00",
+      "jamTiba": "11:27:00"
+    },
+    {
+      "nomorKA": "5531C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-KAMPUNGBANDAN VIA MRI",
+      "tujuan": "KAMPUNGBANDAN VIA MRI",
+      "jamMRI": "10:35:00",
+      "jamTiba": "11:06:00"
+    },
+    {
+      "nomorKA": "5081B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "10:42:00",
+      "jamTiba": "11:03:00"
+    },
+    {
+      "nomorKA": "1236",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "10:44:00",
+      "jamTiba": "11:45:00"
+    },
+    {
+      "nomorKA": "5072B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "10:44:00",
+      "jamTiba": "11:10:00"
+    },
+    {
+      "nomorKA": "1238",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "10:48:00",
+      "jamTiba": "11:50:00"
+    },
+    {
+      "nomorKA": "6020B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-CIKARANG VIA MRI",
+      "tujuan": "CIKARANG VIA MRI",
+      "jamMRI": "10:50:00",
+      "jamTiba": "11:42:00"
+    },
+    {
+      "nomorKA": "1240",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-DEPOK",
+      "tujuan": "DEPOK",
+      "jamMRI": "10:52:00",
+      "jamTiba": "11:27:00"
+    },
+    {
+      "nomorKA": "5533C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-KAMPUNGBANDAN",
+      "tujuan": "KAMPUNGBANDAN",
+      "jamMRI": "10:52:00",
+      "jamTiba": "11:22:00"
+    },
+    {
+      "nomorKA": "1263",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "10:55:00",
+      "jamTiba": "11:18:00"
+    },
+    {
+      "nomorKA": "1242",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "10:57:00",
+      "jamTiba": "12:00:00"
+    },
+    {
+      "nomorKA": "1244",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "11:03:00",
+      "jamTiba": "12:05:00"
+    },
+    {
+      "nomorKA": "1265",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "11:04:00",
+      "jamTiba": "11:26:00"
+    },
+    {
+      "nomorKA": "5085B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "11:05:00",
+      "jamTiba": "11:27:00"
+    },
+    {
+      "nomorKA": "5074B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-CIKARANG VIA MRI",
+      "tujuan": "CIKARANG VIA MRI",
+      "jamMRI": "11:06:00",
+      "jamTiba": "11:58:00"
+    },
+    {
+      "nomorKA": "1248A",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "11:12:00",
+      "jamTiba": "12:15:00"
+    },
+    {
+      "nomorKA": "5535B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "MANGGARAI-KAMPUNGBANDAN",
+      "tujuan": "KAMPUNGBANDAN",
+      "jamMRI": "11:12:00",
+      "jamTiba": "11:45:00"
+    },
+    {
+      "nomorKA": "1269",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "11:14:00",
+      "jamTiba": "11:37:00"
+    },
+    {
+      "nomorKA": "6022B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "11:14:00",
+      "jamTiba": "11:41:00"
+    },
+    {
+      "nomorKA": "1514",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-NAMBO",
+      "tujuan": "NAMBO",
+      "jamMRI": "11:17:00",
+      "jamTiba": "12:22:00"
+    },
+    {
+      "nomorKA": "1271",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "11:19:00",
+      "jamTiba": "11:42:00"
+    },
+    {
+      "nomorKA": "5087B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "11:19:00",
+      "jamTiba": "11:40:00"
+    },
+    {
+      "nomorKA": "5078B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "11:20:00",
+      "jamTiba": "11:46:00"
+    },
+    {
+      "nomorKA": "1250A",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "11:23:00",
+      "jamTiba": "12:26:00"
+    },
+    {
+      "nomorKA": "1511",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "NAMBO-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "11:25:00",
+      "jamTiba": "11:47:00"
+    },
+    {
+      "nomorKA": "5089B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-KAMPUNGBANDAN",
+      "tujuan": "KAMPUNGBANDAN",
+      "jamMRI": "11:25:00",
+      "jamTiba": "11:56:00"
+    },
+    {
+      "nomorKA": "5080B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "11:26:00",
+      "jamTiba": "11:56:00"
+    },
+    {
+      "nomorKA": "1252A",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "11:28:00",
+      "jamTiba": "12:31:00"
+    },
+    {
+      "nomorKA": "1275",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "11:34:00",
+      "jamTiba": "11:56:00"
+    },
+    {
+      "nomorKA": "5091B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "11:35:00",
+      "jamTiba": "11:57:00"
+    },
+    {
+      "nomorKA": "5082C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-CIKARANG",
+      "tujuan": "CIKARANG",
+      "jamMRI": "11:36:00",
+      "jamTiba": "12:24:00"
+    },
+    {
+      "nomorKA": "5093B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "11:41:00",
+      "jamTiba": "12:03:00"
+    },
+    {
+      "nomorKA": "1279",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "11:44:00",
+      "jamTiba": "12:06:00"
+    },
+    {
+      "nomorKA": "5084C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-CIKARANG VIA MRI",
+      "tujuan": "CIKARANG VIA MRI",
+      "jamMRI": "11:45:00",
+      "jamTiba": "12:36:00"
+    },
+    {
+      "nomorKA": "5537B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "TAMBUN-KAMPUNGBANDAN",
+      "tujuan": "KAMPUNGBANDAN",
+      "jamMRI": "11:46:00",
+      "jamTiba": "12:21:00"
+    },
+    {
+      "nomorKA": "1281",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "11:48:00",
+      "jamTiba": "12:10:00"
+    },
+    {
+      "nomorKA": "1260",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "11:49:00",
+      "jamTiba": "12:52:00"
+    },
+    {
+      "nomorKA": "6024C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-CIKARANG VIA MRI",
+      "tujuan": "CIKARANG VIA MRI",
+      "jamMRI": "11:51:00",
+      "jamTiba": "12:49:00"
+    },
+    {
+      "nomorKA": "5095B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-ANGKE VIA MRI",
+      "tujuan": "ANGKE VIA MRI",
+      "jamMRI": "11:55:00",
+      "jamTiba": "12:28:00"
+    },
+    {
+      "nomorKA": "1262",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "11:56:00",
+      "jamTiba": "12:58:00"
+    },
+    {
+      "nomorKA": "5086B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-CIKARANG",
+      "tujuan": "CIKARANG",
+      "jamMRI": "11:59:00",
+      "jamTiba": "12:59:00"
+    },
+    {
+      "nomorKA": "1285",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "12:03:00",
+      "jamTiba": "12:26:00"
+    },
+    {
+      "nomorKA": "1266",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "12:07:00",
+      "jamTiba": "13:09:00"
+    },
+    {
+      "nomorKA": "5097B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "12:10:00",
+      "jamTiba": "12:31:00"
+    },
+    {
+      "nomorKA": "1024",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "MANGGARAI-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "12:11:00",
+      "jamTiba": "13:14:00"
+    },
+    {
+      "nomorKA": "1289",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "12:14:00",
+      "jamTiba": "12:36:00"
+    },
+    {
+      "nomorKA": "6026C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "12:14:00",
+      "jamTiba": "12:41:00"
+    },
+    {
+      "nomorKA": "5539B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-KAMPUNGBANDAN VIA MRI",
+      "tujuan": "KAMPUNGBANDAN VIA MRI",
+      "jamMRI": "12:15:00",
+      "jamTiba": "12:47:00"
+    },
+    {
+      "nomorKA": "1268",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "12:16:00",
+      "jamTiba": "13:18:00"
+    },
+    {
+      "nomorKA": "5088B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-CIKARANG",
+      "tujuan": "CIKARANG",
+      "jamMRI": "12:21:00",
+      "jamTiba": "13:13:00"
+    },
+    {
+      "nomorKA": "1516",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-NAMBO",
+      "tujuan": "NAMBO",
+      "jamMRI": "12:23:00",
+      "jamTiba": "13:26:00"
+    },
+    {
+      "nomorKA": "5099C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "12:25:00",
+      "jamTiba": "12:46:00"
+    },
+    {
+      "nomorKA": "1513",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "NAMBO-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "12:26:00",
+      "jamTiba": "12:48:00"
+    },
+    {
+      "nomorKA": "5090C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "12:30:00",
+      "jamTiba": "12:58:00"
+    },
+    {
+      "nomorKA": "1026",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "MANGGARAI-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "12:31:00",
+      "jamTiba": "13:34:00"
+    },
+    {
+      "nomorKA": "5101C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "12:35:00",
+      "jamTiba": "12:58:00"
+    },
+    {
+      "nomorKA": "1295",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "12:36:00",
+      "jamTiba": "12:58:00"
+    },
+    {
+      "nomorKA": "1272",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "12:37:00",
+      "jamTiba": "13:42:00"
+    },
+    {
+      "nomorKA": "5541C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-KAMPUNGBANDAN VIA MRI",
+      "tujuan": "KAMPUNGBANDAN VIA MRI",
+      "jamMRI": "12:41:00",
+      "jamTiba": "13:12:00"
+    },
+    {
+      "nomorKA": "6028C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-CIKARANG VIA MRI",
+      "tujuan": "CIKARANG VIA MRI",
+      "jamMRI": "12:44:00",
+      "jamTiba": "13:35:00"
+    },
+    {
+      "nomorKA": "1276",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "12:47:00",
+      "jamTiba": "13:50:00"
+    },
+    {
+      "nomorKA": "1299",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "12:48:00",
+      "jamTiba": "13:11:00"
+    },
+    {
+      "nomorKA": "5092B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "12:49:00",
+      "jamTiba": "13:16:00"
+    },
+    {
+      "nomorKA": "5103B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "12:51:00",
+      "jamTiba": "13:12:00"
+    },
+    {
+      "nomorKA": "1278",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "12:52:00",
+      "jamTiba": "13:55:00"
+    },
+    {
+      "nomorKA": "5094B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-CIKARANG VIA MRI",
+      "tujuan": "CIKARANG VIA MRI",
+      "jamMRI": "12:55:00",
+      "jamTiba": "13:44:00"
+    },
+    {
+      "nomorKA": "1303",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "12:56:00",
+      "jamTiba": "13:19:00"
+    },
+    {
+      "nomorKA": "1305",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "13:00:00",
+      "jamTiba": "13:23:00"
+    },
+    {
+      "nomorKA": "1282",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "13:02:00",
+      "jamTiba": "14:04:00"
+    },
+    {
+      "nomorKA": "1309",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "13:11:00",
+      "jamTiba": "13:34:00"
+    },
+    {
+      "nomorKA": "5543B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-KAMPUNGBANDAN VIA MRI",
+      "tujuan": "KAMPUNGBANDAN VIA MRI",
+      "jamMRI": "13:11:00",
+      "jamTiba": "13:45:00"
+    },
+    {
+      "nomorKA": "1286",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "13:13:00",
+      "jamTiba": "14:15:00"
+    },
+    {
+      "nomorKA": "1311A",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "13:16:00",
+      "jamTiba": "13:38:00"
+    },
+    {
+      "nomorKA": "5107B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-KAMPUNGBANDAN",
+      "tujuan": "KAMPUNGBANDAN",
+      "jamMRI": "13:16:00",
+      "jamTiba": "13:48:00"
+    },
+    {
+      "nomorKA": "5098C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "13:19:00",
+      "jamTiba": "13:44:00"
+    },
+    {
+      "nomorKA": "1290",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "13:21:00",
+      "jamTiba": "14:24:00"
+    },
+    {
+      "nomorKA": "1313",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "DEPOK-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "13:21:00",
+      "jamTiba": "13:43:00"
+    },
+    {
+      "nomorKA": "5729B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "MANGGARAI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "13:21:00",
+      "jamTiba": "13:44:00"
+    },
+    {
+      "nomorKA": "5100C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-CIKARANG VIA MRI",
+      "tujuan": "CIKARANG VIA MRI",
+      "jamMRI": "13:24:00",
+      "jamTiba": "14:20:00"
+    },
+    {
+      "nomorKA": "1518",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-NAMBO",
+      "tujuan": "NAMBO",
+      "jamMRI": "13:32:00",
+      "jamTiba": "14:36:00"
+    },
+    {
+      "nomorKA": "1028",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "MANGGARAI-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "13:36:00",
+      "jamTiba": "14:39:00"
+    },
+    {
+      "nomorKA": "1315A",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "13:36:00",
+      "jamTiba": "13:57:00"
+    },
+    {
+      "nomorKA": "5102B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "13:38:00",
+      "jamTiba": "14:04:00"
+    },
+    {
+      "nomorKA": "5109B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-KAMPUNGBANDAN VIA MRI",
+      "tujuan": "KAMPUNGBANDAN VIA MRI",
+      "jamMRI": "13:38:00",
+      "jamTiba": "14:11:00"
+    },
+    {
+      "nomorKA": "1515A",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "NAMBO-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "13:41:00",
+      "jamTiba": "14:02:00"
+    },
+    {
+      "nomorKA": "6032B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "13:43:00",
+      "jamTiba": "14:10:00"
+    },
+    {
+      "nomorKA": "5111C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "13:45:00",
+      "jamTiba": "14:07:00"
+    },
+    {
+      "nomorKA": "1317A",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "13:46:00",
+      "jamTiba": "14:07:00"
+    },
+    {
+      "nomorKA": "1296",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "13:47:00",
+      "jamTiba": "14:49:00"
+    },
+    {
+      "nomorKA": "5545B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-KAMPUNGBANDAN",
+      "tujuan": "KAMPUNGBANDAN",
+      "jamMRI": "13:51:00",
+      "jamTiba": "14:24:00"
+    },
+    {
+      "nomorKA": "6034B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "13:54:00",
+      "jamTiba": "14:21:00"
+    },
+    {
+      "nomorKA": "1300",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "13:58:00",
+      "jamTiba": "15:01:00"
+    },
+    {
+      "nomorKA": "5104C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-CIKARANG",
+      "tujuan": "CIKARANG",
+      "jamMRI": "13:59:00",
+      "jamTiba": "14:54:00"
+    },
+    {
+      "nomorKA": "1302",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "14:03:00",
+      "jamTiba": "15:06:00"
+    },
+    {
+      "nomorKA": "1727D",
+      "lin": "COMMUTER LINE RANGKASBITUNG",
+      "relasi": "MANGGARAI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "14:04:00",
+      "jamTiba": "14:34:00"
+    },
+    {
+      "nomorKA": "1325",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "14:06:00",
+      "jamTiba": "14:28:00"
+    },
+    {
+      "nomorKA": "5115B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "14:10:00",
+      "jamTiba": "14:31:00"
+    },
+    {
+      "nomorKA": "1306",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "14:14:00",
+      "jamTiba": "15:16:00"
+    },
+    {
+      "nomorKA": "6036C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-CIKARANG VIA MRI",
+      "tujuan": "CIKARANG VIA MRI",
+      "jamMRI": "14:14:00",
+      "jamTiba": "15:03:00"
+    },
+    {
+      "nomorKA": "5547B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-KAMPUNGBANDAN VIA MRI",
+      "tujuan": "KAMPUNGBANDAN VIA MRI",
+      "jamMRI": "14:16:00",
+      "jamTiba": "14:52:00"
+    },
+    {
+      "nomorKA": "1030",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "MANGGARAI-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "14:18:00",
+      "jamTiba": "15:21:00"
+    },
+    {
+      "nomorKA": "1329",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "14:19:00",
+      "jamTiba": "14:40:00"
+    },
+    {
+      "nomorKA": "5106B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "14:21:00",
+      "jamTiba": "14:48:00"
+    },
+    {
+      "nomorKA": "5117B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "14:22:00",
+      "jamTiba": "14:43:00"
+    },
+    {
+      "nomorKA": "1308",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "14:23:00",
+      "jamTiba": "15:26:00"
+    },
+    {
+      "nomorKA": "1331",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "14:24:00",
+      "jamTiba": "14:46:00"
+    },
+    {
+      "nomorKA": "6038B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-CIKARANG VIA MRI",
+      "tujuan": "CIKARANG VIA MRI",
+      "jamMRI": "14:28:00",
+      "jamTiba": "15:20:00"
+    },
+    {
+      "nomorKA": "1310",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "14:29:00",
+      "jamTiba": "15:31:00"
+    },
+    {
+      "nomorKA": "1333",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "14:29:00",
+      "jamTiba": "14:51:00"
+    },
+    {
+      "nomorKA": "5119C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-KAMPUNGBANDAN VIA MRI",
+      "tujuan": "KAMPUNGBANDAN VIA MRI",
+      "jamMRI": "14:33:00",
+      "jamTiba": "15:02:00"
+    },
+    {
+      "nomorKA": "1312",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "14:34:00",
+      "jamTiba": "15:36:00"
+    },
+    {
+      "nomorKA": "5108B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "14:35:00",
+      "jamTiba": "15:02:00"
+    },
+    {
+      "nomorKA": "1520",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-NAMBO",
+      "tujuan": "NAMBO",
+      "jamMRI": "14:38:00",
+      "jamTiba": "15:44:00"
+    },
+    {
+      "nomorKA": "1335",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "DEPOK-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "14:39:00",
+      "jamTiba": "15:01:00"
+    },
+    {
+      "nomorKA": "5121B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "14:39:00",
+      "jamTiba": "15:00:00"
+    },
+    {
+      "nomorKA": "1314",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "14:42:00",
+      "jamTiba": "15:44:00"
+    },
+    {
+      "nomorKA": "1337",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "14:44:00",
+      "jamTiba": "15:06:00"
+    },
+    {
+      "nomorKA": "5549B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-KAMPUNGBANDAN VIA MRI",
+      "tujuan": "KAMPUNGBANDAN VIA MRI",
+      "jamMRI": "14:44:00",
+      "jamTiba": "15:18:00"
+    },
+    {
+      "nomorKA": "5110B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "14:45:00",
+      "jamTiba": "15:12:00"
+    },
+    {
+      "nomorKA": "1517",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "NAMBO-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "14:50:00",
+      "jamTiba": "15:12:00"
+    },
+    {
+      "nomorKA": "5112B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-CIKARANG VIA MRI",
+      "tujuan": "CIKARANG VIA MRI",
+      "jamMRI": "14:51:00",
+      "jamTiba": "15:41:00"
+    },
+    {
+      "nomorKA": "5123B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "14:52:00",
+      "jamTiba": "15:17:00"
+    },
+    {
+      "nomorKA": "1339",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "14:54:00",
+      "jamTiba": "15:16:00"
+    },
+    {
+      "nomorKA": "6040B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "14:59:00",
+      "jamTiba": "15:26:00"
+    },
+    {
+      "nomorKA": "1322",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "15:01:00",
+      "jamTiba": "16:03:00"
+    },
+    {
+      "nomorKA": "1343",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "15:03:00",
+      "jamTiba": "15:25:00"
+    },
+    {
+      "nomorKA": "1324",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "MANGGARAI-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "15:05:00",
+      "jamTiba": "16:07:00"
+    },
+    {
+      "nomorKA": "5114B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-CIKARANG",
+      "tujuan": "CIKARANG",
+      "jamMRI": "15:05:00",
+      "jamTiba": "15:55:00"
+    },
+    {
+      "nomorKA": "5551B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-KAMPUNGBANDAN",
+      "tujuan": "KAMPUNGBANDAN",
+      "jamMRI": "15:06:00",
+      "jamTiba": "15:39:00"
+    },
+    {
+      "nomorKA": "1345",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "15:07:00",
+      "jamTiba": "15:29:00"
+    },
+    {
+      "nomorKA": "1326",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "15:09:00",
+      "jamTiba": "16:12:00"
+    },
+    {
+      "nomorKA": "1347",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "DEPOK-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "15:12:00",
+      "jamTiba": "15:34:00"
+    },
+    {
+      "nomorKA": "5125B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "15:16:00",
+      "jamTiba": "15:37:00"
+    },
+    {
+      "nomorKA": "1328",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "15:17:00",
+      "jamTiba": "16:19:00"
+    },
+    {
+      "nomorKA": "5116B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-CIKARANG",
+      "tujuan": "CIKARANG",
+      "jamMRI": "15:19:00",
+      "jamTiba": "16:08:00"
+    },
+    {
+      "nomorKA": "1330",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "15:21:00",
+      "jamTiba": "16:24:00"
+    },
+    {
+      "nomorKA": "1349",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "DEPOK-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "15:23:00",
+      "jamTiba": "15:44:00"
+    },
+    {
+      "nomorKA": "6042B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "15:25:00",
+      "jamTiba": "15:52:00"
+    },
+    {
+      "nomorKA": "1032",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "MANGGARAI-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "15:26:00",
+      "jamTiba": "16:29:00"
+    },
+    {
+      "nomorKA": "1351",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "15:28:00",
+      "jamTiba": "15:49:00"
+    },
+    {
+      "nomorKA": "1332",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "15:31:00",
+      "jamTiba": "16:34:00"
+    },
+    {
+      "nomorKA": "5553B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-KAMPUNGBANDAN VIA MRI",
+      "tujuan": "KAMPUNGBANDAN VIA MRI",
+      "jamMRI": "15:34:00",
+      "jamTiba": "16:08:00"
+    },
+    {
+      "nomorKA": "1353",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "DEPOK-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "15:35:00",
+      "jamTiba": "15:57:00"
+    },
+    {
+      "nomorKA": "1334",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "15:36:00",
+      "jamTiba": "16:39:00"
+    },
+    {
+      "nomorKA": "5120B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "15:37:00",
+      "jamTiba": "16:08:00"
+    },
+    {
+      "nomorKA": "5731B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "MANGGARAI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "15:39:00",
+      "jamTiba": "16:00:00"
+    },
+    {
+      "nomorKA": "1355",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "DEPOK-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "15:43:00",
+      "jamTiba": "16:05:00"
+    },
+    {
+      "nomorKA": "1522",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-NAMBO",
+      "tujuan": "NAMBO",
+      "jamMRI": "15:43:00",
+      "jamTiba": "16:46:00"
+    },
+    {
+      "nomorKA": "5129B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-KAMPUNGBANDAN",
+      "tujuan": "KAMPUNGBANDAN",
+      "jamMRI": "15:44:00",
+      "jamTiba": "16:14:00"
+    },
+    {
+      "nomorKA": "5122C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-CIKARANG VIA MRI",
+      "tujuan": "CIKARANG VIA MRI",
+      "jamMRI": "15:45:00",
+      "jamTiba": "16:37:00"
+    },
+    {
+      "nomorKA": "1336A",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "15:47:00",
+      "jamTiba": "16:51:00"
+    },
+    {
+      "nomorKA": "1357",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "15:49:00",
+      "jamTiba": "16:11:00"
+    },
+    {
+      "nomorKA": "5131B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "15:49:00",
+      "jamTiba": "16:13:00"
+    },
+    {
+      "nomorKA": "1034",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "MANGGARAI-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "15:54:00",
+      "jamTiba": "16:59:00"
+    },
+    {
+      "nomorKA": "5733B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "MANGGARAI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "15:54:00",
+      "jamTiba": "16:17:00"
+    },
+    {
+      "nomorKA": "1519",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "NAMBO-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "15:58:00",
+      "jamTiba": "16:19:00"
+    },
+    {
+      "nomorKA": "1340",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "15:59:00",
+      "jamTiba": "17:04:00"
+    },
+    {
+      "nomorKA": "6044B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "15:59:00",
+      "jamTiba": "16:28:00"
+    },
+    {
+      "nomorKA": "1359",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "DEPOK-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "16:02:00",
+      "jamTiba": "16:23:00"
+    },
+    {
+      "nomorKA": "1342A",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "16:04:00",
+      "jamTiba": "17:10:00"
+    },
+    {
+      "nomorKA": "5124B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-CIKARANG",
+      "tujuan": "CIKARANG",
+      "jamMRI": "16:06:00",
+      "jamTiba": "16:57:00"
+    },
+    {
+      "nomorKA": "5555B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-KAMPUNGBANDAN",
+      "tujuan": "KAMPUNGBANDAN",
+      "jamMRI": "16:06:00",
+      "jamTiba": "16:41:00"
+    },
+    {
+      "nomorKA": "1361",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "16:07:00",
+      "jamTiba": "16:31:00"
+    },
+    {
+      "nomorKA": "1344A",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "16:09:00",
+      "jamTiba": "17:15:00"
+    },
+    {
+      "nomorKA": "5137C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-KAMPUNGBANDAN",
+      "tujuan": "KAMPUNGBANDAN",
+      "jamMRI": "16:15:00",
+      "jamTiba": "16:44:00"
+    },
+    {
+      "nomorKA": "1346A",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "16:16:00",
+      "jamTiba": "17:21:00"
+    },
+    {
+      "nomorKA": "1363",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "16:16:00",
+      "jamTiba": "16:38:00"
+    },
+    {
+      "nomorKA": "6048B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-CIKARANG VIA MRI",
+      "tujuan": "CIKARANG VIA MRI",
+      "jamMRI": "16:16:00",
+      "jamTiba": "17:06:00"
+    },
+    {
+      "nomorKA": "5133C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "16:20:00",
+      "jamTiba": "16:43:00"
+    },
+    {
+      "nomorKA": "1365",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "16:21:00",
+      "jamTiba": "16:43:00"
+    },
+    {
+      "nomorKA": "1348",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "16:24:00",
+      "jamTiba": "17:27:00"
+    },
+    {
+      "nomorKA": "5735B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "MANGGARAI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "16:25:00",
+      "jamTiba": "16:47:00"
+    },
+    {
+      "nomorKA": "5126C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-CIKARANG VIA MRI",
+      "tujuan": "CIKARANG VIA MRI",
+      "jamMRI": "16:29:00",
+      "jamTiba": "17:20:00"
+    },
+    {
+      "nomorKA": "1350",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "16:31:00",
+      "jamTiba": "17:33:00"
+    },
+    {
+      "nomorKA": "1367",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "16:32:00",
+      "jamTiba": "16:55:00"
+    },
+    {
+      "nomorKA": "1038",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "MANGGARAI-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "16:35:00",
+      "jamTiba": "17:38:00"
+    },
+    {
+      "nomorKA": "5139B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "16:35:00",
+      "jamTiba": "16:57:00"
+    },
+    {
+      "nomorKA": "1369",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "16:37:00",
+      "jamTiba": "16:59:00"
+    },
+    {
+      "nomorKA": "5128B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "16:38:00",
+      "jamTiba": "17:05:00"
+    },
+    {
+      "nomorKA": "1352",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "16:39:00",
+      "jamTiba": "17:43:00"
+    },
+    {
+      "nomorKA": "5557B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-KAMPUNGBANDAN",
+      "tujuan": "KAMPUNGBANDAN",
+      "jamMRI": "16:40:00",
+      "jamTiba": "17:13:00"
+    },
+    {
+      "nomorKA": "1371",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "16:41:00",
+      "jamTiba": "17:05:00"
+    },
+    {
+      "nomorKA": "1354",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "16:43:00",
+      "jamTiba": "17:47:00"
+    },
+    {
+      "nomorKA": "1524",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-NAMBO",
+      "tujuan": "NAMBO",
+      "jamMRI": "16:50:00",
+      "jamTiba": "17:53:00"
+    },
+    {
+      "nomorKA": "5141B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "16:50:00",
+      "jamTiba": "17:11:00"
+    },
+    {
+      "nomorKA": "6050C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "16:50:00",
+      "jamTiba": "17:18:00"
+    },
+    {
+      "nomorKA": "1373",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "16:51:00",
+      "jamTiba": "17:13:00"
+    },
+    {
+      "nomorKA": "1040",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "MANGGARAI-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "16:54:00",
+      "jamTiba": "17:57:00"
+    },
+    {
+      "nomorKA": "5143B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-KAMPUNGBANDAN",
+      "tujuan": "KAMPUNGBANDAN",
+      "jamMRI": "16:55:00",
+      "jamTiba": "17:30:00"
+    },
+    {
+      "nomorKA": "1356",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "16:59:00",
+      "jamTiba": "18:02:00"
+    },
+    {
+      "nomorKA": "5132B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-CIKARANG",
+      "tujuan": "CIKARANG",
+      "jamMRI": "17:03:00",
+      "jamTiba": "18:05:00"
+    },
+    {
+      "nomorKA": "5145B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "17:05:00",
+      "jamTiba": "17:28:00"
+    },
+    {
+      "nomorKA": "1358",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "17:06:00",
+      "jamTiba": "18:08:00"
+    },
+    {
+      "nomorKA": "1521",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "NAMBO-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "17:09:00",
+      "jamTiba": "17:32:00"
+    },
+    {
+      "nomorKA": "5559B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "MANGGARAI-KAMPUNGBANDAN",
+      "tujuan": "KAMPUNGBANDAN",
+      "jamMRI": "17:12:00",
+      "jamTiba": "17:49:00"
+    },
+    {
+      "nomorKA": "1379",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "17:13:00",
+      "jamTiba": "17:36:00"
+    },
+    {
+      "nomorKA": "5134B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "17:13:00",
+      "jamTiba": "17:39:00"
+    },
+    {
+      "nomorKA": "1360",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "17:16:00",
+      "jamTiba": "18:18:00"
+    },
+    {
+      "nomorKA": "1381",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "17:17:00",
+      "jamTiba": "17:40:00"
+    },
+    {
+      "nomorKA": "6052C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "17:20:00",
+      "jamTiba": "17:46:00"
+    },
+    {
+      "nomorKA": "1362",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "17:21:00",
+      "jamTiba": "18:23:00"
+    },
+    {
+      "nomorKA": "5147C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-KAMPUNGBANDAN VIA MRI",
+      "tujuan": "KAMPUNGBANDAN VIA MRI",
+      "jamMRI": "17:23:00",
+      "jamTiba": "17:55:00"
+    },
+    {
+      "nomorKA": "1383",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "17:24:00",
+      "jamTiba": "17:48:00"
+    },
+    {
+      "nomorKA": "5136B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-CIKARANG",
+      "tujuan": "CIKARANG",
+      "jamMRI": "17:24:00",
+      "jamTiba": "18:13:00"
+    },
+    {
+      "nomorKA": "1364",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "17:25:00",
+      "jamTiba": "18:28:00"
+    },
+    {
+      "nomorKA": "1385",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "17:28:00",
+      "jamTiba": "17:52:00"
+    },
+    {
+      "nomorKA": "1366",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "17:30:00",
+      "jamTiba": "18:35:00"
+    },
+    {
+      "nomorKA": "5149B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "17:35:00",
+      "jamTiba": "17:56:00"
+    },
+    {
+      "nomorKA": "1368",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "17:37:00",
+      "jamTiba": "18:39:00"
+    },
+    {
+      "nomorKA": "5138B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "17:37:00",
+      "jamTiba": "18:04:00"
+    },
+    {
+      "nomorKA": "1387",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "17:38:00",
+      "jamTiba": "18:00:00"
+    },
+    {
+      "nomorKA": "1044",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "MANGGARAI-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "17:41:00",
+      "jamTiba": "18:44:00"
+    },
+    {
+      "nomorKA": "5151C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "17:42:00",
+      "jamTiba": "18:07:00"
+    },
+    {
+      "nomorKA": "1389",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "17:43:00",
+      "jamTiba": "18:06:00"
+    },
+    {
+      "nomorKA": "6054B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-CIKARANG VIA MRI",
+      "tujuan": "CIKARANG VIA MRI",
+      "jamMRI": "17:44:00",
+      "jamTiba": "18:35:00"
+    },
+    {
+      "nomorKA": "1370",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "17:46:00",
+      "jamTiba": "18:48:00"
+    },
+    {
+      "nomorKA": "1391A",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "17:47:00",
+      "jamTiba": "18:10:00"
+    },
+    {
+      "nomorKA": "5561B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-KAMPUNGBANDAN",
+      "tujuan": "KAMPUNGBANDAN",
+      "jamMRI": "17:47:00",
+      "jamTiba": "18:21:00"
+    },
+    {
+      "nomorKA": "5140B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "17:49:00",
+      "jamTiba": "18:16:00"
+    },
+    {
+      "nomorKA": "5142B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-CIKARANG VIA MRI",
+      "tujuan": "CIKARANG VIA MRI",
+      "jamMRI": "17:54:00",
+      "jamTiba": "18:44:00"
+    },
+    {
+      "nomorKA": "5737B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "MANGGARAI-KAMPUNGBANDAN",
+      "tujuan": "KAMPUNGBANDAN",
+      "jamMRI": "17:55:00",
+      "jamTiba": "18:28:00"
+    },
+    {
+      "nomorKA": "1523",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "NAMBO-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "17:59:00",
+      "jamTiba": "18:21:00"
+    },
+    {
+      "nomorKA": "6056B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-CIKARANG VIA MRI",
+      "tujuan": "CIKARANG VIA MRI",
+      "jamMRI": "18:00:00",
+      "jamTiba": "18:56:00"
+    },
+    {
+      "nomorKA": "1046",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "MANGGARAI-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "18:01:00",
+      "jamTiba": "19:04:00"
+    },
+    {
+      "nomorKA": "1393",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "18:03:00",
+      "jamTiba": "18:25:00"
+    },
+    {
+      "nomorKA": "1526",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-NAMBO",
+      "tujuan": "NAMBO",
+      "jamMRI": "18:05:00",
+      "jamTiba": "19:10:00"
+    },
+    {
+      "nomorKA": "5153B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-KAMPUNGBANDAN",
+      "tujuan": "KAMPUNGBANDAN",
+      "jamMRI": "18:05:00",
+      "jamTiba": "18:38:00"
+    },
+    {
+      "nomorKA": "5144B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "18:07:00",
+      "jamTiba": "18:37:00"
+    },
+    {
+      "nomorKA": "1376",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "18:09:00",
+      "jamTiba": "19:13:00"
+    },
+    {
+      "nomorKA": "5155B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "18:11:00",
+      "jamTiba": "18:35:00"
+    },
+    {
+      "nomorKA": "1397A",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "18:13:00",
+      "jamTiba": "18:36:00"
+    },
+    {
+      "nomorKA": "1378",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "18:14:00",
+      "jamTiba": "19:17:00"
+    },
+    {
+      "nomorKA": "5146C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-TAMBUN",
+      "tujuan": "TAMBUN",
+      "jamMRI": "18:15:00",
+      "jamTiba": "18:50:00"
+    },
+    {
+      "nomorKA": "5563B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-KAMPUNGBANDAN",
+      "tujuan": "KAMPUNGBANDAN",
+      "jamMRI": "18:20:00",
+      "jamTiba": "18:53:00"
+    },
+    {
+      "nomorKA": "1380",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "18:21:00",
+      "jamTiba": "19:24:00"
+    },
+    {
+      "nomorKA": "1399",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "18:22:00",
+      "jamTiba": "18:44:00"
+    },
+    {
+      "nomorKA": "6058B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "18:22:00",
+      "jamTiba": "18:51:00"
+    },
+    {
+      "nomorKA": "1048",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "MANGGARAI-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "18:25:00",
+      "jamTiba": "19:29:00"
+    },
+    {
+      "nomorKA": "5157B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-KAMPUNGBANDAN",
+      "tujuan": "KAMPUNGBANDAN",
+      "jamMRI": "18:25:00",
+      "jamTiba": "18:59:00"
+    },
+    {
+      "nomorKA": "5148B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-CIKARANG",
+      "tujuan": "CIKARANG",
+      "jamMRI": "18:28:00",
+      "jamTiba": "19:19:00"
+    },
+    {
+      "nomorKA": "1382",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "18:29:00",
+      "jamTiba": "19:35:00"
+    },
+    {
+      "nomorKA": "1401",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "18:29:00",
+      "jamTiba": "18:51:00"
+    },
+    {
+      "nomorKA": "5159B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-KAMPUNGBANDAN VIA MRI",
+      "tujuan": "KAMPUNGBANDAN VIA MRI",
+      "jamMRI": "18:36:00",
+      "jamTiba": "19:06:00"
+    },
+    {
+      "nomorKA": "1384",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "18:38:00",
+      "jamTiba": "19:40:00"
+    },
+    {
+      "nomorKA": "1050",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "MANGGARAI-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "18:41:00",
+      "jamTiba": "19:44:00"
+    },
+    {
+      "nomorKA": "5161B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "18:43:00",
+      "jamTiba": "19:05:00"
+    },
+    {
+      "nomorKA": "1405",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "18:44:00",
+      "jamTiba": "19:08:00"
+    },
+    {
+      "nomorKA": "1386",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "18:45:00",
+      "jamTiba": "19:48:00"
+    },
+    {
+      "nomorKA": "5150B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "18:45:00",
+      "jamTiba": "19:11:00"
+    },
+    {
+      "nomorKA": "1407",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "18:48:00",
+      "jamTiba": "19:12:00"
+    },
+    {
+      "nomorKA": "1388",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "18:49:00",
+      "jamTiba": "19:53:00"
+    },
+    {
+      "nomorKA": "6060B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-CIKARANG VIA MRI",
+      "tujuan": "CIKARANG VIA MRI",
+      "jamMRI": "18:51:00",
+      "jamTiba": "19:49:00"
+    },
+    {
+      "nomorKA": "5565C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-KAMPUNGBANDAN VIA MRI",
+      "tujuan": "KAMPUNGBANDAN VIA MRI",
+      "jamMRI": "18:54:00",
+      "jamTiba": "19:24:00"
+    },
+    {
+      "nomorKA": "1390",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "18:57:00",
+      "jamTiba": "19:58:00"
+    },
+    {
+      "nomorKA": "1409",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "18:57:00",
+      "jamTiba": "19:19:00"
+    },
+    {
+      "nomorKA": "1052",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "MANGGARAI-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "19:00:00",
+      "jamTiba": "20:03:00"
+    },
+    {
+      "nomorKA": "1411",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "19:02:00",
+      "jamTiba": "19:24:00"
+    },
+    {
+      "nomorKA": "1392",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "19:04:00",
+      "jamTiba": "20:08:00"
+    },
+    {
+      "nomorKA": "6062B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "19:05:00",
+      "jamTiba": "19:31:00"
+    },
+    {
+      "nomorKA": "5165B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "19:08:00",
+      "jamTiba": "19:30:00"
+    },
+    {
+      "nomorKA": "1525",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "NAMBO-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "19:09:00",
+      "jamTiba": "19:32:00"
+    },
+    {
+      "nomorKA": "5152B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "19:13:00",
+      "jamTiba": "19:45:00"
+    },
+    {
+      "nomorKA": "1528",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-NAMBO",
+      "tujuan": "NAMBO",
+      "jamMRI": "19:16:00",
+      "jamTiba": "20:20:00"
+    },
+    {
+      "nomorKA": "5567B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-KAMPUNGBANDAN VIA MRI",
+      "tujuan": "KAMPUNGBANDAN VIA MRI",
+      "jamMRI": "19:16:00",
+      "jamTiba": "19:47:00"
+    },
+    {
+      "nomorKA": "1054",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "MANGGARAI-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "19:19:00",
+      "jamTiba": "20:22:00"
+    },
+    {
+      "nomorKA": "1413",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "19:19:00",
+      "jamTiba": "19:42:00"
+    },
+    {
+      "nomorKA": "5154B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "19:23:00",
+      "jamTiba": "19:50:00"
+    },
+    {
+      "nomorKA": "1396",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "19:25:00",
+      "jamTiba": "20:27:00"
+    },
+    {
+      "nomorKA": "1415",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "19:25:00",
+      "jamTiba": "19:49:00"
+    },
+    {
+      "nomorKA": "5167B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "19:26:00",
+      "jamTiba": "19:47:00"
+    },
+    {
+      "nomorKA": "5156B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-CIKARANG VIA MRI",
+      "tujuan": "CIKARANG VIA MRI",
+      "jamMRI": "19:30:00",
+      "jamTiba": "20:20:00"
+    },
+    {
+      "nomorKA": "1398",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "19:32:00",
+      "jamTiba": "20:34:00"
+    },
+    {
+      "nomorKA": "5569B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-KAMPUNGBANDAN",
+      "tujuan": "KAMPUNGBANDAN",
+      "jamMRI": "19:34:00",
+      "jamTiba": "20:08:00"
+    },
+    {
+      "nomorKA": "1419",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "19:36:00",
+      "jamTiba": "20:01:00"
+    },
+    {
+      "nomorKA": "5169C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "TAMBUN-ANGKE VIA MRI",
+      "tujuan": "ANGKE VIA MRI",
+      "jamMRI": "19:40:00",
+      "jamTiba": "20:11:00"
+    },
+    {
+      "nomorKA": "1402",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-DEPOK",
+      "tujuan": "DEPOK",
+      "jamMRI": "19:44:00",
+      "jamTiba": "20:18:00"
+    },
+    {
+      "nomorKA": "5171C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "19:45:00",
+      "jamTiba": "20:07:00"
+    },
+    {
+      "nomorKA": "5158B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-CIKARANG VIA MRI",
+      "tujuan": "CIKARANG VIA MRI",
+      "jamMRI": "19:46:00",
+      "jamTiba": "20:42:00"
+    },
+    {
+      "nomorKA": "1404",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "19:48:00",
+      "jamTiba": "20:50:00"
+    },
+    {
+      "nomorKA": "1421",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "19:48:00",
+      "jamTiba": "20:11:00"
+    },
+    {
+      "nomorKA": "5571B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "MANGGARAI-KAMPUNGBANDAN",
+      "tujuan": "KAMPUNGBANDAN",
+      "jamMRI": "19:50:00",
+      "jamTiba": "20:23:00"
+    },
+    {
+      "nomorKA": "1056",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "MANGGARAI-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "19:52:00",
+      "jamTiba": "20:55:00"
+    },
+    {
+      "nomorKA": "1423",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "19:54:00",
+      "jamTiba": "20:18:00"
+    },
+    {
+      "nomorKA": "5173C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "19:55:00",
+      "jamTiba": "20:20:00"
+    },
+    {
+      "nomorKA": "1406",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "19:56:00",
+      "jamTiba": "20:59:00"
+    },
+    {
+      "nomorKA": "1425",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "19:58:00",
+      "jamTiba": "20:22:00"
+    },
+    {
+      "nomorKA": "5160B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "19:59:00",
+      "jamTiba": "20:26:00"
+    },
+    {
+      "nomorKA": "1408",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "20:00:00",
+      "jamTiba": "21:03:00"
+    },
+    {
+      "nomorKA": "5573B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-KAMPUNGBANDAN",
+      "tujuan": "KAMPUNGBANDAN",
+      "jamMRI": "20:05:00",
+      "jamTiba": "20:38:00"
+    },
+    {
+      "nomorKA": "1410A",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "20:10:00",
+      "jamTiba": "21:16:00"
+    },
+    {
+      "nomorKA": "6066B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-CIKARANG VIA MRI",
+      "tujuan": "CIKARANG VIA MRI",
+      "jamMRI": "20:14:00",
+      "jamTiba": "21:13:00"
+    },
+    {
+      "nomorKA": "1412A",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "20:17:00",
+      "jamTiba": "21:22:00"
+    },
+    {
+      "nomorKA": "5575C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-KAMPUNGBANDAN VIA MRI",
+      "tujuan": "KAMPUNGBANDAN VIA MRI",
+      "jamMRI": "20:17:00",
+      "jamTiba": "20:47:00"
+    },
+    {
+      "nomorKA": "1527",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "NAMBO-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "20:20:00",
+      "jamTiba": "20:42:00"
+    },
+    {
+      "nomorKA": "1414A",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "20:21:00",
+      "jamTiba": "21:27:00"
+    },
+    {
+      "nomorKA": "5175B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "20:23:00",
+      "jamTiba": "20:45:00"
+    },
+    {
+      "nomorKA": "1431",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "20:24:00",
+      "jamTiba": "20:46:00"
+    },
+    {
+      "nomorKA": "1416A",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "20:27:00",
+      "jamTiba": "21:34:00"
+    },
+    {
+      "nomorKA": "1433",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "20:30:00",
+      "jamTiba": "20:52:00"
+    },
+    {
+      "nomorKA": "5166B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-CIKARANG VIA MRI",
+      "tujuan": "CIKARANG VIA MRI",
+      "jamMRI": "20:30:00",
+      "jamTiba": "21:28:00"
+    },
+    {
+      "nomorKA": "1435",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "20:34:00",
+      "jamTiba": "20:56:00"
+    },
+    {
+      "nomorKA": "1530",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-NAMBO",
+      "tujuan": "NAMBO",
+      "jamMRI": "20:35:00",
+      "jamTiba": "21:40:00"
+    },
+    {
+      "nomorKA": "5577B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-KAMPUNGBANDAN VIA MRI",
+      "tujuan": "KAMPUNGBANDAN VIA MRI",
+      "jamMRI": "20:40:00",
+      "jamTiba": "21:13:00"
+    },
+    {
+      "nomorKA": "1418",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "20:43:00",
+      "jamTiba": "21:45:00"
+    },
+    {
+      "nomorKA": "5168C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-CIKARANG VIA MRI",
+      "tujuan": "CIKARANG VIA MRI",
+      "jamMRI": "20:45:00",
+      "jamTiba": "21:41:00"
+    },
+    {
+      "nomorKA": "1420",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "20:49:00",
+      "jamTiba": "21:51:00"
+    },
+    {
+      "nomorKA": "1437",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "20:50:00",
+      "jamTiba": "21:11:00"
+    },
+    {
+      "nomorKA": "5179B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-KAMPUNGBANDAN VIA MRI",
+      "tujuan": "KAMPUNGBANDAN VIA MRI",
+      "jamMRI": "20:55:00",
+      "jamTiba": "21:29:00"
+    },
+    {
+      "nomorKA": "1422",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "20:58:00",
+      "jamTiba": "22:00:00"
+    },
+    {
+      "nomorKA": "1439",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "20:58:00",
+      "jamTiba": "21:20:00"
+    },
+    {
+      "nomorKA": "6070B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "20:58:00",
+      "jamTiba": "21:25:00"
+    },
+    {
+      "nomorKA": "1443",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "21:09:00",
+      "jamTiba": "21:32:00"
+    },
+    {
+      "nomorKA": "5181B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "21:09:00",
+      "jamTiba": "21:31:00"
+    },
+    {
+      "nomorKA": "5170B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "21:14:00",
+      "jamTiba": "21:40:00"
+    },
+    {
+      "nomorKA": "1428",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "21:16:00",
+      "jamTiba": "22:18:00"
+    },
+    {
+      "nomorKA": "5579B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-KAMPUNGBANDAN",
+      "tujuan": "KAMPUNGBANDAN",
+      "jamMRI": "21:17:00",
+      "jamTiba": "21:49:00"
+    },
+    {
+      "nomorKA": "1430",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "21:20:00",
+      "jamTiba": "22:23:00"
+    },
+    {
+      "nomorKA": "5174B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-CIKARANG VIA MRI",
+      "tujuan": "CIKARANG VIA MRI",
+      "jamMRI": "21:21:00",
+      "jamTiba": "22:15:00"
+    },
+    {
+      "nomorKA": "1432",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "21:27:00",
+      "jamTiba": "22:29:00"
+    },
+    {
+      "nomorKA": "1529",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "NAMBO-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "21:31:00",
+      "jamTiba": "21:54:00"
+    },
+    {
+      "nomorKA": "1434",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "21:34:00",
+      "jamTiba": "22:36:00"
+    },
+    {
+      "nomorKA": "1447",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "21:35:00",
+      "jamTiba": "21:58:00"
+    },
+    {
+      "nomorKA": "6074B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "21:35:00",
+      "jamTiba": "22:02:00"
+    },
+    {
+      "nomorKA": "1449",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "21:39:00",
+      "jamTiba": "22:02:00"
+    },
+    {
+      "nomorKA": "5581C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-KAMPUNGBANDAN VIA MRI",
+      "tujuan": "KAMPUNGBANDAN VIA MRI",
+      "jamMRI": "21:43:00",
+      "jamTiba": "22:14:00"
+    },
+    {
+      "nomorKA": "1436",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "21:44:00",
+      "jamTiba": "22:46:00"
+    },
+    {
+      "nomorKA": "1451",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "21:46:00",
+      "jamTiba": "22:09:00"
+    },
+    {
+      "nomorKA": "5185C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "21:48:00",
+      "jamTiba": "22:10:00"
+    },
+    {
+      "nomorKA": "5176B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-CIKARANG VIA MRI",
+      "tujuan": "CIKARANG VIA MRI",
+      "jamMRI": "21:50:00",
+      "jamTiba": "22:41:00"
+    },
+    {
+      "nomorKA": "1438",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "21:53:00",
+      "jamTiba": "22:56:00"
+    },
+    {
+      "nomorKA": "5187B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "22:04:00",
+      "jamTiba": "22:26:00"
+    },
+    {
+      "nomorKA": "5180B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "22:07:00",
+      "jamTiba": "22:36:00"
+    },
+    {
+      "nomorKA": "1442",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "22:08:00",
+      "jamTiba": "23:09:00"
+    },
+    {
+      "nomorKA": "1455",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "22:08:00",
+      "jamTiba": "22:30:00"
+    },
+    {
+      "nomorKA": "5583B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-KAMPUNGBANDAN",
+      "tujuan": "KAMPUNGBANDAN",
+      "jamMRI": "22:10:00",
+      "jamTiba": "22:43:00"
+    },
+    {
+      "nomorKA": "1457A",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "22:19:00",
+      "jamTiba": "22:41:00"
+    },
+    {
+      "nomorKA": "5182B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-CIKARANG VIA MRI",
+      "tujuan": "CIKARANG VIA MRI",
+      "jamMRI": "22:20:00",
+      "jamTiba": "23:09:00"
+    },
+    {
+      "nomorKA": "5189B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "22:21:00",
+      "jamTiba": "22:43:00"
+    },
+    {
+      "nomorKA": "1446",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "22:25:00",
+      "jamTiba": "23:27:00"
+    },
+    {
+      "nomorKA": "1459A",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "22:25:00",
+      "jamTiba": "22:47:00"
+    },
+    {
+      "nomorKA": "6078B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-CIKARANG VIA MRI",
+      "tujuan": "CIKARANG VIA MRI",
+      "jamMRI": "22:27:00",
+      "jamTiba": "23:16:00"
+    },
+    {
+      "nomorKA": "5191B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-KAMPUNGBANDAN VIA MRI",
+      "tujuan": "KAMPUNGBANDAN VIA MRI",
+      "jamMRI": "22:29:00",
+      "jamTiba": "23:02:00"
+    },
+    {
+      "nomorKA": "1448",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "22:33:00",
+      "jamTiba": "23:35:00"
+    },
+    {
+      "nomorKA": "1461A",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "22:35:00",
+      "jamTiba": "22:57:00"
+    },
+    {
+      "nomorKA": "5193B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "22:38:00",
+      "jamTiba": "23:03:00"
+    },
+    {
+      "nomorKA": "1450",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-DEPOK",
+      "tujuan": "DEPOK",
+      "jamMRI": "22:39:00",
+      "jamTiba": "23:14:00"
+    },
+    {
+      "nomorKA": "5186C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-CIKARANG",
+      "tujuan": "CIKARANG",
+      "jamMRI": "22:43:00",
+      "jamTiba": "23:39:00"
+    },
+    {
+      "nomorKA": "1452",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "22:44:00",
+      "jamTiba": "23:46:00"
+    },
+    {
+      "nomorKA": "1531",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "NAMBO-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "22:59:00",
+      "jamTiba": "23:22:00"
+    },
+    {
+      "nomorKA": "1456",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-DEPOK",
+      "tujuan": "DEPOK",
+      "jamMRI": "23:04:00",
+      "jamTiba": "23:38:00"
+    },
+    {
+      "nomorKA": "1465",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "23:04:00",
+      "jamTiba": "23:27:00"
+    },
+    {
+      "nomorKA": "6080B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-CIKARANG VIA MRI",
+      "tujuan": "CIKARANG VIA MRI",
+      "jamMRI": "23:08:00",
+      "jamTiba": "00:05:00"
+    },
+    {
+      "nomorKA": "1458",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "23:11:00",
+      "jamTiba": "00:13:00"
+    },
+    {
+      "nomorKA": "2023B",
+      "lin": "COMMUTER LINE TANGERANG",
+      "relasi": "MANGGARAI-DURI",
+      "tujuan": "DURI",
+      "jamMRI": "23:15:00",
+      "jamTiba": "23:35:00"
+    },
+    {
+      "nomorKA": "1467",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "BOGOR-JAKARTAKOTA",
+      "tujuan": "JAKARTAKOTA",
+      "jamMRI": "23:21:00",
+      "jamTiba": "23:42:00"
+    },
+    {
+      "nomorKA": "5190B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-BEKASI",
+      "tujuan": "BEKASI",
+      "jamMRI": "23:21:00",
+      "jamTiba": "23:49:00"
+    },
+    {
+      "nomorKA": "5197C",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "CIKARANG-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "23:21:00",
+      "jamTiba": "23:42:00"
+    },
+    {
+      "nomorKA": "1460",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "23:23:00",
+      "jamTiba": "00:25:00"
+    },
+    {
+      "nomorKA": "6082B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-CIKARANG VIA MRI",
+      "tujuan": "CIKARANG VIA MRI",
+      "jamMRI": "23:29:00",
+      "jamTiba": "00:23:00"
+    },
+    {
+      "nomorKA": "5199B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "BEKASI-ANGKE",
+      "tujuan": "ANGKE",
+      "jamMRI": "23:30:00",
+      "jamTiba": "23:52:00"
+    },
+    {
+      "nomorKA": "1462",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "23:38:00",
+      "jamTiba": "00:40:00"
+    },
+    {
+      "nomorKA": "5192B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "ANGKE-CIKARANG",
+      "tujuan": "CIKARANG",
+      "jamMRI": "23:48:00",
+      "jamTiba": "00:36:00"
+    },
+    {
+      "nomorKA": "1466",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-DEPOK",
+      "tujuan": "DEPOK",
+      "jamMRI": "23:53:00",
+      "jamTiba": "00:26:00"
+    },
+    {
+      "nomorKA": "1468",
+      "lin": "COMMUTER LINE BOGOR",
+      "relasi": "JAKARTAKOTA-BOGOR",
+      "tujuan": "BOGOR",
+      "jamMRI": "23:58:00",
+      "jamTiba": "00:58:00"
+    },
+    {
+      "nomorKA": "5194B",
+      "lin": "COMMUTER LINE CIKARANG",
+      "relasi": "KAMPUNGBANDAN-CIKARANG VIA MRI",
+      "tujuan": "CIKARANG VIA MRI",
+      "jamMRI": "23:58:00",
+      "jamTiba": "00:47:00"
+    }
+  ]
+}
