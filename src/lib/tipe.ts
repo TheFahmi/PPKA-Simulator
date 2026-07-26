@@ -37,6 +37,8 @@ export type JenisSimpul =
   | 'BATAS'
   /** Titik wesel. */
   | 'WESEL'
+  /** Persilangan sebidang — dua sepur berpotongan tanpa saling menyambung. */
+  | 'SILANG'
   /** Sambungan biasa antar-ruas. */
   | 'SAMBUNG'
   /** Ujung sepur badug / penghalang. */
@@ -98,6 +100,22 @@ export interface Wesel {
   kedudukanNormal: KedudukanWesel;
   /** Lama balik wesel dalam detik dinas. */
   waktuBalikDetik: number;
+}
+
+/**
+ * Persilangan sebidang.
+ *
+ * Dua sepur berpotongan pada satu titik tanpa saling menyambung: sarana hanya
+ * dapat berjalan lurus terus pada pasangan kakinya sendiri. Persilangan tetap
+ * menjadi kekangan dinas karena kedua sepur tidak boleh diduduki bersamaan.
+ */
+export interface Persilangan {
+  id: string;
+  nama: string;
+  level: Level;
+  simpulId: string;
+  /** Dua pasang kaki yang saling bersambung; perpindahan antar-pasangan mustahil. */
+  pasangan: Array<[string, string]>;
 }
 
 export type JenisSinyal =
@@ -220,6 +238,8 @@ export interface Emplasemen {
   simpul: Simpul[];
   ruas: Ruas[];
   wesel: Wesel[];
+  /** Persilangan sebidang; kosong bila emplasemen tidak punya. */
+  persilangan: Persilangan[];
   sinyal: Sinyal[];
   blok: Blok[];
   sepur: Sepur[];

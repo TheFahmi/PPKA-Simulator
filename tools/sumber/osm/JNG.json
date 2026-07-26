@@ -1,0 +1,4984 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-07-26T17:52:59Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 3863090437,
+  "lat": -6.2132002,
+  "lon": 106.8652873,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 3863090440,
+  "lat": -6.2148794,
+  "lon": 106.8754579,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "12.335",
+    "ref": "W53B"
+  }
+},
+{
+  "type": "node",
+  "id": 3863090443,
+  "lat": -6.2150646,
+  "lon": 106.8684217,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "2.435",
+    "ref": "W51D1"
+  }
+},
+{
+  "type": "node",
+  "id": 3863090446,
+  "lat": -6.2149127,
+  "lon": 106.8673362,
+  "tags": {
+    "railway": "signal",
+    "railway:position:exact": "2.310",
+    "railway:signal:direction": "forward",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "intermediate",
+    "railway:signal:position": "right",
+    "ref": "J502"
+  }
+},
+{
+  "type": "node",
+  "id": 3863090584,
+  "lat": -6.2150333,
+  "lon": 106.8689204,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "2.498",
+    "ref": "W31C2"
+  }
+},
+{
+  "type": "node",
+  "id": 3863090591,
+  "lat": -6.2148751,
+  "lon": 106.8747498,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "12.245",
+    "ref": "W3B1"
+  }
+},
+{
+  "type": "node",
+  "id": 3863090592,
+  "lat": -6.2148381,
+  "lon": 106.8755564,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "12.346",
+    "ref": "W33C1"
+  }
+},
+{
+  "type": "node",
+  "id": 3865048099,
+  "lat": -6.2148966,
+  "lon": 106.8736454,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "12.110",
+    "ref": "W13B"
+  }
+},
+{
+  "type": "node",
+  "id": 3865048101,
+  "lat": -6.2148288,
+  "lon": 106.8747986,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "12.250",
+    "ref": "W13D1"
+  }
+},
+{
+  "type": "node",
+  "id": 4748290004,
+  "lat": -6.2149683,
+  "lon": 106.8730851,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "12.045",
+    "ref": "W33A"
+  }
+},
+{
+  "type": "node",
+  "id": 4871908125,
+  "lat": -6.2146215,
+  "lon": 106.8779758,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "12.602",
+    "ref": "W13F"
+  }
+},
+{
+  "type": "node",
+  "id": 4912053893,
+  "lat": -6.2131706,
+  "lon": 106.8653111,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 4921620530,
+  "lat": -6.2169763,
+  "lon": 106.8626847,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 4921620536,
+  "lat": -6.2181247,
+  "lon": 106.8603494,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 7116275917,
+  "lat": -6.2148497,
+  "lon": 106.8727021,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "12.012",
+    "ref": "W63A"
+  }
+},
+{
+  "type": "node",
+  "id": 7116275954,
+  "lat": -6.2142028,
+  "lon": 106.8797003,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 7116275955,
+  "lat": -6.2142013,
+  "lon": 106.8797266,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 7116275964,
+  "lat": -6.2140777,
+  "lon": 106.8802789,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 7116275968,
+  "lat": -6.2144182,
+  "lon": 106.8788273,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "12.690",
+    "ref": "W85C"
+  }
+},
+{
+  "type": "node",
+  "id": 7116275972,
+  "lat": -6.2144601,
+  "lon": 106.8786058,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "12.674",
+    "ref": "W85B"
+  }
+},
+{
+  "type": "node",
+  "id": 7116336207,
+  "lat": -6.2150780,
+  "lon": 106.8689256,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "2.498",
+    "ref": "W51D2"
+  }
+},
+{
+  "type": "node",
+  "id": 8431213305,
+  "lat": -6.2147970,
+  "lon": 106.8761801,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "12.415",
+    "ref": "W33C2"
+  }
+},
+{
+  "type": "node",
+  "id": 8431213309,
+  "lat": -6.2148361,
+  "lon": 106.8739594,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "12.156",
+    "ref": "W23C1"
+  }
+},
+{
+  "type": "node",
+  "id": 10312804395,
+  "lat": -6.2137617,
+  "lon": 106.8661488,
+  "tags": {
+    "railway": "railway_crossing",
+    "ref": "ZP81B"
+  }
+},
+{
+  "type": "node",
+  "id": 10312804396,
+  "lat": -6.2139075,
+  "lon": 106.8663376,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "11.259",
+    "ref": "W81A2"
+  }
+},
+{
+  "type": "node",
+  "id": 10312804397,
+  "lat": -6.2135902,
+  "lon": 106.8659340,
+  "tags": {
+    "railway": "switch",
+    "ref": "W61A1"
+  }
+},
+{
+  "type": "node",
+  "id": 10312804398,
+  "lat": -6.2135576,
+  "lon": 106.8659547,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "11.202",
+    "ref": "W81A1"
+  }
+},
+{
+  "type": "node",
+  "id": 10312804399,
+  "lat": -6.2139336,
+  "lon": 106.8663117,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "11.259",
+    "ref": "W61A2"
+  }
+},
+{
+  "type": "node",
+  "id": 10312804400,
+  "lat": -6.2132340,
+  "lon": 106.8652457,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "2.015",
+    "ref": "W31A2"
+  }
+},
+{
+  "type": "node",
+  "id": 10312804401,
+  "lat": -6.2136705,
+  "lon": 106.8657976,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "2.095",
+    "ref": "W11A"
+  }
+},
+{
+  "type": "node",
+  "id": 10312804402,
+  "lat": -6.2137140,
+  "lon": 106.8658455,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "2.100",
+    "ref": "W11B1"
+  }
+},
+{
+  "type": "node",
+  "id": 10312804403,
+  "lat": -6.2140379,
+  "lon": 106.8662482,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "2.157",
+    "ref": "W21A2"
+  }
+},
+{
+  "type": "node",
+  "id": 10312804404,
+  "lat": -6.2150559,
+  "lon": 106.8686700,
+  "tags": {
+    "railway": "railway_crossing",
+    "ref": "ZP31E"
+  }
+},
+{
+  "type": "node",
+  "id": 10312804407,
+  "lat": -6.2148116,
+  "lon": 106.8686799,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "11.542",
+    "ref": "W61C"
+  }
+},
+{
+  "type": "node",
+  "id": 10312804409,
+  "lat": -6.2148535,
+  "lon": 106.8694764,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "11.630",
+    "ref": "W41B"
+  }
+},
+{
+  "type": "node",
+  "id": 10312804451,
+  "lat": -6.2147770,
+  "lon": 106.8686782,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "11.542",
+    "ref": "W81C"
+  }
+},
+{
+  "type": "node",
+  "id": 10312804462,
+  "lat": -6.2148203,
+  "lon": 106.8735091,
+  "tags": {
+    "railway": "railway_crossing"
+  }
+},
+{
+  "type": "node",
+  "id": 10312804463,
+  "lat": -6.2147717,
+  "lon": 106.8739107,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "12.147",
+    "ref": "W83B"
+  }
+},
+{
+  "type": "node",
+  "id": 10312804468,
+  "lat": -6.2148171,
+  "lon": 106.8731719,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "12.057",
+    "ref": "W83A2"
+  }
+},
+{
+  "type": "node",
+  "id": 10312804471,
+  "lat": -6.2148135,
+  "lon": 106.8727091,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "12.057",
+    "ref": "W38A1"
+  }
+},
+{
+  "type": "node",
+  "id": 10312804481,
+  "lat": -6.2148728,
+  "lon": 106.8734039,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "12.086",
+    "ref": "W23B1"
+  }
+},
+{
+  "type": "node",
+  "id": 10312804482,
+  "lat": -6.2148538,
+  "lon": 106.8729074,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "12.028",
+    "ref": "W63B"
+  }
+},
+{
+  "type": "node",
+  "id": 10312804483,
+  "lat": -6.2148700,
+  "lon": 106.8741286,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "12.156",
+    "ref": "W13C1"
+  }
+},
+{
+  "type": "node",
+  "id": 10312804484,
+  "lat": -6.2148655,
+  "lon": 106.8735676,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "12.102",
+    "ref": "W23B2"
+  }
+},
+{
+  "type": "node",
+  "id": 10312804485,
+  "lat": -6.2147911,
+  "lon": 106.8767146,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "12.473",
+    "ref": "W53C"
+  }
+},
+{
+  "type": "node",
+  "id": 10312804486,
+  "lat": -6.2148183,
+  "lon": 106.8742125,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "12.181",
+    "ref": "W23C2"
+  }
+},
+{
+  "type": "node",
+  "id": 10312804488,
+  "lat": -6.2148665,
+  "lon": 106.8742002,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "12.170",
+    "ref": "W13C2"
+  }
+},
+{
+  "type": "node",
+  "id": 10312804501,
+  "lat": -6.2148201,
+  "lon": 106.8749960,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "12.278",
+    "ref": "W13D2"
+  }
+},
+{
+  "type": "node",
+  "id": 10312804502,
+  "lat": -6.2148665,
+  "lon": 106.8749120,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "12.263",
+    "ref": "W33B2"
+  }
+},
+{
+  "type": "node",
+  "id": 10312804503,
+  "lat": -6.2149260,
+  "lon": 106.8685352,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "11.526",
+    "ref": "W21C2"
+  }
+},
+{
+  "type": "node",
+  "id": 10312804514,
+  "lat": -6.2150296,
+  "lon": 106.8684242,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "2.435",
+    "ref": "W31C1"
+  }
+},
+{
+  "type": "node",
+  "id": 10312881280,
+  "lat": -6.2127941,
+  "lon": 106.8647073,
+  "tags": {
+    "railway": "switch",
+    "ref": "W51A"
+  }
+},
+{
+  "type": "node",
+  "id": 10312881281,
+  "lat": -6.2131097,
+  "lon": 106.8651031,
+  "tags": {
+    "railway": "switch",
+    "ref": "W31A1"
+  }
+},
+{
+  "type": "node",
+  "id": 10312901838,
+  "lat": -6.2139634,
+  "lon": 106.8663459,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "11.264",
+    "ref": "W61B"
+  }
+},
+{
+  "type": "node",
+  "id": 10312901841,
+  "lat": -6.2147596,
+  "lon": 106.8761180,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "12.334",
+    "ref": "W13E"
+  }
+},
+{
+  "type": "node",
+  "id": 10312901846,
+  "lat": -6.2149259,
+  "lon": 106.8684863,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "11.521",
+    "ref": "W21C1"
+  }
+},
+{
+  "type": "node",
+  "id": 10312901848,
+  "lat": -6.2146751,
+  "lon": 106.8766302,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "12.446",
+    "ref": "W23D"
+  }
+},
+{
+  "type": "node",
+  "id": 11198832521,
+  "lat": -6.2143099,
+  "lon": 106.8795028,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 11198869110,
+  "lat": -6.2145267,
+  "lon": 106.8667700,
+  "tags": {
+    "railway": "signal",
+    "railway:position:exact": "2.246",
+    "railway:signal:direction": "forward",
+    "railway:signal:main_repeated:form": "light",
+    "railway:signal:main_repeated:function": "exit",
+    "railway:signal:position": "right",
+    "ref": "UJ12B"
+  }
+},
+{
+  "type": "node",
+  "id": 11198892851,
+  "lat": -6.2143367,
+  "lon": 106.8803067,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "12.853",
+    "ref": "W65"
+  }
+},
+{
+  "type": "node",
+  "id": 11198892854,
+  "lat": -6.2144033,
+  "lon": 106.8790496,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "12.717",
+    "ref": "W85D"
+  }
+},
+{
+  "type": "node",
+  "id": 11198892872,
+  "lat": -6.2144165,
+  "lon": 106.8797035,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "12.786",
+    "ref": "W45B"
+  }
+},
+{
+  "type": "node",
+  "id": 11198892873,
+  "lat": -6.2144183,
+  "lon": 106.8796656,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "12.779",
+    "ref": "W45A"
+  }
+},
+{
+  "type": "node",
+  "id": 11198892875,
+  "lat": -6.2145517,
+  "lon": 106.8785372,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "12.665",
+    "ref": "W25B2"
+  }
+},
+{
+  "type": "node",
+  "id": 11198892876,
+  "lat": -6.2145543,
+  "lon": 106.8784894,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "12.660",
+    "ref": "W25B1"
+  }
+},
+{
+  "type": "node",
+  "id": 11198892906,
+  "lat": -6.2145829,
+  "lon": 106.8779741,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "12.602",
+    "ref": "W25A"
+  }
+},
+{
+  "type": "node",
+  "id": 11198892907,
+  "lat": -6.2144685,
+  "lon": 106.8785673,
+  "tags": {
+    "railway": "switch",
+    "railway:position:exact": "12.669",
+    "ref": "W85A"
+  }
+},
+{
+  "type": "node",
+  "id": 12058866506,
+  "lat": -6.2139234,
+  "lon": 106.8663560,
+  "tags": {
+    "railway": "signal",
+    "railway:position:exact": "11.272",
+    "railway:signal:direction": "forward",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "intermediate/exit",
+    "railway:signal:position": "right",
+    "ref": "J82A2"
+  }
+},
+{
+  "type": "node",
+  "id": 12058866507,
+  "lat": -6.2147003,
+  "lon": 106.8692682,
+  "tags": {
+    "railway": "signal",
+    "railway:position:exact": "11.609",
+    "railway:signal:direction": "backward",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "exit",
+    "railway:signal:main:speed": "30",
+    "railway:signal:position": "right",
+    "ref": "J102A"
+  }
+},
+{
+  "type": "node",
+  "id": 12058866508,
+  "lat": -6.2147459,
+  "lon": 106.8694772,
+  "tags": {
+    "railway": "signal",
+    "railway:position:exact": "11.630",
+    "railway:signal:direction": "forward",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "exit",
+    "railway:signal:position": "right",
+    "ref": "J82A"
+  }
+},
+{
+  "type": "node",
+  "id": 12058866509,
+  "lat": -6.2147775,
+  "lon": 106.8694756,
+  "tags": {
+    "railway": "signal",
+    "railway:position:exact": "11.630",
+    "railway:signal:direction": "backward",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "exit",
+    "railway:signal:main:speed": "30",
+    "railway:signal:position": "left",
+    "ref": "J62A"
+  }
+},
+{
+  "type": "node",
+  "id": 12058866510,
+  "lat": -6.2138129,
+  "lon": 106.8658707,
+  "tags": {
+    "railway": "signal",
+    "railway:position:exact": "2.108",
+    "railway:signal:direction": "backward",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "intermediate",
+    "railway:signal:position": "right",
+    "ref": "J32A2"
+  }
+},
+{
+  "type": "node",
+  "id": 12058866512,
+  "lat": -6.2147161,
+  "lon": 106.8670928,
+  "tags": {
+    "railway": "signal",
+    "railway:position:exact": "2.279",
+    "railway:signal:direction": "backward",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "exit",
+    "railway:signal:main:speed": "30",
+    "railway:signal:position": "left",
+    "ref": "J12A"
+  }
+},
+{
+  "type": "node",
+  "id": 12058866513,
+  "lat": -6.2150266,
+  "lon": 106.8690795,
+  "tags": {
+    "railway": "signal",
+    "railway:position:exact": "2.515",
+    "railway:signal:direction": "backward",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "exit",
+    "railway:signal:position": "right",
+    "ref": "J32A"
+  }
+},
+{
+  "type": "node",
+  "id": 12058866515,
+  "lat": -6.2148558,
+  "lon": 106.8695416,
+  "tags": {
+    "railway": "signal",
+    "railway:position:exact": "2.572",
+    "railway:signal:direction": "backward",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "exit",
+    "railway:signal:main:speed": "30",
+    "railway:signal:position": "right",
+    "ref": "J42A"
+  }
+},
+{
+  "type": "node",
+  "id": 12058866516,
+  "lat": -6.2149145,
+  "lon": 106.8692478,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "backward",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "exit",
+    "railway:signal:position": "right",
+    "ref": "J22A"
+  }
+},
+{
+  "type": "node",
+  "id": 12058866517,
+  "lat": -6.2149770,
+  "lon": 106.8692432,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "backward",
+    "railway:signal:main_repeated:form": "light",
+    "railway:signal:main_repeated:function": "exit",
+    "railway:signal:position": "right",
+    "ref": "UJ12A"
+  }
+},
+{
+  "type": "node",
+  "id": 12058866518,
+  "lat": -6.2114655,
+  "lon": 106.8635314,
+  "tags": {
+    "railway": "signal",
+    "railway:position:exact": "10.847",
+    "railway:signal:direction": "forward",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "block",
+    "railway:signal:position": "right",
+    "ref": "B205"
+  }
+},
+{
+  "type": "node",
+  "id": 12058866519,
+  "lat": -6.2126396,
+  "lon": 106.8648802,
+  "tags": {
+    "railway": "signal",
+    "railway:position:exact": "11.046",
+    "railway:signal:direction": "forward",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "entry",
+    "railway:signal:position": "right",
+    "ref": "J60"
+  }
+},
+{
+  "type": "node",
+  "id": 12058866520,
+  "lat": -6.2126119,
+  "lon": 106.8649110,
+  "tags": {
+    "railway": "signal",
+    "railway:position:exact": "11.046",
+    "railway:signal:direction": "backward",
+    "railway:signal:main:form": "sign",
+    "railway:signal:main:function": "entry/protection",
+    "railway:signal:position": "left",
+    "ref": "J80"
+  }
+},
+{
+  "type": "node",
+  "id": 12058866521,
+  "lat": -6.2112966,
+  "lon": 106.8633107,
+  "tags": {
+    "railway": "signal",
+    "railway:position:exact": "10.812",
+    "railway:signal:direction": "forward",
+    "railway:signal:main_repeated:form": "light",
+    "railway:signal:main_repeated:function": "entry",
+    "railway:signal:position": "right",
+    "ref": "UJ60"
+  }
+},
+{
+  "type": "node",
+  "id": 12058959198,
+  "lat": -6.2146994,
+  "lon": 106.8720291,
+  "tags": {
+    "railway": "signal",
+    "railway:position:exact": "11.933",
+    "railway:signal:direction": "forward",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "exit",
+    "railway:signal:main:speed": "30",
+    "railway:signal:position": "left",
+    "ref": "J102B"
+  }
+},
+{
+  "type": "node",
+  "id": 12058959199,
+  "lat": -6.2147614,
+  "lon": 106.8720271,
+  "tags": {
+    "railway": "signal",
+    "railway:position:exact": "11.933",
+    "railway:signal:direction": "backward",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "exit",
+    "railway:signal:main:speed": "30",
+    "railway:signal:position": "left",
+    "ref": "J82B"
+  }
+},
+{
+  "type": "node",
+  "id": 12058959200,
+  "lat": -6.2147915,
+  "lon": 106.8720290,
+  "tags": {
+    "railway": "signal",
+    "railway:position:exact": "11.933",
+    "railway:signal:direction": "forward",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "exit",
+    "railway:signal:main:speed": "30",
+    "railway:signal:position": "right",
+    "ref": "J62B"
+  }
+},
+{
+  "type": "node",
+  "id": 12058959201,
+  "lat": -6.2148482,
+  "lon": 106.8720281,
+  "tags": {
+    "railway": "signal",
+    "railway:position:exact": "11.933",
+    "railway:signal:direction": "forward",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "exit",
+    "railway:signal:main:speed": "30",
+    "railway:signal:position": "left",
+    "ref": "J42B"
+  }
+},
+{
+  "type": "node",
+  "id": 12058959202,
+  "lat": -6.2148846,
+  "lon": 106.8720310,
+  "tags": {
+    "railway": "signal",
+    "railway:position:exact": "11.934",
+    "railway:signal:direction": "forward",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "exit",
+    "railway:signal:main:speed": "30",
+    "railway:signal:position": "right",
+    "ref": "J22B"
+  }
+},
+{
+  "type": "node",
+  "id": 12058959204,
+  "lat": -6.2149733,
+  "lon": 106.8719429,
+  "tags": {
+    "railway": "signal",
+    "railway:position:exact": "11.925",
+    "railway:signal:direction": "forward",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "exit",
+    "railway:signal:position": "left",
+    "ref": "J12B"
+  }
+},
+{
+  "type": "node",
+  "id": 12058959205,
+  "lat": -6.2150067,
+  "lon": 106.8719429,
+  "tags": {
+    "railway": "signal",
+    "railway:position:exact": "11.925",
+    "railway:signal:direction": "forward",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "exit",
+    "railway:signal:main:speed": "30",
+    "railway:signal:position": "right",
+    "ref": "J32B"
+  }
+},
+{
+  "type": "node",
+  "id": 12058959206,
+  "lat": -6.2149586,
+  "lon": 106.8738720,
+  "tags": {
+    "railway": "signal",
+    "railway:position:exact": "12.136",
+    "railway:signal:direction": "forward",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "exit",
+    "railway:signal:position": "right",
+    "ref": "J52"
+  }
+},
+{
+  "type": "node",
+  "id": 12058959208,
+  "lat": -6.2145830,
+  "lon": 106.8802116,
+  "tags": {
+    "railway": "signal",
+    "railway:position:exact": "12.838",
+    "railway:signal:direction": "backward",
+    "railway:signal:main:form": "sign",
+    "railway:signal:main:function": "entry/protection",
+    "railway:signal:position": "left",
+    "ref": "J54"
+  }
+},
+{
+  "type": "node",
+  "id": 12058959209,
+  "lat": -6.2145475,
+  "lon": 106.8801193,
+  "tags": {
+    "railway": "signal",
+    "railway:position:exact": "12.828",
+    "railway:signal:direction": "backward",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "entry",
+    "railway:signal:position": "right",
+    "ref": "J34"
+  }
+},
+{
+  "type": "node",
+  "id": 12058959217,
+  "lat": -6.2143565,
+  "lon": 106.8793703,
+  "tags": {
+    "railway": "signal",
+    "railway:position:exact": "12.754",
+    "railway:signal:direction": "forward",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "exit/entry",
+    "railway:signal:main:speed": "30",
+    "railway:signal:position": "right",
+    "ref": "J86"
+  }
+},
+{
+  "type": "node",
+  "id": 12058959218,
+  "lat": -6.2143248,
+  "lon": 106.8791369,
+  "tags": {
+    "railway": "signal",
+    "railway:position:exact": "12.728",
+    "railway:signal:direction": "backward",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "exit/entry",
+    "railway:signal:main:speed": "30",
+    "railway:signal:position": "left",
+    "ref": "J106"
+  }
+},
+{
+  "type": "node",
+  "id": 13958739937,
+  "lat": -6.2147163,
+  "lon": 106.8691798,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "way",
+  "id": 29283650,
+  "bounds": {
+    "minlat": -6.2185642,
+    "minlon": 106.8557049,
+    "maxlat": -6.2168284,
+    "maxlon": 106.8629874
+  },
+  "nodes": [
+    3217046113,
+    322031265,
+    2368101399,
+    322031266,
+    2368101398,
+    322031267,
+    2368101400,
+    322031268,
+    11198737363,
+    352629223,
+    4921620551,
+    4921620539,
+    11198737360,
+    11198737359,
+    11198737358,
+    11198737357,
+    4921620536,
+    322031270,
+    4921620530,
+    322031271
+  ],
+  "geometry": [
+    { "lat": -6.2176754, "lon": 106.8557049 },
+    { "lat": -6.2178506, "lon": 106.8559555 },
+    { "lat": -6.2181493, "lon": 106.8565655 },
+    { "lat": -6.2183289, "lon": 106.8570081 },
+    { "lat": -6.2184358, "lon": 106.8573760 },
+    { "lat": -6.2185044, "lon": 106.8577127 },
+    { "lat": -6.2185600, "lon": 106.8581126 },
+    { "lat": -6.2185642, "lon": 106.8585864 },
+    { "lat": -6.2185460, "lon": 106.8588748 },
+    { "lat": -6.2185125, "lon": 106.8591661 },
+    { "lat": -6.2184891, "lon": 106.8593016 },
+    { "lat": -6.2184479, "lon": 106.8595322 },
+    { "lat": -6.2184035, "lon": 106.8597898 },
+    { "lat": -6.2183551, "lon": 106.8599335 },
+    { "lat": -6.2182787, "lon": 106.8600879 },
+    { "lat": -6.2182151, "lon": 106.8601859 },
+    { "lat": -6.2181247, "lon": 106.8603494 },
+    { "lat": -6.2179907, "lon": 106.8606952 },
+    { "lat": -6.2169763, "lon": 106.8626847 },
+    { "lat": -6.2168284, "lon": 106.8629874 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 107475294,
+  "bounds": {
+    "minlat": -6.2184230,
+    "minlon": 106.8598088,
+    "maxlat": -6.2169763,
+    "maxlon": 106.8626847
+  },
+  "nodes": [
+    1235141409,
+    4921620523,
+    1235141451,
+    1235141473,
+    4921620530
+  ],
+  "geometry": [
+    { "lat": -6.2184230, "lon": 106.8598088 },
+    { "lat": -6.2183142, "lon": 106.8601644 },
+    { "lat": -6.2182117, "lon": 106.8603954 },
+    { "lat": -6.2172720, "lon": 106.8622435 },
+    { "lat": -6.2169763, "lon": 106.8626847 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 107475301,
+  "bounds": {
+    "minlat": -6.2184479,
+    "minlon": 106.8595322,
+    "maxlat": -6.2167219,
+    "maxlon": 106.8629386
+  },
+  "nodes": [
+    4921620539,
+    4921620538,
+    4921620537,
+    4921620531,
+    11198737356,
+    11198737355,
+    11198737353,
+    11198737354,
+    1235141510
+  ],
+  "geometry": [
+    { "lat": -6.2184479, "lon": 106.8595322 },
+    { "lat": -6.2183612, "lon": 106.8598314 },
+    { "lat": -6.2182988, "lon": 106.8599756 },
+    { "lat": -6.2182189, "lon": 106.8601083 },
+    { "lat": -6.2179473, "lon": 106.8605139 },
+    { "lat": -6.2178528, "lon": 106.8606688 },
+    { "lat": -6.2173103, "lon": 106.8617345 },
+    { "lat": -6.2172263, "lon": 106.8619434 },
+    { "lat": -6.2167219, "lon": 106.8629386 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 107475305,
+  "bounds": {
+    "minlat": -6.2184617,
+    "minlon": 106.8595742,
+    "maxlat": -6.2173363,
+    "maxlon": 106.8621889
+  },
+  "nodes": [
+    4921620550,
+    1235141409,
+    1235141525,
+    1235141439,
+    4921620525,
+    4921620526
+  ],
+  "geometry": [
+    { "lat": -6.2184617, "lon": 106.8595742 },
+    { "lat": -6.2184230, "lon": 106.8598088 },
+    { "lat": -6.2183458, "lon": 106.8601601 },
+    { "lat": -6.2182914, "lon": 106.8603157 },
+    { "lat": -6.2182203, "lon": 106.8604603 },
+    { "lat": -6.2173363, "lon": 106.8621889 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 121684845,
+  "bounds": {
+    "minlat": -6.2150333,
+    "minlon": 106.8652457,
+    "maxlat": -6.2132340,
+    "maxlon": 106.8689204
+  },
+  "nodes": [
+    10312804400,
+    12058866510,
+    3863090574,
+    3863090576,
+    3863090577,
+    3863090578,
+    3863090579,
+    3863090580,
+    3863090581,
+    10312804509,
+    3863090582,
+    10312804514,
+    3863090584
+  ],
+  "geometry": [
+    { "lat": -6.2132340, "lon": 106.8652457 },
+    { "lat": -6.2138129, "lon": 106.8658707 },
+    { "lat": -6.2141106, "lon": 106.8661907 },
+    { "lat": -6.2144091, "lon": 106.8665200 },
+    { "lat": -6.2145664, "lon": 106.8667252 },
+    { "lat": -6.2147110, "lon": 106.8669619 },
+    { "lat": -6.2147976, "lon": 106.8671527 },
+    { "lat": -6.2148694, "lon": 106.8673503 },
+    { "lat": -6.2149330, "lon": 106.8675634 },
+    { "lat": -6.2149832, "lon": 106.8677916 },
+    { "lat": -6.2150192, "lon": 106.8680989 },
+    { "lat": -6.2150296, "lon": 106.8684242 },
+    { "lat": -6.2150333, "lon": 106.8689204 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "60",
+    "name": "Jalur Kereta Api Manggarai–Jatinegara",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q17052030",
+    "wikipedia": "en:Jatinegara-Manggarai railway"
+  }
+},
+{
+  "type": "way",
+  "id": 339334987,
+  "bounds": {
+    "minlat": -6.2149883,
+    "minlon": 106.8658455,
+    "maxlat": -6.2137140,
+    "maxlon": 106.8719321
+  },
+  "nodes": [
+    10312804402,
+    316266223,
+    11198869110,
+    12058866512,
+    10312804513,
+    4912047667,
+    316266224,
+    1235329601,
+    10312804507,
+    10312804508,
+    10312804505,
+    10312804506,
+    12058866517,
+    10312804517,
+    10312804209,
+    4912053886
+  ],
+  "geometry": [
+    { "lat": -6.2137140, "lon": 106.8658455 },
+    { "lat": -6.2143953, "lon": 106.8665866 },
+    { "lat": -6.2145267, "lon": 106.8667700 },
+    { "lat": -6.2147161, "lon": 106.8670928 },
+    { "lat": -6.2147521, "lon": 106.8671757 },
+    { "lat": -6.2148229, "lon": 106.8673715 },
+    { "lat": -6.2148846, "lon": 106.8675755 },
+    { "lat": -6.2149375, "lon": 106.8677936 },
+    { "lat": -6.2149687, "lon": 106.8681057 },
+    { "lat": -6.2149730, "lon": 106.8682876 },
+    { "lat": -6.2149725, "lon": 106.8684420 },
+    { "lat": -6.2149735, "lon": 106.8688283 },
+    { "lat": -6.2149770, "lon": 106.8692432 },
+    { "lat": -6.2149772, "lon": 106.8692681 },
+    { "lat": -6.2149883, "lon": 106.8703378 },
+    { "lat": -6.2149737, "lon": 106.8719321 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "50",
+    "name": "Jalur Kereta Api Manggarai–Jatinegara",
+    "railway": "rail",
+    "railway:track_ref": "3",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q17052030",
+    "wikipedia": "en:Jatinegara-Manggarai railway"
+  }
+},
+{
+  "type": "way",
+  "id": 383105465,
+  "bounds": {
+    "minlat": -6.2150780,
+    "minlon": 106.8651496,
+    "maxlat": -6.2132018,
+    "maxlon": 106.8689256
+  },
+  "nodes": [
+    10959159478,
+    12058866511,
+    3863090449,
+    3863090448,
+    3863090447,
+    4912047666,
+    3863090446,
+    3863090445,
+    10312804406,
+    3863090444,
+    3863090443,
+    7116336207
+  ],
+  "geometry": [
+    { "lat": -6.2132018, "lon": 106.8651496 },
+    { "lat": -6.2141344, "lon": 106.8661705 },
+    { "lat": -6.2144364, "lon": 106.8665011 },
+    { "lat": -6.2145718, "lon": 106.8666799 },
+    { "lat": -6.2147304, "lon": 106.8669111 },
+    { "lat": -6.2148372, "lon": 106.8671309 },
+    { "lat": -6.2149127, "lon": 106.8673362 },
+    { "lat": -6.2149799, "lon": 106.8675484 },
+    { "lat": -6.2150310, "lon": 106.8677908 },
+    { "lat": -6.2150583, "lon": 106.8680957 },
+    { "lat": -6.2150646, "lon": 106.8684217 },
+    { "lat": -6.2150780, "lon": 106.8689256 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "60",
+    "name": "Jalur Kereta Api Manggarai–Jatinegara",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q17052030",
+    "wikipedia": "en:Jatinegara-Manggarai railway"
+  }
+},
+{
+  "type": "way",
+  "id": 383105468,
+  "bounds": {
+    "minlat": -6.2148381,
+    "minlon": 106.8755564,
+    "maxlat": -6.2131228,
+    "maxlon": 106.8922940
+  },
+  "nodes": [
+    3863090592,
+    8431213305,
+    4871908124,
+    12058959209,
+    3863090598,
+    3863090600,
+    3863090601,
+    8431213302,
+    6059970363,
+    4452063348,
+    8431213288,
+    3863090604,
+    11198832524,
+    3865048117,
+    3865048118,
+    8431213280,
+    3865048120,
+    3865048121
+  ],
+  "geometry": [
+    { "lat": -6.2148381, "lon": 106.8755564 },
+    { "lat": -6.2147970, "lon": 106.8761801 },
+    { "lat": -6.2147073, "lon": 106.8773525 },
+    { "lat": -6.2145475, "lon": 106.8801193 },
+    { "lat": -6.2142693, "lon": 106.8848916 },
+    { "lat": -6.2141392, "lon": 106.8869275 },
+    { "lat": -6.2140967, "lon": 106.8872938 },
+    { "lat": -6.2140703, "lon": 106.8874683 },
+    { "lat": -6.2140422, "lon": 106.8876357 },
+    { "lat": -6.2139251, "lon": 106.8881707 },
+    { "lat": -6.2138815, "lon": 106.8883620 },
+    { "lat": -6.2138301, "lon": 106.8885505 },
+    { "lat": -6.2134224, "lon": 106.8898057 },
+    { "lat": -6.2133047, "lon": 106.8902836 },
+    { "lat": -6.2132226, "lon": 106.8907719 },
+    { "lat": -6.2131694, "lon": 106.8912265 },
+    { "lat": -6.2131373, "lon": 106.8916861 },
+    { "lat": -6.2131228, "lon": 106.8922940 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "115",
+    "name": "Jalur Kereta Api Jakarta Kota–Cikampek",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q19726782",
+    "wikipedia": "id:Jalur kereta api Jakarta Kota–Cikampek"
+  }
+},
+{
+  "type": "way",
+  "id": 501316298,
+  "bounds": {
+    "minlat": -6.2181247,
+    "minlon": 106.8603494,
+    "maxlat": -6.2167957,
+    "maxlon": 106.8629540
+  },
+  "nodes": [
+    4921620533,
+    4921620536
+  ],
+  "geometry": [
+    { "lat": -6.2167957, "lon": 106.8629540 },
+    { "lat": -6.2181247, "lon": 106.8603494 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "40",
+    "railway": "rail",
+    "service": "yard",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 501316299,
+  "bounds": {
+    "minlat": -6.2184891,
+    "minlon": 106.8593016,
+    "maxlat": -6.2173780,
+    "maxlon": 106.8621769
+  },
+  "nodes": [
+    4921620551,
+    4921620550,
+    11198737362,
+    4921620541,
+    4921620542,
+    4921620544,
+    11198623235
+  ],
+  "geometry": [
+    { "lat": -6.2184891, "lon": 106.8593016 },
+    { "lat": -6.2184617, "lon": 106.8595742 },
+    { "lat": -6.2184412, "lon": 106.8598647 },
+    { "lat": -6.2183899, "lon": 106.8601672 },
+    { "lat": -6.2183390, "lon": 106.8603472 },
+    { "lat": -6.2175210, "lon": 106.8619603 },
+    { "lat": -6.2173780, "lon": 106.8621769 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 501316300,
+  "bounds": {
+    "minlat": -6.2184412,
+    "minlon": 106.8598647,
+    "maxlat": -6.2179566,
+    "maxlon": 106.8613254
+  },
+  "nodes": [
+    11198737362,
+    4921620545,
+    4921620546,
+    4921620547,
+    4921620548,
+    11198737361,
+    4921620549
+  ],
+  "geometry": [
+    { "lat": -6.2184412, "lon": 106.8598647 },
+    { "lat": -6.2184257, "lon": 106.8600923 },
+    { "lat": -6.2184133, "lon": 106.8602812 },
+    { "lat": -6.2184006, "lon": 106.8603562 },
+    { "lat": -6.2183821, "lon": 106.8604779 },
+    { "lat": -6.2183382, "lon": 106.8605996 },
+    { "lat": -6.2179566, "lon": 106.8613254 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "40",
+    "railway": "rail",
+    "service": "yard",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 748910562,
+  "bounds": {
+    "minlat": -6.2121437,
+    "minlon": 106.8633123,
+    "maxlat": -6.2117887,
+    "maxlon": 106.8640183
+  },
+  "nodes": [
+    3863090436,
+    7563289946,
+    7563289945,
+    7003649029
+  ],
+  "geometry": [
+    { "lat": -6.2121437, "lon": 106.8640183 },
+    { "lat": -6.2119792, "lon": 106.8637564 },
+    { "lat": -6.2118628, "lon": 106.8635125 },
+    { "lat": -6.2117887, "lon": 106.8633123 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "60",
+    "name": "Jalur Kereta Api Manggarai–Jatinegara",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q17052030",
+    "wikipedia": "en:Jatinegara-Manggarai railway"
+  }
+},
+{
+  "type": "way",
+  "id": 757277180,
+  "bounds": {
+    "minlat": -6.2149260,
+    "minlon": 106.8685352,
+    "maxlat": -6.2148845,
+    "maxlon": 106.8719985
+  },
+  "nodes": [
+    10312804503,
+    12058866516,
+    7116275938,
+    7116275915,
+    10312797708,
+    7116275914,
+    7116275913
+  ],
+  "geometry": [
+    { "lat": -6.2149260, "lon": 106.8685352 },
+    { "lat": -6.2149145, "lon": 106.8692478 },
+    { "lat": -6.2149141, "lon": 106.8692733 },
+    { "lat": -6.2149078, "lon": 106.8696510 },
+    { "lat": -6.2148980, "lon": 106.8703418 },
+    { "lat": -6.2148865, "lon": 106.8715200 },
+    { "lat": -6.2148845, "lon": 106.8719985 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "50",
+    "name": "Jalur Kereta Api Manggarai–Jatinegara",
+    "railway": "rail",
+    "railway:track_ref": "4",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q17052030",
+    "wikipedia": "en:Jatinegara-Manggarai railway"
+  }
+},
+{
+  "type": "way",
+  "id": 761657944,
+  "bounds": {
+    "minlat": -6.2148657,
+    "minlon": 106.8694764,
+    "maxlat": -6.2148481,
+    "maxlon": 106.8727021
+  },
+  "nodes": [
+    10312804409,
+    12058866515,
+    7116275940,
+    7116275916,
+    10312797707,
+    10312804472,
+    12058959201,
+    7116275917
+  ],
+  "geometry": [
+    { "lat": -6.2148535, "lon": 106.8694764 },
+    { "lat": -6.2148558, "lon": 106.8695416 },
+    { "lat": -6.2148611, "lon": 106.8696287 },
+    { "lat": -6.2148657, "lon": 106.8698109 },
+    { "lat": -6.2148571, "lon": 106.8703449 },
+    { "lat": -6.2148481, "lon": 106.8719940 },
+    { "lat": -6.2148482, "lon": 106.8720281 },
+    { "lat": -6.2148497, "lon": 106.8727021 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "railway:track_ref": "5",
+    "service": "siding",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 761657946,
+  "bounds": {
+    "minlat": -6.2147770,
+    "minlon": 106.8663376,
+    "maxlat": -6.2139075,
+    "maxlon": 106.8686782
+  },
+  "nodes": [
+    10312804451,
+    10312804448,
+    10312804447,
+    12617706520,
+    10312804446,
+    10312804439,
+    10312804438,
+    10312804437,
+    10312804436,
+    12058866506,
+    10312804396
+  ],
+  "geometry": [
+    { "lat": -6.2147770, "lon": 106.8686782 },
+    { "lat": -6.2147760, "lon": 106.8682140 },
+    { "lat": -6.2147586, "lon": 106.8679837 },
+    { "lat": -6.2147295, "lon": 106.8678067 },
+    { "lat": -6.2146841, "lon": 106.8676215 },
+    { "lat": -6.2146140, "lon": 106.8674136 },
+    { "lat": -6.2144889, "lon": 106.8671195 },
+    { "lat": -6.2143616, "lon": 106.8668911 },
+    { "lat": -6.2142007, "lon": 106.8666774 },
+    { "lat": -6.2139234, "lon": 106.8663560 },
+    { "lat": -6.2139075, "lon": 106.8663376 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "name": "Jalur Kereta Api Jakarta Kota–Cikampek",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q19726782",
+    "wikipedia": "id:Jalur kereta api Jakarta Kota–Cikampek"
+  }
+},
+{
+  "type": "way",
+  "id": 761657949,
+  "bounds": {
+    "minlat": -6.2148171,
+    "minlon": 106.8731719,
+    "maxlat": -6.2142028,
+    "maxlon": 106.8797003
+  },
+  "nodes": [
+    10312804468,
+    10312804463,
+    12058908845,
+    10312804464,
+    10312804465,
+    11198892880,
+    11198892879,
+    8431213307,
+    7116275953,
+    11198892907,
+    7116275972,
+    12058959218,
+    11198892927,
+    7116275954
+  ],
+  "geometry": [
+    { "lat": -6.2148171, "lon": 106.8731719 },
+    { "lat": -6.2147717, "lon": 106.8739107 },
+    { "lat": -6.2147483, "lon": 106.8745562 },
+    { "lat": -6.2147201, "lon": 106.8753369 },
+    { "lat": -6.2146447, "lon": 106.8761078 },
+    { "lat": -6.2145736, "lon": 106.8771532 },
+    { "lat": -6.2145461, "lon": 106.8778926 },
+    { "lat": -6.2145289, "lon": 106.8781582 },
+    { "lat": -6.2145118, "lon": 106.8783383 },
+    { "lat": -6.2144685, "lon": 106.8785673 },
+    { "lat": -6.2144601, "lon": 106.8786058 },
+    { "lat": -6.2143248, "lon": 106.8791369 },
+    { "lat": -6.2142246, "lon": 106.8795302 },
+    { "lat": -6.2142028, "lon": 106.8797003 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 761657952,
+  "bounds": {
+    "minlat": -6.2140777,
+    "minlon": 106.8802789,
+    "maxlat": -6.2139288,
+    "maxlon": 106.8810169
+  },
+  "nodes": [
+    7116275964,
+    7116328123,
+    7116275965,
+    11193693853
+  ],
+  "geometry": [
+    { "lat": -6.2140777, "lon": 106.8802789 },
+    { "lat": -6.2140171, "lon": 106.8805564 },
+    { "lat": -6.2139671, "lon": 106.8808307 },
+    { "lat": -6.2139288, "lon": 106.8810169 }
+  ],
+  "tags": {
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 761657953,
+  "bounds": {
+    "minlat": -6.2144182,
+    "minlon": 106.8788273,
+    "maxlat": -6.2139475,
+    "maxlon": 106.8863043
+  },
+  "nodes": [
+    7116275968,
+    11198892854,
+    11198832520,
+    11198892851,
+    12058959214,
+    12058959215,
+    11198832518,
+    11198832519,
+    11198892837,
+    11198892838,
+    11198832515,
+    7116275969,
+    11198892858
+  ],
+  "geometry": [
+    { "lat": -6.2144182, "lon": 106.8788273 },
+    { "lat": -6.2144033, "lon": 106.8790496 },
+    { "lat": -6.2143792, "lon": 106.8795933 },
+    { "lat": -6.2143367, "lon": 106.8803067 },
+    { "lat": -6.2143332, "lon": 106.8803662 },
+    { "lat": -6.2143281, "lon": 106.8804650 },
+    { "lat": -6.2142417, "lon": 106.8819288 },
+    { "lat": -6.2142189, "lon": 106.8823184 },
+    { "lat": -6.2142128, "lon": 106.8824232 },
+    { "lat": -6.2141856, "lon": 106.8828869 },
+    { "lat": -6.2141392, "lon": 106.8836808 },
+    { "lat": -6.2140077, "lon": 106.8859254 },
+    { "lat": -6.2139475, "lon": 106.8863043 }
+  ],
+  "tags": {
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 761657954,
+  "bounds": {
+    "minlat": -6.2144601,
+    "minlon": 106.8786058,
+    "maxlat": -6.2142963,
+    "maxlon": 106.8803633
+  },
+  "nodes": [
+    12058959216,
+    12058959217,
+    7116275971,
+    7116275968,
+    7116275972
+  ],
+  "geometry": [
+    { "lat": -6.2142963, "lon": 106.8803633 },
+    { "lat": -6.2143565, "lon": 106.8793703 },
+    { "lat": -6.2143631, "lon": 106.8792269 },
+    { "lat": -6.2144182, "lon": 106.8788273 },
+    { "lat": -6.2144601, "lon": 106.8786058 }
+  ],
+  "tags": {
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 761666033,
+  "bounds": {
+    "minlat": -6.2148201,
+    "minlon": 106.8749960,
+    "maxlat": -6.2141326,
+    "maxlon": 106.8861511
+  },
+  "nodes": [
+    10312804501,
+    3865048102,
+    10312901841,
+    3865048103,
+    4871908125,
+    12058959212,
+    7071905242
+  ],
+  "geometry": [
+    { "lat": -6.2148201, "lon": 106.8749960 },
+    { "lat": -6.2147923, "lon": 106.8755723 },
+    { "lat": -6.2147596, "lon": 106.8761180 },
+    { "lat": -6.2146743, "lon": 106.8770864 },
+    { "lat": -6.2146215, "lon": 106.8779758 },
+    { "lat": -6.2144670, "lon": 106.8805593 },
+    { "lat": -6.2141326, "lon": 106.8861511 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "115",
+    "name": "Jalur Kereta Api Jakarta Kota–Cikampek",
+    "railway": "rail",
+    "usage": "main",
+    "wikidata": "Q19726782",
+    "wikipedia": "id:Jalur kereta api Jakarta Kota–Cikampek"
+  }
+},
+{
+  "type": "way",
+  "id": 761666037,
+  "bounds": {
+    "minlat": -6.2149683,
+    "minlon": 106.8730851,
+    "maxlat": -6.2148966,
+    "maxlon": 106.8736454
+  },
+  "nodes": [
+    4748290004,
+    3865048099
+  ],
+  "geometry": [
+    { "lat": -6.2149683, "lon": 106.8730851 },
+    { "lat": -6.2148966, "lon": 106.8736454 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "crossover",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 761666038,
+  "bounds": {
+    "minlat": -6.2148751,
+    "minlon": 106.8742002,
+    "maxlat": -6.2148665,
+    "maxlon": 106.8747498
+  },
+  "nodes": [
+    10312804488,
+    3863090591
+  ],
+  "geometry": [
+    { "lat": -6.2148665, "lon": 106.8742002 },
+    { "lat": -6.2148751, "lon": 106.8747498 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "crossover",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 761666040,
+  "bounds": {
+    "minlat": -6.2148728,
+    "minlon": 106.8727021,
+    "maxlat": -6.2148497,
+    "maxlon": 106.8734039
+  },
+  "nodes": [
+    7116275917,
+    10312804482,
+    10312804481
+  ],
+  "geometry": [
+    { "lat": -6.2148497, "lon": 106.8727021 },
+    { "lat": -6.2148538, "lon": 106.8729074 },
+    { "lat": -6.2148728, "lon": 106.8734039 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "name": "Jalur Kereta Api Jakarta Kota–Cikampek",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q19726782",
+    "wikipedia": "id:Jalur kereta api Jakarta Kota–Cikampek"
+  }
+},
+{
+  "type": "way",
+  "id": 808834208,
+  "bounds": {
+    "minlat": -6.2121919,
+    "minlon": 106.8632987,
+    "maxlat": -6.2118288,
+    "maxlon": 106.8640089
+  },
+  "nodes": [
+    7071866766,
+    7563289942,
+    7563289943,
+    7563289944
+  ],
+  "geometry": [
+    { "lat": -6.2118288, "lon": 106.8632987 },
+    { "lat": -6.2119232, "lon": 106.8635275 },
+    { "lat": -6.2120356, "lon": 106.8637665 },
+    { "lat": -6.2121919, "lon": 106.8640089 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "60",
+    "name": "Jalur Kereta Api Manggarai–Jatinegara",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q17052030",
+    "wikipedia": "en:Jatinegara-Manggarai railway"
+  }
+},
+{
+  "type": "way",
+  "id": 908259531,
+  "bounds": {
+    "minlat": -6.2148443,
+    "minlon": 106.8696396,
+    "maxlat": -6.2147792,
+    "maxlon": 106.8719992
+  },
+  "nodes": [
+    8433553078,
+    8433553079,
+    8433553080,
+    8433553081,
+    10312804410,
+    8433553082,
+    8433553083,
+    8433553084,
+    8433553078
+  ],
+  "geometry": [
+    { "lat": -6.2147792, "lon": 106.8713275 },
+    { "lat": -6.2147916, "lon": 106.8698359 },
+    { "lat": -6.2147989, "lon": 106.8696437 },
+    { "lat": -6.2148402, "lon": 106.8696396 },
+    { "lat": -6.2148443, "lon": 106.8698214 },
+    { "lat": -6.2148322, "lon": 106.8719992 },
+    { "lat": -6.2148074, "lon": 106.8719964 },
+    { "lat": -6.2147850, "lon": 106.8716835 },
+    { "lat": -6.2147792, "lon": 106.8713275 }
+  ],
+  "tags": {
+    "area": "yes",
+    "network": "KAI Commuter",
+    "operator": "KAI Commuter",
+    "public_transport": "platform",
+    "railway": "platform",
+    "ref": "5;6",
+    "train": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 908259532,
+  "bounds": {
+    "minlat": -6.2149625,
+    "minlon": 106.8692852,
+    "maxlat": -6.2149029,
+    "maxlon": 106.8719723
+  },
+  "nodes": [
+    8433553085,
+    10312804504,
+    8433553086,
+    8433553087,
+    8433553088,
+    8433553085
+  ],
+  "geometry": [
+    { "lat": -6.2149294, "lon": 106.8692852 },
+    { "lat": -6.2149125, "lon": 106.8699970 },
+    { "lat": -6.2149029, "lon": 106.8719723 },
+    { "lat": -6.2149529, "lon": 106.8719713 },
+    { "lat": -6.2149625, "lon": 106.8692860 },
+    { "lat": -6.2149294, "lon": 106.8692852 }
+  ],
+  "tags": {
+    "area": "yes",
+    "network": "KAI",
+    "operator": "Kereta Api Indonesia",
+    "public_transport": "platform",
+    "railway": "platform",
+    "ref": "3;4",
+    "train": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 908259533,
+  "bounds": {
+    "minlat": -6.2150758,
+    "minlon": 106.8692845,
+    "maxlat": -6.2150215,
+    "maxlon": 106.8719707
+  },
+  "nodes": [
+    8433553089,
+    8433553090,
+    10312804324,
+    10312804325,
+    8433553091,
+    8433553092,
+    8433553089
+  ],
+  "geometry": [
+    { "lat": -6.2150337, "lon": 106.8692845 },
+    { "lat": -6.2150690, "lon": 106.8692860 },
+    { "lat": -6.2150758, "lon": 106.8696719 },
+    { "lat": -6.2150690, "lon": 106.8711877 },
+    { "lat": -6.2150538, "lon": 106.8719707 },
+    { "lat": -6.2150215, "lon": 106.8719706 },
+    { "lat": -6.2150337, "lon": 106.8692845 }
+  ],
+  "tags": {
+    "area": "yes",
+    "network": "KAI Commuter",
+    "operator": "KAI Commuter",
+    "public_transport": "platform",
+    "railway": "platform",
+    "ref": "1;2",
+    "train": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 908259534,
+  "bounds": {
+    "minlat": -6.2147455,
+    "minlon": 106.8692718,
+    "maxlat": -6.2146305,
+    "maxlon": 106.8720117
+  },
+  "nodes": [
+    8433553093,
+    8433553094,
+    8433553095,
+    8433553096,
+    8433553097,
+    8433553098,
+    8433553100,
+    8433553101,
+    8433553102,
+    8433553103,
+    8433553104,
+    8433553105,
+    8433553093
+  ],
+  "geometry": [
+    { "lat": -6.2147413, "lon": 106.8720117 },
+    { "lat": -6.2147188, "lon": 106.8716853 },
+    { "lat": -6.2147067, "lon": 106.8703481 },
+    { "lat": -6.2147166, "lon": 106.8698269 },
+    { "lat": -6.2147455, "lon": 106.8692732 },
+    { "lat": -6.2147052, "lon": 106.8692718 },
+    { "lat": -6.2146405, "lon": 106.8697962 },
+    { "lat": -6.2146305, "lon": 106.8707204 },
+    { "lat": -6.2146343, "lon": 106.8713174 },
+    { "lat": -6.2146521, "lon": 106.8716536 },
+    { "lat": -6.2146962, "lon": 106.8719229 },
+    { "lat": -6.2147148, "lon": 106.8720093 },
+    { "lat": -6.2147413, "lon": 106.8720117 }
+  ],
+  "tags": {
+    "area": "yes",
+    "network": "KAI",
+    "operator": "Kereta Api Indonesia",
+    "public_transport": "platform",
+    "railway": "platform",
+    "ref": "7;8",
+    "train": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1127984169,
+  "bounds": {
+    "minlat": -6.2148361,
+    "minlon": 106.8727091,
+    "maxlat": -6.2148135,
+    "maxlon": 106.8739594
+  },
+  "nodes": [
+    10312804471,
+    11198892870,
+    10312804468,
+    10312804462,
+    8431213309
+  ],
+  "geometry": [
+    { "lat": -6.2148135, "lon": 106.8727091 },
+    { "lat": -6.2148266, "lon": 106.8729353 },
+    { "lat": -6.2148171, "lon": 106.8731719 },
+    { "lat": -6.2148203, "lon": 106.8735091 },
+    { "lat": -6.2148361, "lon": 106.8739594 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "name": "Jalur Kereta Api Jakarta Kota–Cikampek",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q19726782",
+    "wikipedia": "id:Jalur kereta api Jakarta Kota–Cikampek"
+  }
+},
+{
+  "type": "way",
+  "id": 1127984170,
+  "bounds": {
+    "minlat": -6.2148361,
+    "minlon": 106.8739594,
+    "maxlat": -6.2148183,
+    "maxlon": 106.8742125
+  },
+  "nodes": [
+    8431213309,
+    10312804486
+  ],
+  "geometry": [
+    { "lat": -6.2148361, "lon": 106.8739594 },
+    { "lat": -6.2148183, "lon": 106.8742125 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "115",
+    "name": "Jalur Kereta Api Jakarta Kota–Cikampek",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q19726782",
+    "wikipedia": "id:Jalur kereta api Jakarta Kota–Cikampek"
+  }
+},
+{
+  "type": "way",
+  "id": 1127984171,
+  "bounds": {
+    "minlat": -6.2148655,
+    "minlon": 106.8735676,
+    "maxlat": -6.2148361,
+    "maxlon": 106.8739594
+  },
+  "nodes": [
+    10312804484,
+    8431213309
+  ],
+  "geometry": [
+    { "lat": -6.2148655, "lon": 106.8735676 },
+    { "lat": -6.2148361, "lon": 106.8739594 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "115",
+    "name": "Jalur Kereta Api Jakarta Kota–Cikampek",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q19726782",
+    "wikipedia": "id:Jalur kereta api Jakarta Kota–Cikampek"
+  }
+},
+{
+  "type": "way",
+  "id": 1127984172,
+  "bounds": {
+    "minlat": -6.2148288,
+    "minlon": 106.8747986,
+    "maxlat": -6.2148201,
+    "maxlon": 106.8749960
+  },
+  "nodes": [
+    3865048101,
+    10312804501
+  ],
+  "geometry": [
+    { "lat": -6.2148288, "lon": 106.8747986 },
+    { "lat": -6.2148201, "lon": 106.8749960 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "115",
+    "name": "Jalur Kereta Api Jakarta Kota–Cikampek",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q19726782",
+    "wikipedia": "id:Jalur kereta api Jakarta Kota–Cikampek"
+  }
+},
+{
+  "type": "way",
+  "id": 1127984173,
+  "bounds": {
+    "minlat": -6.2148665,
+    "minlon": 106.8742002,
+    "maxlat": -6.2148288,
+    "maxlon": 106.8747986
+  },
+  "nodes": [
+    10312804488,
+    3865048101
+  ],
+  "geometry": [
+    { "lat": -6.2148665, "lon": 106.8742002 },
+    { "lat": -6.2148288, "lon": 106.8747986 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "115",
+    "name": "Jalur Kereta Api Jakarta Kota–Cikampek",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q19726782",
+    "wikipedia": "id:Jalur kereta api Jakarta Kota–Cikampek"
+  }
+},
+{
+  "type": "way",
+  "id": 1127984174,
+  "bounds": {
+    "minlat": -6.2148665,
+    "minlon": 106.8749120,
+    "maxlat": -6.2148381,
+    "maxlon": 106.8755564
+  },
+  "nodes": [
+    10312804502,
+    3863090592
+  ],
+  "geometry": [
+    { "lat": -6.2148665, "lon": 106.8749120 },
+    { "lat": -6.2148381, "lon": 106.8755564 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "115",
+    "name": "Jalur Kereta Api Jakarta Kota–Cikampek",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q19726782",
+    "wikipedia": "id:Jalur kereta api Jakarta Kota–Cikampek"
+  }
+},
+{
+  "type": "way",
+  "id": 1127984181,
+  "bounds": {
+    "minlat": -6.2148751,
+    "minlon": 106.8747498,
+    "maxlat": -6.2148665,
+    "maxlon": 106.8749120
+  },
+  "nodes": [
+    3863090591,
+    10312804502
+  ],
+  "geometry": [
+    { "lat": -6.2148751, "lon": 106.8747498 },
+    { "lat": -6.2148665, "lon": 106.8749120 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "115",
+    "name": "Jalur Kereta Api Jakarta Kota–Cikampek",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q19726782",
+    "wikipedia": "id:Jalur kereta api Jakarta Kota–Cikampek"
+  }
+},
+{
+  "type": "way",
+  "id": 1127984182,
+  "bounds": {
+    "minlat": -6.2149683,
+    "minlon": 106.8730851,
+    "maxlat": -6.2148751,
+    "maxlon": 106.8747498
+  },
+  "nodes": [
+    4748290004,
+    3863090589,
+    3863090591
+  ],
+  "geometry": [
+    { "lat": -6.2149683, "lon": 106.8730851 },
+    { "lat": -6.2149501, "lon": 106.8733226 },
+    { "lat": -6.2148751, "lon": 106.8747498 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "115",
+    "name": "Jalur Kereta Api Manggarai–Jatinegara",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q17052030",
+    "wikipedia": "en:Jatinegara-Manggarai railway"
+  }
+},
+{
+  "type": "way",
+  "id": 1127984183,
+  "bounds": {
+    "minlat": -6.2148700,
+    "minlon": 106.8741286,
+    "maxlat": -6.2148665,
+    "maxlon": 106.8742002
+  },
+  "nodes": [
+    10312804483,
+    10312804488
+  ],
+  "geometry": [
+    { "lat": -6.2148700, "lon": 106.8741286 },
+    { "lat": -6.2148665, "lon": 106.8742002 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "115",
+    "name": "Jalur Kereta Api Jakarta Kota–Cikampek",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q19726782",
+    "wikipedia": "id:Jalur kereta api Jakarta Kota–Cikampek"
+  }
+},
+{
+  "type": "way",
+  "id": 1127984185,
+  "bounds": {
+    "minlat": -6.2148183,
+    "minlon": 106.8742125,
+    "maxlat": -6.2140970,
+    "maxlon": 106.8861497
+  },
+  "nodes": [
+    10312804486,
+    8431213303,
+    8431213304,
+    10312901848,
+    7116275911,
+    11198892906,
+    11198892876,
+    11198892875,
+    12058959210,
+    12058959211,
+    7071905213
+  ],
+  "geometry": [
+    { "lat": -6.2148183, "lon": 106.8742125 },
+    { "lat": -6.2147997, "lon": 106.8746202 },
+    { "lat": -6.2147576, "lon": 106.8755428 },
+    { "lat": -6.2146751, "lon": 106.8766302 },
+    { "lat": -6.2146518, "lon": 106.8769053 },
+    { "lat": -6.2145829, "lon": 106.8779741 },
+    { "lat": -6.2145543, "lon": 106.8784894 },
+    { "lat": -6.2145517, "lon": 106.8785372 },
+    { "lat": -6.2144523, "lon": 106.8802012 },
+    { "lat": -6.2144310, "lon": 106.8805586 },
+    { "lat": -6.2140970, "lon": 106.8861497 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "115",
+    "name": "Jalur Kereta Api Jakarta Kota–Cikampek",
+    "railway": "rail",
+    "usage": "main",
+    "wikidata": "Q19726782",
+    "wikipedia": "id:Jalur kereta api Jakarta Kota–Cikampek"
+  }
+},
+{
+  "type": "way",
+  "id": 1127984186,
+  "bounds": {
+    "minlat": -6.2148728,
+    "minlon": 106.8734039,
+    "maxlat": -6.2148655,
+    "maxlon": 106.8735676
+  },
+  "nodes": [
+    10312804481,
+    10312804484
+  ],
+  "geometry": [
+    { "lat": -6.2148728, "lon": 106.8734039 },
+    { "lat": -6.2148655, "lon": 106.8735676 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "115",
+    "name": "Jalur Kereta Api Jakarta Kota–Cikampek",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q19726782",
+    "wikipedia": "id:Jalur kereta api Jakarta Kota–Cikampek"
+  }
+},
+{
+  "type": "way",
+  "id": 1127984204,
+  "bounds": {
+    "minlat": -6.2139075,
+    "minlon": 106.8659340,
+    "maxlat": -6.2135902,
+    "maxlon": 106.8663376
+  },
+  "nodes": [
+    10312804397,
+    10312804395,
+    10312804396
+  ],
+  "geometry": [
+    { "lat": -6.2135902, "lon": 106.8659340 },
+    { "lat": -6.2137617, "lon": 106.8661488 },
+    { "lat": -6.2139075, "lon": 106.8663376 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "crossover",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 1127984205,
+  "bounds": {
+    "minlat": -6.2139336,
+    "minlon": 106.8659547,
+    "maxlat": -6.2135576,
+    "maxlon": 106.8663117
+  },
+  "nodes": [
+    10312804399,
+    10312804395,
+    10312804398
+  ],
+  "geometry": [
+    { "lat": -6.2139336, "lon": 106.8663117 },
+    { "lat": -6.2137617, "lon": 106.8661488 },
+    { "lat": -6.2135576, "lon": 106.8659547 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "crossover",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 1127984206,
+  "bounds": {
+    "minlat": -6.2136705,
+    "minlon": 106.8652457,
+    "maxlat": -6.2132340,
+    "maxlon": 106.8657976
+  },
+  "nodes": [
+    10312804401,
+    10312804400
+  ],
+  "geometry": [
+    { "lat": -6.2136705, "lon": 106.8657976 },
+    { "lat": -6.2132340, "lon": 106.8652457 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "crossover",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 1127984207,
+  "bounds": {
+    "minlat": -6.2140379,
+    "minlon": 106.8658455,
+    "maxlat": -6.2137140,
+    "maxlon": 106.8662482
+  },
+  "nodes": [
+    10312804403,
+    10312804402
+  ],
+  "geometry": [
+    { "lat": -6.2140379, "lon": 106.8662482 },
+    { "lat": -6.2137140, "lon": 106.8658455 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "crossover",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 1127984208,
+  "bounds": {
+    "minlat": -6.2149260,
+    "minlon": 106.8685352,
+    "maxlat": -6.2148535,
+    "maxlon": 106.8694764
+  },
+  "nodes": [
+    10312804409,
+    11198869113,
+    11198869112,
+    10312804503
+  ],
+  "geometry": [
+    { "lat": -6.2148535, "lon": 106.8694764 },
+    { "lat": -6.2148686, "lon": 106.8691893 },
+    { "lat": -6.2148998, "lon": 106.8688490 },
+    { "lat": -6.2149260, "lon": 106.8685352 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "siding",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 1127984225,
+  "bounds": {
+    "minlat": -6.2148538,
+    "minlon": 106.8729074,
+    "maxlat": -6.2147717,
+    "maxlon": 106.8739107
+  },
+  "nodes": [
+    10312804482,
+    11198892878,
+    10312804462,
+    11198892877,
+    12387934748,
+    10312804463
+  ],
+  "geometry": [
+    { "lat": -6.2148538, "lon": 106.8729074 },
+    { "lat": -6.2148524, "lon": 106.8731849 },
+    { "lat": -6.2148203, "lon": 106.8735091 },
+    { "lat": -6.2148111, "lon": 106.8736341 },
+    { "lat": -6.2147809, "lon": 106.8738461 },
+    { "lat": -6.2147717, "lon": 106.8739107 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1127984226,
+  "bounds": {
+    "minlat": -6.2148135,
+    "minlon": 106.8698982,
+    "maxlat": -6.2146195,
+    "maxlon": 106.8727091
+  },
+  "nodes": [
+    10312804477,
+    10312804478,
+    10312804479,
+    10312804480,
+    12058959198,
+    10312804469,
+    10312804471
+  ],
+  "geometry": [
+    { "lat": -6.2146195, "lon": 106.8698982 },
+    { "lat": -6.2146233, "lon": 106.8713187 },
+    { "lat": -6.2146383, "lon": 106.8716542 },
+    { "lat": -6.2146961, "lon": 106.8720099 },
+    { "lat": -6.2146994, "lon": 106.8720291 },
+    { "lat": -6.2147567, "lon": 106.8723592 },
+    { "lat": -6.2148135, "lon": 106.8727091 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "railway:track_ref": "8",
+    "service": "siding",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 1127984227,
+  "bounds": {
+    "minlat": -6.2148700,
+    "minlon": 106.8735676,
+    "maxlat": -6.2148655,
+    "maxlon": 106.8741286
+  },
+  "nodes": [
+    10312804484,
+    10312804483
+  ],
+  "geometry": [
+    { "lat": -6.2148655, "lon": 106.8735676 },
+    { "lat": -6.2148700, "lon": 106.8741286 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "name": "Jalur Kereta Api Jakarta Kota–Cikampek",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q19726782",
+    "wikipedia": "id:Jalur kereta api Jakarta Kota–Cikampek"
+  }
+},
+{
+  "type": "way",
+  "id": 1127984228,
+  "bounds": {
+    "minlat": -6.2148288,
+    "minlon": 106.8742125,
+    "maxlat": -6.2148183,
+    "maxlon": 106.8747986
+  },
+  "nodes": [
+    3865048101,
+    10312804486
+  ],
+  "geometry": [
+    { "lat": -6.2148288, "lon": 106.8747986 },
+    { "lat": -6.2148183, "lon": 106.8742125 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "crossover",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 1127984234,
+  "bounds": {
+    "minlat": -6.2148381,
+    "minlon": 106.8749960,
+    "maxlat": -6.2148201,
+    "maxlon": 106.8755564
+  },
+  "nodes": [
+    3863090592,
+    10312804501
+  ],
+  "geometry": [
+    { "lat": -6.2148381, "lon": 106.8755564 },
+    { "lat": -6.2148201, "lon": 106.8749960 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "crossover",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 1127984235,
+  "bounds": {
+    "minlat": -6.2148794,
+    "minlon": 106.8749120,
+    "maxlat": -6.2148665,
+    "maxlon": 106.8754579
+  },
+  "nodes": [
+    3863090440,
+    10312804502
+  ],
+  "geometry": [
+    { "lat": -6.2148794, "lon": 106.8754579 },
+    { "lat": -6.2148665, "lon": 106.8749120 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "crossover",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 1127984237,
+  "bounds": {
+    "minlat": -6.2150646,
+    "minlon": 106.8684217,
+    "maxlat": -6.2150333,
+    "maxlon": 106.8689204
+  },
+  "nodes": [
+    3863090443,
+    10312804404,
+    3863090584
+  ],
+  "geometry": [
+    { "lat": -6.2150646, "lon": 106.8684217 },
+    { "lat": -6.2150559, "lon": 106.8686700 },
+    { "lat": -6.2150333, "lon": 106.8689204 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "crossover",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 1127984242,
+  "bounds": {
+    "minlat": -6.2150720,
+    "minlon": 106.8719664,
+    "maxlat": -6.2148794,
+    "maxlon": 106.8754579
+  },
+  "nodes": [
+    329967062,
+    12058959206,
+    3863090439,
+    3863090440
+  ],
+  "geometry": [
+    { "lat": -6.2150720, "lon": 106.8719664 },
+    { "lat": -6.2149586, "lon": 106.8738720 },
+    { "lat": -6.2149289, "lon": 106.8744699 },
+    { "lat": -6.2148794, "lon": 106.8754579 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "115",
+    "name": "Jalur Kereta Api Manggarai–Jatinegara",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q17052030",
+    "wikipedia": "en:Jatinegara-Manggarai railway"
+  }
+},
+{
+  "type": "way",
+  "id": 1127984243,
+  "bounds": {
+    "minlat": -6.2150780,
+    "minlon": 106.8684242,
+    "maxlat": -6.2150296,
+    "maxlon": 106.8689256
+  },
+  "nodes": [
+    10312804514,
+    10312804404,
+    7116336207
+  ],
+  "geometry": [
+    { "lat": -6.2150296, "lon": 106.8684242 },
+    { "lat": -6.2150559, "lon": 106.8686700 },
+    { "lat": -6.2150780, "lon": 106.8689256 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "crossover",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 1127984248,
+  "bounds": {
+    "minlat": -6.2150230,
+    "minlon": 106.8692829,
+    "maxlat": -6.2150068,
+    "maxlon": 106.8719323
+  },
+  "nodes": [
+    7620049371,
+    12058866514,
+    10312804210,
+    11751801318
+  ],
+  "geometry": [
+    { "lat": -6.2150118, "lon": 106.8692829 },
+    { "lat": -6.2150151, "lon": 106.8695933 },
+    { "lat": -6.2150230, "lon": 106.8703372 },
+    { "lat": -6.2150068, "lon": 106.8719323 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "60",
+    "name": "Jalur Kereta Api Manggarai–Jatinegara",
+    "railway": "rail",
+    "railway:track_ref": "2",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q17052030",
+    "wikipedia": "en:Jatinegara-Manggarai railway"
+  }
+},
+{
+  "type": "way",
+  "id": 1127992513,
+  "bounds": {
+    "minlat": -6.2148535,
+    "minlon": 106.8686799,
+    "maxlat": -6.2148116,
+    "maxlon": 106.8694764
+  },
+  "nodes": [
+    10312804407,
+    10312804409
+  ],
+  "geometry": [
+    { "lat": -6.2148116, "lon": 106.8686799 },
+    { "lat": -6.2148535, "lon": 106.8694764 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "siding",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 1127992514,
+  "bounds": {
+    "minlat": -6.2149260,
+    "minlon": 106.8662482,
+    "maxlat": -6.2140379,
+    "maxlon": 106.8685352
+  },
+  "nodes": [
+    10312804403,
+    11751801319,
+    4912053892,
+    4912053891,
+    4912053890,
+    4912053889,
+    4912053888,
+    4912053885,
+    10312901846,
+    10312804503
+  ],
+  "geometry": [
+    { "lat": -6.2140379, "lon": 106.8662482 },
+    { "lat": -6.2143752, "lon": 106.8666309 },
+    { "lat": -6.2145328, "lon": 106.8668655 },
+    { "lat": -6.2147089, "lon": 106.8672099 },
+    { "lat": -6.2147784, "lon": 106.8673932 },
+    { "lat": -6.2148291, "lon": 106.8675632 },
+    { "lat": -6.2148852, "lon": 106.8678048 },
+    { "lat": -6.2149219, "lon": 106.8681134 },
+    { "lat": -6.2149259, "lon": 106.8684863 },
+    { "lat": -6.2149260, "lon": 106.8685352 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "50",
+    "name": "Jalur Kereta Api Manggarai–Jatinegara",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q17052030",
+    "wikipedia": "en:Jatinegara-Manggarai railway"
+  }
+},
+{
+  "type": "way",
+  "id": 1127992522,
+  "bounds": {
+    "minlat": -6.2132340,
+    "minlon": 106.8651031,
+    "maxlat": -6.2131097,
+    "maxlon": 106.8652457
+  },
+  "nodes": [
+    10312881281,
+    10312804400
+  ],
+  "geometry": [
+    { "lat": -6.2131097, "lon": 106.8651031 },
+    { "lat": -6.2132340, "lon": 106.8652457 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "60",
+    "name": "Jalur Kereta Api Manggarai–Jatinegara",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q17052030",
+    "wikipedia": "en:Jatinegara-Manggarai railway"
+  }
+},
+{
+  "type": "way",
+  "id": 1127992523,
+  "bounds": {
+    "minlat": -6.2127941,
+    "minlon": 106.8640089,
+    "maxlat": -6.2121919,
+    "maxlon": 106.8647073
+  },
+  "nodes": [
+    7563289944,
+    3863090454,
+    10312881280
+  ],
+  "geometry": [
+    { "lat": -6.2121919, "lon": 106.8640089 },
+    { "lat": -6.2123005, "lon": 106.8641516 },
+    { "lat": -6.2127941, "lon": 106.8647073 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "60",
+    "name": "Jalur Kereta Api Manggarai–Jatinegara",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q17052030",
+    "wikipedia": "en:Jatinegara-Manggarai railway"
+  }
+},
+{
+  "type": "way",
+  "id": 1127992526,
+  "bounds": {
+    "minlat": -6.2131097,
+    "minlon": 106.8647073,
+    "maxlat": -6.2127941,
+    "maxlon": 106.8651031
+  },
+  "nodes": [
+    10312881281,
+    10312881280
+  ],
+  "geometry": [
+    { "lat": -6.2131097, "lon": 106.8651031 },
+    { "lat": -6.2127941, "lon": 106.8647073 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "crossover",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 1127992527,
+  "bounds": {
+    "minlat": -6.2131097,
+    "minlon": 106.8640183,
+    "maxlat": -6.2121437,
+    "maxlon": 106.8651031
+  },
+  "nodes": [
+    3863090436,
+    10312804518,
+    10312881281
+  ],
+  "geometry": [
+    { "lat": -6.2121437, "lon": 106.8640183 },
+    { "lat": -6.2123160, "lon": 106.8642362 },
+    { "lat": -6.2131097, "lon": 106.8651031 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "60",
+    "name": "Jalur Kereta Api Manggarai–Jatinegara",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q17052030",
+    "wikipedia": "en:Jatinegara-Manggarai railway"
+  }
+},
+{
+  "type": "way",
+  "id": 1127992528,
+  "bounds": {
+    "minlat": -6.2137140,
+    "minlon": 106.8657976,
+    "maxlat": -6.2136705,
+    "maxlon": 106.8658455
+  },
+  "nodes": [
+    10312804401,
+    10312804402
+  ],
+  "geometry": [
+    { "lat": -6.2136705, "lon": 106.8657976 },
+    { "lat": -6.2137140, "lon": 106.8658455 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "name": "Jalur Kereta Api Manggarai–Jatinegara",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q17052030",
+    "wikipedia": "en:Jatinegara-Manggarai railway"
+  }
+},
+{
+  "type": "way",
+  "id": 1127992529,
+  "bounds": {
+    "minlat": -6.2136705,
+    "minlon": 106.8652873,
+    "maxlat": -6.2132002,
+    "maxlon": 106.8657976
+  },
+  "nodes": [
+    3863090437,
+    10312804401
+  ],
+  "geometry": [
+    { "lat": -6.2132002, "lon": 106.8652873 },
+    { "lat": -6.2136705, "lon": 106.8657976 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "name": "Jalur Kereta Api Manggarai–Jatinegara",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q17052030",
+    "wikipedia": "en:Jatinegara-Manggarai railway"
+  }
+},
+{
+  "type": "way",
+  "id": 1127992530,
+  "bounds": {
+    "minlat": -6.2140379,
+    "minlon": 106.8653111,
+    "maxlat": -6.2131706,
+    "maxlon": 106.8662482
+  },
+  "nodes": [
+    4912053893,
+    10312804403
+  ],
+  "geometry": [
+    { "lat": -6.2131706, "lon": 106.8653111 },
+    { "lat": -6.2140379, "lon": 106.8662482 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "50",
+    "name": "Jalur Kereta Api Manggarai–Jatinegara",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q17052030",
+    "wikipedia": "en:Jatinegara-Manggarai railway"
+  }
+},
+{
+  "type": "way",
+  "id": 1127995462,
+  "bounds": {
+    "minlat": -6.2147596,
+    "minlon": 106.8761180,
+    "maxlat": -6.2146751,
+    "maxlon": 106.8766302
+  },
+  "nodes": [
+    10312901848,
+    10312901841
+  ],
+  "geometry": [
+    { "lat": -6.2146751, "lon": 106.8766302 },
+    { "lat": -6.2147596, "lon": 106.8761180 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "crossover"
+  }
+},
+{
+  "type": "way",
+  "id": 1127995463,
+  "bounds": {
+    "minlat": -6.2149259,
+    "minlon": 106.8663459,
+    "maxlat": -6.2139634,
+    "maxlon": 106.8684863
+  },
+  "nodes": [
+    10312901846,
+    10312901844,
+    10312901845,
+    13958739934,
+    10312901840,
+    10312901843,
+    10312901847,
+    10312901842,
+    10312901839,
+    10312901838
+  ],
+  "geometry": [
+    { "lat": -6.2149259, "lon": 106.8684863 },
+    { "lat": -6.2149112, "lon": 106.8682270 },
+    { "lat": -6.2148662, "lon": 106.8679439 },
+    { "lat": -6.2148173, "lon": 106.8677567 },
+    { "lat": -6.2147696, "lon": 106.8676057 },
+    { "lat": -6.2146370, "lon": 106.8672539 },
+    { "lat": -6.2144815, "lon": 106.8669464 },
+    { "lat": -6.2143540, "lon": 106.8667596 },
+    { "lat": -6.2142134, "lon": 106.8665907 },
+    { "lat": -6.2139634, "lon": 106.8663459 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "crossover",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 1128122158,
+  "bounds": {
+    "minlat": -6.2148966,
+    "minlon": 106.8736454,
+    "maxlat": -6.2148700,
+    "maxlon": 106.8741286
+  },
+  "nodes": [
+    3865048099,
+    10312804483
+  ],
+  "geometry": [
+    { "lat": -6.2148966, "lon": 106.8736454 },
+    { "lat": -6.2148700, "lon": 106.8741286 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "115",
+    "name": "Jalur Kereta Api Manggarai–Jatinegara",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q17052030",
+    "wikipedia": "en:Jatinegara-Manggarai railway"
+  }
+},
+{
+  "type": "way",
+  "id": 1128122159,
+  "bounds": {
+    "minlat": -6.2148135,
+    "minlon": 106.8695263,
+    "maxlat": -6.2147305,
+    "maxlon": 106.8727091
+  },
+  "nodes": [
+    10312804471,
+    10312804470,
+    12058959199,
+    7116275924,
+    7116275925,
+    7116275926,
+    10312804315,
+    7116275927,
+    7116275930
+  ],
+  "geometry": [
+    { "lat": -6.2148135, "lon": 106.8727091 },
+    { "lat": -6.2147995, "lon": 106.8725130 },
+    { "lat": -6.2147614, "lon": 106.8720271 },
+    { "lat": -6.2147592, "lon": 106.8719994 },
+    { "lat": -6.2147356, "lon": 106.8716791 },
+    { "lat": -6.2147305, "lon": 106.8713157 },
+    { "lat": -6.2147306, "lon": 106.8703480 },
+    { "lat": -6.2147394, "lon": 106.8698294 },
+    { "lat": -6.2147454, "lon": 106.8695263 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "name": "Jalur Kereta Api Jakarta Kota–Cikampek",
+    "railway": "rail",
+    "railway:track_ref": "7",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q19726782",
+    "wikipedia": "id:Jalur kereta api Jakarta Kota–Cikampek"
+  }
+},
+{
+  "type": "way",
+  "id": 1128122160,
+  "bounds": {
+    "minlat": -6.2148497,
+    "minlon": 106.8696431,
+    "maxlat": -6.2147552,
+    "maxlon": 106.8727021
+  },
+  "nodes": [
+    10313752597,
+    7116275919,
+    10312804314,
+    7116275920,
+    7116275921,
+    7620049375,
+    12058959200,
+    12137340597,
+    7116275917
+  ],
+  "geometry": [
+    { "lat": -6.2147703, "lon": 106.8696431 },
+    { "lat": -6.2147642, "lon": 106.8698288 },
+    { "lat": -6.2147582, "lon": 106.8703442 },
+    { "lat": -6.2147552, "lon": 106.8713172 },
+    { "lat": -6.2147670, "lon": 106.8716761 },
+    { "lat": -6.2147881, "lon": 106.8719898 },
+    { "lat": -6.2147915, "lon": 106.8720290 },
+    { "lat": -6.2147993, "lon": 106.8721198 },
+    { "lat": -6.2148497, "lon": 106.8727021 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "name": "Jalur Kereta Api Jakarta Kota–Cikampek",
+    "railway": "rail",
+    "railway:track_ref": "6",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q19726782",
+    "wikipedia": "id:Jalur kereta api Jakarta Kota–Cikampek"
+  }
+},
+{
+  "type": "way",
+  "id": 1128133968,
+  "bounds": {
+    "minlat": -6.2135576,
+    "minlon": 106.8634857,
+    "maxlat": -6.2114241,
+    "maxlon": 106.8659547
+  },
+  "nodes": [
+    10312804398,
+    12058866520,
+    10312804420,
+    10312804419,
+    12058866518,
+    4912053894
+  ],
+  "geometry": [
+    { "lat": -6.2135576, "lon": 106.8659547 },
+    { "lat": -6.2126119, "lon": 106.8649110 },
+    { "lat": -6.2124224, "lon": 106.8647018 },
+    { "lat": -6.2117831, "lon": 106.8639124 },
+    { "lat": -6.2114655, "lon": 106.8635314 },
+    { "lat": -6.2114241, "lon": 106.8634857 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "70",
+    "name": "Jalur Kereta Api Jakarta Kota–Cikampek",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q19726782",
+    "wikipedia": "id:Jalur kereta api Jakarta Kota–Cikampek"
+  }
+},
+{
+  "type": "way",
+  "id": 1128133969,
+  "bounds": {
+    "minlat": -6.2148195,
+    "minlon": 106.8663117,
+    "maxlat": -6.2139336,
+    "maxlon": 106.8686799
+  },
+  "nodes": [
+    10312804399,
+    10312901838,
+    11198869111,
+    10312804416,
+    13958739936,
+    10312804414,
+    10312804413,
+    12617706519,
+    10312804412,
+    10312804411,
+    10312804407
+  ],
+  "geometry": [
+    { "lat": -6.2139336, "lon": 106.8663117 },
+    { "lat": -6.2139634, "lon": 106.8663459 },
+    { "lat": -6.2141892, "lon": 106.8665987 },
+    { "lat": -6.2144047, "lon": 106.8668868 },
+    { "lat": -6.2145241, "lon": 106.8670967 },
+    { "lat": -6.2146580, "lon": 106.8674065 },
+    { "lat": -6.2147239, "lon": 106.8676141 },
+    { "lat": -6.2147728, "lon": 106.8678059 },
+    { "lat": -6.2148053, "lon": 106.8680223 },
+    { "lat": -6.2148195, "lon": 106.8682085 },
+    { "lat": -6.2148116, "lon": 106.8686799 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "70",
+    "name": "Jalur Kereta Api Jakarta Kota–Cikampek",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q19726782",
+    "wikipedia": "id:Jalur kereta api Jakarta Kota–Cikampek"
+  }
+},
+{
+  "type": "way",
+  "id": 1179951222,
+  "bounds": {
+    "minlat": -6.2132018,
+    "minlon": 106.8647073,
+    "maxlat": -6.2127941,
+    "maxlon": 106.8651496
+  },
+  "nodes": [
+    10312881280,
+    10959159478
+  ],
+  "geometry": [
+    { "lat": -6.2127941, "lon": 106.8647073 },
+    { "lat": -6.2132018, "lon": 106.8651496 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "60",
+    "name": "Jalur Kereta Api Manggarai–Jatinegara",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q17052030",
+    "wikipedia": "en:Jatinegara-Manggarai railway"
+  }
+},
+{
+  "type": "way",
+  "id": 1208041425,
+  "bounds": {
+    "minlat": -6.2142275,
+    "minlon": 106.8788341,
+    "maxlat": -6.2138568,
+    "maxlon": 106.8823229
+  },
+  "nodes": [
+    7116275941,
+    11198892925,
+    11198892917,
+    11198832522,
+    7116275954,
+    7116275955,
+    11198892908,
+    7116275942,
+    7116275943,
+    7116275980,
+    7116275944,
+    7116275979,
+    11198892904,
+    11198892903,
+    11193693849
+  ],
+  "geometry": [
+    { "lat": -6.2142275, "lon": 106.8788341 },
+    { "lat": -6.2142235, "lon": 106.8789753 },
+    { "lat": -6.2142180, "lon": 106.8791666 },
+    { "lat": -6.2142146, "lon": 106.8794337 },
+    { "lat": -6.2142028, "lon": 106.8797003 },
+    { "lat": -6.2142013, "lon": 106.8797266 },
+    { "lat": -6.2141726, "lon": 106.8802310 },
+    { "lat": -6.2141510, "lon": 106.8804066 },
+    { "lat": -6.2140782, "lon": 106.8807695 },
+    { "lat": -6.2140149, "lon": 106.8811334 },
+    { "lat": -6.2139961, "lon": 106.8812926 },
+    { "lat": -6.2139703, "lon": 106.8817545 },
+    { "lat": -6.2139473, "lon": 106.8819483 },
+    { "lat": -6.2139033, "lon": 106.8821528 },
+    { "lat": -6.2138568, "lon": 106.8823229 }
+  ],
+  "tags": {
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1208041432,
+  "bounds": {
+    "minlat": -6.2142013,
+    "minlon": 106.8797266,
+    "maxlat": -6.2138710,
+    "maxlon": 106.8810054
+  },
+  "nodes": [
+    7116275955,
+    11198892926,
+    11198892909,
+    7116275964,
+    7116275961,
+    7116275956,
+    7116275957,
+    11193693854
+  ],
+  "geometry": [
+    { "lat": -6.2142013, "lon": 106.8797266 },
+    { "lat": -6.2141639, "lon": 106.8799675 },
+    { "lat": -6.2141406, "lon": 106.8800687 },
+    { "lat": -6.2140777, "lon": 106.8802789 },
+    { "lat": -6.2139995, "lon": 106.8805289 },
+    { "lat": -6.2139373, "lon": 106.8807173 },
+    { "lat": -6.2139002, "lon": 106.8808719 },
+    { "lat": -6.2138710, "lon": 106.8810054 }
+  ],
+  "tags": {
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1208641784,
+  "bounds": {
+    "minlat": -6.2173363,
+    "minlon": 106.8621889,
+    "maxlat": -6.2172886,
+    "maxlon": 106.8622628
+  },
+  "nodes": [
+    4921620526,
+    4921620528
+  ],
+  "geometry": [
+    { "lat": -6.2173363, "lon": 106.8621889 },
+    { "lat": -6.2172886, "lon": 106.8622628 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1208641787,
+  "bounds": {
+    "minlat": -6.2184133,
+    "minlon": 106.8602812,
+    "maxlat": -6.2182009,
+    "maxlon": 106.8611055
+  },
+  "nodes": [
+    4921620546,
+    11198737346,
+    11198737345,
+    11198623231,
+    11198623230
+  ],
+  "geometry": [
+    { "lat": -6.2184133, "lon": 106.8602812 },
+    { "lat": -6.2183860, "lon": 106.8606066 },
+    { "lat": -6.2183551, "lon": 106.8607480 },
+    { "lat": -6.2183049, "lon": 106.8608892 },
+    { "lat": -6.2182009, "lon": 106.8611055 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 1208641788,
+  "bounds": {
+    "minlat": -6.2184257,
+    "minlon": 106.8600923,
+    "maxlat": -6.2177257,
+    "maxlon": 106.8616629
+  },
+  "nodes": [
+    4921620545,
+    11198737349,
+    11198737348,
+    11198737347
+  ],
+  "geometry": [
+    { "lat": -6.2184257, "lon": 106.8600923 },
+    { "lat": -6.2183884, "lon": 106.8603085 },
+    { "lat": -6.2183604, "lon": 106.8604094 },
+    { "lat": -6.2177257, "lon": 106.8616629 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 1208641789,
+  "bounds": {
+    "minlat": -6.2182151,
+    "minlon": 106.8601859,
+    "maxlat": -6.2167549,
+    "maxlon": 106.8629515
+  },
+  "nodes": [
+    11198737357,
+    11198737352,
+    11198737351,
+    11198737350
+  ],
+  "geometry": [
+    { "lat": -6.2182151, "lon": 106.8601859 },
+    { "lat": -6.2179975, "lon": 106.8605127 },
+    { "lat": -6.2179380, "lon": 106.8606242 },
+    { "lat": -6.2167549, "lon": 106.8629515 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 1208658564,
+  "bounds": {
+    "minlat": -6.2143099,
+    "minlon": 106.8795028,
+    "maxlat": -6.2141836,
+    "maxlon": 106.8816969
+  },
+  "nodes": [
+    7116328154,
+    11198832521
+  ],
+  "geometry": [
+    { "lat": -6.2141836, "lon": 106.8816969 },
+    { "lat": -6.2143099, "lon": 106.8795028 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1208658566,
+  "bounds": {
+    "minlat": -6.2147970,
+    "minlon": 106.8761801,
+    "maxlat": -6.2147911,
+    "maxlon": 106.8767146
+  },
+  "nodes": [
+    8431213305,
+    10312804485
+  ],
+  "geometry": [
+    { "lat": -6.2147970, "lon": 106.8761801 },
+    { "lat": -6.2147911, "lon": 106.8767146 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "crossover"
+  }
+},
+{
+  "type": "way",
+  "id": 1208658572,
+  "bounds": {
+    "minlat": -6.2144165,
+    "minlon": 106.8797035,
+    "maxlat": -6.2143367,
+    "maxlon": 106.8803067
+  },
+  "nodes": [
+    11198892872,
+    11198892850,
+    11198892851
+  ],
+  "geometry": [
+    { "lat": -6.2144165, "lon": 106.8797035 },
+    { "lat": -6.2143900, "lon": 106.8799186 },
+    { "lat": -6.2143367, "lon": 106.8803067 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1208658573,
+  "bounds": {
+    "minlat": -6.2144199,
+    "minlon": 106.8790496,
+    "maxlat": -6.2144033,
+    "maxlon": 106.8796656
+  },
+  "nodes": [
+    11198892854,
+    11198892852,
+    11198892853,
+    11198892873
+  ],
+  "geometry": [
+    { "lat": -6.2144033, "lon": 106.8790496 },
+    { "lat": -6.2144078, "lon": 106.8792761 },
+    { "lat": -6.2144199, "lon": 106.8794815 },
+    { "lat": -6.2144183, "lon": 106.8796656 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1208658578,
+  "bounds": {
+    "minlat": -6.2145517,
+    "minlon": 106.8785372,
+    "maxlat": -6.2138755,
+    "maxlon": 106.8869117
+  },
+  "nodes": [
+    11198892875,
+    11198892874,
+    11198892873,
+    11198892872,
+    12058959213,
+    11198892855,
+    11198892856,
+    11198892871,
+    11198892842,
+    7116275970,
+    11198892841
+  ],
+  "geometry": [
+    { "lat": -6.2145517, "lon": 106.8785372 },
+    { "lat": -6.2144434, "lon": 106.8792844 },
+    { "lat": -6.2144183, "lon": 106.8796656 },
+    { "lat": -6.2144165, "lon": 106.8797035 },
+    { "lat": -6.2143781, "lon": 106.8803693 },
+    { "lat": -6.2142595, "lon": 106.8824280 },
+    { "lat": -6.2142342, "lon": 106.8829133 },
+    { "lat": -6.2140527, "lon": 106.8858792 },
+    { "lat": -6.2139912, "lon": 106.8862371 },
+    { "lat": -6.2139230, "lon": 106.8866221 },
+    { "lat": -6.2138755, "lon": 106.8869117 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1208658579,
+  "bounds": {
+    "minlat": -6.2146215,
+    "minlon": 106.8779758,
+    "maxlat": -6.2145543,
+    "maxlon": 106.8784894
+  },
+  "nodes": [
+    4871908125,
+    11198892876
+  ],
+  "geometry": [
+    { "lat": -6.2146215, "lon": 106.8779758 },
+    { "lat": -6.2145543, "lon": 106.8784894 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "crossover"
+  }
+},
+{
+  "type": "way",
+  "id": 1208658585,
+  "bounds": {
+    "minlat": -6.2145829,
+    "minlon": 106.8779741,
+    "maxlat": -6.2144685,
+    "maxlon": 106.8785673
+  },
+  "nodes": [
+    11198892907,
+    11198892905,
+    11198892906
+  ],
+  "geometry": [
+    { "lat": -6.2144685, "lon": 106.8785673 },
+    { "lat": -6.2145405, "lon": 106.8782777 },
+    { "lat": -6.2145829, "lon": 106.8779741 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1217676559,
+  "bounds": {
+    "minlat": -6.2104642,
+    "minlon": 106.8622348,
+    "maxlat": -6.2085480,
+    "maxlon": 106.8628588
+  },
+  "nodes": [
+    12137362112,
+    12137362111,
+    11282679908,
+    12137362113,
+    11282679907,
+    11282679906,
+    11282679905,
+    12137362116,
+    12137362117,
+    12137362118,
+    12137362112
+  ],
+  "geometry": [
+    { "lat": -6.2092967, "lon": 106.8624614 },
+    { "lat": -6.2085480, "lon": 106.8622591 },
+    { "lat": -6.2085541, "lon": 106.8622348 },
+    { "lat": -6.2093043, "lon": 106.8624332 },
+    { "lat": -6.2097889, "lon": 106.8625780 },
+    { "lat": -6.2101892, "lon": 106.8627205 },
+    { "lat": -6.2104642, "lon": 106.8628315 },
+    { "lat": -6.2104526, "lon": 106.8628588 },
+    { "lat": -6.2101798, "lon": 106.8627449 },
+    { "lat": -6.2097787, "lon": 106.8626067 },
+    { "lat": -6.2092967, "lon": 106.8624614 }
+  ],
+  "tags": {
+    "public_transport": "platform",
+    "railway": "platform",
+    "ref": "2"
+  }
+},
+{
+  "type": "way",
+  "id": 1217676560,
+  "bounds": {
+    "minlat": -6.2105173,
+    "minlon": 106.8621260,
+    "maxlat": -6.2085679,
+    "maxlon": 106.8627410
+  },
+  "nodes": [
+    11282679909,
+    12137362110,
+    12137362109,
+    12137362108,
+    12137362106,
+    12137362105,
+    12137362104,
+    11282679912,
+    12137362107,
+    11282679911,
+    11282679910,
+    11282679909
+  ],
+  "geometry": [
+    { "lat": -6.2105055, "lon": 106.8627410 },
+    { "lat": -6.2105173, "lon": 106.8627165 },
+    { "lat": -6.2102313, "lon": 106.8625975 },
+    { "lat": -6.2099262, "lon": 106.8624918 },
+    { "lat": -6.2097120, "lon": 106.8624268 },
+    { "lat": -6.2088562, "lon": 106.8622022 },
+    { "lat": -6.2085753, "lon": 106.8621260 },
+    { "lat": -6.2085679, "lon": 106.8621568 },
+    { "lat": -6.2097080, "lon": 106.8624590 },
+    { "lat": -6.2099219, "lon": 106.8625258 },
+    { "lat": -6.2102192, "lon": 106.8626260 },
+    { "lat": -6.2105055, "lon": 106.8627410 }
+  ],
+  "tags": {
+    "public_transport": "platform",
+    "railway": "platform",
+    "ref": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 1265006719,
+  "bounds": {
+    "minlat": -6.2151027,
+    "minlon": 106.8689256,
+    "maxlat": -6.2150720,
+    "maxlon": 106.8719664
+  },
+  "nodes": [
+    7116336207,
+    11751801320,
+    3863090442,
+    10312804326,
+    329967062
+  ],
+  "geometry": [
+    { "lat": -6.2150780, "lon": 106.8689256 },
+    { "lat": -6.2150877, "lon": 106.8692800 },
+    { "lat": -6.2150903, "lon": 106.8693767 },
+    { "lat": -6.2151027, "lon": 106.8712216 },
+    { "lat": -6.2150720, "lon": 106.8719664 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "60",
+    "name": "Jalur Kereta Api Manggarai–Jatinegara",
+    "railway": "rail",
+    "railway:track_ref": "1",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q17052030",
+    "wikipedia": "en:Jatinegara-Manggarai railway"
+  }
+},
+{
+  "type": "way",
+  "id": 1265006720,
+  "bounds": {
+    "minlat": -6.2150068,
+    "minlon": 106.8719323,
+    "maxlat": -6.2149683,
+    "maxlon": 106.8730851
+  },
+  "nodes": [
+    11751801318,
+    12058959205,
+    10312804516,
+    4748290004
+  ],
+  "geometry": [
+    { "lat": -6.2150068, "lon": 106.8719323 },
+    { "lat": -6.2150067, "lon": 106.8719429 },
+    { "lat": -6.2149991, "lon": 106.8725417 },
+    { "lat": -6.2149683, "lon": 106.8730851 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "115",
+    "name": "Jalur Kereta Api Manggarai–Jatinegara",
+    "railway": "rail",
+    "railway:track_ref": "2",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q17052030",
+    "wikipedia": "en:Jatinegara-Manggarai railway"
+  }
+},
+{
+  "type": "way",
+  "id": 1265006721,
+  "bounds": {
+    "minlat": -6.2149737,
+    "minlon": 106.8719321,
+    "maxlat": -6.2148966,
+    "maxlon": 106.8736454
+  },
+  "nodes": [
+    4912053886,
+    12058959204,
+    7116336205,
+    3865048099
+  ],
+  "geometry": [
+    { "lat": -6.2149737, "lon": 106.8719321 },
+    { "lat": -6.2149733, "lon": 106.8719429 },
+    { "lat": -6.2149528, "lon": 106.8727478 },
+    { "lat": -6.2148966, "lon": 106.8736454 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "115",
+    "name": "Jalur Kereta Api Manggarai–Jatinegara",
+    "railway": "rail",
+    "railway:track_ref": "3",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q17052030",
+    "wikipedia": "en:Jatinegara-Manggarai railway"
+  }
+},
+{
+  "type": "way",
+  "id": 1265006722,
+  "bounds": {
+    "minlat": -6.2148878,
+    "minlon": 106.8719985,
+    "maxlat": -6.2148728,
+    "maxlon": 106.8734039
+  },
+  "nodes": [
+    7116275913,
+    12058959202,
+    7116275918,
+    7116275923,
+    10312804481
+  ],
+  "geometry": [
+    { "lat": -6.2148845, "lon": 106.8719985 },
+    { "lat": -6.2148846, "lon": 106.8720310 },
+    { "lat": -6.2148878, "lon": 106.8727312 },
+    { "lat": -6.2148841, "lon": 106.8730985 },
+    { "lat": -6.2148728, "lon": 106.8734039 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "115",
+    "name": "Jalur Kereta Api Manggarai–Jatinegara",
+    "railway": "rail",
+    "railway:track_ref": "4",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q17052030",
+    "wikipedia": "en:Jatinegara-Manggarai railway"
+  }
+},
+{
+  "type": "way",
+  "id": 1265006728,
+  "bounds": {
+    "minlat": -6.2150333,
+    "minlon": 106.8689204,
+    "maxlat": -6.2150118,
+    "maxlon": 106.8692829
+  },
+  "nodes": [
+    3863090584,
+    12058866513,
+    7620049371
+  ],
+  "geometry": [
+    { "lat": -6.2150333, "lon": 106.8689204 },
+    { "lat": -6.2150266, "lon": 106.8690795 },
+    { "lat": -6.2150118, "lon": 106.8692829 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "30",
+    "name": "Jalur Kereta Api Manggarai–Jatinegara",
+    "railway": "rail",
+    "railway:track_ref": "2",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q17052030",
+    "wikipedia": "en:Jatinegara-Manggarai railway"
+  }
+},
+{
+  "type": "way",
+  "id": 1265006732,
+  "bounds": {
+    "minlat": -6.2148116,
+    "minlon": 106.8686799,
+    "maxlat": -6.2147703,
+    "maxlon": 106.8696431
+  },
+  "nodes": [
+    10312804407,
+    12058866509,
+    10313752597
+  ],
+  "geometry": [
+    { "lat": -6.2148116, "lon": 106.8686799 },
+    { "lat": -6.2147775, "lon": 106.8694756 },
+    { "lat": -6.2147703, "lon": 106.8696431 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "70",
+    "name": "Jalur Kereta Api Jakarta Kota–Cikampek",
+    "railway": "rail",
+    "railway:track_ref": "6",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q19726782",
+    "wikipedia": "id:Jalur kereta api Jakarta Kota–Cikampek"
+  }
+},
+{
+  "type": "way",
+  "id": 1265006733,
+  "bounds": {
+    "minlat": -6.2147770,
+    "minlon": 106.8686782,
+    "maxlat": -6.2147454,
+    "maxlon": 106.8695263
+  },
+  "nodes": [
+    7116275930,
+    12058866508,
+    10312804451
+  ],
+  "geometry": [
+    { "lat": -6.2147454, "lon": 106.8695263 },
+    { "lat": -6.2147459, "lon": 106.8694772 },
+    { "lat": -6.2147770, "lon": 106.8686782 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "70",
+    "name": "Jalur Kereta Api Jakarta Kota–Cikampek",
+    "railway": "rail",
+    "railway:track_ref": "7",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q19726782",
+    "wikipedia": "id:Jalur kereta api Jakarta Kota–Cikampek"
+  }
+},
+{
+  "type": "way",
+  "id": 1301950714,
+  "bounds": {
+    "minlat": -6.2139075,
+    "minlon": 106.8659547,
+    "maxlat": -6.2135576,
+    "maxlon": 106.8663376
+  },
+  "nodes": [
+    10312804396,
+    10312804398
+  ],
+  "geometry": [
+    { "lat": -6.2139075, "lon": 106.8663376 },
+    { "lat": -6.2135576, "lon": 106.8659547 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "70",
+    "name": "Jalur Kereta Api Jakarta Kota–Cikampek",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q19726782",
+    "wikipedia": "id:Jalur kereta api Jakarta Kota–Cikampek"
+  }
+},
+{
+  "type": "way",
+  "id": 1301966708,
+  "bounds": {
+    "minlat": -6.2148794,
+    "minlon": 106.8754579,
+    "maxlat": -6.2143471,
+    "maxlon": 106.8843397
+  },
+  "nodes": [
+    3863090440,
+    10312804485,
+    12058959208,
+    12058959207
+  ],
+  "geometry": [
+    { "lat": -6.2148794, "lon": 106.8754579 },
+    { "lat": -6.2147911, "lon": 106.8767146 },
+    { "lat": -6.2145830, "lon": 106.8802116 },
+    { "lat": -6.2143471, "lon": 106.8843397 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "115",
+    "name": "Jalur Kereta Api Jakarta Kota–Cikampek",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q19726782",
+    "wikipedia": "id:Jalur kereta api Jakarta Kota–Cikampek"
+  }
+},
+{
+  "type": "way",
+  "id": 1311213496,
+  "bounds": {
+    "minlat": -6.2129398,
+    "minlon": 106.8589064,
+    "maxlat": -6.2120479,
+    "maxlon": 106.8609343
+  },
+  "nodes": [
+    12137340598,
+    12137340599,
+    12137362103,
+    12137362102,
+    12137340600,
+    12137362101,
+    12137340598
+  ],
+  "geometry": [
+    { "lat": -6.2120479, "lon": 106.8609156 },
+    { "lat": -6.2120892, "lon": 106.8609343 },
+    { "lat": -6.2122450, "lon": 106.8605968 },
+    { "lat": -6.2127120, "lon": 106.8595193 },
+    { "lat": -6.2129398, "lon": 106.8589222 },
+    { "lat": -6.2129009, "lon": 106.8589064 },
+    { "lat": -6.2120479, "lon": 106.8609156 }
+  ],
+  "tags": {
+    "layer": "2",
+    "public_transport": "platform",
+    "railway": "platform",
+    "ref": "1;2",
+    "train": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1311213497,
+  "bounds": {
+    "minlat": -6.2121296,
+    "minlon": 106.8608760,
+    "maxlat": -6.2116814,
+    "maxlon": 106.8632987
+  },
+  "nodes": [
+    9939917857,
+    12319796283,
+    7071866754,
+    7071866753,
+    7071866752,
+    7071866751,
+    7563289934,
+    7071866750,
+    7071866749,
+    7563289933,
+    7071866766
+  ],
+  "geometry": [
+    { "lat": -6.2121296, "lon": 106.8608760 },
+    { "lat": -6.2121150, "lon": 106.8609062 },
+    { "lat": -6.2120453, "lon": 106.8610496 },
+    { "lat": -6.2119771, "lon": 106.8611914 },
+    { "lat": -6.2117741, "lon": 106.8617077 },
+    { "lat": -6.2117296, "lon": 106.8619233 },
+    { "lat": -6.2116953, "lon": 106.8621296 },
+    { "lat": -6.2116814, "lon": 106.8623680 },
+    { "lat": -6.2116946, "lon": 106.8626653 },
+    { "lat": -6.2117314, "lon": 106.8629299 },
+    { "lat": -6.2118288, "lon": 106.8632987 }
+  ],
+  "tags": {
+    "bridge": "yes",
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "layer": "2",
+    "maxspeed": "60",
+    "name": "Jalur Kereta Api Manggarai–Jatinegara",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q17052030",
+    "wikipedia": "en:Jatinegara-Manggarai railway"
+  }
+},
+{
+  "type": "way",
+  "id": 1311213498,
+  "bounds": {
+    "minlat": -6.2120688,
+    "minlon": 106.8608457,
+    "maxlat": -6.2116366,
+    "maxlon": 106.8633123
+  },
+  "nodes": [
+    7003649029,
+    7563289932,
+    7003649030,
+    7003649031,
+    7003649032,
+    7563289931,
+    7003649033,
+    7003649034,
+    7563289930,
+    7003649035,
+    13913271784,
+    7003649036
+  ],
+  "geometry": [
+    { "lat": -6.2117887, "lon": 106.8633123 },
+    { "lat": -6.2117204, "lon": 106.8631025 },
+    { "lat": -6.2116836, "lon": 106.8629196 },
+    { "lat": -6.2116512, "lon": 106.8626669 },
+    { "lat": -6.2116366, "lon": 106.8623936 },
+    { "lat": -6.2116477, "lon": 106.8621632 },
+    { "lat": -6.2116812, "lon": 106.8619190 },
+    { "lat": -6.2117382, "lon": 106.8617013 },
+    { "lat": -6.2118184, "lon": 106.8614705 },
+    { "lat": -6.2119305, "lon": 106.8611736 },
+    { "lat": -6.2120547, "lon": 106.8608791 },
+    { "lat": -6.2120688, "lon": 106.8608457 }
+  ],
+  "tags": {
+    "bridge": "yes",
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "layer": "2",
+    "maxspeed": "60",
+    "name": "Jalur Kereta Api Manggarai–Jatinegara",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q17052030",
+    "wikipedia": "en:Jatinegara-Manggarai railway"
+  }
+},
+{
+  "type": "way",
+  "id": 1311213499,
+  "bounds": {
+    "minlat": -6.2128788,
+    "minlon": 106.8589171,
+    "maxlat": -6.2120688,
+    "maxlon": 106.8608457
+  },
+  "nodes": [
+    7003649036,
+    13913271780,
+    13913271782,
+    13913271783,
+    9939917858
+  ],
+  "geometry": [
+    { "lat": -6.2120688, "lon": 106.8608457 },
+    { "lat": -6.2120863, "lon": 106.8608041 },
+    { "lat": -6.2121048, "lon": 106.8607599 },
+    { "lat": -6.2121278, "lon": 106.8607053 },
+    { "lat": -6.2128788, "lon": 106.8589171 }
+  ],
+  "tags": {
+    "bridge": "yes",
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "layer": "2",
+    "maxspeed": "60",
+    "name": "Jalur Kereta Api Manggarai–Jatinegara",
+    "railway": "rail",
+    "railway:track_ref": "1",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q17052030",
+    "wikipedia": "en:Jatinegara-Manggarai railway"
+  }
+},
+{
+  "type": "way",
+  "id": 1311213500,
+  "bounds": {
+    "minlat": -6.2129407,
+    "minlon": 106.8589751,
+    "maxlat": -6.2121296,
+    "maxlon": 106.8608760
+  },
+  "nodes": [
+    10312804510,
+    7563289937,
+    12319796282,
+    13913271781,
+    13913271779,
+    9939917857
+  ],
+  "geometry": [
+    { "lat": -6.2129407, "lon": 106.8589751 },
+    { "lat": -6.2127533, "lon": 106.8594879 },
+    { "lat": -6.2121915, "lon": 106.8607383 },
+    { "lat": -6.2121687, "lon": 106.8607891 },
+    { "lat": -6.2121485, "lon": 106.8608339 },
+    { "lat": -6.2121296, "lon": 106.8608760 }
+  ],
+  "tags": {
+    "bridge": "yes",
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "layer": "2",
+    "maxspeed": "60",
+    "name": "Jalur Kereta Api Manggarai–Jatinegara",
+    "railway": "rail",
+    "railway:track_ref": "2",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q17052030",
+    "wikipedia": "en:Jatinegara-Manggarai railway"
+  }
+},
+{
+  "type": "way",
+  "id": 1311213501,
+  "bounds": {
+    "minlat": -6.2135902,
+    "minlon": 106.8627718,
+    "maxlat": -6.2105026,
+    "maxlon": 106.8659340
+  },
+  "nodes": [
+    10312804313,
+    4800206572,
+    12552696593,
+    316266219,
+    12058866521,
+    316266204,
+    12552696595,
+    10312804418,
+    12058866519,
+    10312804397
+  ],
+  "geometry": [
+    { "lat": -6.2105026, "lon": 106.8627718 },
+    { "lat": -6.2107473, "lon": 106.8629059 },
+    { "lat": -6.2109411, "lon": 106.8630205 },
+    { "lat": -6.2110740, "lon": 106.8631138 },
+    { "lat": -6.2112966, "lon": 106.8633107 },
+    { "lat": -6.2114379, "lon": 106.8634537 },
+    { "lat": -6.2115176, "lon": 106.8635417 },
+    { "lat": -6.2124384, "lon": 106.8646571 },
+    { "lat": -6.2126396, "lon": 106.8648802 },
+    { "lat": -6.2135902, "lon": 106.8659340 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "70",
+    "name": "Jalur Kereta Api Jakarta Kota–Cikampek",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q19726782",
+    "wikipedia": "id:Jalur kereta api Jakarta Kota–Cikampek"
+  }
+},
+{
+  "type": "way",
+  "id": 1311213502,
+  "bounds": {
+    "minlat": -6.2104808,
+    "minlon": 106.8622121,
+    "maxlat": -6.2085627,
+    "maxlon": 106.8628106
+  },
+  "nodes": [
+    10312804312,
+    4919863394,
+    4919863392,
+    6735571059,
+    12137362115,
+    10312804311
+  ],
+  "geometry": [
+    { "lat": -6.2104808, "lon": 106.8628106 },
+    { "lat": -6.2102274, "lon": 106.8627022 },
+    { "lat": -6.2099682, "lon": 106.8626121 },
+    { "lat": -6.2097627, "lon": 106.8625460 },
+    { "lat": -6.2093114, "lon": 106.8624125 },
+    { "lat": -6.2085627, "lon": 106.8622121 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "70",
+    "name": "Jalur Kereta Api Jakarta Kota–Cikampek",
+    "railway": "rail",
+    "railway:track_ref": "2",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q19726782",
+    "wikipedia": "id:Jalur kereta api Jakarta Kota–Cikampek"
+  }
+},
+{
+  "type": "way",
+  "id": 1311213503,
+  "bounds": {
+    "minlat": -6.2114241,
+    "minlon": 106.8628106,
+    "maxlat": -6.2104808,
+    "maxlon": 106.8634857
+  },
+  "nodes": [
+    4912053894,
+    12552696594,
+    4919863396,
+    12552696592,
+    4919863395,
+    10312804312
+  ],
+  "geometry": [
+    { "lat": -6.2114241, "lon": 106.8634857 },
+    { "lat": -6.2112708, "lon": 106.8633368 },
+    { "lat": -6.2110517, "lon": 106.8631475 },
+    { "lat": -6.2109191, "lon": 106.8630545 },
+    { "lat": -6.2107314, "lon": 106.8629373 },
+    { "lat": -6.2104808, "lon": 106.8628106 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "70",
+    "name": "Jalur Kereta Api Jakarta Kota–Cikampek",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q19726782",
+    "wikipedia": "id:Jalur kereta api Jakarta Kota–Cikampek"
+  }
+},
+{
+  "type": "way",
+  "id": 1311213504,
+  "bounds": {
+    "minlat": -6.2105026,
+    "minlon": 106.8621783,
+    "maxlat": -6.2085660,
+    "maxlon": 106.8627718
+  },
+  "nodes": [
+    12137362119,
+    12137362114,
+    6735571058,
+    4748339742,
+    316266215,
+    10312804313
+  ],
+  "geometry": [
+    { "lat": -6.2085660, "lon": 106.8621783 },
+    { "lat": -6.2093192, "lon": 106.8623832 },
+    { "lat": -6.2097607, "lon": 106.8625081 },
+    { "lat": -6.2099765, "lon": 106.8625807 },
+    { "lat": -6.2102400, "lon": 106.8626706 },
+    { "lat": -6.2105026, "lon": 106.8627718 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "70",
+    "name": "Jalur Kereta Api Jakarta Kota–Cikampek",
+    "railway": "rail",
+    "railway:track_ref": "1",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q19726782",
+    "wikipedia": "id:Jalur kereta api Jakarta Kota–Cikampek"
+  }
+},
+{
+  "type": "way",
+  "id": 1362794230,
+  "bounds": {
+    "minlat": -6.2147770,
+    "minlon": 106.8686782,
+    "maxlat": -6.2146195,
+    "maxlon": 106.8698982
+  },
+  "nodes": [
+    10312804451,
+    13958739942,
+    10312804474,
+    13958739937,
+    12058866507,
+    10312804475,
+    10312804476,
+    12617706518,
+    10312804477
+  ],
+  "geometry": [
+    { "lat": -6.2147770, "lon": 106.8686782 },
+    { "lat": -6.2147548, "lon": 106.8689064 },
+    { "lat": -6.2147452, "lon": 106.8690008 },
+    { "lat": -6.2147163, "lon": 106.8691798 },
+    { "lat": -6.2147003, "lon": 106.8692682 },
+    { "lat": -6.2146971, "lon": 106.8692911 },
+    { "lat": -6.2146430, "lon": 106.8695996 },
+    { "lat": -6.2146266, "lon": 106.8697501 },
+    { "lat": -6.2146195, "lon": 106.8698982 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "railway:track_ref": "8",
+    "service": "siding",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 1362794231,
+  "bounds": {
+    "minlat": -6.2139336,
+    "minlon": 106.8659340,
+    "maxlat": -6.2135902,
+    "maxlon": 106.8663117
+  },
+  "nodes": [
+    10312804397,
+    10312804399
+  ],
+  "geometry": [
+    { "lat": -6.2135902, "lon": 106.8659340 },
+    { "lat": -6.2139336, "lon": 106.8663117 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "70",
+    "name": "Jalur Kereta Api Jakarta Kota–Cikampek",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q19726782",
+    "wikipedia": "id:Jalur kereta api Jakarta Kota–Cikampek"
+  }
+},
+{
+  "type": "way",
+  "id": 1531517618,
+  "bounds": {
+    "minlat": -6.2147419,
+    "minlon": 106.8672013,
+    "maxlat": -6.2144515,
+    "maxlon": 106.8691798
+  },
+  "nodes": [
+    13958739937,
+    13958739938,
+    13958739939,
+    13958739941,
+    13958739940,
+    13958739943,
+    13958739944,
+    13958739951,
+    13958739945,
+    13958739946,
+    13958739947,
+    13958739948,
+    13958739949,
+    13958739950
+  ],
+  "geometry": [
+    { "lat": -6.2147163, "lon": 106.8691798 },
+    { "lat": -6.2147325, "lon": 106.8690100 },
+    { "lat": -6.2147377, "lon": 106.8688834 },
+    { "lat": -6.2147419, "lon": 106.8686879 },
+    { "lat": -6.2147402, "lon": 106.8685583 },
+    { "lat": -6.2147368, "lon": 106.8682337 },
+    { "lat": -6.2147179, "lon": 106.8680016 },
+    { "lat": -6.2146965, "lon": 106.8678456 },
+    { "lat": -6.2146687, "lon": 106.8677275 },
+    { "lat": -6.2146368, "lon": 106.8676057 },
+    { "lat": -6.2145810, "lon": 106.8674441 },
+    { "lat": -6.2145181, "lon": 106.8673061 },
+    { "lat": -6.2144767, "lon": 106.8672368 },
+    { "lat": -6.2144515, "lon": 106.8672013 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1531517619,
+  "bounds": {
+    "minlat": -6.2144515,
+    "minlon": 106.8669345,
+    "maxlat": -6.2142076,
+    "maxlon": 106.8672013
+  },
+  "nodes": [
+    13958739950,
+    13958739952
+  ],
+  "geometry": [
+    { "lat": -6.2144515, "lon": 106.8672013 },
+    { "lat": -6.2142076, "lon": 106.8669345 }
+  ],
+  "tags": {
+    "covered": "yes",
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1531517620,
+  "bounds": {
+    "minlat": -6.2144057,
+    "minlon": 106.8669809,
+    "maxlat": -6.2141647,
+    "maxlon": 106.8672389
+  },
+  "nodes": [
+    13958739955,
+    13958739956
+  ],
+  "geometry": [
+    { "lat": -6.2144057, "lon": 106.8672389 },
+    { "lat": -6.2141647, "lon": 106.8669809 }
+  ],
+  "tags": {
+    "covered": "yes",
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1531517621,
+  "bounds": {
+    "minlat": -6.2145810,
+    "minlon": 106.8672389,
+    "maxlat": -6.2144057,
+    "maxlon": 106.8674441
+  },
+  "nodes": [
+    13958739947,
+    13958739953,
+    13958739954,
+    13958739955
+  ],
+  "geometry": [
+    { "lat": -6.2145810, "lon": 106.8674441 },
+    { "lat": -6.2145153, "lon": 106.8673519 },
+    { "lat": -6.2144633, "lon": 106.8672913 },
+    { "lat": -6.2144057, "lon": 106.8672389 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+}
+
+  ]
+}

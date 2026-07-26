@@ -1,0 +1,6838 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-07-02T16:51:45Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 291546116,
+  "lat": -6.9143265,
+  "lon": 107.5983583,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "double_slip",
+    "ref": "W51C"
+  }
+},
+{
+  "type": "node",
+  "id": 293384518,
+  "lat": -6.9143824,
+  "lon": 107.6036991,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "double_slip",
+    "ref": "W43A"
+  }
+},
+{
+  "type": "node",
+  "id": 293384542,
+  "lat": -6.9140454,
+  "lon": 107.6007359,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 293384543,
+  "lat": -6.9140942,
+  "lon": 107.6004509,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "default",
+    "ref": "W101C"
+  }
+},
+{
+  "type": "node",
+  "id": 293384547,
+  "lat": -6.9143026,
+  "lon": 107.5987551,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "double_slip",
+    "ref": "W31D"
+  }
+},
+{
+  "type": "node",
+  "id": 293384674,
+  "lat": -6.9143397,
+  "lon": 107.6033872,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 2628264168,
+  "lat": -6.9141041,
+  "lon": 107.6031321,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2628264172,
+  "lat": -6.9144822,
+  "lon": 107.6041289,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "default",
+    "railway:turnout_side": "right",
+    "ref": "W23A"
+  }
+},
+{
+  "type": "node",
+  "id": 2628264174,
+  "lat": -6.9145311,
+  "lon": 107.6044738,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "default",
+    "railway:turnout_side": "left",
+    "ref": "W23B"
+  }
+},
+{
+  "type": "node",
+  "id": 2628264176,
+  "lat": -6.9145806,
+  "lon": 107.6048535,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "default",
+    "railway:turnout_side": "right",
+    "ref": "W23C"
+  }
+},
+{
+  "type": "node",
+  "id": 2628273442,
+  "lat": -6.9141834,
+  "lon": 107.6003595,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "forward",
+    "railway:signal:main": "ID-KAI",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "exit",
+    "railway:signal:main:height": "normal",
+    "railway:signal:main:states": "ID-KAI:5;ID-KAI:6;ID-KAI:7",
+    "railway:signal:main:substitute_signal": "yes",
+    "railway:signal:position": "right",
+    "railway:signal:shunting": "ID-KAI",
+    "railway:signal:shunting:form": "light",
+    "railway:signal:shunting:height": "normal",
+    "railway:signal:shunting:states": "ID-KAI:6B;ID-KAI:7B",
+    "ref": "JL62A"
+  }
+},
+{
+  "type": "node",
+  "id": 2628273443,
+  "lat": -6.9142099,
+  "lon": 107.5998951,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "double_slip",
+    "ref": "W61"
+  }
+},
+{
+  "type": "node",
+  "id": 2628273444,
+  "lat": -6.9141437,
+  "lon": 107.6003384,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "double_slip",
+    "ref": "W81C"
+  }
+},
+{
+  "type": "node",
+  "id": 2628273461,
+  "lat": -6.9145695,
+  "lon": 107.6044728,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "default",
+    "railway:turnout_side": "right",
+    "ref": "W13A"
+  }
+},
+{
+  "type": "node",
+  "id": 2628273463,
+  "lat": -6.9146465,
+  "lon": 107.6054321,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "default",
+    "railway:turnout_side": "left",
+    "ref": "W23D"
+  }
+},
+{
+  "type": "node",
+  "id": 2628273470,
+  "lat": -6.9145520,
+  "lon": 107.6040587,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "double_slip",
+    "ref": "W33"
+  }
+},
+{
+  "type": "node",
+  "id": 2628273490,
+  "lat": -6.9142773,
+  "lon": 107.5974708,
+  "tags": {
+    "railway": "switch",
+    "railway:switch": "double_slip",
+    "ref": "W51A"
+  }
+},
+{
+  "type": "node",
+  "id": 2628273496,
+  "lat": -6.9136957,
+  "lon": 107.6010748,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 2628273499,
+  "lat": -6.9131710,
+  "lon": 107.5988879,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 2628273500,
+  "lat": -6.9131391,
+  "lon": 107.5990307,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 2628273503,
+  "lat": -6.9135822,
+  "lon": 107.6006501,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 2628273504,
+  "lat": -6.9138394,
+  "lon": 107.6019816,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 2628273513,
+  "lat": -6.9138142,
+  "lon": 107.6016894,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 2628273514,
+  "lat": -6.9138751,
+  "lon": 107.6000139,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 2628273515,
+  "lat": -6.9138035,
+  "lon": 107.6014543,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 2628273516,
+  "lat": -6.9138075,
+  "lon": 107.6012595,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 2628273519,
+  "lat": -6.9140864,
+  "lon": 107.5989810,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 2628273521,
+  "lat": -6.9140985,
+  "lon": 107.5998139,
+  "tags": {
+    "railway": "switch",
+    "railway:switch": "double_slip"
+  }
+},
+{
+  "type": "node",
+  "id": 2628273526,
+  "lat": -6.9137644,
+  "lon": 107.6005563,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 2628273528,
+  "lat": -6.9132908,
+  "lon": 107.5983350,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 2628273529,
+  "lat": -6.9137338,
+  "lon": 107.6010625,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 2628273531,
+  "lat": -6.9132188,
+  "lon": 107.5988787,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 2628273532,
+  "lat": -6.9136339,
+  "lon": 107.6006268,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 2628273536,
+  "lat": -6.9133252,
+  "lon": 107.5986053,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 2628273540,
+  "lat": -6.9137347,
+  "lon": 107.5999077,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 2628273555,
+  "lat": -6.9145363,
+  "lon": 107.6009357,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 2628273556,
+  "lat": -6.9144620,
+  "lon": 107.5995220,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "yes",
+    "railway:switch": "default"
+  }
+},
+{
+  "type": "node",
+  "id": 2628286345,
+  "lat": -6.9141327,
+  "lon": 107.5960140,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 2628286351,
+  "lat": -6.9138312,
+  "lon": 107.5932212,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 2628286352,
+  "lat": -6.9138586,
+  "lon": 107.5934351,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 7464347909,
+  "lat": -6.9146166,
+  "lon": 107.6048491,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "default",
+    "railway:turnout_side": "left",
+    "ref": "W13B"
+  }
+},
+{
+  "type": "node",
+  "id": 7464347910,
+  "lat": -6.9146892,
+  "lon": 107.6054281,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "default",
+    "railway:turnout_side": "right",
+    "ref": "W13C"
+  }
+},
+{
+  "type": "node",
+  "id": 8385451853,
+  "lat": -6.9141035,
+  "lon": 107.5958800,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 8385451856,
+  "lat": -6.9140590,
+  "lon": 107.5957020,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 8385451861,
+  "lat": -6.9141640,
+  "lon": 107.5960777,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 8385451865,
+  "lat": -6.9141704,
+  "lon": 107.5963087,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 8385451866,
+  "lat": -6.9144407,
+  "lon": 107.6041139,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "double_slip",
+    "ref": "W43B"
+  }
+},
+{
+  "type": "node",
+  "id": 8385451869,
+  "lat": -6.9140320,
+  "lon": 107.6004019,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 8385451874,
+  "lat": -6.9140673,
+  "lon": 107.6029523,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:turnout_side": "left"
+  }
+},
+{
+  "type": "node",
+  "id": 8385451882,
+  "lat": -6.9140609,
+  "lon": 107.6009316,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "default",
+    "ref": "W101D"
+  }
+},
+{
+  "type": "node",
+  "id": 8385451883,
+  "lat": -6.9140111,
+  "lon": 107.6009829,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 8385451887,
+  "lat": -6.9138277,
+  "lon": 107.6018154,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 8385451889,
+  "lat": -6.9136800,
+  "lon": 107.6008405,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 8385451893,
+  "lat": -6.9137299,
+  "lon": 107.6006810,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 8385451896,
+  "lat": -6.9137698,
+  "lon": 107.6012845,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 8385451901,
+  "lat": -6.9142246,
+  "lon": 107.6004533,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "default",
+    "ref": "W21C"
+  }
+},
+{
+  "type": "node",
+  "id": 8385451903,
+  "lat": -6.9141675,
+  "lon": 107.5998978,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "double_slip",
+    "ref": "W81B"
+  }
+},
+{
+  "type": "node",
+  "id": 8385468220,
+  "lat": -6.9141709,
+  "lon": 107.5977241,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 8385468224,
+  "lat": -6.9142181,
+  "lon": 107.5988469,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "default",
+    "ref": "W21A"
+  }
+},
+{
+  "type": "node",
+  "id": 8385468229,
+  "lat": -6.9144922,
+  "lon": 107.6009387,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 8385468232,
+  "lat": -6.9145809,
+  "lon": 107.6009309,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 8385468235,
+  "lat": -6.9144376,
+  "lon": 107.5990349,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "default",
+    "ref": "W91"
+  }
+},
+{
+  "type": "node",
+  "id": 8385468238,
+  "lat": -6.9143740,
+  "lon": 107.5985123,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "default",
+    "ref": "W71D"
+  }
+},
+{
+  "type": "node",
+  "id": 8385468241,
+  "lat": -6.9143385,
+  "lon": 107.6006265,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "double_slip",
+    "ref": "W31F"
+  }
+},
+{
+  "type": "node",
+  "id": 8385468243,
+  "lat": -6.9143239,
+  "lon": 107.6001798,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "default",
+    "ref": "W31E"
+  }
+},
+{
+  "type": "node",
+  "id": 8385468247,
+  "lat": -6.9142842,
+  "lon": 107.5983578,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "double_slip",
+    "ref": "W31C"
+  }
+},
+{
+  "type": "node",
+  "id": 8385468248,
+  "lat": -6.9142591,
+  "lon": 107.5979412,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "double_slip",
+    "ref": "W31B"
+  }
+},
+{
+  "type": "node",
+  "id": 8385468249,
+  "lat": -6.9142311,
+  "lon": 107.5974428,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "default",
+    "ref": "W31A"
+  }
+},
+{
+  "type": "node",
+  "id": 8385468254,
+  "lat": -6.9144273,
+  "lon": 107.6004910,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "backward",
+    "railway:signal:main": "ID-KAI",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "exit",
+    "railway:signal:main:height": "normal",
+    "railway:signal:main:states": "ID-KAI:5;ID-KAI:6;ID-KAI:7",
+    "railway:signal:main:substitute_signal": "yes",
+    "railway:signal:position": "left",
+    "railway:signal:shunting": "ID-KAI",
+    "railway:signal:shunting:form": "light",
+    "railway:signal:shunting:height": "normal",
+    "railway:signal:shunting:states": "ID-KAI:6B;ID-KAI:7B",
+    "ref": "JL52A"
+  }
+},
+{
+  "type": "node",
+  "id": 8385468255,
+  "lat": -6.9143793,
+  "lon": 107.5994266,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "default",
+    "ref": "W51E"
+  }
+},
+{
+  "type": "node",
+  "id": 8385468256,
+  "lat": -6.9143483,
+  "lon": 107.5988511,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "default",
+    "ref": "W51D"
+  }
+},
+{
+  "type": "node",
+  "id": 8385468257,
+  "lat": -6.9143007,
+  "lon": 107.5979399,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "double_slip",
+    "ref": "W51B"
+  }
+},
+{
+  "type": "node",
+  "id": 8385468259,
+  "lat": -6.9142707,
+  "lon": 107.5994238,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "default",
+    "ref": "W21B"
+  }
+},
+{
+  "type": "node",
+  "id": 8385468260,
+  "lat": -6.9142787,
+  "lon": 107.5993037,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "default",
+    "ref": "W11D"
+  }
+},
+{
+  "type": "node",
+  "id": 8385468262,
+  "lat": -6.9142516,
+  "lon": 107.5986652,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "default",
+    "ref": "W11C"
+  }
+},
+{
+  "type": "node",
+  "id": 8385468263,
+  "lat": -6.9142408,
+  "lon": 107.5984015,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "double_slip",
+    "ref": "W11B"
+  }
+},
+{
+  "type": "node",
+  "id": 8385468264,
+  "lat": -6.9142106,
+  "lon": 107.5978658,
+  "tags": {
+    "railway": "switch",
+    "ref": "W11A"
+  }
+},
+{
+  "type": "node",
+  "id": 8385468306,
+  "lat": -6.9142842,
+  "lon": 107.5949407,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "backward",
+    "railway:signal:main": "ID-KAI",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "entry",
+    "railway:signal:main:states": "ID-KAI:6;ID-KAI:7",
+    "railway:signal:main:substitute_signal": "yes",
+    "railway:signal:position": "right",
+    "ref": "J14"
+  }
+},
+{
+  "type": "node",
+  "id": 8385468313,
+  "lat": -6.9140549,
+  "lon": 107.5924575,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "default",
+    "ref": "W13"
+  }
+},
+{
+  "type": "node",
+  "id": 8385468315,
+  "lat": -6.9143625,
+  "lon": 107.6011150,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "ref": "W31G"
+  }
+},
+{
+  "type": "node",
+  "id": 8385468317,
+  "lat": -6.9144094,
+  "lon": 107.5999908,
+  "tags": {
+    "railway": "switch",
+    "railway:switch": "double_slip",
+    "ref": "W51F"
+  }
+},
+{
+  "type": "node",
+  "id": 8385468321,
+  "lat": -6.9143682,
+  "lon": 107.5984106,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "default",
+    "ref": "W71C"
+  }
+},
+{
+  "type": "node",
+  "id": 8385468322,
+  "lat": -6.9143420,
+  "lon": 107.5979364,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "double_slip",
+    "ref": "W71B"
+  }
+},
+{
+  "type": "node",
+  "id": 8385468323,
+  "lat": -6.9142999,
+  "lon": 107.5970405,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "default",
+    "ref": "W71A"
+  }
+},
+{
+  "type": "node",
+  "id": 8385468329,
+  "lat": -6.9142410,
+  "lon": 107.5948808,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "backward",
+    "railway:signal:main": "ID-KAI",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "entry",
+    "railway:signal:main:states": "ID-KAI:6;ID-KAI:7",
+    "railway:signal:main:substitute_signal": "yes",
+    "railway:signal:position": "right",
+    "railway:signal:speed_limit": "ID-KAI",
+    "railway:signal:speed_limit:form": "light",
+    "railway:signal:speed_limit:states": "ID-KAI:9F",
+    "ref": "J70"
+  }
+},
+{
+  "type": "node",
+  "id": 8385468334,
+  "lat": -6.9140149,
+  "lon": 107.5929728,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "default",
+    "ref": "W23B"
+  }
+},
+{
+  "type": "node",
+  "id": 8385468338,
+  "lat": -6.9140139,
+  "lon": 107.5925153,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "default",
+    "ref": "W23A"
+  }
+},
+{
+  "type": "node",
+  "id": 8385468348,
+  "lat": -6.9144868,
+  "lon": 107.6035085,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "backward",
+    "railway:signal:main": "ID-KAI",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "exit",
+    "railway:signal:main:height": "normal",
+    "railway:signal:main:states": "ID-KAI:5;ID-KAI:7",
+    "railway:signal:main:substitute_signal": "yes",
+    "railway:signal:position": "left",
+    "railway:signal:shunting": "ID-KAI",
+    "railway:signal:shunting:form": "light",
+    "railway:signal:shunting:height": "normal",
+    "railway:signal:shunting:states": "ID-KAI:6B;ID-KAI:7B",
+    "railway:signal:speed_limit": "ID:KAI",
+    "railway:signal:speed_limit:form": "sign",
+    "railway:signal:speed_limit:speed": "30",
+    "railway:signal:speed_limit:states": "ID-KAI:9F",
+    "ref": "JL32B"
+  }
+},
+{
+  "type": "node",
+  "id": 8385468352,
+  "lat": -6.9145375,
+  "lon": 107.6035669,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "forward",
+    "railway:signal:main": "ID-KAI",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "exit",
+    "railway:signal:main:height": "normal",
+    "railway:signal:main:states": "ID-KAI:5;ID-KAI:7",
+    "railway:signal:main:substitute_signal": "yes",
+    "railway:signal:position": "right",
+    "railway:signal:shunting": "ID-KAI",
+    "railway:signal:shunting:form": "light",
+    "railway:signal:shunting:height": "normal",
+    "railway:signal:shunting:states": "ID-KAI:6B;ID-KAI:7B",
+    "railway:signal:speed_limit": "ID:KAI",
+    "railway:signal:speed_limit:form": "sign",
+    "railway:signal:speed_limit:speed": "30",
+    "railway:signal:speed_limit:states": "ID-KAI:9F",
+    "ref": "JL52B"
+  }
+},
+{
+  "type": "node",
+  "id": 10693460293,
+  "lat": -6.9137241,
+  "lon": 107.5995840,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 10693460295,
+  "lat": -6.9148503,
+  "lon": 107.6068659,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "forward",
+    "railway:signal:main": "ID-KAI",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "entry",
+    "railway:signal:main:height": "normal",
+    "railway:signal:main:states": "ID-KAI:6;ID-KAI:7",
+    "railway:signal:main:substitute_signal": "yes",
+    "railway:signal:position": "right",
+    "ref": "J24"
+  }
+},
+{
+  "type": "node",
+  "id": 10694245351,
+  "lat": -6.9143360,
+  "lon": 107.5981500,
+  "tags": {
+    "railway": "railway_crossing"
+  }
+},
+{
+  "type": "node",
+  "id": 10694245355,
+  "lat": -6.9143164,
+  "lon": 107.5985955,
+  "tags": {
+    "railway": "railway_crossing"
+  }
+},
+{
+  "type": "node",
+  "id": 10694245356,
+  "lat": -6.9142482,
+  "lon": 107.5981199,
+  "tags": {
+    "railway": "railway_crossing"
+  }
+},
+{
+  "type": "node",
+  "id": 10694245357,
+  "lat": -6.9142707,
+  "lon": 107.5976988,
+  "tags": {
+    "railway": "railway_crossing"
+  }
+},
+{
+  "type": "node",
+  "id": 10694245358,
+  "lat": -6.9146345,
+  "lon": 107.6051379,
+  "tags": {
+    "railway": "railway_crossing"
+  }
+},
+{
+  "type": "node",
+  "id": 11242626908,
+  "lat": -6.9144744,
+  "lon": 107.6043498,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 11242626909,
+  "lat": -6.9145876,
+  "lon": 107.6043475,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 11262097550,
+  "lat": -6.9137115,
+  "lon": 107.5992661,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 11262097551,
+  "lat": -6.9137268,
+  "lon": 107.5996653,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 11262097552,
+  "lat": -6.9137549,
+  "lon": 107.5991539,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 11262097554,
+  "lat": -6.9136243,
+  "lon": 107.5999601,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 11262097573,
+  "lat": -6.9142250,
+  "lon": 107.6016599,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 11262097589,
+  "lat": -6.9142592,
+  "lon": 107.6035457,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 11262097590,
+  "lat": -6.9143734,
+  "lon": 107.6038411,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "default",
+    "railway:turnout_side": "right",
+    "ref": "W83"
+  }
+},
+{
+  "type": "node",
+  "id": 11262097593,
+  "lat": -6.9141833,
+  "lon": 107.5995253,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "default",
+    "ref": "W81A"
+  }
+},
+{
+  "type": "node",
+  "id": 11262097596,
+  "lat": -6.9141201,
+  "lon": 107.5989808,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 11262097597,
+  "lat": -6.9141282,
+  "lon": 107.5999291,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "double_slip",
+    "ref": "W101A"
+  }
+},
+{
+  "type": "node",
+  "id": 11270915380,
+  "lat": -6.9144102,
+  "lon": 107.5983807,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 11887281318,
+  "lat": -6.9140571,
+  "lon": 107.5923340,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "forward",
+    "railway:signal:main": "ID-KAI",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "exit",
+    "railway:signal:main:height": "normal",
+    "railway:signal:main:states": "ID-KAI:5;ID-KAI:6;ID-KAI:7",
+    "railway:signal:main:substitute_signal": "yes",
+    "railway:signal:position": "right",
+    "railway:signal:speed_limit": "ID-KAI",
+    "railway:signal:speed_limit:form": "light",
+    "railway:signal:speed_limit:speed": "30",
+    "railway:signal:speed_limit:states": "ID-KAI:9F",
+    "ref": "J12B"
+  }
+},
+{
+  "type": "node",
+  "id": 13370047715,
+  "lat": -6.9138170,
+  "lon": 107.5927705,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 13370047721,
+  "lat": -6.9138863,
+  "lon": 107.5938731,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 13370047722,
+  "lat": -6.9138972,
+  "lon": 107.5937315,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 13395369557,
+  "lat": -6.9148855,
+  "lon": 107.6068612,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "backward",
+    "railway:signal:main": "ID-KAI",
+    "railway:signal:main:form": "sign",
+    "railway:signal:main:function": "entry",
+    "railway:signal:main:height": "normal",
+    "railway:signal:main:states": "ID-KAI:8D",
+    "railway:signal:main:substitute_signal": "yes",
+    "railway:signal:position": "right",
+    "ref": "J14"
+  }
+},
+{
+  "type": "node",
+  "id": 13395369558,
+  "lat": -6.9153893,
+  "lon": 107.6111930,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "forward",
+    "railway:signal:distant": "ID-KAI",
+    "railway:signal:distant:form": "light",
+    "railway:signal:distant:height": "normal",
+    "railway:signal:distant:states": "ID-KAI:9A1;ID-KAI:9A2",
+    "railway:signal:position": "right",
+    "ref": "MJ24"
+  }
+},
+{
+  "type": "node",
+  "id": 13395369559,
+  "lat": -6.9154231,
+  "lon": 107.6111898,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "backward",
+    "railway:signal:distant": "ID-KAI",
+    "railway:signal:distant:form": "sign",
+    "railway:signal:distant:height": "normal",
+    "railway:signal:distant:states": "ID-KAI:8C",
+    "railway:signal:position": "right",
+    "ref": "MJ14"
+  }
+},
+{
+  "type": "node",
+  "id": 13395369560,
+  "lat": -6.9146684,
+  "lon": 107.6055898,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "forward",
+    "railway:signal:position": "right",
+    "railway:signal:shunting": "ID-KAI",
+    "railway:signal:shunting:form": "light",
+    "railway:signal:shunting:height": "dwarf",
+    "railway:signal:shunting:states": "ID-KAI:6B;ID-KAI:7B",
+    "ref": "L24"
+  }
+},
+{
+  "type": "node",
+  "id": 13395369561,
+  "lat": -6.9147104,
+  "lon": 107.6055870,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "backward",
+    "railway:signal:position": "right",
+    "railway:signal:shunting": "ID-KAI",
+    "railway:signal:shunting:form": "light",
+    "railway:signal:shunting:height": "dwarf",
+    "railway:signal:shunting:states": "ID-KAI:6B;ID-KAI:7B",
+    "ref": "L14"
+  }
+},
+{
+  "type": "node",
+  "id": 13430721459,
+  "lat": -6.9137810,
+  "lon": 107.5942728,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 13520064990,
+  "lat": -6.9144446,
+  "lon": 107.6035311,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "forward",
+    "railway:signal:main_repeated": "ID-KAI",
+    "railway:signal:main_repeated:form": "light",
+    "railway:signal:main_repeated:height": "normal",
+    "railway:signal:main_repeated:states": "ID-KAI:9C1;ID-KAI:9C3",
+    "railway:signal:position": "left",
+    "ref": "UJ12B"
+  }
+},
+{
+  "type": "node",
+  "id": 13520066463,
+  "lat": -6.9141053,
+  "lon": 107.6003645,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "no",
+    "railway:switch": "default",
+    "ref": "W101B"
+  }
+},
+{
+  "type": "node",
+  "id": 13528591958,
+  "lat": -6.9137398,
+  "lon": 107.6000553,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 13530249441,
+  "lat": -6.9145017,
+  "lon": 107.6039256,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "forward",
+    "railway:signal:main": "ID-KAI",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "exit",
+    "railway:signal:main:height": "normal",
+    "railway:signal:main:states": "ID-KAI:5;ID-KAI:7",
+    "railway:signal:main:substitute_signal": "yes",
+    "railway:signal:position": "right",
+    "railway:signal:shunting": "ID-KAI",
+    "railway:signal:shunting:form": "light",
+    "railway:signal:shunting:height": "normal",
+    "railway:signal:shunting:states": "ID-KAI:6B;ID-KAI:7B",
+    "railway:signal:speed_limit": "ID:KAI",
+    "railway:signal:speed_limit:form": "sign",
+    "railway:signal:speed_limit:speed": "30",
+    "railway:signal:speed_limit:states": "ID-KAI:9F",
+    "ref": "JL12B"
+  }
+},
+{
+  "type": "node",
+  "id": 13814081423,
+  "lat": -6.9142594,
+  "lon": 107.6033513,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "forward",
+    "railway:signal:main": "ID-KAI",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "exit",
+    "railway:signal:main:height": "normal",
+    "railway:signal:main:states": "ID-KAI:5;ID-KAI:7",
+    "railway:signal:main:substitute_signal": "yes",
+    "railway:signal:position": "left",
+    "railway:signal:shunting": "ID-KAI",
+    "railway:signal:shunting:form": "light",
+    "railway:signal:shunting:height": "normal",
+    "railway:signal:shunting:states": "ID-KAI:6B;ID-KAI:7B",
+    "railway:signal:speed_limit": "ID:KAI",
+    "railway:signal:speed_limit:form": "sign",
+    "railway:signal:speed_limit:speed": "30",
+    "railway:signal:speed_limit:states": "ID-KAI:9F",
+    "ref": "JL82B"
+  }
+},
+{
+  "type": "node",
+  "id": 13814081425,
+  "lat": -6.9142992,
+  "lon": 107.6033439,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "backward",
+    "railway:signal:main": "ID-KAI",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "exit",
+    "railway:signal:main:height": "normal",
+    "railway:signal:main:states": "ID-KAI:5;ID-KAI:7",
+    "railway:signal:main:substitute_signal": "yes",
+    "railway:signal:position": "right",
+    "railway:signal:shunting": "ID-KAI",
+    "railway:signal:shunting:form": "light",
+    "railway:signal:shunting:height": "normal",
+    "railway:signal:shunting:states": "ID-KAI:6B;ID-KAI:7B",
+    "railway:signal:speed_limit": "ID:KAI",
+    "railway:signal:speed_limit:form": "sign",
+    "railway:signal:speed_limit:speed": "30",
+    "railway:signal:speed_limit:states": "ID-KAI:9F",
+    "ref": "J62B"
+  }
+},
+{
+  "type": "node",
+  "id": 13814081426,
+  "lat": -6.9141504,
+  "lon": 107.6031038,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "forward",
+    "railway:signal:main": "ID-KAI",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "exit",
+    "railway:signal:main:height": "normal",
+    "railway:signal:main:states": "ID-KAI:5;ID-KAI:7",
+    "railway:signal:main:substitute_signal": "yes",
+    "railway:signal:position": "right",
+    "railway:signal:shunting": "ID-KAI",
+    "railway:signal:shunting:form": "light",
+    "railway:signal:shunting:height": "normal",
+    "railway:signal:shunting:states": "ID-KAI:6B;ID-KAI:7B",
+    "railway:signal:speed_limit": "ID:KAI",
+    "railway:signal:speed_limit:form": "sign",
+    "railway:signal:speed_limit:speed": "30",
+    "railway:signal:speed_limit:states": "ID-KAI:9F",
+    "ref": "JL102B"
+  }
+},
+{
+  "type": "node",
+  "id": 13814081433,
+  "lat": -6.9143933,
+  "lon": 107.6035396,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "forward",
+    "railway:signal:main": "ID-KAI",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "exit",
+    "railway:signal:main:height": "normal",
+    "railway:signal:main:states": "ID-KAI:5;ID-KAI:7",
+    "railway:signal:main:substitute_signal": "yes",
+    "railway:signal:position": "left",
+    "railway:signal:shunting": "ID-KAI",
+    "railway:signal:shunting:form": "light",
+    "railway:signal:shunting:height": "normal",
+    "railway:signal:shunting:states": "ID-KAI:6B;ID-KAI:7B",
+    "railway:signal:speed_limit": "ID:KAI",
+    "railway:signal:speed_limit:form": "sign",
+    "railway:signal:speed_limit:speed": "30",
+    "railway:signal:speed_limit:states": "ID-KAI:9F",
+    "ref": "J22B"
+  }
+},
+{
+  "type": "node",
+  "id": 13814081435,
+  "lat": -6.9140422,
+  "lon": 107.6025849,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "forward",
+    "railway:signal:main": "ID-KAI",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "exit",
+    "railway:signal:main:height": "normal",
+    "railway:signal:main:states": "ID-KAI:5;ID-KAI:7",
+    "railway:signal:main:substitute_signal": "yes",
+    "railway:signal:position": "right",
+    "railway:signal:shunting": "ID-KAI",
+    "railway:signal:shunting:form": "light",
+    "railway:signal:shunting:height": "normal",
+    "railway:signal:shunting:states": "ID-KAI:6B;ID-KAI:7B",
+    "railway:signal:speed_limit": "ID:KAI",
+    "railway:signal:speed_limit:form": "sign",
+    "railway:signal:speed_limit:speed": "30",
+    "railway:signal:speed_limit:states": "ID-KAI:9F",
+    "ref": "JL122B"
+  }
+},
+{
+  "type": "node",
+  "id": 13814081437,
+  "lat": -6.9139956,
+  "lon": 107.6025875,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "backward",
+    "railway:signal:main": "ID-KAI",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "exit",
+    "railway:signal:main:height": "normal",
+    "railway:signal:main:states": "ID-KAI:5;ID-KAI:7",
+    "railway:signal:main:substitute_signal": "yes",
+    "railway:signal:position": "left",
+    "railway:signal:shunting": "ID-KAI",
+    "railway:signal:shunting:form": "light",
+    "railway:signal:shunting:height": "normal",
+    "railway:signal:shunting:states": "ID-KAI:6B;ID-KAI:7B",
+    "railway:signal:speed_limit": "ID:KAI",
+    "railway:signal:speed_limit:form": "sign",
+    "railway:signal:speed_limit:speed": "30",
+    "railway:signal:speed_limit:states": "ID-KAI:9F",
+    "ref": "JL142B"
+  }
+},
+{
+  "type": "node",
+  "id": 13814081442,
+  "lat": -6.9142953,
+  "lon": 107.6007345,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 13814081444,
+  "lat": -6.9142369,
+  "lon": 107.6010459,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "backward",
+    "railway:signal:main": "ID-KAI",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "exit",
+    "railway:signal:main:height": "normal",
+    "railway:signal:main:states": "ID-KAI:5;ID-KAI:6;ID-KAI:7",
+    "railway:signal:main:substitute_signal": "yes",
+    "railway:signal:position": "left",
+    "railway:signal:shunting": "ID-KAI",
+    "railway:signal:shunting:form": "light",
+    "railway:signal:shunting:height": "normal",
+    "railway:signal:shunting:states": "ID-KAI:6B;ID-KAI:7B",
+    "ref": "JL22A"
+  }
+},
+{
+  "type": "node",
+  "id": 13814081445,
+  "lat": -6.9143179,
+  "lon": 107.6011251,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "backward",
+    "railway:signal:main": "ID-KAI",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "exit",
+    "railway:signal:main:height": "normal",
+    "railway:signal:main:states": "ID-KAI:5;ID-KAI:6;ID-KAI:7",
+    "railway:signal:main:substitute_signal": "yes",
+    "railway:signal:position": "left",
+    "railway:signal:shunting": "ID-KAI",
+    "railway:signal:shunting:form": "light",
+    "railway:signal:shunting:height": "normal",
+    "railway:signal:shunting:states": "ID-KAI:6B;ID-KAI:7B",
+    "ref": "JL12A"
+  }
+},
+{
+  "type": "node",
+  "id": 13814081446,
+  "lat": -6.9143664,
+  "lon": 107.6012317,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "forward",
+    "railway:signal:main": "ID-KAI",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "exit",
+    "railway:signal:main:height": "normal",
+    "railway:signal:main:states": "ID-KAI:5;ID-KAI:6;ID-KAI:7",
+    "railway:signal:main:substitute_signal": "yes",
+    "railway:signal:position": "right",
+    "railway:signal:shunting": "ID-KAI",
+    "railway:signal:shunting:form": "light",
+    "railway:signal:shunting:height": "normal",
+    "railway:signal:shunting:states": "ID-KAI:6B;ID-KAI:7B",
+    "ref": "JL32A"
+  }
+},
+{
+  "type": "node",
+  "id": 13814081447,
+  "lat": -6.9141262,
+  "lon": 107.6007686,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "backward",
+    "railway:signal:main": "ID-KAI",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "exit",
+    "railway:signal:main:height": "normal",
+    "railway:signal:main:states": "ID-KAI:5;ID-KAI:6;ID-KAI:7",
+    "railway:signal:main:substitute_signal": "yes",
+    "railway:signal:position": "left",
+    "railway:signal:shunting": "ID-KAI",
+    "railway:signal:shunting:form": "light",
+    "railway:signal:shunting:height": "normal",
+    "railway:signal:shunting:states": "ID-KAI:6B;ID-KAI:7B",
+    "ref": "JL82A"
+  }
+},
+{
+  "type": "node",
+  "id": 13814081450,
+  "lat": -6.9140543,
+  "lon": 107.6010439,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "backward",
+    "railway:signal:main": "ID-KAI",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "exit",
+    "railway:signal:main:height": "normal",
+    "railway:signal:main:states": "ID-KAI:5;ID-KAI:6;ID-KAI:7",
+    "railway:signal:main:substitute_signal": "yes",
+    "railway:signal:position": "left",
+    "railway:signal:shunting": "ID-KAI",
+    "railway:signal:shunting:form": "light",
+    "railway:signal:shunting:height": "normal",
+    "railway:signal:shunting:states": "ID-KAI:6B;ID-KAI:7B",
+    "ref": "J102A"
+  }
+},
+{
+  "type": "node",
+  "id": 13814081451,
+  "lat": -6.9139932,
+  "lon": 107.6013941,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "backward",
+    "railway:signal:main": "ID-KAI",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "exit",
+    "railway:signal:main:height": "normal",
+    "railway:signal:main:states": "ID-KAI:5;ID-KAI:6;ID-KAI:7",
+    "railway:signal:main:substitute_signal": "yes",
+    "railway:signal:position": "left",
+    "railway:signal:shunting": "ID-KAI",
+    "railway:signal:shunting:form": "light",
+    "railway:signal:shunting:height": "normal",
+    "railway:signal:shunting:states": "ID-KAI:6B;ID-KAI:7B",
+    "ref": "JL122A"
+  }
+},
+{
+  "type": "node",
+  "id": 13814081452,
+  "lat": -6.9139517,
+  "lon": 107.6013918,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "forward",
+    "railway:signal:main": "ID-KAI",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "exit",
+    "railway:signal:main:height": "normal",
+    "railway:signal:main:states": "ID-KAI:5;ID-KAI:6;ID-KAI:7",
+    "railway:signal:main:substitute_signal": "yes",
+    "railway:signal:position": "right",
+    "railway:signal:shunting": "ID-KAI",
+    "railway:signal:shunting:form": "light",
+    "railway:signal:shunting:height": "normal",
+    "railway:signal:shunting:states": "ID-KAI:6B;ID-KAI:7B",
+    "ref": "JL142A"
+  }
+},
+{
+  "type": "node",
+  "id": 13814081454,
+  "lat": -6.9142060,
+  "lon": 107.5984021,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "forward",
+    "railway:signal:position": "right",
+    "railway:signal:shunting": "ID-KAI",
+    "railway:signal:shunting:form": "light",
+    "railway:signal:shunting:height": "dwarf",
+    "railway:signal:shunting:states": "ID-KAI:6B;ID-KAI:7B",
+    "ref": "L20"
+  }
+},
+{
+  "type": "node",
+  "id": 13814081460,
+  "lat": -6.9139440,
+  "lon": 107.5956375,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "backward",
+    "railway:signal:main": "ID-KAI",
+    "railway:signal:main:form": "sign",
+    "railway:signal:main:function": "entry",
+    "railway:signal:main:height": "normal",
+    "railway:signal:main:states": "ID-KAI:8D",
+    "railway:signal:main:substitute_signal": "yes",
+    "railway:signal:position": "right",
+    "ref": "J20"
+  }
+},
+{
+  "type": "node",
+  "id": 13814081465,
+  "lat": -6.9142501,
+  "lon": 107.5949435,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "forward",
+    "railway:signal:main": "ID-KAI",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "entry",
+    "railway:signal:main:states": "ID-KAI:6;ID-KAI:7",
+    "railway:signal:main:substitute_signal": "yes",
+    "railway:signal:position": "right",
+    "railway:signal:speed_limit": "ID-KAI",
+    "railway:signal:speed_limit:form": "light",
+    "railway:signal:speed_limit:states": "ID-KAI:9F",
+    "ref": "J24"
+  }
+},
+{
+  "type": "node",
+  "id": 13814081466,
+  "lat": -6.9142761,
+  "lon": 107.5948772,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "forward",
+    "railway:signal:main": "ID-KAI",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "entry",
+    "railway:signal:main:states": "ID-KAI:6;ID-KAI:7",
+    "railway:signal:main:substitute_signal": "yes",
+    "railway:signal:position": "right",
+    "railway:signal:speed_limit": "ID-KAI",
+    "railway:signal:speed_limit:form": "sign",
+    "railway:signal:speed_limit:states": "ID-KAI:9F",
+    "ref": "J90"
+  }
+},
+{
+  "type": "node",
+  "id": 13814081478,
+  "lat": -6.9141795,
+  "lon": 107.5947867,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "forward",
+    "railway:signal:main": "ID-KAI",
+    "railway:signal:main:form": "light",
+    "railway:signal:main:function": "entry",
+    "railway:signal:main:states": "ID-KAI:6;ID-KAI:7",
+    "railway:signal:main:substitute_signal": "yes",
+    "railway:signal:position": "left",
+    "railway:signal:speed_limit": "ID-KAI",
+    "railway:signal:speed_limit:form": "light",
+    "railway:signal:speed_limit:states": "ID-KAI:9F",
+    "ref": "J50"
+  }
+},
+{
+  "type": "node",
+  "id": 13814081481,
+  "lat": -6.9142973,
+  "lon": 107.5969329,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "backward",
+    "railway:signal:position": "left",
+    "railway:signal:shunting": "ID-KAI",
+    "railway:signal:shunting:form": "light",
+    "railway:signal:shunting:height": "dwarf",
+    "railway:signal:shunting:states": "ID-KAI:6B;ID-KAI:7B",
+    "ref": "L70"
+  }
+},
+{
+  "type": "node",
+  "id": 13814081482,
+  "lat": -6.9144412,
+  "lon": 107.5991060,
+  "tags": {
+    "railway": "switch",
+    "railway:local_operated": "yes",
+    "railway:switch": "default"
+  }
+},
+{
+  "type": "node",
+  "id": 13814081483,
+  "lat": -6.9144394,
+  "lon": 107.5990704,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "forward",
+    "railway:signal:position": "right",
+    "railway:signal:shunting": "ID-KAI",
+    "railway:signal:shunting:form": "light",
+    "railway:signal:shunting:height": "dwarf",
+    "railway:signal:shunting:states": "ID-KAI:6B;ID-KAI:7B",
+    "ref": "L92"
+  }
+},
+{
+  "type": "node",
+  "id": 13815591843,
+  "lat": -6.9139569,
+  "lon": 107.6026440,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "backward",
+    "railway:signal:position": "left",
+    "railway:signal:shunting": "ID-KAI",
+    "railway:signal:shunting:form": "light",
+    "railway:signal:shunting:height": "dwarf",
+    "railway:signal:shunting:states": "ID-KAI:6B;ID-KAI:7B"
+  }
+},
+{
+  "type": "node",
+  "id": 13815591844,
+  "lat": -6.9138717,
+  "lon": 107.5925095,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "backward",
+    "railway:signal:distant": "ID-KAI",
+    "railway:signal:distant:form": "sign",
+    "railway:signal:distant:height": "normal",
+    "railway:signal:distant:states": "ID-KAI:8C",
+    "railway:signal:position": "right"
+  }
+},
+{
+  "type": "node",
+  "id": 13815591845,
+  "lat": -6.9140814,
+  "lon": 107.5936764,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "forward",
+    "railway:signal:main_repeated": "ID-KAI",
+    "railway:signal:main_repeated:form": "light",
+    "railway:signal:main_repeated:height": "normal",
+    "railway:signal:main_repeated:states": "ID-KAI:9C1;ID-KAI:9C3",
+    "railway:signal:position": "right",
+    "ref": "UJ90"
+  }
+},
+{
+  "type": "way",
+  "id": 26746949,
+  "bounds": {
+    "minlat": -6.9140673,
+    "minlon": 107.6009829,
+    "maxlat": -6.9139216,
+    "maxlon": 107.6029523
+  },
+  "nodes": [
+    8385451874,
+    13814081437,
+    2628264166,
+    2628264163,
+    8385451879,
+    13814068884,
+    293384523,
+    13814081452,
+    8385451880,
+    8385451883
+  ],
+  "geometry": [
+    { "lat": -6.9140673, "lon": 107.6029523 },
+    { "lat": -6.9139956, "lon": 107.6025875 },
+    { "lat": -6.9139697, "lon": 107.6024367 },
+    { "lat": -6.9139411, "lon": 107.6021602 },
+    { "lat": -6.9139240, "lon": 107.6018238 },
+    { "lat": -6.9139216, "lon": 107.6017106 },
+    { "lat": -6.9139285, "lon": 107.6015788 },
+    { "lat": -6.9139517, "lon": 107.6013918 },
+    { "lat": -6.9139560, "lon": 107.6013574 },
+    { "lat": -6.9140111, "lon": 107.6009829 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "30",
+    "railway": "rail",
+    "railway:track_ref": "9",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 32388793,
+  "bounds": {
+    "minlat": -6.9149725,
+    "minlon": 107.6070142,
+    "maxlat": -6.9149045,
+    "maxlon": 107.6075265
+  },
+  "nodes": [
+    291542648,
+    364365478
+  ],
+  "geometry": [
+    { "lat": -6.9149045, "lon": 107.6070142 },
+    { "lat": -6.9149725, "lon": 107.6075265 }
+  ],
+  "tags": {
+    "bridge": "yes",
+    "electrified": "no",
+    "gauge": "1067",
+    "layer": "1",
+    "maxspeed": "100",
+    "name": "Jalur Kereta Api Padalarang–Kasugihan",
+    "railway": "rail",
+    "railway:preferred_direction": "forward",
+    "usage": "main",
+    "wikidata": "Q25630218",
+    "wikipedia": "id:Jalur kereta api Padalarang–Kasugihan"
+  }
+},
+{
+  "type": "way",
+  "id": 257229244,
+  "bounds": {
+    "minlat": -6.9142099,
+    "minlon": 107.5998951,
+    "maxlat": -6.9141545,
+    "maxlon": 107.6014181
+  },
+  "nodes": [
+    10694245348,
+    2628273440,
+    13814068877,
+    2628273441,
+    2628273442,
+    2628273443
+  ],
+  "geometry": [
+    { "lat": -6.9141644, "lon": 107.6014181 },
+    { "lat": -6.9141545, "lon": 107.6012008 },
+    { "lat": -6.9141554, "lon": 107.6010468 },
+    { "lat": -6.9141626, "lon": 107.6009035 },
+    { "lat": -6.9141834, "lon": 107.6003595 },
+    { "lat": -6.9142099, "lon": 107.5998951 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "railway": "rail",
+    "railway:track_ref": "5",
+    "service": "siding"
+  }
+},
+{
+  "type": "way",
+  "id": 257229245,
+  "bounds": {
+    "minlat": -6.9142408,
+    "minlon": 107.5984015,
+    "maxlat": -6.9141437,
+    "maxlon": 107.6003384
+  },
+  "nodes": [
+    8385468263,
+    8385468224,
+    11262097593,
+    8385451903,
+    2628273444
+  ],
+  "geometry": [
+    { "lat": -6.9142408, "lon": 107.5984015 },
+    { "lat": -6.9142181, "lon": 107.5988469 },
+    { "lat": -6.9141833, "lon": 107.5995253 },
+    { "lat": -6.9141675, "lon": 107.5998978 },
+    { "lat": -6.9141437, "lon": 107.6003384 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "railway": "rail",
+    "service": "siding"
+  }
+},
+{
+  "type": "way",
+  "id": 257229246,
+  "bounds": {
+    "minlat": -6.9140609,
+    "minlon": 107.6009316,
+    "maxlat": -6.9140340,
+    "maxlon": 107.6015359
+  },
+  "nodes": [
+    8385451882,
+    13814081450,
+    13814081449,
+    8385451884,
+    8385451881,
+    11262097606
+  ],
+  "geometry": [
+    { "lat": -6.9140609, "lon": 107.6009316 },
+    { "lat": -6.9140543, "lon": 107.6010439 },
+    { "lat": -6.9140455, "lon": 107.6011959 },
+    { "lat": -6.9140421, "lon": 107.6012540 },
+    { "lat": -6.9140346, "lon": 107.6014530 },
+    { "lat": -6.9140340, "lon": 107.6015359 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "railway": "rail",
+    "service": "siding"
+  }
+},
+{
+  "type": "way",
+  "id": 257229247,
+  "bounds": {
+    "minlat": -6.9143467,
+    "minlon": 107.5972661,
+    "maxlat": -6.9142215,
+    "maxlon": 107.6006265
+  },
+  "nodes": [
+    8385451858,
+    8385468249,
+    8385468248,
+    8385468247,
+    293384547,
+    8385468246,
+    11262097575,
+    8385468245,
+    8385468244,
+    8385468243,
+    8385468242,
+    8385468241
+  ],
+  "geometry": [
+    { "lat": -6.9142215, "lon": 107.5972661 },
+    { "lat": -6.9142311, "lon": 107.5974428 },
+    { "lat": -6.9142591, "lon": 107.5979412 },
+    { "lat": -6.9142842, "lon": 107.5983578 },
+    { "lat": -6.9143026, "lon": 107.5987551 },
+    { "lat": -6.9143168, "lon": 107.5990086 },
+    { "lat": -6.9143403, "lon": 107.5994164 },
+    { "lat": -6.9143467, "lon": 107.5996162 },
+    { "lat": -6.9143399, "lon": 107.5998278 },
+    { "lat": -6.9143239, "lon": 107.6001798 },
+    { "lat": -6.9143322, "lon": 107.6003975 },
+    { "lat": -6.9143385, "lon": 107.6006265 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "passenger_lines": "2",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 257229250,
+  "bounds": {
+    "minlat": -6.9142541,
+    "minlon": 107.5824711,
+    "maxlat": -6.9101568,
+    "maxlon": 107.5965660
+  },
+  "nodes": [
+    8096603241,
+    13815677742,
+    8096603240,
+    8385473819,
+    8385465916,
+    8096603239,
+    8385468217,
+    8385451916,
+    8385451915,
+    8385451914,
+    8385451913,
+    8385468281,
+    12310058025,
+    8385468283,
+    8385468284,
+    13430721462,
+    8385468285,
+    2628273481,
+    8385468295,
+    13815132576,
+    2628273483,
+    8385468294,
+    2628273484,
+    13815591844,
+    8385468297,
+    2628273485,
+    2628273486,
+    13370047723,
+    13816025888,
+    13814081478,
+    2628273487,
+    8385468296,
+    13370047724,
+    11262097577,
+    2628273489
+  ],
+  "geometry": [
+    { "lat": -6.9101568, "lon": 107.5824711 },
+    { "lat": -6.9111735, "lon": 107.5840006 },
+    { "lat": -6.9126687, "lon": 107.5862500 },
+    { "lat": -6.9128877, "lon": 107.5866203 },
+    { "lat": -6.9130206, "lon": 107.5868809 },
+    { "lat": -6.9131347, "lon": 107.5871392 },
+    { "lat": -6.9132793, "lon": 107.5874574 },
+    { "lat": -6.9133946, "lon": 107.5877513 },
+    { "lat": -6.9135161, "lon": 107.5881139 },
+    { "lat": -6.9135820, "lon": 107.5883273 },
+    { "lat": -6.9136318, "lon": 107.5885123 },
+    { "lat": -6.9137155, "lon": 107.5888428 },
+    { "lat": -6.9137752, "lon": 107.5891542 },
+    { "lat": -6.9138023, "lon": 107.5893269 },
+    { "lat": -6.9138364, "lon": 107.5895532 },
+    { "lat": -6.9138590, "lon": 107.5898506 },
+    { "lat": -6.9138627, "lon": 107.5898994 },
+    { "lat": -6.9138786, "lon": 107.5903134 },
+    { "lat": -6.9138875, "lon": 107.5906473 },
+    { "lat": -6.9138803, "lon": 107.5909075 },
+    { "lat": -6.9138561, "lon": 107.5913930 },
+    { "lat": -6.9138443, "lon": 107.5918608 },
+    { "lat": -6.9138549, "lon": 107.5922265 },
+    { "lat": -6.9138717, "lon": 107.5925095 },
+    { "lat": -6.9138794, "lon": 107.5926391 },
+    { "lat": -6.9139084, "lon": 107.5929860 },
+    { "lat": -6.9139329, "lon": 107.5932479 },
+    { "lat": -6.9140283, "lon": 107.5938671 },
+    { "lat": -6.9140923, "lon": 107.5942563 },
+    { "lat": -6.9141795, "lon": 107.5947867 },
+    { "lat": -6.9142005, "lon": 107.5949544 },
+    { "lat": -6.9142250, "lon": 107.5952405 },
+    { "lat": -6.9142448, "lon": 107.5954939 },
+    { "lat": -6.9142515, "lon": 107.5957624 },
+    { "lat": -6.9142541, "lon": 107.5965660 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "110",
+    "name": "Jalur Kereta Api Padalarang–Kasugihan",
+    "railway": "rail",
+    "usage": "main",
+    "wikidata": "Q25630218",
+    "wikipedia": "id:Jalur kereta api Padalarang–Kasugihan"
+  }
+},
+{
+  "type": "way",
+  "id": 257229253,
+  "bounds": {
+    "minlat": -6.9143734,
+    "minlon": 107.5982978,
+    "maxlat": -6.9129856,
+    "maxlon": 107.6038411
+  },
+  "nodes": [
+    11262097590,
+    13520064989,
+    11262097589,
+    13814081422,
+    8385451873,
+    13520064987,
+    2628264168,
+    2628273494,
+    13814081438,
+    13815591843,
+    13814081439,
+    8385451886,
+    2628273495,
+    13814081440,
+    2628273504,
+    13814081441,
+    2628273496,
+    11262097561,
+    11262097560,
+    293384525,
+    10770017084,
+    293384526,
+    13528591962,
+    293384527,
+    293384528
+  ],
+  "geometry": [
+    { "lat": -6.9143734, "lon": 107.6038411 },
+    { "lat": -6.9143317, "lon": 107.6037338 },
+    { "lat": -6.9142592, "lon": 107.6035457 },
+    { "lat": -6.9142446, "lon": 107.6035077 },
+    { "lat": -6.9142165, "lon": 107.6034329 },
+    { "lat": -6.9141769, "lon": 107.6033301 },
+    { "lat": -6.9141041, "lon": 107.6031321 },
+    { "lat": -6.9139951, "lon": 107.6027940 },
+    { "lat": -6.9139632, "lon": 107.6026728 },
+    { "lat": -6.9139569, "lon": 107.6026440 },
+    { "lat": -6.9139396, "lon": 107.6025652 },
+    { "lat": -6.9139188, "lon": 107.6024430 },
+    { "lat": -6.9138973, "lon": 107.6023059 },
+    { "lat": -6.9138671, "lon": 107.6021286 },
+    { "lat": -6.9138394, "lon": 107.6019816 },
+    { "lat": -6.9138166, "lon": 107.6018565 },
+    { "lat": -6.9136957, "lon": 107.6010748 },
+    { "lat": -6.9136332, "lon": 107.6008700 },
+    { "lat": -6.9135582, "lon": 107.6006757 },
+    { "lat": -6.9135090, "lon": 107.6005734 },
+    { "lat": -6.9133135, "lon": 107.6001451 },
+    { "lat": -6.9132838, "lon": 107.6000745 },
+    { "lat": -6.9132577, "lon": 107.5999885 },
+    { "lat": -6.9132091, "lon": 107.5996830 },
+    { "lat": -6.9129856, "lon": 107.5982978 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "30",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 257229254,
+  "bounds": {
+    "minlat": -6.9135822,
+    "minlon": 107.5999828,
+    "maxlat": -6.9132946,
+    "maxlon": 107.6006501
+  },
+  "nodes": [
+    12553010402,
+    2628273501,
+    12552986400,
+    12553010401,
+    2628273502,
+    2628273503
+  ],
+  "geometry": [
+    { "lat": -6.9132946, "lon": 107.5999828 },
+    { "lat": -6.9132983, "lon": 107.5999929 },
+    { "lat": -6.9133100, "lon": 107.6000373 },
+    { "lat": -6.9133410, "lon": 107.6001196 },
+    { "lat": -6.9133835, "lon": 107.6002162 },
+    { "lat": -6.9135822, "lon": 107.6006501 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 257229256,
+  "bounds": {
+    "minlat": -6.9140827,
+    "minlon": 107.5984888,
+    "maxlat": -6.9137644,
+    "maxlon": 107.6019816
+  },
+  "nodes": [
+    2628273507,
+    10770017083,
+    2628273508,
+    10770017082,
+    2628273509,
+    2628273510,
+    8385451894,
+    2628273526,
+    2628273511,
+    2628273550,
+    2628273515,
+    2628273513,
+    8385451887,
+    2628273504
+  ],
+  "geometry": [
+    { "lat": -6.9140827, "lon": 107.5984888 },
+    { "lat": -6.9140596, "lon": 107.5988496 },
+    { "lat": -6.9140463, "lon": 107.5989242 },
+    { "lat": -6.9140321, "lon": 107.5989992 },
+    { "lat": -6.9139579, "lon": 107.5993196 },
+    { "lat": -6.9137943, "lon": 107.5999437 },
+    { "lat": -6.9137746, "lon": 107.6002049 },
+    { "lat": -6.9137644, "lon": 107.6005563 },
+    { "lat": -6.9137685, "lon": 107.6007729 },
+    { "lat": -6.9137791, "lon": 107.6009427 },
+    { "lat": -6.9138035, "lon": 107.6014543 },
+    { "lat": -6.9138142, "lon": 107.6016894 },
+    { "lat": -6.9138277, "lon": 107.6018154 },
+    { "lat": -6.9138394, "lon": 107.6019816 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 257229257,
+  "bounds": {
+    "minlat": -6.9138538,
+    "minlon": 107.6004969,
+    "maxlat": -6.9138035,
+    "maxlon": 107.6014543
+  },
+  "nodes": [
+    12552986398,
+    8385451897,
+    8385451867,
+    2628273516,
+    2628273515
+  ],
+  "geometry": [
+    { "lat": -6.9138538, "lon": 107.6004969 },
+    { "lat": -6.9138483, "lon": 107.6006244 },
+    { "lat": -6.9138241, "lon": 107.6009025 },
+    { "lat": -6.9138075, "lon": 107.6012595 },
+    { "lat": -6.9138035, "lon": 107.6014543 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 257229258,
+  "bounds": {
+    "minlat": -6.9141204,
+    "minlon": 107.5992093,
+    "maxlat": -6.9138075,
+    "maxlon": 107.6012595
+  },
+  "nodes": [
+    2628273516,
+    8385451868,
+    8385451898,
+    2628273522,
+    8385451869,
+    8385451870,
+    2628273521,
+    11262097594,
+    12552986393,
+    11262097595,
+    12552986395
+  ],
+  "geometry": [
+    { "lat": -6.9138075, "lon": 107.6012595 },
+    { "lat": -6.9138329, "lon": 107.6010554 },
+    { "lat": -6.9138774, "lon": 107.6008759 },
+    { "lat": -6.9139688, "lon": 107.6006081 },
+    { "lat": -6.9140320, "lon": 107.6004019 },
+    { "lat": -6.9140670, "lon": 107.6001621 },
+    { "lat": -6.9140985, "lon": 107.5998139 },
+    { "lat": -6.9141081, "lon": 107.5996383 },
+    { "lat": -6.9141154, "lon": 107.5994863 },
+    { "lat": -6.9141197, "lon": 107.5993763 },
+    { "lat": -6.9141204, "lon": 107.5992093 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 257229259,
+  "bounds": {
+    "minlat": -6.9141745,
+    "minlon": 107.5984888,
+    "maxlat": -6.9140827,
+    "maxlon": 107.6003645
+  },
+  "nodes": [
+    2628273507,
+    11262097601,
+    11262097600,
+    11262097599,
+    11262097598,
+    11262097597,
+    13520066463
+  ],
+  "geometry": [
+    { "lat": -6.9140827, "lon": 107.5984888 },
+    { "lat": -6.9141355, "lon": 107.5986739 },
+    { "lat": -6.9141640, "lon": 107.5988163 },
+    { "lat": -6.9141745, "lon": 107.5989328 },
+    { "lat": -6.9141659, "lon": 107.5992578 },
+    { "lat": -6.9141282, "lon": 107.5999291 },
+    { "lat": -6.9141053, "lon": 107.6003645 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 257229260,
+  "bounds": {
+    "minlat": -6.9138164,
+    "minlon": 107.5994015,
+    "maxlat": -6.9137347,
+    "maxlon": 107.6005563
+  },
+  "nodes": [
+    12552986397,
+    2628273524,
+    12553010417,
+    2628273540,
+    13528591958,
+    2628273525,
+    2628273526
+  ],
+  "geometry": [
+    { "lat": -6.9138164, "lon": 107.5994015 },
+    { "lat": -6.9137814, "lon": 107.5995688 },
+    { "lat": -6.9137572, "lon": 107.5997244 },
+    { "lat": -6.9137347, "lon": 107.5999077 },
+    { "lat": -6.9137398, "lon": 107.6000553 },
+    { "lat": -6.9137469, "lon": 107.6002598 },
+    { "lat": -6.9137644, "lon": 107.6005563 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 257229261,
+  "bounds": {
+    "minlat": -6.9137338,
+    "minlon": 107.5999433,
+    "maxlat": -6.9135509,
+    "maxlon": 107.6010625
+  },
+  "nodes": [
+    2628273529,
+    2628273527,
+    12553010412
+  ],
+  "geometry": [
+    { "lat": -6.9137338, "lon": 107.6010625 },
+    { "lat": -6.9136029, "lon": 107.6002439 },
+    { "lat": -6.9135509, "lon": 107.5999433 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 257229262,
+  "bounds": {
+    "minlat": -6.9136800,
+    "minlon": 107.5999673,
+    "maxlat": -6.9133953,
+    "maxlon": 107.6008405
+  },
+  "nodes": [
+    8385451889,
+    8385451890,
+    13528591961,
+    2628273530,
+    12553010407
+  ],
+  "geometry": [
+    { "lat": -6.9136800, "lon": 107.6008405 },
+    { "lat": -6.9135747, "lon": 107.6004921 },
+    { "lat": -6.9134888, "lon": 107.6002881 },
+    { "lat": -6.9134501, "lon": 107.6001749 },
+    { "lat": -6.9133953, "lon": 107.5999673 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 257229264,
+  "bounds": {
+    "minlat": -6.9136339,
+    "minlon": 107.5999483,
+    "maxlat": -6.9135185,
+    "maxlon": 107.6006268
+  },
+  "nodes": [
+    12553010409,
+    2628273532
+  ],
+  "geometry": [
+    { "lat": -6.9135185, "lon": 107.5999483 },
+    { "lat": -6.9136339, "lon": 107.6006268 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 257229265,
+  "bounds": {
+    "minlat": -6.9137347,
+    "minlon": 107.5986053,
+    "maxlat": -6.9133252,
+    "maxlon": 107.5999077
+  },
+  "nodes": [
+    2628273536,
+    2628273537,
+    13520066494,
+    2628273538,
+    11262097547,
+    11262097549,
+    10693460293,
+    11262097551,
+    2628273540
+  ],
+  "geometry": [
+    { "lat": -6.9133252, "lon": 107.5986053 },
+    { "lat": -6.9133756, "lon": 107.5987431 },
+    { "lat": -6.9134665, "lon": 107.5989419 },
+    { "lat": -6.9135783, "lon": 107.5991548 },
+    { "lat": -6.9136421, "lon": 107.5992829 },
+    { "lat": -6.9136920, "lon": 107.5994439 },
+    { "lat": -6.9137241, "lon": 107.5995840 },
+    { "lat": -6.9137268, "lon": 107.5996653 },
+    { "lat": -6.9137347, "lon": 107.5999077 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 257229271,
+  "bounds": {
+    "minlat": -6.9145363,
+    "minlon": 107.5985123,
+    "maxlat": -6.9143740,
+    "maxlon": 107.6009357
+  },
+  "nodes": [
+    2628273555,
+    2628273556,
+    13814081482,
+    13814081483,
+    8385468235,
+    11262097578,
+    8385468237,
+    8385468238
+  ],
+  "geometry": [
+    { "lat": -6.9145363, "lon": 107.6009357 },
+    { "lat": -6.9144620, "lon": 107.5995220 },
+    { "lat": -6.9144412, "lon": 107.5991060 },
+    { "lat": -6.9144394, "lon": 107.5990704 },
+    { "lat": -6.9144376, "lon": 107.5990349 },
+    { "lat": -6.9144296, "lon": 107.5989475 },
+    { "lat": -6.9144036, "lon": 107.5987179 },
+    { "lat": -6.9143740, "lon": 107.5985123 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 257229923,
+  "bounds": {
+    "minlat": -6.9141327,
+    "minlon": 107.5932212,
+    "maxlat": -6.9138187,
+    "maxlon": 107.5960140
+  },
+  "nodes": [
+    2628286345,
+    8385451853,
+    8385451856,
+    2628286347,
+    13370047719,
+    2628286349,
+    13370047716,
+    2628286351
+  ],
+  "geometry": [
+    { "lat": -6.9141327, "lon": 107.5960140 },
+    { "lat": -6.9141035, "lon": 107.5958800 },
+    { "lat": -6.9140590, "lon": 107.5957020 },
+    { "lat": -6.9140296, "lon": 107.5955221 },
+    { "lat": -6.9138400, "lon": 107.5941399 },
+    { "lat": -6.9138206, "lon": 107.5939332 },
+    { "lat": -6.9138187, "lon": 107.5937256 },
+    { "lat": -6.9138312, "lon": 107.5932212 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 257229924,
+  "bounds": {
+    "minlat": -6.9141704,
+    "minlon": 107.5934351,
+    "maxlat": -6.9138526,
+    "maxlon": 107.5963087
+  },
+  "nodes": [
+    2628286352,
+    2628286354,
+    13370047717,
+    13370047718,
+    2628286356,
+    13370047704,
+    13370047705,
+    2628286345,
+    8385451865
+  ],
+  "geometry": [
+    { "lat": -6.9138586, "lon": 107.5934351 },
+    { "lat": -6.9138526, "lon": 107.5937215 },
+    { "lat": -6.9138544, "lon": 107.5939194 },
+    { "lat": -6.9138769, "lon": 107.5941322 },
+    { "lat": -6.9140072, "lon": 107.5951015 },
+    { "lat": -6.9140775, "lon": 107.5956107 },
+    { "lat": -6.9141031, "lon": 107.5957846 },
+    { "lat": -6.9141327, "lon": 107.5960140 },
+    { "lat": -6.9141704, "lon": 107.5963087 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 257229925,
+  "bounds": {
+    "minlat": -6.9140590,
+    "minlon": 107.5927705,
+    "maxlat": -6.9137780,
+    "maxlon": 107.5957020
+  },
+  "nodes": [
+    13370047715,
+    13370047714,
+    13370047713,
+    13370047712,
+    13370047711,
+    13370047710,
+    13370047709,
+    2628286358,
+    2628286359,
+    8385451857,
+    8385451856
+  ],
+  "geometry": [
+    { "lat": -6.9138170, "lon": 107.5927705 },
+    { "lat": -6.9138162, "lon": 107.5928029 },
+    { "lat": -6.9138132, "lon": 107.5929816 },
+    { "lat": -6.9137941, "lon": 107.5932427 },
+    { "lat": -6.9137818, "lon": 107.5936324 },
+    { "lat": -6.9137780, "lon": 107.5937803 },
+    { "lat": -6.9137818, "lon": 107.5939575 },
+    { "lat": -6.9137903, "lon": 107.5940833 },
+    { "lat": -6.9139629, "lon": 107.5953129 },
+    { "lat": -6.9139988, "lon": 107.5954708 },
+    { "lat": -6.9140590, "lon": 107.5957020 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 257229927,
+  "bounds": {
+    "minlat": -6.9144479,
+    "minlon": 107.6016961,
+    "maxlat": -6.9144001,
+    "maxlon": 107.6027995
+  },
+  "nodes": [
+    10694245339,
+    11181861170
+  ],
+  "geometry": [
+    { "lat": -6.9144479, "lon": 107.6027995 },
+    { "lat": -6.9144001, "lon": 107.6016961 }
+  ],
+  "tags": {
+    "covered": "yes",
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "30",
+    "railway": "rail",
+    "railway:track_ref": "2",
+    "service": "siding",
+    "wikidata": "Q25630218"
+  }
+},
+{
+  "type": "way",
+  "id": 321027466,
+  "bounds": {
+    "minlat": -6.9149339,
+    "minlon": 107.6070186,
+    "maxlat": -6.9148712,
+    "maxlon": 107.6075315
+  },
+  "nodes": [
+    2628273465,
+    3277420351
+  ],
+  "geometry": [
+    { "lat": -6.9149339, "lon": 107.6075315 },
+    { "lat": -6.9148712, "lon": 107.6070186 }
+  ],
+  "tags": {
+    "bridge": "yes",
+    "electrified": "no",
+    "gauge": "1067",
+    "layer": "1",
+    "maxspeed": "100",
+    "name": "Jalur Kereta Api Padalarang–Kasugihan",
+    "railway": "rail",
+    "railway:preferred_direction": "forward",
+    "usage": "main",
+    "wikidata": "Q25630218",
+    "wikipedia": "id:Jalur kereta api Padalarang–Kasugihan"
+  }
+},
+{
+  "type": "way",
+  "id": 321027467,
+  "bounds": {
+    "minlat": -6.9226335,
+    "minlon": 107.6075315,
+    "maxlat": -6.9149339,
+    "maxlon": 107.6400262
+  },
+  "nodes": [
+    5332742573,
+    12460394674,
+    13275183384,
+    4167170892,
+    13275183386,
+    11549081614,
+    13275183388,
+    12462455732,
+    4167170921,
+    4167170920,
+    12462455733,
+    13366619338,
+    7835805289,
+    12462455734,
+    8096603283,
+    8096603284,
+    10171576861,
+    13366619341,
+    12462455736,
+    4167170923,
+    13366619342,
+    4167170891,
+    11879169564,
+    11879169562,
+    13395369558,
+    13366619344,
+    4167170924,
+    2628273466,
+    2628273465
+  ],
+  "geometry": [
+    { "lat": -6.9226335, "lon": 107.6400262 },
+    { "lat": -6.9221646, "lon": 107.6387414 },
+    { "lat": -6.9216508, "lon": 107.6373362 },
+    { "lat": -6.9212901, "lon": 107.6362692 },
+    { "lat": -6.9210925, "lon": 107.6355755 },
+    { "lat": -6.9209830, "lon": 107.6351989 },
+    { "lat": -6.9208687, "lon": 107.6347542 },
+    { "lat": -6.9204991, "lon": 107.6332373 },
+    { "lat": -6.9199916, "lon": 107.6311255 },
+    { "lat": -6.9199664, "lon": 107.6310227 },
+    { "lat": -6.9199235, "lon": 107.6308410 },
+    { "lat": -6.9192520, "lon": 107.6280969 },
+    { "lat": -6.9185887, "lon": 107.6253948 },
+    { "lat": -6.9185164, "lon": 107.6250883 },
+    { "lat": -6.9184772, "lon": 107.6249300 },
+    { "lat": -6.9184502, "lon": 107.6248417 },
+    { "lat": -6.9183342, "lon": 107.6243909 },
+    { "lat": -6.9178214, "lon": 107.6222945 },
+    { "lat": -6.9170804, "lon": 107.6191640 },
+    { "lat": -6.9168277, "lon": 107.6181796 },
+    { "lat": -6.9164910, "lon": 107.6168290 },
+    { "lat": -6.9157591, "lon": 107.6138145 },
+    { "lat": -6.9157287, "lon": 107.6136515 },
+    { "lat": -6.9156227, "lon": 107.6130062 },
+    { "lat": -6.9153893, "lon": 107.6111930 },
+    { "lat": -6.9153520, "lon": 107.6109029 },
+    { "lat": -6.9152669, "lon": 107.6102046 },
+    { "lat": -6.9151162, "lon": 107.6090001 },
+    { "lat": -6.9149339, "lon": 107.6075315 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "100",
+    "name": "Jalur Kereta Api Padalarang–Kasugihan",
+    "railway": "rail",
+    "railway:preferred_direction": "forward",
+    "usage": "main",
+    "wikidata": "Q25630218",
+    "wikipedia": "id:Jalur kereta api Padalarang–Kasugihan"
+  }
+},
+{
+  "type": "way",
+  "id": 339334986,
+  "bounds": {
+    "minlat": -6.9145695,
+    "minlon": 107.6031645,
+    "maxlat": -6.9144037,
+    "maxlon": 107.6044728
+  },
+  "nodes": [
+    8385468349,
+    8385468350,
+    13814081418,
+    13520064990,
+    293384433,
+    13530249441,
+    11262097591,
+    2628273461
+  ],
+  "geometry": [
+    { "lat": -6.9144037, "lon": 107.6031645 },
+    { "lat": -6.9144191, "lon": 107.6033550 },
+    { "lat": -6.9144350, "lon": 107.6034694 },
+    { "lat": -6.9144446, "lon": 107.6035311 },
+    { "lat": -6.9144856, "lon": 107.6037908 },
+    { "lat": -6.9145017, "lon": 107.6039256 },
+    { "lat": -6.9145269, "lon": 107.6041304 },
+    { "lat": -6.9145695, "lon": 107.6044728 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "name": "Jalur Kereta Api Padalarang–Kasugihan",
+    "railway": "rail",
+    "usage": "main",
+    "wikidata": "Q25630218",
+    "wikipedia": "id:Jalur kereta api Padalarang–Kasugihan"
+  }
+},
+{
+  "type": "way",
+  "id": 551797191,
+  "bounds": {
+    "minlat": -6.9204198,
+    "minlon": 107.6075265,
+    "maxlat": -6.9149725,
+    "maxlon": 107.6327508
+  },
+  "nodes": [
+    364365478,
+    291544822,
+    677319387,
+    13395369559,
+    11879169563,
+    291546120,
+    2035771553,
+    291546121,
+    291542653,
+    2520790650,
+    12462455737,
+    291546122,
+    10171576860,
+    5581620629,
+    5391666907,
+    13366619339,
+    1228645053,
+    11549081613,
+    12462455735,
+    11549081612,
+    3277871764,
+    3277871765,
+    10548309650
+  ],
+  "geometry": [
+    { "lat": -6.9149725, "lon": 107.6075265 },
+    { "lat": -6.9151478, "lon": 107.6089998 },
+    { "lat": -6.9152943, "lon": 107.6102025 },
+    { "lat": -6.9154231, "lon": 107.6111898 },
+    { "lat": -6.9156542, "lon": 107.6129961 },
+    { "lat": -6.9157614, "lon": 107.6136413 },
+    { "lat": -6.9157964, "lon": 107.6138075 },
+    { "lat": -6.9160277, "lon": 107.6147193 },
+    { "lat": -6.9165239, "lon": 107.6168127 },
+    { "lat": -6.9168575, "lon": 107.6181745 },
+    { "lat": -6.9171032, "lon": 107.6191691 },
+    { "lat": -6.9178605, "lon": 107.6222841 },
+    { "lat": -6.9183770, "lon": 107.6244142 },
+    { "lat": -6.9184742, "lon": 107.6247908 },
+    { "lat": -6.9185008, "lon": 107.6248913 },
+    { "lat": -6.9185490, "lon": 107.6250861 },
+    { "lat": -6.9190593, "lon": 107.6270969 },
+    { "lat": -6.9191040, "lon": 107.6272938 },
+    { "lat": -6.9192037, "lon": 107.6277504 },
+    { "lat": -6.9192716, "lon": 107.6280545 },
+    { "lat": -6.9200044, "lon": 107.6310123 },
+    { "lat": -6.9200314, "lon": 107.6311165 },
+    { "lat": -6.9204198, "lon": 107.6327508 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "100",
+    "name": "Jalur Kereta Api Padalarang–Kasugihan",
+    "railway": "rail",
+    "railway:preferred_direction": "forward",
+    "source": "Yahoo hires",
+    "usage": "main",
+    "wikidata": "Q25630218",
+    "wikipedia": "id:Jalur kereta api Padalarang–Kasugihan"
+  }
+},
+{
+  "type": "way",
+  "id": 561410148,
+  "bounds": {
+    "minlat": -6.9138866,
+    "minlon": 107.5823115,
+    "maxlat": -6.9100065,
+    "maxlon": 107.5953743
+  },
+  "nodes": [
+    11270915382,
+    11270915381,
+    8385468271,
+    8385468270,
+    13816025893,
+    8385468269,
+    2628286335,
+    8385468268,
+    2628286333,
+    13430721457,
+    13430721456,
+    13815132577,
+    8385468293,
+    8385468292,
+    8385468291,
+    13430721463,
+    8385468290,
+    8385468289,
+    13377943640,
+    8385468287,
+    8385468286,
+    13457557979,
+    291546111,
+    8385451911,
+    8385468218,
+    291546110,
+    8385451904,
+    8385473817,
+    291546109,
+    13815677741,
+    8385465908
+  ],
+  "geometry": [
+    { "lat": -6.9138866, "lon": 107.5953743 },
+    { "lat": -6.9138203, "lon": 107.5950278 },
+    { "lat": -6.9137747, "lon": 107.5947464 },
+    { "lat": -6.9137454, "lon": 107.5945033 },
+    { "lat": -6.9137215, "lon": 107.5941968 },
+    { "lat": -6.9137199, "lon": 107.5941769 },
+    { "lat": -6.9137045, "lon": 107.5937647 },
+    { "lat": -6.9137127, "lon": 107.5932735 },
+    { "lat": -6.9137683, "lon": 107.5922203 },
+    { "lat": -6.9137914, "lon": 107.5918462 },
+    { "lat": -6.9138216, "lon": 107.5913880 },
+    { "lat": -6.9138488, "lon": 107.5909064 },
+    { "lat": -6.9138564, "lon": 107.5906437 },
+    { "lat": -6.9138475, "lon": 107.5903176 },
+    { "lat": -6.9138289, "lon": 107.5899116 },
+    { "lat": -6.9138245, "lon": 107.5898508 },
+    { "lat": -6.9138031, "lon": 107.5895579 },
+    { "lat": -6.9137658, "lon": 107.5893283 },
+    { "lat": -6.9137383, "lon": 107.5891558 },
+    { "lat": -6.9136821, "lon": 107.5888497 },
+    { "lat": -6.9136074, "lon": 107.5885382 },
+    { "lat": -6.9135408, "lon": 107.5883052 },
+    { "lat": -6.9134851, "lon": 107.5881192 },
+    { "lat": -6.9133639, "lon": 107.5877630 },
+    { "lat": -6.9132465, "lon": 107.5874664 },
+    { "lat": -6.9131062, "lon": 107.5871491 },
+    { "lat": -6.9129894, "lon": 107.5868951 },
+    { "lat": -6.9128520, "lon": 107.5866334 },
+    { "lat": -6.9126314, "lon": 107.5862534 },
+    { "lat": -6.9111443, "lon": 107.5840202 },
+    { "lat": -6.9100065, "lon": 107.5823115 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "110",
+    "name": "Jalur Kereta Api Padalarang–Kasugihan",
+    "railway": "rail",
+    "usage": "main",
+    "wikidata": "Q25630218",
+    "wikipedia": "id:Jalur kereta api Padalarang–Kasugihan"
+  }
+},
+{
+  "type": "way",
+  "id": 761096091,
+  "bounds": {
+    "minlat": -6.9138142,
+    "minlon": 107.5999542,
+    "maxlat": -6.9134802,
+    "maxlon": 107.6016894
+  },
+  "nodes": [
+    2628273513,
+    8385451896,
+    2628273529,
+    8385451889,
+    2628273532,
+    2628273533,
+    12553010408
+  ],
+  "geometry": [
+    { "lat": -6.9138142, "lon": 107.6016894 },
+    { "lat": -6.9137698, "lon": 107.6012845 },
+    { "lat": -6.9137338, "lon": 107.6010625 },
+    { "lat": -6.9136800, "lon": 107.6008405 },
+    { "lat": -6.9136339, "lon": 107.6006268 },
+    { "lat": -6.9135354, "lon": 107.6002728 },
+    { "lat": -6.9134802, "lon": 107.5999542 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 798082486,
+  "bounds": {
+    "minlat": -6.9149045,
+    "minlon": 107.6054281,
+    "maxlat": -6.9146892,
+    "maxlon": 107.6070142
+  },
+  "nodes": [
+    7464347910,
+    13395369561,
+    13395369557,
+    11745878214,
+    12692162085,
+    291542648
+  ],
+  "geometry": [
+    { "lat": -6.9146892, "lon": 107.6054281 },
+    { "lat": -6.9147104, "lon": 107.6055870 },
+    { "lat": -6.9148855, "lon": 107.6068612 },
+    { "lat": -6.9148925, "lon": 107.6069122 },
+    { "lat": -6.9149005, "lon": 107.6069805 },
+    { "lat": -6.9149045, "lon": 107.6070142 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "100",
+    "name": "Jalur Kereta Api Padalarang–Kasugihan",
+    "railway": "rail",
+    "railway:preferred_direction": "forward",
+    "usage": "main",
+    "wikidata": "Q25630218",
+    "wikipedia": "id:Jalur kereta api Padalarang–Kasugihan"
+  }
+},
+{
+  "type": "way",
+  "id": 798082488,
+  "bounds": {
+    "minlat": -6.9146892,
+    "minlon": 107.6048535,
+    "maxlat": -6.9145806,
+    "maxlon": 107.6054281
+  },
+  "nodes": [
+    7464347910,
+    10694245358,
+    2628264176
+  ],
+  "geometry": [
+    { "lat": -6.9146892, "lon": 107.6054281 },
+    { "lat": -6.9146345, "lon": 107.6051379 },
+    { "lat": -6.9145806, "lon": 107.6048535 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "crossover"
+  }
+},
+{
+  "type": "way",
+  "id": 828989404,
+  "bounds": {
+    "minlat": -6.9146465,
+    "minlon": 107.6048491,
+    "maxlat": -6.9146166,
+    "maxlon": 107.6054321
+  },
+  "nodes": [
+    2628273463,
+    10694245358,
+    7464347909
+  ],
+  "geometry": [
+    { "lat": -6.9146465, "lon": 107.6054321 },
+    { "lat": -6.9146345, "lon": 107.6051379 },
+    { "lat": -6.9146166, "lon": 107.6048491 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "crossover"
+  }
+},
+{
+  "type": "way",
+  "id": 902837089,
+  "bounds": {
+    "minlat": -6.9143682,
+    "minlon": 107.5979399,
+    "maxlat": -6.9143007,
+    "maxlon": 107.5984106
+  },
+  "nodes": [
+    8385468257,
+    10694245351,
+    8385468321
+  ],
+  "geometry": [
+    { "lat": -6.9143007, "lon": 107.5979399 },
+    { "lat": -6.9143360, "lon": 107.5981500 },
+    { "lat": -6.9143682, "lon": 107.5984106 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "railway": "rail",
+    "service": "crossover"
+  }
+},
+{
+  "type": "way",
+  "id": 902837090,
+  "bounds": {
+    "minlat": -6.9141035,
+    "minlon": 107.5942728,
+    "maxlat": -6.9137810,
+    "maxlon": 107.5958800
+  },
+  "nodes": [
+    13430721459,
+    13370047708,
+    13370047707,
+    8385451855,
+    8385451854,
+    13370047706,
+    8385451853
+  ],
+  "geometry": [
+    { "lat": -6.9137810, "lon": 107.5942728 },
+    { "lat": -6.9137897, "lon": 107.5943423 },
+    { "lat": -6.9139172, "lon": 107.5952769 },
+    { "lat": -6.9139425, "lon": 107.5953859 },
+    { "lat": -6.9139985, "lon": 107.5955906 },
+    { "lat": -6.9140650, "lon": 107.5957752 },
+    { "lat": -6.9141035, "lon": 107.5958800 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 902837091,
+  "bounds": {
+    "minlat": -6.9142215,
+    "minlon": 107.5938731,
+    "maxlat": -6.9138863,
+    "maxlon": 107.5972661
+  },
+  "nodes": [
+    13370047721,
+    13370047720,
+    8385451860,
+    8385451859,
+    8385451861,
+    8385451865,
+    8385451858
+  ],
+  "geometry": [
+    { "lat": -6.9138863, "lon": 107.5938731 },
+    { "lat": -6.9139163, "lon": 107.5941118 },
+    { "lat": -6.9140481, "lon": 107.5950907 },
+    { "lat": -6.9141346, "lon": 107.5957478 },
+    { "lat": -6.9141640, "lon": 107.5960777 },
+    { "lat": -6.9141704, "lon": 107.5963087 },
+    { "lat": -6.9142215, "lon": 107.5972661 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 902837092,
+  "bounds": {
+    "minlat": -6.9141706,
+    "minlon": 107.5937315,
+    "maxlat": -6.9138972,
+    "maxlon": 107.5960777
+  },
+  "nodes": [
+    13370047722,
+    8385451864,
+    8385451863,
+    8385451862,
+    8385451861
+  ],
+  "geometry": [
+    { "lat": -6.9138972, "lon": 107.5937315 },
+    { "lat": -6.9140934, "lon": 107.5950866 },
+    { "lat": -6.9141586, "lon": 107.5955982 },
+    { "lat": -6.9141706, "lon": 107.5957753 },
+    { "lat": -6.9141640, "lon": 107.5960777 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 902837093,
+  "bounds": {
+    "minlat": -6.9142773,
+    "minlon": 107.5974708,
+    "maxlat": -6.9142408,
+    "maxlon": 107.5984015
+  },
+  "nodes": [
+    2628273490,
+    10694245357,
+    8385468248,
+    10694245356,
+    8385468263
+  ],
+  "geometry": [
+    { "lat": -6.9142773, "lon": 107.5974708 },
+    { "lat": -6.9142707, "lon": 107.5976988 },
+    { "lat": -6.9142591, "lon": 107.5979412 },
+    { "lat": -6.9142482, "lon": 107.5981199 },
+    { "lat": -6.9142408, "lon": 107.5984015 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "name": "Jalur Kereta Api Bandung–Ciroyom–Andir",
+    "railway": "rail",
+    "usage": "branch",
+    "wikidata": "Q25630218"
+  }
+},
+{
+  "type": "way",
+  "id": 902837095,
+  "bounds": {
+    "minlat": -6.9143265,
+    "minlon": 107.5983583,
+    "maxlat": -6.9142787,
+    "maxlon": 107.5993037
+  },
+  "nodes": [
+    8385468260,
+    293384547,
+    10694245355,
+    291546116
+  ],
+  "geometry": [
+    { "lat": -6.9142787, "lon": 107.5993037 },
+    { "lat": -6.9143026, "lon": 107.5987551 },
+    { "lat": -6.9143164, "lon": 107.5985955 },
+    { "lat": -6.9143265, "lon": 107.5983583 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "railway": "rail",
+    "service": "crossover"
+  }
+},
+{
+  "type": "way",
+  "id": 902837096,
+  "bounds": {
+    "minlat": -6.9140673,
+    "minlon": 107.6009829,
+    "maxlat": -6.9139912,
+    "maxlon": 107.6029523
+  },
+  "nodes": [
+    8385451883,
+    8385451878,
+    13814081451,
+    8385451877,
+    13530249439,
+    13814081434,
+    13814081435,
+    8385451876,
+    13814081436,
+    8385451874
+  ],
+  "geometry": [
+    { "lat": -6.9140111, "lon": 107.6009829 },
+    { "lat": -6.9139971, "lon": 107.6012552 },
+    { "lat": -6.9139932, "lon": 107.6013941 },
+    { "lat": -6.9139912, "lon": 107.6014644 },
+    { "lat": -6.9139974, "lon": 107.6016723 },
+    { "lat": -6.9140380, "lon": 107.6024234 },
+    { "lat": -6.9140422, "lon": 107.6025849 },
+    { "lat": -6.9140461, "lon": 107.6027041 },
+    { "lat": -6.9140541, "lon": 107.6028206 },
+    { "lat": -6.9140673, "lon": 107.6029523 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "30",
+    "railway": "rail",
+    "railway:track_ref": "8",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 902837098,
+  "bounds": {
+    "minlat": -6.9137698,
+    "minlon": 107.5999601,
+    "maxlat": -6.9136243,
+    "maxlon": 107.6012845
+  },
+  "nodes": [
+    11262097554,
+    8385451892,
+    8385451893,
+    11262097556,
+    8385451896
+  ],
+  "geometry": [
+    { "lat": -6.9136243, "lon": 107.5999601 },
+    { "lat": -6.9136896, "lon": 107.6003459 },
+    { "lat": -6.9137299, "lon": 107.6006810 },
+    { "lat": -6.9137405, "lon": 107.6008794 },
+    { "lat": -6.9137698, "lon": 107.6012845 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 902837100,
+  "bounds": {
+    "minlat": -6.9144407,
+    "minlon": 107.6033872,
+    "maxlat": -6.9143397,
+    "maxlon": 107.6041139
+  },
+  "nodes": [
+    8385451866,
+    293384518,
+    13814081419,
+    293384674
+  ],
+  "geometry": [
+    { "lat": -6.9144407, "lon": 107.6041139 },
+    { "lat": -6.9143824, "lon": 107.6036991 },
+    { "lat": -6.9143529, "lon": 107.6034836 },
+    { "lat": -6.9143397, "lon": 107.6033872 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "30",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 902837101,
+  "bounds": {
+    "minlat": -6.9143483,
+    "minlon": 107.5978658,
+    "maxlat": -6.9142106,
+    "maxlon": 107.5988511
+  },
+  "nodes": [
+    8385468264,
+    10694245356,
+    8385468247,
+    10694245355,
+    8385468256
+  ],
+  "geometry": [
+    { "lat": -6.9142106, "lon": 107.5978658 },
+    { "lat": -6.9142482, "lon": 107.5981199 },
+    { "lat": -6.9142842, "lon": 107.5983578 },
+    { "lat": -6.9143164, "lon": 107.5985955 },
+    { "lat": -6.9143483, "lon": 107.5988511 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "railway": "rail",
+    "service": "crossover"
+  }
+},
+{
+  "type": "way",
+  "id": 902837102,
+  "bounds": {
+    "minlat": -6.9140297,
+    "minlon": 107.5904352,
+    "maxlat": -6.9140027,
+    "maxlon": 107.5925153
+  },
+  "nodes": [
+    8385468338,
+    8385468335,
+    12058665060,
+    13947932519
+  ],
+  "geometry": [
+    { "lat": -6.9140139, "lon": 107.5925153 },
+    { "lat": -6.9140268, "lon": 107.5919844 },
+    { "lat": -6.9140297, "lon": 107.5913676 },
+    { "lat": -6.9140027, "lon": 107.5904352 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "30",
+    "name": "Jalur Kereta Api Bandung–Ciroyom–Andir",
+    "railway": "rail",
+    "railway:track_ref": "2",
+    "usage": "branch",
+    "wikidata": "Q25630218"
+  }
+},
+{
+  "type": "way",
+  "id": 902837103,
+  "bounds": {
+    "minlat": -6.9143007,
+    "minlon": 107.5974428,
+    "maxlat": -6.9142311,
+    "maxlon": 107.5979399
+  },
+  "nodes": [
+    8385468249,
+    10694245357,
+    8385468257
+  ],
+  "geometry": [
+    { "lat": -6.9142311, "lon": 107.5974428 },
+    { "lat": -6.9142707, "lon": 107.5976988 },
+    { "lat": -6.9143007, "lon": 107.5979399 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 902837104,
+  "bounds": {
+    "minlat": -6.9142181,
+    "minlon": 107.5977241,
+    "maxlat": -6.9141709,
+    "maxlon": 107.5988469
+  },
+  "nodes": [
+    8385468220,
+    13814081454,
+    8385468219,
+    8385468224
+  ],
+  "geometry": [
+    { "lat": -6.9141709, "lon": 107.5977241 },
+    { "lat": -6.9142060, "lon": 107.5984021 },
+    { "lat": -6.9142119, "lon": 107.5985170 },
+    { "lat": -6.9142181, "lon": 107.5988469 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 902837105,
+  "bounds": {
+    "minlat": -6.9144922,
+    "minlon": 107.5995220,
+    "maxlat": -6.9144473,
+    "maxlon": 107.6009387
+  },
+  "nodes": [
+    2628273556,
+    13529434965,
+    8385468231,
+    8385468230,
+    13529434966,
+    13520064973,
+    8385468229
+  ],
+  "geometry": [
+    { "lat": -6.9144620, "lon": 107.5995220 },
+    { "lat": -6.9144572, "lon": 107.5997162 },
+    { "lat": -6.9144542, "lon": 107.5997984 },
+    { "lat": -6.9144491, "lon": 107.5999212 },
+    { "lat": -6.9144473, "lon": 107.5999865 },
+    { "lat": -6.9144527, "lon": 107.6001594 },
+    { "lat": -6.9144922, "lon": 107.6009387 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 902837106,
+  "bounds": {
+    "minlat": -6.9145809,
+    "minlon": 107.5991060,
+    "maxlat": -6.9144412,
+    "maxlon": 107.6009309
+  },
+  "nodes": [
+    13814081482,
+    8385468234,
+    8385468233,
+    8385468232
+  ],
+  "geometry": [
+    { "lat": -6.9144412, "lon": 107.5991060 },
+    { "lat": -6.9144915, "lon": 107.5995183 },
+    { "lat": -6.9145039, "lon": 107.5997240 },
+    { "lat": -6.9145809, "lon": 107.6009309 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 902837107,
+  "bounds": {
+    "minlat": -6.9143285,
+    "minlon": 107.5924575,
+    "maxlat": -6.9140500,
+    "maxlon": 107.5965262
+  },
+  "nodes": [
+    8385468313,
+    8385468311,
+    13430721458,
+    8385468310,
+    8385468309,
+    13815591845,
+    8385468307,
+    13814081466,
+    8385468306,
+    8385468305,
+    8385468304,
+    8385468303,
+    8385468301
+  ],
+  "geometry": [
+    { "lat": -6.9140549, "lon": 107.5924575 },
+    { "lat": -6.9140517, "lon": 107.5931468 },
+    { "lat": -6.9140500, "lon": 107.5932819 },
+    { "lat": -6.9140558, "lon": 107.5934302 },
+    { "lat": -6.9140754, "lon": 107.5936396 },
+    { "lat": -6.9140814, "lon": 107.5936764 },
+    { "lat": -6.9142458, "lon": 107.5946840 },
+    { "lat": -6.9142761, "lon": 107.5948772 },
+    { "lat": -6.9142842, "lon": 107.5949407 },
+    { "lat": -6.9143040, "lon": 107.5951163 },
+    { "lat": -6.9143199, "lon": 107.5953544 },
+    { "lat": -6.9143285, "lon": 107.5957692 },
+    { "lat": -6.9143235, "lon": 107.5965262 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "30",
+    "name": "Jalur Kereta Api Bandung–Ciroyom–Andir",
+    "railway": "rail",
+    "usage": "branch",
+    "wikidata": "Q25630218"
+  }
+},
+{
+  "type": "way",
+  "id": 902837108,
+  "bounds": {
+    "minlat": -6.9145079,
+    "minlon": 107.6016923,
+    "maxlat": -6.9144609,
+    "maxlon": 107.6027960
+  },
+  "nodes": [
+    2628273472,
+    10694245340
+  ],
+  "geometry": [
+    { "lat": -6.9144609, "lon": 107.6016923 },
+    { "lat": -6.9145079, "lon": 107.6027960 }
+  ],
+  "tags": {
+    "covered": "yes",
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "30",
+    "railway": "rail",
+    "railway:track_ref": "1",
+    "service": "siding"
+  }
+},
+{
+  "type": "way",
+  "id": 1127992533,
+  "bounds": {
+    "minlat": -6.9145806,
+    "minlon": 107.6041289,
+    "maxlat": -6.9144822,
+    "maxlon": 107.6048535
+  },
+  "nodes": [
+    2628264172,
+    2628264174,
+    2628264176
+  ],
+  "geometry": [
+    { "lat": -6.9144822, "lon": 107.6041289 },
+    { "lat": -6.9145311, "lon": 107.6044738 },
+    { "lat": -6.9145806, "lon": 107.6048535 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "name": "Jalur Kereta Api Padalarang–Kasugihan",
+    "railway": "rail",
+    "usage": "main",
+    "wikidata": "Q25630218",
+    "wikipedia": "id:Jalur kereta api Padalarang–Kasugihan"
+  }
+},
+{
+  "type": "way",
+  "id": 1149400166,
+  "bounds": {
+    "minlat": -6.9145690,
+    "minlon": 107.6016955,
+    "maxlat": -6.9144770,
+    "maxlon": 107.6031783
+  },
+  "nodes": [
+    10692929408,
+    13814068883,
+    10692929409,
+    12090457345,
+    11182124968,
+    10692929410,
+    10692929411,
+    10692929408
+  ],
+  "geometry": [
+    { "lat": -6.9144770, "lon": 107.6016967 },
+    { "lat": -6.9144892, "lon": 107.6016962 },
+    { "lat": -6.9145041, "lon": 107.6016955 },
+    { "lat": -6.9145145, "lon": 107.6019332 },
+    { "lat": -6.9145376, "lon": 107.6024598 },
+    { "lat": -6.9145690, "lon": 107.6031771 },
+    { "lat": -6.9145416, "lon": 107.6031783 },
+    { "lat": -6.9144770, "lon": 107.6016967 }
+  ],
+  "tags": {
+    "bench": "no",
+    "bin": "yes",
+    "covered": "yes",
+    "lit": "yes",
+    "public_transport": "platform",
+    "railway": "platform",
+    "ref": "1",
+    "shelter": "yes",
+    "surface": "asphalt",
+    "train": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1149400167,
+  "bounds": {
+    "minlat": -6.9144605,
+    "minlon": 107.6011894,
+    "maxlat": -6.9143310,
+    "maxlon": 107.6033576
+  },
+  "nodes": [
+    10692929412,
+    11262097581,
+    11262097583,
+    11262097584,
+    11262097582,
+    10692929413,
+    10692929414,
+    10692929415,
+    10210350701,
+    10692929412
+  ],
+  "geometry": [
+    { "lat": -6.9143341, "lon": 107.6016422 },
+    { "lat": -6.9143310, "lon": 107.6012792 },
+    { "lat": -6.9143341, "lon": 107.6011894 },
+    { "lat": -6.9143484, "lon": 107.6011894 },
+    { "lat": -6.9143537, "lon": 107.6012756 },
+    { "lat": -6.9143705, "lon": 107.6016296 },
+    { "lat": -6.9144605, "lon": 107.6033567 },
+    { "lat": -6.9144331, "lon": 107.6033576 },
+    { "lat": -6.9143997, "lon": 107.6028142 },
+    { "lat": -6.9143341, "lon": 107.6016422 }
+  ],
+  "tags": {
+    "bench": "no",
+    "bin": "yes",
+    "lit": "yes",
+    "public_transport": "platform",
+    "railway": "platform",
+    "ref": "2;3",
+    "shelter": "yes",
+    "surface": "asphalt",
+    "train": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1149400168,
+  "bounds": {
+    "minlat": -6.9143568,
+    "minlon": 107.6009319,
+    "maxlat": -6.9141641,
+    "maxlon": 107.6033546
+  },
+  "nodes": [
+    10692929416,
+    13814068875,
+    13814068876,
+    13814068873,
+    13814068871,
+    13814068872,
+    13814068874,
+    13814068878,
+    13814068880,
+    13814068881,
+    13814068879,
+    10692929417,
+    10692929418,
+    13814081402,
+    13814068899,
+    13814081404,
+    13814081403,
+    13814068900,
+    13814081401,
+    10692929419,
+    10692929416
+  ],
+  "geometry": [
+    { "lat": -6.9141668, "lon": 107.6012051 },
+    { "lat": -6.9141641, "lon": 107.6010574 },
+    { "lat": -6.9141849, "lon": 107.6010564 },
+    { "lat": -6.9141878, "lon": 107.6012052 },
+    { "lat": -6.9142128, "lon": 107.6016781 },
+    { "lat": -6.9142369, "lon": 107.6016768 },
+    { "lat": -6.9142138, "lon": 107.6012043 },
+    { "lat": -6.9142083, "lon": 107.6010894 },
+    { "lat": -6.9142121, "lon": 107.6009319 },
+    { "lat": -6.9142214, "lon": 107.6009323 },
+    { "lat": -6.9142291, "lon": 107.6010898 },
+    { "lat": -6.9142326, "lon": 107.6012037 },
+    { "lat": -6.9143186, "lon": 107.6029120 },
+    { "lat": -6.9143270, "lon": 107.6030586 },
+    { "lat": -6.9143369, "lon": 107.6031990 },
+    { "lat": -6.9143568, "lon": 107.6033484 },
+    { "lat": -6.9143156, "lon": 107.6033546 },
+    { "lat": -6.9142912, "lon": 107.6032021 },
+    { "lat": -6.9142713, "lon": 107.6030643 },
+    { "lat": -6.9142559, "lon": 107.6029156 },
+    { "lat": -6.9141668, "lon": 107.6012051 }
+  ],
+  "tags": {
+    "bench": "no",
+    "bin": "yes",
+    "lit": "yes",
+    "public_transport": "platform",
+    "railway": "platform",
+    "ref": "4;5",
+    "shelter": "yes",
+    "surface": "asphalt",
+    "train": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1149435296,
+  "bounds": {
+    "minlat": -6.9142514,
+    "minlon": 107.6012819,
+    "maxlat": -6.9140765,
+    "maxlon": 107.6033642
+  },
+  "nodes": [
+    10693191778,
+    11367245035,
+    10693191779,
+    10693191780,
+    13814081406,
+    13814081409,
+    13814081408,
+    13814081407,
+    13814081410,
+    13814081405,
+    10693191781,
+    10693191778
+  ],
+  "geometry": [
+    { "lat": -6.9140765, "lon": 107.6012837 },
+    { "lat": -6.9141115, "lon": 107.6012822 },
+    { "lat": -6.9141194, "lon": 107.6012819 },
+    { "lat": -6.9141897, "lon": 107.6029089 },
+    { "lat": -6.9142013, "lon": 107.6030276 },
+    { "lat": -6.9142218, "lon": 107.6031993 },
+    { "lat": -6.9142514, "lon": 107.6033617 },
+    { "lat": -6.9142256, "lon": 107.6033642 },
+    { "lat": -6.9141929, "lon": 107.6032038 },
+    { "lat": -6.9141612, "lon": 107.6030084 },
+    { "lat": -6.9141465, "lon": 107.6029108 },
+    { "lat": -6.9140765, "lon": 107.6012837 }
+  ],
+  "tags": {
+    "area": "yes",
+    "public_transport": "platform",
+    "railway": "platform",
+    "ref": "6",
+    "shelter": "yes",
+    "train": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1149566323,
+  "bounds": {
+    "minlat": -6.9140139,
+    "minlon": 107.5885135,
+    "maxlat": -6.9136653,
+    "maxlon": 107.5925153
+  },
+  "nodes": [
+    8385468338,
+    8385468339,
+    13430721465,
+    11270915385,
+    8385468340,
+    10693460291,
+    8385468274,
+    11887281319,
+    291544808,
+    12310058026,
+    8385468272,
+    8096603192
+  ],
+  "geometry": [
+    { "lat": -6.9140139, "lon": 107.5925153 },
+    { "lat": -6.9140006, "lon": 107.5922443 },
+    { "lat": -6.9139817, "lon": 107.5919841 },
+    { "lat": -6.9139546, "lon": 107.5916106 },
+    { "lat": -6.9139424, "lon": 107.5913621 },
+    { "lat": -6.9138895, "lon": 107.5896940 },
+    { "lat": -6.9138821, "lon": 107.5895746 },
+    { "lat": -6.9138694, "lon": 107.5894685 },
+    { "lat": -6.9138493, "lon": 107.5893367 },
+    { "lat": -6.9138254, "lon": 107.5891897 },
+    { "lat": -6.9137738, "lon": 107.5889165 },
+    { "lat": -6.9136653, "lon": 107.5885135 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "30",
+    "name": "Jalur Kereta Api Bandung–Ciroyom–Andir",
+    "railway": "rail",
+    "railway:track_ref": "3",
+    "usage": "branch",
+    "wikidata": "Q25630218"
+  }
+},
+{
+  "type": "way",
+  "id": 1149566324,
+  "bounds": {
+    "minlat": -6.9142707,
+    "minlon": 107.5994238,
+    "maxlat": -6.9142246,
+    "maxlon": 107.6004533
+  },
+  "nodes": [
+    8385468259,
+    13370047726,
+    8385451902,
+    8385451901
+  ],
+  "geometry": [
+    { "lat": -6.9142707, "lon": 107.5994238 },
+    { "lat": -6.9142611, "lon": 107.5996626 },
+    { "lat": -6.9142284, "lon": 107.6002927 },
+    { "lat": -6.9142246, "lon": 107.6004533 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "name": "Jalur Kereta Api Padalarang–Kasugihan",
+    "railway": "rail",
+    "usage": "main",
+    "wikidata": "Q25630218",
+    "wikipedia": "id:Jalur kereta api Padalarang–Kasugihan"
+  }
+},
+{
+  "type": "way",
+  "id": 1149566325,
+  "bounds": {
+    "minlat": -6.9143843,
+    "minlon": 107.5994266,
+    "maxlat": -6.9143385,
+    "maxlon": 107.6006265
+  },
+  "nodes": [
+    8385468255,
+    13520064972,
+    11262097576,
+    8385468240,
+    8385468241
+  ],
+  "geometry": [
+    { "lat": -6.9143793, "lon": 107.5994266 },
+    { "lat": -6.9143843, "lon": 107.5997323 },
+    { "lat": -6.9143740, "lon": 107.5999872 },
+    { "lat": -6.9143593, "lon": 107.6002474 },
+    { "lat": -6.9143385, "lon": 107.6006265 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "name": "Jalur Kereta Api Padalarang–Kasugihan",
+    "railway": "rail",
+    "usage": "main",
+    "wikidata": "Q25630218",
+    "wikipedia": "id:Jalur kereta api Padalarang–Kasugihan"
+  }
+},
+{
+  "type": "way",
+  "id": 1149566326,
+  "bounds": {
+    "minlat": -6.9143420,
+    "minlon": 107.5979364,
+    "maxlat": -6.9143265,
+    "maxlon": 107.5983583
+  },
+  "nodes": [
+    291546116,
+    10694245351,
+    8385468322
+  ],
+  "geometry": [
+    { "lat": -6.9143265, "lon": 107.5983583 },
+    { "lat": -6.9143360, "lon": 107.5981500 },
+    { "lat": -6.9143420, "lon": 107.5979364 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "name": "Jalur Kereta Api Bandung–Ciroyom–Andir",
+    "railway": "rail",
+    "usage": "branch",
+    "wikidata": "Q25630218"
+  }
+},
+{
+  "type": "way",
+  "id": 1149566327,
+  "bounds": {
+    "minlat": -6.9148712,
+    "minlon": 107.6054321,
+    "maxlat": -6.9146465,
+    "maxlon": 107.6070186
+  },
+  "nodes": [
+    3277420351,
+    10693460295,
+    2628273464,
+    13395369560,
+    2628273463
+  ],
+  "geometry": [
+    { "lat": -6.9148712, "lon": 107.6070186 },
+    { "lat": -6.9148503, "lon": 107.6068659 },
+    { "lat": -6.9148375, "lon": 107.6067657 },
+    { "lat": -6.9146684, "lon": 107.6055898 },
+    { "lat": -6.9146465, "lon": 107.6054321 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "100",
+    "name": "Jalur Kereta Api Padalarang–Kasugihan",
+    "railway": "rail",
+    "railway:preferred_direction": "forward",
+    "usage": "main",
+    "wikidata": "Q25630218",
+    "wikipedia": "id:Jalur kereta api Padalarang–Kasugihan"
+  }
+},
+{
+  "type": "way",
+  "id": 1187069945,
+  "bounds": {
+    "minlat": -6.9142787,
+    "minlon": 107.5978658,
+    "maxlat": -6.9142106,
+    "maxlon": 107.5993037
+  },
+  "nodes": [
+    8385468264,
+    8385468263,
+    8385468262,
+    8385468261,
+    13814081467,
+    8385468260
+  ],
+  "geometry": [
+    { "lat": -6.9142106, "lon": 107.5978658 },
+    { "lat": -6.9142408, "lon": 107.5984015 },
+    { "lat": -6.9142516, "lon": 107.5986652 },
+    { "lat": -6.9142610, "lon": 107.5988858 },
+    { "lat": -6.9142762, "lon": 107.5991625 },
+    { "lat": -6.9142787, "lon": 107.5993037 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "name": "Jalur Kereta Api Padalarang–Kasugihan",
+    "railway": "rail",
+    "usage": "main",
+    "wikidata": "Q25630218",
+    "wikipedia": "id:Jalur kereta api Padalarang–Kasugihan"
+  }
+},
+{
+  "type": "way",
+  "id": 1187069946,
+  "bounds": {
+    "minlat": -6.9142773,
+    "minlon": 107.5965660,
+    "maxlat": -6.9142541,
+    "maxlon": 107.5974708
+  },
+  "nodes": [
+    2628273489,
+    2628273490
+  ],
+  "geometry": [
+    { "lat": -6.9142541, "lon": 107.5965660 },
+    { "lat": -6.9142773, "lon": 107.5974708 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "name": "Jalur Kereta Api Padalarang–Kasugihan",
+    "railway": "rail",
+    "usage": "main",
+    "wikidata": "Q25630218",
+    "wikipedia": "id:Jalur kereta api Padalarang–Kasugihan"
+  }
+},
+{
+  "type": "way",
+  "id": 1187069947,
+  "bounds": {
+    "minlat": -6.9142958,
+    "minlon": 107.5925153,
+    "maxlat": -6.9140131,
+    "maxlon": 107.5965612
+  },
+  "nodes": [
+    8385468325,
+    8385468326,
+    8385468327,
+    8385468328,
+    13814081465,
+    8385468329,
+    8385468330,
+    8385468331,
+    8385468332,
+    8385468333,
+    8385468334,
+    8385468338
+  ],
+  "geometry": [
+    { "lat": -6.9142885, "lon": 107.5965612 },
+    { "lat": -6.9142958, "lon": 107.5957560 },
+    { "lat": -6.9142877, "lon": 107.5953595 },
+    { "lat": -6.9142731, "lon": 107.5951289 },
+    { "lat": -6.9142501, "lon": 107.5949435 },
+    { "lat": -6.9142410, "lon": 107.5948808 },
+    { "lat": -6.9142212, "lon": 107.5947453 },
+    { "lat": -6.9140463, "lon": 107.5936875 },
+    { "lat": -6.9140190, "lon": 107.5934519 },
+    { "lat": -6.9140131, "lon": 107.5932671 },
+    { "lat": -6.9140149, "lon": 107.5929728 },
+    { "lat": -6.9140139, "lon": 107.5925153 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "30",
+    "name": "Jalur Kereta Api Bandung–Ciroyom–Andir",
+    "railway": "rail",
+    "usage": "branch",
+    "wikidata": "Q25630218"
+  }
+},
+{
+  "type": "way",
+  "id": 1187069948,
+  "bounds": {
+    "minlat": -6.9143534,
+    "minlon": 107.5965262,
+    "maxlat": -6.9143235,
+    "maxlon": 107.5979364
+  },
+  "nodes": [
+    8385468322,
+    13370047725,
+    13815132579,
+    11881841697,
+    8385468300,
+    8385468301
+  ],
+  "geometry": [
+    { "lat": -6.9143420, "lon": 107.5979364 },
+    { "lat": -6.9143515, "lon": 107.5977043 },
+    { "lat": -6.9143534, "lon": 107.5975712 },
+    { "lat": -6.9143514, "lon": 107.5974841 },
+    { "lat": -6.9143340, "lon": 107.5970507 },
+    { "lat": -6.9143235, "lon": 107.5965262 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "name": "Jalur Kereta Api Bandung–Ciroyom–Andir",
+    "railway": "rail",
+    "usage": "branch",
+    "wikidata": "Q25630218"
+  }
+},
+{
+  "type": "way",
+  "id": 1187069950,
+  "bounds": {
+    "minlat": -6.9143625,
+    "minlon": 107.6006265,
+    "maxlat": -6.9143385,
+    "maxlon": 107.6011150
+  },
+  "nodes": [
+    8385468241,
+    8385468315
+  ],
+  "geometry": [
+    { "lat": -6.9143385, "lon": 107.6006265 },
+    { "lat": -6.9143625, "lon": 107.6011150 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "passenger_lines": "2",
+    "railway": "rail",
+    "service": "siding"
+  }
+},
+{
+  "type": "way",
+  "id": 1213494260,
+  "bounds": {
+    "minlat": -6.9144744,
+    "minlon": 107.6041139,
+    "maxlat": -6.9144407,
+    "maxlon": 107.6043498
+  },
+  "nodes": [
+    8385451866,
+    11242626908
+  ],
+  "geometry": [
+    { "lat": -6.9144407, "lon": 107.6041139 },
+    { "lat": -6.9144744, "lon": 107.6043498 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1213494261,
+  "bounds": {
+    "minlat": -6.9145876,
+    "minlon": 107.6040587,
+    "maxlat": -6.9145520,
+    "maxlon": 107.6043475
+  },
+  "nodes": [
+    2628273470,
+    11242626909
+  ],
+  "geometry": [
+    { "lat": -6.9145520, "lon": 107.6040587 },
+    { "lat": -6.9145876, "lon": 107.6043475 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1215523045,
+  "bounds": {
+    "minlat": -6.9137241,
+    "minlon": 107.5992661,
+    "maxlat": -6.9137115,
+    "maxlon": 107.5995840
+  },
+  "nodes": [
+    10693460293,
+    11262097550
+  ],
+  "geometry": [
+    { "lat": -6.9137241, "lon": 107.5995840 },
+    { "lat": -6.9137115, "lon": 107.5992661 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1215523046,
+  "bounds": {
+    "minlat": -6.9137549,
+    "minlon": 107.5991539,
+    "maxlat": -6.9137268,
+    "maxlon": 107.5996653
+  },
+  "nodes": [
+    11262097551,
+    11262097553,
+    11262097552
+  ],
+  "geometry": [
+    { "lat": -6.9137268, "lon": 107.5996653 },
+    { "lat": -6.9137360, "lon": 107.5995828 },
+    { "lat": -6.9137549, "lon": 107.5991539 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1215523047,
+  "bounds": {
+    "minlat": -6.9136957,
+    "minlon": 107.5999741,
+    "maxlat": -6.9133512,
+    "maxlon": 107.6010748
+  },
+  "nodes": [
+    2628273496,
+    13520066424,
+    11262097558,
+    11262097557,
+    2628273503,
+    11262097559,
+    2628273497,
+    12553010406
+  ],
+  "geometry": [
+    { "lat": -6.9136957, "lon": 107.6010748 },
+    { "lat": -6.9136766, "lon": 107.6009728 },
+    { "lat": -6.9136545, "lon": 107.6008707 },
+    { "lat": -6.9136130, "lon": 107.6007459 },
+    { "lat": -6.9135822, "lon": 107.6006501 },
+    { "lat": -6.9134145, "lon": 107.6001886 },
+    { "lat": -6.9133796, "lon": 107.6000721 },
+    { "lat": -6.9133512, "lon": 107.5999741 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1215523049,
+  "bounds": {
+    "minlat": -6.9142250,
+    "minlon": 107.6004533,
+    "maxlat": -6.9141975,
+    "maxlon": 107.6016599
+  },
+  "nodes": [
+    8385451901,
+    11262097570,
+    11262097571,
+    13520064994,
+    11262097572,
+    11262097573
+  ],
+  "geometry": [
+    { "lat": -6.9142246, "lon": 107.6004533 },
+    { "lat": -6.9142028, "lon": 107.6008801 },
+    { "lat": -6.9141975, "lon": 107.6010333 },
+    { "lat": -6.9142001, "lon": 107.6011441 },
+    { "lat": -6.9142020, "lon": 107.6012267 },
+    { "lat": -6.9142250, "lon": 107.6016599 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1215523050,
+  "bounds": {
+    "minlat": -6.9140985,
+    "minlon": 107.5992091,
+    "maxlat": -6.9140868,
+    "maxlon": 107.5998139
+  },
+  "nodes": [
+    12552986394,
+    2628273520,
+    13520066461,
+    2628273521
+  ],
+  "geometry": [
+    { "lat": -6.9140868, "lon": 107.5992091 },
+    { "lat": -6.9140905, "lon": 107.5994801 },
+    { "lat": -6.9140929, "lon": 107.5995953 },
+    { "lat": -6.9140985, "lon": 107.5998139 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1215523051,
+  "bounds": {
+    "minlat": -6.9141267,
+    "minlon": 107.6015447,
+    "maxlat": -6.9140655,
+    "maxlon": 107.6023652
+  },
+  "nodes": [
+    11262097602,
+    11262097608,
+    11262097603,
+    11262097604,
+    11262097605,
+    11262097602
+  ],
+  "geometry": [
+    { "lat": -6.9140655, "lon": 107.6015458 },
+    { "lat": -6.9140807, "lon": 107.6015451 },
+    { "lat": -6.9140888, "lon": 107.6015447 },
+    { "lat": -6.9141267, "lon": 107.6023641 },
+    { "lat": -6.9141033, "lon": 107.6023652 },
+    { "lat": -6.9140655, "lon": 107.6015458 }
+  ],
+  "tags": {
+    "area": "yes",
+    "public_transport": "platform",
+    "railway": "platform",
+    "ref": "7",
+    "shelter": "yes",
+    "train": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1215523055,
+  "bounds": {
+    "minlat": -6.9140316,
+    "minlon": 107.6016168,
+    "maxlat": -6.9139452,
+    "maxlon": 107.6024515
+  },
+  "nodes": [
+    11262097612,
+    11262097611,
+    11262097613,
+    11262097614,
+    11262097615,
+    11262097612
+  ],
+  "geometry": [
+    { "lat": -6.9139452, "lon": 107.6016190 },
+    { "lat": -6.9139637, "lon": 107.6016178 },
+    { "lat": -6.9139795, "lon": 107.6016168 },
+    { "lat": -6.9140316, "lon": 107.6024493 },
+    { "lat": -6.9139972, "lon": 107.6024515 },
+    { "lat": -6.9139452, "lon": 107.6016190 }
+  ],
+  "tags": {
+    "public_transport": "platform",
+    "railway": "platform",
+    "ref": "8",
+    "shelter": "yes",
+    "train": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1216394412,
+  "bounds": {
+    "minlat": -6.9141208,
+    "minlon": 107.5954355,
+    "maxlat": -6.9138999,
+    "maxlon": 107.5965966
+  },
+  "nodes": [
+    8385468267,
+    2628286340,
+    13370047702,
+    13814081460,
+    13814081475,
+    2628286338
+  ],
+  "geometry": [
+    { "lat": -6.9141208, "lon": 107.5965966 },
+    { "lat": -6.9140532, "lon": 107.5961689 },
+    { "lat": -6.9139726, "lon": 107.5957682 },
+    { "lat": -6.9139440, "lon": 107.5956375 },
+    { "lat": -6.9139353, "lon": 107.5955977 },
+    { "lat": -6.9138999, "lon": 107.5954355 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "110",
+    "name": "Jalur Kereta Api Padalarang–Kasugihan",
+    "railway": "rail",
+    "usage": "main",
+    "wikidata": "Q25630218",
+    "wikipedia": "id:Jalur kereta api Padalarang–Kasugihan"
+  }
+},
+{
+  "type": "way",
+  "id": 1216394413,
+  "bounds": {
+    "minlat": -6.9138999,
+    "minlon": 107.5953743,
+    "maxlat": -6.9138866,
+    "maxlon": 107.5954355
+  },
+  "nodes": [
+    2628286338,
+    11270915382
+  ],
+  "geometry": [
+    { "lat": -6.9138999, "lon": 107.5954355 },
+    { "lat": -6.9138866, "lon": 107.5953743 }
+  ],
+  "tags": {
+    "bridge": "yes",
+    "electrified": "no",
+    "gauge": "1067",
+    "layer": "1",
+    "maxspeed": "110",
+    "name": "Jalur Kereta Api Padalarang–Kasugihan",
+    "railway": "rail",
+    "usage": "main",
+    "wikidata": "Q25630218",
+    "wikipedia": "id:Jalur kereta api Padalarang–Kasugihan"
+  }
+},
+{
+  "type": "way",
+  "id": 1216394414,
+  "bounds": {
+    "minlat": -6.9140549,
+    "minlon": 107.5924575,
+    "maxlat": -6.9140149,
+    "maxlon": 107.5929728
+  },
+  "nodes": [
+    8385468313,
+    11270915384,
+    11270915383,
+    8385468334
+  ],
+  "geometry": [
+    { "lat": -6.9140549, "lon": 107.5924575 },
+    { "lat": -6.9140445, "lon": 107.5926103 },
+    { "lat": -6.9140305, "lon": 107.5928074 },
+    { "lat": -6.9140149, "lon": 107.5929728 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "crossover"
+  }
+},
+{
+  "type": "way",
+  "id": 1242723286,
+  "bounds": {
+    "minlat": -6.9143793,
+    "minlon": 107.5988511,
+    "maxlat": -6.9143483,
+    "maxlon": 107.5994266
+  },
+  "nodes": [
+    8385468256,
+    8385468255
+  ],
+  "geometry": [
+    { "lat": -6.9143483, "lon": 107.5988511 },
+    { "lat": -6.9143793, "lon": 107.5994266 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "name": "Jalur Kereta Api Padalarang–Kasugihan",
+    "railway": "rail",
+    "usage": "main",
+    "wikidata": "Q25630218",
+    "wikipedia": "id:Jalur kereta api Padalarang–Kasugihan"
+  }
+},
+{
+  "type": "way",
+  "id": 1242723287,
+  "bounds": {
+    "minlat": -6.9142999,
+    "minlon": 107.5970405,
+    "maxlat": -6.9142773,
+    "maxlon": 107.5974708
+  },
+  "nodes": [
+    8385468323,
+    2628273490
+  ],
+  "geometry": [
+    { "lat": -6.9142999, "lon": 107.5970405 },
+    { "lat": -6.9142773, "lon": 107.5974708 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "name": "Jalur Kereta Api Bandung–Ciroyom–Andir",
+    "railway": "rail",
+    "usage": "branch",
+    "wikidata": "Q25630218"
+  }
+},
+{
+  "type": "way",
+  "id": 1242723288,
+  "bounds": {
+    "minlat": -6.9143265,
+    "minlon": 107.5979399,
+    "maxlat": -6.9143007,
+    "maxlon": 107.5983583
+  },
+  "nodes": [
+    8385468257,
+    291546116
+  ],
+  "geometry": [
+    { "lat": -6.9143007, "lon": 107.5979399 },
+    { "lat": -6.9143265, "lon": 107.5983583 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "name": "Jalur Kereta Api Padalarang–Kasugihan",
+    "railway": "rail",
+    "usage": "main",
+    "wikidata": "Q25630218",
+    "wikipedia": "id:Jalur kereta api Padalarang–Kasugihan"
+  }
+},
+{
+  "type": "way",
+  "id": 1242723289,
+  "bounds": {
+    "minlat": -6.9142999,
+    "minlon": 107.5965612,
+    "maxlat": -6.9142885,
+    "maxlon": 107.5970405
+  },
+  "nodes": [
+    8385468323,
+    13814081481,
+    8385468325
+  ],
+  "geometry": [
+    { "lat": -6.9142999, "lon": 107.5970405 },
+    { "lat": -6.9142973, "lon": 107.5969329 },
+    { "lat": -6.9142885, "lon": 107.5965612 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "name": "Jalur Kereta Api Bandung–Ciroyom–Andir",
+    "railway": "rail",
+    "usage": "branch",
+    "wikidata": "Q25630218"
+  }
+},
+{
+  "type": "way",
+  "id": 1242723290,
+  "bounds": {
+    "minlat": -6.9144237,
+    "minlon": 107.5979364,
+    "maxlat": -6.9143420,
+    "maxlon": 107.5999908
+  },
+  "nodes": [
+    8385468317,
+    8385468318,
+    8385468319,
+    8385468238,
+    8385468321,
+    8385468322
+  ],
+  "geometry": [
+    { "lat": -6.9144094, "lon": 107.5999908 },
+    { "lat": -6.9144197, "lon": 107.5996999 },
+    { "lat": -6.9144237, "lon": 107.5995391 },
+    { "lat": -6.9143740, "lon": 107.5985123 },
+    { "lat": -6.9143682, "lon": 107.5984106 },
+    { "lat": -6.9143420, "lon": 107.5979364 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "railway": "rail",
+    "service": "siding"
+  }
+},
+{
+  "type": "way",
+  "id": 1242723291,
+  "bounds": {
+    "minlat": -6.9144094,
+    "minlon": 107.5994266,
+    "maxlat": -6.9143793,
+    "maxlon": 107.5999908
+  },
+  "nodes": [
+    8385468255,
+    8385468317
+  ],
+  "geometry": [
+    { "lat": -6.9143793, "lon": 107.5994266 },
+    { "lat": -6.9144094, "lon": 107.5999908 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "railway": "rail",
+    "service": "siding"
+  }
+},
+{
+  "type": "way",
+  "id": 1242723292,
+  "bounds": {
+    "minlat": -6.9143420,
+    "minlon": 107.5970405,
+    "maxlat": -6.9142999,
+    "maxlon": 107.5979364
+  },
+  "nodes": [
+    8385468322,
+    8385468323
+  ],
+  "geometry": [
+    { "lat": -6.9143420, "lon": 107.5979364 },
+    { "lat": -6.9142999, "lon": 107.5970405 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "railway": "rail",
+    "service": "crossover"
+  }
+},
+{
+  "type": "way",
+  "id": 1242723293,
+  "bounds": {
+    "minlat": -6.9146892,
+    "minlon": 107.6048491,
+    "maxlat": -6.9146166,
+    "maxlon": 107.6054281
+  },
+  "nodes": [
+    7464347909,
+    7464347910
+  ],
+  "geometry": [
+    { "lat": -6.9146166, "lon": 107.6048491 },
+    { "lat": -6.9146892, "lon": 107.6054281 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "name": "Jalur Kereta Api Padalarang–Kasugihan",
+    "railway": "rail",
+    "usage": "main",
+    "wikidata": "Q25630218",
+    "wikipedia": "id:Jalur kereta api Padalarang–Kasugihan"
+  }
+},
+{
+  "type": "way",
+  "id": 1242723294,
+  "bounds": {
+    "minlat": -6.9146166,
+    "minlon": 107.6044728,
+    "maxlat": -6.9145695,
+    "maxlon": 107.6048491
+  },
+  "nodes": [
+    2628273461,
+    7464347909
+  ],
+  "geometry": [
+    { "lat": -6.9145695, "lon": 107.6044728 },
+    { "lat": -6.9146166, "lon": 107.6048491 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "name": "Jalur Kereta Api Padalarang–Kasugihan",
+    "railway": "rail",
+    "usage": "main",
+    "wikidata": "Q25630218",
+    "wikipedia": "id:Jalur kereta api Padalarang–Kasugihan"
+  }
+},
+{
+  "type": "way",
+  "id": 1264176094,
+  "bounds": {
+    "minlat": -6.9143239,
+    "minlon": 107.6017039,
+    "maxlat": -6.9142692,
+    "maxlon": 107.6028009
+  },
+  "nodes": [
+    13947927561,
+    13947927559
+  ],
+  "geometry": [
+    { "lat": -6.9142692, "lon": 107.6017039 },
+    { "lat": -6.9143239, "lon": 107.6028009 }
+  ],
+  "tags": {
+    "covered": "yes",
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "name": "Jalur Kereta Api Padalarang–Kasugihan",
+    "railway": "rail",
+    "railway:track_ref": "4",
+    "usage": "main",
+    "wikidata": "Q25630218",
+    "wikipedia": "id:Jalur kereta api Padalarang–Kasugihan"
+  }
+},
+{
+  "type": "way",
+  "id": 1265002083,
+  "bounds": {
+    "minlat": -6.9145520,
+    "minlon": 107.6031554,
+    "maxlat": -6.9144661,
+    "maxlon": 107.6040587
+  },
+  "nodes": [
+    2628273470,
+    8385468347,
+    13530249437,
+    8385468348,
+    13814081420,
+    13520064986,
+    2628273460
+  ],
+  "geometry": [
+    { "lat": -6.9145520, "lon": 107.6040587 },
+    { "lat": -6.9145264, "lon": 107.6038695 },
+    { "lat": -6.9145053, "lon": 107.6036950 },
+    { "lat": -6.9144868, "lon": 107.6035085 },
+    { "lat": -6.9144834, "lon": 107.6034658 },
+    { "lat": -6.9144755, "lon": 107.6033681 },
+    { "lat": -6.9144661, "lon": 107.6031554 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "30",
+    "railway": "rail",
+    "service": "siding",
+    "wikidata": "Q25630218"
+  }
+},
+{
+  "type": "way",
+  "id": 1265002084,
+  "bounds": {
+    "minlat": -6.9145520,
+    "minlon": 107.6031495,
+    "maxlat": -6.9145291,
+    "maxlon": 107.6040587
+  },
+  "nodes": [
+    10312881283,
+    13814081421,
+    8385468352,
+    13530249438,
+    2628273470
+  ],
+  "geometry": [
+    { "lat": -6.9145291, "lon": 107.6031495 },
+    { "lat": -6.9145357, "lon": 107.6034618 },
+    { "lat": -6.9145375, "lon": 107.6035669 },
+    { "lat": -6.9145416, "lon": 107.6037729 },
+    { "lat": -6.9145520, "lon": 107.6040587 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "30",
+    "railway": "rail",
+    "service": "siding"
+  }
+},
+{
+  "type": "way",
+  "id": 1265002085,
+  "bounds": {
+    "minlat": -6.9144822,
+    "minlon": 107.6031363,
+    "maxlat": -6.9142626,
+    "maxlon": 107.6041289
+  },
+  "nodes": [
+    2628264172,
+    293384518,
+    13814081432,
+    13814081425,
+    8385468346,
+    10694245342
+  ],
+  "geometry": [
+    { "lat": -6.9144822, "lon": 107.6041289 },
+    { "lat": -6.9143824, "lon": 107.6036991 },
+    { "lat": -6.9143327, "lon": 107.6034870 },
+    { "lat": -6.9142992, "lon": 107.6033439 },
+    { "lat": -6.9142949, "lon": 107.6033270 },
+    { "lat": -6.9142626, "lon": 107.6031363 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "30",
+    "railway": "rail",
+    "service": "siding"
+  }
+},
+{
+  "type": "way",
+  "id": 1265002086,
+  "bounds": {
+    "minlat": -6.9145311,
+    "minlon": 107.6031303,
+    "maxlat": -6.9142243,
+    "maxlon": 107.6044738
+  },
+  "nodes": [
+    10694245343,
+    13814081424,
+    8385451875,
+    13814081423,
+    13814081416,
+    11262097586,
+    11262097587,
+    11262097590,
+    8385451866,
+    2628264174
+  ],
+  "geometry": [
+    { "lat": -6.9142243, "lon": 107.6031303 },
+    { "lat": -6.9142383, "lon": 107.6032333 },
+    { "lat": -6.9142501, "lon": 107.6033054 },
+    { "lat": -6.9142594, "lon": 107.6033513 },
+    { "lat": -6.9142904, "lon": 107.6034962 },
+    { "lat": -6.9143001, "lon": 107.6035413 },
+    { "lat": -6.9143367, "lon": 107.6036991 },
+    { "lat": -6.9143734, "lon": 107.6038411 },
+    { "lat": -6.9144407, "lon": 107.6041139 },
+    { "lat": -6.9145311, "lon": 107.6044738 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "30",
+    "railway": "rail",
+    "service": "siding"
+  }
+},
+{
+  "type": "way",
+  "id": 1265002087,
+  "bounds": {
+    "minlat": -6.9142003,
+    "minlon": 107.6017093,
+    "maxlat": -6.9141471,
+    "maxlon": 107.6028067
+  },
+  "nodes": [
+    13947927563,
+    13947927557
+  ],
+  "geometry": [
+    { "lat": -6.9141471, "lon": 107.6017093 },
+    { "lat": -6.9142003, "lon": 107.6028067 }
+  ],
+  "tags": {
+    "covered": "yes",
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "30",
+    "railway": "rail",
+    "railway:track_ref": "6",
+    "service": "siding"
+  }
+},
+{
+  "type": "way",
+  "id": 1265002088,
+  "bounds": {
+    "minlat": -6.9142366,
+    "minlon": 107.6017090,
+    "maxlat": -6.9141795,
+    "maxlon": 107.6028060
+  },
+  "nodes": [
+    13947927558,
+    13947927562
+  ],
+  "geometry": [
+    { "lat": -6.9142366, "lon": 107.6028060 },
+    { "lat": -6.9141795, "lon": 107.6017090 }
+  ],
+  "tags": {
+    "covered": "yes",
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "30",
+    "railway": "rail",
+    "railway:track_ref": "5",
+    "service": "siding"
+  }
+},
+{
+  "type": "way",
+  "id": 1265002089,
+  "bounds": {
+    "minlat": -6.9143758,
+    "minlon": 107.6017027,
+    "maxlat": -6.9143215,
+    "maxlon": 107.6028002
+  },
+  "nodes": [
+    11262097569,
+    13947927560
+  ],
+  "geometry": [
+    { "lat": -6.9143215, "lon": 107.6017027 },
+    { "lat": -6.9143758, "lon": 107.6028002 }
+  ],
+  "tags": {
+    "covered": "yes",
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "name": "Jalur Kereta Api Padalarang–Kasugihan",
+    "railway": "rail",
+    "railway:track_ref": "3",
+    "usage": "main",
+    "wikidata": "Q25630218",
+    "wikipedia": "id:Jalur kereta api Padalarang–Kasugihan"
+  }
+},
+{
+  "type": "way",
+  "id": 1265002090,
+  "bounds": {
+    "minlat": -6.9144094,
+    "minlon": 107.5999908,
+    "maxlat": -6.9143625,
+    "maxlon": 107.6011150
+  },
+  "nodes": [
+    8385468315,
+    8385468316,
+    8385468317
+  ],
+  "geometry": [
+    { "lat": -6.9143625, "lon": 107.6011150 },
+    { "lat": -6.9143727, "lon": 107.6007338 },
+    { "lat": -6.9144094, "lon": 107.5999908 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "railway": "rail",
+    "service": "siding"
+  }
+},
+{
+  "type": "way",
+  "id": 1265002091,
+  "bounds": {
+    "minlat": -6.9144348,
+    "minlon": 107.5999908,
+    "maxlat": -6.9144094,
+    "maxlon": 107.6013668
+  },
+  "nodes": [
+    8385468317,
+    8385468254,
+    8385468253,
+    8385468252,
+    8385468251,
+    13530249442,
+    13520064985,
+    8385468250,
+    10694245344
+  ],
+  "geometry": [
+    { "lat": -6.9144094, "lon": 107.5999908 },
+    { "lat": -6.9144273, "lon": 107.6004910 },
+    { "lat": -6.9144310, "lon": 107.6006540 },
+    { "lat": -6.9144278, "lon": 107.6008267 },
+    { "lat": -6.9144228, "lon": 107.6009919 },
+    { "lat": -6.9144227, "lon": 107.6010753 },
+    { "lat": -6.9144243, "lon": 107.6011442 },
+    { "lat": -6.9144260, "lon": 107.6012213 },
+    { "lat": -6.9144348, "lon": 107.6013668 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "railway": "rail",
+    "railway:track_ref": "1",
+    "service": "siding"
+  }
+},
+{
+  "type": "way",
+  "id": 1265002092,
+  "bounds": {
+    "minlat": -6.9142592,
+    "minlon": 107.6026662,
+    "maxlat": -6.9140955,
+    "maxlon": 107.6035457
+  },
+  "nodes": [
+    11262097617,
+    2628273452,
+    2628273453,
+    13814081426,
+    8385451872,
+    13520064988,
+    8385451871,
+    11262097592,
+    13814081415,
+    11262097589
+  ],
+  "geometry": [
+    { "lat": -6.9140955, "lon": 107.6026662 },
+    { "lat": -6.9141039, "lon": 107.6028158 },
+    { "lat": -6.9141297, "lon": 107.6029908 },
+    { "lat": -6.9141504, "lon": 107.6031038 },
+    { "lat": -6.9141648, "lon": 107.6031826 },
+    { "lat": -6.9141932, "lon": 107.6033029 },
+    { "lat": -6.9142143, "lon": 107.6033756 },
+    { "lat": -6.9142329, "lon": 107.6034441 },
+    { "lat": -6.9142503, "lon": 107.6035066 },
+    { "lat": -6.9142592, "lon": 107.6035457 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "30",
+    "railway": "rail",
+    "service": "siding"
+  }
+},
+{
+  "type": "way",
+  "id": 1265002093,
+  "bounds": {
+    "minlat": -6.9140955,
+    "minlon": 107.6015359,
+    "maxlat": -6.9140340,
+    "maxlon": 107.6026662
+  },
+  "nodes": [
+    11262097606,
+    11262097617
+  ],
+  "geometry": [
+    { "lat": -6.9140340, "lon": 107.6015359 },
+    { "lat": -6.9140955, "lon": 107.6026662 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "30",
+    "railway": "rail",
+    "railway:track_ref": "7",
+    "service": "siding"
+  }
+},
+{
+  "type": "way",
+  "id": 1265510725,
+  "bounds": {
+    "minlat": -6.9145695,
+    "minlon": 107.6040587,
+    "maxlat": -6.9145520,
+    "maxlon": 107.6044728
+  },
+  "nodes": [
+    2628273461,
+    2628273470
+  ],
+  "geometry": [
+    { "lat": -6.9145695, "lon": 107.6044728 },
+    { "lat": -6.9145520, "lon": 107.6040587 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "30",
+    "railway": "rail",
+    "service": "siding",
+    "wikidata": "Q25630218"
+  }
+},
+{
+  "type": "way",
+  "id": 1279978975,
+  "bounds": {
+    "minlat": -6.9144822,
+    "minlon": 107.6031532,
+    "maxlat": -6.9143466,
+    "maxlon": 107.6041289
+  },
+  "nodes": [
+    2628273467,
+    8385468343,
+    13814081417,
+    13814081433,
+    8385468342,
+    2628264172
+  ],
+  "geometry": [
+    { "lat": -6.9143466, "lon": 107.6031532 },
+    { "lat": -6.9143671, "lon": 107.6033446 },
+    { "lat": -6.9143847, "lon": 107.6034781 },
+    { "lat": -6.9143933, "lon": 107.6035396 },
+    { "lat": -6.9144236, "lon": 107.6037551 },
+    { "lat": -6.9144822, "lon": 107.6041289 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "name": "Jalur Kereta Api Padalarang–Kasugihan",
+    "railway": "rail",
+    "usage": "main",
+    "wikidata": "Q25630218",
+    "wikipedia": "id:Jalur kereta api Padalarang–Kasugihan"
+  }
+},
+{
+  "type": "way",
+  "id": 1279978976,
+  "bounds": {
+    "minlat": -6.9143007,
+    "minlon": 107.5974708,
+    "maxlat": -6.9142773,
+    "maxlon": 107.5979399
+  },
+  "nodes": [
+    2628273490,
+    8385468257
+  ],
+  "geometry": [
+    { "lat": -6.9142773, "lon": 107.5974708 },
+    { "lat": -6.9143007, "lon": 107.5979399 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "name": "Jalur Kereta Api Padalarang–Kasugihan",
+    "railway": "rail",
+    "usage": "main",
+    "wikidata": "Q25630218",
+    "wikipedia": "id:Jalur kereta api Padalarang–Kasugihan"
+  }
+},
+{
+  "type": "way",
+  "id": 1279978977,
+  "bounds": {
+    "minlat": -6.9143483,
+    "minlon": 107.5983583,
+    "maxlat": -6.9143265,
+    "maxlon": 107.5988511
+  },
+  "nodes": [
+    291546116,
+    8385468256
+  ],
+  "geometry": [
+    { "lat": -6.9143265, "lon": 107.5983583 },
+    { "lat": -6.9143483, "lon": 107.5988511 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "name": "Jalur Kereta Api Padalarang–Kasugihan",
+    "railway": "rail",
+    "usage": "main",
+    "wikidata": "Q25630218",
+    "wikipedia": "id:Jalur kereta api Padalarang–Kasugihan"
+  }
+},
+{
+  "type": "way",
+  "id": 1280341071,
+  "bounds": {
+    "minlat": -6.9146465,
+    "minlon": 107.6048535,
+    "maxlat": -6.9145806,
+    "maxlon": 107.6054321
+  },
+  "nodes": [
+    2628264176,
+    2628273463
+  ],
+  "geometry": [
+    { "lat": -6.9145806, "lon": 107.6048535 },
+    { "lat": -6.9146465, "lon": 107.6054321 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "name": "Jalur Kereta Api Padalarang–Kasugihan",
+    "railway": "rail",
+    "usage": "main",
+    "wikidata": "Q25630218",
+    "wikipedia": "id:Jalur kereta api Padalarang–Kasugihan"
+  }
+},
+{
+  "type": "way",
+  "id": 1280659855,
+  "bounds": {
+    "minlat": -6.9141437,
+    "minlon": 107.6003384,
+    "maxlat": -6.9141188,
+    "maxlon": 107.6013600
+  },
+  "nodes": [
+    2628273444,
+    13814081447,
+    2628273445,
+    13814081448,
+    2628273446,
+    11262097616
+  ],
+  "geometry": [
+    { "lat": -6.9141437, "lon": 107.6003384 },
+    { "lat": -6.9141262, "lon": 107.6007686 },
+    { "lat": -6.9141188, "lon": 107.6009839 },
+    { "lat": -6.9141200, "lon": 107.6010939 },
+    { "lat": -6.9141231, "lon": 107.6012071 },
+    { "lat": -6.9141302, "lon": 107.6013600 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "railway": "rail",
+    "railway:track_ref": "6",
+    "service": "siding"
+  }
+},
+{
+  "type": "way",
+  "id": 1280659856,
+  "bounds": {
+    "minlat": -6.9142707,
+    "minlon": 107.5994238,
+    "maxlat": -6.9142099,
+    "maxlon": 107.5998951
+  },
+  "nodes": [
+    8385468259,
+    13520066466,
+    13520066465,
+    2628273443
+  ],
+  "geometry": [
+    { "lat": -6.9142707, "lon": 107.5994238 },
+    { "lat": -6.9142488, "lon": 107.5996123 },
+    { "lat": -6.9142371, "lon": 107.5997110 },
+    { "lat": -6.9142099, "lon": 107.5998951 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "railway": "rail",
+    "service": "siding"
+  }
+},
+{
+  "type": "way",
+  "id": 1280659857,
+  "bounds": {
+    "minlat": -6.9142787,
+    "minlon": 107.5993037,
+    "maxlat": -6.9142707,
+    "maxlon": 107.5994238
+  },
+  "nodes": [
+    8385468260,
+    8385468259
+  ],
+  "geometry": [
+    { "lat": -6.9142787, "lon": 107.5993037 },
+    { "lat": -6.9142707, "lon": 107.5994238 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "name": "Jalur Kereta Api Padalarang–Kasugihan",
+    "railway": "rail",
+    "usage": "main",
+    "wikidata": "Q25630218",
+    "wikipedia": "id:Jalur kereta api Padalarang–Kasugihan"
+  }
+},
+{
+  "type": "way",
+  "id": 1280659858,
+  "bounds": {
+    "minlat": -6.9142106,
+    "minlon": 107.5965966,
+    "maxlat": -6.9141208,
+    "maxlon": 107.5978658
+  },
+  "nodes": [
+    8385468264,
+    13814081479,
+    8385468265,
+    8385468266,
+    8385468267
+  ],
+  "geometry": [
+    { "lat": -6.9142106, "lon": 107.5978658 },
+    { "lat": -6.9141920, "lon": 107.5974502 },
+    { "lat": -6.9141816, "lon": 107.5972736 },
+    { "lat": -6.9141433, "lon": 107.5968062 },
+    { "lat": -6.9141208, "lon": 107.5965966 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "name": "Jalur Kereta Api Padalarang–Kasugihan",
+    "railway": "rail",
+    "usage": "main",
+    "wikidata": "Q25630218",
+    "wikipedia": "id:Jalur kereta api Padalarang–Kasugihan"
+  }
+},
+{
+  "type": "way",
+  "id": 1301926808,
+  "bounds": {
+    "minlat": -6.9140672,
+    "minlon": 107.5904338,
+    "maxlat": -6.9140360,
+    "maxlon": 107.5924575
+  },
+  "nodes": [
+    13947932520,
+    3370786798,
+    13430721464,
+    11887281318,
+    8385468313
+  ],
+  "geometry": [
+    { "lat": -6.9140360, "lon": 107.5904338 },
+    { "lat": -6.9140672, "lon": 107.5913646 },
+    { "lat": -6.9140632, "lon": 107.5919879 },
+    { "lat": -6.9140571, "lon": 107.5923340 },
+    { "lat": -6.9140549, "lon": 107.5924575 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "30",
+    "name": "Jalur Kereta Api Bandung–Ciroyom–Andir",
+    "railway": "rail",
+    "railway:track_ref": "1",
+    "usage": "branch",
+    "wikidata": "Q25630218"
+  }
+},
+{
+  "type": "way",
+  "id": 1303724126,
+  "bounds": {
+    "minlat": -6.9141041,
+    "minlon": 107.6029523,
+    "maxlat": -6.9140673,
+    "maxlon": 107.6031321
+  },
+  "nodes": [
+    2628264168,
+    8385451874
+  ],
+  "geometry": [
+    { "lat": -6.9141041, "lon": 107.6031321 },
+    { "lat": -6.9140673, "lon": 107.6029523 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "30",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1303724127,
+  "bounds": {
+    "minlat": -6.9140454,
+    "minlon": 107.6007359,
+    "maxlat": -6.9140111,
+    "maxlon": 107.6009829
+  },
+  "nodes": [
+    8385451883,
+    293384542
+  ],
+  "geometry": [
+    { "lat": -6.9140111, "lon": 107.6009829 },
+    { "lat": -6.9140454, "lon": 107.6007359 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1356313331,
+  "bounds": {
+    "minlat": -6.9141204,
+    "minlon": 107.5989808,
+    "maxlat": -6.9141201,
+    "maxlon": 107.5992093
+  },
+  "nodes": [
+    12552986395,
+    11262097596
+  ],
+  "geometry": [
+    { "lat": -6.9141204, "lon": 107.5992093 },
+    { "lat": -6.9141201, "lon": 107.5989808 }
+  ],
+  "tags": {
+    "covered": "yes",
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1356313332,
+  "bounds": {
+    "minlat": -6.9140868,
+    "minlon": 107.5989810,
+    "maxlat": -6.9140864,
+    "maxlon": 107.5992091
+  },
+  "nodes": [
+    2628273519,
+    12552986394
+  ],
+  "geometry": [
+    { "lat": -6.9140864, "lon": 107.5989810 },
+    { "lat": -6.9140868, "lon": 107.5992091 }
+  ],
+  "tags": {
+    "covered": "yes",
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1356313333,
+  "bounds": {
+    "minlat": -6.9140827,
+    "minlon": 107.5984888,
+    "maxlat": -6.9139080,
+    "maxlon": 107.5990364
+  },
+  "nodes": [
+    2628273507,
+    13520066493,
+    11262097548,
+    12552986396
+  ],
+  "geometry": [
+    { "lat": -6.9140827, "lon": 107.5984888 },
+    { "lat": -6.9140278, "lon": 107.5986204 },
+    { "lat": -6.9139406, "lon": 107.5988974 },
+    { "lat": -6.9139080, "lon": 107.5990364 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1356313334,
+  "bounds": {
+    "minlat": -6.9139080,
+    "minlon": 107.5990364,
+    "maxlat": -6.9138164,
+    "maxlon": 107.5994015
+  },
+  "nodes": [
+    12552986396,
+    12552986397
+  ],
+  "geometry": [
+    { "lat": -6.9139080, "lon": 107.5990364 },
+    { "lat": -6.9138164, "lon": 107.5994015 }
+  ],
+  "tags": {
+    "covered": "yes",
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1356313335,
+  "bounds": {
+    "minlat": -6.9138751,
+    "minlon": 107.6000139,
+    "maxlat": -6.9138538,
+    "maxlon": 107.6004969
+  },
+  "nodes": [
+    2628273514,
+    12552986398
+  ],
+  "geometry": [
+    { "lat": -6.9138751, "lon": 107.6000139 },
+    { "lat": -6.9138538, "lon": 107.6004969 }
+  ],
+  "tags": {
+    "covered": "yes",
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1356313336,
+  "bounds": {
+    "minlat": -6.9132030,
+    "minlon": 107.5990307,
+    "maxlat": -6.9131391,
+    "maxlon": 107.5993918
+  },
+  "nodes": [
+    2628273500,
+    12553010403
+  ],
+  "geometry": [
+    { "lat": -6.9131391, "lon": 107.5990307 },
+    { "lat": -6.9132030, "lon": 107.5993918 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1356313337,
+  "bounds": {
+    "minlat": -6.9132946,
+    "minlon": 107.5993918,
+    "maxlat": -6.9132030,
+    "maxlon": 107.5999828
+  },
+  "nodes": [
+    12553010403,
+    12553010402
+  ],
+  "geometry": [
+    { "lat": -6.9132030, "lon": 107.5993918 },
+    { "lat": -6.9132946, "lon": 107.5999828 }
+  ],
+  "tags": {
+    "covered": "yes",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1356313338,
+  "bounds": {
+    "minlat": -6.9133027,
+    "minlon": 107.5988787,
+    "maxlat": -6.9132188,
+    "maxlon": 107.5993765
+  },
+  "nodes": [
+    12553010405,
+    2628273531
+  ],
+  "geometry": [
+    { "lat": -6.9133027, "lon": 107.5993765 },
+    { "lat": -6.9132188, "lon": 107.5988787 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1356313339,
+  "bounds": {
+    "minlat": -6.9133953,
+    "minlon": 107.5993765,
+    "maxlat": -6.9133027,
+    "maxlon": 107.5999673
+  },
+  "nodes": [
+    12553010407,
+    12553010405
+  ],
+  "geometry": [
+    { "lat": -6.9133953, "lon": 107.5999673 },
+    { "lat": -6.9133027, "lon": 107.5993765 }
+  ],
+  "tags": {
+    "covered": "yes",
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1356313340,
+  "bounds": {
+    "minlat": -6.9133512,
+    "minlon": 107.5993835,
+    "maxlat": -6.9132571,
+    "maxlon": 107.5999741
+  },
+  "nodes": [
+    12553010406,
+    12553010404
+  ],
+  "geometry": [
+    { "lat": -6.9133512, "lon": 107.5999741 },
+    { "lat": -6.9132571, "lon": 107.5993835 }
+  ],
+  "tags": {
+    "covered": "yes",
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1356313341,
+  "bounds": {
+    "minlat": -6.9132571,
+    "minlon": 107.5988879,
+    "maxlat": -6.9131710,
+    "maxlon": 107.5993835
+  },
+  "nodes": [
+    12553010404,
+    2628273498,
+    12553010418,
+    2628273499
+  ],
+  "geometry": [
+    { "lat": -6.9132571, "lon": 107.5993835 },
+    { "lat": -6.9132248, "lon": 107.5991851 },
+    { "lat": -6.9132010, "lon": 107.5990503 },
+    { "lat": -6.9131710, "lon": 107.5988879 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1356313342,
+  "bounds": {
+    "minlat": -6.9134802,
+    "minlon": 107.5993774,
+    "maxlat": -6.9133852,
+    "maxlon": 107.5999542
+  },
+  "nodes": [
+    12553010408,
+    2628273534
+  ],
+  "geometry": [
+    { "lat": -6.9134802, "lon": 107.5999542 },
+    { "lat": -6.9133852, "lon": 107.5993774 }
+  ],
+  "tags": {
+    "covered": "yes",
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1356313343,
+  "bounds": {
+    "minlat": -6.9135185,
+    "minlon": 107.5993716,
+    "maxlat": -6.9134174,
+    "maxlon": 107.5999483
+  },
+  "nodes": [
+    12552986399,
+    12553010409
+  ],
+  "geometry": [
+    { "lat": -6.9134174, "lon": 107.5993716 },
+    { "lat": -6.9135185, "lon": 107.5999483 }
+  ],
+  "tags": {
+    "covered": "yes",
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1356313344,
+  "bounds": {
+    "minlat": -6.9134490,
+    "minlon": 107.5983350,
+    "maxlat": -6.9132908,
+    "maxlon": 107.5993540
+  },
+  "nodes": [
+    12553010410,
+    2628273536,
+    2628273528
+  ],
+  "geometry": [
+    { "lat": -6.9134490, "lon": 107.5993540 },
+    { "lat": -6.9133252, "lon": 107.5986053 },
+    { "lat": -6.9132908, "lon": 107.5983350 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1356313346,
+  "bounds": {
+    "minlat": -6.9135509,
+    "minlon": 107.5993540,
+    "maxlat": -6.9134490,
+    "maxlon": 107.5999433
+  },
+  "nodes": [
+    12553010412,
+    12553010410
+  ],
+  "geometry": [
+    { "lat": -6.9135509, "lon": 107.5999433 },
+    { "lat": -6.9134490, "lon": 107.5993540 }
+  ],
+  "tags": {
+    "covered": "yes",
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1473677451,
+  "bounds": {
+    "minlat": -6.9141675,
+    "minlon": 107.5998978,
+    "maxlat": -6.9138277,
+    "maxlon": 107.6018154
+  },
+  "nodes": [
+    8385451903,
+    13520066463,
+    293384543,
+    293384542,
+    13530249440,
+    8385451899,
+    13814081453,
+    2628273505,
+    8385451888,
+    8385451887
+  ],
+  "geometry": [
+    { "lat": -6.9141675, "lon": 107.5998978 },
+    { "lat": -6.9141053, "lon": 107.6003645 },
+    { "lat": -6.9140942, "lon": 107.6004509 },
+    { "lat": -6.9140454, "lon": 107.6007359 },
+    { "lat": -6.9139852, "lon": 107.6009855 },
+    { "lat": -6.9139190, "lon": 107.6012269 },
+    { "lat": -6.9138827, "lon": 107.6013606 },
+    { "lat": -6.9138583, "lon": 107.6014640 },
+    { "lat": -6.9138382, "lon": 107.6016426 },
+    { "lat": -6.9138277, "lon": 107.6018154 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1473677452,
+  "bounds": {
+    "minlat": -6.9141437,
+    "minlon": 107.6003384,
+    "maxlat": -6.9140609,
+    "maxlon": 107.6009316
+  },
+  "nodes": [
+    2628273444,
+    8385451900,
+    8385451882
+  ],
+  "geometry": [
+    { "lat": -6.9141437, "lon": 107.6003384 },
+    { "lat": -6.9140866, "lon": 107.6007390 },
+    { "lat": -6.9140609, "lon": 107.6009316 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "railway": "rail",
+    "service": "siding"
+  }
+},
+{
+  "type": "way",
+  "id": 1473677453,
+  "bounds": {
+    "minlat": -6.9140942,
+    "minlon": 107.6004509,
+    "maxlat": -6.9140609,
+    "maxlon": 107.6009316
+  },
+  "nodes": [
+    8385451882,
+    13520066462,
+    293384543
+  ],
+  "geometry": [
+    { "lat": -6.9140609, "lon": 107.6009316 },
+    { "lat": -6.9140711, "lon": 107.6006824 },
+    { "lat": -6.9140942, "lon": 107.6004509 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1473677454,
+  "bounds": {
+    "minlat": -6.9141833,
+    "minlon": 107.5995253,
+    "maxlat": -6.9140320,
+    "maxlon": 107.6004019
+  },
+  "nodes": [
+    11262097593,
+    11262097597,
+    13520066464,
+    8385451869
+  ],
+  "geometry": [
+    { "lat": -6.9141833, "lon": 107.5995253 },
+    { "lat": -6.9141282, "lon": 107.5999291 },
+    { "lat": -6.9140821, "lon": 107.6001747 },
+    { "lat": -6.9140320, "lon": 107.6004019 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1474680199,
+  "bounds": {
+    "minlat": -6.9137398,
+    "minlon": 107.6000553,
+    "maxlat": -6.9137240,
+    "maxlon": 107.6006810
+  },
+  "nodes": [
+    8385451893,
+    13528591960,
+    13528591956,
+    13528591957,
+    13528591959,
+    13528591958
+  ],
+  "geometry": [
+    { "lat": -6.9137299, "lon": 107.6006810 },
+    { "lat": -6.9137240, "lon": 107.6004824 },
+    { "lat": -6.9137243, "lon": 107.6003872 },
+    { "lat": -6.9137317, "lon": 107.6002577 },
+    { "lat": -6.9137344, "lon": 107.6002109 },
+    { "lat": -6.9137398, "lon": 107.6000553 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1511417120,
+  "bounds": {
+    "minlat": -6.9143239,
+    "minlon": 107.6001798,
+    "maxlat": -6.9142953,
+    "maxlon": 107.6007345
+  },
+  "nodes": [
+    8385468243,
+    13814081443,
+    13814081442
+  ],
+  "geometry": [
+    { "lat": -6.9143239, "lon": 107.6001798 },
+    { "lat": -6.9143114, "lon": 107.6004416 },
+    { "lat": -6.9142953, "lon": 107.6007345 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1511417128,
+  "bounds": {
+    "minlat": -6.9144376,
+    "minlon": 107.5983807,
+    "maxlat": -6.9144102,
+    "maxlon": 107.5990349
+  },
+  "nodes": [
+    11270915380,
+    8385468235
+  ],
+  "geometry": [
+    { "lat": -6.9144102, "lon": 107.5983807 },
+    { "lat": -6.9144376, "lon": 107.5990349 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1511440484,
+  "bounds": {
+    "minlat": -6.9142523,
+    "minlon": 107.5986652,
+    "maxlat": -6.9142099,
+    "maxlon": 107.5998951
+  },
+  "nodes": [
+    2628273443,
+    11262097579,
+    8385468221,
+    8385468222,
+    8385468262
+  ],
+  "geometry": [
+    { "lat": -6.9142099, "lon": 107.5998951 },
+    { "lat": -6.9142332, "lon": 107.5995460 },
+    { "lat": -6.9142412, "lon": 107.5993395 },
+    { "lat": -6.9142523, "lon": 107.5989355 },
+    { "lat": -6.9142516, "lon": 107.5986652 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "railway": "rail",
+    "service": "siding"
+  }
+},
+{
+  "type": "way",
+  "id": 1511440485,
+  "bounds": {
+    "minlat": -6.9142099,
+    "minlon": 107.5998951,
+    "maxlat": -6.9141437,
+    "maxlon": 107.6003384
+  },
+  "nodes": [
+    2628273443,
+    2628273444
+  ],
+  "geometry": [
+    { "lat": -6.9142099, "lon": 107.5998951 },
+    { "lat": -6.9141437, "lon": 107.6003384 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "railway": "rail",
+    "service": "siding"
+  }
+},
+{
+  "type": "way",
+  "id": 1511440486,
+  "bounds": {
+    "minlat": -6.9142555,
+    "minlon": 107.6004533,
+    "maxlat": -6.9142246,
+    "maxlon": 107.6014299
+  },
+  "nodes": [
+    8385451901,
+    2628273469,
+    13530249443,
+    13814081444,
+    13520064993,
+    11262097585,
+    10694245347
+  ],
+  "geometry": [
+    { "lat": -6.9142246, "lon": 107.6004533 },
+    { "lat": -6.9142256, "lon": 107.6006252 },
+    { "lat": -6.9142270, "lon": 107.6007928 },
+    { "lat": -6.9142369, "lon": 107.6010459 },
+    { "lat": -6.9142407, "lon": 107.6011441 },
+    { "lat": -6.9142417, "lon": 107.6011762 },
+    { "lat": -6.9142555, "lon": 107.6014299 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "name": "Jalur Kereta Api Padalarang–Kasugihan",
+    "railway": "rail",
+    "railway:track_ref": "4",
+    "usage": "main",
+    "wikidata": "Q25630218",
+    "wikipedia": "id:Jalur kereta api Padalarang–Kasugihan"
+  }
+},
+{
+  "type": "way",
+  "id": 1511440487,
+  "bounds": {
+    "minlat": -6.9143385,
+    "minlon": 107.6006265,
+    "maxlat": -6.9143171,
+    "maxlon": 107.6011957
+  },
+  "nodes": [
+    8385468241,
+    8385468239,
+    11262097568,
+    13814081445,
+    13520064983,
+    10694245346
+  ],
+  "geometry": [
+    { "lat": -6.9143385, "lon": 107.6006265 },
+    { "lat": -6.9143243, "lon": 107.6008399 },
+    { "lat": -6.9143171, "lon": 107.6010455 },
+    { "lat": -6.9143179, "lon": 107.6011251 },
+    { "lat": -6.9143181, "lon": 107.6011442 },
+    { "lat": -6.9143176, "lon": 107.6011957 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "name": "Jalur Kereta Api Padalarang–Kasugihan",
+    "railway": "rail",
+    "railway:track_ref": "3",
+    "usage": "main",
+    "wikidata": "Q25630218",
+    "wikipedia": "id:Jalur kereta api Padalarang–Kasugihan"
+  }
+},
+{
+  "type": "way",
+  "id": 1511440488,
+  "bounds": {
+    "minlat": -6.9143722,
+    "minlon": 107.6011150,
+    "maxlat": -6.9143625,
+    "maxlon": 107.6013443
+  },
+  "nodes": [
+    10694245345,
+    13814081446,
+    11262097574,
+    13520064984,
+    8385468315
+  ],
+  "geometry": [
+    { "lat": -6.9143722, "lon": 107.6013443 },
+    { "lat": -6.9143664, "lon": 107.6012317 },
+    { "lat": -6.9143640, "lon": 107.6011577 },
+    { "lat": -6.9143635, "lon": 107.6011442 },
+    { "lat": -6.9143625, "lon": 107.6011150 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "railway": "rail",
+    "railway:track_ref": "2",
+    "service": "siding",
+    "wikidata": "Q25630218"
+  }
+},
+{
+  "type": "way",
+  "id": 1530383704,
+  "bounds": {
+    "minlat": -6.9142243,
+    "minlon": 107.6028067,
+    "maxlat": -6.9142003,
+    "maxlon": 107.6031303
+  },
+  "nodes": [
+    13947927557,
+    2628273447,
+    2628273448,
+    10694245343
+  ],
+  "geometry": [
+    { "lat": -6.9142003, "lon": 107.6028067 },
+    { "lat": -6.9142057, "lon": 107.6029171 },
+    { "lat": -6.9142146, "lon": 107.6030399 },
+    { "lat": -6.9142243, "lon": 107.6031303 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "30",
+    "railway": "rail",
+    "railway:track_ref": "6",
+    "service": "siding"
+  }
+},
+{
+  "type": "way",
+  "id": 1530383705,
+  "bounds": {
+    "minlat": -6.9142626,
+    "minlon": 107.6028060,
+    "maxlat": -6.9142366,
+    "maxlon": 107.6031363
+  },
+  "nodes": [
+    10694245342,
+    2628273438,
+    2628273439,
+    13947927558
+  ],
+  "geometry": [
+    { "lat": -6.9142626, "lon": 107.6031363 },
+    { "lat": -6.9142545, "lon": 107.6030543 },
+    { "lat": -6.9142434, "lon": 107.6029213 },
+    { "lat": -6.9142366, "lon": 107.6028060 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "30",
+    "railway": "rail",
+    "railway:track_ref": "5",
+    "service": "siding"
+  }
+},
+{
+  "type": "way",
+  "id": 1530383706,
+  "bounds": {
+    "minlat": -6.9143466,
+    "minlon": 107.6028009,
+    "maxlat": -6.9143239,
+    "maxlon": 107.6031532
+  },
+  "nodes": [
+    13947927559,
+    10694245341,
+    2628273467
+  ],
+  "geometry": [
+    { "lat": -6.9143239, "lon": 107.6028009 },
+    { "lat": -6.9143276, "lon": 107.6028746 },
+    { "lat": -6.9143466, "lon": 107.6031532 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "name": "Jalur Kereta Api Padalarang–Kasugihan",
+    "railway": "rail",
+    "railway:track_ref": "4",
+    "usage": "main",
+    "wikidata": "Q25630218",
+    "wikipedia": "id:Jalur kereta api Padalarang–Kasugihan"
+  }
+},
+{
+  "type": "way",
+  "id": 1530383707,
+  "bounds": {
+    "minlat": -6.9144037,
+    "minlon": 107.6028002,
+    "maxlat": -6.9143758,
+    "maxlon": 107.6031645
+  },
+  "nodes": [
+    13947927560,
+    10694245354,
+    8385468349
+  ],
+  "geometry": [
+    { "lat": -6.9143758, "lon": 107.6028002 },
+    { "lat": -6.9143779, "lon": 107.6028404 },
+    { "lat": -6.9144037, "lon": 107.6031645 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "name": "Jalur Kereta Api Padalarang–Kasugihan",
+    "railway": "rail",
+    "railway:track_ref": "3",
+    "usage": "main",
+    "wikidata": "Q25630218",
+    "wikipedia": "id:Jalur kereta api Padalarang–Kasugihan"
+  }
+},
+{
+  "type": "way",
+  "id": 1530383708,
+  "bounds": {
+    "minlat": -6.9144661,
+    "minlon": 107.6027995,
+    "maxlat": -6.9144479,
+    "maxlon": 107.6031554
+  },
+  "nodes": [
+    2628273460,
+    10694245339
+  ],
+  "geometry": [
+    { "lat": -6.9144661, "lon": 107.6031554 },
+    { "lat": -6.9144479, "lon": 107.6027995 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "30",
+    "railway": "rail",
+    "railway:track_ref": "2",
+    "service": "siding",
+    "wikidata": "Q25630218"
+  }
+},
+{
+  "type": "way",
+  "id": 1530383709,
+  "bounds": {
+    "minlat": -6.9145291,
+    "minlon": 107.6027960,
+    "maxlat": -6.9145079,
+    "maxlon": 107.6031495
+  },
+  "nodes": [
+    10694245340,
+    10312881283
+  ],
+  "geometry": [
+    { "lat": -6.9145079, "lon": 107.6027960 },
+    { "lat": -6.9145291, "lon": 107.6031495 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "30",
+    "railway": "rail",
+    "railway:track_ref": "1",
+    "service": "siding"
+  }
+},
+{
+  "type": "way",
+  "id": 1530383710,
+  "bounds": {
+    "minlat": -6.9144001,
+    "minlon": 107.6013443,
+    "maxlat": -6.9143722,
+    "maxlon": 107.6016961
+  },
+  "nodes": [
+    11181861170,
+    10694245345
+  ],
+  "geometry": [
+    { "lat": -6.9144001, "lon": 107.6016961 },
+    { "lat": -6.9143722, "lon": 107.6013443 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "30",
+    "railway": "rail",
+    "railway:track_ref": "2",
+    "service": "siding",
+    "wikidata": "Q25630218"
+  }
+},
+{
+  "type": "way",
+  "id": 1530383711,
+  "bounds": {
+    "minlat": -6.9144609,
+    "minlon": 107.6013668,
+    "maxlat": -6.9144348,
+    "maxlon": 107.6016923
+  },
+  "nodes": [
+    10694245344,
+    2628273472
+  ],
+  "geometry": [
+    { "lat": -6.9144348, "lon": 107.6013668 },
+    { "lat": -6.9144609, "lon": 107.6016923 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "30",
+    "railway": "rail",
+    "railway:track_ref": "1",
+    "service": "siding"
+  }
+},
+{
+  "type": "way",
+  "id": 1530383712,
+  "bounds": {
+    "minlat": -6.9143215,
+    "minlon": 107.6011957,
+    "maxlat": -6.9143157,
+    "maxlon": 107.6017027
+  },
+  "nodes": [
+    10694245346,
+    13814081480,
+    13947927564,
+    11262097569
+  ],
+  "geometry": [
+    { "lat": -6.9143176, "lon": 107.6011957 },
+    { "lat": -6.9143157, "lon": 107.6013980 },
+    { "lat": -6.9143163, "lon": 107.6015082 },
+    { "lat": -6.9143215, "lon": 107.6017027 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "name": "Jalur Kereta Api Padalarang–Kasugihan",
+    "railway": "rail",
+    "railway:track_ref": "3",
+    "usage": "main",
+    "wikidata": "Q25630218",
+    "wikipedia": "id:Jalur kereta api Padalarang–Kasugihan"
+  }
+},
+{
+  "type": "way",
+  "id": 1530383713,
+  "bounds": {
+    "minlat": -6.9142692,
+    "minlon": 107.6014299,
+    "maxlat": -6.9142555,
+    "maxlon": 107.6017039
+  },
+  "nodes": [
+    10694245347,
+    13947927561
+  ],
+  "geometry": [
+    { "lat": -6.9142555, "lon": 107.6014299 },
+    { "lat": -6.9142692, "lon": 107.6017039 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "20",
+    "name": "Jalur Kereta Api Padalarang–Kasugihan",
+    "railway": "rail",
+    "railway:track_ref": "4",
+    "usage": "main",
+    "wikidata": "Q25630218",
+    "wikipedia": "id:Jalur kereta api Padalarang–Kasugihan"
+  }
+},
+{
+  "type": "way",
+  "id": 1530383714,
+  "bounds": {
+    "minlat": -6.9141795,
+    "minlon": 107.6014181,
+    "maxlat": -6.9141644,
+    "maxlon": 107.6017090
+  },
+  "nodes": [
+    13947927562,
+    10694245348
+  ],
+  "geometry": [
+    { "lat": -6.9141795, "lon": 107.6017090 },
+    { "lat": -6.9141644, "lon": 107.6014181 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "30",
+    "railway": "rail",
+    "railway:track_ref": "5",
+    "service": "siding"
+  }
+},
+{
+  "type": "way",
+  "id": 1530383715,
+  "bounds": {
+    "minlat": -6.9141471,
+    "minlon": 107.6013600,
+    "maxlat": -6.9141302,
+    "maxlon": 107.6017093
+  },
+  "nodes": [
+    11262097616,
+    13947927563
+  ],
+  "geometry": [
+    { "lat": -6.9141302, "lon": 107.6013600 },
+    { "lat": -6.9141471, "lon": 107.6017093 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "30",
+    "railway": "rail",
+    "railway:track_ref": "6",
+    "service": "siding"
+  }
+}
+
+  ]
+}

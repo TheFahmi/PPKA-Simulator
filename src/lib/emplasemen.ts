@@ -2,6 +2,7 @@ import type {
   Emplasemen,
   KedudukanWesel,
   Level,
+  Persilangan,
   Ruas,
   Simpul,
   Wesel,
@@ -24,6 +25,8 @@ export interface IndeksEmplasemen {
   wesel: Map<string, Wesel>;
   /** Wesel berdasarkan simpul tempatnya berada. */
   weselDiSimpul: Map<string, Wesel>;
+  /** Persilangan sebidang berdasarkan simpul tempatnya berada. */
+  persilanganDiSimpul: Map<string, Persilangan>;
   /** Daftar id ruas yang bersinggungan pada tiap simpul. */
   ruasDiSimpul: Map<string, string[]>;
   /** Ruas badan sepur berdasarkan id sepur. */
@@ -41,6 +44,9 @@ export function indeksEmplasemen(data: Emplasemen): IndeksEmplasemen {
 
   const weselDiSimpul = new Map<string, Wesel>();
   for (const w of data.wesel) weselDiSimpul.set(w.simpulId, w);
+
+  const persilanganDiSimpul = new Map<string, Persilangan>();
+  for (const p of data.persilangan ?? []) persilanganDiSimpul.set(p.simpulId, p);
 
   const ruasDiSimpul = new Map<string, string[]>();
   const daftar = (id: string) => {
@@ -78,6 +84,7 @@ export function indeksEmplasemen(data: Emplasemen): IndeksEmplasemen {
     ruas,
     wesel,
     weselDiSimpul,
+    persilanganDiSimpul,
     ruasDiSimpul,
     ruasSepur,
     sinyalPelindung,
@@ -100,6 +107,18 @@ function transisiSah(
   ruasMasukId: string,
   ruasKeluarId: string,
 ): { sah: boolean; wesel?: { weselId: string; kedudukan: KedudukanWesel } } {
+  // Persilangan sebidang: sarana hanya boleh berjalan lurus terus pada
+  // pasangan kakinya sendiri; berpindah ke sepur yang bersilangan mustahil.
+  const silang = ix.persilanganDiSimpul.get(simpulId);
+  if (silang) {
+    const sepasang = silang.pasangan.some(
+      ([a, b]) =>
+        (a === ruasMasukId && b === ruasKeluarId) ||
+        (b === ruasMasukId && a === ruasKeluarId),
+    );
+    return { sah: sepasang };
+  }
+
   const w = ix.weselDiSimpul.get(simpulId);
   if (!w) {
     // Sambungan biasa: hanya boleh bila memang tepat dua ruas bertemu.

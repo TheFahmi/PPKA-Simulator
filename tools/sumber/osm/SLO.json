@@ -1,0 +1,4896 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-07-26T17:48:51Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 719116319,
+  "lat": -7.5573968,
+  "lon": 110.8184341,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 719116323,
+  "lat": -7.5575330,
+  "lon": 110.8177517,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 1202365813,
+  "lat": -7.5549317,
+  "lon": 110.8256496,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 1202365827,
+  "lat": -7.5566325,
+  "lon": 110.8285714,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 1202365830,
+  "lat": -7.5570576,
+  "lon": 110.8178449,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 1202365842,
+  "lat": -7.5558692,
+  "lon": 110.8238315,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 1202365843,
+  "lat": -7.5558170,
+  "lon": 110.8240590,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 1347330608,
+  "lat": -7.5560309,
+  "lon": 110.8232615,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 1347330613,
+  "lat": -7.5561004,
+  "lon": 110.8227049,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "backward"
+  }
+},
+{
+  "type": "node",
+  "id": 1347330617,
+  "lat": -7.5566680,
+  "lon": 110.8199539,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "forward"
+  }
+},
+{
+  "type": "node",
+  "id": 1347330619,
+  "lat": -7.5569655,
+  "lon": 110.8185087,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 1347330631,
+  "lat": -7.5570483,
+  "lon": 110.8178905,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 3361155510,
+  "lat": -7.5565138,
+  "lon": 110.8230069,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 3361155522,
+  "lat": -7.5574434,
+  "lon": 110.8183712,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 3361155526,
+  "lat": -7.5563387,
+  "lon": 110.8235423,
+  "tags": {
+    "railway": "switch",
+    "railway:switch": "double_slip"
+  }
+},
+{
+  "type": "node",
+  "id": 3361220077,
+  "lat": -7.5575859,
+  "lon": 110.8174832,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 3361220078,
+  "lat": -7.5576348,
+  "lon": 110.8165638,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 3361220081,
+  "lat": -7.5572433,
+  "lon": 110.8189656,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 3361220084,
+  "lat": -7.5569146,
+  "lon": 110.8203894,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 3361220087,
+  "lat": -7.5578167,
+  "lon": 110.8146505,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 3361220090,
+  "lat": -7.5560530,
+  "lon": 110.8231556,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 3361220091,
+  "lat": -7.5567111,
+  "lon": 110.8199612,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "backward"
+  }
+},
+{
+  "type": "node",
+  "id": 3361221395,
+  "lat": -7.5565379,
+  "lon": 110.8197839,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 3361221398,
+  "lat": -7.5560105,
+  "lon": 110.8226874,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 3361221399,
+  "lat": -7.5559365,
+  "lon": 110.8235022,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 3361221400,
+  "lat": -7.5570876,
+  "lon": 110.8176240,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 3361221401,
+  "lat": -7.5571532,
+  "lon": 110.8168796,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 3361221405,
+  "lat": -7.5570795,
+  "lon": 110.8170564,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 3361221408,
+  "lat": -7.5568207,
+  "lon": 110.8194148,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 3361221410,
+  "lat": -7.5567859,
+  "lon": 110.8189996,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 3361689215,
+  "lat": -7.5568808,
+  "lon": 110.8207241,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 3361718422,
+  "lat": -7.5566521,
+  "lon": 110.8194243,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 4239440451,
+  "lat": -7.5567925,
+  "lon": 110.8142424,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 4990231587,
+  "lat": -7.5567474,
+  "lon": 110.8142474,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 7257490002,
+  "lat": -7.5561418,
+  "lon": 110.8227127,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "forward"
+  }
+},
+{
+  "type": "node",
+  "id": 7737834374,
+  "lat": -7.5560017,
+  "lon": 110.8229075,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 7737834375,
+  "lat": -7.5578897,
+  "lon": 110.8140254,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 9280193420,
+  "lat": -7.5567555,
+  "lon": 110.8291541,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 9280193425,
+  "lat": -7.5564793,
+  "lon": 110.8276131,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 11162830806,
+  "lat": -7.5569629,
+  "lon": 110.8165159,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 11162830807,
+  "lat": -7.5570402,
+  "lon": 110.8167973,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 11162830809,
+  "lat": -7.5559020,
+  "lon": 110.8238507,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 11162830811,
+  "lat": -7.5572959,
+  "lon": 110.8168913,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 11162830814,
+  "lat": -7.5572757,
+  "lon": 110.8169945,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 11162830815,
+  "lat": -7.5575596,
+  "lon": 110.8153842,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 11162830816,
+  "lat": -7.5571180,
+  "lon": 110.8175539,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 11162830817,
+  "lat": -7.5574564,
+  "lon": 110.8163257,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 11162830828,
+  "lat": -7.5563319,
+  "lon": 110.8203604,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 11162830832,
+  "lat": -7.5569761,
+  "lon": 110.8184570,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 11162830835,
+  "lat": -7.5568808,
+  "lon": 110.8191226,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 11164793079,
+  "lat": -7.5575974,
+  "lon": 110.8176287,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 11164793081,
+  "lat": -7.5574597,
+  "lon": 110.8182899,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 11164793092,
+  "lat": -7.5570810,
+  "lon": 110.8188283,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 11164793093,
+  "lat": -7.5570310,
+  "lon": 110.8192983,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 11164793094,
+  "lat": -7.5569868,
+  "lon": 110.8197704,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 11164793095,
+  "lat": -7.5580259,
+  "lon": 110.8135316,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 11164823610,
+  "lat": -7.5571380,
+  "lon": 110.8170674,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 11164823617,
+  "lat": -7.5571293,
+  "lon": 110.8171950,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 11164823618,
+  "lat": -7.5565987,
+  "lon": 110.8143104,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 11164823619,
+  "lat": -7.5566471,
+  "lon": 110.8146999,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 11510437706,
+  "lat": -7.5541101,
+  "lon": 110.8263511,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 12101093030,
+  "lat": -7.5576657,
+  "lon": 110.8157136,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 12101093031,
+  "lat": -7.5576162,
+  "lon": 110.8161799,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 12101093032,
+  "lat": -7.5575801,
+  "lon": 110.8165887,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 12101093033,
+  "lat": -7.5575650,
+  "lon": 110.8168976,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 12101110987,
+  "lat": -7.5578253,
+  "lon": 110.8146009,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 12101132372,
+  "lat": -7.5566708,
+  "lon": 110.8153129,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 12101132374,
+  "lat": -7.5565563,
+  "lon": 110.8143216,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 12101133822,
+  "lat": -7.5568892,
+  "lon": 110.8190804,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 12101133828,
+  "lat": -7.5567567,
+  "lon": 110.8199711,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "backward"
+  }
+},
+{
+  "type": "node",
+  "id": 12101133832,
+  "lat": -7.5561779,
+  "lon": 110.8227187,
+  "tags": {
+    "railway": "signal",
+    "railway:signal:direction": "forward"
+  }
+},
+{
+  "type": "node",
+  "id": 12101150246,
+  "lat": -7.5567683,
+  "lon": 110.8292359,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 12101150247,
+  "lat": -7.5568048,
+  "lon": 110.8298011,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 12151467171,
+  "lat": -7.5557428,
+  "lon": 110.8246224,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 12151467175,
+  "lat": -7.5547305,
+  "lon": 110.8260245,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "node",
+  "id": 12151467190,
+  "lat": -7.5566162,
+  "lon": 110.8284639,
+  "tags": {
+    "railway": "switch"
+  }
+},
+{
+  "type": "way",
+  "id": 104206305,
+  "bounds": {
+    "minlat": -7.5607705,
+    "minlon": 110.7997464,
+    "maxlat": -7.5580532,
+    "maxlon": 110.8131372
+  },
+  "nodes": [
+    3361718425,
+    3361718452,
+    13068389719,
+    3361718450,
+    3361718446,
+    11164933135,
+    3361718456
+  ],
+  "geometry": [
+    { "lat": -7.5580532, "lon": 110.8131372 },
+    { "lat": -7.5584806, "lon": 110.8109291 },
+    { "lat": -7.5585817, "lon": 110.8104064 },
+    { "lat": -7.5589106, "lon": 110.8087713 },
+    { "lat": -7.5604007, "lon": 110.8015478 },
+    { "lat": -7.5607406, "lon": 110.7998792 },
+    { "lat": -7.5607705, "lon": 110.7997464 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "120",
+    "name": "Jalur Kereta Api Kutoarjo–Solo Balapan",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487133",
+    "wikipedia": "id:Jalur kereta api Kutoarjo–Purwosari–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 104206307,
+  "bounds": {
+    "minlat": -7.5566274,
+    "minlon": 110.8206082,
+    "maxlat": -7.5562932,
+    "maxlon": 110.8222125
+  },
+  "nodes": [
+    5333574727,
+    12102623373
+  ],
+  "geometry": [
+    { "lat": -7.5566274, "lon": 110.8206082 },
+    { "lat": -7.5562932, "lon": 110.8222125 }
+  ],
+  "tags": {
+    "covered": "yes",
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "railway:track_ref": "5",
+    "service": "siding",
+    "tunnel": "covered",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 104206308,
+  "bounds": {
+    "minlat": -7.5564008,
+    "minlon": 110.8240590,
+    "maxlat": -7.5557657,
+    "maxlon": 110.8273138
+  },
+  "nodes": [
+    1202365843,
+    12102768754,
+    1202365816,
+    4990231592,
+    12102768753,
+    3361270284,
+    12151467115,
+    1202365828,
+    1202365833,
+    11162830842,
+    1202365806,
+    1202365850,
+    1202365821
+  ],
+  "geometry": [
+    { "lat": -7.5558170, "lon": 110.8240590 },
+    { "lat": -7.5557917, "lon": 110.8242292 },
+    { "lat": -7.5557708, "lon": 110.8244256 },
+    { "lat": -7.5557657, "lon": 110.8245399 },
+    { "lat": -7.5557663, "lon": 110.8246265 },
+    { "lat": -7.5557786, "lon": 110.8247415 },
+    { "lat": -7.5557914, "lon": 110.8248320 },
+    { "lat": -7.5558103, "lon": 110.8249654 },
+    { "lat": -7.5559208, "lon": 110.8257033 },
+    { "lat": -7.5559940, "lon": 110.8261841 },
+    { "lat": -7.5561085, "lon": 110.8265655 },
+    { "lat": -7.5563109, "lon": 110.8270746 },
+    { "lat": -7.5564008, "lon": 110.8273138 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "name": "Jalur Kereta Api Solo Balapan–Kertosono",
+    "railway": "rail",
+    "service": "siding",
+    "voltage": "1500",
+    "wikidata": "Q12487144",
+    "wikipedia": "id:Jalur kereta api Solo Balapan–Kertosono"
+  }
+},
+{
+  "type": "way",
+  "id": 104305400,
+  "bounds": {
+    "minlat": -7.5565563,
+    "minlon": 110.8222731,
+    "maxlat": -7.5562295,
+    "maxlon": 110.8238898
+  },
+  "nodes": [
+    12101937747,
+    12440467294
+  ],
+  "geometry": [
+    { "lat": -7.5565563, "lon": 110.8222731 },
+    { "lat": -7.5562295, "lon": 110.8238898 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "80",
+    "name": "Jalur Kereta Api Solo Balapan–Kertosono",
+    "railway": "rail",
+    "railway:track_ref": "4",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487144",
+    "wikipedia": "id:Jalur kereta api Solo Balapan–Kertosono"
+  }
+},
+{
+  "type": "way",
+  "id": 120068060,
+  "bounds": {
+    "minlat": -7.5608003,
+    "minlon": 110.7998327,
+    "maxlat": -7.5580971,
+    "maxlon": 110.8131446
+  },
+  "nodes": [
+    11164933147,
+    11164933134,
+    3361718432,
+    3361718429,
+    3361718426
+  ],
+  "geometry": [
+    { "lat": -7.5608003, "lon": 110.7998327 },
+    { "lat": -7.5606552, "lon": 110.8005289 },
+    { "lat": -7.5605879, "lon": 110.8008389 },
+    { "lat": -7.5586199, "lon": 110.8104168 },
+    { "lat": -7.5580971, "lon": 110.8131446 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "120",
+    "name": "Jalur Kereta Api Kutoarjo–Solo Balapan",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487133",
+    "wikipedia": "id:Jalur kereta api Kutoarjo–Purwosari–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 120083581,
+  "bounds": {
+    "minlat": -7.5613912,
+    "minlon": 110.8292359,
+    "maxlat": -7.5567683,
+    "maxlon": 110.8374494
+  },
+  "nodes": [
+    12101150246,
+    719116273,
+    3361270288,
+    719116269,
+    3361270289,
+    719116267,
+    12898729042,
+    719116266,
+    719116262,
+    1347330649,
+    12898729059,
+    719116257,
+    12153192825,
+    719116248,
+    12153192824,
+    1347330653,
+    9280193418,
+    9280157113,
+    12153192821,
+    9280193417,
+    12153192829,
+    12153192828,
+    3363461580
+  ],
+  "geometry": [
+    { "lat": -7.5567683, "lon": 110.8292359 },
+    { "lat": -7.5570028, "lon": 110.8307984 },
+    { "lat": -7.5571121, "lon": 110.8312613 },
+    { "lat": -7.5572652, "lon": 110.8317083 },
+    { "lat": -7.5574987, "lon": 110.8322012 },
+    { "lat": -7.5577407, "lon": 110.8326064 },
+    { "lat": -7.5579510, "lon": 110.8328965 },
+    { "lat": -7.5581694, "lon": 110.8331555 },
+    { "lat": -7.5585724, "lon": 110.8335437 },
+    { "lat": -7.5590999, "lon": 110.8339664 },
+    { "lat": -7.5595703, "lon": 110.8343220 },
+    { "lat": -7.5597648, "lon": 110.8344870 },
+    { "lat": -7.5600006, "lon": 110.8347065 },
+    { "lat": -7.5602077, "lon": 110.8349278 },
+    { "lat": -7.5603796, "lon": 110.8351459 },
+    { "lat": -7.5605310, "lon": 110.8353495 },
+    { "lat": -7.5607221, "lon": 110.8356638 },
+    { "lat": -7.5608797, "lon": 110.8359870 },
+    { "lat": -7.5609999, "lon": 110.8362863 },
+    { "lat": -7.5610968, "lon": 110.8365625 },
+    { "lat": -7.5611475, "lon": 110.8367080 },
+    { "lat": -7.5613534, "lon": 110.8373441 },
+    { "lat": -7.5613912, "lon": 110.8374494 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "120",
+    "name": "Jalur Kereta Api Solo Balapan–Kertosono",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487144",
+    "wikipedia": "id:Jalur kereta api Solo Balapan–Kertosono"
+  }
+},
+{
+  "type": "way",
+  "id": 120083586,
+  "bounds": {
+    "minlat": -7.5578897,
+    "minlon": 110.8140254,
+    "maxlat": -7.5572959,
+    "maxlon": 110.8168913
+  },
+  "nodes": [
+    11162830811,
+    12151707724,
+    12151707723,
+    3361220088,
+    7737834375
+  ],
+  "geometry": [
+    { "lat": -7.5572959, "lon": 110.8168913 },
+    { "lat": -7.5574142, "lon": 110.8163071 },
+    { "lat": -7.5575173, "lon": 110.8158490 },
+    { "lat": -7.5576837, "lon": 110.8151070 },
+    { "lat": -7.5578897, "lon": 110.8140254 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "120",
+    "name": "Jalur Kereta Api Kutoarjo–Solo Balapan",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487133",
+    "wikipedia": "id:Jalur kereta api Kutoarjo–Purwosari–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 120083587,
+  "bounds": {
+    "minlat": -7.5570483,
+    "minlon": 110.8178905,
+    "maxlat": -7.5569761,
+    "maxlon": 110.8184570
+  },
+  "nodes": [
+    11162830832,
+    1347330631
+  ],
+  "geometry": [
+    { "lat": -7.5569761, "lon": 110.8184570 },
+    { "lat": -7.5570483, "lon": 110.8178905 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 120083588,
+  "bounds": {
+    "minlat": -7.5571293,
+    "minlon": 110.8168839,
+    "maxlat": -7.5571253,
+    "maxlon": 110.8171950
+  },
+  "nodes": [
+    11164823617,
+    1202365803
+  ],
+  "geometry": [
+    { "lat": -7.5571293, "lon": 110.8171950 },
+    { "lat": -7.5571253, "lon": 110.8168839 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 120083589,
+  "bounds": {
+    "minlat": -7.5570935,
+    "minlon": 110.8146999,
+    "maxlat": -7.5566471,
+    "maxlon": 110.8176240
+  },
+  "nodes": [
+    3361221400,
+    12101132383,
+    12101110986,
+    12101132382,
+    3361221405,
+    12101132381,
+    11162830807,
+    12101132380,
+    11164823621,
+    11162830806,
+    13063964273,
+    12101132373,
+    1347330630,
+    11162830805,
+    12101132372,
+    12101132371,
+    12101132370,
+    11164823619
+  ],
+  "geometry": [
+    { "lat": -7.5570876, "lon": 110.8176240 },
+    { "lat": -7.5570930, "lon": 110.8175003 },
+    { "lat": -7.5570935, "lon": 110.8174199 },
+    { "lat": -7.5570878, "lon": 110.8172075 },
+    { "lat": -7.5570795, "lon": 110.8170564 },
+    { "lat": -7.5570588, "lon": 110.8168906 },
+    { "lat": -7.5570402, "lon": 110.8167973 },
+    { "lat": -7.5570106, "lon": 110.8166687 },
+    { "lat": -7.5569881, "lon": 110.8165898 },
+    { "lat": -7.5569629, "lon": 110.8165159 },
+    { "lat": -7.5568044, "lon": 110.8160751 },
+    { "lat": -7.5567747, "lon": 110.8159707 },
+    { "lat": -7.5567587, "lon": 110.8158966 },
+    { "lat": -7.5567378, "lon": 110.8157886 },
+    { "lat": -7.5566708, "lon": 110.8153129 },
+    { "lat": -7.5566658, "lon": 110.8151737 },
+    { "lat": -7.5566590, "lon": 110.8149230 },
+    { "lat": -7.5566471, "lon": 110.8146999 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 120083591,
+  "bounds": {
+    "minlat": -7.5580259,
+    "minlon": 110.8135316,
+    "maxlat": -7.5575859,
+    "maxlon": 110.8174832
+  },
+  "nodes": [
+    11164793095,
+    8189883172,
+    11162789200,
+    11162789201,
+    3361220076,
+    12101110989,
+    3361220075,
+    12101110990,
+    12101110991,
+    1347330647,
+    3361220077
+  ],
+  "geometry": [
+    { "lat": -7.5580259, "lon": 110.8135316 },
+    { "lat": -7.5579798, "lon": 110.8139204 },
+    { "lat": -7.5579202, "lon": 110.8144233 },
+    { "lat": -7.5578990, "lon": 110.8147075 },
+    { "lat": -7.5578910, "lon": 110.8151510 },
+    { "lat": -7.5578787, "lon": 110.8155645 },
+    { "lat": -7.5578625, "lon": 110.8158477 },
+    { "lat": -7.5578449, "lon": 110.8160673 },
+    { "lat": -7.5578221, "lon": 110.8162847 },
+    { "lat": -7.5577884, "lon": 110.8165091 },
+    { "lat": -7.5575859, "lon": 110.8174832 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "80",
+    "name": "Jalur Kereta Api Kutoarjo–Solo Balapan",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487133",
+    "wikipedia": "id:Jalur kereta api Kutoarjo–Purwosari–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 120083593,
+  "bounds": {
+    "minlat": -7.5569188,
+    "minlon": 110.8191226,
+    "maxlat": -7.5568422,
+    "maxlon": 110.8204366
+  },
+  "nodes": [
+    11162830835,
+    11162830834,
+    12101133823,
+    11162830836,
+    9277508670,
+    12101133824,
+    9277508669,
+    1347330622,
+    12101133821,
+    3361155509,
+    12101133819,
+    3361220084,
+    12151707730
+  ],
+  "geometry": [
+    { "lat": -7.5568808, "lon": 110.8191226 },
+    { "lat": -7.5568548, "lon": 110.8192908 },
+    { "lat": -7.5568462, "lon": 110.8193715 },
+    { "lat": -7.5568422, "lon": 110.8194660 },
+    { "lat": -7.5568447, "lon": 110.8195282 },
+    { "lat": -7.5568525, "lon": 110.8196006 },
+    { "lat": -7.5568652, "lon": 110.8196818 },
+    { "lat": -7.5568893, "lon": 110.8198332 },
+    { "lat": -7.5569001, "lon": 110.8199056 },
+    { "lat": -7.5569140, "lon": 110.8200476 },
+    { "lat": -7.5569188, "lon": 110.8201657 },
+    { "lat": -7.5569146, "lon": 110.8203894 },
+    { "lat": -7.5569115, "lon": 110.8204366 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "siding",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 120083594,
+  "bounds": {
+    "minlat": -7.5574996,
+    "minlon": 110.8145783,
+    "maxlat": -7.5570576,
+    "maxlon": 110.8178449
+  },
+  "nodes": [
+    1202365830,
+    12101132384,
+    3361221400,
+    11164823617,
+    11164823610,
+    3361221401,
+    1202365846,
+    11164823612,
+    1202365818
+  ],
+  "geometry": [
+    { "lat": -7.5570576, "lon": 110.8178449 },
+    { "lat": -7.5570789, "lon": 110.8177101 },
+    { "lat": -7.5570876, "lon": 110.8176240 },
+    { "lat": -7.5571293, "lon": 110.8171950 },
+    { "lat": -7.5571380, "lon": 110.8170674 },
+    { "lat": -7.5571532, "lon": 110.8168796 },
+    { "lat": -7.5571631, "lon": 110.8165357 },
+    { "lat": -7.5571866, "lon": 110.8162715 },
+    { "lat": -7.5574996, "lon": 110.8145783 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 120083595,
+  "bounds": {
+    "minlat": -7.5569655,
+    "minlon": 110.8185087,
+    "maxlat": -7.5564606,
+    "maxlon": 110.8209595
+  },
+  "nodes": [
+    12151707760,
+    1347330617,
+    1347330619
+  ],
+  "geometry": [
+    { "lat": -7.5564606, "lon": 110.8209595 },
+    { "lat": -7.5566680, "lon": 110.8199539 },
+    { "lat": -7.5569655, "lon": 110.8185087 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "120",
+    "name": "Jalur Kereta Api Kutoarjo–Solo Balapan",
+    "railway": "rail",
+    "railway:track_ref": "7",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487133",
+    "wikipedia": "id:Jalur kereta api Kutoarjo–Purwosari–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 225521440,
+  "bounds": {
+    "minlat": -7.5571570,
+    "minlon": 110.8199548,
+    "maxlat": -7.5566752,
+    "maxlon": 110.8222989
+  },
+  "nodes": [
+    3361155508,
+    6257888019,
+    11162830837
+  ],
+  "geometry": [
+    { "lat": -7.5571570, "lon": 110.8199548 },
+    { "lat": -7.5568934, "lon": 110.8212618 },
+    { "lat": -7.5566752, "lon": 110.8222989 }
+  ],
+  "tags": {
+    "covered": "yes",
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "layer": "-1",
+    "railway": "rail",
+    "railway:track_ref": "2",
+    "service": "siding",
+    "tunnel": "covered",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 329257089,
+  "bounds": {
+    "minlat": -7.5530377,
+    "minlon": 110.8267596,
+    "maxlat": -7.5522667,
+    "maxlon": 110.8268392
+  },
+  "nodes": [
+    1202365824,
+    11212463908,
+    12353485165,
+    11212463907,
+    1202365810
+  ],
+  "geometry": [
+    { "lat": -7.5530377, "lon": 110.8267596 },
+    { "lat": -7.5528302, "lon": 110.8268007 },
+    { "lat": -7.5526480, "lon": 110.8268259 },
+    { "lat": -7.5524658, "lon": 110.8268392 },
+    { "lat": -7.5522667, "lon": 110.8268327 }
+  ],
+  "tags": {
+    "bridge": "yes",
+    "electrified": "no",
+    "gauge": "1067",
+    "layer": "1",
+    "maxspeed": "40",
+    "name": "Jalur Kereta Api Gundih–Solo Balapan",
+    "railway": "rail",
+    "usage": "main",
+    "wikidata": "Q19738147",
+    "wikipedia": "id:Jalur kereta api Gundih–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 329257090,
+  "bounds": {
+    "minlat": -7.5538361,
+    "minlon": 110.8264960,
+    "maxlat": -7.5530377,
+    "maxlon": 110.8267596
+  },
+  "nodes": [
+    3419397407,
+    1202365869,
+    12151467133,
+    3361155518,
+    1202365824
+  ],
+  "geometry": [
+    { "lat": -7.5538361, "lon": 110.8264960 },
+    { "lat": -7.5536542, "lon": 110.8265762 },
+    { "lat": -7.5534301, "lon": 110.8266584 },
+    { "lat": -7.5531565, "lon": 110.8267329 },
+    { "lat": -7.5530377, "lon": 110.8267596 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "120",
+    "name": "Jalur Kereta Api Gundih–Solo Balapan",
+    "railway": "rail",
+    "usage": "main",
+    "wikidata": "Q19738147",
+    "wikipedia": "id:Jalur kereta api Gundih–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 329257093,
+  "bounds": {
+    "minlat": -7.5571984,
+    "minlon": 110.8199651,
+    "maxlat": -7.5567078,
+    "maxlon": 110.8223041
+  },
+  "nodes": [
+    12101937748,
+    3361155521
+  ],
+  "geometry": [
+    { "lat": -7.5567078, "lon": 110.8223041 },
+    { "lat": -7.5571984, "lon": 110.8199651 }
+  ],
+  "tags": {
+    "covered": "yes",
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "railway:track_ref": "1",
+    "service": "siding",
+    "tunnel": "covered",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 329266022,
+  "bounds": {
+    "minlat": -7.5576348,
+    "minlon": 110.8165638,
+    "maxlat": -7.5572433,
+    "maxlon": 110.8189656
+  },
+  "nodes": [
+    3361220078,
+    3361220080,
+    11164793082,
+    3361220082,
+    3361220081
+  ],
+  "geometry": [
+    { "lat": -7.5576348, "lon": 110.8165638 },
+    { "lat": -7.5575829, "lon": 110.8171444 },
+    { "lat": -7.5575736, "lon": 110.8173081 },
+    { "lat": -7.5573793, "lon": 110.8182667 },
+    { "lat": -7.5572433, "lon": 110.8189656 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "80",
+    "name": "Jalur Kereta Api Kutoarjo–Solo Balapan",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487133",
+    "wikipedia": "id:Jalur kereta api Kutoarjo–Purwosari–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 329266027,
+  "bounds": {
+    "minlat": -7.5574564,
+    "minlon": 110.8163257,
+    "maxlat": -7.5568892,
+    "maxlon": 110.8190804
+  },
+  "nodes": [
+    11162830817,
+    12101133822
+  ],
+  "geometry": [
+    { "lat": -7.5574564, "lon": 110.8163257 },
+    { "lat": -7.5568892, "lon": 110.8190804 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "120",
+    "name": "Jalur Kereta Api Kutoarjo–Solo Balapan",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487133",
+    "wikipedia": "id:Jalur kereta api Kutoarjo–Purwosari–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 329266028,
+  "bounds": {
+    "minlat": -7.5567859,
+    "minlon": 110.8189996,
+    "maxlat": -7.5563719,
+    "maxlon": 110.8209368
+  },
+  "nodes": [
+    12101952872,
+    3361221393,
+    11162830830,
+    3361221410
+  ],
+  "geometry": [
+    { "lat": -7.5563719, "lon": 110.8209368 },
+    { "lat": -7.5564501, "lon": 110.8205608 },
+    { "lat": -7.5567046, "lon": 110.8193246 },
+    { "lat": -7.5567859, "lon": 110.8189996 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "railway:track_ref": "8",
+    "service": "siding"
+  }
+},
+{
+  "type": "way",
+  "id": 329266029,
+  "bounds": {
+    "minlat": -7.5565379,
+    "minlon": 110.8197839,
+    "maxlat": -7.5560105,
+    "maxlon": 110.8226874
+  },
+  "nodes": [
+    3361221395,
+    11162830827,
+    12101952850,
+    12101952852,
+    12101952854,
+    3361221397,
+    3361221398
+  ],
+  "geometry": [
+    { "lat": -7.5565379, "lon": 110.8197839 },
+    { "lat": -7.5564688, "lon": 110.8200787 },
+    { "lat": -7.5563844, "lon": 110.8205311 },
+    { "lat": -7.5560544, "lon": 110.8220818 },
+    { "lat": -7.5560344, "lon": 110.8222214 },
+    { "lat": -7.5560230, "lon": 110.8223503 },
+    { "lat": -7.5560105, "lon": 110.8226874 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "siding"
+  }
+},
+{
+  "type": "way",
+  "id": 329266030,
+  "bounds": {
+    "minlat": -7.5573421,
+    "minlon": 110.8157812,
+    "maxlat": -7.5571532,
+    "maxlon": 110.8168796
+  },
+  "nodes": [
+    3361221401,
+    11162830808,
+    3361221402
+  ],
+  "geometry": [
+    { "lat": -7.5571532, "lon": 110.8168796 },
+    { "lat": -7.5571808, "lon": 110.8166167 },
+    { "lat": -7.5573421, "lon": 110.8157812 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "spur"
+  }
+},
+{
+  "type": "way",
+  "id": 329266031,
+  "bounds": {
+    "minlat": -7.5574460,
+    "minlon": 110.8145653,
+    "maxlat": -7.5571631,
+    "maxlon": 110.8165357
+  },
+  "nodes": [
+    1202365846,
+    3361221403,
+    3361221404
+  ],
+  "geometry": [
+    { "lat": -7.5571631, "lon": 110.8165357 },
+    { "lat": -7.5571658, "lon": 110.8161153 },
+    { "lat": -7.5574460, "lon": 110.8145653 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "spur"
+  }
+},
+{
+  "type": "way",
+  "id": 329266032,
+  "bounds": {
+    "minlat": -7.5571290,
+    "minlon": 110.8153045,
+    "maxlat": -7.5570098,
+    "maxlon": 110.8165143
+  },
+  "nodes": [
+    3361221406,
+    3361221407,
+    11164823607
+  ],
+  "geometry": [
+    { "lat": -7.5571290, "lon": 110.8165143 },
+    { "lat": -7.5570905, "lon": 110.8159142 },
+    { "lat": -7.5570098, "lon": 110.8153045 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "spur"
+  }
+},
+{
+  "type": "way",
+  "id": 329305092,
+  "bounds": {
+    "minlat": -7.5566521,
+    "minlon": 110.8194243,
+    "maxlat": -7.5560105,
+    "maxlon": 110.8226874
+  },
+  "nodes": [
+    3361718422,
+    12101952851,
+    12101952849,
+    11162830829,
+    12101952855,
+    12101952856,
+    3361221398
+  ],
+  "geometry": [
+    { "lat": -7.5566521, "lon": 110.8194243 },
+    { "lat": -7.5565774, "lon": 110.8197399 },
+    { "lat": -7.5564111, "lon": 110.8205543 },
+    { "lat": -7.5560914, "lon": 110.8220909 },
+    { "lat": -7.5560621, "lon": 110.8222388 },
+    { "lat": -7.5560414, "lon": 110.8224017 },
+    { "lat": -7.5560105, "lon": 110.8226874 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "siding"
+  }
+},
+{
+  "type": "way",
+  "id": 329305093,
+  "bounds": {
+    "minlat": -7.5565379,
+    "minlon": 110.8197839,
+    "maxlat": -7.5555477,
+    "maxlon": 110.8230845
+  },
+  "nodes": [
+    3361221395,
+    13068325456,
+    11162830828,
+    11162830826,
+    12102634108,
+    11162830825,
+    11162830824,
+    11162830822,
+    11162830823
+  ],
+  "geometry": [
+    { "lat": -7.5565379, "lon": 110.8197839 },
+    { "lat": -7.5564186, "lon": 110.8201468 },
+    { "lat": -7.5563319, "lon": 110.8203604 },
+    { "lat": -7.5560658, "lon": 110.8208697 },
+    { "lat": -7.5560146, "lon": 110.8209878 },
+    { "lat": -7.5559733, "lon": 110.8211108 },
+    { "lat": -7.5559168, "lon": 110.8212977 },
+    { "lat": -7.5558251, "lon": 110.8216884 },
+    { "lat": -7.5555477, "lon": 110.8230845 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 329305094,
+  "bounds": {
+    "minlat": -7.5580971,
+    "minlon": 110.8131446,
+    "maxlat": -7.5580847,
+    "maxlon": 110.8132176
+  },
+  "nodes": [
+    3361718426,
+    719116326
+  ],
+  "geometry": [
+    { "lat": -7.5580971, "lon": 110.8131446 },
+    { "lat": -7.5580847, "lon": 110.8132176 }
+  ],
+  "tags": {
+    "bridge": "yes",
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "layer": "1",
+    "maxspeed": "120",
+    "name": "Jalur Kereta Api Kutoarjo–Solo Balapan",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487133",
+    "wikipedia": "id:Jalur kereta api Kutoarjo–Purwosari–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 329305102,
+  "bounds": {
+    "minlat": -7.5580532,
+    "minlon": 110.8131372,
+    "maxlat": -7.5580396,
+    "maxlon": 110.8132111
+  },
+  "nodes": [
+    3361718453,
+    3361718425
+  ],
+  "geometry": [
+    { "lat": -7.5580396, "lon": 110.8132111 },
+    { "lat": -7.5580532, "lon": 110.8131372 }
+  ],
+  "tags": {
+    "bridge": "yes",
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "layer": "1",
+    "maxspeed": "120",
+    "name": "Jalur Kereta Api Kutoarjo–Solo Balapan",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487133",
+    "wikipedia": "id:Jalur kereta api Kutoarjo–Purwosari–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 334825553,
+  "bounds": {
+    "minlat": -7.5540510,
+    "minlon": 110.8263794,
+    "maxlat": -7.5538361,
+    "maxlon": 110.8264960
+  },
+  "nodes": [
+    3419397408,
+    3419397407
+  ],
+  "geometry": [
+    { "lat": -7.5540510, "lon": 110.8263794 },
+    { "lat": -7.5538361, "lon": 110.8264960 }
+  ],
+  "tags": {
+    "bridge": "yes",
+    "electrified": "no",
+    "gauge": "1067",
+    "layer": "1",
+    "maxspeed": "120",
+    "name": "Jalur Kereta Api Gundih–Solo Balapan",
+    "railway": "rail",
+    "usage": "main",
+    "wikidata": "Q19738147",
+    "wikipedia": "id:Jalur kereta api Gundih–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 424537039,
+  "bounds": {
+    "minlat": -7.5571253,
+    "minlon": 110.8142424,
+    "maxlat": -7.5567925,
+    "maxlon": 110.8168839
+  },
+  "nodes": [
+    1202365803,
+    11164780604,
+    11164823606,
+    11164823605,
+    4239440451
+  ],
+  "geometry": [
+    { "lat": -7.5571253, "lon": 110.8168839 },
+    { "lat": -7.5570909, "lon": 110.8165088 },
+    { "lat": -7.5570483, "lon": 110.8161508 },
+    { "lat": -7.5568778, "lon": 110.8148618 },
+    { "lat": -7.5567925, "lon": 110.8142424 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "spur"
+  }
+},
+{
+  "type": "way",
+  "id": 509890651,
+  "bounds": {
+    "minlat": -7.5570795,
+    "minlon": 110.8142474,
+    "maxlat": -7.5567474,
+    "maxlon": 110.8170564
+  },
+  "nodes": [
+    3361221405,
+    4990231589,
+    4990231587
+  ],
+  "geometry": [
+    { "lat": -7.5570795, "lon": 110.8170564 },
+    { "lat": -7.5570436, "lon": 110.8165333 },
+    { "lat": -7.5567474, "lon": 110.8142474 }
+  ],
+  "tags": {
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 668255719,
+  "bounds": {
+    "minlat": -7.5566752,
+    "minlon": 110.8222989,
+    "maxlat": -7.5565138,
+    "maxlon": 110.8230069
+  },
+  "nodes": [
+    11162830837,
+    12101937751,
+    3361155510
+  ],
+  "geometry": [
+    { "lat": -7.5566752, "lon": 110.8222989 },
+    { "lat": -7.5565930, "lon": 110.8226929 },
+    { "lat": -7.5565138, "lon": 110.8230069 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "railway:track_ref": "2",
+    "service": "siding",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 780438611,
+  "bounds": {
+    "minlat": -7.5566162,
+    "minlon": 110.8260681,
+    "maxlat": -7.5541101,
+    "maxlon": 110.8284639
+  },
+  "nodes": [
+    12151467190,
+    12151467191,
+    12151467192,
+    12151467193,
+    12153192845,
+    12151467194,
+    12153192846,
+    12151467195,
+    12151467196,
+    11510437711,
+    11510437710,
+    12151467197,
+    11510437709,
+    12151467198,
+    11510437708,
+    11510437707,
+    12151467200,
+    12151467199,
+    12151497405,
+    12151497406,
+    12151497404,
+    12151497403,
+    12151497402,
+    12151497401,
+    11510437706
+  ],
+  "geometry": [
+    { "lat": -7.5566162, "lon": 110.8284639 },
+    { "lat": -7.5564979, "lon": 110.8279692 },
+    { "lat": -7.5564053, "lon": 110.8275845 },
+    { "lat": -7.5562884, "lon": 110.8271844 },
+    { "lat": -7.5562087, "lon": 110.8269389 },
+    { "lat": -7.5561412, "lon": 110.8267585 },
+    { "lat": -7.5560912, "lon": 110.8266465 },
+    { "lat": -7.5560453, "lon": 110.8265670 },
+    { "lat": -7.5559536, "lon": 110.8264505 },
+    { "lat": -7.5558657, "lon": 110.8263673 },
+    { "lat": -7.5557669, "lon": 110.8262917 },
+    { "lat": -7.5556643, "lon": 110.8262224 },
+    { "lat": -7.5555733, "lon": 110.8261775 },
+    { "lat": -7.5554393, "lon": 110.8261259 },
+    { "lat": -7.5553193, "lon": 110.8260964 },
+    { "lat": -7.5551671, "lon": 110.8260762 },
+    { "lat": -7.5550566, "lon": 110.8260681 },
+    { "lat": -7.5548960, "lon": 110.8260684 },
+    { "lat": -7.5547981, "lon": 110.8260782 },
+    { "lat": -7.5546663, "lon": 110.8261046 },
+    { "lat": -7.5545813, "lon": 110.8261322 },
+    { "lat": -7.5544802, "lon": 110.8261732 },
+    { "lat": -7.5543595, "lon": 110.8262267 },
+    { "lat": -7.5542247, "lon": 110.8262916 },
+    { "lat": -7.5541101, "lon": 110.8263511 }
+  ],
+  "tags": {
+    "motorcar": "no",
+    "motorcycle": "yes",
+    "name": "Jalur Segitiga Pembalik Solo Balapan",
+    "railway": "rail"
+  }
+},
+{
+  "type": "way",
+  "id": 808632801,
+  "bounds": {
+    "minlat": -7.5613543,
+    "minlon": 110.8298011,
+    "maxlat": -7.5568048,
+    "maxlon": 110.8374625
+  },
+  "nodes": [
+    3363461579,
+    12153192830,
+    12153192827,
+    9280157116,
+    12153192822,
+    7561393670,
+    9280193419,
+    7561393671,
+    12153192823,
+    7561393672,
+    12153192826,
+    7561393673,
+    12898729058,
+    7561393674,
+    7561393675,
+    7561393676,
+    12898729041,
+    7561393677,
+    7561393678,
+    7561393679,
+    7561393680,
+    7561393681,
+    12101150247
+  ],
+  "geometry": [
+    { "lat": -7.5613543, "lon": 110.8374625 },
+    { "lat": -7.5613202, "lon": 110.8373571 },
+    { "lat": -7.5611142, "lon": 110.8367223 },
+    { "lat": -7.5610642, "lon": 110.8365829 },
+    { "lat": -7.5609723, "lon": 110.8363136 },
+    { "lat": -7.5608496, "lon": 110.8360113 },
+    { "lat": -7.5606898, "lon": 110.8356758 },
+    { "lat": -7.5605047, "lon": 110.8353710 },
+    { "lat": -7.5603527, "lon": 110.8351614 },
+    { "lat": -7.5601795, "lon": 110.8349432 },
+    { "lat": -7.5599741, "lon": 110.8347340 },
+    { "lat": -7.5597488, "lon": 110.8345101 },
+    { "lat": -7.5595483, "lon": 110.8343489 },
+    { "lat": -7.5590892, "lon": 110.8339947 },
+    { "lat": -7.5585411, "lon": 110.8335642 },
+    { "lat": -7.5581469, "lon": 110.8331783 },
+    { "lat": -7.5578899, "lon": 110.8328710 },
+    { "lat": -7.5576965, "lon": 110.8326027 },
+    { "lat": -7.5574664, "lon": 110.8322218 },
+    { "lat": -7.5572321, "lon": 110.8317194 },
+    { "lat": -7.5570639, "lon": 110.8312309 },
+    { "lat": -7.5569698, "lon": 110.8308085 },
+    { "lat": -7.5568048, "lon": 110.8298011 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "120",
+    "name": "Jalur Kereta Api Solo Balapan–Kertosono",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487144",
+    "wikipedia": "id:Jalur kereta api Solo Balapan–Kertosono"
+  }
+},
+{
+  "type": "way",
+  "id": 828922002,
+  "bounds": {
+    "minlat": -7.5570800,
+    "minlon": 110.8199386,
+    "maxlat": -7.5566035,
+    "maxlon": 110.8222824
+  },
+  "nodes": [
+    1347330632,
+    11066505707
+  ],
+  "geometry": [
+    { "lat": -7.5570800, "lon": 110.8199386 },
+    { "lat": -7.5566035, "lon": 110.8222824 }
+  ],
+  "tags": {
+    "covered": "yes",
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "80",
+    "name": "Jalur Kereta Api Kutoarjo–Solo Balapan",
+    "railway": "rail",
+    "railway:track_ref": "3",
+    "tunnel": "covered",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487133",
+    "wikipedia": "id:Jalur kereta api Kutoarjo–Purwosari–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 828922003,
+  "bounds": {
+    "minlat": -7.5576348,
+    "minlon": 110.8165638,
+    "maxlat": -7.5575859,
+    "maxlon": 110.8174832
+  },
+  "nodes": [
+    3361220077,
+    12101110992,
+    6257888018,
+    12101110993,
+    11162789202,
+    12101110994,
+    3361220078
+  ],
+  "geometry": [
+    { "lat": -7.5575859, "lon": 110.8174832 },
+    { "lat": -7.5576162, "lon": 110.8172639 },
+    { "lat": -7.5576238, "lon": 110.8171666 },
+    { "lat": -7.5576249, "lon": 110.8170406 },
+    { "lat": -7.5576221, "lon": 110.8168779 },
+    { "lat": -7.5576232, "lon": 110.8167619 },
+    { "lat": -7.5576348, "lon": 110.8165638 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "passenger_lines": "2",
+    "railway": "rail",
+    "service": "crossover",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 828922004,
+  "bounds": {
+    "minlat": -7.5580396,
+    "minlon": 110.8132111,
+    "maxlat": -7.5578897,
+    "maxlon": 110.8140254
+  },
+  "nodes": [
+    7737834375,
+    12100288148,
+    3361718453
+  ],
+  "geometry": [
+    { "lat": -7.5578897, "lon": 110.8140254 },
+    { "lat": -7.5579207, "lon": 110.8138518 },
+    { "lat": -7.5580396, "lon": 110.8132111 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "120",
+    "name": "Jalur Kereta Api Kutoarjo–Solo Balapan",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487133",
+    "wikipedia": "id:Jalur kereta api Kutoarjo–Purwosari–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 1005545878,
+  "bounds": {
+    "minlat": -7.5563387,
+    "minlon": 110.8235423,
+    "maxlat": -7.5562243,
+    "maxlon": 110.8240715
+  },
+  "nodes": [
+    3361155526,
+    3361155513
+  ],
+  "geometry": [
+    { "lat": -7.5563387, "lon": 110.8235423 },
+    { "lat": -7.5562243, "lon": 110.8240715 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "70",
+    "name": "Jalur Kereta Api Solo Balapan–Kertosono",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487144",
+    "wikipedia": "id:Jalur kereta api Solo Balapan–Kertosono"
+  }
+},
+{
+  "type": "way",
+  "id": 1005545879,
+  "bounds": {
+    "minlat": -7.5574434,
+    "minlon": 110.8183712,
+    "maxlat": -7.5571570,
+    "maxlon": 110.8199548
+  },
+  "nodes": [
+    3361155522,
+    12101937744,
+    12101937746,
+    3361155508
+  ],
+  "geometry": [
+    { "lat": -7.5574434, "lon": 110.8183712 },
+    { "lat": -7.5572793, "lon": 110.8192540 },
+    { "lat": -7.5572014, "lon": 110.8197466 },
+    { "lat": -7.5571570, "lon": 110.8199548 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "railway:track_ref": "2",
+    "service": "siding",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 1005823085,
+  "bounds": {
+    "minlat": -7.5567555,
+    "minlon": 110.8285714,
+    "maxlat": -7.5566325,
+    "maxlon": 110.8291541
+  },
+  "nodes": [
+    1202365827,
+    9280193420
+  ],
+  "geometry": [
+    { "lat": -7.5566325, "lon": 110.8285714 },
+    { "lat": -7.5567555, "lon": 110.8291541 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "crossover",
+    "usage": "main",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 1192021978,
+  "bounds": {
+    "minlat": -7.5569655,
+    "minlon": 110.8185087,
+    "maxlat": -7.5568892,
+    "maxlon": 110.8190804
+  },
+  "nodes": [
+    1347330619,
+    12101133822
+  ],
+  "geometry": [
+    { "lat": -7.5569655, "lon": 110.8185087 },
+    { "lat": -7.5568892, "lon": 110.8190804 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "crossover",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 1192021979,
+  "bounds": {
+    "minlat": -7.5566035,
+    "minlon": 110.8222824,
+    "maxlat": -7.5563387,
+    "maxlon": 110.8235423
+  },
+  "nodes": [
+    11066505707,
+    3361155526
+  ],
+  "geometry": [
+    { "lat": -7.5566035, "lon": 110.8222824 },
+    { "lat": -7.5563387, "lon": 110.8235423 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "80",
+    "name": "Jalur Kereta Api Solo Balapan–Kertosono",
+    "railway": "rail",
+    "railway:track_ref": "3",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487144",
+    "wikipedia": "id:Jalur kereta api Solo Balapan–Kertosono"
+  }
+},
+{
+  "type": "way",
+  "id": 1192021980,
+  "bounds": {
+    "minlat": -7.5562432,
+    "minlon": 110.8240715,
+    "maxlat": -7.5561411,
+    "maxlon": 110.8257717
+  },
+  "nodes": [
+    3361155513,
+    1347330614,
+    12101169044,
+    9280193423,
+    12101169043,
+    3361155515,
+    12101169045,
+    9280193422,
+    12101169046,
+    719116297
+  ],
+  "geometry": [
+    { "lat": -7.5562243, "lon": 110.8240715 },
+    { "lat": -7.5562164, "lon": 110.8241161 },
+    { "lat": -7.5561879, "lon": 110.8242729 },
+    { "lat": -7.5561657, "lon": 110.8244318 },
+    { "lat": -7.5561516, "lon": 110.8245869 },
+    { "lat": -7.5561411, "lon": 110.8247781 },
+    { "lat": -7.5561443, "lon": 110.8249775 },
+    { "lat": -7.5561542, "lon": 110.8251611 },
+    { "lat": -7.5561827, "lon": 110.8253729 },
+    { "lat": -7.5562432, "lon": 110.8257717 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "70",
+    "name": "Jalur Kereta Api Solo Balapan–Kertosono",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487144",
+    "wikipedia": "id:Jalur kereta api Solo Balapan–Kertosono"
+  }
+},
+{
+  "type": "way",
+  "id": 1192021981,
+  "bounds": {
+    "minlat": -7.5562295,
+    "minlon": 110.8238898,
+    "maxlat": -7.5561043,
+    "maxlon": 110.8257669
+  },
+  "nodes": [
+    9280193427,
+    9280193428,
+    12101169047,
+    9280193429,
+    12101169048,
+    9280193430,
+    9280193432,
+    12101169049,
+    11162830845,
+    11162830844,
+    12440467294
+  ],
+  "geometry": [
+    { "lat": -7.5562027, "lon": 110.8257669 },
+    { "lat": -7.5561342, "lon": 110.8253038 },
+    { "lat": -7.5561163, "lon": 110.8251583 },
+    { "lat": -7.5561081, "lon": 110.8249970 },
+    { "lat": -7.5561043, "lon": 110.8247915 },
+    { "lat": -7.5561109, "lon": 110.8246279 },
+    { "lat": -7.5561253, "lon": 110.8244504 },
+    { "lat": -7.5561535, "lon": 110.8242576 },
+    { "lat": -7.5561851, "lon": 110.8241069 },
+    { "lat": -7.5561929, "lon": 110.8240635 },
+    { "lat": -7.5562295, "lon": 110.8238898 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "70",
+    "name": "Jalur Kereta Api Solo Balapan–Kertosono",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487144",
+    "wikipedia": "id:Jalur kereta api Solo Balapan–Kertosono"
+  }
+},
+{
+  "type": "way",
+  "id": 1204406357,
+  "bounds": {
+    "minlat": -7.5569629,
+    "minlon": 110.8143104,
+    "maxlat": -7.5565987,
+    "maxlon": 110.8165159
+  },
+  "nodes": [
+    11162830806,
+    12101132379,
+    12101132378,
+    11162789204,
+    13063964274,
+    12101132377,
+    11162789203,
+    13063964272,
+    12101132376,
+    12101132375,
+    11164823620,
+    11164823619,
+    11164823618
+  ],
+  "geometry": [
+    { "lat": -7.5569629, "lon": 110.8165159 },
+    { "lat": -7.5569187, "lon": 110.8163742 },
+    { "lat": -7.5568996, "lon": 110.8163050 },
+    { "lat": -7.5568810, "lon": 110.8162285 },
+    { "lat": -7.5568252, "lon": 110.8157771 },
+    { "lat": -7.5567780, "lon": 110.8153863 },
+    { "lat": -7.5567645, "lon": 110.8152879 },
+    { "lat": -7.5567448, "lon": 110.8151955 },
+    { "lat": -7.5567203, "lon": 110.8151062 },
+    { "lat": -7.5566968, "lon": 110.8150201 },
+    { "lat": -7.5566786, "lon": 110.8149319 },
+    { "lat": -7.5566471, "lon": 110.8146999 },
+    { "lat": -7.5565987, "lon": 110.8143104 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1204406358,
+  "bounds": {
+    "minlat": -7.5560309,
+    "minlon": 110.8232615,
+    "maxlat": -7.5559020,
+    "maxlon": 110.8238507
+  },
+  "nodes": [
+    1347330608,
+    11162830809
+  ],
+  "geometry": [
+    { "lat": -7.5560309, "lon": 110.8232615 },
+    { "lat": -7.5559020, "lon": 110.8238507 }
+  ],
+  "tags": {
+    "gauge": "1067",
+    "name": "Jalur Kereta Api Gundih–Solo Balapan",
+    "railway": "rail",
+    "service": "yard",
+    "usage": "main",
+    "wikidata": "Q19738147",
+    "wikipedia": "id:Jalur kereta api Gundih–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 1204406359,
+  "bounds": {
+    "minlat": -7.5560530,
+    "minlon": 110.8231556,
+    "maxlat": -7.5558692,
+    "maxlon": 110.8238315
+  },
+  "nodes": [
+    3361220090,
+    1347330608,
+    1202365842
+  ],
+  "geometry": [
+    { "lat": -7.5560530, "lon": 110.8231556 },
+    { "lat": -7.5560309, "lon": 110.8232615 },
+    { "lat": -7.5558692, "lon": 110.8238315 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "120",
+    "name": "Jalur Kereta Api Gundih–Solo Balapan",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q19738147",
+    "wikipedia": "id:Jalur kereta api Gundih–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 1204406360,
+  "bounds": {
+    "minlat": -7.5574564,
+    "minlon": 110.8163257,
+    "maxlat": -7.5572959,
+    "maxlon": 110.8168913
+  },
+  "nodes": [
+    11162830817,
+    11162830811
+  ],
+  "geometry": [
+    { "lat": -7.5574564, "lon": 110.8163257 },
+    { "lat": -7.5572959, "lon": 110.8168913 }
+  ],
+  "tags": {
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "crossover"
+  }
+},
+{
+  "type": "way",
+  "id": 1204406361,
+  "bounds": {
+    "minlat": -7.5572757,
+    "minlon": 110.8169945,
+    "maxlat": -7.5571180,
+    "maxlon": 110.8175539
+  },
+  "nodes": [
+    11162830816,
+    11162830814
+  ],
+  "geometry": [
+    { "lat": -7.5571180, "lon": 110.8175539 },
+    { "lat": -7.5572757, "lon": 110.8169945 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "crossover"
+  }
+},
+{
+  "type": "way",
+  "id": 1204406362,
+  "bounds": {
+    "minlat": -7.5575596,
+    "minlon": 110.8153842,
+    "maxlat": -7.5571180,
+    "maxlon": 110.8175539
+  },
+  "nodes": [
+    11162830816,
+    11162830815
+  ],
+  "geometry": [
+    { "lat": -7.5571180, "lon": 110.8175539 },
+    { "lat": -7.5575596, "lon": 110.8153842 }
+  ],
+  "tags": {
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1204406363,
+  "bounds": {
+    "minlat": -7.5563319,
+    "minlon": 110.8203604,
+    "maxlat": -7.5558607,
+    "maxlon": 110.8217211
+  },
+  "nodes": [
+    11162830828,
+    11162830821,
+    12102634107,
+    11162830820,
+    11162830819,
+    13068325425,
+    11162830818
+  ],
+  "geometry": [
+    { "lat": -7.5563319, "lon": 110.8203604 },
+    { "lat": -7.5560948, "lon": 110.8209116 },
+    { "lat": -7.5560412, "lon": 110.8210525 },
+    { "lat": -7.5559968, "lon": 110.8211901 },
+    { "lat": -7.5559337, "lon": 110.8214112 },
+    { "lat": -7.5558910, "lon": 110.8215798 },
+    { "lat": -7.5558607, "lon": 110.8217211 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1204639357,
+  "bounds": {
+    "minlat": -7.5575974,
+    "minlon": 110.8176287,
+    "maxlat": -7.5574597,
+    "maxlon": 110.8182899
+  },
+  "nodes": [
+    11164793081,
+    11164793079
+  ],
+  "geometry": [
+    { "lat": -7.5574597, "lon": 110.8182899 },
+    { "lat": -7.5575974, "lon": 110.8176287 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1204639358,
+  "bounds": {
+    "minlat": -7.5574159,
+    "minlon": 110.8171555,
+    "maxlat": -7.5572261,
+    "maxlon": 110.8180796
+  },
+  "nodes": [
+    11164793085,
+    12101065480
+  ],
+  "geometry": [
+    { "lat": -7.5572261, "lon": 110.8180796 },
+    { "lat": -7.5574159, "lon": 110.8171555 }
+  ],
+  "tags": {
+    "covered": "yes",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1204639359,
+  "bounds": {
+    "minlat": -7.5572748,
+    "minlon": 110.8180878,
+    "maxlat": -7.5570310,
+    "maxlon": 110.8192983
+  },
+  "nodes": [
+    11164793093,
+    11164793086,
+    11164793087
+  ],
+  "geometry": [
+    { "lat": -7.5570310, "lon": 110.8192983 },
+    { "lat": -7.5570669, "lon": 110.8190811 },
+    { "lat": -7.5572748, "lon": 110.8180878 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1204639360,
+  "bounds": {
+    "minlat": -7.5573220,
+    "minlon": 110.8180987,
+    "maxlat": -7.5569868,
+    "maxlon": 110.8197704
+  },
+  "nodes": [
+    11164793094,
+    11164793088,
+    11164793089
+  ],
+  "geometry": [
+    { "lat": -7.5569868, "lon": 110.8197704 },
+    { "lat": -7.5570277, "lon": 110.8195082 },
+    { "lat": -7.5573220, "lon": 110.8180987 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1204639361,
+  "bounds": {
+    "minlat": -7.5571802,
+    "minlon": 110.8180722,
+    "maxlat": -7.5569146,
+    "maxlon": 110.8203894
+  },
+  "nodes": [
+    3361220084,
+    12101133820,
+    11164793094,
+    11164793093,
+    11164793092,
+    11164793091,
+    11164793090
+  ],
+  "geometry": [
+    { "lat": -7.5569146, "lon": 110.8203894 },
+    { "lat": -7.5569430, "lon": 110.8201356 },
+    { "lat": -7.5569868, "lon": 110.8197704 },
+    { "lat": -7.5570310, "lon": 110.8192983 },
+    { "lat": -7.5570810, "lon": 110.8188283 },
+    { "lat": -7.5571327, "lon": 110.8183247 },
+    { "lat": -7.5571802, "lon": 110.8180722 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1204641982,
+  "bounds": {
+    "minlat": -7.5571398,
+    "minlon": 110.8165143,
+    "maxlat": -7.5571290,
+    "maxlon": 110.8170674
+  },
+  "nodes": [
+    11164823610,
+    11164823609,
+    3361221406
+  ],
+  "geometry": [
+    { "lat": -7.5571380, "lon": 110.8170674 },
+    { "lat": -7.5571398, "lon": 110.8168386 },
+    { "lat": -7.5571290, "lon": 110.8165143 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1204641983,
+  "bounds": {
+    "minlat": -7.5571551,
+    "minlon": 110.8153159,
+    "maxlat": -7.5571282,
+    "maxlon": 110.8165143
+  },
+  "nodes": [
+    3361221406,
+    11164823608,
+    1347330636
+  ],
+  "geometry": [
+    { "lat": -7.5571290, "lon": 110.8165143 },
+    { "lat": -7.5571282, "lon": 110.8157923 },
+    { "lat": -7.5571551, "lon": 110.8153159 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1204641984,
+  "bounds": {
+    "minlat": -7.5572322,
+    "minlon": 110.8154772,
+    "maxlat": -7.5571658,
+    "maxlon": 110.8161153
+  },
+  "nodes": [
+    3361221403,
+    11164823614
+  ],
+  "geometry": [
+    { "lat": -7.5571658, "lon": 110.8161153 },
+    { "lat": -7.5572322, "lon": 110.8154772 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1204641985,
+  "bounds": {
+    "minlat": -7.5570402,
+    "minlon": 110.8143957,
+    "maxlat": -7.5567162,
+    "maxlon": 110.8167973
+  },
+  "nodes": [
+    11162830807,
+    11164823616,
+    11164823615,
+    12151707774
+  ],
+  "geometry": [
+    { "lat": -7.5570402, "lon": 110.8167973 },
+    { "lat": -7.5569988, "lon": 110.8165735 },
+    { "lat": -7.5569797, "lon": 110.8164372 },
+    { "lat": -7.5567162, "lon": 110.8143957 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1210300710,
+  "bounds": {
+    "minlat": -7.5522667,
+    "minlon": 110.8246449,
+    "maxlat": -7.5467699,
+    "maxlon": 110.8268327
+  },
+  "nodes": [
+    1202365810,
+    12579470173,
+    12307595311,
+    12151467130,
+    11212463906,
+    12151467125,
+    12151467127,
+    12151707721,
+    11212463879,
+    11212463878,
+    12151467129,
+    11212463877,
+    11212463876,
+    11212463875,
+    12151467128,
+    11212463874,
+    11212463873,
+    11212463872,
+    11212463871,
+    11212463903
+  ],
+  "geometry": [
+    { "lat": -7.5522667, "lon": 110.8268327 },
+    { "lat": -7.5521914, "lon": 110.8268286 },
+    { "lat": -7.5520963, "lon": 110.8268174 },
+    { "lat": -7.5519016, "lon": 110.8267883 },
+    { "lat": -7.5515913, "lon": 110.8267377 },
+    { "lat": -7.5509727, "lon": 110.8266166 },
+    { "lat": -7.5504245, "lon": 110.8265252 },
+    { "lat": -7.5500450, "lon": 110.8264718 },
+    { "lat": -7.5496053, "lon": 110.8264021 },
+    { "lat": -7.5492486, "lon": 110.8263153 },
+    { "lat": -7.5490025, "lon": 110.8262428 },
+    { "lat": -7.5488316, "lon": 110.8261777 },
+    { "lat": -7.5485922, "lon": 110.8260756 },
+    { "lat": -7.5483296, "lon": 110.8259462 },
+    { "lat": -7.5482086, "lon": 110.8258734 },
+    { "lat": -7.5479787, "lon": 110.8257356 },
+    { "lat": -7.5476782, "lon": 110.8255201 },
+    { "lat": -7.5474147, "lon": 110.8252934 },
+    { "lat": -7.5471346, "lon": 110.8250267 },
+    { "lat": -7.5467699, "lon": 110.8246449 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "40",
+    "name": "Jalur Kereta Api Gundih–Solo Balapan",
+    "railway": "rail",
+    "usage": "main",
+    "wikidata": "Q19738147",
+    "wikipedia": "id:Jalur kereta api Gundih–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 1306643330,
+  "bounds": {
+    "minlat": -7.5573968,
+    "minlon": 110.8184341,
+    "maxlat": -7.5572433,
+    "maxlon": 110.8189656
+  },
+  "nodes": [
+    3361220081,
+    719116319
+  ],
+  "geometry": [
+    { "lat": -7.5572433, "lon": 110.8189656 },
+    { "lat": -7.5573968, "lon": 110.8184341 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "crossover",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 1306645066,
+  "bounds": {
+    "minlat": -7.5576657,
+    "minlon": 110.8157136,
+    "maxlat": -7.5573699,
+    "maxlon": 110.8171491
+  },
+  "nodes": [
+    12101065479,
+    12101093030
+  ],
+  "geometry": [
+    { "lat": -7.5573699, "lon": 110.8171491 },
+    { "lat": -7.5576657, "lon": 110.8157136 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1306645067,
+  "bounds": {
+    "minlat": -7.5576162,
+    "minlon": 110.8161799,
+    "maxlat": -7.5574159,
+    "maxlon": 110.8171555
+  },
+  "nodes": [
+    12101065480,
+    12101093031
+  ],
+  "geometry": [
+    { "lat": -7.5574159, "lon": 110.8171555 },
+    { "lat": -7.5576162, "lon": 110.8161799 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1306645068,
+  "bounds": {
+    "minlat": -7.5575801,
+    "minlon": 110.8165887,
+    "maxlat": -7.5574625,
+    "maxlon": 110.8171661
+  },
+  "nodes": [
+    12101065481,
+    12101093032
+  ],
+  "geometry": [
+    { "lat": -7.5574625, "lon": 110.8171661 },
+    { "lat": -7.5575801, "lon": 110.8165887 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1306645069,
+  "bounds": {
+    "minlat": -7.5575650,
+    "minlon": 110.8168976,
+    "maxlat": -7.5575083,
+    "maxlon": 110.8171779
+  },
+  "nodes": [
+    12101065482,
+    12101093033
+  ],
+  "geometry": [
+    { "lat": -7.5575083, "lon": 110.8171779 },
+    { "lat": -7.5575650, "lon": 110.8168976 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1306645070,
+  "bounds": {
+    "minlat": -7.5573699,
+    "minlon": 110.8171491,
+    "maxlat": -7.5571802,
+    "maxlon": 110.8180722
+  },
+  "nodes": [
+    11164793090,
+    12101065479
+  ],
+  "geometry": [
+    { "lat": -7.5571802, "lon": 110.8180722 },
+    { "lat": -7.5573699, "lon": 110.8171491 }
+  ],
+  "tags": {
+    "covered": "yes",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1306645071,
+  "bounds": {
+    "minlat": -7.5572261,
+    "minlon": 110.8180796,
+    "maxlat": -7.5570810,
+    "maxlon": 110.8188283
+  },
+  "nodes": [
+    11164793092,
+    11164793084,
+    11164793085
+  ],
+  "geometry": [
+    { "lat": -7.5570810, "lon": 110.8188283 },
+    { "lat": -7.5571081, "lon": 110.8186465 },
+    { "lat": -7.5572261, "lon": 110.8180796 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1306645072,
+  "bounds": {
+    "minlat": -7.5574625,
+    "minlon": 110.8171661,
+    "maxlat": -7.5572748,
+    "maxlon": 110.8180878
+  },
+  "nodes": [
+    11164793087,
+    12101065481
+  ],
+  "geometry": [
+    { "lat": -7.5572748, "lon": 110.8180878 },
+    { "lat": -7.5574625, "lon": 110.8171661 }
+  ],
+  "tags": {
+    "covered": "yes",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1306645073,
+  "bounds": {
+    "minlat": -7.5575083,
+    "minlon": 110.8171779,
+    "maxlat": -7.5573220,
+    "maxlon": 110.8180987
+  },
+  "nodes": [
+    11164793089,
+    12101065482
+  ],
+  "geometry": [
+    { "lat": -7.5573220, "lon": 110.8180987 },
+    { "lat": -7.5575083, "lon": 110.8171779 }
+  ],
+  "tags": {
+    "covered": "yes",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1306645495,
+  "bounds": {
+    "minlat": -7.5578897,
+    "minlon": 110.8140254,
+    "maxlat": -7.5578253,
+    "maxlon": 110.8146009
+  },
+  "nodes": [
+    12101110987,
+    7737834375
+  ],
+  "geometry": [
+    { "lat": -7.5578253, "lon": 110.8146009 },
+    { "lat": -7.5578897, "lon": 110.8140254 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "name": "Jalur Kereta Api Kutoarjo–Solo Balapan",
+    "railway": "rail",
+    "service": "crossover",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487133",
+    "wikipedia": "id:Jalur kereta api Kutoarjo–Purwosari–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 1306651391,
+  "bounds": {
+    "minlat": -7.5566708,
+    "minlon": 110.8143216,
+    "maxlat": -7.5565563,
+    "maxlon": 110.8153129
+  },
+  "nodes": [
+    12101132372,
+    12101132374
+  ],
+  "geometry": [
+    { "lat": -7.5566708, "lon": 110.8153129 },
+    { "lat": -7.5565563, "lon": 110.8143216 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1306651960,
+  "bounds": {
+    "minlat": -7.5568048,
+    "minlon": 110.8292359,
+    "maxlat": -7.5567683,
+    "maxlon": 110.8298011
+  },
+  "nodes": [
+    12101150246,
+    12101150247
+  ],
+  "geometry": [
+    { "lat": -7.5567683, "lon": 110.8292359 },
+    { "lat": -7.5568048, "lon": 110.8298011 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "120",
+    "name": "Jalur KA Solo Balapan-Kertosono",
+    "passenger_lines": "2",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487144",
+    "wikipedia": "id:Jalur kereta api Solo Balapan–Kertosono"
+  }
+},
+{
+  "type": "way",
+  "id": 1306750010,
+  "bounds": {
+    "minlat": -7.5564580,
+    "minlon": 110.8209474,
+    "maxlat": -7.5560669,
+    "maxlon": 110.8224415
+  },
+  "nodes": [
+    12101952860,
+    12101952871,
+    12101952870,
+    12101952866,
+    12101952867,
+    12101952868,
+    12101952869,
+    12101952861,
+    12101952862,
+    12101952864,
+    12151707751,
+    12101952873,
+    12101952874,
+    12101952875,
+    12101952863,
+    12101952860
+  ],
+  "geometry": [
+    { "lat": -7.5564580, "lon": 110.8209945 },
+    { "lat": -7.5564528, "lon": 110.8209785 },
+    { "lat": -7.5564407, "lon": 110.8209620 },
+    { "lat": -7.5564233, "lon": 110.8209511 },
+    { "lat": -7.5564037, "lon": 110.8209474 },
+    { "lat": -7.5563830, "lon": 110.8209491 },
+    { "lat": -7.5563689, "lon": 110.8209576 },
+    { "lat": -7.5563559, "lon": 110.8209706 },
+    { "lat": -7.5560669, "lon": 110.8223874 },
+    { "lat": -7.5560684, "lon": 110.8224062 },
+    { "lat": -7.5560781, "lon": 110.8224256 },
+    { "lat": -7.5560989, "lon": 110.8224368 },
+    { "lat": -7.5561198, "lon": 110.8224415 },
+    { "lat": -7.5561410, "lon": 110.8224361 },
+    { "lat": -7.5561630, "lon": 110.8224216 },
+    { "lat": -7.5564580, "lon": 110.8209945 }
+  ],
+  "tags": {
+    "building": "train_station",
+    "layer": "1",
+    "name": "Peron Kereta Api Bandara Solo Balapan",
+    "name:en": "Solo Balapan Airport Train Platform",
+    "public_transport": "platform",
+    "railway": "platform",
+    "ref": "7;8"
+  }
+},
+{
+  "type": "way",
+  "id": 1306750011,
+  "bounds": {
+    "minlat": -7.5560678,
+    "minlon": 110.8224337,
+    "maxlat": -7.5560017,
+    "maxlon": 110.8229075
+  },
+  "nodes": [
+    7737834374,
+    12151707761,
+    3361220092,
+    12101952865
+  ],
+  "geometry": [
+    { "lat": -7.5560017, "lon": 110.8229075 },
+    { "lat": -7.5560378, "lon": 110.8226176 },
+    { "lat": -7.5560523, "lon": 110.8225162 },
+    { "lat": -7.5560678, "lon": 110.8224337 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "railway:track_ref": "8",
+    "service": "siding"
+  }
+},
+{
+  "type": "way",
+  "id": 1306750012,
+  "bounds": {
+    "minlat": -7.5563719,
+    "minlon": 110.8209368,
+    "maxlat": -7.5560678,
+    "maxlon": 110.8224337
+  },
+  "nodes": [
+    12101952865,
+    12101952857,
+    12101952853,
+    12101952872
+  ],
+  "geometry": [
+    { "lat": -7.5560678, "lon": 110.8224337 },
+    { "lat": -7.5560878, "lon": 110.8223181 },
+    { "lat": -7.5561304, "lon": 110.8220975 },
+    { "lat": -7.5563719, "lon": 110.8209368 }
+  ],
+  "tags": {
+    "covered": "yes",
+    "railway": "rail",
+    "railway:track_ref": "8",
+    "service": "siding",
+    "tunnel": "covered"
+  }
+},
+{
+  "type": "way",
+  "id": 1306751841,
+  "bounds": {
+    "minlat": -7.5568808,
+    "minlon": 110.8207241,
+    "maxlat": -7.5565563,
+    "maxlon": 110.8222731
+  },
+  "nodes": [
+    3361689215,
+    12101937752,
+    12101937747
+  ],
+  "geometry": [
+    { "lat": -7.5568808, "lon": 110.8207241 },
+    { "lat": -7.5568696, "lon": 110.8207744 },
+    { "lat": -7.5565563, "lon": 110.8222731 }
+  ],
+  "tags": {
+    "covered": "yes",
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "80",
+    "name": "Jalur Kereta Api Kutoarjo–Solo Balapan",
+    "railway": "rail",
+    "railway:track_ref": "4",
+    "tunnel": "covered",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487133",
+    "wikipedia": "id:Jalur kereta api Kutoarjo–Purwosari–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 1306751843,
+  "bounds": {
+    "minlat": -7.5567078,
+    "minlon": 110.8223041,
+    "maxlat": -7.5565138,
+    "maxlon": 110.8230069
+  },
+  "nodes": [
+    3361155510,
+    3361155520,
+    12101937750,
+    12101937749,
+    12101937748
+  ],
+  "geometry": [
+    { "lat": -7.5565138, "lon": 110.8230069 },
+    { "lat": -7.5566091, "lon": 110.8226972 },
+    { "lat": -7.5566407, "lon": 110.8225943 },
+    { "lat": -7.5566691, "lon": 110.8224863 },
+    { "lat": -7.5567078, "lon": 110.8223041 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "railway:track_ref": "1",
+    "service": "siding",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 1306751844,
+  "bounds": {
+    "minlat": -7.5573968,
+    "minlon": 110.8184341,
+    "maxlat": -7.5570800,
+    "maxlon": 110.8199386
+  },
+  "nodes": [
+    719116319,
+    1347330632
+  ],
+  "geometry": [
+    { "lat": -7.5573968, "lon": 110.8184341 },
+    { "lat": -7.5570800, "lon": 110.8199386 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "80",
+    "name": "Jalur Kereta Api Kutoarjo–Solo Balapan",
+    "railway": "rail",
+    "railway:track_ref": "3",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487133",
+    "wikipedia": "id:Jalur kereta api Kutoarjo–Purwosari–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 1306751845,
+  "bounds": {
+    "minlat": -7.5570420,
+    "minlon": 110.8199287,
+    "maxlat": -7.5568808,
+    "maxlon": 110.8207241
+  },
+  "nodes": [
+    12151707775,
+    3361689215
+  ],
+  "geometry": [
+    { "lat": -7.5570420, "lon": 110.8199287 },
+    { "lat": -7.5568808, "lon": 110.8207241 }
+  ],
+  "tags": {
+    "covered": "yes",
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "layer": "-1",
+    "maxspeed": "80",
+    "name": "Jalur Kereta Api Kutoarjo–Solo Balapan",
+    "railway": "rail",
+    "railway:track_ref": "4",
+    "tunnel": "covered",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487133",
+    "wikipedia": "id:Jalur kereta api Kutoarjo–Purwosari–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 1306751846,
+  "bounds": {
+    "minlat": -7.5574434,
+    "minlon": 110.8183712,
+    "maxlat": -7.5571984,
+    "maxlon": 110.8199651
+  },
+  "nodes": [
+    3361155521,
+    3361155523,
+    12101937745,
+    3361155522
+  ],
+  "geometry": [
+    { "lat": -7.5571984, "lon": 110.8199651 },
+    { "lat": -7.5573096, "lon": 110.8194105 },
+    { "lat": -7.5573529, "lon": 110.8191307 },
+    { "lat": -7.5574434, "lon": 110.8183712 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "railway:track_ref": "1",
+    "service": "siding",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 1306853247,
+  "bounds": {
+    "minlat": -7.5558607,
+    "minlon": 110.8217211,
+    "maxlat": -7.5556396,
+    "maxlon": 110.8228192
+  },
+  "nodes": [
+    11162830818,
+    12102634119
+  ],
+  "geometry": [
+    { "lat": -7.5558607, "lon": 110.8217211 },
+    { "lat": -7.5556396, "lon": 110.8228192 }
+  ],
+  "tags": {
+    "covered": "yes",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1306853248,
+  "bounds": {
+    "minlat": -7.5556396,
+    "minlon": 110.8228192,
+    "maxlat": -7.5555895,
+    "maxlon": 110.8230936
+  },
+  "nodes": [
+    12102634119,
+    12102634120
+  ],
+  "geometry": [
+    { "lat": -7.5556396, "lon": 110.8228192 },
+    { "lat": -7.5555895, "lon": 110.8230936 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1306853412,
+  "bounds": {
+    "minlat": -7.5565796,
+    "minlon": 110.8205967,
+    "maxlat": -7.5562491,
+    "maxlon": 110.8222041
+  },
+  "nodes": [
+    12102623370,
+    12102623372
+  ],
+  "geometry": [
+    { "lat": -7.5565796, "lon": 110.8205967 },
+    { "lat": -7.5562491, "lon": 110.8222041 }
+  ],
+  "tags": {
+    "covered": "yes",
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "120",
+    "name": "Jalur Kereta Api Kutoarjo–Solo Balapan",
+    "railway": "rail",
+    "railway:track_ref": "6",
+    "tunnel": "covered",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487133",
+    "wikipedia": "id:Jalur kereta api Kutoarjo–Purwosari–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 1306853413,
+  "bounds": {
+    "minlat": -7.5568207,
+    "minlon": 110.8194148,
+    "maxlat": -7.5566274,
+    "maxlon": 110.8206082
+  },
+  "nodes": [
+    3361221408,
+    3361220089,
+    12101133828,
+    12101133825,
+    5333574727
+  ],
+  "geometry": [
+    { "lat": -7.5568207, "lon": 110.8194148 },
+    { "lat": -7.5567650, "lon": 110.8199077 },
+    { "lat": -7.5567567, "lon": 110.8199711 },
+    { "lat": -7.5567458, "lon": 110.8200382 },
+    { "lat": -7.5566274, "lon": 110.8206082 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "railway:track_ref": "5",
+    "service": "siding",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 1306853414,
+  "bounds": {
+    "minlat": -7.5562491,
+    "minlon": 110.8222041,
+    "maxlat": -7.5560530,
+    "maxlon": 110.8231556
+  },
+  "nodes": [
+    12102623372,
+    7257490002,
+    3361220090
+  ],
+  "geometry": [
+    { "lat": -7.5562491, "lon": 110.8222041 },
+    { "lat": -7.5561418, "lon": 110.8227127 },
+    { "lat": -7.5560530, "lon": 110.8231556 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "120",
+    "name": "Jalur Kereta Api Gundih–Solo Balapan",
+    "railway": "rail",
+    "railway:track_ref": "6",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q19738147",
+    "wikipedia": "id:Jalur kereta api Gundih–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 1306853415,
+  "bounds": {
+    "minlat": -7.5562932,
+    "minlon": 110.8222125,
+    "maxlat": -7.5560530,
+    "maxlon": 110.8231556
+  },
+  "nodes": [
+    12102623373,
+    1202365815,
+    12101133831,
+    12101133829,
+    12101133832,
+    11162830810,
+    12101133830,
+    3361220090
+  ],
+  "geometry": [
+    { "lat": -7.5562932, "lon": 110.8222125 },
+    { "lat": -7.5562376, "lon": 110.8224875 },
+    { "lat": -7.5562162, "lon": 110.8225861 },
+    { "lat": -7.5561936, "lon": 110.8226667 },
+    { "lat": -7.5561779, "lon": 110.8227187 },
+    { "lat": -7.5561118, "lon": 110.8229377 },
+    { "lat": -7.5560841, "lon": 110.8230378 },
+    { "lat": -7.5560530, "lon": 110.8231556 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "railway:track_ref": "5",
+    "service": "siding",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 1312800754,
+  "bounds": {
+    "minlat": -7.5541101,
+    "minlon": 110.8263511,
+    "maxlat": -7.5540510,
+    "maxlon": 110.8263794
+  },
+  "nodes": [
+    3419397408,
+    11510437706
+  ],
+  "geometry": [
+    { "lat": -7.5540510, "lon": 110.8263794 },
+    { "lat": -7.5541101, "lon": 110.8263511 }
+  ],
+  "tags": {
+    "electrified": "no",
+    "gauge": "1067",
+    "maxspeed": "120",
+    "name": "Jalur Kereta Api Gundih–Solo Balapan",
+    "railway": "rail",
+    "usage": "main",
+    "wikidata": "Q19738147",
+    "wikipedia": "id:Jalur kereta api Gundih–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 1312800759,
+  "bounds": {
+    "minlat": -7.5556826,
+    "minlon": 110.8246887,
+    "maxlat": -7.5541101,
+    "maxlon": 110.8263511
+  },
+  "nodes": [
+    12151467117,
+    12151467146,
+    12151497409,
+    12151467147,
+    12151467148,
+    12151467149,
+    12151467150,
+    12151467151,
+    12151467153,
+    12151467152,
+    11510437706
+  ],
+  "geometry": [
+    { "lat": -7.5556826, "lon": 110.8246887 },
+    { "lat": -7.5556032, "lon": 110.8249050 },
+    { "lat": -7.5554774, "lon": 110.8251111 },
+    { "lat": -7.5554704, "lon": 110.8251232 },
+    { "lat": -7.5553296, "lon": 110.8253161 },
+    { "lat": -7.5551264, "lon": 110.8255554 },
+    { "lat": -7.5548705, "lon": 110.8257925 },
+    { "lat": -7.5546827, "lon": 110.8259619 },
+    { "lat": -7.5544545, "lon": 110.8261440 },
+    { "lat": -7.5542746, "lon": 110.8262568 },
+    { "lat": -7.5541101, "lon": 110.8263511 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "120",
+    "name": "Jalur Kereta Api Gundih–Solo Balapan",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q19738147",
+    "wikipedia": "id:Jalur kereta api Gundih–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 1312800763,
+  "bounds": {
+    "minlat": -7.5558170,
+    "minlon": 110.8240590,
+    "maxlat": -7.5556826,
+    "maxlon": 110.8246887
+  },
+  "nodes": [
+    1202365843,
+    12102768755,
+    12151467117
+  ],
+  "geometry": [
+    { "lat": -7.5558170, "lon": 110.8240590 },
+    { "lat": -7.5557509, "lon": 110.8243693 },
+    { "lat": -7.5556826, "lon": 110.8246887 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "120",
+    "name": "Jalur Kereta Api Gundih–Solo Balapan",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q19738147",
+    "wikipedia": "id:Jalur kereta api Gundih–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 1312800765,
+  "bounds": {
+    "minlat": -7.5564793,
+    "minlon": 110.8273138,
+    "maxlat": -7.5564008,
+    "maxlon": 110.8276131
+  },
+  "nodes": [
+    1202365821,
+    12153192848,
+    9280193425
+  ],
+  "geometry": [
+    { "lat": -7.5564008, "lon": 110.8273138 },
+    { "lat": -7.5564223, "lon": 110.8273872 },
+    { "lat": -7.5564793, "lon": 110.8276131 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "name": "Jalur Kereta Api Solo Balapan–Kertosono",
+    "railway": "rail",
+    "service": "siding",
+    "voltage": "1500",
+    "wikidata": "Q12487144",
+    "wikipedia": "id:Jalur kereta api Solo Balapan–Kertosono"
+  }
+},
+{
+  "type": "way",
+  "id": 1312829544,
+  "bounds": {
+    "minlat": -7.5575330,
+    "minlon": 110.8177517,
+    "maxlat": -7.5574434,
+    "maxlon": 110.8183712
+  },
+  "nodes": [
+    719116323,
+    11164793081,
+    3361155522
+  ],
+  "geometry": [
+    { "lat": -7.5575330, "lon": 110.8177517 },
+    { "lat": -7.5574597, "lon": 110.8182899 },
+    { "lat": -7.5574434, "lon": 110.8183712 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "siding",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 1312829545,
+  "bounds": {
+    "minlat": -7.5565138,
+    "minlon": 110.8230069,
+    "maxlat": -7.5563387,
+    "maxlon": 110.8235423
+  },
+  "nodes": [
+    3361155510,
+    3361155526
+  ],
+  "geometry": [
+    { "lat": -7.5565138, "lon": 110.8230069 },
+    { "lat": -7.5563387, "lon": 110.8235423 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "siding",
+    "usage": "main",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 1312829546,
+  "bounds": {
+    "minlat": -7.5580259,
+    "minlon": 110.8135316,
+    "maxlat": -7.5578253,
+    "maxlon": 110.8146009
+  },
+  "nodes": [
+    11164793095,
+    11164793097,
+    12101110987
+  ],
+  "geometry": [
+    { "lat": -7.5580259, "lon": 110.8135316 },
+    { "lat": -7.5579569, "lon": 110.8138940 },
+    { "lat": -7.5578253, "lon": 110.8146009 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "120",
+    "name": "Jalur Kereta Api Kutoarjo–Solo Balapan",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487133",
+    "wikipedia": "id:Jalur kereta api Kutoarjo–Purwosari–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 1312829547,
+  "bounds": {
+    "minlat": -7.5578253,
+    "minlon": 110.8146009,
+    "maxlat": -7.5578167,
+    "maxlon": 110.8146505
+  },
+  "nodes": [
+    12101110987,
+    3361220087
+  ],
+  "geometry": [
+    { "lat": -7.5578253, "lon": 110.8146009 },
+    { "lat": -7.5578167, "lon": 110.8146505 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "120",
+    "name": "Jalur Kereta Api Kutoarjo–Solo Balapan",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487133",
+    "wikipedia": "id:Jalur kereta api Kutoarjo–Purwosari–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 1312829548,
+  "bounds": {
+    "minlat": -7.5580847,
+    "minlon": 110.8132176,
+    "maxlat": -7.5580259,
+    "maxlon": 110.8135316
+  },
+  "nodes": [
+    719116326,
+    11164793095
+  ],
+  "geometry": [
+    { "lat": -7.5580847, "lon": 110.8132176 },
+    { "lat": -7.5580259, "lon": 110.8135316 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "120",
+    "name": "Jalur Kereta Api Kutoarjo–Solo Balapan",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487133",
+    "wikipedia": "id:Jalur kereta api Kutoarjo–Purwosari–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 1312829549,
+  "bounds": {
+    "minlat": -7.5569115,
+    "minlon": 110.8204366,
+    "maxlat": -7.5568808,
+    "maxlon": 110.8207241
+  },
+  "nodes": [
+    12151707730,
+    3361689215
+  ],
+  "geometry": [
+    { "lat": -7.5569115, "lon": 110.8204366 },
+    { "lat": -7.5568808, "lon": 110.8207241 }
+  ],
+  "tags": {
+    "covered": "yes",
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "layer": "-1",
+    "railway": "rail",
+    "service": "siding",
+    "tunnel": "covered",
+    "voltage": "1500"
+  }
+},
+{
+  "type": "way",
+  "id": 1312829550,
+  "bounds": {
+    "minlat": -7.5571855,
+    "minlon": 110.8199723,
+    "maxlat": -7.5566981,
+    "maxlon": 110.8222091
+  },
+  "nodes": [
+    12151707731,
+    12151707732,
+    12151707733,
+    12151707734,
+    12151707731
+  ],
+  "geometry": [
+    { "lat": -7.5571613, "lon": 110.8199723 },
+    { "lat": -7.5571855, "lon": 110.8199774 },
+    { "lat": -7.5567218, "lon": 110.8222091 },
+    { "lat": -7.5566981, "lon": 110.8222041 },
+    { "lat": -7.5571613, "lon": 110.8199723 }
+  ],
+  "tags": {
+    "public_transport": "platform",
+    "railway": "platform",
+    "ref": "1;2",
+    "train": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1312829551,
+  "bounds": {
+    "minlat": -7.5572293,
+    "minlon": 110.8199849,
+    "maxlat": -7.5567404,
+    "maxlon": 110.8222220
+  },
+  "nodes": [
+    12151707735,
+    12151707736,
+    12151707737,
+    12151707738,
+    12151707735
+  ],
+  "geometry": [
+    { "lat": -7.5572042, "lon": 110.8199849 },
+    { "lat": -7.5572293, "lon": 110.8199902 },
+    { "lat": -7.5567651, "lon": 110.8222220 },
+    { "lat": -7.5567404, "lon": 110.8222168 },
+    { "lat": -7.5572042, "lon": 110.8199849 }
+  ],
+  "tags": {
+    "public_transport": "platform",
+    "railway": "platform",
+    "ref": "1",
+    "shelter": "yes",
+    "train": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1312829552,
+  "bounds": {
+    "minlat": -7.5571436,
+    "minlon": 110.8199579,
+    "maxlat": -7.5565182,
+    "maxlon": 110.8227519
+  },
+  "nodes": [
+    12151707739,
+    12151707740,
+    12151707741,
+    12151707742,
+    12151707739
+  ],
+  "geometry": [
+    { "lat": -7.5570928, "lon": 110.8199579 },
+    { "lat": -7.5571436, "lon": 110.8199685 },
+    { "lat": -7.5565686, "lon": 110.8227519 },
+    { "lat": -7.5565182, "lon": 110.8227413 },
+    { "lat": -7.5570928, "lon": 110.8199579 }
+  ],
+  "tags": {
+    "public_transport": "platform",
+    "railway": "platform",
+    "ref": "2;3",
+    "train": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1312829553,
+  "bounds": {
+    "minlat": -7.5570673,
+    "minlon": 110.8199476,
+    "maxlat": -7.5563824,
+    "maxlon": 110.8231913
+  },
+  "nodes": [
+    12151707743,
+    12151707744,
+    12151707745,
+    12151707746,
+    12151707743
+  ],
+  "geometry": [
+    { "lat": -7.5570437, "lon": 110.8199476 },
+    { "lat": -7.5570673, "lon": 110.8199525 },
+    { "lat": -7.5564053, "lon": 110.8231913 },
+    { "lat": -7.5563824, "lon": 110.8231866 },
+    { "lat": -7.5570437, "lon": 110.8199476 }
+  ],
+  "tags": {
+    "public_transport": "platform",
+    "railway": "platform",
+    "ref": "3;4",
+    "train": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1312829554,
+  "bounds": {
+    "minlat": -7.5568553,
+    "minlon": 110.8207688,
+    "maxlat": -7.5563361,
+    "maxlon": 110.8230004
+  },
+  "nodes": [
+    12151707747,
+    12151707748,
+    12151707749,
+    12151707750,
+    12151707747
+  ],
+  "geometry": [
+    { "lat": -7.5568092, "lon": 110.8207688 },
+    { "lat": -7.5568553, "lon": 110.8207788 },
+    { "lat": -7.5563826, "lon": 110.8230004 },
+    { "lat": -7.5563361, "lon": 110.8229903 },
+    { "lat": -7.5568092, "lon": 110.8207688 }
+  ],
+  "tags": {
+    "public_transport": "platform",
+    "railway": "platform",
+    "ref": "4",
+    "train": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1312829555,
+  "bounds": {
+    "minlat": -7.5561494,
+    "minlon": 110.8224547,
+    "maxlat": -7.5559365,
+    "maxlon": 110.8235022
+  },
+  "nodes": [
+    3361221399,
+    1347330613,
+    12151707759
+  ],
+  "geometry": [
+    { "lat": -7.5559365, "lon": 110.8235022 },
+    { "lat": -7.5561004, "lon": 110.8227049 },
+    { "lat": -7.5561494, "lon": 110.8224547 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "120",
+    "name": "Jalur Kereta Api Gundih–Solo Balapan",
+    "railway": "rail",
+    "railway:track_ref": "7",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q19738147",
+    "wikipedia": "id:Jalur kereta api Gundih–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 1312829556,
+  "bounds": {
+    "minlat": -7.5564606,
+    "minlon": 110.8209595,
+    "maxlat": -7.5561494,
+    "maxlon": 110.8224547
+  },
+  "nodes": [
+    12151707759,
+    12151707760
+  ],
+  "geometry": [
+    { "lat": -7.5561494, "lon": 110.8224547 },
+    { "lat": -7.5564606, "lon": 110.8209595 }
+  ],
+  "tags": {
+    "covered": "yes",
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "120",
+    "name": "Jalur Kereta Api Kutoarjo–Solo Balapan",
+    "railway": "rail",
+    "railway:track_ref": "7",
+    "tunnel": "covered",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487133",
+    "wikipedia": "id:Jalur kereta api Kutoarjo–Purwosari–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 1312829557,
+  "bounds": {
+    "minlat": -7.5559365,
+    "minlon": 110.8235022,
+    "maxlat": -7.5558692,
+    "maxlon": 110.8238315
+  },
+  "nodes": [
+    1202365842,
+    3361221399
+  ],
+  "geometry": [
+    { "lat": -7.5558692, "lon": 110.8238315 },
+    { "lat": -7.5559365, "lon": 110.8235022 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "120",
+    "name": "Jalur Kereta Api Gundih–Solo Balapan",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q19738147",
+    "wikipedia": "id:Jalur kereta api Gundih–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 1312829558,
+  "bounds": {
+    "minlat": -7.5567859,
+    "minlon": 110.8189996,
+    "maxlat": -7.5566521,
+    "maxlon": 110.8194243
+  },
+  "nodes": [
+    3361221410,
+    3361718422
+  ],
+  "geometry": [
+    { "lat": -7.5567859, "lon": 110.8189996 },
+    { "lat": -7.5566521, "lon": 110.8194243 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "siding"
+  }
+},
+{
+  "type": "way",
+  "id": 1312829559,
+  "bounds": {
+    "minlat": -7.5566521,
+    "minlon": 110.8194243,
+    "maxlat": -7.5565379,
+    "maxlon": 110.8197839
+  },
+  "nodes": [
+    3361718422,
+    3361221395
+  ],
+  "geometry": [
+    { "lat": -7.5566521, "lon": 110.8194243 },
+    { "lat": -7.5565379, "lon": 110.8197839 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "siding"
+  }
+},
+{
+  "type": "way",
+  "id": 1312829560,
+  "bounds": {
+    "minlat": -7.5570483,
+    "minlon": 110.8178905,
+    "maxlat": -7.5567859,
+    "maxlon": 110.8189996
+  },
+  "nodes": [
+    3361221410,
+    12101133826,
+    3361221409,
+    12101133827,
+    1347330631
+  ],
+  "geometry": [
+    { "lat": -7.5567859, "lon": 110.8189996 },
+    { "lat": -7.5568371, "lon": 110.8188335 },
+    { "lat": -7.5568729, "lon": 110.8187004 },
+    { "lat": -7.5569117, "lon": 110.8185405 },
+    { "lat": -7.5570483, "lon": 110.8178905 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "siding"
+  }
+},
+{
+  "type": "way",
+  "id": 1312829561,
+  "bounds": {
+    "minlat": -7.5568207,
+    "minlon": 110.8194148,
+    "maxlat": -7.5565796,
+    "maxlon": 110.8205967
+  },
+  "nodes": [
+    3361221408,
+    3361220091,
+    12102623370
+  ],
+  "geometry": [
+    { "lat": -7.5568207, "lon": 110.8194148 },
+    { "lat": -7.5567111, "lon": 110.8199612 },
+    { "lat": -7.5565796, "lon": 110.8205967 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "120",
+    "name": "Jalur Kereta Api Kutoarjo–Solo Balapan",
+    "railway": "rail",
+    "railway:track_ref": "6",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487133",
+    "wikipedia": "id:Jalur kereta api Kutoarjo–Purwosari–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 1312829562,
+  "bounds": {
+    "minlat": -7.5572433,
+    "minlon": 110.8189656,
+    "maxlat": -7.5570420,
+    "maxlon": 110.8199287
+  },
+  "nodes": [
+    3361220081,
+    12151707775
+  ],
+  "geometry": [
+    { "lat": -7.5572433, "lon": 110.8189656 },
+    { "lat": -7.5570420, "lon": 110.8199287 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "80",
+    "name": "Jalur Kereta Api Kutoarjo–Solo Balapan",
+    "railway": "rail",
+    "railway:track_ref": "4",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487133",
+    "wikipedia": "id:Jalur kereta api Kutoarjo–Purwosari–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 1312829563,
+  "bounds": {
+    "minlat": -7.5560017,
+    "minlon": 110.8229075,
+    "maxlat": -7.5559365,
+    "maxlon": 110.8235022
+  },
+  "nodes": [
+    7737834374,
+    12101952858,
+    12101952859,
+    3361221399
+  ],
+  "geometry": [
+    { "lat": -7.5560017, "lon": 110.8229075 },
+    { "lat": -7.5559884, "lon": 110.8230728 },
+    { "lat": -7.5559704, "lon": 110.8232590 },
+    { "lat": -7.5559365, "lon": 110.8235022 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "siding"
+  }
+},
+{
+  "type": "way",
+  "id": 1312829564,
+  "bounds": {
+    "minlat": -7.5566473,
+    "minlon": 110.8202088,
+    "maxlat": -7.5561307,
+    "maxlon": 110.8226054
+  },
+  "nodes": [
+    12151707762,
+    12151707763,
+    12151707764,
+    12151707765,
+    12151707762
+  ],
+  "geometry": [
+    { "lat": -7.5566246, "lon": 110.8202088 },
+    { "lat": -7.5566473, "lon": 110.8202135 },
+    { "lat": -7.5561529, "lon": 110.8226054 },
+    { "lat": -7.5561307, "lon": 110.8226007 },
+    { "lat": -7.5566246, "lon": 110.8202088 }
+  ],
+  "tags": {
+    "public_transport": "platform",
+    "railway": "platform",
+    "ref": "6;7",
+    "train": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1312829565,
+  "bounds": {
+    "minlat": -7.5566154,
+    "minlon": 110.8206157,
+    "maxlat": -7.5562729,
+    "maxlon": 110.8221359
+  },
+  "nodes": [
+    12151707766,
+    12151707767,
+    12151707768,
+    12151707769,
+    12151707766
+  ],
+  "geometry": [
+    { "lat": -7.5565851, "lon": 110.8206157 },
+    { "lat": -7.5566154, "lon": 110.8206220 },
+    { "lat": -7.5563029, "lon": 110.8221359 },
+    { "lat": -7.5562729, "lon": 110.8221296 },
+    { "lat": -7.5565851, "lon": 110.8206157 }
+  ],
+  "tags": {
+    "public_transport": "platform",
+    "railway": "platform",
+    "ref": "5;6",
+    "train": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1312829566,
+  "bounds": {
+    "minlat": -7.5566698,
+    "minlon": 110.8206242,
+    "maxlat": -7.5562539,
+    "maxlon": 110.8225011
+  },
+  "nodes": [
+    12151707770,
+    12151707771,
+    12151707772,
+    12151707773,
+    12151707770
+  ],
+  "geometry": [
+    { "lat": -7.5566373, "lon": 110.8206242 },
+    { "lat": -7.5566698, "lon": 110.8206309 },
+    { "lat": -7.5562868, "lon": 110.8225011 },
+    { "lat": -7.5562539, "lon": 110.8224943 },
+    { "lat": -7.5566373, "lon": 110.8206242 }
+  ],
+  "tags": {
+    "public_transport": "platform",
+    "railway": "platform",
+    "ref": "5",
+    "train": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1312829567,
+  "bounds": {
+    "minlat": -7.5578167,
+    "minlon": 110.8146505,
+    "maxlat": -7.5574564,
+    "maxlon": 110.8163257
+  },
+  "nodes": [
+    3361220087,
+    11162830812,
+    12151707722,
+    11162830817
+  ],
+  "geometry": [
+    { "lat": -7.5578167, "lon": 110.8146505 },
+    { "lat": -7.5577235, "lon": 110.8151187 },
+    { "lat": -7.5575653, "lon": 110.8158509 },
+    { "lat": -7.5574564, "lon": 110.8163257 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "120",
+    "name": "Jalur Kereta Api Kutoarjo–Solo Balapan",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487133",
+    "wikipedia": "id:Jalur kereta api Kutoarjo–Purwosari–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 1312829568,
+  "bounds": {
+    "minlat": -7.5572757,
+    "minlon": 110.8169945,
+    "maxlat": -7.5569655,
+    "maxlon": 110.8185087
+  },
+  "nodes": [
+    1347330619,
+    11162830832,
+    11162830814
+  ],
+  "geometry": [
+    { "lat": -7.5569655, "lon": 110.8185087 },
+    { "lat": -7.5569761, "lon": 110.8184570 },
+    { "lat": -7.5572757, "lon": 110.8169945 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "120",
+    "name": "Jalur Kereta Api Kutoarjo–Solo Balapan",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487133",
+    "wikipedia": "id:Jalur kereta api Kutoarjo–Purwosari–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 1312829569,
+  "bounds": {
+    "minlat": -7.5572959,
+    "minlon": 110.8168913,
+    "maxlat": -7.5572757,
+    "maxlon": 110.8169945
+  },
+  "nodes": [
+    11162830814,
+    11162830811
+  ],
+  "geometry": [
+    { "lat": -7.5572757, "lon": 110.8169945 },
+    { "lat": -7.5572959, "lon": 110.8168913 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "120",
+    "name": "Jalur Kereta Api Kutoarjo–Solo Balapan",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487133",
+    "wikipedia": "id:Jalur kereta api Kutoarjo–Purwosari–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 1312829570,
+  "bounds": {
+    "minlat": -7.5571180,
+    "minlon": 110.8175539,
+    "maxlat": -7.5570576,
+    "maxlon": 110.8178449
+  },
+  "nodes": [
+    1202365830,
+    11162830816
+  ],
+  "geometry": [
+    { "lat": -7.5570576, "lon": 110.8178449 },
+    { "lat": -7.5571180, "lon": 110.8175539 }
+  ],
+  "tags": {
+    "gauge": "1067",
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1312829571,
+  "bounds": {
+    "minlat": -7.5570576,
+    "minlon": 110.8178449,
+    "maxlat": -7.5570483,
+    "maxlon": 110.8178905
+  },
+  "nodes": [
+    1347330631,
+    1202365830
+  ],
+  "geometry": [
+    { "lat": -7.5570483, "lon": 110.8178905 },
+    { "lat": -7.5570576, "lon": 110.8178449 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "yard"
+  }
+},
+{
+  "type": "way",
+  "id": 1312839621,
+  "bounds": {
+    "minlat": -7.5560105,
+    "minlon": 110.8226874,
+    "maxlat": -7.5560017,
+    "maxlon": 110.8229075
+  },
+  "nodes": [
+    3361221398,
+    7737834374
+  ],
+  "geometry": [
+    { "lat": -7.5560105, "lon": 110.8226874 },
+    { "lat": -7.5560017, "lon": 110.8229075 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "siding"
+  }
+},
+{
+  "type": "way",
+  "id": 1312971524,
+  "bounds": {
+    "minlat": -7.5578167,
+    "minlon": 110.8146505,
+    "maxlat": -7.5576348,
+    "maxlon": 110.8165638
+  },
+  "nodes": [
+    3361220087,
+    11162830813,
+    12101110988,
+    11164793083,
+    3361220078
+  ],
+  "geometry": [
+    { "lat": -7.5578167, "lon": 110.8146505 },
+    { "lat": -7.5577862, "lon": 110.8148650 },
+    { "lat": -7.5577730, "lon": 110.8150039 },
+    { "lat": -7.5577250, "lon": 110.8156619 },
+    { "lat": -7.5576348, "lon": 110.8165638 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "80",
+    "name": "Jalur Kereta Api Kutoarjo–Solo Balapan",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487133",
+    "wikipedia": "id:Jalur kereta api Kutoarjo–Purwosari–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 1312971525,
+  "bounds": {
+    "minlat": -7.5575330,
+    "minlon": 110.8177517,
+    "maxlat": -7.5573968,
+    "maxlon": 110.8184341
+  },
+  "nodes": [
+    719116323,
+    719116319
+  ],
+  "geometry": [
+    { "lat": -7.5575330, "lon": 110.8177517 },
+    { "lat": -7.5573968, "lon": 110.8184341 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "80",
+    "name": "Jalur Kereta Api Kutoarjo–Solo Balapan",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487133",
+    "wikipedia": "id:Jalur kereta api Kutoarjo–Purwosari–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 1312971526,
+  "bounds": {
+    "minlat": -7.5575859,
+    "minlon": 110.8174832,
+    "maxlat": -7.5575330,
+    "maxlon": 110.8177517
+  },
+  "nodes": [
+    3361220077,
+    719116323
+  ],
+  "geometry": [
+    { "lat": -7.5575859, "lon": 110.8174832 },
+    { "lat": -7.5575330, "lon": 110.8177517 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "80",
+    "name": "Jalur Kereta Api Kutoarjo–Solo Balapan",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487133",
+    "wikipedia": "id:Jalur kereta api Kutoarjo–Purwosari–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 1312971527,
+  "bounds": {
+    "minlat": -7.5568892,
+    "minlon": 110.8190804,
+    "maxlat": -7.5568207,
+    "maxlon": 110.8194148
+  },
+  "nodes": [
+    12101133822,
+    11162830835,
+    3361221408
+  ],
+  "geometry": [
+    { "lat": -7.5568892, "lon": 110.8190804 },
+    { "lat": -7.5568808, "lon": 110.8191226 },
+    { "lat": -7.5568207, "lon": 110.8194148 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "120",
+    "name": "Jalur Kereta Api Kutoarjo–Solo Balapan",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487133",
+    "wikipedia": "id:Jalur kereta api Kutoarjo–Purwosari–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 1312971528,
+  "bounds": {
+    "minlat": -7.5564793,
+    "minlon": 110.8257669,
+    "maxlat": -7.5562027,
+    "maxlon": 110.8276131
+  },
+  "nodes": [
+    9280193425,
+    12151497419,
+    9280193427
+  ],
+  "geometry": [
+    { "lat": -7.5564793, "lon": 110.8276131 },
+    { "lat": -7.5563571, "lon": 110.8267973 },
+    { "lat": -7.5562027, "lon": 110.8257669 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "120",
+    "name": "Jalur Kereta Api Solo Balapan–Kertosono",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487144",
+    "wikipedia": "id:Jalur kereta api Solo Balapan–Kertosono"
+  }
+},
+{
+  "type": "way",
+  "id": 1312971529,
+  "bounds": {
+    "minlat": -7.5567555,
+    "minlon": 110.8257717,
+    "maxlat": -7.5562432,
+    "maxlon": 110.8291541
+  },
+  "nodes": [
+    719116297,
+    9280193420
+  ],
+  "geometry": [
+    { "lat": -7.5562432, "lon": 110.8257717 },
+    { "lat": -7.5567555, "lon": 110.8291541 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "120",
+    "name": "Jalur Kereta Api Solo Balapan–Kertosono",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487144",
+    "wikipedia": "id:Jalur kereta api Solo Balapan–Kertosono"
+  }
+},
+{
+  "type": "way",
+  "id": 1312971530,
+  "bounds": {
+    "minlat": -7.5566325,
+    "minlon": 110.8284639,
+    "maxlat": -7.5566162,
+    "maxlon": 110.8285714
+  },
+  "nodes": [
+    1202365827,
+    12151467190
+  ],
+  "geometry": [
+    { "lat": -7.5566325, "lon": 110.8285714 },
+    { "lat": -7.5566162, "lon": 110.8284639 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "120",
+    "name": "Jalur Kereta Api Solo Balapan–Kertosono",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487144",
+    "wikipedia": "id:Jalur kereta api Solo Balapan–Kertosono"
+  }
+},
+{
+  "type": "way",
+  "id": 1331197805,
+  "bounds": {
+    "minlat": -7.5558692,
+    "minlon": 110.8238315,
+    "maxlat": -7.5558170,
+    "maxlon": 110.8240590
+  },
+  "nodes": [
+    1202365842,
+    1202365847,
+    7287444736,
+    1202365843
+  ],
+  "geometry": [
+    { "lat": -7.5558692, "lon": 110.8238315 },
+    { "lat": -7.5558431, "lon": 110.8239461 },
+    { "lat": -7.5558329, "lon": 110.8239886 },
+    { "lat": -7.5558170, "lon": 110.8240590 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "120",
+    "name": "Jalur Kereta Api Gundih–Solo Balapan",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q19738147",
+    "wikipedia": "id:Jalur kereta api Gundih–Solo Balapan"
+  }
+},
+{
+  "type": "way",
+  "id": 1331197806,
+  "bounds": {
+    "minlat": -7.5566162,
+    "minlon": 110.8276131,
+    "maxlat": -7.5564793,
+    "maxlon": 110.8284639
+  },
+  "nodes": [
+    12151467190,
+    9280193425
+  ],
+  "geometry": [
+    { "lat": -7.5566162, "lon": 110.8284639 },
+    { "lat": -7.5564793, "lon": 110.8276131 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "120",
+    "name": "Jalur Kereta Api Solo Balapan–Kertosono",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487144",
+    "wikipedia": "id:Jalur kereta api Solo Balapan–Kertosono"
+  }
+},
+{
+  "type": "way",
+  "id": 1344739532,
+  "bounds": {
+    "minlat": -7.5567683,
+    "minlon": 110.8291541,
+    "maxlat": -7.5567555,
+    "maxlon": 110.8292359
+  },
+  "nodes": [
+    9280193420,
+    12101150246
+  ],
+  "geometry": [
+    { "lat": -7.5567555, "lon": 110.8291541 },
+    { "lat": -7.5567683, "lon": 110.8292359 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "120",
+    "name": "Jalur Kereta Api Solo Balapan–Kertosono",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487144",
+    "wikipedia": "id:Jalur kereta api Solo Balapan–Kertosono"
+  }
+},
+{
+  "type": "way",
+  "id": 1344739533,
+  "bounds": {
+    "minlat": -7.5568048,
+    "minlon": 110.8285714,
+    "maxlat": -7.5566325,
+    "maxlon": 110.8298011
+  },
+  "nodes": [
+    12101150247,
+    7561393682,
+    1202365827
+  ],
+  "geometry": [
+    { "lat": -7.5568048, "lon": 110.8298011 },
+    { "lat": -7.5566771, "lon": 110.8289085 },
+    { "lat": -7.5566325, "lon": 110.8285714 }
+  ],
+  "tags": {
+    "electrified": "contact_line",
+    "frequency": "0",
+    "gauge": "1067",
+    "maxspeed": "120",
+    "name": "Jalur Kereta Api Solo Balapan–Kertosono",
+    "railway": "rail",
+    "usage": "main",
+    "voltage": "1500",
+    "wikidata": "Q12487144",
+    "wikipedia": "id:Jalur kereta api Solo Balapan–Kertosono"
+  }
+},
+{
+  "type": "way",
+  "id": 1421589889,
+  "bounds": {
+    "minlat": -7.5571282,
+    "minlon": 110.8152973,
+    "maxlat": -7.5570647,
+    "maxlon": 110.8157923
+  },
+  "nodes": [
+    11164823608,
+    13063964279
+  ],
+  "geometry": [
+    { "lat": -7.5571282, "lon": 110.8157923 },
+    { "lat": -7.5570647, "lon": 110.8152973 }
+  ],
+  "tags": {
+    "railway": "rail",
+    "service": "spur"
+  }
+}
+
+  ]
+}
