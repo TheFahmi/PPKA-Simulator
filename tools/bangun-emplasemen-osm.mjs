@@ -277,22 +277,255 @@ function bangun(kode) {
     wilayah: 'EMPLASEMEN',
   }));
 
-  return {
-    cfg,
-    sumber,
-    graf,
+  /* -- Sepur ----------------------------------------------------------- */
+  const jalurSumber = new Map(
+    (sumber?.jalur ?? []).map((j) => [String(j.nomor), j]),
+  );
+  const sepur = [];
+  for (const [nomor, r] of [...badanSepur].sort(
+    (a, b) => Number(a[0]) - Number(b[0]),
+  )) {
+    const info = jalurSumber.get(nomor);
+    const rr = ruasPeta.get(r.id);
+    sepur.push({
+      id: `SP-${kode}-${nomor}`,
+      nomor,
+      label: `Jalur ${nomor}`,
+      level: rr._level,
+      jenis: info?.sepurLurus ? 'RAYA' : 'BELOK',
+      peronId: null,
+      panjangPeronM: 0,
+      linDilayani: [],
+      ruasId: rr.id,
+      keterangan: info?.peruntukan ?? 'Peruntukan tidak dinyatakan sumber.',
+    });
+  }
+
+  /* -- Peron ----------------------------------------------------------- */
+  const peron = [];
+  for (const p of graf.peron) {
+    const dekat = p.titik.some((t) => Math.hypot(t.x, t.y) <= cfg.radius);
+    if (!dekat) continue;
+    const nomorPeron = (p.ref ?? '').split(/[;,]/).map((s) => s.trim()).filter(Boolean);
+    const sepurIds = nomorPeron
+      .map((n) => `SP-${kode}-${n}`)
+      .filter((id) => sepur.some((s) => s.id === id));
+    const lv = sepur.find((s) => sepurIds.includes(s.id))?.level ?? 'DASAR';
+    const g = p.titik.map((t) => keGambar(t, lv));
+    const x1 = Math.min(...g.map((t) => t.x));
+    const x2 = Math.max(...g.map((t) => t.x));
+    const y1 = Math.min(...g.map((t) => t.y));
+    const y2 = Math.max(...g.map((t) => t.y));
+    const id = `PER-${kode}-${peron.length + 1}`;
+    peron.push({
+      id,
+      nomor: p.ref ?? String(peron.length + 1),
+      nama: p.ref ? `Peron jalur ${p.ref.replace(/;/g, '-')}` : `Peron ${peron.length + 1}`,
+      level: lv,
+      jenis: sepurIds.length > 1 ? 'PULAU' : 'SISI',
+      sepurIds,
+      geometri: {
+        x: x1,
+        y: Math.max(0, y1 - 6),
+        lebar: Math.max(30, x2 - x1),
+        tinggi: Math.max(14, y2 - y1 + 12),
+      },
+    });
+    for (const s of sepur) {
+      if (sepurIds.includes(s.id)) {
+        s.peronId = id;
+        s.panjangPeronM = Math.round(
+          Math.hypot(
+            p.titik[0].x - p.titik[p.titik.length - 1].x,
+            p.titik[0].y - p.titik[p.titik.length - 1].y,
+          ),
+        );
+      }
+    }
+  }
+
+  /* -- Batas emplasemen ------------------------------------------------ */
+  const lintasSumber = new Map((sumber?.lintas ?? []).map((l) => [l.kode, l]));
+  const kelompok = new Map();
+  for (const s of graf.simpul.filter((x) => x.jenis === 'BATAS')) {
+    const kaki = (ruasDiSimpulAsli.get(s.id) ?? [])[0];
+    if (!kaki) continue;
+    const nama = kaki.tags.name ?? '';
+    let kodeLintas = null;
+    for (const [petunjuk, kd] of cfg.lintasDariNama) {
+      if (nama.includes(petunjuk)) {
+        kodeLintas = kd;
+        break;
+      }
+    }
+    /*
+     * Simpul batas yang way-nya tak bernama tetap harus menjadi batas
+     * emplasemen — itu jalur akses depo, sepur simpan, atau lintas yang belum
+     * diberi nama di OSM. Membiarkannya tanpa batas membuat bagian emplasemen
+     * itu tidak terjangkau sama sekali.
+     */
+    const sisi = s.x < 0 ? 'KIRI' : 'KANAN';
+    const kunci = kodeLintas
+      ? `${kodeLintas}|${sisi}`
+      : `AKSES|${sisi}`;
+    if (!kelompok.has(kunci)) kelompok.set(kunci, []);
+    kelompok.get(kunci).push({ simpul: s, ruas: kaki, bernama: Boolean(kodeLintas) });
+  }
+
+  const batas = [];
+  for (const [kunci, anggota] of kelompok) {
+    const [kodeLintas, sisi] = kunci.split('|');
+    const info = lintasSumber.get(kodeLintas);
+    anggota.sort((a, b) => a.simpul.y - b.simpul.y);
+    const tunggal = anggota.length === 1 || info?.jenisJalur === 'TUNGGAL';
+    // Sisi ikut masuk id: satu lintas dapat menyentuh emplasemen dari dua sisi
+    // (mis. lintas yang membelok mengitari stasiun), dan tanpa sisi id-nya kembar.
+    const buat = (a, akhiran, keterangan) => {
+      const id = `BTS-${kode}-${kodeLintas}-${sisi === 'KIRI' ? 'B' : 'T'}${akhiran}`;
+      batas.push({
+        id,
+        nama: kodeLintas === 'AKSES' ? `Jalur akses ${sisi === 'KIRI' ? 'barat' : 'timur'}${keterangan}` : `${info?.nama ?? `Arah ${kodeLintas}`}${keterangan}`,
+        singkatan: kodeLintas,
+        level: levelSimpul.get(a.simpul.id) ?? 'DASAR',
+        simpulId: `S${a.simpul.id}`,
+        sisi,
+        stasiunTetangga: kodeLintas === 'AKSES' ? 'Emplasemen luar' : (info?.stasiunTetangga ?? kodeLintas),
+        linDilayani: [],
+        headwayMinimumDetik: tunggal ? 420 : 180,
+        jalurTunggal: Boolean(tunggal),
+      });
+      // Ruas petak jalan ditandai supaya penguncian rute memperlakukannya benar.
+      const rr = ruasPeta.get(a.ruas.id);
+      if (rr) {
+        rr.jenis = 'PETAK_JALAN';
+        const b = blok.find((x) => x.id === rr.blokId);
+        if (b) {
+          b.wilayah = 'PETAK_JALAN';
+          b.nama = `PJ ${info?.stasiunTetangga ?? kodeLintas}`;
+        }
+      }
+    };
+
+    if (kodeLintas === 'AKSES') {
+      // Jalur akses depo/sepur simpan: tiap simpul menjadi batas tersendiri.
+      anggota.forEach((a, i) => buat(a, `-${i + 1}`, ` ${i + 1}`));
+    } else if (tunggal) {
+      buat(anggota[0], '', '');
+      // Sepur tambahan pada lintas tunggal tetap dipakai sebagai batas terpisah.
+      anggota.slice(1).forEach((a, i) => buat(a, `-${i + 2}`, ` (sepur ${i + 2})`));
+    } else {
+      buat(anggota[0], '-D', ' (masuk)');
+      buat(anggota[1], '-K', ' (keluar)');
+      anggota.slice(2).forEach((a, i) => buat(a, `-${i + 3}`, ` (sepur ${i + 3})`));
+    }
+  }
+
+  /* -- Sinyal ---------------------------------------------------------- */
+  const sinyal = [];
+  const ruasBersinyal = new Set();
+  let hurufMasuk = 0;
+  const HURUF = 'ABCDEFGHJKLMNPRSTUV';
+
+  for (const b of batas) {
+    const sId = b.simpulId.slice(1);
+    const kaki = (ruasDiSimpulAsli.get(sId) ?? [])[0];
+    if (!kaki) continue;
+    const rr = ruasPeta.get(kaki.id);
+    if (!rr || ruasBersinyal.has(rr.id)) continue;
+    const simpulB = simpulPeta.get(b.simpulId);
+    const lain = rr.dari === b.simpulId ? rr.ke : rr.dari;
+    const simpulLain = simpulPeta.get(lain);
+    const hadap = simpulLain && simpulB && simpulLain.x >= simpulB.x ? 1 : -1;
+    sinyal.push({
+      id: `SIG-${kode}-M${hurufMasuk}`,
+      nama: HURUF[hurufMasuk % HURUF.length],
+      jenis: 'MASUK',
+      level: b.level,
+      simpulId: b.simpulId,
+      ruasDilindungi: rr.id,
+      hadap,
+      offsetY: -18,
+      offsetX: hadap * 36,
+    });
+    ruasBersinyal.add(rr.id);
+    hurufMasuk += 1;
+  }
+
+  for (const sp of sepur) {
+    const badan = ruas.find((r) => r.id === sp.ruasId);
+    if (!badan) continue;
+    for (const ujung of [badan.dari, badan.ke]) {
+      const asliUjung = ujung.slice(1);
+      const tetangga = (ruasDiSimpulAsli.get(asliUjung) ?? []).filter(
+        (r) => r.id !== badan.asli,
+      );
+      for (const t of tetangga) {
+        const rr = ruasPeta.get(t.id);
+        if (!rr || ruasBersinyal.has(rr.id)) continue;
+        const simpulU = simpulPeta.get(ujung);
+        const lain = rr.dari === ujung ? rr.ke : rr.dari;
+        const simpulLain = simpulPeta.get(lain);
+        const hadap = simpulLain && simpulU && simpulLain.x >= simpulU.x ? 1 : -1;
+        // Satu ujung sepur dapat bercabang ke lebih dari satu ruas; masing-masing
+        // memerlukan sinyal keluar tersendiri, jadi namanya diberi urutan.
+        const dasar = `J${sp.nomor}${hadap === 1 ? 'T' : 'B'}`;
+        let nama = dasar;
+        let n = 2;
+        while (sinyal.some((x) => x.nama === nama)) {
+          nama = `${dasar}${n}`;
+          n += 1;
+        }
+        sinyal.push({
+          id: `SIG-${kode}-${nama}`,
+          nama,
+          jenis: 'KELUAR',
+          level: sp.level,
+          simpulId: ujung,
+          ruasDilindungi: rr.id,
+          hadap,
+          offsetY: -18,
+          offsetX: hadap * 22,
+        });
+        ruasBersinyal.add(rr.id);
+      }
+    }
+  }
+
+  /* -- Rakit ----------------------------------------------------------- */
+  const kanvas = {};
+  for (const lv of tingkat) {
+    kanvas[lv] = { lebar: LEBAR_KANVAS, tinggi: Math.round(kanvasY[lv].tinggi) };
+  }
+
+  const emplasemen = {
+    kodeStasiun: kode,
+    namaStasiun: cfg.nama,
+    acuan: {
+      keterangan: `${cfg.keterangan} Bentuk emplasemen diturunkan dari geometri sepur tersurvei OpenStreetMap/OpenRailwayMap: kedudukan tiap sepur, letak tiap wesel beserta kaki pangkal-lurus-beloknya, persilangan sebidang, penomoran jalur, serta letak peron.`,
+      tanggalAcuan: new Date().toISOString().slice(0, 10),
+      sumber: [
+        `OpenStreetMap / OpenRailwayMap lewat Overpass API, ditarik ke tools/sumber/osm/${kode}.json`,
+        ...(sumber?.sumberTataLetak ?? []),
+      ],
+      catatanVerifikasi:
+        'YANG BERASAL DARI SURVEI: kedudukan dan bentuk tiap sepur, letak tiap wesel beserta penetapan kaki pangkal, lurus, dan belok yang dihitung dari geometri, persilangan sebidang, penomoran jalur, dan letak peron. ' +
+        'YANG DISUSUN SENDIRI DAN BUKAN DATA SURVEI: penomoran wesel (OpenStreetMap tidak memuat ref maupun name pada satu pun wesel), letak dan penamaan sinyal (OpenStreetMap hampir tidak memuat railway=signal pada stasiun-stasiun ini), pembagian blok deteksi sarana, serta penetapan batas mana yang arah masuk dan mana yang arah keluar pada lintas jalur ganda. ' +
+        'CARA MENGGAMBAR: diagram jalur bukan peta berskala. Kedudukan memanjang dipakai apa adanya, sedangkan kedudukan melintang dipetakan menjadi lajur berjarak tetap lewat pemetaan monoton, sehingga urutan sepur dan seluruh topologinya tetap sama dengan hasil survei sementara renggangnya dibuat terbaca. Sepur yang meninggalkan emplasemen dimampatkan secara logaritmik.',
+      putarDerajat: Math.round(graf.sudutPutar * 10) / 10,
+    },
+    kanvas,
     simpul,
-    simpulPeta,
-    ruas,
-    ruasPeta,
+    ruas: ruas.map(({ asli, _titik, _nomor, _nama, _level, ...sisa }) => sisa),
     wesel,
     persilangan,
+    sinyal,
     blok,
-    badanSepur,
-    keGambar,
-    kanvasY,
-    tingkat,
+    sepur,
+    peron,
+    batas,
   };
+
+  return { emplasemen, cfg, sumber, graf, ruas, sepur, batas, sinyal, kanvas };
 }
 
 /* ------------------------------------------------------------------ */
@@ -301,19 +534,88 @@ const daftar = process.argv.slice(2).length
   ? process.argv.slice(2)
   : Object.keys(STASIUN);
 
+/** Pemeriksaan keutuhan graf, sama ketatnya seperti pembangkit terdahulu. */
+function periksa(e) {
+  const galat = [];
+  const idSimpul = new Set(e.simpul.map((s) => s.id));
+  const idRuas = new Set(e.ruas.map((r) => r.id));
+  for (const r of e.ruas) {
+    if (!idSimpul.has(r.dari)) galat.push(`ruas ${r.id}: simpul ${r.dari} tidak ada`);
+    if (!idSimpul.has(r.ke)) galat.push(`ruas ${r.id}: simpul ${r.ke} tidak ada`);
+  }
+  const derajat = new Map();
+  for (const r of e.ruas) {
+    derajat.set(r.dari, (derajat.get(r.dari) ?? 0) + 1);
+    derajat.set(r.ke, (derajat.get(r.ke) ?? 0) + 1);
+  }
+  for (const w of e.wesel) {
+    if (!idSimpul.has(w.simpulId)) galat.push(`wesel ${w.id}: simpul hilang`);
+    for (const kaki of [w.ruasPangkal, w.ruasLurus, w.ruasBelok]) {
+      if (!idRuas.has(kaki)) galat.push(`wesel ${w.id}: ruas ${kaki} tidak ada`);
+      const r = e.ruas.find((x) => x.id === kaki);
+      if (r && r.dari !== w.simpulId && r.ke !== w.simpulId) {
+        galat.push(`wesel ${w.id}: ruas ${kaki} tidak menyentuh simpulnya`);
+      }
+    }
+    const set = new Set([w.ruasPangkal, w.ruasLurus, w.ruasBelok]);
+    if (set.size !== 3) galat.push(`wesel ${w.id}: kaki tidak berbeda`);
+    if ((derajat.get(w.simpulId) ?? 0) !== 3)
+      galat.push(`wesel ${w.id}: derajat ${derajat.get(w.simpulId)}`);
+  }
+  for (const p of e.persilangan) {
+    for (const [a, b] of p.pasangan) {
+      if (!idRuas.has(a) || !idRuas.has(b)) galat.push(`persilangan ${p.id}: ruas hilang`);
+    }
+  }
+  for (const s of e.sinyal) {
+    if (!idRuas.has(s.ruasDilindungi)) galat.push(`sinyal ${s.nama}: ruas hilang`);
+  }
+  for (const sp of e.sepur) {
+    if (!idRuas.has(sp.ruasId)) galat.push(`sepur ${sp.id}: ruas hilang`);
+  }
+  for (const b of e.batas) {
+    if (!idSimpul.has(b.simpulId)) galat.push(`batas ${b.id}: simpul hilang`);
+  }
+  const idGanda = (arr) => {
+    const s = new Set();
+    return arr.filter((x) => (s.has(x.id) ? true : (s.add(x.id), false))).map((x) => x.id);
+  };
+  for (const [nama, arr] of [
+    ['simpul', e.simpul],
+    ['ruas', e.ruas],
+    ['wesel', e.wesel],
+    ['sinyal', e.sinyal],
+    ['sepur', e.sepur],
+    ['batas', e.batas],
+  ]) {
+    const g = idGanda(arr);
+    if (g.length) galat.push(`${nama}: id ganda ${g.slice(0, 3).join(',')}`);
+  }
+  return galat;
+}
+
 for (const kode of daftar) {
   try {
     const h = bangun(kode);
-    const perLevel = {};
-    for (const r of h.ruas) perLevel[r._level] = (perLevel[r._level] ?? 0) + 1;
+    const e = h.emplasemen;
+    const galat = periksa(e);
+    const tujuan = resolve(AKAR, 'data/stasiun', kode);
+    if (galat.length) {
+      console.error(`${kode}: TIDAK KONSISTEN (${galat.length})`);
+      for (const g of galat.slice(0, 8)) console.error(`   - ${g}`);
+      continue;
+    }
+    mkdirSync(tujuan, { recursive: true });
+    writeFileSync(
+      resolve(tujuan, 'emplasemen.json'),
+      `${JSON.stringify(e, null, 2)}\n`,
+      'utf8',
+    );
     console.log(
-      `${kode}: simpul=${h.simpul.length} ruas=${h.ruas.length} wesel=${h.wesel.length} ` +
-        `silang=${h.persilangan.length} badanSepur=${h.badanSepur.size} ` +
-        `level=${JSON.stringify(perLevel)} kanvas=${JSON.stringify(
-          Object.fromEntries(
-            Object.entries(h.kanvasY).map(([k, v]) => [k, Math.round(v.tinggi)]),
-          ),
-        )}`,
+      `${kode} ✓ simpul=${e.simpul.length} ruas=${e.ruas.length} wesel=${e.wesel.length} ` +
+        `silang=${e.persilangan.length} sepur=${e.sepur.length} peron=${e.peron.length} ` +
+        `batas=${e.batas.length} sinyal=${e.sinyal.length} ` +
+        `kanvas=${JSON.stringify(Object.fromEntries(Object.entries(e.kanvas).map(([k, v]) => [k, v.tinggi])))}`,
     );
   } catch (e) {
     console.error(`${kode}: GAGAL — ${e.message}`);

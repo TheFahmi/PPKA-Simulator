@@ -1,0 +1,7075 @@
+{
+  "kodeStasiun": "BD",
+  "namaStasiun": "Bandung",
+  "acuan": {
+    "keterangan": "Seluruh KA antarkota berhenti, tanpa satu pun berjalan langsung. Langsiran menjadi kegiatan utama, bukan sampingan. Bentuk emplasemen diturunkan dari geometri sepur tersurvei OpenStreetMap/OpenRailwayMap: kedudukan tiap sepur, letak tiap wesel beserta kaki pangkal-lurus-beloknya, persilangan sebidang, penomoran jalur, serta letak peron.",
+    "tanggalAcuan": "2026-07-26",
+    "sumber": [
+      "OpenStreetMap / OpenRailwayMap lewat Overpass API, ditarik ke tools/sumber/osm/BD.json",
+      "https://id.wikipedia.org/w/index.php?title=Stasiun_Bandung&action=raw",
+      "https://id.wikipedia.org/w/index.php?title=Jalur_kereta_api_Bogor%E2%80%93Padalarang%E2%80%93Kasugihan&action=raw",
+      "https://id.wikipedia.org/w/index.php?title=Jalur_kereta_api_Bandung%E2%80%93Ciwidey&action=raw"
+    ],
+    "catatanVerifikasi": "YANG BERASAL DARI SURVEI: kedudukan dan bentuk tiap sepur, letak tiap wesel beserta penetapan kaki pangkal, lurus, dan belok yang dihitung dari geometri, persilangan sebidang, penomoran jalur, dan letak peron. YANG DISUSUN SENDIRI DAN BUKAN DATA SURVEI: penomoran wesel (OpenStreetMap tidak memuat ref maupun name pada satu pun wesel), letak dan penamaan sinyal (OpenStreetMap hampir tidak memuat railway=signal pada stasiun-stasiun ini), pembagian blok deteksi sarana, serta penetapan batas mana yang arah masuk dan mana yang arah keluar pada lintas jalur ganda. CARA MENGGAMBAR: diagram jalur bukan peta berskala. Kedudukan memanjang dipakai apa adanya, sedangkan kedudukan melintang dipetakan menjadi lajur berjarak tetap lewat pemetaan monoton, sehingga urutan sepur dan seluruh topologinya tetap sama dengan hasil survei sementara renggangnya dibuat terbaca. Sepur yang meninggalkan emplasemen dimampatkan secara logaritmik.",
+    "putarDerajat": -3.8
+  },
+  "kanvas": {
+    "DASAR": {
+      "lebar": 1700,
+      "tinggi": 1164
+    }
+  },
+  "simpul": [
+    {
+      "id": "S8385451874",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 937,
+      "y": 576
+    },
+    {
+      "id": "S8385451883",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 756,
+      "y": 589
+    },
+    {
+      "id": "S291542648",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 1315,
+      "y": 968
+    },
+    {
+      "id": "S364365478",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 1362,
+      "y": 1014
+    },
+    {
+      "id": "S10694245348",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 797,
+      "y": 611
+    },
+    {
+      "id": "S2628273443",
+      "jenis": "SILANG",
+      "level": "DASAR",
+      "x": 658,
+      "y": 782
+    },
+    {
+      "id": "S8385468263",
+      "jenis": "SILANG",
+      "level": "DASAR",
+      "x": 521,
+      "y": 880
+    },
+    {
+      "id": "S8385468224",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 561,
+      "y": 848
+    },
+    {
+      "id": "S11262097593",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 623,
+      "y": 779
+    },
+    {
+      "id": "S8385451903",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 658,
+      "y": 730
+    },
+    {
+      "id": "S2628273444",
+      "jenis": "SILANG",
+      "level": "DASAR",
+      "x": 698,
+      "y": 658
+    },
+    {
+      "id": "S8385451882",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 752,
+      "y": 598
+    },
+    {
+      "id": "S11262097606",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 807,
+      "y": 586
+    },
+    {
+      "id": "S8385451858",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 416,
+      "y": 925
+    },
+    {
+      "id": "S8385468249",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 433,
+      "y": 924
+    },
+    {
+      "id": "S8385468248",
+      "jenis": "SILANG",
+      "level": "DASAR",
+      "x": 479,
+      "y": 920
+    },
+    {
+      "id": "S8385468247",
+      "jenis": "SILANG",
+      "level": "DASAR",
+      "x": 517,
+      "y": 918
+    },
+    {
+      "id": "S293384547",
+      "jenis": "SILANG",
+      "level": "DASAR",
+      "x": 553,
+      "y": 911
+    },
+    {
+      "id": "S8385468243",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 684,
+      "y": 858
+    },
+    {
+      "id": "S8385468241",
+      "jenis": "SILANG",
+      "level": "DASAR",
+      "x": 725,
+      "y": 850
+    },
+    {
+      "id": "S13814081478",
+      "jenis": "BATAS",
+      "level": "DASAR",
+      "x": 189,
+      "y": 1082
+    },
+    {
+      "id": "S2628273489",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 352,
+      "y": 1018
+    },
+    {
+      "id": "S11262097590",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 1021,
+      "y": 657
+    },
+    {
+      "id": "S11262097589",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 993,
+      "y": 603
+    },
+    {
+      "id": "S2628264168",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 954,
+      "y": 580
+    },
+    {
+      "id": "S2628273504",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 847,
+      "y": 495
+    },
+    {
+      "id": "S2628273496",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 763,
+      "y": 453
+    },
+    {
+      "id": "S293384528",
+      "jenis": "BATAS",
+      "level": "DASAR",
+      "x": 504,
+      "y": 44
+    },
+    {
+      "id": "S12553010402",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 660,
+      "y": 135
+    },
+    {
+      "id": "S2628273503",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 723,
+      "y": 372
+    },
+    {
+      "id": "S2628273507",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 528,
+      "y": 739
+    },
+    {
+      "id": "S2628273526",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 716,
+      "y": 504
+    },
+    {
+      "id": "S2628273515",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 798,
+      "y": 495
+    },
+    {
+      "id": "S2628273513",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 820,
+      "y": 492
+    },
+    {
+      "id": "S8385451887",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 831,
+      "y": 495
+    },
+    {
+      "id": "S12552986398",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 711,
+      "y": 566
+    },
+    {
+      "id": "S2628273516",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 780,
+      "y": 503
+    },
+    {
+      "id": "S8385451869",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 703,
+      "y": 599
+    },
+    {
+      "id": "S2628273521",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 649,
+      "y": 644
+    },
+    {
+      "id": "S12552986395",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 594,
+      "y": 727
+    },
+    {
+      "id": "S11262097597",
+      "jenis": "SILANG",
+      "level": "DASAR",
+      "x": 660,
+      "y": 674
+    },
+    {
+      "id": "S13520066463",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 700,
+      "y": 612
+    },
+    {
+      "id": "S12552986397",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 610,
+      "y": 573
+    },
+    {
+      "id": "S2628273540",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 656,
+      "y": 512
+    },
+    {
+      "id": "S13528591958",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 669,
+      "y": 508
+    },
+    {
+      "id": "S2628273529",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 762,
+      "y": 474
+    },
+    {
+      "id": "S12553010412",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 658,
+      "y": 396
+    },
+    {
+      "id": "S8385451889",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 741,
+      "y": 453
+    },
+    {
+      "id": "S12553010407",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 659,
+      "y": 240
+    },
+    {
+      "id": "S12553010409",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 658,
+      "y": 346
+    },
+    {
+      "id": "S2628273532",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 721,
+      "y": 429
+    },
+    {
+      "id": "S2628273536",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 534,
+      "y": 257
+    },
+    {
+      "id": "S10693460293",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 626,
+      "y": 522
+    },
+    {
+      "id": "S11262097551",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 634,
+      "y": 520
+    },
+    {
+      "id": "S2628273555",
+      "jenis": "UJUNG",
+      "level": "DASAR",
+      "x": 755,
+      "y": 1010
+    },
+    {
+      "id": "S2628273556",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 625,
+      "y": 1038
+    },
+    {
+      "id": "S13814081482",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 587,
+      "y": 1048
+    },
+    {
+      "id": "S8385468235",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 580,
+      "y": 1050
+    },
+    {
+      "id": "S8385468238",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 532,
+      "y": 1006
+    },
+    {
+      "id": "S2628286345",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 301,
+      "y": 920
+    },
+    {
+      "id": "S8385451853",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 288,
+      "y": 903
+    },
+    {
+      "id": "S8385451856",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 272,
+      "y": 877
+    },
+    {
+      "id": "S13370047719",
+      "jenis": "BATAS",
+      "level": "DASAR",
+      "x": 127,
+      "y": 793
+    },
+    {
+      "id": "S13370047718",
+      "jenis": "BATAS",
+      "level": "DASAR",
+      "x": 127,
+      "y": 830
+    },
+    {
+      "id": "S8385451865",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 328,
+      "y": 937
+    },
+    {
+      "id": "S2628286358",
+      "jenis": "BATAS",
+      "level": "DASAR",
+      "x": 122,
+      "y": 736
+    },
+    {
+      "id": "S10694245339",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 925,
+      "y": 830
+    },
+    {
+      "id": "S11181861170",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 824,
+      "y": 844
+    },
+    {
+      "id": "S2628273465",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 1363,
+      "y": 963
+    },
+    {
+      "id": "S3277420351",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 1315,
+      "y": 933
+    },
+    {
+      "id": "S4167170924",
+      "jenis": "BATAS",
+      "level": "DASAR",
+      "x": 1610,
+      "y": 1113
+    },
+    {
+      "id": "S8385468349",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 959,
+      "y": 756
+    },
+    {
+      "id": "S2628273461",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 1080,
+      "y": 837
+    },
+    {
+      "id": "S677319387",
+      "jenis": "BATAS",
+      "level": "DASAR",
+      "x": 1610,
+      "y": 1120
+    },
+    {
+      "id": "S11270915382",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 241,
+      "y": 750
+    },
+    {
+      "id": "S8385468271",
+      "jenis": "BATAS",
+      "level": "DASAR",
+      "x": 182,
+      "y": 657
+    },
+    {
+      "id": "S8385451896",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 782,
+      "y": 484
+    },
+    {
+      "id": "S12553010408",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 659,
+      "y": 298
+    },
+    {
+      "id": "S7464347910",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 1168,
+      "y": 870
+    },
+    {
+      "id": "S10694245358",
+      "jenis": "SILANG",
+      "level": "DASAR",
+      "x": 1141,
+      "y": 849
+    },
+    {
+      "id": "S2628264176",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 1115,
+      "y": 829
+    },
+    {
+      "id": "S2628273463",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 1168,
+      "y": 845
+    },
+    {
+      "id": "S7464347909",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 1115,
+      "y": 850
+    },
+    {
+      "id": "S8385468257",
+      "jenis": "SILANG",
+      "level": "DASAR",
+      "x": 479,
+      "y": 961
+    },
+    {
+      "id": "S10694245351",
+      "jenis": "SILANG",
+      "level": "DASAR",
+      "x": 498,
+      "y": 985
+    },
+    {
+      "id": "S8385468321",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 522,
+      "y": 1007
+    },
+    {
+      "id": "S13370047708",
+      "jenis": "BATAS",
+      "level": "DASAR",
+      "x": 145,
+      "y": 714
+    },
+    {
+      "id": "S13370047720",
+      "jenis": "BATAS",
+      "level": "DASAR",
+      "x": 125,
+      "y": 853
+    },
+    {
+      "id": "S8385451861",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 307,
+      "y": 946
+    },
+    {
+      "id": "S13370047722",
+      "jenis": "UJUNG",
+      "level": "DASAR",
+      "x": 90,
+      "y": 857
+    },
+    {
+      "id": "S2628273490",
+      "jenis": "SILANG",
+      "level": "DASAR",
+      "x": 435,
+      "y": 968
+    },
+    {
+      "id": "S10694245357",
+      "jenis": "SILANG",
+      "level": "DASAR",
+      "x": 456,
+      "y": 946
+    },
+    {
+      "id": "S10694245356",
+      "jenis": "SILANG",
+      "level": "DASAR",
+      "x": 495,
+      "y": 901
+    },
+    {
+      "id": "S8385468260",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 604,
+      "y": 866
+    },
+    {
+      "id": "S10694245355",
+      "jenis": "SILANG",
+      "level": "DASAR",
+      "x": 539,
+      "y": 933
+    },
+    {
+      "id": "S291546116",
+      "jenis": "SILANG",
+      "level": "DASAR",
+      "x": 517,
+      "y": 959
+    },
+    {
+      "id": "S11262097554",
+      "jenis": "UJUNG",
+      "level": "DASAR",
+      "x": 660,
+      "y": 455
+    },
+    {
+      "id": "S8385451893",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 727,
+      "y": 484
+    },
+    {
+      "id": "S8385451866",
+      "jenis": "SILANG",
+      "level": "DASAR",
+      "x": 1046,
+      "y": 724
+    },
+    {
+      "id": "S293384518",
+      "jenis": "SILANG",
+      "level": "DASAR",
+      "x": 1008,
+      "y": 682
+    },
+    {
+      "id": "S293384674",
+      "jenis": "UJUNG",
+      "level": "DASAR",
+      "x": 979,
+      "y": 652
+    },
+    {
+      "id": "S8385468264",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 471,
+      "y": 884
+    },
+    {
+      "id": "S8385468256",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 563,
+      "y": 948
+    },
+    {
+      "id": "S8385468220",
+      "jenis": "UJUNG",
+      "level": "DASAR",
+      "x": 458,
+      "y": 863
+    },
+    {
+      "id": "S8385468229",
+      "jenis": "UJUNG",
+      "level": "DASAR",
+      "x": 755,
+      "y": 955
+    },
+    {
+      "id": "S8385468232",
+      "jenis": "UJUNG",
+      "level": "DASAR",
+      "x": 755,
+      "y": 1078
+    },
+    {
+      "id": "S8385468307",
+      "jenis": "BATAS",
+      "level": "DASAR",
+      "x": 180,
+      "y": 1113
+    },
+    {
+      "id": "S8385468301",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 349,
+      "y": 1099
+    },
+    {
+      "id": "S2628273472",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 824,
+      "y": 883
+    },
+    {
+      "id": "S10694245340",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 926,
+      "y": 865
+    },
+    {
+      "id": "S2628264172",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 1048,
+      "y": 774
+    },
+    {
+      "id": "S2628264174",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 1080,
+      "y": 806
+    },
+    {
+      "id": "S8385468259",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 615,
+      "y": 856
+    },
+    {
+      "id": "S8385451901",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 709,
+      "y": 755
+    },
+    {
+      "id": "S8385468255",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 616,
+      "y": 941
+    },
+    {
+      "id": "S8385468322",
+      "jenis": "SILANG",
+      "level": "DASAR",
+      "x": 479,
+      "y": 1015
+    },
+    {
+      "id": "S8385468262",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 545,
+      "y": 875
+    },
+    {
+      "id": "S8385468325",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 352,
+      "y": 1071
+    },
+    {
+      "id": "S8385468330",
+      "jenis": "BATAS",
+      "level": "DASAR",
+      "x": 185,
+      "y": 1105
+    },
+    {
+      "id": "S8385468315",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 770,
+      "y": 845
+    },
+    {
+      "id": "S11242626908",
+      "jenis": "UJUNG",
+      "level": "DASAR",
+      "x": 1068,
+      "y": 747
+    },
+    {
+      "id": "S2628273470",
+      "jenis": "SILANG",
+      "level": "DASAR",
+      "x": 1042,
+      "y": 842
+    },
+    {
+      "id": "S11242626909",
+      "jenis": "UJUNG",
+      "level": "DASAR",
+      "x": 1068,
+      "y": 852
+    },
+    {
+      "id": "S11262097550",
+      "jenis": "UJUNG",
+      "level": "DASAR",
+      "x": 597,
+      "y": 530
+    },
+    {
+      "id": "S11262097552",
+      "jenis": "UJUNG",
+      "level": "DASAR",
+      "x": 587,
+      "y": 565
+    },
+    {
+      "id": "S12553010406",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 660,
+      "y": 190
+    },
+    {
+      "id": "S11262097573",
+      "jenis": "UJUNG",
+      "level": "DASAR",
+      "x": 820,
+      "y": 651
+    },
+    {
+      "id": "S12552986394",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 594,
+      "y": 682
+    },
+    {
+      "id": "S8385468267",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 354,
+      "y": 879
+    },
+    {
+      "id": "S2628286338",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 246,
+      "y": 762
+    },
+    {
+      "id": "S8385468323",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 396,
+      "y": 1040
+    },
+    {
+      "id": "S8385468317",
+      "jenis": "SILANG",
+      "level": "DASAR",
+      "x": 668,
+      "y": 934
+    },
+    {
+      "id": "S13947927561",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 824,
+      "y": 707
+    },
+    {
+      "id": "S13947927559",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 925,
+      "y": 683
+    },
+    {
+      "id": "S2628273460",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 958,
+      "y": 827
+    },
+    {
+      "id": "S10312881283",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 958,
+      "y": 864
+    },
+    {
+      "id": "S10694245342",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 955,
+      "y": 608
+    },
+    {
+      "id": "S10694245343",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 954,
+      "y": 601
+    },
+    {
+      "id": "S13947927563",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 824,
+      "y": 604
+    },
+    {
+      "id": "S13947927557",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 925,
+      "y": 601
+    },
+    {
+      "id": "S13947927558",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 925,
+      "y": 607
+    },
+    {
+      "id": "S13947927562",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 824,
+      "y": 610
+    },
+    {
+      "id": "S11262097569",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 824,
+      "y": 773
+    },
+    {
+      "id": "S13947927560",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 925,
+      "y": 751
+    },
+    {
+      "id": "S10694245344",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 794,
+      "y": 879
+    },
+    {
+      "id": "S11262097617",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 911,
+      "y": 584
+    },
+    {
+      "id": "S2628273467",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 957,
+      "y": 682
+    },
+    {
+      "id": "S11262097616",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 791,
+      "y": 605
+    },
+    {
+      "id": "S293384542",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 734,
+      "y": 597
+    },
+    {
+      "id": "S11262097596",
+      "jenis": "UJUNG",
+      "level": "DASAR",
+      "x": 573,
+      "y": 746
+    },
+    {
+      "id": "S2628273519",
+      "jenis": "UJUNG",
+      "level": "DASAR",
+      "x": 573,
+      "y": 702
+    },
+    {
+      "id": "S12552986396",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 577,
+      "y": 593
+    },
+    {
+      "id": "S2628273514",
+      "jenis": "UJUNG",
+      "level": "DASAR",
+      "x": 666,
+      "y": 576
+    },
+    {
+      "id": "S2628273500",
+      "jenis": "UJUNG",
+      "level": "DASAR",
+      "x": 572,
+      "y": 65
+    },
+    {
+      "id": "S12553010403",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 605,
+      "y": 80
+    },
+    {
+      "id": "S12553010405",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 604,
+      "y": 182
+    },
+    {
+      "id": "S2628273531",
+      "jenis": "UJUNG",
+      "level": "DASAR",
+      "x": 558,
+      "y": 131
+    },
+    {
+      "id": "S12553010404",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 605,
+      "y": 138
+    },
+    {
+      "id": "S2628273499",
+      "jenis": "UJUNG",
+      "level": "DASAR",
+      "x": 559,
+      "y": 80
+    },
+    {
+      "id": "S2628273534",
+      "jenis": "BATAS",
+      "level": "DASAR",
+      "x": 605,
+      "y": 262
+    },
+    {
+      "id": "S12552986399",
+      "jenis": "BATAS",
+      "level": "DASAR",
+      "x": 605,
+      "y": 283
+    },
+    {
+      "id": "S12553010410",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 603,
+      "y": 305
+    },
+    {
+      "id": "S2628273528",
+      "jenis": "UJUNG",
+      "level": "DASAR",
+      "x": 509,
+      "y": 243
+    },
+    {
+      "id": "S293384543",
+      "jenis": "WESEL",
+      "level": "DASAR",
+      "x": 708,
+      "y": 609
+    },
+    {
+      "id": "S13814081442",
+      "jenis": "UJUNG",
+      "level": "DASAR",
+      "x": 735,
+      "y": 819
+    },
+    {
+      "id": "S11270915380",
+      "jenis": "UJUNG",
+      "level": "DASAR",
+      "x": 520,
+      "y": 1074
+    },
+    {
+      "id": "S10694245347",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 799,
+      "y": 713
+    },
+    {
+      "id": "S10694245346",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 778,
+      "y": 809
+    },
+    {
+      "id": "S10694245345",
+      "jenis": "SAMBUNG",
+      "level": "DASAR",
+      "x": 791,
+      "y": 842
+    }
+  ],
+  "ruas": [
+    {
+      "id": "RR26746949-0",
+      "jenis": "SEPUR_PERON",
+      "dari": "S8385451874",
+      "ke": "S8385451883",
+      "blokId": "BLK-R26746949-0",
+      "panjangM": 220,
+      "sepurId": "SP-BD-9",
+      "titikBelok": [
+        {
+          "x": 903,
+          "y": 567
+        },
+        {
+          "x": 889,
+          "y": 564
+        },
+        {
+          "x": 864,
+          "y": 563
+        },
+        {
+          "x": 833,
+          "y": 563
+        },
+        {
+          "x": 822,
+          "y": 564
+        },
+        {
+          "x": 810,
+          "y": 567
+        },
+        {
+          "x": 793,
+          "y": 573
+        },
+        {
+          "x": 790,
+          "y": 575
+        }
+      ]
+    },
+    {
+      "id": "RR32388793-0",
+      "jenis": "PENGHUBUNG",
+      "dari": "S291542648",
+      "ke": "S364365478",
+      "blokId": "BLK-R32388793-0",
+      "panjangM": 57
+    },
+    {
+      "id": "RR257229244-0",
+      "jenis": "SEPUR_PERON",
+      "dari": "S10694245348",
+      "ke": "S2628273443",
+      "blokId": "BLK-R257229244-0",
+      "panjangM": 168,
+      "sepurId": "SP-BD-5",
+      "titikBelok": [
+        {
+          "x": 777,
+          "y": 611
+        },
+        {
+          "x": 763,
+          "y": 613
+        },
+        {
+          "x": 750,
+          "y": 634
+        },
+        {
+          "x": 700,
+          "y": 711
+        }
+      ]
+    },
+    {
+      "id": "RR257229245-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385468263",
+      "ke": "S8385468224",
+      "blokId": "BLK-R257229245-0",
+      "panjangM": 49
+    },
+    {
+      "id": "RR257229245-1",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385468224",
+      "ke": "S11262097593",
+      "blokId": "BLK-R257229245-1",
+      "panjangM": 75
+    },
+    {
+      "id": "RR257229245-2",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S11262097593",
+      "ke": "S8385451903",
+      "blokId": "BLK-R257229245-2",
+      "panjangM": 41
+    },
+    {
+      "id": "RR257229245-3",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385451903",
+      "ke": "S2628273444",
+      "blokId": "BLK-R257229245-3",
+      "panjangM": 49
+    },
+    {
+      "id": "RR257229246-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385451882",
+      "ke": "S11262097606",
+      "blokId": "BLK-R257229246-0",
+      "panjangM": 67,
+      "titikBelok": [
+        {
+          "x": 762,
+          "y": 595
+        },
+        {
+          "x": 776,
+          "y": 592
+        },
+        {
+          "x": 781,
+          "y": 591
+        },
+        {
+          "x": 799,
+          "y": 587
+        }
+      ]
+    },
+    {
+      "id": "RR257229247-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385451858",
+      "ke": "S8385468249",
+      "blokId": "BLK-R257229247-0",
+      "panjangM": 20
+    },
+    {
+      "id": "RR257229247-1",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385468249",
+      "ke": "S8385468248",
+      "blokId": "BLK-R257229247-1",
+      "panjangM": 55
+    },
+    {
+      "id": "RR257229247-2",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385468248",
+      "ke": "S8385468247",
+      "blokId": "BLK-R257229247-2",
+      "panjangM": 46
+    },
+    {
+      "id": "RR257229247-3",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385468247",
+      "ke": "S293384547",
+      "blokId": "BLK-R257229247-3",
+      "panjangM": 44
+    },
+    {
+      "id": "RR257229247-4",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S293384547",
+      "ke": "S8385468243",
+      "blokId": "BLK-R257229247-4",
+      "panjangM": 158,
+      "titikBelok": [
+        {
+          "x": 577,
+          "y": 909
+        },
+        {
+          "x": 614,
+          "y": 907
+        },
+        {
+          "x": 633,
+          "y": 901
+        },
+        {
+          "x": 652,
+          "y": 884
+        }
+      ]
+    },
+    {
+      "id": "RR257229247-9",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385468243",
+      "ke": "S8385468241",
+      "blokId": "BLK-R257229247-9",
+      "panjangM": 49,
+      "titikBelok": [
+        {
+          "x": 704,
+          "y": 855
+        }
+      ]
+    },
+    {
+      "id": "RR257229250-0",
+      "jenis": "PETAK_JALAN",
+      "dari": "S13814081478",
+      "ke": "S2628273489",
+      "blokId": "BLK-R257229250-0",
+      "panjangM": 197,
+      "titikBelok": [
+        {
+          "x": 204,
+          "y": 1089
+        },
+        {
+          "x": 230,
+          "y": 1092
+        },
+        {
+          "x": 254,
+          "y": 1094
+        },
+        {
+          "x": 279,
+          "y": 1088
+        }
+      ]
+    },
+    {
+      "id": "RR257229253-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S11262097590",
+      "ke": "S11262097589",
+      "blokId": "BLK-R257229253-0",
+      "panjangM": 35,
+      "titikBelok": [
+        {
+          "x": 1011,
+          "y": 613
+        }
+      ]
+    },
+    {
+      "id": "RR257229253-2",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S11262097589",
+      "ke": "S2628264168",
+      "blokId": "BLK-R257229253-2",
+      "panjangM": 49,
+      "titikBelok": [
+        {
+          "x": 989,
+          "y": 600
+        },
+        {
+          "x": 982,
+          "y": 596
+        },
+        {
+          "x": 973,
+          "y": 591
+        }
+      ]
+    },
+    {
+      "id": "RR257229253-6",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628264168",
+      "ke": "S2628273504",
+      "blokId": "BLK-R257229253-6",
+      "panjangM": 131,
+      "titikBelok": [
+        {
+          "x": 922,
+          "y": 565
+        },
+        {
+          "x": 911,
+          "y": 557
+        },
+        {
+          "x": 908,
+          "y": 552
+        },
+        {
+          "x": 901,
+          "y": 541
+        },
+        {
+          "x": 890,
+          "y": 528
+        },
+        {
+          "x": 877,
+          "y": 516
+        },
+        {
+          "x": 860,
+          "y": 504
+        }
+      ]
+    },
+    {
+      "id": "RR257229253-14",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628273504",
+      "ke": "S2628273496",
+      "blokId": "BLK-R257229253-14",
+      "panjangM": 101,
+      "titikBelok": [
+        {
+          "x": 835,
+          "y": 488
+        }
+      ]
+    },
+    {
+      "id": "RR257229253-16",
+      "jenis": "PETAK_JALAN",
+      "dari": "S2628273496",
+      "ke": "S293384528",
+      "blokId": "BLK-R257229253-16",
+      "panjangM": 319,
+      "titikBelok": [
+        {
+          "x": 743,
+          "y": 417
+        },
+        {
+          "x": 725,
+          "y": 335
+        },
+        {
+          "x": 716,
+          "y": 291
+        },
+        {
+          "x": 675,
+          "y": 146
+        },
+        {
+          "x": 668,
+          "y": 112
+        },
+        {
+          "x": 660,
+          "y": 88
+        },
+        {
+          "x": 632,
+          "y": 74
+        }
+      ]
+    },
+    {
+      "id": "RR257229254-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S12553010402",
+      "ke": "S2628273503",
+      "blokId": "BLK-R257229254-0",
+      "panjangM": 80,
+      "titikBelok": [
+        {
+          "x": 661,
+          "y": 139
+        },
+        {
+          "x": 665,
+          "y": 149
+        },
+        {
+          "x": 673,
+          "y": 172
+        },
+        {
+          "x": 682,
+          "y": 207
+        }
+      ]
+    },
+    {
+      "id": "RR257229256-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628273507",
+      "ke": "S2628273526",
+      "blokId": "BLK-R257229256-0",
+      "panjangM": 232,
+      "titikBelok": [
+        {
+          "x": 561,
+          "y": 677
+        },
+        {
+          "x": 567,
+          "y": 653
+        },
+        {
+          "x": 574,
+          "y": 627
+        },
+        {
+          "x": 603,
+          "y": 598
+        },
+        {
+          "x": 659,
+          "y": 562
+        },
+        {
+          "x": 683,
+          "y": 531
+        }
+      ]
+    },
+    {
+      "id": "RR257229256-7",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628273526",
+      "ke": "S2628273515",
+      "blokId": "BLK-R257229256-7",
+      "panjangM": 99,
+      "titikBelok": [
+        {
+          "x": 735,
+          "y": 499
+        },
+        {
+          "x": 751,
+          "y": 499
+        }
+      ]
+    },
+    {
+      "id": "RR257229256-10",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628273515",
+      "ke": "S2628273513",
+      "blokId": "BLK-R257229256-10",
+      "panjangM": 26
+    },
+    {
+      "id": "RR257229256-11",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628273513",
+      "ke": "S8385451887",
+      "blokId": "BLK-R257229256-11",
+      "panjangM": 14
+    },
+    {
+      "id": "RR257229256-12",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385451887",
+      "ke": "S2628273504",
+      "blokId": "BLK-R257229256-12",
+      "panjangM": 18
+    },
+    {
+      "id": "RR257229257-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S12552986398",
+      "ke": "S2628273516",
+      "blokId": "BLK-R257229257-0",
+      "panjangM": 84,
+      "titikBelok": [
+        {
+          "x": 722,
+          "y": 564
+        },
+        {
+          "x": 748,
+          "y": 535
+        }
+      ]
+    },
+    {
+      "id": "RR257229257-3",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628273516",
+      "ke": "S2628273515",
+      "blokId": "BLK-R257229257-3",
+      "panjangM": 22
+    },
+    {
+      "id": "RR257229258-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628273516",
+      "ke": "S8385451869",
+      "blokId": "BLK-R257229258-0",
+      "panjangM": 98,
+      "titikBelok": [
+        {
+          "x": 762,
+          "y": 534
+        },
+        {
+          "x": 746,
+          "y": 566
+        },
+        {
+          "x": 721,
+          "y": 585
+        }
+      ]
+    },
+    {
+      "id": "RR257229258-4",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385451869",
+      "ke": "S2628273521",
+      "blokId": "BLK-R257229258-4",
+      "panjangM": 65,
+      "titikBelok": [
+        {
+          "x": 681,
+          "y": 608
+        }
+      ]
+    },
+    {
+      "id": "RR257229258-6",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628273521",
+      "ke": "S12552986395",
+      "blokId": "BLK-R257229258-6",
+      "panjangM": 67,
+      "titikBelok": [
+        {
+          "x": 633,
+          "y": 672
+        },
+        {
+          "x": 619,
+          "y": 696
+        },
+        {
+          "x": 609,
+          "y": 712
+        }
+      ]
+    },
+    {
+      "id": "RR257229259-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628273507",
+      "ke": "S11262097597",
+      "blokId": "BLK-R257229259-0",
+      "panjangM": 160,
+      "titikBelok": [
+        {
+          "x": 545,
+          "y": 789
+        },
+        {
+          "x": 558,
+          "y": 813
+        },
+        {
+          "x": 569,
+          "y": 816
+        },
+        {
+          "x": 599,
+          "y": 780
+        }
+      ]
+    },
+    {
+      "id": "RR257229259-5",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S11262097597",
+      "ke": "S13520066463",
+      "blokId": "BLK-R257229259-5",
+      "panjangM": 48
+    },
+    {
+      "id": "RR257229260-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S12552986397",
+      "ke": "S2628273540",
+      "blokId": "BLK-R257229260-0",
+      "panjangM": 57,
+      "titikBelok": [
+        {
+          "x": 625,
+          "y": 564
+        },
+        {
+          "x": 639,
+          "y": 545
+        }
+      ]
+    },
+    {
+      "id": "RR257229260-3",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628273540",
+      "ke": "S13528591958",
+      "blokId": "BLK-R257229260-3",
+      "panjangM": 16
+    },
+    {
+      "id": "RR257229260-4",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S13528591958",
+      "ke": "S2628273526",
+      "blokId": "BLK-R257229260-4",
+      "panjangM": 55,
+      "titikBelok": [
+        {
+          "x": 688,
+          "y": 505
+        }
+      ]
+    },
+    {
+      "id": "RR257229261-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628273529",
+      "ke": "S12553010412",
+      "blokId": "BLK-R257229261-0",
+      "panjangM": 125,
+      "titikBelok": [
+        {
+          "x": 686,
+          "y": 425
+        }
+      ]
+    },
+    {
+      "id": "RR257229262-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385451889",
+      "ke": "S12553010407",
+      "blokId": "BLK-R257229262-0",
+      "panjangM": 102,
+      "titikBelok": [
+        {
+          "x": 708,
+          "y": 377
+        },
+        {
+          "x": 689,
+          "y": 290
+        },
+        {
+          "x": 679,
+          "y": 270
+        }
+      ]
+    },
+    {
+      "id": "RR257229264-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S12553010409",
+      "ke": "S2628273532",
+      "blokId": "BLK-R257229264-0",
+      "panjangM": 76
+    },
+    {
+      "id": "RR257229265-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628273536",
+      "ke": "S10693460293",
+      "blokId": "BLK-R257229265-0",
+      "panjangM": 117,
+      "titikBelok": [
+        {
+          "x": 547,
+          "y": 282
+        },
+        {
+          "x": 566,
+          "y": 367
+        },
+        {
+          "x": 586,
+          "y": 459
+        },
+        {
+          "x": 598,
+          "y": 486
+        },
+        {
+          "x": 613,
+          "y": 505
+        }
+      ]
+    },
+    {
+      "id": "RR257229265-6",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S10693460293",
+      "ke": "S11262097551",
+      "blokId": "BLK-R257229265-6",
+      "panjangM": 9
+    },
+    {
+      "id": "RR257229265-7",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S11262097551",
+      "ke": "S2628273540",
+      "blokId": "BLK-R257229265-7",
+      "panjangM": 27
+    },
+    {
+      "id": "RR257229271-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628273555",
+      "ke": "S2628273556",
+      "blokId": "BLK-R257229271-0",
+      "panjangM": 156
+    },
+    {
+      "id": "RR257229271-1",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628273556",
+      "ke": "S13814081482",
+      "blokId": "BLK-R257229271-1",
+      "panjangM": 46
+    },
+    {
+      "id": "RR257229271-2",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S13814081482",
+      "ke": "S8385468235",
+      "blokId": "BLK-R257229271-2",
+      "panjangM": 8,
+      "titikBelok": [
+        {
+          "x": 583,
+          "y": 1049
+        }
+      ]
+    },
+    {
+      "id": "RR257229271-4",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385468235",
+      "ke": "S8385468238",
+      "blokId": "BLK-R257229271-4",
+      "panjangM": 58,
+      "titikBelok": [
+        {
+          "x": 572,
+          "y": 1046
+        },
+        {
+          "x": 551,
+          "y": 1029
+        }
+      ]
+    },
+    {
+      "id": "RR257229923-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628286345",
+      "ke": "S8385451853",
+      "blokId": "BLK-R257229923-0",
+      "panjangM": 15
+    },
+    {
+      "id": "RR257229923-1",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385451853",
+      "ke": "S8385451856",
+      "blokId": "BLK-R257229923-1",
+      "panjangM": 20
+    },
+    {
+      "id": "RR257229923-2",
+      "jenis": "PETAK_JALAN",
+      "dari": "S8385451856",
+      "ke": "S13370047719",
+      "blokId": "BLK-R257229923-2",
+      "panjangM": 174,
+      "titikBelok": [
+        {
+          "x": 255,
+          "y": 865
+        }
+      ]
+    },
+    {
+      "id": "RR257229924-0",
+      "jenis": "PETAK_JALAN",
+      "dari": "S13370047718",
+      "ke": "S2628286345",
+      "blokId": "BLK-R257229924-0",
+      "panjangM": 210,
+      "titikBelok": [
+        {
+          "x": 216,
+          "y": 869
+        },
+        {
+          "x": 264,
+          "y": 897
+        },
+        {
+          "x": 280,
+          "y": 908
+        }
+      ]
+    },
+    {
+      "id": "RR257229924-4",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628286345",
+      "ke": "S8385451865",
+      "blokId": "BLK-R257229924-4",
+      "panjangM": 33
+    },
+    {
+      "id": "RR257229925-0",
+      "jenis": "PETAK_JALAN",
+      "dari": "S2628286358",
+      "ke": "S8385451856",
+      "blokId": "BLK-R257229925-0",
+      "panjangM": 182,
+      "titikBelok": [
+        {
+          "x": 236,
+          "y": 834
+        },
+        {
+          "x": 250,
+          "y": 849
+        }
+      ]
+    },
+    {
+      "id": "RR257229927-0",
+      "jenis": "SEPUR_PERON",
+      "dari": "S10694245339",
+      "ke": "S11181861170",
+      "blokId": "BLK-R257229927-0",
+      "panjangM": 122,
+      "sepurId": "SP-BD-2"
+    },
+    {
+      "id": "RR321027466-0",
+      "jenis": "PENGHUBUNG",
+      "dari": "S2628273465",
+      "ke": "S3277420351",
+      "blokId": "BLK-R321027466-0",
+      "panjangM": 57
+    },
+    {
+      "id": "RR321027467-0",
+      "jenis": "PETAK_JALAN",
+      "dari": "S4167170924",
+      "ke": "S2628273465",
+      "blokId": "BLK-R321027467-0",
+      "panjangM": 298,
+      "titikBelok": [
+        {
+          "x": 1499,
+          "y": 1083
+        }
+      ]
+    },
+    {
+      "id": "RR339334986-0",
+      "jenis": "PENGHUBUNG",
+      "dari": "S8385468349",
+      "ke": "S2628273461",
+      "blokId": "BLK-R339334986-0",
+      "panjangM": 146,
+      "titikBelok": [
+        {
+          "x": 976,
+          "y": 759
+        },
+        {
+          "x": 987,
+          "y": 770
+        },
+        {
+          "x": 993,
+          "y": 776
+        },
+        {
+          "x": 1017,
+          "y": 806
+        },
+        {
+          "x": 1029,
+          "y": 814
+        },
+        {
+          "x": 1048,
+          "y": 825
+        }
+      ]
+    },
+    {
+      "id": "RR551797191-0",
+      "jenis": "PETAK_JALAN",
+      "dari": "S364365478",
+      "ke": "S677319387",
+      "blokId": "BLK-R551797191-0",
+      "panjangM": 298,
+      "titikBelok": [
+        {
+          "x": 1499,
+          "y": 1100
+        }
+      ]
+    },
+    {
+      "id": "RR561410148-0",
+      "jenis": "PETAK_JALAN",
+      "dari": "S11270915382",
+      "ke": "S8385468271",
+      "blokId": "BLK-R561410148-0",
+      "panjangM": 70,
+      "titikBelok": [
+        {
+          "x": 208,
+          "y": 694
+        }
+      ]
+    },
+    {
+      "id": "RR761096091-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628273513",
+      "ke": "S8385451896",
+      "blokId": "BLK-R761096091-0",
+      "panjangM": 45
+    },
+    {
+      "id": "RR761096091-1",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385451896",
+      "ke": "S2628273529",
+      "blokId": "BLK-R761096091-1",
+      "panjangM": 25
+    },
+    {
+      "id": "RR761096091-2",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628273529",
+      "ke": "S8385451889",
+      "blokId": "BLK-R761096091-2",
+      "panjangM": 25
+    },
+    {
+      "id": "RR761096091-3",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385451889",
+      "ke": "S2628273532",
+      "blokId": "BLK-R761096091-3",
+      "panjangM": 24
+    },
+    {
+      "id": "RR761096091-4",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628273532",
+      "ke": "S12553010408",
+      "blokId": "BLK-R761096091-4",
+      "panjangM": 76,
+      "titikBelok": [
+        {
+          "x": 688,
+          "y": 340
+        }
+      ]
+    },
+    {
+      "id": "RR798082486-0",
+      "jenis": "PENGHUBUNG",
+      "dari": "S7464347910",
+      "ke": "S291542648",
+      "blokId": "BLK-R798082486-0",
+      "panjangM": 177,
+      "titikBelok": [
+        {
+          "x": 1183,
+          "y": 877
+        },
+        {
+          "x": 1301,
+          "y": 958
+        },
+        {
+          "x": 1306,
+          "y": 962
+        },
+        {
+          "x": 1312,
+          "y": 966
+        }
+      ]
+    },
+    {
+      "id": "RR798082488-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S7464347910",
+      "ke": "S10694245358",
+      "blokId": "BLK-R798082488-0",
+      "panjangM": 33
+    },
+    {
+      "id": "RR798082488-1",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S10694245358",
+      "ke": "S2628264176",
+      "blokId": "BLK-R798082488-1",
+      "panjangM": 32
+    },
+    {
+      "id": "RR828989404-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628273463",
+      "ke": "S10694245358",
+      "blokId": "BLK-R828989404-0",
+      "panjangM": 33
+    },
+    {
+      "id": "RR828989404-1",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S10694245358",
+      "ke": "S7464347909",
+      "blokId": "BLK-R828989404-1",
+      "panjangM": 32
+    },
+    {
+      "id": "RR902837089-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385468257",
+      "ke": "S10694245351",
+      "blokId": "BLK-R902837089-0",
+      "panjangM": 24
+    },
+    {
+      "id": "RR902837089-1",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S10694245351",
+      "ke": "S8385468321",
+      "blokId": "BLK-R902837089-1",
+      "panjangM": 29
+    },
+    {
+      "id": "RR902837090-0",
+      "jenis": "PETAK_JALAN",
+      "dari": "S13370047708",
+      "ke": "S8385451853",
+      "blokId": "BLK-R902837090-0",
+      "panjangM": 174,
+      "titikBelok": [
+        {
+          "x": 232,
+          "y": 796
+        },
+        {
+          "x": 242,
+          "y": 818
+        },
+        {
+          "x": 261,
+          "y": 845
+        },
+        {
+          "x": 279,
+          "y": 878
+        }
+      ]
+    },
+    {
+      "id": "RR902837091-0",
+      "jenis": "PETAK_JALAN",
+      "dari": "S13370047720",
+      "ke": "S8385451861",
+      "blokId": "BLK-R902837091-0",
+      "panjangM": 219,
+      "titikBelok": [
+        {
+          "x": 216,
+          "y": 901
+        },
+        {
+          "x": 276,
+          "y": 939
+        }
+      ]
+    },
+    {
+      "id": "RR902837091-3",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385451861",
+      "ke": "S8385451865",
+      "blokId": "BLK-R902837091-3",
+      "panjangM": 26
+    },
+    {
+      "id": "RR902837091-4",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385451865",
+      "ke": "S8385451858",
+      "blokId": "BLK-R902837091-4",
+      "panjangM": 106
+    },
+    {
+      "id": "RR902837092-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S13370047722",
+      "ke": "S8385451861",
+      "blokId": "BLK-R902837092-0",
+      "panjangM": 261,
+      "titikBelok": [
+        {
+          "x": 216,
+          "y": 941
+        },
+        {
+          "x": 263,
+          "y": 973
+        },
+        {
+          "x": 279,
+          "y": 973
+        }
+      ]
+    },
+    {
+      "id": "RR902837093-0",
+      "jenis": "PENGHUBUNG",
+      "dari": "S2628273490",
+      "ke": "S10694245357",
+      "blokId": "BLK-R902837093-0",
+      "panjangM": 25
+    },
+    {
+      "id": "RR902837093-1",
+      "jenis": "PENGHUBUNG",
+      "dari": "S10694245357",
+      "ke": "S8385468248",
+      "blokId": "BLK-R902837093-1",
+      "panjangM": 27
+    },
+    {
+      "id": "RR902837093-2",
+      "jenis": "PENGHUBUNG",
+      "dari": "S8385468248",
+      "ke": "S10694245356",
+      "blokId": "BLK-R902837093-2",
+      "panjangM": 20
+    },
+    {
+      "id": "RR902837093-3",
+      "jenis": "PENGHUBUNG",
+      "dari": "S10694245356",
+      "ke": "S8385468263",
+      "blokId": "BLK-R902837093-3",
+      "panjangM": 31
+    },
+    {
+      "id": "RR902837095-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385468260",
+      "ke": "S293384547",
+      "blokId": "BLK-R902837095-0",
+      "panjangM": 61
+    },
+    {
+      "id": "RR902837095-1",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S293384547",
+      "ke": "S10694245355",
+      "blokId": "BLK-R902837095-1",
+      "panjangM": 18
+    },
+    {
+      "id": "RR902837095-2",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S10694245355",
+      "ke": "S291546116",
+      "blokId": "BLK-R902837095-2",
+      "panjangM": 26
+    },
+    {
+      "id": "RR902837096-0",
+      "jenis": "SEPUR_PERON",
+      "dari": "S8385451883",
+      "ke": "S8385451874",
+      "blokId": "BLK-R902837096-0",
+      "panjangM": 218,
+      "sepurId": "SP-BD-8",
+      "titikBelok": [
+        {
+          "x": 781,
+          "y": 583
+        },
+        {
+          "x": 794,
+          "y": 581
+        },
+        {
+          "x": 800,
+          "y": 579
+        },
+        {
+          "x": 819,
+          "y": 578
+        },
+        {
+          "x": 888,
+          "y": 577
+        },
+        {
+          "x": 903,
+          "y": 575
+        },
+        {
+          "x": 914,
+          "y": 575
+        },
+        {
+          "x": 925,
+          "y": 575
+        }
+      ]
+    },
+    {
+      "id": "RR902837098-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S11262097554",
+      "ke": "S8385451893",
+      "blokId": "BLK-R902837098-0",
+      "panjangM": 81,
+      "titikBelok": [
+        {
+          "x": 696,
+          "y": 475
+        }
+      ]
+    },
+    {
+      "id": "RR902837098-2",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385451893",
+      "ke": "S8385451896",
+      "blokId": "BLK-R902837098-2",
+      "panjangM": 67,
+      "titikBelok": [
+        {
+          "x": 745,
+          "y": 483
+        }
+      ]
+    },
+    {
+      "id": "RR902837100-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385451866",
+      "ke": "S293384518",
+      "blokId": "BLK-R902837100-0",
+      "panjangM": 46
+    },
+    {
+      "id": "RR902837100-1",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S293384518",
+      "ke": "S293384674",
+      "blokId": "BLK-R902837100-1",
+      "panjangM": 35,
+      "titikBelok": [
+        {
+          "x": 988,
+          "y": 661
+        }
+      ]
+    },
+    {
+      "id": "RR902837101-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385468264",
+      "ke": "S10694245356",
+      "blokId": "BLK-R902837101-0",
+      "panjangM": 28
+    },
+    {
+      "id": "RR902837101-1",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S10694245356",
+      "ke": "S8385468247",
+      "blokId": "BLK-R902837101-1",
+      "panjangM": 27
+    },
+    {
+      "id": "RR902837101-2",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385468247",
+      "ke": "S10694245355",
+      "blokId": "BLK-R902837101-2",
+      "panjangM": 27
+    },
+    {
+      "id": "RR902837101-3",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S10694245355",
+      "ke": "S8385468256",
+      "blokId": "BLK-R902837101-3",
+      "panjangM": 28
+    },
+    {
+      "id": "RR902837103-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385468249",
+      "ke": "S10694245357",
+      "blokId": "BLK-R902837103-0",
+      "panjangM": 29
+    },
+    {
+      "id": "RR902837103-1",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S10694245357",
+      "ke": "S8385468257",
+      "blokId": "BLK-R902837103-1",
+      "panjangM": 27
+    },
+    {
+      "id": "RR902837104-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385468220",
+      "ke": "S8385468224",
+      "blokId": "BLK-R902837104-0",
+      "panjangM": 124,
+      "titikBelok": [
+        {
+          "x": 520,
+          "y": 858
+        },
+        {
+          "x": 531,
+          "y": 857
+        }
+      ]
+    },
+    {
+      "id": "RR902837105-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628273556",
+      "ke": "S8385468229",
+      "blokId": "BLK-R902837105-0",
+      "panjangM": 157,
+      "titikBelok": [
+        {
+          "x": 643,
+          "y": 1012
+        },
+        {
+          "x": 650,
+          "y": 999
+        },
+        {
+          "x": 661,
+          "y": 980
+        },
+        {
+          "x": 667,
+          "y": 973
+        },
+        {
+          "x": 683,
+          "y": 967
+        }
+      ]
+    },
+    {
+      "id": "RR902837106-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S13814081482",
+      "ke": "S8385468232",
+      "blokId": "BLK-R902837106-0",
+      "panjangM": 202,
+      "titikBelok": [
+        {
+          "x": 625,
+          "y": 1083
+        },
+        {
+          "x": 644,
+          "y": 1082
+        }
+      ]
+    },
+    {
+      "id": "RR902837107-0",
+      "jenis": "PETAK_JALAN",
+      "dari": "S8385468307",
+      "ke": "S8385468301",
+      "blokId": "BLK-R902837107-0",
+      "panjangM": 204,
+      "titikBelok": [
+        {
+          "x": 197,
+          "y": 1117
+        },
+        {
+          "x": 203,
+          "y": 1118
+        },
+        {
+          "x": 220,
+          "y": 1120
+        },
+        {
+          "x": 241,
+          "y": 1120
+        },
+        {
+          "x": 280,
+          "y": 1116
+        }
+      ]
+    },
+    {
+      "id": "RR902837108-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628273472",
+      "ke": "S10694245340",
+      "blokId": "BLK-R902837108-0",
+      "panjangM": 122
+    },
+    {
+      "id": "RR1127992533-0",
+      "jenis": "PENGHUBUNG",
+      "dari": "S2628264172",
+      "ke": "S2628264174",
+      "blokId": "BLK-R1127992533-0",
+      "panjangM": 38
+    },
+    {
+      "id": "RR1127992533-1",
+      "jenis": "PENGHUBUNG",
+      "dari": "S2628264174",
+      "ke": "S2628264176",
+      "blokId": "BLK-R1127992533-1",
+      "panjangM": 42
+    },
+    {
+      "id": "RR1149566324-0",
+      "jenis": "PENGHUBUNG",
+      "dari": "S8385468259",
+      "ke": "S8385451901",
+      "blokId": "BLK-R1149566324-0",
+      "panjangM": 114,
+      "titikBelok": [
+        {
+          "x": 636,
+          "y": 841
+        },
+        {
+          "x": 694,
+          "y": 773
+        }
+      ]
+    },
+    {
+      "id": "RR1149566325-0",
+      "jenis": "PENGHUBUNG",
+      "dari": "S8385468255",
+      "ke": "S8385468241",
+      "blokId": "BLK-R1149566325-0",
+      "panjangM": 133,
+      "titikBelok": [
+        {
+          "x": 644,
+          "y": 926
+        },
+        {
+          "x": 667,
+          "y": 904
+        },
+        {
+          "x": 691,
+          "y": 878
+        }
+      ]
+    },
+    {
+      "id": "RR1149566326-0",
+      "jenis": "PENGHUBUNG",
+      "dari": "S291546116",
+      "ke": "S10694245351",
+      "blokId": "BLK-R1149566326-0",
+      "panjangM": 23
+    },
+    {
+      "id": "RR1149566326-1",
+      "jenis": "PENGHUBUNG",
+      "dari": "S10694245351",
+      "ke": "S8385468322",
+      "blokId": "BLK-R1149566326-1",
+      "panjangM": 24
+    },
+    {
+      "id": "RR1149566327-0",
+      "jenis": "PENGHUBUNG",
+      "dari": "S3277420351",
+      "ke": "S2628273463",
+      "blokId": "BLK-R1149566327-0",
+      "panjangM": 177,
+      "titikBelok": [
+        {
+          "x": 1301,
+          "y": 923
+        },
+        {
+          "x": 1292,
+          "y": 918
+        },
+        {
+          "x": 1183,
+          "y": 852
+        }
+      ]
+    },
+    {
+      "id": "RR1187069945-0",
+      "jenis": "PENGHUBUNG",
+      "dari": "S8385468264",
+      "ke": "S8385468263",
+      "blokId": "BLK-R1187069945-0",
+      "panjangM": 59
+    },
+    {
+      "id": "RR1187069945-1",
+      "jenis": "PENGHUBUNG",
+      "dari": "S8385468263",
+      "ke": "S8385468262",
+      "blokId": "BLK-R1187069945-1",
+      "panjangM": 29
+    },
+    {
+      "id": "RR1187069945-2",
+      "jenis": "PENGHUBUNG",
+      "dari": "S8385468262",
+      "ke": "S8385468260",
+      "blokId": "BLK-R1187069945-2",
+      "panjangM": 71,
+      "titikBelok": [
+        {
+          "x": 565,
+          "y": 871
+        },
+        {
+          "x": 591,
+          "y": 870
+        }
+      ]
+    },
+    {
+      "id": "RR1187069946-0",
+      "jenis": "PENGHUBUNG",
+      "dari": "S2628273489",
+      "ke": "S2628273490",
+      "blokId": "BLK-R1187069946-0",
+      "panjangM": 100
+    },
+    {
+      "id": "RR1187069947-0",
+      "jenis": "PETAK_JALAN",
+      "dari": "S8385468325",
+      "ke": "S8385468330",
+      "blokId": "BLK-R1187069947-0",
+      "panjangM": 201,
+      "titikBelok": [
+        {
+          "x": 278,
+          "y": 1107
+        },
+        {
+          "x": 242,
+          "y": 1113
+        },
+        {
+          "x": 221,
+          "y": 1113
+        },
+        {
+          "x": 203,
+          "y": 1110
+        },
+        {
+          "x": 198,
+          "y": 1108
+        }
+      ]
+    },
+    {
+      "id": "RR1187069948-0",
+      "jenis": "PENGHUBUNG",
+      "dari": "S8385468322",
+      "ke": "S8385468301",
+      "blokId": "BLK-R1187069948-0",
+      "panjangM": 156,
+      "titikBelok": [
+        {
+          "x": 457,
+          "y": 1052
+        },
+        {
+          "x": 445,
+          "y": 1068
+        },
+        {
+          "x": 437,
+          "y": 1074
+        },
+        {
+          "x": 397,
+          "y": 1086
+        }
+      ]
+    },
+    {
+      "id": "RR1187069950-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385468241",
+      "ke": "S8385468315",
+      "blokId": "BLK-R1187069950-0",
+      "panjangM": 54
+    },
+    {
+      "id": "RR1213494260-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385451866",
+      "ke": "S11242626908",
+      "blokId": "BLK-R1213494260-0",
+      "panjangM": 26
+    },
+    {
+      "id": "RR1213494261-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628273470",
+      "ke": "S11242626909",
+      "blokId": "BLK-R1213494261-0",
+      "panjangM": 32
+    },
+    {
+      "id": "RR1215523045-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S10693460293",
+      "ke": "S11262097550",
+      "blokId": "BLK-R1215523045-0",
+      "panjangM": 35
+    },
+    {
+      "id": "RR1215523046-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S11262097551",
+      "ke": "S11262097552",
+      "blokId": "BLK-R1215523046-0",
+      "panjangM": 57,
+      "titikBelok": [
+        {
+          "x": 626,
+          "y": 534
+        }
+      ]
+    },
+    {
+      "id": "RR1215523047-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628273496",
+      "ke": "S2628273503",
+      "blokId": "BLK-R1215523047-0",
+      "panjangM": 49,
+      "titikBelok": [
+        {
+          "x": 753,
+          "y": 444
+        },
+        {
+          "x": 744,
+          "y": 433
+        },
+        {
+          "x": 732,
+          "y": 408
+        }
+      ]
+    },
+    {
+      "id": "RR1215523047-4",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628273503",
+      "ke": "S12553010406",
+      "blokId": "BLK-R1215523047-4",
+      "panjangM": 79,
+      "titikBelok": [
+        {
+          "x": 680,
+          "y": 245
+        },
+        {
+          "x": 669,
+          "y": 213
+        }
+      ]
+    },
+    {
+      "id": "RR1215523049-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385451901",
+      "ke": "S11262097573",
+      "blokId": "BLK-R1215523049-0",
+      "panjangM": 133,
+      "titikBelok": [
+        {
+          "x": 748,
+          "y": 690
+        },
+        {
+          "x": 762,
+          "y": 669
+        },
+        {
+          "x": 772,
+          "y": 663
+        },
+        {
+          "x": 780,
+          "y": 658
+        }
+      ]
+    },
+    {
+      "id": "RR1215523050-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S12552986394",
+      "ke": "S2628273521",
+      "blokId": "BLK-R1215523050-0",
+      "panjangM": 67,
+      "titikBelok": [
+        {
+          "x": 619,
+          "y": 663
+        },
+        {
+          "x": 629,
+          "y": 656
+        }
+      ]
+    },
+    {
+      "id": "RR1216394412-0",
+      "jenis": "PENGHUBUNG",
+      "dari": "S8385468267",
+      "ke": "S2628286338",
+      "blokId": "BLK-R1216394412-0",
+      "panjangM": 131,
+      "titikBelok": [
+        {
+          "x": 315,
+          "y": 854
+        },
+        {
+          "x": 277,
+          "y": 823
+        },
+        {
+          "x": 265,
+          "y": 799
+        },
+        {
+          "x": 261,
+          "y": 792
+        }
+      ]
+    },
+    {
+      "id": "RR1216394413-0",
+      "jenis": "PENGHUBUNG",
+      "dari": "S2628286338",
+      "ke": "S11270915382",
+      "blokId": "BLK-R1216394413-0",
+      "panjangM": 7
+    },
+    {
+      "id": "RR1242723286-0",
+      "jenis": "PENGHUBUNG",
+      "dari": "S8385468256",
+      "ke": "S8385468255",
+      "blokId": "BLK-R1242723286-0",
+      "panjangM": 64
+    },
+    {
+      "id": "RR1242723287-0",
+      "jenis": "PENGHUBUNG",
+      "dari": "S8385468323",
+      "ke": "S2628273490",
+      "blokId": "BLK-R1242723287-0",
+      "panjangM": 48
+    },
+    {
+      "id": "RR1242723288-0",
+      "jenis": "PENGHUBUNG",
+      "dari": "S8385468257",
+      "ke": "S291546116",
+      "blokId": "BLK-R1242723288-0",
+      "panjangM": 46
+    },
+    {
+      "id": "RR1242723289-0",
+      "jenis": "PENGHUBUNG",
+      "dari": "S8385468323",
+      "ke": "S8385468325",
+      "blokId": "BLK-R1242723289-0",
+      "panjangM": 53,
+      "titikBelok": [
+        {
+          "x": 386,
+          "y": 1047
+        }
+      ]
+    },
+    {
+      "id": "RR1242723290-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385468317",
+      "ke": "S8385468238",
+      "blokId": "BLK-R1242723290-0",
+      "panjangM": 164,
+      "titikBelok": [
+        {
+          "x": 641,
+          "y": 964
+        },
+        {
+          "x": 626,
+          "y": 980
+        }
+      ]
+    },
+    {
+      "id": "RR1242723290-3",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385468238",
+      "ke": "S8385468321",
+      "blokId": "BLK-R1242723290-3",
+      "panjangM": 11
+    },
+    {
+      "id": "RR1242723290-4",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385468321",
+      "ke": "S8385468322",
+      "blokId": "BLK-R1242723290-4",
+      "panjangM": 52
+    },
+    {
+      "id": "RR1242723291-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385468255",
+      "ke": "S8385468317",
+      "blokId": "BLK-R1242723291-0",
+      "panjangM": 62
+    },
+    {
+      "id": "RR1242723292-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385468322",
+      "ke": "S8385468323",
+      "blokId": "BLK-R1242723292-0",
+      "panjangM": 99
+    },
+    {
+      "id": "RR1242723293-0",
+      "jenis": "PENGHUBUNG",
+      "dari": "S7464347909",
+      "ke": "S7464347910",
+      "blokId": "BLK-R1242723293-0",
+      "panjangM": 64
+    },
+    {
+      "id": "RR1242723294-0",
+      "jenis": "PENGHUBUNG",
+      "dari": "S2628273461",
+      "ke": "S7464347909",
+      "blokId": "BLK-R1242723294-0",
+      "panjangM": 42
+    },
+    {
+      "id": "RR1264176094-0",
+      "jenis": "SEPUR_PERON",
+      "dari": "S13947927561",
+      "ke": "S13947927559",
+      "blokId": "BLK-R1264176094-0",
+      "panjangM": 121,
+      "sepurId": "SP-BD-4"
+    },
+    {
+      "id": "RR1265002083-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628273470",
+      "ke": "S2628273460",
+      "blokId": "BLK-R1265002083-0",
+      "panjangM": 100,
+      "titikBelok": [
+        {
+          "x": 1024,
+          "y": 835
+        },
+        {
+          "x": 1008,
+          "y": 829
+        },
+        {
+          "x": 991,
+          "y": 825
+        },
+        {
+          "x": 987,
+          "y": 825
+        },
+        {
+          "x": 978,
+          "y": 824
+        }
+      ]
+    },
+    {
+      "id": "RR1265002084-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S10312881283",
+      "ke": "S2628273470",
+      "blokId": "BLK-R1265002084-0",
+      "panjangM": 101,
+      "titikBelok": [
+        {
+          "x": 987,
+          "y": 856
+        },
+        {
+          "x": 996,
+          "y": 853
+        },
+        {
+          "x": 1015,
+          "y": 847
+        }
+      ]
+    },
+    {
+      "id": "RR1265002085-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628264172",
+      "ke": "S293384518",
+      "blokId": "BLK-R1265002085-0",
+      "panjangM": 49
+    },
+    {
+      "id": "RR1265002085-1",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S293384518",
+      "ke": "S10694245342",
+      "blokId": "BLK-R1265002085-1",
+      "panjangM": 64,
+      "titikBelok": [
+        {
+          "x": 988,
+          "y": 634
+        },
+        {
+          "x": 975,
+          "y": 612
+        },
+        {
+          "x": 973,
+          "y": 611
+        }
+      ]
+    },
+    {
+      "id": "RR1265002086-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S10694245343",
+      "ke": "S11262097590",
+      "blokId": "BLK-R1265002086-0",
+      "panjangM": 80,
+      "titikBelok": [
+        {
+          "x": 964,
+          "y": 603
+        },
+        {
+          "x": 971,
+          "y": 604
+        },
+        {
+          "x": 975,
+          "y": 605
+        },
+        {
+          "x": 988,
+          "y": 609
+        },
+        {
+          "x": 993,
+          "y": 610
+        },
+        {
+          "x": 1007,
+          "y": 621
+        }
+      ]
+    },
+    {
+      "id": "RR1265002086-7",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S11262097590",
+      "ke": "S8385451866",
+      "blokId": "BLK-R1265002086-7",
+      "panjangM": 31
+    },
+    {
+      "id": "RR1265002086-8",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385451866",
+      "ke": "S2628264174",
+      "blokId": "BLK-R1265002086-8",
+      "panjangM": 41
+    },
+    {
+      "id": "RR1265002087-0",
+      "jenis": "SEPUR_PERON",
+      "dari": "S13947927563",
+      "ke": "S13947927557",
+      "blokId": "BLK-R1265002087-0",
+      "panjangM": 121,
+      "sepurId": "SP-BD-6"
+    },
+    {
+      "id": "RR1265002088-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S13947927558",
+      "ke": "S13947927562",
+      "blokId": "BLK-R1265002088-0",
+      "panjangM": 121
+    },
+    {
+      "id": "RR1265002089-0",
+      "jenis": "SEPUR_PERON",
+      "dari": "S11262097569",
+      "ke": "S13947927560",
+      "blokId": "BLK-R1265002089-0",
+      "panjangM": 121,
+      "sepurId": "SP-BD-3"
+    },
+    {
+      "id": "RR1265002090-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385468315",
+      "ke": "S8385468317",
+      "blokId": "BLK-R1265002090-0",
+      "panjangM": 124,
+      "titikBelok": [
+        {
+          "x": 735,
+          "y": 866
+        }
+      ]
+    },
+    {
+      "id": "RR1265002091-0",
+      "jenis": "SEPUR_PERON",
+      "dari": "S8385468317",
+      "ke": "S10694245344",
+      "blokId": "BLK-R1265002091-0",
+      "panjangM": 152,
+      "sepurId": "SP-BD-1",
+      "titikBelok": [
+        {
+          "x": 714,
+          "y": 920
+        },
+        {
+          "x": 728,
+          "y": 914
+        },
+        {
+          "x": 744,
+          "y": 902
+        },
+        {
+          "x": 759,
+          "y": 889
+        },
+        {
+          "x": 767,
+          "y": 885
+        },
+        {
+          "x": 773,
+          "y": 882
+        },
+        {
+          "x": 781,
+          "y": 880
+        }
+      ]
+    },
+    {
+      "id": "RR1265002092-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S11262097617",
+      "ke": "S11262097589",
+      "blokId": "BLK-R1265002092-0",
+      "panjangM": 99,
+      "titikBelok": [
+        {
+          "x": 925,
+          "y": 584
+        },
+        {
+          "x": 941,
+          "y": 586
+        },
+        {
+          "x": 952,
+          "y": 589
+        },
+        {
+          "x": 959,
+          "y": 590
+        },
+        {
+          "x": 970,
+          "y": 594
+        },
+        {
+          "x": 977,
+          "y": 597
+        },
+        {
+          "x": 983,
+          "y": 599
+        },
+        {
+          "x": 989,
+          "y": 601
+        }
+      ]
+    },
+    {
+      "id": "RR1265002093-0",
+      "jenis": "SEPUR_PERON",
+      "dari": "S11262097606",
+      "ke": "S11262097617",
+      "blokId": "BLK-R1265002093-0",
+      "panjangM": 125,
+      "sepurId": "SP-BD-7"
+    },
+    {
+      "id": "RR1265510725-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628273461",
+      "ke": "S2628273470",
+      "blokId": "BLK-R1265510725-0",
+      "panjangM": 46
+    },
+    {
+      "id": "RR1279978975-0",
+      "jenis": "PENGHUBUNG",
+      "dari": "S2628273467",
+      "ke": "S2628264172",
+      "blokId": "BLK-R1279978975-0",
+      "panjangM": 109,
+      "titikBelok": [
+        {
+          "x": 975,
+          "y": 693
+        },
+        {
+          "x": 987,
+          "y": 705
+        },
+        {
+          "x": 993,
+          "y": 712
+        },
+        {
+          "x": 1013,
+          "y": 732
+        }
+      ]
+    },
+    {
+      "id": "RR1279978976-0",
+      "jenis": "PENGHUBUNG",
+      "dari": "S2628273490",
+      "ke": "S8385468257",
+      "blokId": "BLK-R1279978976-0",
+      "panjangM": 52
+    },
+    {
+      "id": "RR1279978977-0",
+      "jenis": "PENGHUBUNG",
+      "dari": "S291546116",
+      "ke": "S8385468256",
+      "blokId": "BLK-R1279978977-0",
+      "panjangM": 55
+    },
+    {
+      "id": "RR1280341071-0",
+      "jenis": "PENGHUBUNG",
+      "dari": "S2628264176",
+      "ke": "S2628273463",
+      "blokId": "BLK-R1280341071-0",
+      "panjangM": 64
+    },
+    {
+      "id": "RR1280659855-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628273444",
+      "ke": "S11262097616",
+      "blokId": "BLK-R1280659855-0",
+      "panjangM": 113,
+      "titikBelok": [
+        {
+          "x": 737,
+          "y": 611
+        },
+        {
+          "x": 757,
+          "y": 608
+        },
+        {
+          "x": 767,
+          "y": 606
+        },
+        {
+          "x": 777,
+          "y": 606
+        }
+      ]
+    },
+    {
+      "id": "RR1280659856-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385468259",
+      "ke": "S2628273443",
+      "blokId": "BLK-R1280659856-0",
+      "panjangM": 53,
+      "titikBelok": [
+        {
+          "x": 632,
+          "y": 836
+        },
+        {
+          "x": 641,
+          "y": 826
+        }
+      ]
+    },
+    {
+      "id": "RR1280659857-0",
+      "jenis": "PENGHUBUNG",
+      "dari": "S8385468260",
+      "ke": "S8385468259",
+      "blokId": "BLK-R1280659857-0",
+      "panjangM": 13
+    },
+    {
+      "id": "RR1280659858-0",
+      "jenis": "PENGHUBUNG",
+      "dari": "S8385468264",
+      "ke": "S8385468267",
+      "blokId": "BLK-R1280659858-0",
+      "panjangM": 141,
+      "titikBelok": [
+        {
+          "x": 433,
+          "y": 891
+        },
+        {
+          "x": 417,
+          "y": 892
+        },
+        {
+          "x": 374,
+          "y": 886
+        }
+      ]
+    },
+    {
+      "id": "RR1303724126-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628264168",
+      "ke": "S8385451874",
+      "blokId": "BLK-R1303724126-0",
+      "panjangM": 20
+    },
+    {
+      "id": "RR1303724127-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385451883",
+      "ke": "S293384542",
+      "blokId": "BLK-R1303724127-0",
+      "panjangM": 28
+    },
+    {
+      "id": "RR1356313331-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S12552986395",
+      "ke": "S11262097596",
+      "blokId": "BLK-R1356313331-0",
+      "panjangM": 25
+    },
+    {
+      "id": "RR1356313332-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628273519",
+      "ke": "S12552986394",
+      "blokId": "BLK-R1356313332-0",
+      "panjangM": 25
+    },
+    {
+      "id": "RR1356313333-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628273507",
+      "ke": "S12552986396",
+      "blokId": "BLK-R1356313333-0",
+      "panjangM": 64,
+      "titikBelok": [
+        {
+          "x": 539,
+          "y": 655
+        },
+        {
+          "x": 564,
+          "y": 600
+        }
+      ]
+    },
+    {
+      "id": "RR1356313334-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S12552986396",
+      "ke": "S12552986397",
+      "blokId": "BLK-R1356313334-0",
+      "panjangM": 42
+    },
+    {
+      "id": "RR1356313335-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628273514",
+      "ke": "S12552986398",
+      "blokId": "BLK-R1356313335-0",
+      "panjangM": 53
+    },
+    {
+      "id": "RR1356313336-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628273500",
+      "ke": "S12553010403",
+      "blokId": "BLK-R1356313336-0",
+      "panjangM": 41
+    },
+    {
+      "id": "RR1356313337-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S12553010403",
+      "ke": "S12553010402",
+      "blokId": "BLK-R1356313337-0",
+      "panjangM": 66
+    },
+    {
+      "id": "RR1356313338-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S12553010405",
+      "ke": "S2628273531",
+      "blokId": "BLK-R1356313338-0",
+      "panjangM": 56
+    },
+    {
+      "id": "RR1356313339-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S12553010407",
+      "ke": "S12553010405",
+      "blokId": "BLK-R1356313339-0",
+      "panjangM": 66
+    },
+    {
+      "id": "RR1356313340-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S12553010406",
+      "ke": "S12553010404",
+      "blokId": "BLK-R1356313340-0",
+      "panjangM": 66
+    },
+    {
+      "id": "RR1356313341-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S12553010404",
+      "ke": "S2628273499",
+      "blokId": "BLK-R1356313341-0",
+      "panjangM": 56,
+      "titikBelok": [
+        {
+          "x": 586,
+          "y": 111
+        },
+        {
+          "x": 574,
+          "y": 92
+        }
+      ]
+    },
+    {
+      "id": "RR1356313342-0",
+      "jenis": "PETAK_JALAN",
+      "dari": "S12553010408",
+      "ke": "S2628273534",
+      "blokId": "BLK-R1356313342-0",
+      "panjangM": 65
+    },
+    {
+      "id": "RR1356313343-0",
+      "jenis": "PETAK_JALAN",
+      "dari": "S12552986399",
+      "ke": "S12553010409",
+      "blokId": "BLK-R1356313343-0",
+      "panjangM": 65
+    },
+    {
+      "id": "RR1356313344-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S12553010410",
+      "ke": "S2628273536",
+      "blokId": "BLK-R1356313344-0",
+      "panjangM": 84
+    },
+    {
+      "id": "RR1356313344-1",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628273536",
+      "ke": "S2628273528",
+      "blokId": "BLK-R1356313344-1",
+      "panjangM": 30
+    },
+    {
+      "id": "RR1356313346-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S12553010412",
+      "ke": "S12553010410",
+      "blokId": "BLK-R1356313346-0",
+      "panjangM": 66
+    },
+    {
+      "id": "RR1473677451-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385451903",
+      "ke": "S13520066463",
+      "blokId": "BLK-R1473677451-0",
+      "panjangM": 52
+    },
+    {
+      "id": "RR1473677451-1",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S13520066463",
+      "ke": "S293384543",
+      "blokId": "BLK-R1473677451-1",
+      "panjangM": 10
+    },
+    {
+      "id": "RR1473677451-2",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S293384543",
+      "ke": "S293384542",
+      "blokId": "BLK-R1473677451-2",
+      "panjangM": 32
+    },
+    {
+      "id": "RR1473677451-3",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S293384542",
+      "ke": "S8385451887",
+      "blokId": "BLK-R1473677451-3",
+      "panjangM": 122,
+      "titikBelok": [
+        {
+          "x": 756,
+          "y": 584
+        },
+        {
+          "x": 778,
+          "y": 569
+        },
+        {
+          "x": 790,
+          "y": 562
+        },
+        {
+          "x": 799,
+          "y": 532
+        },
+        {
+          "x": 816,
+          "y": 505
+        }
+      ]
+    },
+    {
+      "id": "RR1473677452-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628273444",
+      "ke": "S8385451882",
+      "blokId": "BLK-R1473677452-0",
+      "panjangM": 66,
+      "titikBelok": [
+        {
+          "x": 734,
+          "y": 605
+        }
+      ]
+    },
+    {
+      "id": "RR1473677453-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385451882",
+      "ke": "S293384543",
+      "blokId": "BLK-R1473677453-0",
+      "panjangM": 53,
+      "titikBelok": [
+        {
+          "x": 729,
+          "y": 603
+        }
+      ]
+    },
+    {
+      "id": "RR1473677454-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S11262097593",
+      "ke": "S11262097597",
+      "blokId": "BLK-R1473677454-0",
+      "panjangM": 45
+    },
+    {
+      "id": "RR1473677454-1",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S11262097597",
+      "ke": "S8385451869",
+      "blokId": "BLK-R1473677454-1",
+      "panjangM": 53,
+      "titikBelok": [
+        {
+          "x": 682,
+          "y": 610
+        }
+      ]
+    },
+    {
+      "id": "RR1474680199-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385451893",
+      "ke": "S13528591958",
+      "blokId": "BLK-R1474680199-0",
+      "panjangM": 69,
+      "titikBelok": [
+        {
+          "x": 708,
+          "y": 487
+        },
+        {
+          "x": 700,
+          "y": 490
+        },
+        {
+          "x": 688,
+          "y": 498
+        },
+        {
+          "x": 684,
+          "y": 501
+        }
+      ]
+    },
+    {
+      "id": "RR1511417120-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S8385468243",
+      "ke": "S13814081442",
+      "blokId": "BLK-R1511417120-0",
+      "panjangM": 61,
+      "titikBelok": [
+        {
+          "x": 708,
+          "y": 841
+        }
+      ]
+    },
+    {
+      "id": "RR1511417128-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S11270915380",
+      "ke": "S8385468235",
+      "blokId": "BLK-R1511417128-0",
+      "panjangM": 72
+    },
+    {
+      "id": "RR1511440484-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628273443",
+      "ke": "S8385468262",
+      "blokId": "BLK-R1511440484-0",
+      "panjangM": 136,
+      "titikBelok": [
+        {
+          "x": 626,
+          "y": 830
+        },
+        {
+          "x": 607,
+          "y": 842
+        },
+        {
+          "x": 570,
+          "y": 864
+        }
+      ]
+    },
+    {
+      "id": "RR1511440485-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628273443",
+      "ke": "S2628273444",
+      "blokId": "BLK-R1511440485-0",
+      "panjangM": 50
+    },
+    {
+      "id": "RR1511440486-0",
+      "jenis": "PENGHUBUNG",
+      "dari": "S8385451901",
+      "ke": "S10694245347",
+      "blokId": "BLK-R1511440486-0",
+      "panjangM": 108,
+      "titikBelok": [
+        {
+          "x": 725,
+          "y": 742
+        },
+        {
+          "x": 740,
+          "y": 730
+        },
+        {
+          "x": 763,
+          "y": 722
+        },
+        {
+          "x": 772,
+          "y": 719
+        },
+        {
+          "x": 775,
+          "y": 717
+        }
+      ]
+    },
+    {
+      "id": "RR1511440487-0",
+      "jenis": "PENGHUBUNG",
+      "dari": "S8385468241",
+      "ke": "S10694245346",
+      "blokId": "BLK-R1511440487-0",
+      "panjangM": 63,
+      "titikBelok": [
+        {
+          "x": 745,
+          "y": 833
+        },
+        {
+          "x": 764,
+          "y": 820
+        },
+        {
+          "x": 771,
+          "y": 815
+        },
+        {
+          "x": 773,
+          "y": 814
+        }
+      ]
+    },
+    {
+      "id": "RR1511440488-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S10694245345",
+      "ke": "S8385468315",
+      "blokId": "BLK-R1511440488-0",
+      "panjangM": 25,
+      "titikBelok": [
+        {
+          "x": 781,
+          "y": 843
+        },
+        {
+          "x": 774,
+          "y": 844
+        },
+        {
+          "x": 773,
+          "y": 844
+        }
+      ]
+    },
+    {
+      "id": "RR1530383704-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S13947927557",
+      "ke": "S10694245343",
+      "blokId": "BLK-R1530383704-0",
+      "panjangM": 36,
+      "titikBelok": [
+        {
+          "x": 935,
+          "y": 600
+        },
+        {
+          "x": 946,
+          "y": 601
+        }
+      ]
+    },
+    {
+      "id": "RR1530383705-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S10694245342",
+      "ke": "S13947927558",
+      "blokId": "BLK-R1530383705-0",
+      "panjangM": 37,
+      "titikBelok": [
+        {
+          "x": 948,
+          "y": 607
+        },
+        {
+          "x": 935,
+          "y": 607
+        }
+      ]
+    },
+    {
+      "id": "RR1530383706-0",
+      "jenis": "PENGHUBUNG",
+      "dari": "S13947927559",
+      "ke": "S2628273467",
+      "blokId": "BLK-R1530383706-0",
+      "panjangM": 39,
+      "titikBelok": [
+        {
+          "x": 932,
+          "y": 681
+        }
+      ]
+    },
+    {
+      "id": "RR1530383707-0",
+      "jenis": "PENGHUBUNG",
+      "dari": "S13947927560",
+      "ke": "S8385468349",
+      "blokId": "BLK-R1530383707-0",
+      "panjangM": 40,
+      "titikBelok": [
+        {
+          "x": 929,
+          "y": 750
+        }
+      ]
+    },
+    {
+      "id": "RR1530383708-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S2628273460",
+      "ke": "S10694245339",
+      "blokId": "BLK-R1530383708-0",
+      "panjangM": 39
+    },
+    {
+      "id": "RR1530383709-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S10694245340",
+      "ke": "S10312881283",
+      "blokId": "BLK-R1530383709-0",
+      "panjangM": 39
+    },
+    {
+      "id": "RR1530383710-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S11181861170",
+      "ke": "S10694245345",
+      "blokId": "BLK-R1530383710-0",
+      "panjangM": 39
+    },
+    {
+      "id": "RR1530383711-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S10694245344",
+      "ke": "S2628273472",
+      "blokId": "BLK-R1530383711-0",
+      "panjangM": 36
+    },
+    {
+      "id": "RR1530383712-0",
+      "jenis": "PENGHUBUNG",
+      "dari": "S10694245346",
+      "ke": "S11262097569",
+      "blokId": "BLK-R1530383712-0",
+      "panjangM": 56,
+      "titikBelok": [
+        {
+          "x": 796,
+          "y": 790
+        },
+        {
+          "x": 806,
+          "y": 782
+        }
+      ]
+    },
+    {
+      "id": "RR1530383713-0",
+      "jenis": "PENGHUBUNG",
+      "dari": "S10694245347",
+      "ke": "S13947927561",
+      "blokId": "BLK-R1530383713-0",
+      "panjangM": 30
+    },
+    {
+      "id": "RR1530383714-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S13947927562",
+      "ke": "S10694245348",
+      "blokId": "BLK-R1530383714-0",
+      "panjangM": 32
+    },
+    {
+      "id": "RR1530383715-0",
+      "jenis": "SEPUR_EMPLASEMEN",
+      "dari": "S11262097616",
+      "ke": "S13947927563",
+      "blokId": "BLK-R1530383715-0",
+      "panjangM": 39
+    }
+  ],
+  "wesel": [
+    {
+      "id": "W-BD-1",
+      "nomor": "1",
+      "level": "DASAR",
+      "simpulId": "S8385451874",
+      "ruasPangkal": "RR1303724126-0",
+      "ruasLurus": "RR26746949-0",
+      "ruasBelok": "RR902837096-0",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-2",
+      "nomor": "2",
+      "level": "DASAR",
+      "simpulId": "S8385451883",
+      "ruasPangkal": "RR1303724127-0",
+      "ruasLurus": "RR26746949-0",
+      "ruasBelok": "RR902837096-0",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-3",
+      "nomor": "3",
+      "level": "DASAR",
+      "simpulId": "S8385468224",
+      "ruasPangkal": "RR257229245-1",
+      "ruasLurus": "RR257229245-0",
+      "ruasBelok": "RR902837104-0",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-4",
+      "nomor": "4",
+      "level": "DASAR",
+      "simpulId": "S11262097593",
+      "ruasPangkal": "RR257229245-1",
+      "ruasLurus": "RR257229245-2",
+      "ruasBelok": "RR1473677454-0",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-5",
+      "nomor": "5",
+      "level": "DASAR",
+      "simpulId": "S8385451903",
+      "ruasPangkal": "RR257229245-2",
+      "ruasLurus": "RR257229245-3",
+      "ruasBelok": "RR1473677451-0",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-6",
+      "nomor": "6",
+      "level": "DASAR",
+      "simpulId": "S8385451882",
+      "ruasPangkal": "RR257229246-0",
+      "ruasLurus": "RR1473677453-0",
+      "ruasBelok": "RR1473677452-0",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-7",
+      "nomor": "7",
+      "level": "DASAR",
+      "simpulId": "S8385468249",
+      "ruasPangkal": "RR257229247-0",
+      "ruasLurus": "RR257229247-1",
+      "ruasBelok": "RR902837103-0",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-8",
+      "nomor": "8",
+      "level": "DASAR",
+      "simpulId": "S8385468243",
+      "ruasPangkal": "RR257229247-4",
+      "ruasLurus": "RR1511417120-0",
+      "ruasBelok": "RR257229247-9",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-9",
+      "nomor": "9",
+      "level": "DASAR",
+      "simpulId": "S11262097590",
+      "ruasPangkal": "RR1265002086-7",
+      "ruasLurus": "RR1265002086-0",
+      "ruasBelok": "RR257229253-0",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-10",
+      "nomor": "10",
+      "level": "DASAR",
+      "simpulId": "S11262097589",
+      "ruasPangkal": "RR257229253-0",
+      "ruasLurus": "RR257229253-2",
+      "ruasBelok": "RR1265002092-0",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-11",
+      "nomor": "11",
+      "level": "DASAR",
+      "simpulId": "S2628264168",
+      "ruasPangkal": "RR257229253-2",
+      "ruasLurus": "RR257229253-6",
+      "ruasBelok": "RR1303724126-0",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-12",
+      "nomor": "12",
+      "level": "DASAR",
+      "simpulId": "S2628273504",
+      "ruasPangkal": "RR257229253-6",
+      "ruasLurus": "RR257229253-14",
+      "ruasBelok": "RR257229256-12",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-13",
+      "nomor": "13",
+      "level": "DASAR",
+      "simpulId": "S2628273496",
+      "ruasPangkal": "RR257229253-14",
+      "ruasLurus": "RR1215523047-0",
+      "ruasBelok": "RR257229253-16",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-14",
+      "nomor": "14",
+      "level": "DASAR",
+      "simpulId": "S2628273503",
+      "ruasPangkal": "RR1215523047-0",
+      "ruasLurus": "RR1215523047-4",
+      "ruasBelok": "RR257229254-0",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-15",
+      "nomor": "15",
+      "level": "DASAR",
+      "simpulId": "S2628273507",
+      "ruasPangkal": "RR257229259-0",
+      "ruasLurus": "RR1356313333-0",
+      "ruasBelok": "RR257229256-0",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-16",
+      "nomor": "16",
+      "level": "DASAR",
+      "simpulId": "S2628273526",
+      "ruasPangkal": "RR257229256-7",
+      "ruasLurus": "RR257229260-4",
+      "ruasBelok": "RR257229256-0",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-17",
+      "nomor": "17",
+      "level": "DASAR",
+      "simpulId": "S2628273515",
+      "ruasPangkal": "RR257229256-10",
+      "ruasLurus": "RR257229256-7",
+      "ruasBelok": "RR257229257-3",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-18",
+      "nomor": "18",
+      "level": "DASAR",
+      "simpulId": "S2628273513",
+      "ruasPangkal": "RR257229256-11",
+      "ruasLurus": "RR761096091-0",
+      "ruasBelok": "RR257229256-10",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-19",
+      "nomor": "19",
+      "level": "DASAR",
+      "simpulId": "S8385451887",
+      "ruasPangkal": "RR257229256-12",
+      "ruasLurus": "RR257229256-11",
+      "ruasBelok": "RR1473677451-3",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-20",
+      "nomor": "20",
+      "level": "DASAR",
+      "simpulId": "S2628273516",
+      "ruasPangkal": "RR257229257-3",
+      "ruasLurus": "RR257229257-0",
+      "ruasBelok": "RR257229258-0",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-21",
+      "nomor": "21",
+      "level": "DASAR",
+      "simpulId": "S8385451869",
+      "ruasPangkal": "RR257229258-0",
+      "ruasLurus": "RR1473677454-1",
+      "ruasBelok": "RR257229258-4",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-22",
+      "nomor": "22",
+      "level": "DASAR",
+      "simpulId": "S2628273521",
+      "ruasPangkal": "RR257229258-4",
+      "ruasLurus": "RR257229258-6",
+      "ruasBelok": "RR1215523050-0",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-23",
+      "nomor": "23",
+      "level": "DASAR",
+      "simpulId": "S13520066463",
+      "ruasPangkal": "RR1473677451-1",
+      "ruasLurus": "RR1473677451-0",
+      "ruasBelok": "RR257229259-5",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-24",
+      "nomor": "24",
+      "level": "DASAR",
+      "simpulId": "S2628273540",
+      "ruasPangkal": "RR257229260-3",
+      "ruasLurus": "RR257229265-7",
+      "ruasBelok": "RR257229260-0",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-25",
+      "nomor": "25",
+      "level": "DASAR",
+      "simpulId": "S13528591958",
+      "ruasPangkal": "RR257229260-3",
+      "ruasLurus": "RR257229260-4",
+      "ruasBelok": "RR1474680199-0",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-26",
+      "nomor": "26",
+      "level": "DASAR",
+      "simpulId": "S2628273529",
+      "ruasPangkal": "RR761096091-1",
+      "ruasLurus": "RR257229261-0",
+      "ruasBelok": "RR761096091-2",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-27",
+      "nomor": "27",
+      "level": "DASAR",
+      "simpulId": "S8385451889",
+      "ruasPangkal": "RR761096091-2",
+      "ruasLurus": "RR761096091-3",
+      "ruasBelok": "RR257229262-0",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-28",
+      "nomor": "28",
+      "level": "DASAR",
+      "simpulId": "S2628273532",
+      "ruasPangkal": "RR761096091-3",
+      "ruasLurus": "RR257229264-0",
+      "ruasBelok": "RR761096091-4",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-29",
+      "nomor": "29",
+      "level": "DASAR",
+      "simpulId": "S2628273536",
+      "ruasPangkal": "RR1356313344-1",
+      "ruasLurus": "RR1356313344-0",
+      "ruasBelok": "RR257229265-0",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-30",
+      "nomor": "30",
+      "level": "DASAR",
+      "simpulId": "S10693460293",
+      "ruasPangkal": "RR257229265-6",
+      "ruasLurus": "RR1215523045-0",
+      "ruasBelok": "RR257229265-0",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-31",
+      "nomor": "31",
+      "level": "DASAR",
+      "simpulId": "S11262097551",
+      "ruasPangkal": "RR257229265-7",
+      "ruasLurus": "RR257229265-6",
+      "ruasBelok": "RR1215523046-0",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-32",
+      "nomor": "32",
+      "level": "DASAR",
+      "simpulId": "S2628273556",
+      "ruasPangkal": "RR257229271-1",
+      "ruasLurus": "RR257229271-0",
+      "ruasBelok": "RR902837105-0",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-33",
+      "nomor": "33",
+      "level": "DASAR",
+      "simpulId": "S13814081482",
+      "ruasPangkal": "RR257229271-2",
+      "ruasLurus": "RR257229271-1",
+      "ruasBelok": "RR902837106-0",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-34",
+      "nomor": "34",
+      "level": "DASAR",
+      "simpulId": "S8385468235",
+      "ruasPangkal": "RR257229271-2",
+      "ruasLurus": "RR1511417128-0",
+      "ruasBelok": "RR257229271-4",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-35",
+      "nomor": "35",
+      "level": "DASAR",
+      "simpulId": "S8385468238",
+      "ruasPangkal": "RR1242723290-3",
+      "ruasLurus": "RR1242723290-0",
+      "ruasBelok": "RR257229271-4",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-36",
+      "nomor": "36",
+      "level": "DASAR",
+      "simpulId": "S2628286345",
+      "ruasPangkal": "RR257229924-4",
+      "ruasLurus": "RR257229924-0",
+      "ruasBelok": "RR257229923-0",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-37",
+      "nomor": "37",
+      "level": "DASAR",
+      "simpulId": "S8385451853",
+      "ruasPangkal": "RR257229923-0",
+      "ruasLurus": "RR257229923-1",
+      "ruasBelok": "RR902837090-0",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-38",
+      "nomor": "38",
+      "level": "DASAR",
+      "simpulId": "S8385451856",
+      "ruasPangkal": "RR257229923-1",
+      "ruasLurus": "RR257229925-0",
+      "ruasBelok": "RR257229923-2",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-39",
+      "nomor": "39",
+      "level": "DASAR",
+      "simpulId": "S8385451865",
+      "ruasPangkal": "RR902837091-4",
+      "ruasLurus": "RR902837091-3",
+      "ruasBelok": "RR257229924-4",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-40",
+      "nomor": "40",
+      "level": "DASAR",
+      "simpulId": "S2628273461",
+      "ruasPangkal": "RR1242723294-0",
+      "ruasLurus": "RR339334986-0",
+      "ruasBelok": "RR1265510725-0",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-41",
+      "nomor": "41",
+      "level": "DASAR",
+      "simpulId": "S8385451896",
+      "ruasPangkal": "RR761096091-0",
+      "ruasLurus": "RR902837098-2",
+      "ruasBelok": "RR761096091-1",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-42",
+      "nomor": "42",
+      "level": "DASAR",
+      "simpulId": "S7464347910",
+      "ruasPangkal": "RR798082486-0",
+      "ruasLurus": "RR1242723293-0",
+      "ruasBelok": "RR798082488-0",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-43",
+      "nomor": "43",
+      "level": "DASAR",
+      "simpulId": "S2628264176",
+      "ruasPangkal": "RR1127992533-1",
+      "ruasLurus": "RR1280341071-0",
+      "ruasBelok": "RR798082488-1",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-44",
+      "nomor": "44",
+      "level": "DASAR",
+      "simpulId": "S2628273463",
+      "ruasPangkal": "RR1149566327-0",
+      "ruasLurus": "RR1280341071-0",
+      "ruasBelok": "RR828989404-0",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-45",
+      "nomor": "45",
+      "level": "DASAR",
+      "simpulId": "S7464347909",
+      "ruasPangkal": "RR1242723294-0",
+      "ruasLurus": "RR1242723293-0",
+      "ruasBelok": "RR828989404-1",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-46",
+      "nomor": "46",
+      "level": "DASAR",
+      "simpulId": "S8385468321",
+      "ruasPangkal": "RR1242723290-3",
+      "ruasLurus": "RR1242723290-4",
+      "ruasBelok": "RR902837089-1",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-47",
+      "nomor": "47",
+      "level": "DASAR",
+      "simpulId": "S8385451861",
+      "ruasPangkal": "RR902837091-3",
+      "ruasLurus": "RR902837092-0",
+      "ruasBelok": "RR902837091-0",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-48",
+      "nomor": "48",
+      "level": "DASAR",
+      "simpulId": "S8385468260",
+      "ruasPangkal": "RR1280659857-0",
+      "ruasLurus": "RR902837095-0",
+      "ruasBelok": "RR1187069945-2",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-49",
+      "nomor": "49",
+      "level": "DASAR",
+      "simpulId": "S8385451893",
+      "ruasPangkal": "RR902837098-2",
+      "ruasLurus": "RR1474680199-0",
+      "ruasBelok": "RR902837098-0",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-50",
+      "nomor": "50",
+      "level": "DASAR",
+      "simpulId": "S8385468264",
+      "ruasPangkal": "RR1280659858-0",
+      "ruasLurus": "RR1187069945-0",
+      "ruasBelok": "RR902837101-0",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-51",
+      "nomor": "51",
+      "level": "DASAR",
+      "simpulId": "S8385468256",
+      "ruasPangkal": "RR1242723286-0",
+      "ruasLurus": "RR1279978977-0",
+      "ruasBelok": "RR902837101-3",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-52",
+      "nomor": "52",
+      "level": "DASAR",
+      "simpulId": "S2628264172",
+      "ruasPangkal": "RR1127992533-0",
+      "ruasLurus": "RR1279978975-0",
+      "ruasBelok": "RR1265002085-0",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-53",
+      "nomor": "53",
+      "level": "DASAR",
+      "simpulId": "S2628264174",
+      "ruasPangkal": "RR1127992533-1",
+      "ruasLurus": "RR1127992533-0",
+      "ruasBelok": "RR1265002086-8",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-54",
+      "nomor": "54",
+      "level": "DASAR",
+      "simpulId": "S8385468259",
+      "ruasPangkal": "RR1280659857-0",
+      "ruasLurus": "RR1149566324-0",
+      "ruasBelok": "RR1280659856-0",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-55",
+      "nomor": "55",
+      "level": "DASAR",
+      "simpulId": "S8385451901",
+      "ruasPangkal": "RR1149566324-0",
+      "ruasLurus": "RR1215523049-0",
+      "ruasBelok": "RR1511440486-0",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-56",
+      "nomor": "56",
+      "level": "DASAR",
+      "simpulId": "S8385468255",
+      "ruasPangkal": "RR1242723286-0",
+      "ruasLurus": "RR1242723291-0",
+      "ruasBelok": "RR1149566325-0",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-57",
+      "nomor": "57",
+      "level": "DASAR",
+      "simpulId": "S8385468262",
+      "ruasPangkal": "RR1187069945-1",
+      "ruasLurus": "RR1187069945-2",
+      "ruasBelok": "RR1511440484-0",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-58",
+      "nomor": "58",
+      "level": "DASAR",
+      "simpulId": "S8385468315",
+      "ruasPangkal": "RR1511440488-0",
+      "ruasLurus": "RR1187069950-0",
+      "ruasBelok": "RR1265002090-0",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-59",
+      "nomor": "59",
+      "level": "DASAR",
+      "simpulId": "S8385468323",
+      "ruasPangkal": "RR1242723289-0",
+      "ruasLurus": "RR1242723292-0",
+      "ruasBelok": "RR1242723287-0",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-60",
+      "nomor": "60",
+      "level": "DASAR",
+      "simpulId": "S293384542",
+      "ruasPangkal": "RR1473677451-2",
+      "ruasLurus": "RR1303724127-0",
+      "ruasBelok": "RR1473677451-3",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    },
+    {
+      "id": "W-BD-61",
+      "nomor": "61",
+      "level": "DASAR",
+      "simpulId": "S293384543",
+      "ruasPangkal": "RR1473677451-1",
+      "ruasLurus": "RR1473677453-0",
+      "ruasBelok": "RR1473677451-2",
+      "kedudukanNormal": "LURUS",
+      "waktuBalikDetik": 7
+    }
+  ],
+  "persilangan": [
+    {
+      "id": "X-BD-1",
+      "nama": "Persilangan 1",
+      "level": "DASAR",
+      "simpulId": "S2628273443",
+      "pasangan": [
+        [
+          "RR257229244-0",
+          "RR1511440484-0"
+        ],
+        [
+          "RR1280659856-0",
+          "RR1511440485-0"
+        ]
+      ]
+    },
+    {
+      "id": "X-BD-2",
+      "nama": "Persilangan 2",
+      "level": "DASAR",
+      "simpulId": "S8385468263",
+      "pasangan": [
+        [
+          "RR257229245-0",
+          "RR902837093-3"
+        ],
+        [
+          "RR1187069945-0",
+          "RR1187069945-1"
+        ]
+      ]
+    },
+    {
+      "id": "X-BD-3",
+      "nama": "Persilangan 3",
+      "level": "DASAR",
+      "simpulId": "S2628273444",
+      "pasangan": [
+        [
+          "RR257229245-3",
+          "RR1280659855-0"
+        ],
+        [
+          "RR1473677452-0",
+          "RR1511440485-0"
+        ]
+      ]
+    },
+    {
+      "id": "X-BD-4",
+      "nama": "Persilangan 4",
+      "level": "DASAR",
+      "simpulId": "S8385468248",
+      "pasangan": [
+        [
+          "RR257229247-1",
+          "RR257229247-2"
+        ],
+        [
+          "RR902837093-1",
+          "RR902837093-2"
+        ]
+      ]
+    },
+    {
+      "id": "X-BD-5",
+      "nama": "Persilangan 5",
+      "level": "DASAR",
+      "simpulId": "S8385468247",
+      "pasangan": [
+        [
+          "RR257229247-2",
+          "RR257229247-3"
+        ],
+        [
+          "RR902837101-1",
+          "RR902837101-2"
+        ]
+      ]
+    },
+    {
+      "id": "X-BD-6",
+      "nama": "Persilangan 6",
+      "level": "DASAR",
+      "simpulId": "S293384547",
+      "pasangan": [
+        [
+          "RR257229247-3",
+          "RR257229247-4"
+        ],
+        [
+          "RR902837095-0",
+          "RR902837095-1"
+        ]
+      ]
+    },
+    {
+      "id": "X-BD-7",
+      "nama": "Persilangan 7",
+      "level": "DASAR",
+      "simpulId": "S8385468241",
+      "pasangan": [
+        [
+          "RR257229247-9",
+          "RR1187069950-0"
+        ],
+        [
+          "RR1149566325-0",
+          "RR1511440487-0"
+        ]
+      ]
+    },
+    {
+      "id": "X-BD-8",
+      "nama": "Persilangan 8",
+      "level": "DASAR",
+      "simpulId": "S11262097597",
+      "pasangan": [
+        [
+          "RR257229259-0",
+          "RR257229259-5"
+        ],
+        [
+          "RR1473677454-0",
+          "RR1473677454-1"
+        ]
+      ]
+    },
+    {
+      "id": "X-BD-9",
+      "nama": "Persilangan 9",
+      "level": "DASAR",
+      "simpulId": "S10694245358",
+      "pasangan": [
+        [
+          "RR798082488-0",
+          "RR798082488-1"
+        ],
+        [
+          "RR828989404-0",
+          "RR828989404-1"
+        ]
+      ]
+    },
+    {
+      "id": "X-BD-10",
+      "nama": "Persilangan 10",
+      "level": "DASAR",
+      "simpulId": "S8385468257",
+      "pasangan": [
+        [
+          "RR902837089-0",
+          "RR902837103-1"
+        ],
+        [
+          "RR1242723288-0",
+          "RR1279978976-0"
+        ]
+      ]
+    },
+    {
+      "id": "X-BD-11",
+      "nama": "Persilangan 11",
+      "level": "DASAR",
+      "simpulId": "S10694245351",
+      "pasangan": [
+        [
+          "RR902837089-0",
+          "RR902837089-1"
+        ],
+        [
+          "RR1149566326-0",
+          "RR1149566326-1"
+        ]
+      ]
+    },
+    {
+      "id": "X-BD-12",
+      "nama": "Persilangan 12",
+      "level": "DASAR",
+      "simpulId": "S2628273490",
+      "pasangan": [
+        [
+          "RR902837093-0",
+          "RR1242723287-0"
+        ],
+        [
+          "RR1187069946-0",
+          "RR1279978976-0"
+        ]
+      ]
+    },
+    {
+      "id": "X-BD-13",
+      "nama": "Persilangan 13",
+      "level": "DASAR",
+      "simpulId": "S10694245357",
+      "pasangan": [
+        [
+          "RR902837093-0",
+          "RR902837093-1"
+        ],
+        [
+          "RR902837103-0",
+          "RR902837103-1"
+        ]
+      ]
+    },
+    {
+      "id": "X-BD-14",
+      "nama": "Persilangan 14",
+      "level": "DASAR",
+      "simpulId": "S10694245356",
+      "pasangan": [
+        [
+          "RR902837093-2",
+          "RR902837093-3"
+        ],
+        [
+          "RR902837101-0",
+          "RR902837101-1"
+        ]
+      ]
+    },
+    {
+      "id": "X-BD-15",
+      "nama": "Persilangan 15",
+      "level": "DASAR",
+      "simpulId": "S10694245355",
+      "pasangan": [
+        [
+          "RR902837095-1",
+          "RR902837095-2"
+        ],
+        [
+          "RR902837101-2",
+          "RR902837101-3"
+        ]
+      ]
+    },
+    {
+      "id": "X-BD-16",
+      "nama": "Persilangan 16",
+      "level": "DASAR",
+      "simpulId": "S291546116",
+      "pasangan": [
+        [
+          "RR902837095-2",
+          "RR1149566326-0"
+        ],
+        [
+          "RR1242723288-0",
+          "RR1279978977-0"
+        ]
+      ]
+    },
+    {
+      "id": "X-BD-17",
+      "nama": "Persilangan 17",
+      "level": "DASAR",
+      "simpulId": "S8385451866",
+      "pasangan": [
+        [
+          "RR902837100-0",
+          "RR1213494260-0"
+        ],
+        [
+          "RR1265002086-7",
+          "RR1265002086-8"
+        ]
+      ]
+    },
+    {
+      "id": "X-BD-18",
+      "nama": "Persilangan 18",
+      "level": "DASAR",
+      "simpulId": "S293384518",
+      "pasangan": [
+        [
+          "RR902837100-0",
+          "RR902837100-1"
+        ],
+        [
+          "RR1265002085-0",
+          "RR1265002085-1"
+        ]
+      ]
+    },
+    {
+      "id": "X-BD-19",
+      "nama": "Persilangan 19",
+      "level": "DASAR",
+      "simpulId": "S8385468322",
+      "pasangan": [
+        [
+          "RR1149566326-1",
+          "RR1187069948-0"
+        ],
+        [
+          "RR1242723290-4",
+          "RR1242723292-0"
+        ]
+      ]
+    },
+    {
+      "id": "X-BD-20",
+      "nama": "Persilangan 20",
+      "level": "DASAR",
+      "simpulId": "S2628273470",
+      "pasangan": [
+        [
+          "RR1213494261-0",
+          "RR1265002083-0"
+        ],
+        [
+          "RR1265002084-0",
+          "RR1265510725-0"
+        ]
+      ]
+    },
+    {
+      "id": "X-BD-21",
+      "nama": "Persilangan 21",
+      "level": "DASAR",
+      "simpulId": "S8385468317",
+      "pasangan": [
+        [
+          "RR1242723290-0",
+          "RR1265002090-0"
+        ],
+        [
+          "RR1242723291-0",
+          "RR1265002091-0"
+        ]
+      ]
+    }
+  ],
+  "sinyal": [
+    {
+      "id": "SIG-BD-M0",
+      "nama": "A",
+      "jenis": "MASUK",
+      "level": "DASAR",
+      "simpulId": "S8385468271",
+      "ruasDilindungi": "RR561410148-0",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 36
+    },
+    {
+      "id": "SIG-BD-M1",
+      "nama": "B",
+      "jenis": "MASUK",
+      "level": "DASAR",
+      "simpulId": "S13814081478",
+      "ruasDilindungi": "RR257229250-0",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 36
+    },
+    {
+      "id": "SIG-BD-M2",
+      "nama": "C",
+      "jenis": "MASUK",
+      "level": "DASAR",
+      "simpulId": "S8385468330",
+      "ruasDilindungi": "RR1187069947-0",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 36
+    },
+    {
+      "id": "SIG-BD-M3",
+      "nama": "D",
+      "jenis": "MASUK",
+      "level": "DASAR",
+      "simpulId": "S8385468307",
+      "ruasDilindungi": "RR902837107-0",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 36
+    },
+    {
+      "id": "SIG-BD-M4",
+      "nama": "E",
+      "jenis": "MASUK",
+      "level": "DASAR",
+      "simpulId": "S293384528",
+      "ruasDilindungi": "RR257229253-16",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 36
+    },
+    {
+      "id": "SIG-BD-M5",
+      "nama": "F",
+      "jenis": "MASUK",
+      "level": "DASAR",
+      "simpulId": "S2628273534",
+      "ruasDilindungi": "RR1356313342-0",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 36
+    },
+    {
+      "id": "SIG-BD-M6",
+      "nama": "G",
+      "jenis": "MASUK",
+      "level": "DASAR",
+      "simpulId": "S12552986399",
+      "ruasDilindungi": "RR1356313343-0",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 36
+    },
+    {
+      "id": "SIG-BD-M7",
+      "nama": "H",
+      "jenis": "MASUK",
+      "level": "DASAR",
+      "simpulId": "S13370047708",
+      "ruasDilindungi": "RR902837090-0",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 36
+    },
+    {
+      "id": "SIG-BD-M8",
+      "nama": "J",
+      "jenis": "MASUK",
+      "level": "DASAR",
+      "simpulId": "S2628286358",
+      "ruasDilindungi": "RR257229925-0",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 36
+    },
+    {
+      "id": "SIG-BD-M9",
+      "nama": "K",
+      "jenis": "MASUK",
+      "level": "DASAR",
+      "simpulId": "S13370047719",
+      "ruasDilindungi": "RR257229923-2",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 36
+    },
+    {
+      "id": "SIG-BD-M10",
+      "nama": "L",
+      "jenis": "MASUK",
+      "level": "DASAR",
+      "simpulId": "S13370047718",
+      "ruasDilindungi": "RR257229924-0",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 36
+    },
+    {
+      "id": "SIG-BD-M11",
+      "nama": "M",
+      "jenis": "MASUK",
+      "level": "DASAR",
+      "simpulId": "S13370047720",
+      "ruasDilindungi": "RR902837091-0",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 36
+    },
+    {
+      "id": "SIG-BD-M12",
+      "nama": "N",
+      "jenis": "MASUK",
+      "level": "DASAR",
+      "simpulId": "S4167170924",
+      "ruasDilindungi": "RR321027467-0",
+      "hadap": -1,
+      "offsetY": -18,
+      "offsetX": -36
+    },
+    {
+      "id": "SIG-BD-M13",
+      "nama": "P",
+      "jenis": "MASUK",
+      "level": "DASAR",
+      "simpulId": "S677319387",
+      "ruasDilindungi": "RR551797191-0",
+      "hadap": -1,
+      "offsetY": -18,
+      "offsetX": -36
+    },
+    {
+      "id": "SIG-BD-J1B",
+      "nama": "J1B",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "S8385468317",
+      "ruasDilindungi": "RR1242723290-0",
+      "hadap": -1,
+      "offsetY": -18,
+      "offsetX": -22
+    },
+    {
+      "id": "SIG-BD-J1B2",
+      "nama": "J1B2",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "S8385468317",
+      "ruasDilindungi": "RR1242723291-0",
+      "hadap": -1,
+      "offsetY": -18,
+      "offsetX": -22
+    },
+    {
+      "id": "SIG-BD-J1T",
+      "nama": "J1T",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "S8385468317",
+      "ruasDilindungi": "RR1265002090-0",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 22
+    },
+    {
+      "id": "SIG-BD-J1T2",
+      "nama": "J1T2",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "S10694245344",
+      "ruasDilindungi": "RR1530383711-0",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 22
+    },
+    {
+      "id": "SIG-BD-J2T",
+      "nama": "J2T",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "S10694245339",
+      "ruasDilindungi": "RR1530383708-0",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 22
+    },
+    {
+      "id": "SIG-BD-J2B",
+      "nama": "J2B",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "S11181861170",
+      "ruasDilindungi": "RR1530383710-0",
+      "hadap": -1,
+      "offsetY": -18,
+      "offsetX": -22
+    },
+    {
+      "id": "SIG-BD-J3B",
+      "nama": "J3B",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "S11262097569",
+      "ruasDilindungi": "RR1530383712-0",
+      "hadap": -1,
+      "offsetY": -18,
+      "offsetX": -22
+    },
+    {
+      "id": "SIG-BD-J3T",
+      "nama": "J3T",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "S13947927560",
+      "ruasDilindungi": "RR1530383707-0",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 22
+    },
+    {
+      "id": "SIG-BD-J4B",
+      "nama": "J4B",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "S13947927561",
+      "ruasDilindungi": "RR1530383713-0",
+      "hadap": -1,
+      "offsetY": -18,
+      "offsetX": -22
+    },
+    {
+      "id": "SIG-BD-J4T",
+      "nama": "J4T",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "S13947927559",
+      "ruasDilindungi": "RR1530383706-0",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 22
+    },
+    {
+      "id": "SIG-BD-J5T",
+      "nama": "J5T",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "S10694245348",
+      "ruasDilindungi": "RR1530383714-0",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 22
+    },
+    {
+      "id": "SIG-BD-J5B",
+      "nama": "J5B",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "S2628273443",
+      "ruasDilindungi": "RR1280659856-0",
+      "hadap": -1,
+      "offsetY": -18,
+      "offsetX": -22
+    },
+    {
+      "id": "SIG-BD-J5B2",
+      "nama": "J5B2",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "S2628273443",
+      "ruasDilindungi": "RR1511440484-0",
+      "hadap": -1,
+      "offsetY": -18,
+      "offsetX": -22
+    },
+    {
+      "id": "SIG-BD-J5T2",
+      "nama": "J5T2",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "S2628273443",
+      "ruasDilindungi": "RR1511440485-0",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 22
+    },
+    {
+      "id": "SIG-BD-J6B",
+      "nama": "J6B",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "S13947927563",
+      "ruasDilindungi": "RR1530383715-0",
+      "hadap": -1,
+      "offsetY": -18,
+      "offsetX": -22
+    },
+    {
+      "id": "SIG-BD-J6T",
+      "nama": "J6T",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "S13947927557",
+      "ruasDilindungi": "RR1530383704-0",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 22
+    },
+    {
+      "id": "SIG-BD-J7B",
+      "nama": "J7B",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "S11262097606",
+      "ruasDilindungi": "RR257229246-0",
+      "hadap": -1,
+      "offsetY": -18,
+      "offsetX": -22
+    },
+    {
+      "id": "SIG-BD-J7T",
+      "nama": "J7T",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "S11262097617",
+      "ruasDilindungi": "RR1265002092-0",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 22
+    },
+    {
+      "id": "SIG-BD-J8T",
+      "nama": "J8T",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "S8385451883",
+      "ruasDilindungi": "RR26746949-0",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 22
+    },
+    {
+      "id": "SIG-BD-J8B",
+      "nama": "J8B",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "S8385451883",
+      "ruasDilindungi": "RR1303724127-0",
+      "hadap": -1,
+      "offsetY": -18,
+      "offsetX": -22
+    },
+    {
+      "id": "SIG-BD-J8T2",
+      "nama": "J8T2",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "S8385451874",
+      "ruasDilindungi": "RR1303724126-0",
+      "hadap": 1,
+      "offsetY": -18,
+      "offsetX": 22
+    },
+    {
+      "id": "SIG-BD-J9B",
+      "nama": "J9B",
+      "jenis": "KELUAR",
+      "level": "DASAR",
+      "simpulId": "S8385451874",
+      "ruasDilindungi": "RR902837096-0",
+      "hadap": -1,
+      "offsetY": -18,
+      "offsetX": -22
+    }
+  ],
+  "blok": [
+    {
+      "id": "BLK-R26746949-0",
+      "nama": "Jalur 9",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R32388793-0",
+      "nama": "Jalur Kereta Api Padalarang–Kasugihan",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229244-0",
+      "nama": "Jalur 5",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229245-0",
+      "nama": "RR257229245-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229245-1",
+      "nama": "RR257229245-1",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229245-2",
+      "nama": "RR257229245-2",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229245-3",
+      "nama": "RR257229245-3",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229246-0",
+      "nama": "RR257229246-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229247-0",
+      "nama": "RR257229247-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229247-1",
+      "nama": "RR257229247-1",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229247-2",
+      "nama": "RR257229247-2",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229247-3",
+      "nama": "RR257229247-3",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229247-4",
+      "nama": "RR257229247-4",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229247-9",
+      "nama": "RR257229247-9",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229250-0",
+      "nama": "PJ Andir (AND) — sebagian KA mencatat Ciroyom (CIR) sebagai tetangga langsung; tabel tata letak Wikipedia menulis \"← (Ciroyom/Cimindi)\"",
+      "level": "DASAR",
+      "wilayah": "PETAK_JALAN"
+    },
+    {
+      "id": "BLK-R257229253-0",
+      "nama": "RR257229253-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229253-2",
+      "nama": "RR257229253-2",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229253-6",
+      "nama": "RR257229253-6",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229253-14",
+      "nama": "RR257229253-14",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229253-16",
+      "nama": "PJ AKSES",
+      "level": "DASAR",
+      "wilayah": "PETAK_JALAN"
+    },
+    {
+      "id": "BLK-R257229254-0",
+      "nama": "RR257229254-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229256-0",
+      "nama": "RR257229256-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229256-7",
+      "nama": "RR257229256-7",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229256-10",
+      "nama": "RR257229256-10",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229256-11",
+      "nama": "RR257229256-11",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229256-12",
+      "nama": "RR257229256-12",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229257-0",
+      "nama": "RR257229257-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229257-3",
+      "nama": "RR257229257-3",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229258-0",
+      "nama": "RR257229258-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229258-4",
+      "nama": "RR257229258-4",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229258-6",
+      "nama": "RR257229258-6",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229259-0",
+      "nama": "RR257229259-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229259-5",
+      "nama": "RR257229259-5",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229260-0",
+      "nama": "RR257229260-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229260-3",
+      "nama": "RR257229260-3",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229260-4",
+      "nama": "RR257229260-4",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229261-0",
+      "nama": "RR257229261-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229262-0",
+      "nama": "RR257229262-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229264-0",
+      "nama": "RR257229264-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229265-0",
+      "nama": "RR257229265-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229265-6",
+      "nama": "RR257229265-6",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229265-7",
+      "nama": "RR257229265-7",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229271-0",
+      "nama": "RR257229271-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229271-1",
+      "nama": "RR257229271-1",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229271-2",
+      "nama": "RR257229271-2",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229271-4",
+      "nama": "RR257229271-4",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229923-0",
+      "nama": "RR257229923-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229923-1",
+      "nama": "RR257229923-1",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229923-2",
+      "nama": "PJ AKSES",
+      "level": "DASAR",
+      "wilayah": "PETAK_JALAN"
+    },
+    {
+      "id": "BLK-R257229924-0",
+      "nama": "PJ AKSES",
+      "level": "DASAR",
+      "wilayah": "PETAK_JALAN"
+    },
+    {
+      "id": "BLK-R257229924-4",
+      "nama": "RR257229924-4",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R257229925-0",
+      "nama": "PJ AKSES",
+      "level": "DASAR",
+      "wilayah": "PETAK_JALAN"
+    },
+    {
+      "id": "BLK-R257229927-0",
+      "nama": "Jalur 2",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R321027466-0",
+      "nama": "Jalur Kereta Api Padalarang–Kasugihan",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R321027467-0",
+      "nama": "PJ Andir (AND) — sebagian KA mencatat Ciroyom (CIR) sebagai tetangga langsung; tabel tata letak Wikipedia menulis \"← (Ciroyom/Cimindi)\"",
+      "level": "DASAR",
+      "wilayah": "PETAK_JALAN"
+    },
+    {
+      "id": "BLK-R339334986-0",
+      "nama": "Jalur Kereta Api Padalarang–Kasugihan",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R551797191-0",
+      "nama": "PJ Andir (AND) — sebagian KA mencatat Ciroyom (CIR) sebagai tetangga langsung; tabel tata letak Wikipedia menulis \"← (Ciroyom/Cimindi)\"",
+      "level": "DASAR",
+      "wilayah": "PETAK_JALAN"
+    },
+    {
+      "id": "BLK-R561410148-0",
+      "nama": "PJ Andir (AND) — sebagian KA mencatat Ciroyom (CIR) sebagai tetangga langsung; tabel tata letak Wikipedia menulis \"← (Ciroyom/Cimindi)\"",
+      "level": "DASAR",
+      "wilayah": "PETAK_JALAN"
+    },
+    {
+      "id": "BLK-R761096091-0",
+      "nama": "RR761096091-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R761096091-1",
+      "nama": "RR761096091-1",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R761096091-2",
+      "nama": "RR761096091-2",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R761096091-3",
+      "nama": "RR761096091-3",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R761096091-4",
+      "nama": "RR761096091-4",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R798082486-0",
+      "nama": "Jalur Kereta Api Padalarang–Kasugihan",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R798082488-0",
+      "nama": "RR798082488-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R798082488-1",
+      "nama": "RR798082488-1",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R828989404-0",
+      "nama": "RR828989404-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R828989404-1",
+      "nama": "RR828989404-1",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R902837089-0",
+      "nama": "RR902837089-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R902837089-1",
+      "nama": "RR902837089-1",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R902837090-0",
+      "nama": "PJ AKSES",
+      "level": "DASAR",
+      "wilayah": "PETAK_JALAN"
+    },
+    {
+      "id": "BLK-R902837091-0",
+      "nama": "PJ AKSES",
+      "level": "DASAR",
+      "wilayah": "PETAK_JALAN"
+    },
+    {
+      "id": "BLK-R902837091-3",
+      "nama": "RR902837091-3",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R902837091-4",
+      "nama": "RR902837091-4",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R902837092-0",
+      "nama": "RR902837092-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R902837093-0",
+      "nama": "Jalur Kereta Api Bandung–Ciroyom–Andir",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R902837093-1",
+      "nama": "Jalur Kereta Api Bandung–Ciroyom–Andir",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R902837093-2",
+      "nama": "Jalur Kereta Api Bandung–Ciroyom–Andir",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R902837093-3",
+      "nama": "Jalur Kereta Api Bandung–Ciroyom–Andir",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R902837095-0",
+      "nama": "RR902837095-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R902837095-1",
+      "nama": "RR902837095-1",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R902837095-2",
+      "nama": "RR902837095-2",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R902837096-0",
+      "nama": "Jalur 8",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R902837098-0",
+      "nama": "RR902837098-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R902837098-2",
+      "nama": "RR902837098-2",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R902837100-0",
+      "nama": "RR902837100-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R902837100-1",
+      "nama": "RR902837100-1",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R902837101-0",
+      "nama": "RR902837101-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R902837101-1",
+      "nama": "RR902837101-1",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R902837101-2",
+      "nama": "RR902837101-2",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R902837101-3",
+      "nama": "RR902837101-3",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R902837103-0",
+      "nama": "RR902837103-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R902837103-1",
+      "nama": "RR902837103-1",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R902837104-0",
+      "nama": "RR902837104-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R902837105-0",
+      "nama": "RR902837105-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R902837106-0",
+      "nama": "RR902837106-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R902837107-0",
+      "nama": "PJ Andir (AND) — sebagian KA mencatat Ciroyom (CIR) sebagai tetangga langsung; tabel tata letak Wikipedia menulis \"← (Ciroyom/Cimindi)\"",
+      "level": "DASAR",
+      "wilayah": "PETAK_JALAN"
+    },
+    {
+      "id": "BLK-R902837108-0",
+      "nama": "Jalur 1",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1127992533-0",
+      "nama": "Jalur Kereta Api Padalarang–Kasugihan",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1127992533-1",
+      "nama": "Jalur Kereta Api Padalarang–Kasugihan",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1149566324-0",
+      "nama": "Jalur Kereta Api Padalarang–Kasugihan",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1149566325-0",
+      "nama": "Jalur Kereta Api Padalarang–Kasugihan",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1149566326-0",
+      "nama": "Jalur Kereta Api Bandung–Ciroyom–Andir",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1149566326-1",
+      "nama": "Jalur Kereta Api Bandung–Ciroyom–Andir",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1149566327-0",
+      "nama": "Jalur Kereta Api Padalarang–Kasugihan",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1187069945-0",
+      "nama": "Jalur Kereta Api Padalarang–Kasugihan",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1187069945-1",
+      "nama": "Jalur Kereta Api Padalarang–Kasugihan",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1187069945-2",
+      "nama": "Jalur Kereta Api Padalarang–Kasugihan",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1187069946-0",
+      "nama": "Jalur Kereta Api Padalarang–Kasugihan",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1187069947-0",
+      "nama": "PJ Andir (AND) — sebagian KA mencatat Ciroyom (CIR) sebagai tetangga langsung; tabel tata letak Wikipedia menulis \"← (Ciroyom/Cimindi)\"",
+      "level": "DASAR",
+      "wilayah": "PETAK_JALAN"
+    },
+    {
+      "id": "BLK-R1187069948-0",
+      "nama": "Jalur Kereta Api Bandung–Ciroyom–Andir",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1187069950-0",
+      "nama": "RR1187069950-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1213494260-0",
+      "nama": "RR1213494260-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1213494261-0",
+      "nama": "RR1213494261-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1215523045-0",
+      "nama": "RR1215523045-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1215523046-0",
+      "nama": "RR1215523046-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1215523047-0",
+      "nama": "RR1215523047-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1215523047-4",
+      "nama": "RR1215523047-4",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1215523049-0",
+      "nama": "RR1215523049-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1215523050-0",
+      "nama": "RR1215523050-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1216394412-0",
+      "nama": "Jalur Kereta Api Padalarang–Kasugihan",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1216394413-0",
+      "nama": "Jalur Kereta Api Padalarang–Kasugihan",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1242723286-0",
+      "nama": "Jalur Kereta Api Padalarang–Kasugihan",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1242723287-0",
+      "nama": "Jalur Kereta Api Bandung–Ciroyom–Andir",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1242723288-0",
+      "nama": "Jalur Kereta Api Padalarang–Kasugihan",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1242723289-0",
+      "nama": "Jalur Kereta Api Bandung–Ciroyom–Andir",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1242723290-0",
+      "nama": "RR1242723290-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1242723290-3",
+      "nama": "RR1242723290-3",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1242723290-4",
+      "nama": "RR1242723290-4",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1242723291-0",
+      "nama": "RR1242723291-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1242723292-0",
+      "nama": "RR1242723292-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1242723293-0",
+      "nama": "Jalur Kereta Api Padalarang–Kasugihan",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1242723294-0",
+      "nama": "Jalur Kereta Api Padalarang–Kasugihan",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1264176094-0",
+      "nama": "Jalur 4",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1265002083-0",
+      "nama": "RR1265002083-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1265002084-0",
+      "nama": "RR1265002084-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1265002085-0",
+      "nama": "RR1265002085-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1265002085-1",
+      "nama": "RR1265002085-1",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1265002086-0",
+      "nama": "RR1265002086-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1265002086-7",
+      "nama": "RR1265002086-7",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1265002086-8",
+      "nama": "RR1265002086-8",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1265002087-0",
+      "nama": "Jalur 6",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1265002088-0",
+      "nama": "Jalur 5",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1265002089-0",
+      "nama": "Jalur 3",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1265002090-0",
+      "nama": "RR1265002090-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1265002091-0",
+      "nama": "Jalur 1",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1265002092-0",
+      "nama": "RR1265002092-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1265002093-0",
+      "nama": "Jalur 7",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1265510725-0",
+      "nama": "RR1265510725-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1279978975-0",
+      "nama": "Jalur Kereta Api Padalarang–Kasugihan",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1279978976-0",
+      "nama": "Jalur Kereta Api Padalarang–Kasugihan",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1279978977-0",
+      "nama": "Jalur Kereta Api Padalarang–Kasugihan",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1280341071-0",
+      "nama": "Jalur Kereta Api Padalarang–Kasugihan",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1280659855-0",
+      "nama": "Jalur 6",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1280659856-0",
+      "nama": "RR1280659856-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1280659857-0",
+      "nama": "Jalur Kereta Api Padalarang–Kasugihan",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1280659858-0",
+      "nama": "Jalur Kereta Api Padalarang–Kasugihan",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1303724126-0",
+      "nama": "RR1303724126-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1303724127-0",
+      "nama": "RR1303724127-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1356313331-0",
+      "nama": "RR1356313331-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1356313332-0",
+      "nama": "RR1356313332-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1356313333-0",
+      "nama": "RR1356313333-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1356313334-0",
+      "nama": "RR1356313334-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1356313335-0",
+      "nama": "RR1356313335-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1356313336-0",
+      "nama": "RR1356313336-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1356313337-0",
+      "nama": "RR1356313337-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1356313338-0",
+      "nama": "RR1356313338-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1356313339-0",
+      "nama": "RR1356313339-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1356313340-0",
+      "nama": "RR1356313340-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1356313341-0",
+      "nama": "RR1356313341-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1356313342-0",
+      "nama": "PJ AKSES",
+      "level": "DASAR",
+      "wilayah": "PETAK_JALAN"
+    },
+    {
+      "id": "BLK-R1356313343-0",
+      "nama": "PJ AKSES",
+      "level": "DASAR",
+      "wilayah": "PETAK_JALAN"
+    },
+    {
+      "id": "BLK-R1356313344-0",
+      "nama": "RR1356313344-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1356313344-1",
+      "nama": "RR1356313344-1",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1356313346-0",
+      "nama": "RR1356313346-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1473677451-0",
+      "nama": "RR1473677451-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1473677451-1",
+      "nama": "RR1473677451-1",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1473677451-2",
+      "nama": "RR1473677451-2",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1473677451-3",
+      "nama": "RR1473677451-3",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1473677452-0",
+      "nama": "RR1473677452-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1473677453-0",
+      "nama": "RR1473677453-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1473677454-0",
+      "nama": "RR1473677454-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1473677454-1",
+      "nama": "RR1473677454-1",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1474680199-0",
+      "nama": "RR1474680199-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1511417120-0",
+      "nama": "RR1511417120-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1511417128-0",
+      "nama": "RR1511417128-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1511440484-0",
+      "nama": "RR1511440484-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1511440485-0",
+      "nama": "RR1511440485-0",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1511440486-0",
+      "nama": "Jalur 4",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1511440487-0",
+      "nama": "Jalur 3",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1511440488-0",
+      "nama": "Jalur 2",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1530383704-0",
+      "nama": "Jalur 6",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1530383705-0",
+      "nama": "Jalur 5",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1530383706-0",
+      "nama": "Jalur 4",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1530383707-0",
+      "nama": "Jalur 3",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1530383708-0",
+      "nama": "Jalur 2",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1530383709-0",
+      "nama": "Jalur 1",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1530383710-0",
+      "nama": "Jalur 2",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1530383711-0",
+      "nama": "Jalur 1",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1530383712-0",
+      "nama": "Jalur 3",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1530383713-0",
+      "nama": "Jalur 4",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1530383714-0",
+      "nama": "Jalur 5",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    },
+    {
+      "id": "BLK-R1530383715-0",
+      "nama": "Jalur 6",
+      "level": "DASAR",
+      "wilayah": "EMPLASEMEN"
+    }
+  ],
+  "sepur": [
+    {
+      "id": "SP-BD-1",
+      "nomor": "1",
+      "label": "Jalur 1",
+      "level": "DASAR",
+      "jenis": "BELOK",
+      "peronId": "PER-BD-1",
+      "panjangPeronM": 0,
+      "linDilayani": [],
+      "ruasId": "RR1265002091-0",
+      "keterangan": "Komuter Bandung \"Garut Cibatuan\" tujuan Purwakarta, Padalarang, Cibatu, dan Garut; Komuter Bandung \"Lokal Bandung Raya\" tujuan Purwakarta, Padalarang, dan Cicalengka. Arah: ← (Ciroyom/Cimindi) ... (Cikudapateuh) →"
+    },
+    {
+      "id": "SP-BD-2",
+      "nomor": "2",
+      "label": "Jalur 2",
+      "level": "DASAR",
+      "jenis": "BELOK",
+      "peronId": "PER-BD-2",
+      "panjangPeronM": 0,
+      "linDilayani": [],
+      "ruasId": "RR257229927-0",
+      "keterangan": "KAI — Pemberhentian kereta api antarkota"
+    },
+    {
+      "id": "SP-BD-3",
+      "nomor": "3",
+      "label": "Jalur 3",
+      "level": "DASAR",
+      "jenis": "RAYA",
+      "peronId": "PER-BD-2",
+      "panjangPeronM": 0,
+      "linDilayani": [],
+      "ruasId": "RR1265002089-0",
+      "keterangan": "Sepur lurus; KAI — Pemberhentian kereta api antarkota; Komuter Bandung \"Garut Cibatuan\" tujuan Purwakarta dan Padalarang; Komuter Bandung \"Lokal Bandung Raya\" tujuan Purwakarta dan Padalarang. Arah: ← (Ciroyom/Cimindi) ... (Cikudapateuh) →"
+    },
+    {
+      "id": "SP-BD-4",
+      "nomor": "4",
+      "label": "Jalur 4",
+      "level": "DASAR",
+      "jenis": "RAYA",
+      "peronId": "PER-BD-3",
+      "panjangPeronM": 0,
+      "linDilayani": [],
+      "ruasId": "RR1264176094-0",
+      "keterangan": "Sepur lurus; KAI — Pemberhentian kereta api antarkota"
+    },
+    {
+      "id": "SP-BD-5",
+      "nomor": "5",
+      "label": "Jalur 5",
+      "level": "DASAR",
+      "jenis": "BELOK",
+      "peronId": "PER-BD-3",
+      "panjangPeronM": 0,
+      "linDilayani": [],
+      "ruasId": "RR257229244-0",
+      "keterangan": "KAI — Pemberhentian kereta api antarkota"
+    },
+    {
+      "id": "SP-BD-6",
+      "nomor": "6",
+      "label": "Jalur 6",
+      "level": "DASAR",
+      "jenis": "BELOK",
+      "peronId": "PER-BD-4",
+      "panjangPeronM": 0,
+      "linDilayani": [],
+      "ruasId": "RR1265002087-0",
+      "keterangan": "KAI — Pemberhentian kereta api antarkota; KCIC Pengumpan Kereta Cepat dari dan tujuan Padalarang (↔ Cimahi)"
+    },
+    {
+      "id": "SP-BD-7",
+      "nomor": "7",
+      "label": "Jalur 7",
+      "level": "DASAR",
+      "jenis": "BELOK",
+      "peronId": "PER-BD-5",
+      "panjangPeronM": 0,
+      "linDilayani": [],
+      "ruasId": "RR1265002093-0",
+      "keterangan": "KCIC Pengumpan Kereta Cepat dari dan tujuan Padalarang (↔ Cimahi)"
+    },
+    {
+      "id": "SP-BD-8",
+      "nomor": "8",
+      "label": "Jalur 8",
+      "level": "DASAR",
+      "jenis": "BELOK",
+      "peronId": "PER-BD-6",
+      "panjangPeronM": 0,
+      "linDilayani": [],
+      "ruasId": "RR902837096-0",
+      "keterangan": "Jalur langsir sekaligus sepur simpan"
+    },
+    {
+      "id": "SP-BD-9",
+      "nomor": "9",
+      "label": "Jalur 9",
+      "level": "DASAR",
+      "jenis": "BELOK",
+      "peronId": null,
+      "panjangPeronM": 0,
+      "linDilayani": [],
+      "ruasId": "RR26746949-0",
+      "keterangan": "Jalur langsir sekaligus sepur simpan"
+    }
+  ],
+  "peron": [
+    {
+      "id": "PER-BD-1",
+      "nomor": "1",
+      "nama": "Peron jalur 1",
+      "level": "DASAR",
+      "jenis": "SISI",
+      "sepurIds": [
+        "SP-BD-1"
+      ],
+      "geometri": {
+        "x": 824,
+        "y": 864,
+        "lebar": 137,
+        "tinggi": 60
+      }
+    },
+    {
+      "id": "PER-BD-2",
+      "nomor": "2;3",
+      "nama": "Peron jalur 2-3",
+      "level": "DASAR",
+      "jenis": "PULAU",
+      "sepurIds": [
+        "SP-BD-2",
+        "SP-BD-3"
+      ],
+      "geometri": {
+        "x": 777,
+        "y": 770,
+        "lebar": 200,
+        "tinggi": 70
+      }
+    },
+    {
+      "id": "PER-BD-3",
+      "nomor": "4;5",
+      "nama": "Peron jalur 4-5",
+      "level": "DASAR",
+      "jenis": "PULAU",
+      "sepurIds": [
+        "SP-BD-4",
+        "SP-BD-5"
+      ],
+      "geometri": {
+        "x": 753,
+        "y": 603,
+        "lebar": 223,
+        "tinggi": 114
+      }
+    },
+    {
+      "id": "PER-BD-4",
+      "nomor": "6",
+      "nama": "Peron jalur 6",
+      "level": "DASAR",
+      "jenis": "SISI",
+      "sepurIds": [
+        "SP-BD-6"
+      ],
+      "geometri": {
+        "x": 784,
+        "y": 584,
+        "lebar": 192,
+        "tinggi": 26
+      }
+    },
+    {
+      "id": "PER-BD-5",
+      "nomor": "7",
+      "nama": "Peron jalur 7",
+      "level": "DASAR",
+      "jenis": "SISI",
+      "sepurIds": [
+        "SP-BD-7"
+      ],
+      "geometri": {
+        "x": 808,
+        "y": 583,
+        "lebar": 76,
+        "tinggi": 19
+      }
+    },
+    {
+      "id": "PER-BD-6",
+      "nomor": "8",
+      "nama": "Peron jalur 8",
+      "level": "DASAR",
+      "jenis": "SISI",
+      "sepurIds": [
+        "SP-BD-8"
+      ],
+      "geometri": {
+        "x": 814,
+        "y": 563,
+        "lebar": 77,
+        "tinggi": 19
+      }
+    }
+  ],
+  "batas": [
+    {
+      "id": "BTS-BD-PDL-B-D",
+      "nama": "arah barat / arah Padalarang (lintas Bogor–Padalarang–Kasugihan) (masuk)",
+      "singkatan": "PDL",
+      "level": "DASAR",
+      "simpulId": "S8385468271",
+      "sisi": "KIRI",
+      "stasiunTetangga": "Andir (AND) — sebagian KA mencatat Ciroyom (CIR) sebagai tetangga langsung; tabel tata letak Wikipedia menulis \"← (Ciroyom/Cimindi)\"",
+      "linDilayani": [],
+      "headwayMinimumDetik": 180,
+      "jalurTunggal": false
+    },
+    {
+      "id": "BTS-BD-PDL-B-K",
+      "nama": "arah barat / arah Padalarang (lintas Bogor–Padalarang–Kasugihan) (keluar)",
+      "singkatan": "PDL",
+      "level": "DASAR",
+      "simpulId": "S13814081478",
+      "sisi": "KIRI",
+      "stasiunTetangga": "Andir (AND) — sebagian KA mencatat Ciroyom (CIR) sebagai tetangga langsung; tabel tata letak Wikipedia menulis \"← (Ciroyom/Cimindi)\"",
+      "linDilayani": [],
+      "headwayMinimumDetik": 180,
+      "jalurTunggal": false
+    },
+    {
+      "id": "BTS-BD-PDL-B-3",
+      "nama": "arah barat / arah Padalarang (lintas Bogor–Padalarang–Kasugihan) (sepur 3)",
+      "singkatan": "PDL",
+      "level": "DASAR",
+      "simpulId": "S8385468330",
+      "sisi": "KIRI",
+      "stasiunTetangga": "Andir (AND) — sebagian KA mencatat Ciroyom (CIR) sebagai tetangga langsung; tabel tata letak Wikipedia menulis \"← (Ciroyom/Cimindi)\"",
+      "linDilayani": [],
+      "headwayMinimumDetik": 180,
+      "jalurTunggal": false
+    },
+    {
+      "id": "BTS-BD-PDL-B-4",
+      "nama": "arah barat / arah Padalarang (lintas Bogor–Padalarang–Kasugihan) (sepur 4)",
+      "singkatan": "PDL",
+      "level": "DASAR",
+      "simpulId": "S8385468307",
+      "sisi": "KIRI",
+      "stasiunTetangga": "Andir (AND) — sebagian KA mencatat Ciroyom (CIR) sebagai tetangga langsung; tabel tata letak Wikipedia menulis \"← (Ciroyom/Cimindi)\"",
+      "linDilayani": [],
+      "headwayMinimumDetik": 180,
+      "jalurTunggal": false
+    },
+    {
+      "id": "BTS-BD-AKSES-B-1",
+      "nama": "Jalur akses barat 1",
+      "singkatan": "AKSES",
+      "level": "DASAR",
+      "simpulId": "S293384528",
+      "sisi": "KIRI",
+      "stasiunTetangga": "Emplasemen luar",
+      "linDilayani": [],
+      "headwayMinimumDetik": 180,
+      "jalurTunggal": false
+    },
+    {
+      "id": "BTS-BD-AKSES-B-2",
+      "nama": "Jalur akses barat 2",
+      "singkatan": "AKSES",
+      "level": "DASAR",
+      "simpulId": "S2628273534",
+      "sisi": "KIRI",
+      "stasiunTetangga": "Emplasemen luar",
+      "linDilayani": [],
+      "headwayMinimumDetik": 180,
+      "jalurTunggal": false
+    },
+    {
+      "id": "BTS-BD-AKSES-B-3",
+      "nama": "Jalur akses barat 3",
+      "singkatan": "AKSES",
+      "level": "DASAR",
+      "simpulId": "S12552986399",
+      "sisi": "KIRI",
+      "stasiunTetangga": "Emplasemen luar",
+      "linDilayani": [],
+      "headwayMinimumDetik": 180,
+      "jalurTunggal": false
+    },
+    {
+      "id": "BTS-BD-AKSES-B-4",
+      "nama": "Jalur akses barat 4",
+      "singkatan": "AKSES",
+      "level": "DASAR",
+      "simpulId": "S13370047708",
+      "sisi": "KIRI",
+      "stasiunTetangga": "Emplasemen luar",
+      "linDilayani": [],
+      "headwayMinimumDetik": 180,
+      "jalurTunggal": false
+    },
+    {
+      "id": "BTS-BD-AKSES-B-5",
+      "nama": "Jalur akses barat 5",
+      "singkatan": "AKSES",
+      "level": "DASAR",
+      "simpulId": "S2628286358",
+      "sisi": "KIRI",
+      "stasiunTetangga": "Emplasemen luar",
+      "linDilayani": [],
+      "headwayMinimumDetik": 180,
+      "jalurTunggal": false
+    },
+    {
+      "id": "BTS-BD-AKSES-B-6",
+      "nama": "Jalur akses barat 6",
+      "singkatan": "AKSES",
+      "level": "DASAR",
+      "simpulId": "S13370047719",
+      "sisi": "KIRI",
+      "stasiunTetangga": "Emplasemen luar",
+      "linDilayani": [],
+      "headwayMinimumDetik": 180,
+      "jalurTunggal": false
+    },
+    {
+      "id": "BTS-BD-AKSES-B-7",
+      "nama": "Jalur akses barat 7",
+      "singkatan": "AKSES",
+      "level": "DASAR",
+      "simpulId": "S13370047718",
+      "sisi": "KIRI",
+      "stasiunTetangga": "Emplasemen luar",
+      "linDilayani": [],
+      "headwayMinimumDetik": 180,
+      "jalurTunggal": false
+    },
+    {
+      "id": "BTS-BD-AKSES-B-8",
+      "nama": "Jalur akses barat 8",
+      "singkatan": "AKSES",
+      "level": "DASAR",
+      "simpulId": "S13370047720",
+      "sisi": "KIRI",
+      "stasiunTetangga": "Emplasemen luar",
+      "linDilayani": [],
+      "headwayMinimumDetik": 180,
+      "jalurTunggal": false
+    },
+    {
+      "id": "BTS-BD-PDL-T-D",
+      "nama": "arah barat / arah Padalarang (lintas Bogor–Padalarang–Kasugihan) (masuk)",
+      "singkatan": "PDL",
+      "level": "DASAR",
+      "simpulId": "S4167170924",
+      "sisi": "KANAN",
+      "stasiunTetangga": "Andir (AND) — sebagian KA mencatat Ciroyom (CIR) sebagai tetangga langsung; tabel tata letak Wikipedia menulis \"← (Ciroyom/Cimindi)\"",
+      "linDilayani": [],
+      "headwayMinimumDetik": 180,
+      "jalurTunggal": false
+    },
+    {
+      "id": "BTS-BD-PDL-T-K",
+      "nama": "arah barat / arah Padalarang (lintas Bogor–Padalarang–Kasugihan) (keluar)",
+      "singkatan": "PDL",
+      "level": "DASAR",
+      "simpulId": "S677319387",
+      "sisi": "KANAN",
+      "stasiunTetangga": "Andir (AND) — sebagian KA mencatat Ciroyom (CIR) sebagai tetangga langsung; tabel tata letak Wikipedia menulis \"← (Ciroyom/Cimindi)\"",
+      "linDilayani": [],
+      "headwayMinimumDetik": 180,
+      "jalurTunggal": false
+    }
+  ]
+}
