@@ -397,57 +397,149 @@ function PenandaKereta({
     return null;
   }
 
+  const tertahan = kereta.fase === 'TERTAHAN_SINYAL';
+  const warnaTanda = terpilih ? '#ffb302' : tertahan ? '#ff2a1c' : warna;
+
   return (
     <g
       transform={`translate(${x} ${y}) rotate(${sudut})`}
       className="cursor-pointer"
       onClick={() => onPilih(terpilih ? null : kereta.id)}
+      opacity={kereta.fase === 'DIWARTAKAN' ? 0.62 : 1}
     >
-      <rect
-        x={-panjang / 2}
-        y={-7}
-        width={panjang}
-        height={14}
-        fill={warna}
-        stroke={terpilih ? '#ffb302' : '#04070a'}
-        strokeWidth={terpilih ? 2 : 1}
-        opacity={menunggu ? 0.75 : 1}
+      <SimbolRangkaian
+        panjang={panjang}
+        warna={warna}
+        jenisSarana={kereta.jenisSarana}
+        terpilih={terpilih}
       />
-      {/* Garis pemisah kereta pada rangkaian */}
-      {[-panjang / 6, panjang / 6].map((dx) => (
-        <line key={dx} x1={dx} y1={-7} x2={dx} y2={7} stroke="#04070a" strokeWidth="1" opacity="0.5" />
-      ))}
+
+      {/* Penanda berhenti di muka sinyal: palang merah di muka rangkaian. */}
+      {tertahan && (
+        <line
+          x1={panjang / 2 + 4}
+          y1={-9}
+          x2={panjang / 2 + 4}
+          y2={9}
+          stroke="#ff2a1c"
+          strokeWidth="2.5"
+        />
+      )}
+
+      {/* Label nomor KA tetap mendatar walau rangkaian berjalan di sepur miring. */}
       <g transform={`rotate(${-sudut})`}>
-        <text
-          x="0"
-          y={-13}
-          textAnchor="middle"
-          className="font-mono"
-          fontSize="10.5"
-          fontWeight="600"
-          fill={terpilih ? '#ffb302' : '#d6e6ee'}
-          stroke="#04070a"
-          strokeWidth="2.6"
-          paintOrder="stroke"
-        >
-          {kereta.nomorKA}
-        </text>
-        {kereta.fase === 'TERTAHAN_SINYAL' && (
-          <text
-            x="0"
-            y={22}
-            textAnchor="middle"
-            className="font-mono"
-            fontSize="8.5"
-            fill="#ff2a1c"
-            stroke="#04070a"
-            strokeWidth="2.4"
-            paintOrder="stroke"
-          >
-            TERTAHAN S.7
-          </text>
-        )}
+        <line x1="0" y1={-8} x2="0" y2={-14} stroke={warnaTanda} strokeWidth="1" />
+        <TandaNomor nomor={kereta.nomorKA} warna={warnaTanda} />
       </g>
     </g>
   );
+}
+
+/**
+ * Simbol rangkaian.
+ *
+ * Digambar sebagai badan bersambung dengan hidung bersudut di muka, sehingga
+ * arah jalan terbaca tanpa perlu tanda panah tambahan. Sekat antar-kereta
+ * dibuat sebagai celah selebar latar papan, bukan garis di atas badan, supaya
+ * tetap terbaca sebagai satu rangkaian pada ukuran kecil. Rangkaian yang
+ * ditarik lokomotif memakai balok muka yang lebih tinggi dan lebih gelap.
+ */
+function SimbolRangkaian({
+  panjang,
+  warna,
+  jenisSarana,
+  terpilih,
+}: {
+  panjang: number;
+  warna: string;
+  jenisSarana: KeretaAktif['jenisSarana'];
+  terpilih: boolean;
+}) {
+  const t = 13; // tinggi badan
+  const h = t / 2;
+  const muka = panjang / 2;
+  const buntut = -panjang / 2;
+  const berlokomotif = jenisSarana === 'KA_ANTARKOTA' || jenisSarana === 'LOKOMOTIF';
+  const panjangLok = berlokomotif ? 15 : 0;
+  const pangkalKereta = muka - panjangLok;
+
+  // Badan kereta: hidung bersudut di muka, buntut sedikit dipangkas.
+  const badan = berlokomotif
+    ? `M ${buntut + 2} ${-h} L ${pangkalKereta} ${-h} L ${pangkalKereta} ${h} L ${buntut + 2} ${h} L ${buntut} ${h - 2} L ${buntut} ${-h + 2} Z`
+    : `M ${buntut + 2} ${-h} L ${muka - 6} ${-h} L ${muka} ${-h + 3} L ${muka} ${h - 3} L ${muka - 6} ${h} L ${buntut + 2} ${h} L ${buntut} ${h - 2} L ${buntut} ${-h + 2} Z`;
+
+  const jumlahSekat = jenisSarana === 'KRL_8' ? 2 : 3;
+  const awal = buntut + 2;
+  const akhir = pangkalKereta - (berlokomotif ? 0 : 6);
+  const sekat = Array.from(
+    { length: jumlahSekat },
+    (_, i) => awal + ((akhir - awal) * (i + 1)) / (jumlahSekat + 1),
+  );
+
+  return (
+    <g>
+      <path
+        d={badan}
+        fill={warna}
+        stroke={terpilih ? '#ffb302' : '#04070a'}
+        strokeWidth={terpilih ? 2 : 1}
+        strokeLinejoin="miter"
+      />
+      {/* Sekat antar-kereta */}
+      {sekat.map((dx) => (
+        <line key={dx} x1={dx} y1={-h} x2={dx} y2={h} stroke="#04070a" strokeWidth="1.4" />
+      ))}
+      {berlokomotif && (
+        <>
+          <path
+            d={`M ${pangkalKereta} ${-h - 1.5} L ${muka - 5} ${-h - 1.5} L ${muka} ${-h + 3} L ${muka} ${h - 3} L ${muka - 5} ${h + 1.5} L ${pangkalKereta} ${h + 1.5} Z`}
+            fill={gelapkan(warna, 0.55)}
+            stroke={terpilih ? '#ffb302' : '#04070a'}
+            strokeWidth={terpilih ? 2 : 1}
+            strokeLinejoin="miter"
+          />
+          {/* Garis kap lokomotif */}
+          <line
+            x1={pangkalKereta + 4}
+            y1={0}
+            x2={muka - 4}
+            y2={0}
+            stroke={warna}
+            strokeWidth="1.6"
+          />
+        </>
+      )}
+    </g>
+  );
+}
+
+/** Kotak nomor KA bergaya label papan, bukan teks mengambang. */
+function TandaNomor({ nomor, warna }: { nomor: string; warna: string }) {
+  const lebar = Math.max(26, nomor.length * 6.4 + 8);
+  return (
+    <g transform={`translate(${-lebar / 2} -27)`}>
+      <rect width={lebar} height={13} fill="#04070a" stroke={warna} strokeWidth="1" />
+      <text
+        x={lebar / 2}
+        y={9.6}
+        textAnchor="middle"
+        className="font-mono"
+        fontSize="9.5"
+        fontWeight="600"
+        letterSpacing="0.3"
+        fill={warna}
+      >
+        {nomor}
+      </text>
+    </g>
+  );
+}
+
+/** Gelapkan warna heks untuk badan lokomotif. */
+function gelapkan(heks: string, faktor: number): string {
+  const n = Number.parseInt(heks.slice(1), 16);
+  const r = Math.round(((n >> 16) & 255) * faktor);
+  const g = Math.round(((n >> 8) & 255) * faktor);
+  const b = Math.round((n & 255) * faktor);
+  return `#${((r << 16) | (g << 8) | b).toString(16).padStart(6, '0')}`;
 }
