@@ -47,6 +47,28 @@ const emplasemen = JSON.parse(
 const jadwal = JSON.parse(readFileSync(resolve(AKAR, 'data/jadwal-manggarai.json'), 'utf8'));
 const ix = indeksEmplasemen(emplasemen);
 
+const SEHARI = 86400;
+
+/**
+ * Perjalanan yang termuat pada sebuah sesi dinas.
+ * Memakai skala detik dinas supaya dinas malam yang melewati tengah malam
+ * ikut tertangani, persis seperti yang dilakukan aplikasi.
+ */
+function perjalananDinas(dinasId) {
+  const dinas = jadwal.dinas.find((d) => d.id === dinasId);
+  const mulai = keDetik(dinas.mulai);
+  const b = keDetik(dinas.selesai);
+  const selesai = b <= mulai ? b + SEHARI : b;
+  const skala = (jam) => {
+    const d = keDetik(jam);
+    return d < mulai ? d + SEHARI : d;
+  };
+  const daftar = jadwal.perjalanan
+    .filter((t) => skala(t.jamDatang) >= mulai && skala(t.jamDatang) <= selesai)
+    .sort((x, y) => skala(x.jamDatang) - skala(y.jamDatang));
+  return { dinas, daftar, mulai, selesai };
+}
+
 let lulus = 0;
 let gagal = 0;
 const kegagalan = [];
@@ -171,13 +193,7 @@ console.log('\n== 3. Rute yang HARUS ditolak ==');
 
 console.log('\n== 4. Penguncian rute dan penolakan konflik ==');
 {
-  const dinas = jadwal.dinas.find((d) => d.id === 'DNS-PAGI-PENUH');
-  const daftar = jadwal.perjalanan
-    .filter((t) => {
-      const d = keDetik(t.jamDatang);
-      return d >= keDetik(dinas.mulai) && d <= keDetik(dinas.selesai);
-    })
-    .sort((a, b) => keDetik(a.jamDatang) - keDetik(b.jamDatang));
+  const { dinas, daftar } = perjalananDinas('DNS-PAGI');
 
   const K = buatKeadaanAwal(ix, dinas, daftar, 12345);
   const bogorUtara = K.kereta.filter((k) => k.batasMasukId === 'BTS-TBT-D');
@@ -251,13 +267,7 @@ console.log('\n== 4. Penguncian rute dan penolakan konflik ==');
 
 console.log('\n== 5. Satu sesi dinas penuh dilayani pelayanan otomatis ==');
 {
-  const dinas = jadwal.dinas.find((d) => d.id === 'DNS-PAGI-PENUH');
-  const daftar = jadwal.perjalanan
-    .filter((t) => {
-      const d = keDetik(t.jamDatang);
-      return d >= keDetik(dinas.mulai) && d <= keDetik(dinas.selesai);
-    })
-    .sort((a, b) => keDetik(a.jamDatang) - keDetik(b.jamDatang));
+  const { dinas, daftar } = perjalananDinas('DNS-PAGI');
 
   const K = buatKeadaanAwal(ix, dinas, daftar, 987654);
   K.modeOtomatis = 'PENUH';
@@ -266,7 +276,7 @@ console.log('\n== 5. Satu sesi dinas penuh dilayani pelayanan otomatis ==');
   // Dinas dijalankan memakai modul pelayanan otomatis yang sama seperti yang
   // dipakai antarmuka — bukan salinan logikanya.
   let detik = 0;
-  const BATAS = 6 * 3600;
+  const BATAS = 14 * 3600;
   while (!K.dinasSelesai && detik < BATAS) {
     jalankanOtomatis(K, ix);
     majuSatuDetik(K, ix);
@@ -348,8 +358,7 @@ console.log('\n== 5. Satu sesi dinas penuh dilayani pelayanan otomatis ==');
 
 console.log('\n== 6. Penjagaan headway petak jalan ==');
 {
-  const dinas = jadwal.dinas.find((d) => d.id === 'DNS-PAGI-PENUH');
-  const daftar = jadwal.perjalanan.slice(0, 40);
+  const { dinas, daftar } = perjalananDinas('DNS-PAGI');
   const K = buatKeadaanAwal(ix, dinas, daftar, 42);
   K.terakhirKeluar['BTS-CKI-K'] = K.waktu - 30;
   const k = K.kereta.find((x) => x.batasKeluarId === 'BTS-CKI-K');
@@ -598,8 +607,7 @@ console.log('\n== 8. Regresi cacat yang pernah ditemukan ==');
   );
 
   // (d) Aspek sinyal dipulihkan setelah gangguan pulih bila rute masih terkunci.
-  const dinas = jadwal.dinas.find((d) => d.id === 'DNS-PAGI-PENUH');
-  const daftar = jadwal.perjalanan.slice(0, 60);
+  const { dinas, daftar } = perjalananDinas('DNS-PAGI');
   const K = buatKeadaanAwal(ix, dinas, daftar, 777);
   const kk = K.kereta.find((x) => x.batasMasukId === 'BTS-TBT-D');
   bentukRute(K, ix, kk.id, 'MASUK', 'SP-L9');
@@ -740,11 +748,7 @@ console.log('\n== 8. Regresi cacat yang pernah ditemukan ==');
 
 console.log('\n== 9. Kaidah pelayanan otomatis ==');
 {
-  const dinas = jadwal.dinas.find((d) => d.id === 'DNS-PUNCAK');
-  const daftar = jadwal.perjalanan.filter((t) => {
-    const d = keDetik(t.jamDatang);
-    return d >= keDetik(dinas.mulai) && d <= keDetik(dinas.selesai);
-  });
+  const { dinas, daftar } = perjalananDinas('DNS-PUNCAK-PAGI');
 
   // (a) Usul tidak pernah menunjuk jalur di luar peruntukan selama rangkaian
   //     belum tertahan di muka sinyal.
@@ -822,11 +826,7 @@ console.log('\n== 9. Kaidah pelayanan otomatis ==');
 
 console.log('\n== 10. KA jarak jauh berjalan langsung ==');
 {
-  const dinas = jadwal.dinas.find((d) => d.id === 'DNS-PAGI-PENUH');
-  const daftar = jadwal.perjalanan.filter((t) => {
-    const d = keDetik(t.jamDatang);
-    return d >= keDetik(dinas.mulai) && d <= keDetik(dinas.selesai);
-  });
+  const { dinas, daftar } = perjalananDinas('DNS-PAGI');
 
   const kajj = daftar.filter((t) => t.lin === 'KAJJ');
   periksa('KA jarak jauh termuat pada jadwal', kajj.length >= 12, `${kajj.length} perjalanan`);
@@ -907,6 +907,87 @@ console.log('\n== 10. KA jarak jauh berjalan langsung ==');
       emplasemen.sepur.find((s) => s.id === u.sasaranId).level === 'LAYANG',
   );
   periksa('KA jarak jauh tidak dapat masuk lantai layang', keLayang.length === 0);
+}
+
+console.log('\n== 11. Jadwal satu hari penuh dan dinas malam ==');
+{
+  // (a) Berkas jadwal harus benar-benar mencakup 24 jam.
+  const perJam = {};
+  for (const t of jadwal.perjalanan) {
+    const h = t.jamDatang.slice(0, 2);
+    perJam[h] = (perJam[h] ?? 0) + 1;
+  }
+  const jamTerisi = Object.keys(perJam).length;
+  periksa('jadwal mencakup seluruh 24 jam', jamTerisi === 24, `${jamTerisi} jam terisi`);
+  const siangKosong = ['06', '09', '12', '15', '18', '21'].filter((h) => !perJam[h]);
+  periksa('tidak ada jam sibuk yang kosong', siangKosong.length === 0, siangKosong.join(','));
+  periksa('jumlah perjalanan sepadan dengan satu hari penuh', jadwal.perjalanan.length > 600);
+  console.log(
+    `   ${jadwal.perjalanan.length} perjalanan · ` +
+      `${Object.keys(perJam).sort().map((h) => `${h}:${perJam[h]}`).join(' ')}`,
+  );
+
+  // (b) Seluruh baris harus punya jam yang sah dan berangkat >= datang.
+  const jamCacat = jadwal.perjalanan.filter(
+    (t) => !/^([01]\d|2[0-3])\.[0-5]\d\.[0-5]\d$/.test(t.jamDatang) ||
+      !/^([01]\d|2[0-3])\.[0-5]\d\.[0-5]\d$/.test(t.jamBerangkat),
+  );
+  periksa('seluruh jam berbentuk sah', jamCacat.length === 0, `${jamCacat.length} baris cacat`);
+
+  // (c) Dinas malam melewati tengah malam.
+  const { dinas, daftar, mulai, selesai } = perjalananDinas('DNS-MALAM');
+  periksa('dinas malam melewati tengah malam', selesai > SEHARI, `selesai ${selesai}`);
+  periksa('dinas malam memuat perjalanan', daftar.length > 20, `${daftar.length} perjalanan`);
+  const lewatTengahMalam = daftar.filter((t) => keDetik(t.jamDatang) < mulai);
+  periksa(
+    'perjalanan lepas tengah malam ikut termuat',
+    lewatTengahMalam.length > 0,
+    `${lewatTengahMalam.length} perjalanan`,
+  );
+
+  const K = buatKeadaanAwal(ix, dinas, daftar, 5150);
+  periksa('jam dinas malam dimulai pukul 21.00', K.waktu === keDetik('21.00'));
+  periksa('akhir dinas malam berada di hari berikutnya', K.selesaiPada === keDetik('05.00') + SEHARI);
+  const setelahTengahMalam = K.kereta.filter((k) => k.jadwalDatang >= SEHARI);
+  periksa(
+    'jadwal perjalanan lepas tengah malam digeser ke hari berikutnya',
+    setelahTengahMalam.length === lewatTengahMalam.length,
+    `${setelahTengahMalam.length} vs ${lewatTengahMalam.length}`,
+  );
+  periksa(
+    'urutan jadwal tetap menaik sepanjang dinas malam',
+    K.kereta.every((k, i) => i === 0 || k.jadwalDatang >= K.kereta[i - 1].jadwalDatang),
+  );
+
+  K.modeOtomatis = 'PENUH';
+  let detik = 0;
+  while (!K.dinasSelesai && detik < 14 * 3600) {
+    jalankanOtomatis(K, ix);
+    majuSatuDetik(K, ix);
+    detik += 1;
+  }
+  const skor = hitungSkor(K);
+  periksa('dinas malam dapat diselesaikan', K.dinasSelesai, `berhenti di detik ${detik}`);
+  periksa(
+    'seluruh perjalanan dinas malam selesai dilayani',
+    skor.keretaSelesai === skor.keretaTotal,
+    `${skor.keretaTotal - skor.keretaSelesai} belum selesai`,
+  );
+  console.log(
+    `   Dinas Malam 21.00-05.00: ${daftar.length} perjalanan, ditutup pukul ${keJam(K.waktu)}, ` +
+      `ketepatan waktu ${(skor.ketepatanWaktu * 100).toFixed(1)} %`,
+  );
+
+  // (d) Dinas siang dan puncak sore ikut termuat.
+  for (const id of ['DNS-SIANG', 'DNS-PUNCAK-SORE', 'DNS-SEHARI']) {
+    const { daftar: d } = perjalananDinas(id);
+    periksa(`dinas ${id} memuat perjalanan`, d.length > 0, `${d.length} perjalanan`);
+  }
+  console.log(
+    `   Sebaran per dinas: ${jadwal.dinas
+      .map((d) => `${d.nama}=${perjalananDinas(d.id).daftar.length}`)
+      .join(' · ')}`,
+  );
 }
 
 /* ------------------------------------------------------------------ */

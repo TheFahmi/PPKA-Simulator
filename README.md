@@ -18,7 +18,7 @@ npm run dev      # papan pelayanan di http://localhost:3000
 | --- | --- |
 | `npm run dev` | Menjalankan papan pada mode pengembangan |
 | `npm run build` | Membangun berkas produksi |
-| `npm run uji` | Uji mesin, store, pelayanan otomatis, dan lapisan impor tanpa peramban (123 pemeriksaan) |
+| `npm run uji` | Uji mesin, store, pelayanan otomatis, dan lapisan impor tanpa peramban (139 pemeriksaan) |
 | `npm run data` | Membangun ulang `data/emplasemen-manggarai.json` dan `data/jadwal-manggarai.json` |
 | `npm run typecheck` | Pemeriksaan tipe |
 
@@ -60,11 +60,10 @@ Laporan akhir dinas **menyatakan** berapa rute yang dibentuk papan dan berapa
 perjalanan yang terbantu, supaya nilai sesi tidak terbaca seolah seluruhnya
 hasil kerja petugas.
 
-Pada dinas 05.00–09.00, pelayanan otomatis menyelesaikan seluruh 140 perjalanan
-dengan ketepatan waktu 98,6 % dan pemakaian peron yang merata (jalur 9:16
-lawan 10:16, 11:17 lawan 12:16). Papan yang ditinggalkan tanpa pelayanan sama
-sekali memperoleh nilai 0. Angka-angka itu diperiksa ulang setiap kali
-`npm run uji` dijalankan.
+Pada Dinas Pagi 05.00–13.00 (296 perjalanan), pelayanan otomatis menyelesaikan
+seluruhnya dengan pemakaian peron yang merata — jalur 9:31 lawan 10:30, 11:35
+lawan 12:34. Papan yang ditinggalkan tanpa pelayanan sama sekali memperoleh
+nilai 0. Angka-angka itu diperiksa ulang setiap kali `npm run uji` dijalankan.
 
 ## Asal data
 
@@ -102,14 +101,37 @@ dan ditampilkan pada halaman `/data`.
 
 ### Jadwal
 
-155 perjalanan pada rentang 05.00–09.00 di Stasiun Manggarai.
+696 perjalanan pada rentang **00.00–23.59** di Stasiun Manggarai — satu hari penuh.
 
 | Layanan | Baris | Keandalan | Sumber |
 | --- | --- | --- | --- |
-| Commuter Line Bogor | 65 | `RESMI` | API jadwal resmi KAI Commuter, `kci.id/api/krl/schedules?stationid=MRI` |
-| Commuter Line Cikarang | 62 | `RESMI` | Berkas resmi "Jadwal Commuter Line Jabodetabek — Update 22 Juni 2026" (PDF, kci.id), disusun atas GAPEKA 2025 |
-| Commuter Line Basoetta | 14 | `REKONSTRUKSI_POLA` | Pola operasi terverifikasi; penomoran per keberangkatan tidak |
-| KA jarak jauh (berjalan langsung) | 14 | `RESMI` | GAPEKA 2025 Jawa, Lampiran II "Daftar Waktu KA Antar Kota" (KP-DJKA 224 Tahun 2024), berkas PDF DJKA |
+| Commuter Line Bogor | 300 | `RESMI` | API jadwal resmi KAI Commuter, `kci.id/api/krl/schedules?stationid=MRI` |
+| Commuter Line Cikarang | 247 | `RESMI` | idem |
+| Commuter Line Rangkasbitung | 1 | `RESMI` | idem |
+| Commuter Line Tangerang | 1 | `RESMI` | idem |
+| KA jarak jauh (berjalan langsung) | 78 | `RESMI` | GAPEKA 2025 Jawa, Lampiran II "Daftar Waktu KA Antar Kota" (KP-DJKA 224 Tahun 2024), berkas PDF DJKA |
+| Commuter Line Basoetta | 69 | `REKONSTRUKSI_POLA` | Pola operasi terverifikasi; penomoran per keberangkatan tidak |
+
+Berkas jadwal **tidak ditulis tangan**. Ia disusun oleh `npm run data` dari dua
+berkas sumber hasil tarikan langsung yang ikut disimpan di repositori, sehingga
+tiap baris dapat dilacak balik ke asalnya:
+
+```
+tools/sumber/krl-mri-24jam.json    549 pemberhentian KRL, tarikan API KAI Commuter
+tools/sumber/kajj-mri-24jam.json    78 KA jarak jauh, bacaan GAPEKA 2025 Lampiran II
+```
+
+Perbarui berkas sumbernya saat GAPEKA direvisi, lalu jalankan `npm run data`.
+
+Dua peringatan yang perlu dibaca:
+
+- API jadwal KAI Commuter **tidak menerima parameter tanggal** dan responsnya
+  tidak memuat penanda hari. Tarikan dilakukan Minggu, 26 Juli 2026, sehingga
+  tidak dapat dipastikan apakah set ini jadwal hari kerja atau akhir pekan.
+- Dua baris tampak ganjil tetapi memang ada apa adanya di respons API dan
+  sengaja tidak dibuang: KA 1727D Lin Rangkasbitung relasi Manggarai–Angke
+  (14.04) dan KA 2023B Lin Tangerang relasi Manggarai–Duri (23.15). Kedua lin
+  itu lazimnya tidak melayani Manggarai.
 
 Catatan pemodelan yang harus dibaca sebagai bukan-data-resmi:
 
@@ -126,14 +148,18 @@ Catatan pemodelan yang harus dibaca sebagai bukan-data-resmi:
 **KA jarak jauh dimuat sebagai KA berjalan langsung, bukan sebagai
 pemberhentian.** Tidak ada KA jarak jauh yang berhenti melayani penumpang di
 Manggarai; pemindahan layanan dari Stasiun Gambir masih berstatus rencana tanpa
-tanggal operasional. Yang dimuat adalah 14 KA relasi Stasiun Gambir yang
-melintas Manggarai pada 05.00–09.00. GAPEKA mencantumkan Manggarai pada setiap
+tanggal operasional. Yang dimuat adalah **seluruh 78 KA relasi Stasiun Gambir**
+yang melintas Manggarai sepanjang hari. GAPEKA mencantumkan Manggarai pada setiap
 perjalanan KA jarak jauh dengan tanda `Ls` pada kolom Datang — berjalan langsung
 — dan jam pada kolom Berangkat adalah jam melintasnya; jam itulah yang dipakai
 apa adanya, jadi **tidak diperkirakan maupun dihitung sendiri**.
 
 KA relasi **Pasar Senen tidak dimuat** karena rutenya memang tidak melewati
 Manggarai (Jatinegara – Pondok Jati – Kramat – Gang Sentiong – Pasar Senen).
+Ini diuji, bukan diasumsikan: dari 357 blok perjalanan pada Lampiran II, 78 blok
+memuat baris Gambir dan 78 memuat baris Manggarai dengan tumpang tindih 1:1
+sempurna, sedangkan 68 blok memuat Pasar Senen dan tidak satu pun menyentuh
+Manggarai.
 
 Satu peringatan: angka yang dipakai berasal dari GAPEKA 2025 versi dasar yang
 berlaku 1 Februari 2025. Dokumen revisi per 18 Juni 2026 tidak berhasil

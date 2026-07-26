@@ -235,6 +235,10 @@ export type KodeLin =
   | 'LIN_BOGOR'
   | 'LIN_CIKARANG'
   | 'LIN_LINGKAR'
+  /** Lin Rangkasbitung — hanya sedikit perjalanan yang menyentuh Manggarai. */
+  | 'LIN_RANGKASBITUNG'
+  /** Lin Tangerang — hanya sedikit perjalanan yang menyentuh Manggarai. */
+  | 'LIN_TANGERANG'
   | 'KAJJ'
   | 'BANDARA'
   | 'KLB'
