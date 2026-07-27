@@ -51,6 +51,12 @@ export interface Simpul {
   /** Koordinat papan (satuan internal diagram, bukan piksel layar). */
   x: number;
   y: number;
+  /**
+   * Koordinat pada tampilan rel OSM: geometri survei yang diskalakan seragam
+   * pada kedua sumbu, jadi berskala benar. Hanya ada pada emplasemen yang
+   * memang diturunkan dari survei.
+   */
+  osm?: { x: number; y: number };
 }
 
 export type JenisRuas =
@@ -79,6 +85,12 @@ export interface Ruas {
    * Kosong berarti ruas digambar sebagai garis lurus.
    */
   titikBelok?: Array<{ x: number; y: number }>;
+  /**
+   * Jalan sebenarnya menurut survei, lengkap dari ujung ke ujung, untuk
+   * tampilan rel OSM. Berbeda dengan `titikBelok`, larik ini memuat kedua
+   * simpul ujungnya.
+   */
+  jalanOsm?: Array<{ x: number; y: number }>;
 }
 
 export type KedudukanWesel = 'LURUS' | 'BELOK';
@@ -235,6 +247,11 @@ export interface Emplasemen {
   };
   /** Ukuran kanvas diagram dalam satuan internal. */
   kanvas: Record<Level, { lebar: number; tinggi: number }>;
+  /**
+   * Ukuran kanvas tampilan rel OSM. Satu kanvas untuk seluruh lantai, sebab
+   * secara geografis lantai-lantai itu memang saling menumpuk.
+   */
+  kanvasOsm?: { lebar: number; tinggi: number; meterPerSatuan: number };
   simpul: Simpul[];
   ruas: Ruas[];
   wesel: Wesel[];

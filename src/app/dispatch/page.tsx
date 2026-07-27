@@ -11,7 +11,7 @@ import { Modul, Warta } from '@/components/panel';
 import { PanelKendaliRute } from '@/components/PanelKendaliRute';
 import { PanelPeralatan } from '@/components/PanelPeralatan';
 import { PapanDinas } from '@/components/PapanDinas';
-import { indeks } from '@/lib/muat-data';
+import type { IndeksEmplasemen } from '@/lib/emplasemen';
 import type { Level } from '@/lib/tipe';
 import { usePapan, type TampilanLevel } from '@/store/papan';
 
@@ -20,6 +20,10 @@ export default function Dispatch() {
   const router = useRouter();
 
   const sim = usePapan((s) => s.sim);
+  const ix = usePapan((s) => s.ix);
+  const ringkas = usePapan((s) => s.ringkas);
+  const modeGambar = usePapan((s) => s.modeGambar);
+  const aturModeGambar = usePapan((s) => s.aturModeGambar);
   const tampilanLevel = usePapan((s) => s.tampilanLevel);
   const aturTampilanLevel = usePapan((s) => s.aturTampilanLevel);
   const keretaTerpilih = usePapan((s) => s.keretaTerpilih);
@@ -30,7 +34,7 @@ export default function Dispatch() {
     if (sim?.dinasSelesai) router.push('/dispatch/summary');
   }, [sim?.dinasSelesai, router]);
 
-  if (!sim) {
+  if (!sim || !ix) {
     return (
       <div className="flex min-h-screen flex-col">
         <KepalaPapan />
@@ -49,9 +53,17 @@ export default function Dispatch() {
     );
   }
 
-  const ix = indeks();
+  // Lantai yang benar-benar ada pada emplasemen ini; stasiun berlantai satu
+  // tidak menampilkan baris lantai layang yang kosong.
+  const lantaiAda: Level[] = (['LAYANG', 'DASAR'] as Level[]).filter((lv) =>
+    ix.data.sepur.some((sp) => sp.level === lv),
+  );
   const levelTampil: Level[] =
-    tampilanLevel === 'KEDUA' ? ['LAYANG', 'DASAR'] : [tampilanLevel as Level];
+    tampilanLevel === 'KEDUA'
+      ? lantaiAda
+      : lantaiAda.filter((lv) => lv === (tampilanLevel as Level));
+  const bertingkat = lantaiAda.length > 1;
+  const adaTampilanOsm = Boolean(ix.data.kanvasOsm);
 
   return (
     <div className="flex h-screen flex-col overflow-hidden">
@@ -65,26 +77,56 @@ export default function Dispatch() {
         {/* Papan diagram & papan dinas */}
         <div className="grid min-h-0 grid-rows-[minmax(0,1.35fr)_minmax(0,1fr)] gap-modul">
           <Modul
-            label="Diagram jalur — emplasemen Stasiun Manggarai"
+            label={`${
+              modeGambar === 'OSM' ? 'Geometri sepur tersurvei' : 'Diagram jalur'
+            } — emplasemen Stasiun ${ix.data.namaStasiun}`}
             isiClassName="overflow-auto bg-panel-sunken"
             kanan={
-              <div className="flex items-center gap-1">
-                {(
-                  [
-                    ['KEDUA', 'Kedua lantai'],
-                    ['LAYANG', 'Lantai layang'],
-                    ['DASAR', 'Lantai dasar'],
-                  ] as Array<[TampilanLevel, string]>
-                ).map(([nilai, label]) => (
-                  <button
-                    key={nilai}
-                    type="button"
-                    className={`tombol-panel ${tampilanLevel === nilai ? 'tombol-panel-aktif' : ''}`}
-                    onClick={() => aturTampilanLevel(nilai)}
-                  >
-                    {label}
-                  </button>
-                ))}
+              <div className="flex items-center gap-3">
+                {adaTampilanOsm && (
+                  <div className="flex items-center gap-1">
+                    <span className="font-mono text-2xs uppercase tracking-[0.14em] text-vdu-dim">
+                      Tampilan
+                    </span>
+                    {(
+                      [
+                        ['DENAH', 'Denah'],
+                        ['OSM', 'Rel OSM'],
+                      ] as Array<['DENAH' | 'OSM', string]>
+                    ).map(([nilai, label]) => (
+                      <button
+                        key={nilai}
+                        type="button"
+                        aria-pressed={modeGambar === nilai}
+                        className={`tombol-panel ${modeGambar === nilai ? 'tombol-panel-aktif' : ''}`}
+                        onClick={() => aturModeGambar(nilai)}
+                      >
+                        {label}
+                      </button>
+                    ))}
+                  </div>
+                )}
+                {bertingkat && (
+                  <div className="flex items-center gap-1">
+                    {(
+                      [
+                        ['KEDUA', 'Kedua lantai'],
+                        ['LAYANG', 'Lantai layang'],
+                        ['DASAR', 'Lantai dasar'],
+                      ] as Array<[TampilanLevel, string]>
+                    ).map(([nilai, label]) => (
+                      <button
+                        key={nilai}
+                        type="button"
+                        aria-pressed={tampilanLevel === nilai}
+                        className={`tombol-panel ${tampilanLevel === nilai ? 'tombol-panel-aktif' : ''}`}
+                        onClick={() => aturTampilanLevel(nilai)}
+                      >
+                        {label}
+                      </button>
+                    ))}
+                  </div>
+                )}
               </div>
             }
           >
@@ -93,9 +135,7 @@ export default function Dispatch() {
                 <div key={lv} className="bg-panel-sunken">
                   <div className="flex items-baseline justify-between border-b border-panel-line px-2 py-1">
                     <span className="font-mono text-2xs uppercase tracking-[0.18em] text-vdu-muted">
-                      {lv === 'LAYANG'
-                        ? 'Lantai 2 — layang · jalur 9 s.d. 12 · Commuter Line Bogor'
-                        : 'Lantai dasar · jalur 1 s.d. 8 · Commuter Line Cikarang, KA barang/KLB, Basoetta'}
+                      {keteranganLantai(ix, lv, bertingkat)}
                     </span>
                     <span className="font-mono text-2xs text-vdu-dim">
                       {sim.kereta.filter((k) => k.sepurId && sepurLevel(ix, k.sepurId) === lv).length}{' '}
@@ -110,11 +150,16 @@ export default function Dispatch() {
                       keretaTerpilih={keretaTerpilih}
                       onPilihKereta={pilihKereta}
                       onPilihWesel={(id) => layaniWesel(id)}
+                      gaya={modeGambar}
                     />
                   </div>
                 </div>
               ))}
-              <LegendaPapan />
+              <LegendaPapan
+                modeGambar={modeGambar}
+                meterPerSatuan={ix.data.kanvasOsm?.meterPerSatuan ?? null}
+                sumberDenah={ringkas?.sumberDenah ?? null}
+              />
             </div>
           </Modul>
 
@@ -140,11 +185,34 @@ export default function Dispatch() {
   );
 }
 
-function sepurLevel(ix: ReturnType<typeof indeks>, sepurId: string): Level | null {
+function sepurLevel(ix: IndeksEmplasemen, sepurId: string): Level | null {
   return ix.data.sepur.find((s) => s.id === sepurId)?.level ?? null;
 }
 
-function LegendaPapan() {
+/**
+ * Keterangan baris lantai, disusun dari sepur yang benar-benar ada pada
+ * emplasemen ini — bukan teks tetap milik satu stasiun.
+ */
+function keteranganLantai(ix: IndeksEmplasemen, lv: Level, bertingkat: boolean): string {
+  const sepur = ix.data.sepur.filter((s) => s.level === lv);
+  const berperon = sepur.filter((s) => s.peronId !== null).map((s) => s.nomor);
+  const tanpaPeron = sepur.filter((s) => s.peronId === null).map((s) => s.nomor);
+  const bagian: string[] = [];
+  if (bertingkat) bagian.push(lv === 'LAYANG' ? 'Lantai 2 — layang' : 'Lantai dasar');
+  if (berperon.length > 0) bagian.push(`jalur berperon ${berperon.join(', ')}`);
+  if (tanpaPeron.length > 0) bagian.push(`sepur tanpa peron ${tanpaPeron.join(', ')}`);
+  return bagian.join(' · ');
+}
+
+function LegendaPapan({
+  modeGambar,
+  meterPerSatuan,
+  sumberDenah,
+}: {
+  modeGambar: 'DENAH' | 'OSM';
+  meterPerSatuan: number | null;
+  sumberDenah: string | null;
+}) {
   const okupansi: Array<[string, string]> = [
     ['#1fb85a', 'Blok bebas'],
     ['#e9a51b', 'Rute terkunci / reservasi'],
@@ -183,6 +251,15 @@ function LegendaPapan() {
         <span className="text-wesel-belok">B</span> belok ·{' '}
         <span className="text-wesel-balik">~</span> membalik ·{' '}
         <span className="text-wesel-gagal">!</span> gangguan
+      </span>
+      <span className="w-full font-mono text-2xs leading-relaxed text-vdu-dim">
+        {modeGambar === 'OSM'
+          ? 'Tampilan rel OSM: geometri sepur tersurvei, skala seragam pada kedua sumbu' +
+            (meterPerSatuan ? ` (satu satuan gambar setara ${meterPerSatuan.toFixed(2)} m)` : '') +
+            '. Bidang peron tidak digambar pada tampilan ini.'
+          : sumberDenah === 'SURVEI_OSM'
+            ? 'Tampilan denah: urutan sepur dan topologi mengikuti survei, tetapi renggang melintangnya diratakan menjadi lajur supaya terbaca. Bukan peta berskala.'
+            : 'Tampilan denah, disusun dari dokumen tata letak resmi. Bukan peta berskala.'}
       </span>
     </div>
   );

@@ -27,7 +27,7 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { bangunGraf, tetapkanKakiWesel, pasangkanPersilangan } from './osm-ke-graf.mjs';
-import { STASIUN } from './stasiun-config.mjs';
+import { STASIUN, DIBANGUN } from './stasiun-config.mjs';
 
 const AKAR = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -175,11 +175,32 @@ function bangun(kode) {
     y: Math.round(peta[level](t.y) + kanvasY[level].geser),
   });
 
+  /*
+   * Tampilan kedua: geometri sebenarnya, tanpa pemetaan lajur dan tanpa
+   * pemampatan. Skalanya seragam untuk kedua sumbu supaya bentuk lengkung
+   * wesel, sudut percabangan, dan kelengkungan lintas terbaca apa adanya —
+   * itulah gunanya tampilan ini di samping denah skematik. Seluruh lantai
+   * memakai satu kanvas karena secara geografis memang saling menumpuk.
+   */
+  const ysNyata = graf.ruas.flatMap((r) => r.titik.map((p) => p.y));
+  const minYn = Math.min(...ysNyata);
+  const maksYn = Math.max(...ysNyata);
+  const skalaOsm = (LEBAR_KANVAS - TEPI_X * 2) / Math.max(1, maksX - minX);
+  const kanvasOsm = {
+    lebar: LEBAR_KANVAS,
+    tinggi: Math.round((maksYn - minYn) * skalaOsm + 88),
+    meterPerSatuan: Number((1 / skalaOsm).toFixed(4)),
+  };
+  const keOsm = (t) => ({
+    x: Math.round((t.x - minX) * skalaOsm + TEPI_X),
+    y: Math.round((t.y - minYn) * skalaOsm + 44),
+  });
+
   /* -- Simpul ---------------------------------------------------------- */
   const simpul = graf.simpul.map((s) => {
     const lv = levelSimpul.get(s.id) ?? 'DASAR';
     const g = keGambar({ x: s.x, y: s.y }, lv);
-    return { id: `S${s.id}`, jenis: s.jenis, level: lv, x: g.x, y: g.y };
+    return { id: `S${s.id}`, jenis: s.jenis, level: lv, x: g.x, y: g.y, osm: keOsm(s) };
   });
   const simpulPeta = new Map(simpul.map((s) => [s.id, s]));
 
@@ -219,6 +240,10 @@ function bangun(kode) {
       panjangM: Math.max(5, r.panjangM),
       ...(badan ? { sepurId: `SP-${kode}-${nomor}` } : {}),
       ...(titik.length > 2 ? { titikBelok: titik.slice(1, -1) } : {}),
+      // Jalan sebenarnya dipakai tampilan rel OSM; titik yang berimpit dibuang.
+      jalanOsm: r.titik
+        .map((t) => keOsm(t))
+        .filter((t, i, a) => i === 0 || t.x !== a[i - 1].x || t.y !== a[i - 1].y),
       _titik: titik,
       _nomor: nomor,
       _nama: r.tags.name ?? null,
@@ -351,12 +376,13 @@ function bangun(kode) {
     const kaki = (ruasDiSimpulAsli.get(s.id) ?? [])[0];
     if (!kaki) continue;
     const nama = kaki.tags.name ?? '';
+    const sisiSimpul = s.x < 0 ? 'KIRI' : 'KANAN';
     let kodeLintas = null;
-    for (const [petunjuk, kd] of cfg.lintasDariNama) {
-      if (nama.includes(petunjuk)) {
-        kodeLintas = kd;
-        break;
-      }
+    for (const [petunjuk, sisiSyarat, kd] of cfg.lintasDariNama) {
+      if (!nama.includes(petunjuk)) continue;
+      if (sisiSyarat !== '*' && sisiSyarat !== sisiSimpul) continue;
+      kodeLintas = kd;
+      break;
     }
     /*
      * Simpul batas yang way-nya tak bernama tetap harus menjadi batas
@@ -510,10 +536,12 @@ function bangun(kode) {
       catatanVerifikasi:
         'YANG BERASAL DARI SURVEI: kedudukan dan bentuk tiap sepur, letak tiap wesel beserta penetapan kaki pangkal, lurus, dan belok yang dihitung dari geometri, persilangan sebidang, penomoran jalur, dan letak peron. ' +
         'YANG DISUSUN SENDIRI DAN BUKAN DATA SURVEI: penomoran wesel (OpenStreetMap tidak memuat ref maupun name pada satu pun wesel), letak dan penamaan sinyal (OpenStreetMap hampir tidak memuat railway=signal pada stasiun-stasiun ini), pembagian blok deteksi sarana, serta penetapan batas mana yang arah masuk dan mana yang arah keluar pada lintas jalur ganda. ' +
-        'CARA MENGGAMBAR: diagram jalur bukan peta berskala. Kedudukan memanjang dipakai apa adanya, sedangkan kedudukan melintang dipetakan menjadi lajur berjarak tetap lewat pemetaan monoton, sehingga urutan sepur dan seluruh topologinya tetap sama dengan hasil survei sementara renggangnya dibuat terbaca. Sepur yang meninggalkan emplasemen dimampatkan secara logaritmik.',
+        'CARA MENGGAMBAR: diagram jalur bukan peta berskala. Kedudukan memanjang dipakai apa adanya, sedangkan kedudukan melintang dipetakan menjadi lajur berjarak tetap lewat pemetaan monoton, sehingga urutan sepur dan seluruh topologinya tetap sama dengan hasil survei sementara renggangnya dibuat terbaca. Sepur yang meninggalkan emplasemen dimampatkan secara logaritmik. ' +
+        'Tampilan kedua, "rel OSM", memakai bidang "osm" pada tiap simpul dan "jalanOsm" pada tiap ruas: itu geometri survei yang diskalakan seragam pada kedua sumbu tanpa pemetaan lajur maupun pemampatan, jadi berskala benar.',
       putarDerajat: Math.round(graf.sudutPutar * 10) / 10,
     },
     kanvas,
+    kanvasOsm,
     simpul,
     ruas: ruas.map(({ asli, _titik, _nomor, _nama, _level, ...sisa }) => sisa),
     wesel,
@@ -532,7 +560,7 @@ function bangun(kode) {
 
 const daftar = process.argv.slice(2).length
   ? process.argv.slice(2)
-  : Object.keys(STASIUN);
+  : DIBANGUN;
 
 /** Pemeriksaan keutuhan graf, sama ketatnya seperti pembangkit terdahulu. */
 function periksa(e) {

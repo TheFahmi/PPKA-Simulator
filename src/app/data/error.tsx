@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
-import { hapusImpor } from '@/lib/impor';
+import { hapusSeluruhImpor } from '@/lib/impor';
 
 /**
  * Jalan keluar bila berkas jadwal hasil impor membuat halaman gagal dirender.
@@ -41,7 +41,7 @@ export default function GalatBerkasJadwal({
               type="button"
               className="tombol-panel tombol-panel-aktif"
               onClick={() => {
-                hapusImpor();
+                hapusSeluruhImpor();
                 window.location.reload();
               }}
             >

@@ -271,16 +271,39 @@ function ringkasWesel(
 /* Geometri gambar                                                     */
 /* ------------------------------------------------------------------ */
 
+/**
+ * Cara papan digambar.
+ *
+ * `DENAH` adalah diagram jalur seperti papan pelayanan sungguhan: kedudukan
+ * melintang dipetakan menjadi lajur berjarak tetap supaya terbaca. `OSM`
+ * memakai geometri survei apa adanya dengan skala seragam pada kedua sumbu,
+ * sehingga sudut wesel dan kelengkungan lintas tampak sebenarnya. Topologinya
+ * sama persis — yang berbeda hanya koordinatnya.
+ */
+export type ModeGambar = 'DENAH' | 'OSM';
+
 /** Rangkaian titik gambar sebuah ruas, dari `dari` menuju `ke`. */
 export function titikRuas(
   ix: IndeksEmplasemen,
   ruasId: string,
+  gaya: ModeGambar = 'DENAH',
 ): Array<{ x: number; y: number }> {
   const r = ix.ruas.get(ruasId);
   if (!r) return [];
+  if (gaya === 'OSM' && r.jalanOsm && r.jalanOsm.length >= 2) return r.jalanOsm;
   const a = ix.simpul.get(r.dari);
   const b = ix.simpul.get(r.ke);
   if (!a || !b) return [];
+  if (gaya === 'OSM') {
+    // Emplasemen tanpa geometri survei tetap dapat digambar; bentuknya sama
+    // dengan denah, bukan garis kosong.
+    const ao = a.osm ?? a;
+    const bo = b.osm ?? b;
+    return [
+      { x: ao.x, y: ao.y },
+      { x: bo.x, y: bo.y },
+    ];
+  }
   return [
     { x: a.x, y: a.y },
     ...(r.titikBelok ?? []),
@@ -289,8 +312,12 @@ export function titikRuas(
 }
 
 /** Jalur SVG sebuah ruas. Ruas dengan titik belok digambar bersudut tegas. */
-export function jalurSvgRuas(ix: IndeksEmplasemen, ruasId: string): string {
-  const titik = titikRuas(ix, ruasId);
+export function jalurSvgRuas(
+  ix: IndeksEmplasemen,
+  ruasId: string,
+  gaya: ModeGambar = 'DENAH',
+): string {
+  const titik = titikRuas(ix, ruasId, gaya);
   if (titik.length === 0) return '';
   const [awal, ...sisa] = titik;
   if (!awal) return '';
@@ -304,8 +331,9 @@ export function jalurSvgRuas(ix: IndeksEmplasemen, ruasId: string): string {
 export function panjangGambarRuas(
   ix: IndeksEmplasemen,
   ruasId: string,
+  gaya: ModeGambar = 'DENAH',
 ): number {
-  const titik = titikRuas(ix, ruasId);
+  const titik = titikRuas(ix, ruasId, gaya);
   let n = 0;
   for (let i = 1; i < titik.length; i += 1) {
     const p = titik[i - 1];
@@ -325,8 +353,9 @@ export function titikPadaRuas(
   ruasId: string,
   kemajuan: number,
   dariSimpul?: string,
+  gaya: ModeGambar = 'DENAH',
 ): { x: number; y: number; sudut: number } {
-  let titik = titikRuas(ix, ruasId);
+  let titik = titikRuas(ix, ruasId, gaya);
   const r = ix.ruas.get(ruasId);
   if (r && dariSimpul && dariSimpul === r.ke) titik = [...titik].reverse();
   if (titik.length < 2) {

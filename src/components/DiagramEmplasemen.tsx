@@ -6,6 +6,7 @@ import {
   panjangGambarRuas,
   titikPadaRuas,
   type IndeksEmplasemen,
+  type ModeGambar,
 } from '@/lib/emplasemen';
 import { WARNA_LIN } from '@/lib/semboyan';
 import type { KeadaanSimulasi } from '@/lib/simulasi';
@@ -47,6 +48,8 @@ interface Props {
   keretaTerpilih: string | null;
   onPilihKereta: (id: string | null) => void;
   onPilihWesel?: (weselId: string) => void;
+  /** Denah skematik (bawaan) atau geometri sepur tersurvei. */
+  gaya?: ModeGambar;
 }
 
 export function DiagramEmplasemen({
@@ -56,8 +59,22 @@ export function DiagramEmplasemen({
   keretaTerpilih,
   onPilihKereta,
   onPilihWesel,
+  gaya = 'DENAH',
 }: Props) {
-  const kanvas = ix.data.kanvas[level];
+  /*
+   * Tampilan rel OSM memakai satu kanvas untuk seluruh lantai — secara
+   * geografis lantai-lantai itu memang saling menumpuk — sedangkan denah
+   * skematik memberi tiap lantai kanvasnya sendiri.
+   */
+  const kanvas =
+    (gaya === 'OSM' ? ix.data.kanvasOsm : undefined) ?? ix.data.kanvas[level];
+
+  /** Kedudukan sebuah simpul pada tampilan yang sedang dipakai. */
+  const letak = (simpulId: string): { x: number; y: number } | undefined => {
+    const s = ix.simpul.get(simpulId);
+    if (!s) return undefined;
+    return gaya === 'OSM' ? (s.osm ?? { x: s.x, y: s.y }) : { x: s.x, y: s.y };
+  };
 
   /**
    * Kaki wesel yang sedang tidak terlayan — digambar redup.
@@ -99,7 +116,9 @@ export function DiagramEmplasemen({
       viewBox={viewBox}
       className="block h-auto w-full select-none"
       role="img"
-      aria-label={`Diagram jalur Stasiun Manggarai lantai ${level === 'DASAR' ? 'dasar' : 'layang'}`}
+      aria-label={`${
+        gaya === 'OSM' ? 'Geometri sepur tersurvei' : 'Diagram jalur'
+      } Stasiun ${ix.data.namaStasiun} lantai ${level === 'DASAR' ? 'dasar' : 'layang'}`}
     >
       <defs>
         <pattern id={`arsir-${level}`} width="6" height="6" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
@@ -110,38 +129,42 @@ export function DiagramEmplasemen({
         </pattern>
       </defs>
 
-      {/* Peron */}
-      {peronLevel.map((p) => {
-        const aktif = p.sepurIds.length > 0;
-        return (
-          <g key={p.id}>
-            <rect
-              x={p.geometri.x}
-              y={p.geometri.y}
-              width={p.geometri.lebar}
-              height={p.geometri.tinggi}
-              fill={`url(#arsir${aktif ? '' : '-mati'}-${level})`}
-              stroke={aktif ? '#33505f' : '#1e3039'}
-              strokeWidth="1"
-            />
-            <text
-              x={p.geometri.x + 8}
-              y={p.geometri.y + p.geometri.tinggi / 2 + 4}
-              className="font-mono"
-              fontSize="10"
-              letterSpacing="1.4"
-              fill={aktif ? '#8fa7b3' : '#728d9b'}
-            >
-              PERON {p.nomor}
-              {aktif ? '' : ' · INAKTIF'}
-            </text>
-          </g>
-        );
-      })}
+      {/* Peron. Bidangnya digambar pada koordinat denah; pada tampilan rel OSM
+          bidang itu tidak digambar karena letaknya akan meleset dari sepur
+          yang sebenarnya, dan peron yang salah letak lebih menyesatkan
+          daripada peron yang tidak digambar. */}
+      {gaya === 'DENAH' &&
+        peronLevel.map((p) => {
+          const aktif = p.sepurIds.length > 0;
+          return (
+            <g key={p.id}>
+              <rect
+                x={p.geometri.x}
+                y={p.geometri.y}
+                width={p.geometri.lebar}
+                height={p.geometri.tinggi}
+                fill={`url(#arsir${aktif ? '' : '-mati'}-${level})`}
+                stroke={aktif ? '#33505f' : '#1e3039'}
+                strokeWidth="1"
+              />
+              <text
+                x={p.geometri.x + 8}
+                y={p.geometri.y + p.geometri.tinggi / 2 + 4}
+                className="font-mono"
+                fontSize="10"
+                letterSpacing="1.4"
+                fill={aktif ? '#8fa7b3' : '#728d9b'}
+              >
+                PERON {p.nomor}
+                {aktif ? '' : ' · INAKTIF'}
+              </text>
+            </g>
+          );
+        })}
 
       {/* Ruas sepur */}
       {ruasLevel.map((r) => {
-        const d = jalurSvgRuas(ix, r.id);
+        const d = jalurSvgRuas(ix, r.id, gaya);
         const blok = sim.blok[r.blokId];
         const mati = kakiMati.has(r.id);
         const warna = mati ? '#33474f' : WARNA_BLOK[blok?.keadaan ?? 'BEBAS'];
@@ -166,7 +189,7 @@ export function DiagramEmplasemen({
       {/* Wesel: nomor + kedudukan */}
       {weselLevel.map((w) => {
         const s = sim.wesel[w.id];
-        const simpul = ix.simpul.get(w.simpulId);
+        const simpul = letak(w.simpulId);
         if (!s || !simpul) return null;
         const warna = s.gangguan
           ? '#ff5cc8'
@@ -200,7 +223,7 @@ export function DiagramEmplasemen({
       {/* Sinyal */}
       {sinyalLevel.map((sg) => {
         const s = sim.sinyal[sg.id];
-        const simpul = ix.simpul.get(sg.simpulId);
+        const simpul = letak(sg.simpulId);
         if (!s || !simpul) return null;
         const x = simpul.x + sg.offsetX;
         const yLensa = simpul.y + sg.offsetY;
@@ -241,7 +264,7 @@ export function DiagramEmplasemen({
       {sepurLevel.map((sp) => {
         const ruas = ix.ruas.get(sp.ruasId);
         if (!ruas) return null;
-        const awal = ix.simpul.get(ruas.dari);
+        const awal = letak(ruas.dari);
         if (!awal) return null;
         const atas = Number(sp.nomor) % 2 === 1;
         const y = atas ? awal.y - 20 : awal.y + 8;
@@ -276,7 +299,7 @@ export function DiagramEmplasemen({
 
       {/* Batas emplasemen */}
       {batasLevel.map((b) => {
-        const simpul = ix.simpul.get(b.simpulId);
+        const simpul = letak(b.simpulId);
         if (!simpul) return null;
         const kiri = b.sisi === 'KIRI';
         const arah = kiri ? -1 : 1;
@@ -330,6 +353,7 @@ export function DiagramEmplasemen({
           kereta={k}
           terpilih={k.id === keretaTerpilih}
           onPilih={onPilihKereta}
+          gaya={gaya}
         />
       ))}
     </svg>
@@ -353,11 +377,13 @@ function PenandaKereta({
   kereta,
   terpilih,
   onPilih,
+  gaya,
 }: {
   ix: IndeksEmplasemen;
   kereta: KeretaAktif;
   terpilih: boolean;
   onPilih: (id: string | null) => void;
+  gaya: ModeGambar;
 }) {
   const warna = WARNA_LIN[kereta.lin];
   const menunggu = kereta.fase === 'DIWARTAKAN' || kereta.fase === 'TERTAHAN_SINYAL';
@@ -370,8 +396,9 @@ function PenandaKereta({
 
   if (menunggu) {
     const batas = ix.data.batas.find((b) => b.id === kereta.batasMasukId);
-    const simpul = batas ? ix.simpul.get(batas.simpulId) : undefined;
-    if (!simpul || !batas) return null;
+    const asli = batas ? ix.simpul.get(batas.simpulId) : undefined;
+    if (!asli || !batas) return null;
+    const simpul = gaya === 'OSM' ? (asli.osm ?? asli) : asli;
     const arah = batas.sisi === 'KIRI' ? -1 : 1;
     x = simpul.x + arah * 78;
     y = simpul.y;
@@ -382,13 +409,14 @@ function PenandaKereta({
      * rangkaian. Tanpa ini, rangkaian yang berhenti di ujung peron akan
      * tergambar separuh menjorok keluar melewati ujung badan sepur.
      */
-    const panjangRuas = panjangGambarRuas(ix, kereta.ruasId);
+    const panjangRuas = panjangGambarRuas(ix, kereta.ruasId, gaya);
     const mundur = panjangRuas > 0 ? panjang / 2 / panjangRuas : 0;
     const titik = titikPadaRuas(
       ix,
       kereta.ruasId,
       Math.max(0, kereta.kemajuan - mundur),
       kereta.simpulMasukRuas[kereta.indeksRuas],
+      gaya,
     );
     x = titik.x;
     y = titik.y;

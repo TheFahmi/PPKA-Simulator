@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { KepalaPapan } from '@/components/KepalaPapan';
 import { Modul, Petak, TandaKeandalan, Warta } from '@/components/panel';
 import { bacaBerkas, CONTOH_BARIS_CSV, keCsv, type HasilImpor } from '@/lib/impor';
-import { EMPLASEMEN, periksaJadwalAman, type TemuanPeriksa } from '@/lib/muat-data';
+import { periksaJadwalAman, type TemuanPeriksa } from '@/lib/muat-data';
 import { NAMA_LIN, WARNA_LIN } from '@/lib/semboyan';
 import type { KodeLin } from '@/lib/tipe';
 import { usePapan } from '@/store/papan';
@@ -14,6 +14,10 @@ import { usePapan } from '@/store/papan';
  * dengan berkas terbaru saat GAPEKA direvisi, tanpa menyentuh kode.
  */
 export default function BerkasJadwal() {
+  const stasiun = usePapan((s) => s.stasiun);
+  const emplasemen = usePapan((s) => s.emplasemen);
+  const memuat = usePapan((s) => s.memuatStasiun);
+  const pilihStasiun = usePapan((s) => s.pilihStasiun);
   const jadwal = usePapan((s) => s.jadwal);
   const jadwalDiimpor = usePapan((s) => s.jadwalDiimpor);
   const gantiJadwal = usePapan((s) => s.gantiJadwal);
@@ -26,37 +30,47 @@ export default function BerkasJadwal() {
   const [tempel, setTempel] = useState('');
   const berkasRef = useRef<HTMLInputElement>(null);
 
+  // Halaman ini bisa dibuka langsung tanpa melewati briefing; data stasiun
+  // yang sedang dipilih dimuat di sini juga supaya tidak tampil kosong.
+  useEffect(() => {
+    void pilihStasiun(stasiun);
+  }, [pilihStasiun, stasiun]);
+
   useEffect(() => {
     segarkan();
   }, [segarkan]);
 
-  const temuan = useMemo<TemuanPeriksa[]>(() => periksaJadwalAman(jadwal), [jadwal]);
+  const temuan = useMemo<TemuanPeriksa[]>(
+    () => (jadwal && emplasemen ? periksaJadwalAman(jadwal, emplasemen) : []),
+    [jadwal, emplasemen],
+  );
   const galat = temuan.filter((t) => t.tingkat === 'GALAT');
   const peringatan = temuan.filter((t) => t.tingkat === 'PERINGATAN');
 
   const perjalanan = useMemo(() => {
     const q = cari.trim().toLowerCase();
-    return jadwal.perjalanan.filter((t) => {
+    return (jadwal?.perjalanan ?? []).filter((t) => {
       if (saringLin !== 'SEMUA' && t.lin !== saringLin) return false;
       if (!q) return true;
       const cocok = (n: unknown) => typeof n === 'string' && n.toLowerCase().includes(q);
       return cocok(t.nomorKA) || cocok(t.relasi) || cocok(t.asal) || cocok(t.tujuan);
     });
-  }, [jadwal.perjalanan, saringLin, cari]);
+  }, [jadwal, saringLin, cari]);
 
   const perLin = useMemo(
     () =>
-      jadwal.perjalanan.reduce(
+      (jadwal?.perjalanan ?? []).reduce(
         (a, t) => {
           a[t.lin] = (a[t.lin] ?? 0) + 1;
           return a;
         },
         {} as Record<string, number>,
       ),
-    [jadwal.perjalanan],
+    [jadwal],
   );
 
   const prosesTeks = (nama: string, teks: string) => {
+    if (!jadwal || !emplasemen) return;
     let hasil: HasilImpor;
     try {
       hasil = bacaBerkas(nama, teks, jadwal);
@@ -73,7 +87,9 @@ export default function BerkasJadwal() {
       return;
     }
 
-    const galatBaru = periksaJadwalAman(hasil.jadwal).filter((t) => t.tingkat === 'GALAT');
+    const galatBaru = periksaJadwalAman(hasil.jadwal, emplasemen).filter(
+      (t) => t.tingkat === 'GALAT',
+    );
     if (galatBaru.length > 0) {
       setHasilImpor({
         jadwal: null,
@@ -89,14 +105,30 @@ export default function BerkasJadwal() {
   };
 
   const unduhCsv = () => {
+    if (!jadwal) return;
     const blob = new Blob([keCsv(jadwal)], { type: 'text/csv;charset=utf-8' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `jadwal-manggarai-${jadwal.tanggalDibuat}.csv`;
+    a.download = `jadwal-${stasiun.toLowerCase()}-${jadwal.tanggalDibuat}.csv`;
     a.click();
     URL.revokeObjectURL(url);
   };
+
+  if (!jadwal || !emplasemen) {
+    return (
+      <div className="flex min-h-screen flex-col">
+        <KepalaPapan />
+        <main className="flex flex-1 items-center justify-center p-6">
+          <Warta tingkat={memuat ? 'info' : 'perhatian'}>
+            {memuat
+              ? `Memuat berkas emplasemen dan jadwal Stasiun ${stasiun}…`
+              : 'Berkas stasiun belum termuat. Kembali ke halaman briefing untuk memilih wilayah pengaturan.'}
+          </Warta>
+        </main>
+      </div>
+    );
+  }
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -231,11 +263,11 @@ export default function BerkasJadwal() {
                       </td>
                       <td className="sel-data text-vdu-muted">{t.relasi}</td>
                       <td className="sel-data text-2xs text-vdu-dim">
-                        {EMPLASEMEN.batas.find((b) => b.id === t.batasMasukId)?.singkatan ?? t.batasMasukId}
+                        {emplasemen.batas.find((b) => b.id === t.batasMasukId)?.singkatan ?? t.batasMasukId}
                       </td>
                       <td className="sel-data text-2xs text-vdu-dim">
                         {t.batasKeluarId
-                          ? (EMPLASEMEN.batas.find((b) => b.id === t.batasKeluarId)?.singkatan ??
+                          ? (emplasemen.batas.find((b) => b.id === t.batasKeluarId)?.singkatan ??
                             t.batasKeluarId)
                           : '—'}
                       </td>
@@ -243,7 +275,7 @@ export default function BerkasJadwal() {
                       <td className="sel-data text-right">{t.jamBerangkat}</td>
                       <td className="sel-data text-2xs text-vdu-dim">
                         {(t.sepurLazim ?? [])
-                          .map((s) => EMPLASEMEN.sepur.find((x) => x.id === s)?.nomor ?? s)
+                          .map((s) => emplasemen.sepur.find((x) => x.id === s)?.nomor ?? s)
                           .join(', ') || '—'}
                       </td>
                       <td className="sel-data">
@@ -376,7 +408,7 @@ export default function BerkasJadwal() {
                   Kode batas emplasemen
                 </div>
                 <div className="grid grid-cols-1 gap-px bg-panel-line">
-                  {EMPLASEMEN.batas.map((b) => (
+                  {emplasemen.batas.map((b) => (
                     <div
                       key={b.id}
                       className="flex items-baseline justify-between gap-2 bg-panel-sunken px-1.5 py-1 font-mono text-[0.6rem]"
@@ -394,7 +426,7 @@ export default function BerkasJadwal() {
                   Kode sepur
                 </div>
                 <div className="grid grid-cols-2 gap-px bg-panel-line">
-                  {EMPLASEMEN.sepur.map((s) => (
+                  {emplasemen.sepur.map((s) => (
                     <div
                       key={s.id}
                       className="flex items-baseline justify-between gap-1 bg-panel-sunken px-1.5 py-1 font-mono text-[0.6rem]"
@@ -410,12 +442,12 @@ export default function BerkasJadwal() {
 
           <Modul label="Acuan tata letak emplasemen">
             <div className="space-y-2 p-3 text-2xs leading-relaxed text-vdu-muted">
-              <p>{EMPLASEMEN.acuan.keterangan}</p>
+              <p>{emplasemen.acuan.keterangan}</p>
               <p className="border-l-2 border-signal-aspect-yellow bg-panel-sunken px-2 py-1.5 text-vdu-dim">
-                {EMPLASEMEN.acuan.catatanVerifikasi}
+                {emplasemen.acuan.catatanVerifikasi}
               </p>
               <ul className="space-y-0.5 font-mono text-[0.6rem] text-vdu-dim">
-                {EMPLASEMEN.acuan.sumber.map((s) => (
+                {emplasemen.acuan.sumber.map((s) => (
                   <li key={s}>· {s}</li>
                 ))}
               </ul>

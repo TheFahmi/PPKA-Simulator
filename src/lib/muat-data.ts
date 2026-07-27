@@ -1,5 +1,3 @@
-import emplasemenMentah from '../../data/emplasemen-manggarai.json';
-import jadwalMentah from '../../data/jadwal-manggarai.json';
 import type { Emplasemen, Schedule, Trip } from './tipe';
 import { indeksEmplasemen, type IndeksEmplasemen } from './emplasemen';
 import { keDetik, keDetikDinas, rentangDinas } from './waktu';
@@ -11,16 +9,25 @@ import { keDetik, keDetikDinas, rentangDinas } from './waktu';
  * (folder `data/`) supaya dapat diperbarui saat GAPEKA direvisi tanpa
  * menyentuh kode. Pemuatan selalu melewati pemeriksaan keutuhan di bawah;
  * berkas yang cacat harus gagal dengan pesan jelas, bukan diam-diam dipakai.
+ *
+ * Sejak papan melayani lebih dari satu stasiun, berkas mana yang dipakai
+ * ditentukan saat dinas dipilih — lihat `muatStasiun` pada lib/stasiun.ts.
+ * Modul ini tidak lagi menyimpan satu emplasemen tetap.
  */
 
-export const EMPLASEMEN = emplasemenMentah as unknown as Emplasemen;
-export const JADWAL_BAWAAN = jadwalMentah as unknown as Schedule;
+const indeksTersimpan = new WeakMap<Emplasemen, IndeksEmplasemen>();
 
-let indeksTersimpan: IndeksEmplasemen | null = null;
-
-export function indeks(): IndeksEmplasemen {
-  if (!indeksTersimpan) indeksTersimpan = indeksEmplasemen(EMPLASEMEN);
-  return indeksTersimpan;
+/**
+ * Indeks graf sebuah emplasemen, disimpan agar tidak disusun ulang tiap
+ * pemakaian. Kuncinya objek emplasemen itu sendiri, jadi berpindah stasiun
+ * tidak pernah memakai indeks stasiun sebelumnya.
+ */
+export function indeksUntuk(emplasemen: Emplasemen): IndeksEmplasemen {
+  const ada = indeksTersimpan.get(emplasemen);
+  if (ada) return ada;
+  const baru = indeksEmplasemen(emplasemen);
+  indeksTersimpan.set(emplasemen, baru);
+  return baru;
 }
 
 export interface TemuanPeriksa {
@@ -37,7 +44,7 @@ const POLA_JAM = /^([01]\d|2[0-3])[.:][0-5]\d([.:][0-5]\d)?$/;
  */
 export function periksaJadwal(
   jadwal: Schedule,
-  emplasemen: Emplasemen = EMPLASEMEN,
+  emplasemen: Emplasemen,
 ): TemuanPeriksa[] {
   const temuan: TemuanPeriksa[] = [];
   const idBatas = new Set(emplasemen.batas.map((b) => b.id));
@@ -166,7 +173,7 @@ export function periksaJadwal(
  */
 export function periksaJadwalAman(
   jadwal: Schedule,
-  emplasemen: Emplasemen = EMPLASEMEN,
+  emplasemen: Emplasemen,
 ): TemuanPeriksa[] {
   try {
     return periksaJadwal(jadwal, emplasemen);

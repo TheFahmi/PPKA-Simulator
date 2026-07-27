@@ -1,0 +1,198 @@
+{
+  "versi": "1.0.0",
+  "catatan": "Seluruh angka pada berkas ini dihitung ulang dari berkas emplasemen dan jadwal masing-masing stasiun oleh tools/bangun-daftar-stasiun.mjs. Jangan disunting tangan.",
+  "stasiun": [
+    {
+      "kode": "MRI",
+      "nama": "Manggarai",
+      "daop": "Daop 1 Jakarta",
+      "keterangan": "Simpul transit tersibuk Jabodetabek, bertingkat sejak Switch Over ke-7. Lantai layang melayani Lin Bogor, lantai dasar melayani Lin Cikarang, KA bandara, dan lintasan KA jarak jauh.",
+      "ciri": [
+        "Dua lantai",
+        "12 jalur bernomor",
+        "KA jarak jauh berjalan langsung"
+      ],
+      "jumlahSepur": 14,
+      "jumlahSepurPeron": 10,
+      "jumlahWesel": 14,
+      "jumlahLintas": 8,
+      "lintas": [
+        "BNI",
+        "BY",
+        "CKI",
+        "GMR",
+        "JNG",
+        "MTR",
+        "SUD",
+        "TBT"
+      ],
+      "bertingkat": true,
+      "jumlahPerjalanan": 696,
+      "puncakPerJam": 42,
+      "tingkatKesulitan": "BERAT",
+      "jumlahDinas": 7,
+      "sumberDenah": "DOKUMEN_RESMI",
+      "punyaTampilanOsm": false,
+      "keandalanJadwal": {
+        "RESMI": 627,
+        "REKONSTRUKSI_POLA": 69
+      },
+      "gapeka": "GAPEKA 2025 — jadwal Commuter Line dari API KAI Commuter (ditarik 26 Juli 2026) dan Daftar Waktu KA Antar Kota terbitan DJKA"
+    },
+    {
+      "kode": "KYA",
+      "nama": "Kroya",
+      "daop": "Daop 5 Purwokerto",
+      "keterangan": "Pertemuan tiga lintas dengan satu di antaranya masih jalur tunggal, sehingga persilangan dan penyusulan menjadi keputusan dinas sehari-hari.",
+      "ciri": [
+        "Jalur tunggal arah Maos",
+        "Jalur 1, 3, 6 untuk persilangan",
+        "Sub depo lokomotif"
+      ],
+      "jumlahSepur": 8,
+      "jumlahSepurPeron": 6,
+      "jumlahWesel": 37,
+      "jumlahLintas": 3,
+      "lintas": [
+        "KTA",
+        "MA",
+        "PWT"
+      ],
+      "bertingkat": false,
+      "jumlahPerjalanan": 152,
+      "puncakPerJam": 11,
+      "tingkatKesulitan": "MENENGAH",
+      "jumlahDinas": 5,
+      "sumberDenah": "SURVEI_OSM",
+      "punyaTampilanOsm": true,
+      "keandalanJadwal": {
+        "RESMI": 152
+      },
+      "gapeka": "GAPEKA 2025 (Lampiran II Keputusan Dirjen Perkeretaapian KP-DJKA 224 Tahun 2024, tanggal 30 Desember 2024, berlaku 1 Februari 2025) — Daftar Waktu KA Antar Kota, halaman PDF 53–620; GAPEKA 2025 Lampiran II — Daftar Waktu Perkotaan, halaman PDF 621–752 (diperiksa; tidak memuat satu pun perhentian Kroya/KYA); GAPEKA 2025 Lampiran II — Daftar Waktu KA Barang, halaman PDF 1365–1516; Berkas lokal: C:\\Users\\alienware\\AppData\\Local\\Temp\\gapeka2025.pdf (88.891.486 bita, 1.721 halaman); ekstraksi memakai \"pdftotext -table\""
+    },
+    {
+      "kode": "SLO",
+      "nama": "Solo Balapan",
+      "daop": "Daop 6 Yogyakarta",
+      "keterangan": "Empat arah lintas bertemu dengan segitiga pembalik di sisi timur dan emplasemen utara yang terpisah peruntukannya.",
+      "ciri": [
+        "Empat arah lintas",
+        "Segitiga pembalik",
+        "Dua emplasemen"
+      ],
+      "jumlahSepur": 8,
+      "jumlahSepurPeron": 8,
+      "jumlahWesel": 54,
+      "jumlahLintas": 3,
+      "lintas": [
+        "SGU",
+        "SMT",
+        "YK"
+      ],
+      "bertingkat": false,
+      "jumlahPerjalanan": 153,
+      "puncakPerJam": 11,
+      "tingkatKesulitan": "MENENGAH",
+      "jumlahDinas": 5,
+      "sumberDenah": "SURVEI_OSM",
+      "punyaTampilanOsm": true,
+      "keandalanJadwal": {
+        "RESMI": 153
+      },
+      "gapeka": "GAPEKA 2025 Wilayah Jawa (KP-DJKA Nomor 224 Tahun 2024, berlaku 1 Februari 2025), Lampiran II — berkas gapeka2025.pdf, 1.721 halaman, 88.891.486 bita. Diekstraksi dengan \"pdftotext -table\".; GAPEKA 2025 Lampiran II hal. 53-620 Daftar Waktu KA Antar Kota; GAPEKA 2025 Lampiran II hal. 621-752 Daftar Waktu Perkotaan; GAPEKA 2025 Lampiran II hal. 1365-1516 Daftar Waktu KA Barang; https://kci.id/api/krl/schedules?stationid=SLO&timefrom=00:00&timeto=23:59"
+    },
+    {
+      "kode": "JNG",
+      "nama": "Jatinegara",
+      "daop": "Daop 1 Jakarta",
+      "keterangan": "Percabangan tiga lintas: rute keluar menentukan lintas mana yang ditempuh, bukan sekadar peron mana yang dipakai.",
+      "ciri": [
+        "Tiga lintas bertemu",
+        "KA jarak jauh berhenti",
+        "Depo Lokomotif Cipinang"
+      ],
+      "jumlahSepur": 8,
+      "jumlahSepurPeron": 8,
+      "jumlahWesel": 43,
+      "jumlahLintas": 3,
+      "lintas": [
+        "BKS",
+        "MRI",
+        "PSE"
+      ],
+      "bertingkat": false,
+      "jumlahPerjalanan": 492,
+      "puncakPerJam": 28,
+      "tingkatKesulitan": "PADAT",
+      "jumlahDinas": 5,
+      "sumberDenah": "SURVEI_OSM",
+      "punyaTampilanOsm": true,
+      "keandalanJadwal": {
+        "RESMI": 276,
+        "REKONSTRUKSI_POLA": 216
+      },
+      "gapeka": "https://kci.id/api/krl/schedules?stationid=JNG&timefrom=00:00&timeto=23:59; GAPEKA 2025 Jawa, Lampiran II Daftar Waktu KA Antar Kota (KP-DJKA 224 Tahun 2024, 30 Desember 2024), halaman PDF 53-620; GAPEKA 2025 Jawa, Lampiran II Daftar Waktu KA Barang (KP-DJKA 224 Tahun 2024), halaman PDF 1365-1516; GAPEKA 2025 Jawa, Lampiran II Daftar Waktu Perkotaan, halaman PDF 621-752 (diperiksa, nihil untuk JNG)"
+    },
+    {
+      "kode": "LPN",
+      "nama": "Lempuyangan",
+      "daop": "Daop 6 Yogyakarta",
+      "keterangan": "Sebelas jalur dengan akses langsung ke Balai Yasa Yogyakarta, bengkel lokomotif utama Pulau Jawa.",
+      "ciri": [
+        "11 jalur",
+        "Akses Balai Yasa",
+        "Sepur kembar ke Yogyakarta"
+      ],
+      "jumlahSepur": 9,
+      "jumlahSepurPeron": 6,
+      "jumlahWesel": 30,
+      "jumlahLintas": 3,
+      "lintas": [
+        "BY",
+        "MGW",
+        "YK"
+      ],
+      "bertingkat": false,
+      "jumlahPerjalanan": 126,
+      "puncakPerJam": 8,
+      "tingkatKesulitan": "DASAR",
+      "jumlahDinas": 5,
+      "sumberDenah": "SURVEI_OSM",
+      "punyaTampilanOsm": true,
+      "keandalanJadwal": {
+        "RESMI": 126
+      },
+      "gapeka": "GAPEKA 2025 — KP-DJKA 224 Tahun 2024, Lampiran II, Daftar Waktu KA Antar Kota (hal. 53–620 PDF); GAPEKA 2025 — KP-DJKA 224 Tahun 2024, Lampiran II, Daftar Waktu Perkotaan (hal. 621–752 PDF); GAPEKA 2025 — KP-DJKA 224 Tahun 2024, Lampiran II, Daftar Waktu KA Barang (hal. 1365–1516 PDF); https://kci.id/api/krl/schedules?stationid=LPN&timefrom=00:00&timeto=23:59 (diperiksa 27 Juli 2026)"
+    },
+    {
+      "kode": "BD",
+      "nama": "Bandung",
+      "daop": "Daop 2 Bandung",
+      "keterangan": "Seluruh KA antarkota berhenti, tanpa satu pun berjalan langsung. Langsiran menjadi kegiatan utama, bukan sampingan.",
+      "ciri": [
+        "Nol KA langsung",
+        "Langsir sebagai kegiatan utama",
+        "Meja putar dan depo"
+      ],
+      "jumlahSepur": 9,
+      "jumlahSepurPeron": 8,
+      "jumlahWesel": 61,
+      "jumlahLintas": 2,
+      "lintas": [
+        "KAC",
+        "PDL"
+      ],
+      "bertingkat": false,
+      "jumlahPerjalanan": 160,
+      "puncakPerJam": 11,
+      "tingkatKesulitan": "DASAR",
+      "jumlahDinas": 5,
+      "sumberDenah": "SURVEI_OSM",
+      "punyaTampilanOsm": true,
+      "keandalanJadwal": {
+        "RESMI": 160
+      },
+      "gapeka": "GAPEKA 2025 - Keputusan Dirjen Perkeretaapian KP-DJKA 224 Tahun 2024 tanggal 30 Desember 2024, berlaku 1 Februari 2025; Lampiran II \"Daftar Waktu KA Antar Kota\" (hal. 53-620 berkas PDF); GAPEKA 2025 - Keputusan Dirjen Perkeretaapian KP-DJKA 224 Tahun 2024; Lampiran II \"Daftar Waktu Perkotaan\" (hal. 621-752 berkas PDF); Berkas PDF: gapeka2025.pdf (88.891.486 bita, 1.721 halaman), diekstrak dengan \"pdftotext -table -f 53 -l 752\""
+    }
+  ]
+}

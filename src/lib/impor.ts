@@ -8,7 +8,14 @@ import type { KeandalanData, KodeLin, JenisSarana, Schedule, Trip } from './tipe
  * peramban dan dipakai menggantikan berkas bawaan sampai dikembalikan.
  */
 
-export const KUNCI_SIMPANAN = 'ppka-mri:jadwal-impor';
+/**
+ * Kunci penyimpanan peramban, DIPISAH PER STASIUN. Berkas impor Kroya tidak
+ * boleh terpakai di Jatinegara: id batas dan id sepurnya berbeda, sehingga
+ * seluruh barisnya akan ditolak pemeriksa dan papan tampak rusak tanpa sebab.
+ */
+export function kunciSimpanan(kodeStasiun: string): string {
+  return `ppka:jadwal-impor:${kodeStasiun}`;
+}
 
 export const KOLOM_CSV = [
   'nomorKA',
@@ -319,9 +326,9 @@ export function keCsv(jadwal: Schedule): string {
   return baris.join('\n');
 }
 
-export function simpanImpor(jadwal: Schedule): void {
+export function simpanImpor(kodeStasiun: string, jadwal: Schedule): void {
   if (typeof window === 'undefined') return;
-  window.localStorage.setItem(KUNCI_SIMPANAN, JSON.stringify(jadwal));
+  window.localStorage.setItem(kunciSimpanan(kodeStasiun), JSON.stringify(jadwal));
 }
 
 /**
@@ -331,19 +338,38 @@ export function simpanImpor(jadwal: Schedule): void {
  * supaya berkas yang telanjur rusak tidak pernah dapat membuntukan papan pada
  * pemuatan berikutnya.
  */
-export function muatImpor(kerangka: Schedule): Schedule | null {
+export function muatImpor(kodeStasiun: string, kerangka: Schedule): Schedule | null {
   if (typeof window === 'undefined') return null;
-  const teks = window.localStorage.getItem(KUNCI_SIMPANAN);
+  const kunci = kunciSimpanan(kodeStasiun);
+  const teks = window.localStorage.getItem(kunci);
   if (!teks) return null;
   const hasil = bacaJson(teks, kerangka);
   if (!hasil.jadwal) {
-    window.localStorage.removeItem(KUNCI_SIMPANAN);
+    window.localStorage.removeItem(kunci);
     return null;
   }
   return hasil.jadwal;
 }
 
-export function hapusImpor(): void {
+export function hapusImpor(kodeStasiun: string): void {
   if (typeof window === 'undefined') return;
-  window.localStorage.removeItem(KUNCI_SIMPANAN);
+  window.localStorage.removeItem(kunciSimpanan(kodeStasiun));
+}
+
+/**
+ * Buang berkas impor SELURUH stasiun.
+ *
+ * Dipakai halaman galat, yang justru terpanggil ketika papan tidak lagi dapat
+ * dipercaya menyebut stasiun mana yang sedang dipilih. Karena itu jalan keluar
+ * ini sengaja tidak bergantung pada keadaan papan.
+ */
+export function hapusSeluruhImpor(): void {
+  if (typeof window === 'undefined') return;
+  const awalan = kunciSimpanan('');
+  const dibuang: string[] = [];
+  for (let i = 0; i < window.localStorage.length; i += 1) {
+    const k = window.localStorage.key(i);
+    if (k && k.startsWith(awalan)) dibuang.push(k);
+  }
+  for (const k of dibuang) window.localStorage.removeItem(k);
 }

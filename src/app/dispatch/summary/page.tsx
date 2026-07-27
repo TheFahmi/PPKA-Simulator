@@ -4,7 +4,6 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { KepalaPapan } from '@/components/KepalaPapan';
 import { Modul, Petak, Warta } from '@/components/panel';
-import { indeks } from '@/lib/muat-data';
 import { NAMA_LIN, WARNA_LIN } from '@/lib/semboyan';
 import { KETERANGAN_PERINGKAT } from '@/lib/skor';
 import { golonganDeviasi, keDeviasi, keDeviasiPanjang, keJam } from '@/lib/waktu';
@@ -21,10 +20,11 @@ const WARNA_PERINGKAT: Record<string, string> = {
 export default function LaporanAkhirDinas() {
   const router = useRouter();
   const sim = usePapan((s) => s.sim);
+  const ix = usePapan((s) => s.ix);
   const hasil = usePapan((s) => s.hasil);
   const mulaiDinas = usePapan((s) => s.mulaiDinas);
 
-  if (!sim || !hasil) {
+  if (!sim || !hasil || !ix) {
     return (
       <div className="flex min-h-screen flex-col">
         <KepalaPapan />
@@ -42,7 +42,6 @@ export default function LaporanAkhirDinas() {
     );
   }
 
-  const ix = indeks();
   const adaRealisasi = hasil.keretaDilayani.length > 0;
   const keretaOtomatis = sim.kereta.filter((k) => k.dilayaniOtomatis).length;
   const dilayani = [...hasil.keretaDilayani].sort((a, b) => a.jadwalBerangkat - b.jadwalBerangkat);
