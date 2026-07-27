@@ -13,13 +13,13 @@
       "https://id.wikipedia.org/w/index.php?title=Stasiun_Bandara_Adi_Soemarmo&action=raw",
       "https://id.wikipedia.org/wiki/Jalur_kereta_api_Gundih%E2%80%93Solo_Balapan"
     ],
-    "catatanVerifikasi": "YANG BERASAL DARI SURVEI: kedudukan dan bentuk tiap sepur, letak tiap wesel beserta penetapan kaki pangkal, lurus, dan belok yang dihitung dari geometri, persilangan sebidang, penomoran jalur, dan letak peron. YANG DISUSUN SENDIRI DAN BUKAN DATA SURVEI: penomoran wesel (OpenStreetMap tidak memuat ref maupun name pada satu pun wesel), letak dan penamaan sinyal (OpenStreetMap hampir tidak memuat railway=signal pada stasiun-stasiun ini), pembagian blok deteksi sarana, serta penetapan batas mana yang arah masuk dan mana yang arah keluar pada lintas jalur ganda. CARA MENGGAMBAR: diagram jalur bukan peta berskala. Kedudukan memanjang dipakai apa adanya, sedangkan kedudukan melintang dipetakan menjadi lajur berjarak tetap lewat pemetaan monoton, sehingga urutan sepur dan seluruh topologinya tetap sama dengan hasil survei sementara renggangnya dibuat terbaca. Sepur yang meninggalkan emplasemen dimampatkan secara logaritmik. Tampilan kedua, \"rel OSM\", memakai bidang \"osm\" pada tiap simpul dan \"jalanOsm\" pada tiap ruas: itu geometri survei yang diskalakan seragam pada kedua sumbu tanpa pemetaan lajur maupun pemampatan, jadi berskala benar.",
+    "catatanVerifikasi": "YANG BERASAL DARI SURVEI: kedudukan dan bentuk tiap sepur, letak tiap wesel beserta penetapan kaki pangkal, lurus, dan belok yang dihitung dari geometri, persilangan sebidang, penomoran jalur, dan letak peron. YANG DISUSUN SENDIRI DAN BUKAN DATA SURVEI: penomoran wesel (OpenStreetMap tidak memuat ref maupun name pada satu pun wesel), letak dan penamaan sinyal (OpenStreetMap hampir tidak memuat railway=signal pada stasiun-stasiun ini), pembagian blok deteksi sarana, serta penetapan batas mana yang arah masuk dan mana yang arah keluar pada lintas jalur ganda. CARA MENGGAMBAR: diagram jalur bukan peta berskala. Kedudukan memanjang dipakai apa adanya, sedangkan kedudukan melintang dibulatkan ke lajur berjarak tetap, dan tiap ruas digambar sebagai garis lurus dari simpul ke simpul — sepur menjadi garis mendatar, leher wesel menjadi garis miring, sama seperti papan pelayanan sungguhan. Urutan sepur dan seluruh topologinya tetap sama dengan hasil survei. Sepur yang meninggalkan penampang emplasemen dirapatkan ke tepi papan menurut urutannya, bukan menurut jarak sebenarnya. Tampilan kedua, \"rel OSM\", memakai bidang \"osm\" pada tiap simpul dan \"jalanOsm\" pada tiap ruas: itu geometri survei yang diskalakan seragam pada kedua sumbu tanpa pemetaan lajur maupun pemampatan, jadi berskala benar.",
     "putarDerajat": 16.6
   },
   "kanvas": {
     "DASAR": {
       "lebar": 1700,
-      "tinggi": 905
+      "tinggi": 1544
     }
   },
   "kanvasOsm": {
@@ -33,7 +33,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 782,
-      "y": 460,
+      "y": 928,
       "osm": {
         "x": 782,
         "y": 421
@@ -44,7 +44,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 948,
-      "y": 550,
+      "y": 1032,
       "osm": {
         "x": 948,
         "y": 435
@@ -55,7 +55,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 1141,
-      "y": 563,
+      "y": 1136,
       "osm": {
         "x": 1141,
         "y": 442
@@ -66,7 +66,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 1441,
-      "y": 846,
+      "y": 1136,
       "osm": {
         "x": 1441,
         "y": 593
@@ -77,7 +77,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 946,
-      "y": 656,
+      "y": 1344,
       "osm": {
         "x": 946,
         "y": 462
@@ -88,7 +88,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 1113,
-      "y": 772,
+      "y": 1448,
       "osm": {
         "x": 1113,
         "y": 477
@@ -99,7 +99,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 401,
-      "y": 229,
+      "y": 512,
       "osm": {
         "x": 401,
         "y": 378
@@ -110,7 +110,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 105,
-      "y": 121,
+      "y": 512,
       "osm": {
         "x": 105,
         "y": 353
@@ -121,7 +121,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 563,
-      "y": 258,
+      "y": 616,
       "osm": {
         "x": 563,
         "y": 393
@@ -132,7 +132,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 505,
-      "y": 239,
+      "y": 564,
       "osm": {
         "x": 505,
         "y": 383
@@ -143,7 +143,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 435,
-      "y": 167,
+      "y": 408,
       "osm": {
         "x": 435,
         "y": 371
@@ -154,7 +154,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 405,
-      "y": 135,
+      "y": 356,
       "osm": {
         "x": 405,
         "y": 362
@@ -165,7 +165,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 478,
-      "y": 231,
+      "y": 512,
       "osm": {
         "x": 478,
         "y": 379
@@ -176,7 +176,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 423,
-      "y": 136,
+      "y": 304,
       "osm": {
         "x": 423,
         "y": 362
@@ -187,7 +187,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 399,
-      "y": 118,
+      "y": 200,
       "osm": {
         "x": 399,
         "y": 351
@@ -198,7 +198,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 374,
-      "y": 104,
+      "y": 200,
       "osm": {
         "x": 374,
         "y": 335
@@ -209,7 +209,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 265,
-      "y": 77,
+      "y": 200,
       "osm": {
         "x": 265,
         "y": 272
@@ -220,7 +220,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 206,
-      "y": 72,
+      "y": 200,
       "osm": {
         "x": 206,
         "y": 252
@@ -231,7 +231,7 @@
       "jenis": "BATAS",
       "level": "DASAR",
       "x": 92,
-      "y": 130,
+      "y": 928,
       "osm": {
         "x": 92,
         "y": 359
@@ -242,7 +242,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 450,
-      "y": 492,
+      "y": 928,
       "osm": {
         "x": 450,
         "y": 424
@@ -253,7 +253,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 630,
-      "y": 290,
+      "y": 720,
       "osm": {
         "x": 630,
         "y": 403
@@ -264,7 +264,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 752,
-      "y": 564,
+      "y": 1136,
       "osm": {
         "x": 752,
         "y": 443
@@ -275,7 +275,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 757,
-      "y": 566,
+      "y": 1136,
       "osm": {
         "x": 757,
         "y": 444
@@ -286,7 +286,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 501,
-      "y": 238,
+      "y": 512,
       "osm": {
         "x": 501,
         "y": 383
@@ -297,7 +297,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 423,
-      "y": 153,
+      "y": 460,
       "osm": {
         "x": 423,
         "y": 368
@@ -308,7 +308,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 404,
-      "y": 141,
+      "y": 252,
       "osm": {
         "x": 404,
         "y": 364
@@ -319,7 +319,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 370,
-      "y": 124,
+      "y": 252,
       "osm": {
         "x": 370,
         "y": 355
@@ -330,7 +330,7 @@
       "jenis": "BATAS",
       "level": "DASAR",
       "x": 170,
-      "y": 102,
+      "y": 252,
       "osm": {
         "x": 170,
         "y": 331
@@ -341,7 +341,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 821,
-      "y": 412,
+      "y": 824,
       "osm": {
         "x": 821,
         "y": 415
@@ -352,7 +352,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 568,
-      "y": 259,
+      "y": 668,
       "osm": {
         "x": 568,
         "y": 393
@@ -363,7 +363,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 703,
-      "y": 585,
+      "y": 1240,
       "osm": {
         "x": 703,
         "y": 454
@@ -374,7 +374,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 945,
-      "y": 763,
+      "y": 1448,
       "osm": {
         "x": 945,
         "y": 475
@@ -385,7 +385,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 1485,
-      "y": 72,
+      "y": 1032,
       "osm": {
         "x": 1485,
         "y": 249
@@ -396,7 +396,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 1514,
-      "y": 59,
+      "y": 980,
       "osm": {
         "x": 1514,
         "y": 176
@@ -407,7 +407,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 1436,
-      "y": 95,
+      "y": 1032,
       "osm": {
         "x": 1436,
         "y": 320
@@ -418,7 +418,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 945,
-      "y": 774,
+      "y": 1448,
       "osm": {
         "x": 945,
         "y": 478
@@ -429,7 +429,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 703,
-      "y": 617,
+      "y": 1292,
       "osm": {
         "x": 703,
         "y": 458
@@ -440,7 +440,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 359,
-      "y": 280,
+      "y": 720,
       "osm": {
         "x": 359,
         "y": 402
@@ -451,7 +451,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 604,
-      "y": 547,
+      "y": 1032,
       "osm": {
         "x": 604,
         "y": 433
@@ -462,7 +462,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 341,
-      "y": 227,
+      "y": 460,
       "osm": {
         "x": 341,
         "y": 378
@@ -473,7 +473,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 626,
-      "y": 284,
+      "y": 720,
       "osm": {
         "x": 626,
         "y": 402
@@ -484,7 +484,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 821,
-      "y": 334,
+      "y": 772,
       "osm": {
         "x": 821,
         "y": 406
@@ -495,7 +495,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 621,
-      "y": 252,
+      "y": 616,
       "osm": {
         "x": 621,
         "y": 390
@@ -506,7 +506,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 704,
-      "y": 249,
+      "y": 616,
       "osm": {
         "x": 704,
         "y": 388
@@ -517,7 +517,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 1002,
-      "y": 462,
+      "y": 928,
       "osm": {
         "x": 1002,
         "y": 421
@@ -528,7 +528,7 @@
       "jenis": "BATAS",
       "level": "DASAR",
       "x": 292,
-      "y": 118,
+      "y": 252,
       "osm": {
         "x": 292,
         "y": 351
@@ -539,7 +539,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 329,
-      "y": 111,
+      "y": 148,
       "osm": {
         "x": 329,
         "y": 343
@@ -550,7 +550,7 @@
       "jenis": "BATAS",
       "level": "DASAR",
       "x": 170,
-      "y": 98,
+      "y": 148,
       "osm": {
         "x": 170,
         "y": 326
@@ -561,7 +561,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 369,
-      "y": 119,
+      "y": 408,
       "osm": {
         "x": 369,
         "y": 351
@@ -572,7 +572,7 @@
       "jenis": "BATAS",
       "level": "DASAR",
       "x": 255,
-      "y": 88,
+      "y": 408,
       "osm": {
         "x": 255,
         "y": 305
@@ -583,7 +583,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 666,
-      "y": 251,
+      "y": 616,
       "osm": {
         "x": 666,
         "y": 389
@@ -594,7 +594,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 767,
-      "y": 242,
+      "y": 564,
       "osm": {
         "x": 767,
         "y": 385
@@ -605,7 +605,7 @@
       "jenis": "BATAS",
       "level": "DASAR",
       "x": 1054,
-      "y": 248,
+      "y": 564,
       "osm": {
         "x": 1054,
         "y": 388
@@ -616,7 +616,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 1419,
-      "y": 106,
+      "y": 1084,
       "osm": {
         "x": 1419,
         "y": 337
@@ -627,7 +627,7 @@
       "jenis": "UJUNG",
       "level": "DASAR",
       "x": 158,
-      "y": 72,
+      "y": 356,
       "osm": {
         "x": 158,
         "y": 253
@@ -638,7 +638,7 @@
       "jenis": "UJUNG",
       "level": "DASAR",
       "x": 160,
-      "y": 71,
+      "y": 304,
       "osm": {
         "x": 160,
         "y": 248
@@ -649,7 +649,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 1019,
-      "y": 778,
+      "y": 1448,
       "osm": {
         "x": 1019,
         "y": 480
@@ -660,7 +660,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 1547,
-      "y": 856,
+      "y": 1188,
       "osm": {
         "x": 1547,
         "y": 648
@@ -671,7 +671,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 1414,
-      "y": 110,
+      "y": 1188,
       "osm": {
         "x": 1414,
         "y": 342
@@ -682,7 +682,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 704,
-      "y": 570,
+      "y": 1188,
       "osm": {
         "x": 704,
         "y": 446
@@ -693,7 +693,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 946,
-      "y": 687,
+      "y": 1396,
       "osm": {
         "x": 946,
         "y": 467
@@ -704,7 +704,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 1076,
-      "y": 774,
+      "y": 1448,
       "osm": {
         "x": 1076,
         "y": 478
@@ -715,7 +715,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 1131,
-      "y": 784,
+      "y": 1448,
       "osm": {
         "x": 1131,
         "y": 482
@@ -726,7 +726,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 541,
-      "y": 551,
+      "y": 1032,
       "osm": {
         "x": 541,
         "y": 436
@@ -737,7 +737,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 1296,
-      "y": 827,
+      "y": 1500,
       "osm": {
         "x": 1296,
         "y": 533
@@ -748,7 +748,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 1296,
-      "y": 825,
+      "y": 1448,
       "osm": {
         "x": 1296,
         "y": 529
@@ -759,7 +759,7 @@
       "jenis": "UJUNG",
       "level": "DASAR",
       "x": 170,
-      "y": 69,
+      "y": 44,
       "osm": {
         "x": 170,
         "y": 236
@@ -770,7 +770,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 1058,
-      "y": 559,
+      "y": 1084,
       "osm": {
         "x": 1058,
         "y": 440
@@ -781,7 +781,7 @@
       "jenis": "UJUNG",
       "level": "DASAR",
       "x": 1119,
-      "y": 568,
+      "y": 1136,
       "osm": {
         "x": 1119,
         "y": 444
@@ -792,7 +792,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 1047,
-      "y": 557,
+      "y": 1084,
       "osm": {
         "x": 1047,
         "y": 439
@@ -803,7 +803,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 1118,
-      "y": 560,
+      "y": 1136,
       "osm": {
         "x": 1118,
         "y": 441
@@ -814,7 +814,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 471,
-      "y": 233,
+      "y": 512,
       "osm": {
         "x": 471,
         "y": 380
@@ -825,7 +825,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 412,
-      "y": 231,
+      "y": 512,
       "osm": {
         "x": 412,
         "y": 379
@@ -836,7 +836,7 @@
       "jenis": "UJUNG",
       "level": "DASAR",
       "x": 247,
-      "y": 133,
+      "y": 512,
       "osm": {
         "x": 247,
         "y": 360
@@ -847,7 +847,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 913,
-      "y": 229,
+      "y": 512,
       "osm": {
         "x": 913,
         "y": 379
@@ -858,7 +858,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 532,
-      "y": 550,
+      "y": 1032,
       "osm": {
         "x": 532,
         "y": 435
@@ -869,7 +869,7 @@
       "jenis": "UJUNG",
       "level": "DASAR",
       "x": 464,
-      "y": 539,
+      "y": 980,
       "osm": {
         "x": 464,
         "y": 429
@@ -880,7 +880,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 519,
-      "y": 339,
+      "y": 772,
       "osm": {
         "x": 519,
         "y": 406
@@ -891,7 +891,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 423,
-      "y": 269,
+      "y": 668,
       "osm": {
         "x": 423,
         "y": 398
@@ -902,7 +902,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 643,
-      "y": 476,
+      "y": 928,
       "osm": {
         "x": 643,
         "y": 422
@@ -913,7 +913,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 518,
-      "y": 391,
+      "y": 772,
       "osm": {
         "x": 518,
         "y": 411
@@ -924,7 +924,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 690,
-      "y": 544,
+      "y": 1032,
       "osm": {
         "x": 690,
         "y": 432
@@ -935,7 +935,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 518,
-      "y": 418,
+      "y": 824,
       "osm": {
         "x": 518,
         "y": 416
@@ -946,7 +946,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 596,
-      "y": 405,
+      "y": 824,
       "osm": {
         "x": 596,
         "y": 414
@@ -957,7 +957,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 519,
-      "y": 276,
+      "y": 720,
       "osm": {
         "x": 519,
         "y": 401
@@ -968,7 +968,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 299,
-      "y": 101,
+      "y": 356,
       "osm": {
         "x": 299,
         "y": 330
@@ -979,7 +979,7 @@
       "jenis": "BATAS",
       "level": "DASAR",
       "x": 252,
-      "y": 95,
+      "y": 356,
       "osm": {
         "x": 252,
         "y": 319
@@ -990,7 +990,7 @@
       "jenis": "BATAS",
       "level": "DASAR",
       "x": 265,
-      "y": 102,
+      "y": 148,
       "osm": {
         "x": 265,
         "y": 331
@@ -1001,7 +1001,7 @@
       "jenis": "BATAS",
       "level": "DASAR",
       "x": 175,
-      "y": 72,
+      "y": 200,
       "osm": {
         "x": 175,
         "y": 250
@@ -1012,7 +1012,7 @@
       "jenis": "BATAS",
       "level": "DASAR",
       "x": 1531,
-      "y": 44,
+      "y": 928,
       "osm": {
         "x": 1531,
         "y": 44
@@ -1023,7 +1023,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 548,
-      "y": 546,
+      "y": 1032,
       "osm": {
         "x": 548,
         "y": 433
@@ -1034,7 +1034,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 424,
-      "y": 259,
+      "y": 668,
       "osm": {
         "x": 424,
         "y": 393
@@ -1045,7 +1045,7 @@
       "jenis": "UJUNG",
       "level": "DASAR",
       "x": 276,
-      "y": 233,
+      "y": 512,
       "osm": {
         "x": 276,
         "y": 380
@@ -1056,7 +1056,7 @@
       "jenis": "UJUNG",
       "level": "DASAR",
       "x": 322,
-      "y": 251,
+      "y": 616,
       "osm": {
         "x": 322,
         "y": 389
@@ -1067,7 +1067,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 423,
-      "y": 290,
+      "y": 720,
       "osm": {
         "x": 423,
         "y": 403
@@ -1078,7 +1078,7 @@
       "jenis": "UJUNG",
       "level": "DASAR",
       "x": 363,
-      "y": 268,
+      "y": 668,
       "osm": {
         "x": 363,
         "y": 397
@@ -1089,7 +1089,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 423,
-      "y": 357,
+      "y": 772,
       "osm": {
         "x": 423,
         "y": 407
@@ -1100,7 +1100,7 @@
       "jenis": "UJUNG",
       "level": "DASAR",
       "x": 394,
-      "y": 323,
+      "y": 720,
       "osm": {
         "x": 394,
         "y": 405
@@ -1111,7 +1111,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 163,
-      "y": 139,
+      "y": 512,
       "osm": {
         "x": 163,
         "y": 364
@@ -1122,7 +1122,7 @@
       "jenis": "UJUNG",
       "level": "DASAR",
       "x": 172,
-      "y": 68,
+      "y": 96,
       "osm": {
         "x": 172,
         "y": 232
@@ -1133,7 +1133,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 1024,
-      "y": 523,
+      "y": 980,
       "osm": {
         "x": 1024,
         "y": 427
@@ -1144,7 +1144,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 976,
-      "y": 442,
+      "y": 876,
       "osm": {
         "x": 976,
         "y": 419
@@ -1155,7 +1155,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 786,
-      "y": 576,
+      "y": 1188,
       "osm": {
         "x": 786,
         "y": 449
@@ -1166,7 +1166,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 704,
-      "y": 563,
+      "y": 1136,
       "osm": {
         "x": 704,
         "y": 442
@@ -1177,7 +1177,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 1026,
-      "y": 250,
+      "y": 616,
       "osm": {
         "x": 1026,
         "y": 389
@@ -1188,7 +1188,7 @@
       "jenis": "BATAS",
       "level": "DASAR",
       "x": 1054,
-      "y": 256,
+      "y": 616,
       "osm": {
         "x": 1054,
         "y": 392
@@ -1199,7 +1199,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 782,
-      "y": 418,
+      "y": 824,
       "osm": {
         "x": 782,
         "y": 416
@@ -1210,7 +1210,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 948,
-      "y": 541,
+      "y": 1032,
       "osm": {
         "x": 948,
         "y": 430
@@ -1221,7 +1221,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 660,
-      "y": 329,
+      "y": 720,
       "osm": {
         "x": 660,
         "y": 405
@@ -1232,7 +1232,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 1207,
-      "y": 573,
+      "y": 1188,
       "osm": {
         "x": 1207,
         "y": 447
@@ -1243,7 +1243,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 1468,
-      "y": 849,
+      "y": 1240,
       "osm": {
         "x": 1468,
         "y": 610
@@ -1254,7 +1254,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 478,
-      "y": 521,
+      "y": 980,
       "osm": {
         "x": 478,
         "y": 427
@@ -1265,7 +1265,7 @@
       "jenis": "BATAS",
       "level": "DASAR",
       "x": 90,
-      "y": 125,
+      "y": 460,
       "osm": {
         "x": 90,
         "y": 356
@@ -1276,7 +1276,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 168,
-      "y": 141,
+      "y": 720,
       "osm": {
         "x": 168,
         "y": 364
@@ -1287,7 +1287,7 @@
       "jenis": "WESEL",
       "level": "DASAR",
       "x": 1084,
-      "y": 555,
+      "y": 1084,
       "osm": {
         "x": 1084,
         "y": 438
@@ -1298,7 +1298,7 @@
       "jenis": "SAMBUNG",
       "level": "DASAR",
       "x": 976,
-      "y": 537,
+      "y": 980,
       "osm": {
         "x": 976,
         "y": 428
@@ -1309,7 +1309,7 @@
       "jenis": "BATAS",
       "level": "DASAR",
       "x": 1610,
-      "y": 861,
+      "y": 1500,
       "osm": {
         "x": 1610,
         "y": 681
@@ -1320,7 +1320,7 @@
       "jenis": "BATAS",
       "level": "DASAR",
       "x": 1557,
-      "y": 857,
+      "y": 1240,
       "osm": {
         "x": 1557,
         "y": 652
@@ -1331,7 +1331,7 @@
       "jenis": "BATAS",
       "level": "DASAR",
       "x": 252,
-      "y": 90,
+      "y": 304,
       "osm": {
         "x": 252,
         "y": 310
@@ -1365,52 +1365,6 @@
       "ke": "S1202365821",
       "blokId": "BLK-R104206308-0",
       "panjangM": 369,
-      "titikBelok": [
-        {
-          "x": 1159,
-          "y": 568
-        },
-        {
-          "x": 1178,
-          "y": 575
-        },
-        {
-          "x": 1190,
-          "y": 580
-        },
-        {
-          "x": 1198,
-          "y": 585
-        },
-        {
-          "x": 1209,
-          "y": 618
-        },
-        {
-          "x": 1217,
-          "y": 653
-        },
-        {
-          "x": 1230,
-          "y": 690
-        },
-        {
-          "x": 1298,
-          "y": 807
-        },
-        {
-          "x": 1343,
-          "y": 821
-        },
-        {
-          "x": 1377,
-          "y": 831
-        },
-        {
-          "x": 1421,
-          "y": 842
-        }
-      ],
       "jalanOsm": [
         {
           "x": 1141,
@@ -1492,20 +1446,6 @@
       "ke": "S7737834375",
       "blokId": "BLK-R120083586-0",
       "panjangM": 323,
-      "titikBelok": [
-        {
-          "x": 341,
-          "y": 186
-        },
-        {
-          "x": 293,
-          "y": 160
-        },
-        {
-          "x": 216,
-          "y": 142
-        }
-      ],
       "jalanOsm": [
         {
           "x": 401,
@@ -1572,20 +1512,6 @@
       "ke": "S3361221405",
       "blokId": "BLK-R120083589-0",
       "panjangM": 63,
-      "titikBelok": [
-        {
-          "x": 466,
-          "y": 222
-        },
-        {
-          "x": 458,
-          "y": 197
-        },
-        {
-          "x": 438,
-          "y": 150
-        }
-      ],
       "jalanOsm": [
         {
           "x": 478,
@@ -1616,12 +1542,6 @@
       "ke": "S11162830807",
       "blokId": "BLK-R120083589-4",
       "panjangM": 29,
-      "titikBelok": [
-        {
-          "x": 408,
-          "y": 124
-        }
-      ],
       "jalanOsm": [
         {
           "x": 423,
@@ -1644,16 +1564,6 @@
       "ke": "S11162830806",
       "blokId": "BLK-R120083589-6",
       "panjangM": 32,
-      "titikBelok": [
-        {
-          "x": 388,
-          "y": 112
-        },
-        {
-          "x": 380,
-          "y": 108
-        }
-      ],
       "jalanOsm": [
         {
           "x": 399,
@@ -1680,24 +1590,6 @@
       "ke": "S12101132372",
       "blokId": "BLK-R120083589-9",
       "panjangM": 137,
-      "titikBelok": [
-        {
-          "x": 336,
-          "y": 89
-        },
-        {
-          "x": 326,
-          "y": 87
-        },
-        {
-          "x": 320,
-          "y": 85
-        },
-        {
-          "x": 310,
-          "y": 83
-        }
-      ],
       "jalanOsm": [
         {
           "x": 374,
@@ -1732,16 +1624,6 @@
       "ke": "S11164823619",
       "blokId": "BLK-R120083589-14",
       "panjangM": 68,
-      "titikBelok": [
-        {
-          "x": 252,
-          "y": 76
-        },
-        {
-          "x": 228,
-          "y": 74
-        }
-      ],
       "jalanOsm": [
         {
           "x": 265,
@@ -1768,40 +1650,6 @@
       "ke": "S3361220077",
       "blokId": "BLK-R120083591-0",
       "panjangM": 397,
-      "titikBelok": [
-        {
-          "x": 143,
-          "y": 152
-        },
-        {
-          "x": 171,
-          "y": 196
-        },
-        {
-          "x": 214,
-          "y": 244
-        },
-        {
-          "x": 255,
-          "y": 267
-        },
-        {
-          "x": 283,
-          "y": 301
-        },
-        {
-          "x": 305,
-          "y": 365
-        },
-        {
-          "x": 327,
-          "y": 397
-        },
-        {
-          "x": 349,
-          "y": 415
-        }
-      ],
       "jalanOsm": [
         {
           "x": 92,
@@ -1852,48 +1700,6 @@
       "ke": "S3361220084",
       "blokId": "BLK-R120083593-0",
       "panjangM": 141,
-      "titikBelok": [
-        {
-          "x": 647,
-          "y": 325
-        },
-        {
-          "x": 655,
-          "y": 345
-        },
-        {
-          "x": 665,
-          "y": 375
-        },
-        {
-          "x": 671,
-          "y": 390
-        },
-        {
-          "x": 677,
-          "y": 406
-        },
-        {
-          "x": 685,
-          "y": 426
-        },
-        {
-          "x": 699,
-          "y": 495
-        },
-        {
-          "x": 706,
-          "y": 529
-        },
-        {
-          "x": 719,
-          "y": 546
-        },
-        {
-          "x": 731,
-          "y": 553
-        }
-      ],
       "jalanOsm": [
         {
           "x": 630,
@@ -1970,12 +1776,6 @@
       "ke": "S3361221400",
       "blokId": "BLK-R120083594-0",
       "panjangM": 25,
-      "titikBelok": [
-        {
-          "x": 487,
-          "y": 234
-        }
-      ],
       "jalanOsm": [
         {
           "x": 501,
@@ -2070,12 +1870,6 @@
       "ke": "S1202365818",
       "blokId": "BLK-R120083594-6",
       "panjangM": 219,
-      "titikBelok": [
-        {
-          "x": 344,
-          "y": 117
-        }
-      ],
       "jalanOsm": [
         {
           "x": 370,
@@ -2099,12 +1893,6 @@
       "blokId": "BLK-R120083595-0",
       "panjangM": 276,
       "sepurId": "SP-SLO-7",
-      "titikBelok": [
-        {
-          "x": 717,
-          "y": 338
-        }
-      ],
       "jalanOsm": [
         {
           "x": 821,
@@ -2128,12 +1916,6 @@
       "blokId": "BLK-R225521440-0",
       "panjangM": 264,
       "sepurId": "SP-SLO-2",
-      "titikBelok": [
-        {
-          "x": 838,
-          "y": 679
-        }
-      ],
       "jalanOsm": [
         {
           "x": 703,
@@ -2156,20 +1938,6 @@
       "ke": "S1202365810",
       "blokId": "BLK-R329257089-0",
       "panjangM": 86,
-      "titikBelok": [
-        {
-          "x": 1495,
-          "y": 68
-        },
-        {
-          "x": 1503,
-          "y": 64
-        },
-        {
-          "x": 1509,
-          "y": 62
-        }
-      ],
       "jalanOsm": [
         {
           "x": 1485,
@@ -2200,20 +1968,6 @@
       "ke": "S1202365824",
       "blokId": "BLK-R329257090-0",
       "panjangM": 93,
-      "titikBelok": [
-        {
-          "x": 1449,
-          "y": 88
-        },
-        {
-          "x": 1464,
-          "y": 81
-        },
-        {
-          "x": 1479,
-          "y": 74
-        }
-      ],
       "jalanOsm": [
         {
           "x": 1436,
@@ -2263,20 +2017,6 @@
       "ke": "S3361220081",
       "blokId": "BLK-R329266022-0",
       "panjangM": 269,
-      "titikBelok": [
-        {
-          "x": 417,
-          "y": 406
-        },
-        {
-          "x": 433,
-          "y": 427
-        },
-        {
-          "x": 532,
-          "y": 520
-        }
-      ],
       "jalanOsm": [
         {
           "x": 359,
@@ -2326,16 +2066,6 @@
       "blokId": "BLK-R329266028-0",
       "panjangM": 219,
       "sepurId": "SP-SLO-8",
-      "titikBelok": [
-        {
-          "x": 783,
-          "y": 286
-        },
-        {
-          "x": 655,
-          "y": 255
-        }
-      ],
       "jalanOsm": [
         {
           "x": 821,
@@ -2362,28 +2092,6 @@
       "ke": "S3361221398",
       "blokId": "BLK-R329266029-0",
       "panjangM": 326,
-      "titikBelok": [
-        {
-          "x": 735,
-          "y": 253
-        },
-        {
-          "x": 782,
-          "y": 263
-        },
-        {
-          "x": 942,
-          "y": 363
-        },
-        {
-          "x": 956,
-          "y": 385
-        },
-        {
-          "x": 969,
-          "y": 399
-        }
-      ],
       "jalanOsm": [
         {
           "x": 704,
@@ -2422,12 +2130,6 @@
       "ke": "S3361221402",
       "blokId": "BLK-R329266030-0",
       "panjangM": 123,
-      "titikBelok": [
-        {
-          "x": 378,
-          "y": 130
-        }
-      ],
       "jalanOsm": [
         {
           "x": 404,
@@ -2486,12 +2188,6 @@
       "ke": "S11164823607",
       "blokId": "BLK-R329266032-0",
       "panjangM": 134,
-      "titikBelok": [
-        {
-          "x": 312,
-          "y": 101
-        }
-      ],
       "jalanOsm": [
         {
           "x": 369,
@@ -2514,28 +2210,6 @@
       "ke": "S3361221398",
       "blokId": "BLK-R329305092-0",
       "panjangM": 367,
-      "titikBelok": [
-        {
-          "x": 699,
-          "y": 255
-        },
-        {
-          "x": 783,
-          "y": 270
-        },
-        {
-          "x": 942,
-          "y": 394
-        },
-        {
-          "x": 957,
-          "y": 402
-        },
-        {
-          "x": 974,
-          "y": 418
-        }
-      ],
       "jalanOsm": [
         {
           "x": 666,
@@ -2574,12 +2248,6 @@
       "ke": "S11162830828",
       "blokId": "BLK-R329305093-0",
       "panjangM": 68,
-      "titikBelok": [
-        {
-          "x": 743,
-          "y": 247
-        }
-      ],
       "jalanOsm": [
         {
           "x": 704,
@@ -2602,28 +2270,6 @@
       "ke": "S11162830823",
       "blokId": "BLK-R329305093-2",
       "panjangM": 315,
-      "titikBelok": [
-        {
-          "x": 824,
-          "y": 196
-        },
-        {
-          "x": 837,
-          "y": 178
-        },
-        {
-          "x": 850,
-          "y": 173
-        },
-        {
-          "x": 870,
-          "y": 173
-        },
-        {
-          "x": 910,
-          "y": 199
-        }
-      ],
       "jalanOsm": [
         {
           "x": 767,
@@ -2680,20 +2326,6 @@
       "ke": "S4239440451",
       "blokId": "BLK-R424537039-0",
       "panjangM": 294,
-      "titikBelok": [
-        {
-          "x": 370,
-          "y": 115
-        },
-        {
-          "x": 336,
-          "y": 103
-        },
-        {
-          "x": 216,
-          "y": 79
-        }
-      ],
       "jalanOsm": [
         {
           "x": 405,
@@ -2724,12 +2356,6 @@
       "ke": "S4990231587",
       "blokId": "BLK-R509890651-0",
       "panjangM": 312,
-      "titikBelok": [
-        {
-          "x": 373,
-          "y": 111
-        }
-      ],
       "jalanOsm": [
         {
           "x": 423,
@@ -2752,12 +2378,6 @@
       "ke": "S3361155510",
       "blokId": "BLK-R668255719-0",
       "panjangM": 80,
-      "titikBelok": [
-        {
-          "x": 986,
-          "y": 774
-        }
-      ],
       "jalanOsm": [
         {
           "x": 945,
@@ -2780,100 +2400,6 @@
       "ke": "S11510437706",
       "blokId": "BLK-R780438611-0",
       "panjangM": 457,
-      "titikBelok": [
-        {
-          "x": 1502,
-          "y": 852
-        },
-        {
-          "x": 1467,
-          "y": 847
-        },
-        {
-          "x": 1432,
-          "y": 842
-        },
-        {
-          "x": 1410,
-          "y": 838
-        },
-        {
-          "x": 1395,
-          "y": 834
-        },
-        {
-          "x": 1385,
-          "y": 831
-        },
-        {
-          "x": 1379,
-          "y": 829
-        },
-        {
-          "x": 1370,
-          "y": 823
-        },
-        {
-          "x": 1365,
-          "y": 817
-        },
-        {
-          "x": 1360,
-          "y": 808
-        },
-        {
-          "x": 1356,
-          "y": 796
-        },
-        {
-          "x": 1355,
-          "y": 779
-        },
-        {
-          "x": 1354,
-          "y": 674
-        },
-        {
-          "x": 1354,
-          "y": 583
-        },
-        {
-          "x": 1357,
-          "y": 554
-        },
-        {
-          "x": 1359,
-          "y": 518
-        },
-        {
-          "x": 1364,
-          "y": 388
-        },
-        {
-          "x": 1368,
-          "y": 276
-        },
-        {
-          "x": 1374,
-          "y": 251
-        },
-        {
-          "x": 1379,
-          "y": 235
-        },
-        {
-          "x": 1386,
-          "y": 187
-        },
-        {
-          "x": 1395,
-          "y": 138
-        },
-        {
-          "x": 1405,
-          "y": 119
-        }
-      ],
       "jalanOsm": [
         {
           "x": 1547,
@@ -3003,28 +2529,6 @@
       "ke": "S3361220078",
       "blokId": "BLK-R828922003-0",
       "panjangM": 102,
-      "titikBelok": [
-        {
-          "x": 428,
-          "y": 454
-        },
-        {
-          "x": 418,
-          "y": 431
-        },
-        {
-          "x": 406,
-          "y": 412
-        },
-        {
-          "x": 390,
-          "y": 384
-        },
-        {
-          "x": 379,
-          "y": 346
-        }
-      ],
       "jalanOsm": [
         {
           "x": 450,
@@ -3081,16 +2585,6 @@
       "ke": "S3361155508",
       "blokId": "BLK-R1005545879-0",
       "panjangM": 178,
-      "titikBelok": [
-        {
-          "x": 631,
-          "y": 569
-        },
-        {
-          "x": 682,
-          "y": 582
-        }
-      ],
       "jalanOsm": [
         {
           "x": 541,
@@ -3153,40 +2647,6 @@
       "ke": "S719116297",
       "blokId": "BLK-R1192021980-0",
       "panjangM": 189,
-      "titikBelok": [
-        {
-          "x": 1135,
-          "y": 785
-        },
-        {
-          "x": 1151,
-          "y": 788
-        },
-        {
-          "x": 1168,
-          "y": 792
-        },
-        {
-          "x": 1183,
-          "y": 796
-        },
-        {
-          "x": 1202,
-          "y": 801
-        },
-        {
-          "x": 1221,
-          "y": 807
-        },
-        {
-          "x": 1239,
-          "y": 812
-        },
-        {
-          "x": 1259,
-          "y": 818
-        }
-      ],
       "jalanOsm": [
         {
           "x": 1131,
@@ -3237,44 +2697,6 @@
       "ke": "S12440467294",
       "blokId": "BLK-R1192021981-0",
       "panjangM": 209,
-      "titikBelok": [
-        {
-          "x": 1253,
-          "y": 814
-        },
-        {
-          "x": 1240,
-          "y": 809
-        },
-        {
-          "x": 1224,
-          "y": 805
-        },
-        {
-          "x": 1204,
-          "y": 798
-        },
-        {
-          "x": 1188,
-          "y": 792
-        },
-        {
-          "x": 1171,
-          "y": 786
-        },
-        {
-          "x": 1151,
-          "y": 781
-        },
-        {
-          "x": 1135,
-          "y": 778
-        },
-        {
-          "x": 1131,
-          "y": 776
-        }
-      ],
       "jalanOsm": [
         {
           "x": 1296,
@@ -3329,48 +2751,6 @@
       "ke": "S11164823619",
       "blokId": "BLK-R1204406357-0",
       "panjangM": 204,
-      "titikBelok": [
-        {
-          "x": 362,
-          "y": 99
-        },
-        {
-          "x": 355,
-          "y": 97
-        },
-        {
-          "x": 348,
-          "y": 95
-        },
-        {
-          "x": 306,
-          "y": 86
-        },
-        {
-          "x": 269,
-          "y": 81
-        },
-        {
-          "x": 260,
-          "y": 80
-        },
-        {
-          "x": 252,
-          "y": 78
-        },
-        {
-          "x": 244,
-          "y": 77
-        },
-        {
-          "x": 236,
-          "y": 76
-        },
-        {
-          "x": 228,
-          "y": 75
-        }
-      ],
       "jalanOsm": [
         {
           "x": 374,
@@ -3555,28 +2935,6 @@
       "ke": "S11162830818",
       "blokId": "BLK-R1204406363-0",
       "panjangM": 159,
-      "titikBelok": [
-        {
-          "x": 827,
-          "y": 228
-        },
-        {
-          "x": 842,
-          "y": 225
-        },
-        {
-          "x": 857,
-          "y": 224
-        },
-        {
-          "x": 880,
-          "y": 225
-        },
-        {
-          "x": 898,
-          "y": 227
-        }
-      ],
       "jalanOsm": [
         {
           "x": 767,
@@ -3651,12 +3009,6 @@
       "ke": "S11164793087",
       "blokId": "BLK-R1204639359-0",
       "panjangM": 136,
-      "titikBelok": [
-        {
-          "x": 621,
-          "y": 444
-        }
-      ],
       "jalanOsm": [
         {
           "x": 643,
@@ -3679,12 +3031,6 @@
       "ke": "S11164793089",
       "blokId": "BLK-R1204639360-0",
       "panjangM": 188,
-      "titikBelok": [
-        {
-          "x": 663,
-          "y": 537
-        }
-      ],
       "jalanOsm": [
         {
           "x": 690,
@@ -3707,12 +3053,6 @@
       "ke": "S11164793094",
       "blokId": "BLK-R1204639361-0",
       "panjangM": 69,
-      "titikBelok": [
-        {
-          "x": 727,
-          "y": 556
-        }
-      ],
       "jalanOsm": [
         {
           "x": 752,
@@ -3771,12 +3111,6 @@
       "ke": "S11164793090",
       "blokId": "BLK-R1204639361-4",
       "panjangM": 84,
-      "titikBelok": [
-        {
-          "x": 545,
-          "y": 311
-        }
-      ],
       "jalanOsm": [
         {
           "x": 596,
@@ -3799,12 +3133,6 @@
       "ke": "S3361221406",
       "blokId": "BLK-R1204641982-0",
       "panjangM": 61,
-      "titikBelok": [
-        {
-          "x": 400,
-          "y": 135
-        }
-      ],
       "jalanOsm": [
         {
           "x": 423,
@@ -3881,16 +3209,6 @@
       "ke": "S12151707774",
       "blokId": "BLK-R1204641985-0",
       "panjangM": 267,
-      "titikBelok": [
-        {
-          "x": 379,
-          "y": 108
-        },
-        {
-          "x": 366,
-          "y": 104
-        }
-      ],
       "jalanOsm": [
         {
           "x": 399,
@@ -3917,24 +3235,6 @@
       "ke": "S12151467125",
       "blokId": "BLK-R1210300710-0",
       "panjangM": 145,
-      "titikBelok": [
-        {
-          "x": 1516,
-          "y": 58
-        },
-        {
-          "x": 1518,
-          "y": 56
-        },
-        {
-          "x": 1521,
-          "y": 54
-        },
-        {
-          "x": 1525,
-          "y": 50
-        }
-      ],
       "jalanOsm": [
         {
           "x": 1514,
@@ -4077,12 +3377,6 @@
       "ke": "S11164793085",
       "blokId": "BLK-R1306645071-0",
       "panjangM": 84,
-      "titikBelok": [
-        {
-          "x": 577,
-          "y": 390
-        }
-      ],
       "jalanOsm": [
         {
           "x": 596,
@@ -4177,16 +3471,6 @@
       "ke": "S12101952865",
       "blokId": "BLK-R1306750011-0",
       "panjangM": 53,
-      "titikBelok": [
-        {
-          "x": 995,
-          "y": 469
-        },
-        {
-          "x": 984,
-          "y": 452
-        }
-      ],
       "jalanOsm": [
         {
           "x": 1024,
@@ -4213,16 +3497,6 @@
       "ke": "S12101952872",
       "blokId": "BLK-R1306750012-0",
       "panjangM": 169,
-      "titikBelok": [
-        {
-          "x": 964,
-          "y": 429
-        },
-        {
-          "x": 941,
-          "y": 417
-        }
-      ],
       "jalanOsm": [
         {
           "x": 976,
@@ -4249,12 +3523,6 @@
       "ke": "S12101937747",
       "blokId": "BLK-R1306751841-0",
       "panjangM": 175,
-      "titikBelok": [
-        {
-          "x": 791,
-          "y": 577
-        }
-      ],
       "jalanOsm": [
         {
           "x": 786,
@@ -4277,20 +3545,6 @@
       "ke": "S12101937748",
       "blokId": "BLK-R1306751843-0",
       "panjangM": 81,
-      "titikBelok": [
-        {
-          "x": 986,
-          "y": 779
-        },
-        {
-          "x": 975,
-          "y": 779
-        },
-        {
-          "x": 964,
-          "y": 778
-        }
-      ],
       "jalanOsm": [
         {
           "x": 1019,
@@ -4357,16 +3611,6 @@
       "ke": "S3361155522",
       "blokId": "BLK-R1306751846-0",
       "panjangM": 178,
-      "titikBelok": [
-        {
-          "x": 646,
-          "y": 583
-        },
-        {
-          "x": 617,
-          "y": 576
-        }
-      ],
       "jalanOsm": [
         {
           "x": 703,
@@ -4448,20 +3692,6 @@
       "ke": "S5333574727",
       "blokId": "BLK-R1306853413-0",
       "panjangM": 134,
-      "titikBelok": [
-        {
-          "x": 710,
-          "y": 408
-        },
-        {
-          "x": 716,
-          "y": 413
-        },
-        {
-          "x": 723,
-          "y": 418
-        }
-      ],
       "jalanOsm": [
         {
           "x": 660,
@@ -4492,12 +3722,6 @@
       "ke": "S3361220090",
       "blokId": "BLK-R1306853414-0",
       "panjangM": 107,
-      "titikBelok": [
-        {
-          "x": 1001,
-          "y": 549
-        }
-      ],
       "jalanOsm": [
         {
           "x": 948,
@@ -4520,32 +3744,6 @@
       "ke": "S3361220090",
       "blokId": "BLK-R1306853415-0",
       "panjangM": 107,
-      "titikBelok": [
-        {
-          "x": 976,
-          "y": 555
-        },
-        {
-          "x": 986,
-          "y": 556
-        },
-        {
-          "x": 995,
-          "y": 556
-        },
-        {
-          "x": 1000,
-          "y": 556
-        },
-        {
-          "x": 1024,
-          "y": 556
-        },
-        {
-          "x": 1034,
-          "y": 557
-        }
-      ],
       "jalanOsm": [
         {
           "x": 948,
@@ -4606,44 +3804,6 @@
       "ke": "S11510437706",
       "blokId": "BLK-R1312800759-0",
       "panjangM": 258,
-      "titikBelok": [
-        {
-          "x": 1230,
-          "y": 570
-        },
-        {
-          "x": 1254,
-          "y": 558
-        },
-        {
-          "x": 1255,
-          "y": 558
-        },
-        {
-          "x": 1278,
-          "y": 542
-        },
-        {
-          "x": 1307,
-          "y": 430
-        },
-        {
-          "x": 1338,
-          "y": 273
-        },
-        {
-          "x": 1360,
-          "y": 246
-        },
-        {
-          "x": 1384,
-          "y": 160
-        },
-        {
-          "x": 1400,
-          "y": 124
-        }
-      ],
       "jalanOsm": [
         {
           "x": 1207,
@@ -4698,12 +3858,6 @@
       "ke": "S12151467117",
       "blokId": "BLK-R1312800763-0",
       "panjangM": 71,
-      "titikBelok": [
-        {
-          "x": 1174,
-          "y": 568
-        }
-      ],
       "jalanOsm": [
         {
           "x": 1141,
@@ -4726,12 +3880,6 @@
       "ke": "S9280193425",
       "blokId": "BLK-R1312800765-0",
       "panjangM": 34,
-      "titikBelok": [
-        {
-          "x": 1448,
-          "y": 847
-        }
-      ],
       "jalanOsm": [
         {
           "x": 1441,
@@ -4862,12 +4010,6 @@
       "ke": "S12151707759",
       "blokId": "BLK-R1312829555-0",
       "panjangM": 118,
-      "titikBelok": [
-        {
-          "x": 1001,
-          "y": 541
-        }
-      ],
       "jalanOsm": [
         {
           "x": 1084,
@@ -4962,20 +4104,6 @@
       "ke": "S1347330631",
       "blokId": "BLK-R1312829560-0",
       "panjangM": 126,
-      "titikBelok": [
-        {
-          "x": 603,
-          "y": 253
-        },
-        {
-          "x": 589,
-          "y": 252
-        },
-        {
-          "x": 573,
-          "y": 250
-        }
-      ],
       "jalanOsm": [
         {
           "x": 621,
@@ -5006,12 +4134,6 @@
       "ke": "S12102623370",
       "blokId": "BLK-R1312829561-0",
       "panjangM": 133,
-      "titikBelok": [
-        {
-          "x": 717,
-          "y": 387
-        }
-      ],
       "jalanOsm": [
         {
           "x": 660,
@@ -5052,16 +4174,6 @@
       "ke": "S3361221399",
       "blokId": "BLK-R1312829563-0",
       "panjangM": 66,
-      "titikBelok": [
-        {
-          "x": 1040,
-          "y": 541
-        },
-        {
-          "x": 1059,
-          "y": 548
-        }
-      ],
       "jalanOsm": [
         {
           "x": 1024,
@@ -5088,16 +4200,6 @@
       "ke": "S11162830817",
       "blokId": "BLK-R1312829567-0",
       "panjangM": 189,
-      "titikBelok": [
-        {
-          "x": 216,
-          "y": 155
-        },
-        {
-          "x": 292,
-          "y": 203
-        }
-      ],
       "jalanOsm": [
         {
           "x": 168,
@@ -5232,20 +4334,6 @@
       "ke": "S3361220078",
       "blokId": "BLK-R1312971524-0",
       "panjangM": 212,
-      "titikBelok": [
-        {
-          "x": 189,
-          "y": 151
-        },
-        {
-          "x": 203,
-          "y": 163
-        },
-        {
-          "x": 269,
-          "y": 241
-        }
-      ],
       "jalanOsm": [
         {
           "x": 168,
@@ -5348,12 +4436,6 @@
       "ke": "S9280193427",
       "blokId": "BLK-R1312971528-0",
       "panjangM": 206,
-      "titikBelok": [
-        {
-          "x": 1392,
-          "y": 841
-        }
-      ],
       "jalanOsm": [
         {
           "x": 1468,
@@ -5412,16 +4494,6 @@
       "ke": "S1202365843",
       "blokId": "BLK-R1331197805-0",
       "panjangM": 26,
-      "titikBelok": [
-        {
-          "x": 1130,
-          "y": 562
-        },
-        {
-          "x": 1134,
-          "y": 562
-        }
-      ],
       "jalanOsm": [
         {
           "x": 1118,
@@ -7351,9 +6423,9 @@
       ],
       "geometri": {
         "x": 821,
-        "y": 320,
+        "y": 766,
         "lebar": 154,
-        "tinggi": 223
+        "tinggi": 64
       }
     },
     {
@@ -7368,9 +6440,9 @@
       ],
       "geometri": {
         "x": 704,
-        "y": 581,
+        "y": 1234,
         "lebar": 231,
-        "tinggi": 195
+        "tinggi": 220
       }
     },
     {
@@ -7384,9 +6456,9 @@
       ],
       "geometri": {
         "x": 704,
-        "y": 625,
+        "y": 1442,
         "lebar": 231,
-        "tinggi": 163
+        "tinggi": 14
       }
     },
     {
@@ -7401,9 +6473,9 @@
       ],
       "geometri": {
         "x": 705,
-        "y": 568,
+        "y": 1182,
         "lebar": 288,
-        "tinggi": 210
+        "tinggi": 64
       }
     },
     {
@@ -7418,9 +6490,9 @@
       ],
       "geometri": {
         "x": 705,
-        "y": 558,
+        "y": 1182,
         "lebar": 335,
-        "tinggi": 209
+        "tinggi": 168
       }
     },
     {
@@ -7434,9 +6506,9 @@
       ],
       "geometri": {
         "x": 792,
-        "y": 560,
+        "y": 1338,
         "lebar": 230,
-        "tinggi": 129
+        "tinggi": 14
       }
     },
     {
@@ -7451,9 +6523,9 @@
       ],
       "geometri": {
         "x": 743,
-        "y": 373,
+        "y": 818,
         "lebar": 247,
-        "tinggi": 179
+        "tinggi": 14
       }
     },
     {
@@ -7468,9 +6540,9 @@
       ],
       "geometri": {
         "x": 784,
-        "y": 418,
+        "y": 818,
         "lebar": 156,
-        "tinggi": 135
+        "tinggi": 116
       }
     },
     {
@@ -7484,9 +6556,9 @@
       ],
       "geometri": {
         "x": 783,
-        "y": 471,
+        "y": 922,
         "lebar": 193,
-        "tinggi": 99
+        "tinggi": 14
       }
     }
   ],

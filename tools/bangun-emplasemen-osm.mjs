@@ -43,85 +43,144 @@ const TEPI_X = 90;
 /* ------------------------------------------------------------------ */
 
 /**
- * Susun pemetaan monoton dari kedudukan melintang nyata (meter) ke kedudukan
- * gambar (satuan kanvas), berdasarkan penampang emplasemen di sekitar pusat.
- * Sepur yang berdekatan di lapangan tetap berdekatan di gambar dan urutannya
- * tidak pernah tertukar.
+ * Tetapkan NOMOR LAJUR papan bagi tiap simpul.
+ *
+ * Papan pelayanan bukan peta. Sepur digambar sebagai garis mendatar pada lajur
+ * berjarak tetap, dan leher wesel sebagai garis miring lurus yang berpindah
+ * lajur — itulah bentuk yang dibaca petugas, dan itu pula bentuk denah
+ * Manggarai yang disusun dari dokumen tata letak. Karena itu keluarannya
+ * BILANGAN BULAT: tiap simpul jatuh tepat pada satu lajur, tidak pernah di
+ * antara dua lajur. Bentuk lengkung yang sebenarnya tidak hilang — ia tersimpan
+ * terpisah pada bidang `jalanOsm` untuk tampilan rel OSM.
  */
-function petaLajur(ruas, level) {
+function tetapkanLajur(ruas, simpul, level) {
+  const milik = ruas.filter((r) => r.level === level);
+  const simpulMilik = simpul.filter((n) => n.level === level);
+  const lajurSimpul = new Map();
+  if (simpulMilik.length === 0) return { lajurSimpul, keLajur: () => 0 };
+
   /*
    * Lajur disusun dari PENAMPANG MELINTANG emplasemen, bukan dari titik tengah
    * tiap ruas. Mencuplik titik tengah keliru: sepur leher yang sedang memencar
    * punya titik tengah pada kedudukan melintang yang berbeda-beda, sehingga
    * masing-masing membentuk lajur palsu dan kanvas membengkak berlipat-lipat.
-   * Penampang pada satu kedudukan memanjang hanya memuat sepur yang benar-benar
-   * berdampingan di situ.
+   * Beberapa penampang digabung supaya sepur yang hanya ada di sebagian panjang
+   * emplasemen tetap memperoleh lajurnya sendiri.
    */
-  const milik = ruas.filter((r) => r.level === level);
   const contoh = [];
-  const potong = [0, -120, 120, -240, 240];
-  for (const x0 of potong) {
-    const pada = [];
+  for (const x0 of [0, -120, 120, -240, 240, -360, 360]) {
     for (const r of milik) {
       for (let i = 1; i < r.titik.length; i += 1) {
         const a = r.titik[i - 1];
         const b = r.titik[i];
         if ((a.x - x0) * (b.x - x0) > 0) continue;
         const f = b.x === a.x ? 0 : (x0 - a.x) / (b.x - a.x);
-        pada.push(a.y + f * (b.y - a.y));
+        contoh.push(a.y + f * (b.y - a.y));
         break;
       }
     }
-    if (pada.length > contoh.length) contoh.length = 0, contoh.push(...pada);
   }
-  if (contoh.length === 0) {
-    for (const r of milik) contoh.push(r.titik[Math.floor(r.titik.length / 2)].y);
-  }
-  contoh.sort((a, b) => a - b);
+  if (contoh.length === 0) for (const n of simpulMilik) contoh.push(n.y);
 
-  // Kelompokkan yang berdekatan (dalam 3,5 m) sebagai satu lajur.
+  // Renggang antar-sepur bersebelahan di lapangan berkisar 4-5 m; 3,5 m aman
+  // sebagai ambang "sepur yang sama".
+  const urut = [...contoh].sort((a, b) => a - b);
   const lajur = [];
-  for (const y of contoh) {
-    const akhir = lajur[lajur.length - 1];
-    if (akhir && y - akhir.y <= 3.5) {
-      akhir.y = (akhir.y * akhir.n + y) / (akhir.n + 1);
-      akhir.n += 1;
+  for (const y of urut) {
+    const akhirL = lajur[lajur.length - 1];
+    if (akhirL && y - akhirL.y <= 3.5) {
+      akhirL.y = (akhirL.y * akhirL.n + y) / (akhirL.n + 1);
+      akhirL.n += 1;
     } else {
       lajur.push({ y, n: 1 });
     }
   }
+  const nilaiLajur = lajur.map((l) => l.y);
+  const lo = nilaiLajur[0];
+  const hi = nilaiLajur[nilaiLajur.length - 1];
 
-  const titikKendali = lajur.map((l, i) => ({ nyata: l.y, gambar: i * RENGGANG }));
-  if (titikKendali.length === 0) return () => 0;
-  if (titikKendali.length === 1) return () => titikKendali[0].gambar;
-
-  /*
-   * Di luar penampang, sepur yang memencar keluar emplasemen dimampatkan
-   * secara logaritmik. Tanpa ini satu jalur depo yang menjauh 500 m akan
-   * menarik tinggi kanvas menjadi berlipat-lipat, padahal pada papan pelayanan
-   * sungguhnya sepur yang meninggalkan emplasemen justru dirapatkan ke tepi.
-   * Urutan dan arah simpangannya tetap terjaga.
-   */
-  const mampat = (jarak) => RENGGANG * Math.log1p(Math.abs(jarak) / 4) * 0.55;
-
-  return (y) => {
-    const n = titikKendali.length;
-    if (y <= titikKendali[0].nyata) {
-      return titikKendali[0].gambar - mampat(titikKendali[0].nyata - y);
-    }
-    if (y >= titikKendali[n - 1].nyata) {
-      return titikKendali[n - 1].gambar + mampat(y - titikKendali[n - 1].nyata);
-    }
-    for (let i = 1; i < n; i += 1) {
-      const a = titikKendali[i - 1];
-      const b = titikKendali[i];
-      if (y <= b.nyata) {
-        const f = (y - a.nyata) / (b.nyata - a.nyata || 1);
-        return a.gambar + f * (b.gambar - a.gambar);
+  const terdekat = (y) => {
+    let terbaik = 0;
+    let jarak = Infinity;
+    for (let i = 0; i < nilaiLajur.length; i += 1) {
+      const d = Math.abs(nilaiLajur[i] - y);
+      if (d < jarak) {
+        jarak = d;
+        terbaik = i;
       }
     }
-    return titikKendali[n - 1].gambar;
+    return terbaik;
   };
+
+  /*
+   * Simpul di dalam penampang langsung dibulatkan ke lajur terdekat. Yang di
+   * luar penampang TIDAK boleh dibulatkan menurut jarak sebenarnya: lintas yang
+   * melengkung menjauh 300 m akan melahirkan puluhan lajur palsu dan menarik
+   * tinggi papan berlipat-lipat. Yang benar, dan yang dilakukan papan
+   * sungguhan, adalah sepur itu MENERUSKAN lajurnya sendiri sampai tepi papan.
+   */
+  const terpakai = new Set();
+  const kunciPakai = (n, l) => `${Math.round(n.x / 70)}|${l}`;
+  for (const n of simpulMilik) {
+    if (n.y >= lo - 3.5 && n.y <= hi + 3.5) {
+      const l = terdekat(n.y);
+      lajurSimpul.set(n.id, l);
+      terpakai.add(kunciPakai(n, l));
+    }
+  }
+
+  const tetanggaSimpul = new Map();
+  for (const r of milik) {
+    for (const [a, b] of [
+      [r.dari, r.ke],
+      [r.ke, r.dari],
+    ]) {
+      if (!tetanggaSimpul.has(a)) tetanggaSimpul.set(a, []);
+      tetanggaSimpul.get(a).push(b);
+    }
+  }
+  const petaSimpul = new Map(simpulMilik.map((n) => [n.id, n]));
+
+  /*
+   * Lajur dirambatkan keluar dari simpul yang sudah tertetapkan. Simpul yang
+   * baru meneruskan lajur tetangganya; bila lajur itu sudah dipakai sepur lain
+   * pada kedudukan memanjang yang sama, ia bergeser satu lajur ke arah
+   * simpangannya yang sebenarnya — sehingga percabangan di luar penampang tetap
+   * tergambar terpisah, bukan bertindih.
+   */
+  const antre = [...lajurSimpul.keys()];
+  let kepala = 0;
+  while (kepala < antre.length) {
+    const idU = antre[kepala];
+    kepala += 1;
+    const u = petaSimpul.get(idU);
+    const lu = lajurSimpul.get(idU);
+    for (const idV of tetanggaSimpul.get(idU) ?? []) {
+      if (lajurSimpul.has(idV)) continue;
+      const v = petaSimpul.get(idV);
+      if (!v) continue;
+      const arah = v.y > u.y + 3.5 ? 1 : v.y < u.y - 3.5 ? -1 : 0;
+      let l = lu;
+      // Cari lajur bebas terdekat, mulai dari lajur yang diteruskan.
+      for (let langkah = 0; langkah < 40; langkah += 1) {
+        const calon = lu + (arah === 0 ? (langkah % 2 === 0 ? 1 : -1) * Math.ceil(langkah / 2) : arah * langkah);
+        if (!terpakai.has(kunciPakai(v, calon))) {
+          l = calon;
+          break;
+        }
+      }
+      lajurSimpul.set(idV, l);
+      terpakai.add(kunciPakai(v, l));
+      antre.push(idV);
+    }
+  }
+
+  // Simpul yang benar-benar terpisah dari graf utama tetap perlu lajur.
+  for (const n of simpulMilik) {
+    if (!lajurSimpul.has(n.id)) lajurSimpul.set(n.id, terdekat(n.y));
+  }
+
+  return { lajurSimpul, keLajur: terdekat };
 }
 
 /* ------------------------------------------------------------------ */
@@ -158,22 +217,38 @@ function bangun(kode) {
   const skalaX = (LEBAR_KANVAS - TEPI_X * 2) / Math.max(1, maksX - minX);
 
   const tingkat = [...new Set(graf.ruas.map((r) => r.level))];
-  const peta = {};
-  for (const lv of tingkat) peta[lv] = petaLajur(graf.ruas, lv);
-
-  const kanvasY = {};
+  for (const n of graf.simpul) n.level = levelSimpul.get(n.id) ?? 'DASAR';
+  const lajurSimpul = new Map();
+  const keLajurLevel = {};
   for (const lv of tingkat) {
-    const nilai = graf.ruas
-      .filter((r) => r.level === lv)
-      .flatMap((r) => r.titik.map((p) => peta[lv](p.y)));
-    const min = Math.min(...nilai);
-    kanvasY[lv] = { geser: 44 - min, tinggi: Math.max(...nilai) - min + 88 };
+    const hasil = tetapkanLajur(graf.ruas, graf.simpul, lv);
+    keLajurLevel[lv] = hasil.keLajur;
+    for (const [id, l] of hasil.lajurSimpul) lajurSimpul.set(id, l);
   }
 
-  const keGambar = (t, level) => ({
-    x: Math.round((t.x - minX) * skalaX + TEPI_X),
-    y: Math.round(peta[level](t.y) + kanvasY[level].geser),
+  /*
+   * Tinggi kanvas dihitung dari SIMPUL, bukan dari seluruh titik lengkung:
+   * pada denah hanya simpul yang digambar, sebab tiap ruas menjadi garis lurus
+   * dari simpul ke simpul.
+   */
+  const kanvasY = {};
+  for (const lv of tingkat) {
+    const nilai = graf.simpul
+      .filter((n) => n.level === lv)
+      .map((n) => (lajurSimpul.get(n.id) ?? 0) * RENGGANG);
+    const min = nilai.length ? Math.min(...nilai) : 0;
+    const maks = nilai.length ? Math.max(...nilai) : 0;
+    kanvasY[lv] = { geser: 44 - min, tinggi: maks - min + 88 };
+  }
+
+  const keX = (x) => Math.round((x - minX) * skalaX + TEPI_X);
+  const keGambarSimpul = (n) => ({
+    x: keX(n.x),
+    y: Math.round((lajurSimpul.get(n.id) ?? 0) * RENGGANG + kanvasY[n.level].geser),
   });
+  /** Kedudukan tegak sebuah kedudukan melintang nyata, untuk peron. */
+  const keYLajur = (y, level) =>
+    Math.round(keLajurLevel[level](y) * RENGGANG + kanvasY[level].geser);
 
   /*
    * Tampilan kedua: geometri sebenarnya, tanpa pemetaan lajur dan tanpa
@@ -199,7 +274,7 @@ function bangun(kode) {
   /* -- Simpul ---------------------------------------------------------- */
   const simpul = graf.simpul.map((s) => {
     const lv = levelSimpul.get(s.id) ?? 'DASAR';
-    const g = keGambar({ x: s.x, y: s.y }, lv);
+    const g = keGambarSimpul(s);
     return { id: `S${s.id}`, jenis: s.jenis, level: lv, x: g.x, y: g.y, osm: keOsm(s) };
   });
   const simpulPeta = new Map(simpul.map((s) => [s.id, s]));
@@ -222,7 +297,6 @@ function bangun(kode) {
 
   const ruas = graf.ruas.map((r) => {
     const lv = r.level;
-    const titik = r.titik.map((t) => keGambar(t, lv));
     const nomor = nomorJalurRuas.get(r.id);
     const badan = idBadan.has(r.id);
     const jenis = badan
@@ -239,12 +313,18 @@ function bangun(kode) {
       blokId: `BLK-${r.id.replace(/[^0-9A-Za-z-]/g, '')}`,
       panjangM: Math.max(5, r.panjangM),
       ...(badan ? { sepurId: `SP-${kode}-${nomor}` } : {}),
-      ...(titik.length > 2 ? { titikBelok: titik.slice(1, -1) } : {}),
+      /*
+       * TIDAK ada titik belok pada denah. Tiap ruas digambar sebagai satu garis
+       * lurus dari simpul ke simpul: sepur yang tetap pada lajurnya menjadi
+       * garis mendatar, sepur yang berpindah lajur di leher wesel menjadi garis
+       * miring. Itulah bentuk papan pelayanan, dan lengkung yang sebenarnya
+       * tetap tersedia pada `jalanOsm`.
+       */
       // Jalan sebenarnya dipakai tampilan rel OSM; titik yang berimpit dibuang.
       jalanOsm: r.titik
         .map((t) => keOsm(t))
         .filter((t, i, a) => i === 0 || t.x !== a[i - 1].x || t.y !== a[i - 1].y),
-      _titik: titik,
+      _titik: null,
       _nomor: nomor,
       _nama: r.tags.name ?? null,
       _level: lv,
@@ -336,11 +416,22 @@ function bangun(kode) {
       .map((n) => `SP-${kode}-${n}`)
       .filter((id) => sepur.some((s) => s.id === id));
     const lv = sepur.find((s) => sepurIds.includes(s.id))?.level ?? 'DASAR';
-    const g = p.titik.map((t) => keGambar(t, lv));
-    const x1 = Math.min(...g.map((t) => t.x));
-    const x2 = Math.max(...g.map((t) => t.x));
-    const y1 = Math.min(...g.map((t) => t.y));
-    const y2 = Math.max(...g.map((t) => t.y));
+    const x1 = Math.min(...p.titik.map((t) => keX(t.x)));
+    const x2 = Math.max(...p.titik.map((t) => keX(t.x)));
+    /*
+     * Bidang peron dibentangkan pada lajur sepur yang dilayaninya. Memakai
+     * kedudukan nyata peron akan meleset dari sepurnya di papan, sebab papan
+     * membulatkan kedudukan melintang ke lajur.
+     */
+    const yLajur = sepurIds
+      .map((id) => simpulPeta.get(`S${(graf.ruas.find((r) => `R${r.id.replace(/[^0-9A-Za-z-]/g, '')}` === (sepur.find((x) => x.id === id) || {}).ruasId) || {}).dari}`))
+      .filter(Boolean)
+      .map((n) => n.y);
+    const yPeron = yLajur.length
+      ? yLajur
+      : p.titik.map((t) => keYLajur(t.y, lv));
+    const y1 = Math.min(...yPeron);
+    const y2 = Math.max(...yPeron);
     const id = `PER-${kode}-${peron.length + 1}`;
     peron.push({
       id,
@@ -536,7 +627,7 @@ function bangun(kode) {
       catatanVerifikasi:
         'YANG BERASAL DARI SURVEI: kedudukan dan bentuk tiap sepur, letak tiap wesel beserta penetapan kaki pangkal, lurus, dan belok yang dihitung dari geometri, persilangan sebidang, penomoran jalur, dan letak peron. ' +
         'YANG DISUSUN SENDIRI DAN BUKAN DATA SURVEI: penomoran wesel (OpenStreetMap tidak memuat ref maupun name pada satu pun wesel), letak dan penamaan sinyal (OpenStreetMap hampir tidak memuat railway=signal pada stasiun-stasiun ini), pembagian blok deteksi sarana, serta penetapan batas mana yang arah masuk dan mana yang arah keluar pada lintas jalur ganda. ' +
-        'CARA MENGGAMBAR: diagram jalur bukan peta berskala. Kedudukan memanjang dipakai apa adanya, sedangkan kedudukan melintang dipetakan menjadi lajur berjarak tetap lewat pemetaan monoton, sehingga urutan sepur dan seluruh topologinya tetap sama dengan hasil survei sementara renggangnya dibuat terbaca. Sepur yang meninggalkan emplasemen dimampatkan secara logaritmik. ' +
+        'CARA MENGGAMBAR: diagram jalur bukan peta berskala. Kedudukan memanjang dipakai apa adanya, sedangkan kedudukan melintang dibulatkan ke lajur berjarak tetap, dan tiap ruas digambar sebagai garis lurus dari simpul ke simpul — sepur menjadi garis mendatar, leher wesel menjadi garis miring, sama seperti papan pelayanan sungguhan. Urutan sepur dan seluruh topologinya tetap sama dengan hasil survei. Sepur yang meninggalkan penampang emplasemen dirapatkan ke tepi papan menurut urutannya, bukan menurut jarak sebenarnya. ' +
         'Tampilan kedua, "rel OSM", memakai bidang "osm" pada tiap simpul dan "jalanOsm" pada tiap ruas: itu geometri survei yang diskalakan seragam pada kedua sumbu tanpa pemetaan lajur maupun pemampatan, jadi berskala benar.',
       putarDerajat: Math.round(graf.sudutPutar * 10) / 10,
     },
