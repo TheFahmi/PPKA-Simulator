@@ -69,15 +69,23 @@ function tetapkanLajur(ruas, simpul, level) {
    */
   const contoh = [];
   for (const x0 of [0, -120, 120, -240, 240, -360, 360]) {
+    const pada = [];
     for (const r of milik) {
       for (let i = 1; i < r.titik.length; i += 1) {
         const a = r.titik[i - 1];
         const b = r.titik[i];
         if ((a.x - x0) * (b.x - x0) > 0) continue;
         const f = b.x === a.x ? 0 : (x0 - a.x) / (b.x - a.x);
-        contoh.push(a.y + f * (b.y - a.y));
+        pada.push(a.y + f * (b.y - a.y));
         break;
       }
+    }
+    // Diambil SATU penampang terlebar, bukan gabungan semua penampang.
+    // Menggabungkan akan memecah satu sepur yang melenceng beberapa meter
+    // antar-penampang menjadi dua lajur, dan papan menjadi terlalu tinggi.
+    if (pada.length > contoh.length) {
+      contoh.length = 0;
+      contoh.push(...pada);
     }
   }
   if (contoh.length === 0) for (const n of simpulMilik) contoh.push(n.y);
