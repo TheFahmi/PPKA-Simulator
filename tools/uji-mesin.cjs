@@ -382,6 +382,14 @@ console.log('\n== 7. Lapisan store yang dipakai antarmuka ==');
 {
   // localStorage tidak ada di Node; store hanya memakainya bila `window` ada.
   const { usePapan } = require('../.uji/src/store/papan.js');
+  const { indeksUntuk } = require('../.uji/src/lib/muat-data.js');
+  usePapan.setState({
+    stasiun: 'MRI',
+    emplasemen,
+    ix: indeksUntuk(emplasemen),
+    jadwal,
+    jadwalDiimpor: false,
+  });
   const papan = usePapan.getState();
 
   periksa('berkas jadwal bawaan termuat store', papan.jadwal.perjalanan.length > 100);
@@ -509,7 +517,8 @@ console.log('\n== 7. Lapisan store yang dipakai antarmuka ==');
   );
   periksa(
     'berkas hasil pulang-balik lolos pemeriksaan',
-    balik.jadwal && periksaJadwal(balik.jadwal).filter((t) => t.tingkat === 'GALAT').length === 0,
+    balik.jadwal &&
+      periksaJadwal(balik.jadwal, emplasemen).filter((t) => t.tingkat === 'GALAT').length === 0,
   );
 
   const cacat = baacaCsv(
@@ -517,7 +526,7 @@ console.log('\n== 7. Lapisan store yang dipakai antarmuka ==');
       '9999,LIN_BOGOR,X,Y,BTS-TIDAK-ADA,05.10,05.12',
     papan.jadwal,
   );
-  const temuanCacat = cacat.jadwal ? periksaJadwal(cacat.jadwal) : [];
+  const temuanCacat = cacat.jadwal ? periksaJadwal(cacat.jadwal, emplasemen) : [];
   periksa(
     'batas emplasemen yang tidak dikenal terdeteksi sebagai galat',
     temuanCacat.some((t) => t.tingkat === 'GALAT' && t.pesan.includes('Batas masuk')),
@@ -531,7 +540,9 @@ console.log('\n== 7. Lapisan store yang dipakai antarmuka ==');
   periksa(
     'jam di luar bentuk yang sah terdeteksi sebagai galat',
     jamCacat.jadwal &&
-      periksaJadwal(jamCacat.jadwal).some((t) => t.tingkat === 'GALAT' && t.pesan.includes('Jam datang')),
+      periksaJadwal(jamCacat.jadwal, emplasemen).some(
+        (t) => t.tingkat === 'GALAT' && t.pesan.includes('Jam datang'),
+      ),
   );
   console.log('   Pemeriksaan impor CSV berjalan.');
 }
@@ -585,13 +596,15 @@ console.log('\n== 8. Regresi cacat yang pernah ditemukan ==');
   const cacatBerat = bacaJson('{"perjalanan":[null,42,{"nomorKA":""}]}', bawaan);
   periksa('berkas berisi entri bukan objek ditolak', cacatBerat.jadwal === null);
   try {
-    periksaJadwal({ ...bawaan, perjalanan: [null, 42] });
+    periksaJadwal({ ...bawaan, perjalanan: [null, 42] }, emplasemen);
   } catch (e) {
     lemparPeriksa = e.message;
   }
   periksa(
     'periksaJadwalAman tidak melempar pada berkas rusak',
-    periksaJadwalAman({ ...bawaan, perjalanan: [null, 42] }).some((t) => t.tingkat === 'GALAT'),
+    periksaJadwalAman({ ...bawaan, perjalanan: [null, 42] }, emplasemen).some(
+      (t) => t.tingkat === 'GALAT',
+    ),
     String(lemparPeriksa),
   );
 
@@ -991,9 +1004,151 @@ console.log('\n== 11. Jadwal satu hari penuh dan dinas malam ==');
 }
 
 /* ------------------------------------------------------------------ */
-console.log(`\n${'='.repeat(60)}`);
-console.log(`Uji selesai: ${lulus} lulus, ${gagal} gagal.`);
-if (gagal > 0) {
-  for (const g of kegagalan) console.log(`  GAGAL: ${g}`);
-  process.exit(1);
+/**
+ * Bagian terakhir memuat berkas stasiun lain lewat jalan yang sama dengan
+ * aplikasi. Pemuatan itu tak serentak, jadi penutup uji ikut masuk ke dalam
+ * janji supaya hitungan lulus/gagal tetap lengkap.
+ */
+async function bagianMultiStasiun() {
+  console.log('\n== 12. Pemuatan berkas lebih dari satu stasiun ==');
+  const { usePapan } = require('../.uji/src/store/papan.js');
+  const { DAFTAR_STASIUN, muatStasiun } = require('../.uji/src/lib/stasiun.js');
+  const { perjalananDinas: perjalananDinasUmum } = require('../.uji/src/lib/muat-data.js');
+
+  periksa('daftar stasiun memuat lebih dari satu wilayah', DAFTAR_STASIUN.length >= 2);
+
+  for (const r of DAFTAR_STASIUN) {
+    const data = await muatStasiun(r.kode);
+    periksa(
+      `${r.kode}: emplasemen dan jadwal termuat`,
+      Boolean(data.emplasemen && data.jadwal),
+    );
+    periksa(
+      `${r.kode}: jumlah sepur sama dengan angka pada daftar`,
+      data.emplasemen.sepur.length === r.jumlahSepur,
+      `${data.emplasemen.sepur.length} vs ${r.jumlahSepur}`,
+    );
+    periksa(
+      `${r.kode}: jumlah perjalanan sama dengan angka pada daftar`,
+      data.jadwal.perjalanan.length === r.jumlahPerjalanan,
+      `${data.jadwal.perjalanan.length} vs ${r.jumlahPerjalanan}`,
+    );
+
+    const idBatas = new Set(data.emplasemen.batas.map((b) => b.id));
+    const batasAsing = data.jadwal.perjalanan.filter(
+      (t) => !idBatas.has(t.batasMasukId) || (t.batasKeluarId && !idBatas.has(t.batasKeluarId)),
+    );
+    periksa(
+      `${r.kode}: seluruh batas pada jadwal ada di emplasemen`,
+      batasAsing.length === 0,
+      batasAsing.length ? `${batasAsing.length} perjalanan, mis. KA ${batasAsing[0].nomorKA}` : '-',
+    );
+
+    const adaOsm = data.emplasemen.ruas.some((x) => Array.isArray(x.jalanOsm));
+    periksa(
+      `${r.kode}: ketersediaan tampilan rel OSM sesuai daftar`,
+      adaOsm === r.punyaTampilanOsm,
+      `geometri ${adaOsm ? 'ada' : 'tidak ada'}, daftar menyebut ${r.punyaTampilanOsm}`,
+    );
+
+    // Tiap dinas harus benar-benar memuat perjalanan; dinas kosong berarti
+    // rentang jamnya tidak beririsan dengan berkas jadwalnya.
+    const kosong = data.jadwal.dinas.filter(
+      (d) => perjalananDinasUmum(data.jadwal, d.mulai, d.selesai).length === 0,
+    );
+    periksa(
+      `${r.kode}: tidak ada dinas yang kosong`,
+      kosong.length === 0,
+      kosong.map((d) => d.nama).join(', '),
+    );
+  }
+
+  // Berpindah stasiun lewat store harus mengganti ketiganya sekaligus.
+  await usePapan.getState().pilihStasiun('KYA');
+  let p = usePapan.getState();
+  periksa('berpindah stasiun mengganti emplasemen', p.emplasemen.kodeStasiun === 'KYA');
+  periksa('berpindah stasiun mengganti jadwal', p.jadwal.stasiun === 'KYA');
+  periksa(
+    'indeks graf ikut berganti',
+    p.ix.data === p.emplasemen,
+    'indeks masih menunjuk emplasemen lain',
+  );
+  periksa('dinas yang sedang berjalan dihentikan saat berpindah', p.sim === null);
+
+  p.mulaiDinas(p.jadwal.dinas[0].id);
+  p = usePapan.getState();
+  periksa('dinas stasiun baru dapat dibuka', Boolean(p.sim));
+  const asing = p.sim.kereta.filter((k) => !k.id.includes('KYA'));
+  periksa(
+    'tidak ada perjalanan stasiun lain yang ikut terbawa',
+    asing.length === 0,
+    asing.length ? asing[0].id : '-',
+  );
+
+  await usePapan.getState().pilihStasiun('MRI');
+  p = usePapan.getState();
+  periksa('dapat kembali ke stasiun semula', p.emplasemen.kodeStasiun === 'MRI');
+
+  /*
+   * Bagian yang paling menentukan bagi stasiun baru: emplasemen yang lolos
+   * pemeriksaan bentuk belum tentu dapat DIDINASI. Tiap stasiun karena itu
+   * dijalankan satu dinas penuh dengan pelayanan otomatis, dan seluruh
+   * perjalanannya harus benar-benar diberangkatkan.
+   */
+  console.log('\n== 13. Satu dinas penuh pada tiap stasiun ==');
+  for (const r of DAFTAR_STASIUN) {
+    const data = await muatStasiun(r.kode);
+    const ixS = indeksEmplasemen(data.emplasemen);
+    // Dinas terpadat yang bukan satu hari penuh, supaya ujinya berat tetapi
+    // tetap selesai dalam waktu yang wajar.
+    const kandidat = data.jadwal.dinas.filter((d) => !/SEHARI/.test(d.id));
+    const dinas = kandidat.reduce(
+      (a2, d) =>
+        perjalananDinasUmum(data.jadwal, d.mulai, d.selesai).length >
+        perjalananDinasUmum(data.jadwal, a2.mulai, a2.selesai).length
+          ? d
+          : a2,
+      kandidat[0],
+    );
+    const daftar = perjalananDinasUmum(data.jadwal, dinas.mulai, dinas.selesai);
+    const K = buatKeadaanAwal(ixS, dinas, daftar);
+    K.modeOtomatis = 'PENUH';
+
+    let detik = 0;
+    while (!K.dinasSelesai && detik < 20 * 3600) {
+      jalankanOtomatis(K, ixS);
+      majuSatuDetik(K, ixS);
+      detik += 1;
+    }
+    const skor = hitungSkor(K);
+    periksa(`${r.kode}: dinas ${dinas.nama} dapat diselesaikan`, K.dinasSelesai, `berhenti di detik ${detik}`);
+    periksa(
+      `${r.kode}: seluruh perjalanan diberangkatkan`,
+      skor.keretaDilayani.length === skor.keretaTotal,
+      `${skor.keretaTotal - skor.keretaDilayani.length} dari ${skor.keretaTotal} tidak berangkat`,
+    );
+    periksa(
+      `${r.kode}: tidak ada pelanggaran keselamatan`,
+      skor.pelanggaran === 0,
+      `${skor.pelanggaran} pelanggaran, mis. ${(K.pelanggaran[0] || {}).keterangan || '-'}`,
+    );
+    console.log(
+      `   ${r.kode.padEnd(4)} ${dinas.nama.padEnd(16)} ${String(daftar.length).padStart(3)} perjalanan · ` +
+        `ketepatan ${(skor.ketepatanWaktu * 100).toFixed(1)} % · nilai ${skor.nilaiAkhir} (${skor.peringkat})`,
+    );
+  }
 }
+
+bagianMultiStasiun()
+  .catch((e) => {
+    gagal += 1;
+    kegagalan.push(`bagian 12 melempar: ${e && e.stack ? e.stack : e}`);
+  })
+  .then(() => {
+    console.log(`\n${'='.repeat(60)}`);
+    console.log(`Uji selesai: ${lulus} lulus, ${gagal} gagal.`);
+    if (gagal > 0) {
+      for (const g of kegagalan) console.log(`  GAGAL: ${g}`);
+      process.exit(1);
+    }
+  });

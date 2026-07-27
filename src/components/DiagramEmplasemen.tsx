@@ -13,7 +13,7 @@ import type { KeadaanSimulasi } from '@/lib/simulasi';
 import type { AspekSinyal, KeadaanBlok, KeretaAktif, Level } from '@/lib/tipe';
 
 /**
- * Papan diagram jalur (track diagram) Stasiun Manggarai.
+ * Papan diagram jalur (track diagram) emplasemen stasiun.
  *
  * Digambar langsung sebagai SVG mengikuti tata letak emplasemen pada berkas
  * data: sepur sebagai garis, wesel sebagai kaki bercabang dengan kaki tak
@@ -388,7 +388,13 @@ function PenandaKereta({
   const warna = WARNA_LIN[kereta.lin];
   const menunggu = kereta.fase === 'DIWARTAKAN' || kereta.fase === 'TERTAHAN_SINYAL';
   const panjang =
-    kereta.jenisSarana === 'KA_ANTARKOTA' ? 52 : kereta.jenisSarana === 'KRL_8' ? 30 : 40;
+    kereta.jenisSarana === 'KA_BARANG'
+      ? 68
+      : kereta.jenisSarana === 'KA_ANTARKOTA'
+        ? 52
+        : kereta.jenisSarana === 'KRL_8'
+          ? 30
+          : 40;
 
   let x: number;
   let y: number;
@@ -487,7 +493,10 @@ function SimbolRangkaian({
   const h = t / 2;
   const muka = panjang / 2;
   const buntut = -panjang / 2;
-  const berlokomotif = jenisSarana === 'KA_ANTARKOTA' || jenisSarana === 'LOKOMOTIF';
+  const berlokomotif =
+    jenisSarana === 'KA_ANTARKOTA' ||
+    jenisSarana === 'KA_BARANG' ||
+    jenisSarana === 'LOKOMOTIF';
   const panjangLok = berlokomotif ? 15 : 0;
   const pangkalKereta = muka - panjangLok;
 
@@ -496,7 +505,7 @@ function SimbolRangkaian({
     ? `M ${buntut + 2} ${-h} L ${pangkalKereta} ${-h} L ${pangkalKereta} ${h} L ${buntut + 2} ${h} L ${buntut} ${h - 2} L ${buntut} ${-h + 2} Z`
     : `M ${buntut + 2} ${-h} L ${muka - 6} ${-h} L ${muka} ${-h + 3} L ${muka} ${h - 3} L ${muka - 6} ${h} L ${buntut + 2} ${h} L ${buntut} ${h - 2} L ${buntut} ${-h + 2} Z`;
 
-  const jumlahSekat = jenisSarana === 'KRL_8' ? 2 : 3;
+  const jumlahSekat = jenisSarana === 'KRL_8' ? 2 : jenisSarana === 'KA_BARANG' ? 5 : 3;
   const awal = buntut + 2;
   const akhir = pangkalKereta - (berlokomotif ? 0 : 6);
   const sekat = Array.from(

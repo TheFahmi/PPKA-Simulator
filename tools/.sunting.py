@@ -1,151 +1,69 @@
 import io
 
-def edit(p, pasangan):
-    s = io.open(p, encoding='utf-8').read()
-    for a, b in pasangan:
-        if a not in s:
-            raise SystemExit('TIDAK KETEMU di %s:\n%s' % (p, a[:160]))
-        s = s.replace(a, b, 1)
-    io.open(p, 'w', encoding='utf-8').write(s)
-    print('ok', p)
+p = 'tools/uji-mesin.cjs'
+s = io.open(p, encoding='utf-8').read()
 
+a = """  await usePapan.getState().pilihStasiun('MRI');
+  p = usePapan.getState();
+  periksa('dapat kembali ke stasiun semula', p.emplasemen.kodeStasiun === 'MRI');
+}"""
 
-edit('src/app/data/page.tsx', [
-("""import { EMPLASEMEN, periksaJadwalAman, type TemuanPeriksa } from '@/lib/muat-data';""",
- """import { periksaJadwalAman, type TemuanPeriksa } from '@/lib/muat-data';"""),
+b = """  await usePapan.getState().pilihStasiun('MRI');
+  p = usePapan.getState();
+  periksa('dapat kembali ke stasiun semula', p.emplasemen.kodeStasiun === 'MRI');
 
-("""export default function BerkasJadwal() {
-  const jadwal = usePapan((s) => s.jadwal);
-  const jadwalDiimpor = usePapan((s) => s.jadwalDiimpor);
-  const gantiJadwal = usePapan((s) => s.gantiJadwal);
-  const kembalikan = usePapan((s) => s.kembalikanJadwalBawaan);
-  const segarkan = usePapan((s) => s.segarkanJadwalTersimpan);
-""",
- """export default function BerkasJadwal() {
-  const stasiun = usePapan((s) => s.stasiun);
-  const emplasemen = usePapan((s) => s.emplasemen);
-  const memuat = usePapan((s) => s.memuatStasiun);
-  const pilihStasiun = usePapan((s) => s.pilihStasiun);
-  const jadwal = usePapan((s) => s.jadwal);
-  const jadwalDiimpor = usePapan((s) => s.jadwalDiimpor);
-  const gantiJadwal = usePapan((s) => s.gantiJadwal);
-  const kembalikan = usePapan((s) => s.kembalikanJadwalBawaan);
-  const segarkan = usePapan((s) => s.segarkanJadwalTersimpan);
-"""),
-
-("""  useEffect(() => {
-    segarkan();
-  }, [segarkan]);
-
-  const temuan = useMemo<TemuanPeriksa[]>(() => periksaJadwalAman(jadwal), [jadwal]);
-  const galat = temuan.filter((t) => t.tingkat === 'GALAT');
-  const peringatan = temuan.filter((t) => t.tingkat === 'PERINGATAN');
-
-  const perjalanan = useMemo(() => {
-    const q = cari.trim().toLowerCase();
-    return jadwal.perjalanan.filter((t) => {
-      if (saringLin !== 'SEMUA' && t.lin !== saringLin) return false;
-      if (!q) return true;
-      const cocok = (n: unknown) => typeof n === 'string' && n.toLowerCase().includes(q);
-      return cocok(t.nomorKA) || cocok(t.relasi) || cocok(t.asal) || cocok(t.tujuan);
-    });
-  }, [jadwal.perjalanan, saringLin, cari]);
-
-  const perLin = useMemo(
-    () =>
-      jadwal.perjalanan.reduce(
-        (a, t) => {
-          a[t.lin] = (a[t.lin] ?? 0) + 1;
-          return a;
-        },
-        {} as Record<string, number>,
-      ),
-    [jadwal.perjalanan],
-  );
-""",
- """  // Halaman ini bisa dibuka langsung tanpa melewati briefing; data stasiun
-  // yang sedang dipilih dimuat di sini juga supaya tidak tampil kosong.
-  useEffect(() => {
-    void pilihStasiun(stasiun);
-  }, [pilihStasiun, stasiun]);
-
-  useEffect(() => {
-    segarkan();
-  }, [segarkan]);
-
-  const temuan = useMemo<TemuanPeriksa[]>(
-    () => (jadwal && emplasemen ? periksaJadwalAman(jadwal, emplasemen) : []),
-    [jadwal, emplasemen],
-  );
-  const galat = temuan.filter((t) => t.tingkat === 'GALAT');
-  const peringatan = temuan.filter((t) => t.tingkat === 'PERINGATAN');
-
-  const perjalanan = useMemo(() => {
-    const q = cari.trim().toLowerCase();
-    return (jadwal?.perjalanan ?? []).filter((t) => {
-      if (saringLin !== 'SEMUA' && t.lin !== saringLin) return false;
-      if (!q) return true;
-      const cocok = (n: unknown) => typeof n === 'string' && n.toLowerCase().includes(q);
-      return cocok(t.nomorKA) || cocok(t.relasi) || cocok(t.asal) || cocok(t.tujuan);
-    });
-  }, [jadwal, saringLin, cari]);
-
-  const perLin = useMemo(
-    () =>
-      (jadwal?.perjalanan ?? []).reduce(
-        (a, t) => {
-          a[t.lin] = (a[t.lin] ?? 0) + 1;
-          return a;
-        },
-        {} as Record<string, number>,
-      ),
-    [jadwal],
-  );
-"""),
-
-("""  const prosesTeks = (nama: string, teks: string) => {
-    let hasil: HasilImpor;""",
- """  const prosesTeks = (nama: string, teks: string) => {
-    if (!jadwal || !emplasemen) return;
-    let hasil: HasilImpor;"""),
-
-("""    const galatBaru = periksaJadwalAman(hasil.jadwal).filter((t) => t.tingkat === 'GALAT');""",
- """    const galatBaru = periksaJadwalAman(hasil.jadwal, emplasemen).filter(
-      (t) => t.tingkat === 'GALAT',
-    );"""),
-
-("""  const unduhCsv = () => {
-    const blob = new Blob([keCsv(jadwal)], { type: 'text/csv;charset=utf-8' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `jadwal-manggarai-${jadwal.tanggalDibuat}.csv`;
-    a.click();
-    URL.revokeObjectURL(url);
-  };""",
- """  const unduhCsv = () => {
-    if (!jadwal) return;
-    const blob = new Blob([keCsv(jadwal)], { type: 'text/csv;charset=utf-8' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `jadwal-${stasiun.toLowerCase()}-${jadwal.tanggalDibuat}.csv`;
-    a.click();
-    URL.revokeObjectURL(url);
-  };
-
-  if (!jadwal || !emplasemen) {
-    return (
-      <div className="flex min-h-screen flex-col">
-        <KepalaPapan />
-        <main className="flex flex-1 items-center justify-center p-6">
-          <Warta tingkat={memuat ? 'biasa' : 'perhatian'}>
-            {memuat
-              ? `Memuat berkas emplasemen dan jadwal Stasiun ${stasiun}\u2026`
-              : 'Berkas stasiun belum termuat. Kembali ke halaman briefing untuk memilih wilayah pengaturan.'}
-          </Warta>
-        </main>
-      </div>
+  /*
+   * Bagian yang paling menentukan bagi stasiun baru: emplasemen yang lolos
+   * pemeriksaan bentuk belum tentu dapat DIDINASI. Tiap stasiun karena itu
+   * dijalankan satu dinas penuh dengan pelayanan otomatis, dan seluruh
+   * perjalanannya harus benar-benar diberangkatkan.
+   */
+  console.log('\\n== 13. Satu dinas penuh pada tiap stasiun ==');
+  for (const r of DAFTAR_STASIUN) {
+    const data = await muatStasiun(r.kode);
+    const ixS = indeksEmplasemen(data.emplasemen);
+    // Dinas terpadat yang bukan satu hari penuh, supaya ujinya berat tetapi
+    // tetap selesai dalam waktu yang wajar.
+    const kandidat = data.jadwal.dinas.filter((d) => !/SEHARI/.test(d.id));
+    const dinas = kandidat.reduce(
+      (a2, d) =>
+        perjalananDinasUmum(data.jadwal, d.mulai, d.selesai).length >
+        perjalananDinasUmum(data.jadwal, a2.mulai, a2.selesai).length
+          ? d
+          : a2,
+      kandidat[0],
     );
-  }"""),
-])
+    const daftar = perjalananDinasUmum(data.jadwal, dinas.mulai, dinas.selesai);
+    const K = buatKeadaanAwal(ixS, dinas, daftar);
+    K.modeOtomatis = 'PENUH';
+
+    let detik = 0;
+    while (!K.dinasSelesai && detik < 20 * 3600) {
+      jalankanOtomatis(K, ixS);
+      majuSatuDetik(K, ixS);
+      detik += 1;
+    }
+    const skor = hitungSkor(K);
+    periksa(`${r.kode}: dinas ${dinas.nama} dapat diselesaikan`, K.dinasSelesai, `berhenti di detik ${detik}`);
+    periksa(
+      `${r.kode}: seluruh perjalanan diberangkatkan`,
+      skor.keretaDilayani.length === skor.keretaTotal,
+      `${skor.keretaTotal - skor.keretaDilayani.length} dari ${skor.keretaTotal} tidak berangkat`,
+    );
+    periksa(
+      `${r.kode}: tidak ada pelanggaran keselamatan`,
+      skor.pelanggaran.length === 0,
+      skor.pelanggaran.slice(0, 2).map((v) => v.keterangan || v.jenis).join(' | '),
+    );
+    console.log(
+      `   ${r.kode.padEnd(4)} ${dinas.nama.padEnd(16)} ${String(daftar.length).padStart(3)} perjalanan · ` +
+        `ketepatan ${(skor.ketepatanWaktu * 100).toFixed(1)} % · nilai ${skor.nilaiAkhir} (${skor.peringkat})`,
+    );
+  }
+}"""
+
+if a not in s:
+    raise SystemExit('TIDAK KETEMU')
+s = s.replace(a, b, 1)
+io.open(p, 'w', encoding='utf-8').write(s)
+print('ok')

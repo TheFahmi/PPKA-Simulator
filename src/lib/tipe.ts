@@ -277,12 +277,25 @@ export type KodeLin =
   /** Lin Tangerang — hanya sedikit perjalanan yang menyentuh Manggarai. */
   | 'LIN_TANGERANG'
   | 'KAJJ'
+  /** KA lokal dan aglomerasi di luar Jabodetabek. */
+  | 'LOKAL'
+  /** Commuter Line di luar penamaan lin Jabodetabek. */
+  | 'KRL'
+  /** Angkutan barang: rangkaian panjang, percepatan lambat, prioritas terendah. */
+  | 'BARANG'
   | 'BANDARA'
   | 'KLB'
   | 'LANGSIR';
 
 /** Golongan sarana — menentukan panjang rangkaian & perilaku jalan. */
-export type JenisSarana = 'KRL_8' | 'KRL_10' | 'KRL_12' | 'KA_ANTARKOTA' | 'LOKOMOTIF';
+export type JenisSarana =
+  | 'KRL_8'
+  | 'KRL_10'
+  | 'KRL_12'
+  | 'KA_ANTARKOTA'
+  /** Rangkaian barang: paling panjang, percepatan paling lambat. */
+  | 'KA_BARANG'
+  | 'LOKOMOTIF';
 
 export interface TrainService {
   /** Kode layanan, mis. "LIN_BOGOR". */
